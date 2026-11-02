@@ -1,0 +1,25 @@
+# Only application sources and dependency metadata belong in the build context.
+**
+!Dockerfile
+!.dockerignore
+!pyproject.toml
+!uv.lock
+!README.md
+!.streamlit/
+!.streamlit/config.toml
+!dashboard/
+!dashboard/**
+!kairo/
+!kairo/pyproject.toml
+!kairo/kairo/
+!kairo/kairo/**
+!kairo/kairo.png
+
+# Keep local state and credentials out even inside included directories.
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.venv/
+**/.env
+**/.env.*
+**/secrets.toml
