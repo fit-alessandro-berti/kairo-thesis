@@ -25,6 +25,12 @@ template.pdf
 /.venv/
 __pycache__/
 .pytest_cache/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.json
+coverage.xml
+htmlcov/
 .ipynb_checkpoints/
 
 # Secrets

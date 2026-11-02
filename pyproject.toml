@@ -33,7 +33,12 @@ kairo = { path = "kairo", editable = true }
 dev = [
     "hypothesis>=6.148.0",
     "pytest>=9.0.0",
+    "pytest-cov>=7.1.0",
 ]
 
 [tool.pytest.ini_options]
 python_files = ["test_*.py"]
+testpaths = ["tests"]
+markers = [
+    "rendering: requires Chromium or Chrome for real Kaleido PNG rendering",
+]
