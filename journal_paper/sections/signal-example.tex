@@ -1,0 +1,49 @@
+\begin{Example}[From state labels to a drift score]
+\label{ex:drift-score}
+Consider the resource perspective of the service-desk log in \Cref{sec:approach-example}. Suppose the fitted model assigns $W_{\mathrm a},W_{\mathrm b},W_{\mathrm c}$ to state $\mathsf R$, in which Frontline resolves both cases. It assigns $W_{\mathrm d},W_{\mathrm e},W_{\mathrm f}$ to state $\mathsf S$, in which Specialist resolves the focal case. Here $b(W_{\mathrm a})$ is a signal-window boundary. Grouping feature windows by their start times as in \autoref{fig:approach-signal-windows} gives
+\[
+  V_{\mathrm A}=W_{\mathrm a}\cup W_{\mathrm b},\qquad
+  V_{\mathrm B}=W_{\mathrm c}\cup W_{\mathrm d},\qquad
+  V_{\mathrm C}=W_{\mathrm e}\cup W_{\mathrm f}.
+\]
+
+The state distributions $P_{\mathrm A}$, $P_{\mathrm B}$, and $P_{\mathrm C}$ count feature-window labels within the respective signal windows and divide by the number of labels. All labels in $V_{\mathrm A}$ are $\mathsf R$, the labels in $V_{\mathrm B}$ are evenly split, and all labels in $V_{\mathrm C}$ are $\mathsf S$ (\autoref{fig:approach-state-distributions}). The middle window mixes the earlier and later patterns because it spans the change.
+
+To score $V_{\mathrm C}$, the previous-window reference is $Q_{\mathrm C}^{\mathrm{prev}}=P_{\mathrm B}$. The recent-window reference that uses both earlier signal windows is $Q_{\mathrm C}^{\mathrm{recent}}=\operatorname{mean}(P_{\mathrm A},P_{\mathrm B})$. Its share of $\mathsf S$ is smaller than in $P_{\mathrm B}$ because $V_{\mathrm A}$ contains only $\mathsf R$. The whole-log reference also includes $P_{\mathrm C}$. Its mean is $P_{\mathrm B}$ here because the exclusive $\mathsf R$ and $\mathsf S$ distributions balance each other (\autoref{fig:approach-reference-distributions}).
+
+For these states, total variation reduces to the absolute difference in the share of $\mathsf S$. This gives equal previous-window scores at $b(V_{\mathrm B})$ and $b(V_{\mathrm C})$.
+\[
+  D_{\mathrm{TV}}(P_{\mathrm B},P_{\mathrm A})
+  =D_{\mathrm{TV}}(P_{\mathrm C},P_{\mathrm B})
+  =P_{\mathrm B}(\mathsf S).
+\]
+The recent-window reference gives $V_{\mathrm C}$ a higher score because its reference contains less $\mathsf S$. The whole-log mean gives $V_{\mathrm B}$ a zero score and the same positive score to both outer windows. \autoref{fig:approach-drift-scores} places each value at the start of the window it describes. Local scores are undefined until the required earlier signal windows are available.
+\end{Example}
+
+\begin{figure}[H]
+  \centering
+  \FigurePlaceholder[0.30]{TikZ timeline of $W_{\mathrm a}$ through $W_{\mathrm f}$. Label each state at its feature-window start. Bracket the pairs as $V_{\mathrm A}$, $V_{\mathrm B}$, and $V_{\mathrm C}$.}
+  \caption{Signal windows in the service-desk example. In the middle signal window, Frontline resolves both cases in the earlier feature window and Specialist resolves the focal case in the later one.}
+  \label{fig:approach-signal-windows}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \FigurePlaceholder[0.30]{TikZ stacked bars for $P_{\mathrm A}$, $P_{\mathrm B}$, and $P_{\mathrm C}$ on the same share scale. Use a legend for states $\mathsf R$ and $\mathsf S$.}
+  \caption{Observed state distributions in the signal windows. The first and last windows contain only $\mathsf R$ and $\mathsf S$, respectively. The middle window contains equal shares.}
+  \label{fig:approach-state-distributions}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \FigurePlaceholder[0.30]{TikZ bars for the references at $V_{\mathrm C}$. Show the previous window, recent mean, and whole-log mean beside $P_{\mathrm C}$.}
+  \caption{Reference distributions for scoring $V_{\mathrm C}$. The recent-window reference has less $\mathsf S$ than the previous-window and whole-log references in this example.}
+  \label{fig:approach-reference-distributions}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \FigurePlaceholder[0.30]{TikZ drift scores on a common total-variation scale. Mark each score at its signal-window start. Leave unavailable local scores blank.}
+  \caption{Illustrative total-variation scores. With the previous-window reference, the middle and last windows have equal scores. The recent-window reference gives a larger score to the last window, and the whole-log reference makes the middle score zero.}
+  \label{fig:approach-drift-scores}
+\end{figure}

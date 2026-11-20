@@ -1,0 +1,39 @@
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+    box/.style={
+      draw=black!60, line width=0.5pt, rounded corners=2pt,
+      align=center, inner xsep=5pt, inner ysep=4pt, font=\small
+    },
+    perspective/.style={box, text width=3.4cm, minimum height=0.85cm},
+    stage/.style={box, text width=6.6cm, fill=black!4},
+    connector/.style={draw=black!65, line width=0.55pt},
+    flow/.style={connector, ->, >=stealth}
+  ]
+    \node[stage] (log) at (0,0) {\textbf{Case-centric event log}};
+    \node[perspective, fill=blue!6] (intra) at (-4.1,-1.2)
+      {\textbf{Intra-case}\\Case prefixes};
+    \node[perspective, fill=teal!8] (resource) at (0,-1.2)
+      {\textbf{Resource}\\Work by resource};
+    \node[perspective, fill=orange!10] (inter) at (4.1,-1.2)
+      {\textbf{Inter-case}\\Conditions across cases};
+    \node[stage] (states) at (0,-2.65)
+      {\textbf{Learn and assign states}\\Fit a model for each perspective};
+    \node[stage] (scores) at (0,-3.92)
+      {\textbf{Measure changes in state shares}\\Compare signal windows with a reference};
+    \node[stage] (inspect) at (0,-5.19)
+      {\textbf{Inspect candidate changes}\\Review scores and supporting states};
+    \draw[connector] (log.south) -- ++(0,-0.22) coordinate (branch);
+    \draw[flow] (branch) -| (intra.north);
+    \draw[flow] (branch) -- (resource.north);
+    \draw[flow] (branch) -| (inter.north);
+    \coordinate (join) at (0,-1.93);
+    \draw[connector] (intra.south) |- (join) -| (inter.south);
+    \draw[connector] (resource.south) -- (join);
+    \draw[flow] (join) -- (states.north);
+    \draw[flow] (states.south) -- (scores.north);
+    \draw[flow] (scores.south) -- (inspect.north);
+  \end{tikzpicture}
+  \caption{Outline of the Kairo workflow. Each perspective describes a different aspect of the log and yields its own state assignments and drift signal.}
+  \label{fig:approach-overview}
+\end{figure}

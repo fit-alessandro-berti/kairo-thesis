@@ -1,0 +1,90 @@
+\subsubsection{Running Example}\label{sec:approach-example}
+
+Consider a service desk observed over consecutive feature windows $W_{\mathrm a},\ldots,W_{\mathrm f}$. In each window $W_{\mathrm x}$, a focal case $\mathrm x$ and its companion case overlap in time. Each has a Receive event followed by a Resolve event, and both events fall within that window. The Frontline team receives every case and resolves every companion case after a gap of $g$. It also resolves the focal cases $\mathrm a$, $\mathrm b$, and $\mathrm c$ after the same gap. The Specialist team resolves the focal cases $\mathrm d$, $\mathrm e$, and $\mathrm f$ after a longer gap $G>g$.
+
+\begin{Example}[Intra-case features for a case prefix]\label{ex:intra-case}
+Compare the Receive and Resolve prefixes of cases $\mathrm c$ and $\mathrm d$. At Receive, the current-activity indicator for Receive is on and the prefix contains no directly-follows pair. At Resolve, Receive is the immediately preceding activity and the prefix contains the Receive-to-Resolve pair once. \autoref{tab:example-intra-case} shows the same feature values at the corresponding positions of both cases. \autoref{fig:example-intra-case} illustrates the prefixes used to build the rows.
+\end{Example}
+
+\begin{table}[H]
+  \caption{Selected intra-case features for the Receive and Resolve events of cases $\mathrm c$ and $\mathrm d$. On and off denote true and false for an indicator.}
+  \label{tab:example-intra-case}
+  \centering
+  \small
+  \begin{tabularx}{\linewidth}{@{}ll*{3}{>{\centering\arraybackslash}X}@{}}
+    \toprule
+    \textbf{Case} & \textbf{Current event} & \textbf{Receive now} &
+      \textbf{Receive immediately before} & \textbf{Receive-to-Resolve count} \\
+    \midrule
+    $\mathrm c$ & Receive & On & Off & Zero \\
+    $\mathrm c$ & Resolve & Off & On & One \\
+    $\mathrm d$ & Receive & On & Off & Zero \\
+    $\mathrm d$ & Resolve & Off & On & One \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \FigurePlaceholder{TikZ diagram of the two traces, with Receive and Resolve in order. Highlight the prefix at each event and align the matching prefixes of cases c and d.}
+  \caption{The corresponding events in cases $\mathrm c$ and $\mathrm d$ have matching activity prefixes. The selected intra-case features describe the order of the activities.}
+  \label{fig:example-intra-case}
+\end{figure}
+
+\begin{Example}[Resource features for a handover]\label{ex:resource}
+Between $W_{\mathrm c}$ and $W_{\mathrm d}$, responsibility for resolving the focal case moves from Frontline to Specialist. Frontline still resolves the companion case, so Specialist handles half of the Resolve events in $W_{\mathrm d}$. The only handover in that window goes from Frontline to Specialist, with a gap of $G$. \autoref{tab:example-resource} shows how the assignment and handover features change. \autoref{fig:example-resource} shows who performs each focal event.
+\end{Example}
+
+\begin{table}[H]
+  \caption{Selected resource features in consecutive feature windows. The handover share and mean incoming gap are zero in $W_{\mathrm c}$, which contains no handover.}
+  \label{tab:example-resource}
+  \centering
+  \small
+  \begin{tabularx}{\linewidth}{@{}X*{2}{>{\centering\arraybackslash}p{0.17\linewidth}}@{}}
+    \toprule
+    \textbf{Feature} & $\boldsymbol{W_{\mathrm c}}$ & $\boldsymbol{W_{\mathrm d}}$ \\
+    \midrule
+    Events by Frontline & Four & Three \\
+    Events by Specialist & Zero & One \\
+    Share of Resolve performed by Specialist & Zero & Half \\
+    Share of Frontline's handovers received by Specialist & Zero & Full \\
+    Mean incoming handover gap for Specialist & Zero & $G$ \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \FigurePlaceholder{TikZ timeline with Frontline and Specialist lanes. Trace the focal case in each window. Highlight the handover in $W_{\mathrm d}$ and show the companion case in Frontline.}
+  \caption{The focal case passes from Frontline to Specialist in $W_{\mathrm d}$. The handover is assigned to the window containing the Specialist event.}
+  \label{fig:example-resource}
+\end{figure}
+
+\begin{Example}[Inter-case features for a longer gap]\label{ex:inter-case}
+Both $W_{\mathrm c}$ and $W_{\mathrm d}$ have the same numbers of arrivals, completions, and active cases. Each Resolve event contributes its gap from Receive to the mean for its window. The gaps are both $g$ in $W_{\mathrm c}$. In $W_{\mathrm d}$, the focal case contributes $G$ and the companion still contributes $g$, so the mean rises. \autoref{tab:example-inter-case} shows this change in timing alongside the matching counts. \autoref{fig:example-inter-case} shows which gaps enter each window's mean.
+\end{Example}
+
+\begin{table}[H]
+  \caption{Selected inter-case features in consecutive feature windows. The later window has the same counts and a longer mean gap.}
+  \label{tab:example-inter-case}
+  \centering
+  \small
+  \begin{tabularx}{\linewidth}{@{}X*{2}{>{\centering\arraybackslash}p{0.17\linewidth}}@{}}
+    \toprule
+    \textbf{Feature} & $\boldsymbol{W_{\mathrm c}}$ & $\boldsymbol{W_{\mathrm d}}$ \\
+    \midrule
+    Case arrivals & Two & Two \\
+    Case completions & Two & Two \\
+    Active cases & Two & Two \\
+    Events per active case & Two & Two \\
+    Mean within-case event gap & $g$ & $\operatorname{mean}(g,G)$ \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \FigurePlaceholder{TikZ timeline of the overlapping focal and companion cases in $W_{\mathrm c}$ and $W_{\mathrm d}$. Mark arrivals, completions, and the gaps that contribute to each window's mean.}
+  \caption{The focal case's longer gap raises the window mean in $W_{\mathrm d}$. The companion case keeps its original gap, and the case counts stay the same.}
+  \label{fig:example-inter-case}
+\end{figure}

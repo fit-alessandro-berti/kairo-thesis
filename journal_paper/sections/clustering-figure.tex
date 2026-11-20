@@ -1,0 +1,15 @@
+\autoref{fig:approach-clustering} uses a schematic resource-feature cloud to illustrate the assignment rules. The cloud has variations around the Frontline and Specialist resolution patterns from the running example, along with an isolated observation.
+
+\begin{figure}[htbp]
+  \centering
+  \subfloat[$k$-means\label{fig:approach-clustering-kmeans}]{%
+    \FigurePlaceholder[0.28]{TikZ sketch of the shared points, fitted centroids, and nearest-centroid assignments.}}
+  \hfill
+  \subfloat[Self-organizing map\label{fig:approach-clustering-som}]{%
+    \FigurePlaceholder[0.28]{TikZ sketch of the shared points linked to their winning cells on a grid with neighboring prototypes.}}
+  \hfill
+  \subfloat[DBSCAN\label{fig:approach-clustering-dbscan}]{%
+    \FigurePlaceholder[0.28]{TikZ sketch of core neighborhoods and border points. Mark the isolated observation as noise.}}
+  \caption{State assignment on a shared schematic feature cloud. Each point represents a resource feature window. The panels show the nearest centroid for $k$-means, the winning cell for a self-organizing map, and density-connected groups and noise for DBSCAN.}
+  \label{fig:approach-clustering}
+\end{figure}

@@ -21,11 +21,11 @@
 
 \newcommand{\softwarepm}{PM4Py}
 \newlength{\PlaceholderSide}
-\newcommand{\FigurePlaceholder}[1]{%
+\newcommand{\FigurePlaceholder}[2][0.35]{%
   \begingroup
-  \setlength{\PlaceholderSide}{0.35\linewidth}%
+  \setlength{\PlaceholderSide}{#1\linewidth}%
   \fbox{\parbox[c][\PlaceholderSide][c]{\PlaceholderSide}{%
-    \centering\small\hspace{0pt}#1\par}}%
+    \centering\small\hspace{0pt}#2\par}}%
   \endgroup
 }
 

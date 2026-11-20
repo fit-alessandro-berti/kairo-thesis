@@ -2,13 +2,6 @@
 
 Kairo constructs a feature matrix for each perspective, scales and optionally reduces it, assigns states by clustering, and compares state distributions over time. \autoref{fig:approach-overview} shows how the stages connect.
 
-\begin{figure}[htbp]
-  \centering
-  \FigurePlaceholder{TikZ diagram of the event log feeding the intra-case, resource, and inter-case pipelines, from feature vectors to state labels and drift signals.}
-  \caption{From an event log to perspective-specific drift signals. Each perspective uses its own observation units, feature vectors, and states.}
-  \label{fig:approach-overview}
-\end{figure}
-
 \subsection{Representing Process Behavior}\label{sec:approach-features}
 
 The unit of observation determines what a feature vector can describe. The intra-case perspective uses an event and its case history to represent how work progresses. The resource and inter-case perspectives each use calendar intervals, called \emph{feature windows}, to summarize behavior across cases. A per-event representation of workload would repeat the same shared conditions for every event and give busy intervals more influence. A window summary of individual behavior would average away the position and order of many events. The separate matrices retain the appropriate unit for each question. They also give resource assignment and process-wide timing their own distance scales and cluster assignments. For example, an activity can move to another team while the observed activity sequences remain the same. The resource features can register that shift while the intra-case features remain stable.
@@ -66,6 +59,8 @@ For a numerical case attribute $\alpha$, the mean and sample standard deviation 
 
 Attribute summaries weight cases by their events in the window. Missing numerical values do not enter the sample, and events with missing categories still enter the denominator of the categorical shares. Taken together, feature selection and the choice of observation unit determine which changes can appear in the subsequent state assignments.
 
+\input{sections/perspective-examples}
+
 \subsection{Scaling and Reducing the Vectors}\label{sec:approach-reduction}
 
 Feature columns can measure counts, proportions, or durations. A column with a large numerical range could dominate the distances used in clustering. Scaling puts the selected columns on a comparable footing within each perspective. Binary activity indicators can retain their original scale. Case identifiers and timestamps link observations back to the log and stay outside the feature vectors.
@@ -101,6 +96,8 @@ A self-organizing map (SOM) has a prototype $\mu_g$ at each grid cell $g\in G$. 
 \paragraph{Density-based clustering.}
 Density-based spatial clustering of applications with noise (DBSCAN) forms neighborhoods using a radius $\varepsilon$. To count the neighborhood of $z$, Kairo sums the multiplicities of the distinct vectors within $\varepsilon$, including $z$ itself. A core vector has a neighborhood count of at least $m$. Core vectors linked by chains of core neighbors form clusters. Each non-core vector within $\varepsilon$ of a core joins a cluster of such a core. Vectors outside all core neighborhoods receive a noise label~\cite{ester1996density}. Kairo assigns these labels back to the original observations. The noise label contributes to state shares when the fit finds a cluster. To help set $\varepsilon$, the dashboard can plot the distances from observations to their $m$th nearest neighbor in increasing order, counting the query observation among its neighbors.
 
+\input{sections/clustering-figure}
+
 The same fitted representation and clustering apply throughout each perspective of the log. This makes a state label comparable across periods. State frequencies are counts of assigned observations, and the analyst can use the original features to interpret what a state represents. For comparison in the clustering space, a state is represented by a centroid for $k$-means, a cell prototype for a SOM, or the mean of its distinct core vectors for DBSCAN. Noise has no representative. Representative distances support visualization and do not enter the subsequent drift score. The full-log fit makes the analysis presented here retrospective.
 
 \paragraph{Inspecting the fitted states.}
@@ -119,13 +116,6 @@ The silhouette examines separation from the point of view of individual observat
 \subsection{Measuring Changes in State Frequencies}\label{sec:approach-signal}
 
 The detector builds a time series from \emph{signal windows}. Feature windows preserve the detail needed to describe an observation, while signal windows collect observations to compare. Short signal windows improve time resolution. A window with few observations can give unstable estimates. Longer windows can stabilize frequencies while mixing behavior from before and after a change. \autoref{fig:approach-signal-windows} illustrates the relation between these windows.
-
-\begin{figure}[htbp]
-  \centering
-  \FigurePlaceholder{TikZ timeline with events, state labels on feature windows, and signal windows. Show the window assignment and compare state shares across neighboring signal windows.}
-  \caption{Feature windows summarize process behavior, and signal windows group the resulting states. Comparing state shares across signal windows shows when a pattern has become more or less frequent.}
-  \label{fig:approach-signal-windows}
-\end{figure}
 
 \begin{Definition}[Signal windows and state distributions]\label{def:state-distributions}
 Fix a perspective $p$ and a signal window width $\Delta$. For a window-based perspective require $\Delta\geq\delta_p$. Group observations by the window in $\mathcal W_\Delta$ containing their anchor time $t_p(o)$, using the event timestamp for an intra-case observation or the feature-window start for a resource or inter-case observation. Order the signal windows that receive observations by start time, and denote them by $V_j$. Let $N_j$ count all observations assigned to $V_j$. The share of any observed model label $s\in S_p$ is
@@ -161,5 +151,7 @@ D_{\mathrm{H}}(P,Q)&=\|\sqrt P-\sqrt Q\|/\sqrt{2}.
 \end{Definition}
 
 These comparisons are smoothed Kullback-Leibler divergence, Jensen-Shannon divergence, total variation, and Hellinger distance. The smoothing keeps the logarithmic terms finite when a state is absent in a window. Jensen-Shannon averages differences to a common midpoint~\cite{lin1991divergence}. Total variation sums absolute changes in state shares. Hellinger uses the Euclidean distance between the vectors of square-root shares, with normalization.
+
+\input{sections/signal-example}
 
 A high score indicates an interval to inspect. It can reflect a change in process behavior or ordinary variation, particularly when a window has low support or covers only part of the monitored period. Different perspectives can respond to the same change. \autoref{sec:assessment} defines the benchmark's alarm rule for turning these scores into estimated change times.
