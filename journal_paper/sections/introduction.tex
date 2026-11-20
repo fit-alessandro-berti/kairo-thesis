@@ -1,12 +1,27 @@
 \section{Introduction}
 \label{sec:introduction}
 
-Process mining uses records of work to understand how a process operates~\cite{vanderaalst2016process}. A model discovered from an entire event log can combine behavior from periods in which the process operated differently. A change in the underlying behavior is called \emph{concept drift}. Identifying when a change occurred helps an analyst choose which periods to compare. Understanding what changed helps the analyst decide which cases, activities, or resources to examine.
+\paragraph{Problem statement.}
+Process mining uses records of work to understand how a process operates~\cite{vanderaalst2016process}. When a process changes, a model discovered from the full event log can mix behavior from different periods. This change in the underlying behavior is called \emph{concept drift}. Locating a drift helps an analyst choose which periods to compare and which cases, activities, or resources to inspect.
 
-A change in activity order is visible to a detector that compares sequences of activities. Other changes require different observations. For example, a service desk may route the same requests through the same activities while reassigning the work to another team. An increase in incoming requests may also cause more cases to be open at the same time, even if each request follows its usual path. Research has emphasized changes in activity order, although other approaches track time, resources, or case attributes~\cite{sato2022survey}. The practical gap we address is how to summarize several related measurements within each perspective and let analysts inspect how those summaries change over time.
+The evidence available to a detector depends on what it measures. For example, a service desk may route requests through the same activities after transferring the work to another team. If more requests arrive, waiting times may grow while the order of activities stays the same. Research has emphasized changes in activity order, and some approaches also track time, resources, or case attributes~\cite{sato2022survey}. We address how to combine related measurements within each perspective, locate changes in those summaries over time, and let analysts inspect the evidence behind a candidate change.
 
-We present Kairo, which builds on the state-based monitoring method developed in Deren's bachelor's thesis~\cite{kairo-thesis}. Kairo represents the progress of individual cases, the work carried out by resources, and the conditions shared by cases as they run. Each perspective uses features suited to what it observes. Clustering turns groups of similar observations into recurring states. A change in the mix of states produces a drift signal, and the measurements behind the states give the analyst a starting point for interpreting it. A Python library and graphical interface support this analysis.
+\paragraph{Contributions.}
+We present Kairo, which builds on the state-based monitoring method developed in Deren's bachelor's thesis~\cite{kairo-thesis}.
 
-This paper explains the method and compares its drift estimates with those of existing detectors on logs with known changes and on controls without injected changes. The comparison uses automatic alarm settings selected without consulting the drift annotations. The results show that the state signals can surface changes in resource assignment and waiting time. They also show that greater coverage of annotated changes can come with more alarms that do not match an annotation.
+\begin{itemize}
+  \item \textbf{State-based drift detection.} We formalize how Kairo represents case progress, resource activity, and conditions across cases. It groups similar observations into recurring states and measures changes in how common those states are over time.
+  \item \textbf{Tools for examining candidate changes.} We describe the Python library and dashboard, which let analysts connect a drift score to the state frequencies, trajectories, and observations behind it.
+  \item \textbf{Comparative assessment.} We compare Kairo with existing detectors on logs with annotated changes and on controls without injected changes. We use configuration rules that do not consult the annotations and provide the benchmark settings and run records.
+\end{itemize}
+
+\paragraph{Research questions.}
+\begin{enumerate}[label=\textbf{RQ\Alph*.},ref=RQ\Alph*]
+  \item\label{rq:comparison} How does Kairo compare with existing detectors in locating annotated drift episodes across the benchmark?
+  \item\label{rq:scenarios} Which types of annotated change do Kairo's perspective-specific state signals capture in the selected scenarios?
+  \item\label{rq:margin} How does the time margin for matching alarms to annotations affect the comparison between the leading profiles?
+\end{enumerate}
+
+Kairo surfaced selected changes in resource assignment and waiting time. Its leading profile matched more annotated episodes than the leading comparison profile and raised more unmatched alarms.
 
 The rest of the paper is organized as follows. \autoref{sec:related-work} reviews existing drift detection approaches. \autoref{sec:preliminaries} introduces the terms used in \autoref{sec:approach}, which presents the method. \autoref{sec:implementation} describes the library and interface. \autoref{sec:assessment} presents the assessment, and \autoref{sec:discussion} discusses its findings and limits. \autoref{sec:conclusion} concludes the paper and outlines future work.

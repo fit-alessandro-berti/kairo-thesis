@@ -1,6 +1,6 @@
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
 
-Kairo learns recurring states that describe case progress, resource activity, and conditions across cases. Changes in how often these states occur give analysts a way to locate and investigate changes in event logs. In the benchmark, this approach surfaced selected resource and timing changes, while the strongest comparison profile achieved a better overall balance between precision and recall.
+Building on Deren's thesis~\cite{kairo-thesis}, this paper formalizes how Kairo learns states from case progress, resource activity, and conditions across cases, then uses changes in their frequency to locate drift. The library and dashboard let analysts inspect the states and the measurements behind their signals. The archived benchmark documents how these signals located selected resource and timing changes. It also quantifies the trade-off between finding more episodes and raising more unmatched alarms.
 
-Future work should test fixed profiles on separate logs using only information available at the time of an alarm. It should also examine whether thresholds calibrated on stable periods and rules that suppress repeated alerts can reduce the effort needed to review alarms. A study with analysts could measure how the graphical interface helps them interpret changes.
+Future work should test fixed profiles on independent logs using the information available at each alarm time. These tests could examine whether thresholds calibrated on stable periods and rules that suppress repeat alerts reduce review effort. A study with analysts could assess whether the dashboard helps them identify what changed.
