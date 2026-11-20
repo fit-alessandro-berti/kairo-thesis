@@ -1,0 +1,36 @@
+\begin{tikzpicture}[
+  kairo/base,
+  x=0.93cm,
+  row label/.style={anchor=east, align=right, inner sep=0pt, text=KairoMuted},
+  window edge/.style={draw=KairoLine, line width=0.45pt},
+  signal edge/.style={draw=KairoMuted, line width=0.55pt}
+]
+  \node[row label] at (-0.21,1.66) {Signal window};
+  \node[row label] at (-0.21,1.04) {Feature window};
+  \node[row label] at (-0.21,0.45) {State at start};
+
+  \foreach \fromX/\toX/\windowName/\shade in
+    {0/4/A/KairoPaper,4/8/B/KairoTealTint,8/12/C/KairoPaper} {
+    \fill[fill=\shade] (\fromX,1.41) rectangle (\toX,1.91);
+    \draw[signal edge] (\fromX,1.41) rectangle (\toX,1.91);
+    \node at ({(\fromX+\toX)/2},1.66) {$V_{\mathrm{\windowName}}$};
+  }
+
+  \foreach \fromX/\windowName/\state/\shade/\ink in
+    {0/a/R/KairoBlueTint/KairoBlue,2/b/R/KairoBlueTint/KairoBlue,
+     4/c/R/KairoBlueTint/KairoBlue,6/d/S/KairoAmberTint/KairoAmber,
+     8/e/S/KairoAmberTint/KairoAmber,10/f/S/KairoAmberTint/KairoAmber} {
+    \fill[fill=\shade] (\fromX,0.80) rectangle ++(2,0.48);
+    \draw[window edge] (\fromX,0.80) rectangle ++(2,0.48);
+    \node at ({\fromX+1},1.04) {$W_{\mathrm{\windowName}}$};
+    \draw[window edge] (\fromX,0.80) -- (\fromX,0.45);
+    \fill[fill=\ink] (\fromX,0.45) circle[radius=1.8pt];
+    \node[anchor=west, inner sep=2.5pt, text=\ink] at (\fromX,0.45)
+      {$\mathsf{\state}$};
+  }
+  \foreach \boundary in {0,4,8,12} {
+    \draw[signal edge] (\boundary,1.41) -- (\boundary,0.80);
+  }
+  \draw[KairoMuted, -{Latex[length=1.65mm]}, line width=0.45pt]
+    (0,0.08) -- (12,0.08) node[above left, inner sep=1.5pt] {Time};
+\end{tikzpicture}

@@ -1,0 +1,32 @@
+\begin{tikzpicture}[
+  kairo/base, x=1cm, y=1cm,
+  receive/.style={circle, minimum size=4.3pt, inner sep=0pt, draw=KairoTeal,
+    line width=0.75pt, fill=white},
+  resolve/.style={rectangle, minimum size=4.1pt, inner sep=0pt, fill=KairoTeal},
+  gap/.style={draw=KairoTeal, line width=0.9pt, line cap=round, text=KairoTeal}
+]
+  \path[use as bounding box] (0,0) rectangle (13.08,-2.20);
+  % Use the same local time positions as the resource diagram.
+  \foreach \windowid/\leftx/\windowtitle/\focalend/\focalgap/\windowmean in {
+    c/2.10/Earlier/2.84/g/g,
+    d/7.81/Later/4.49/G/{\operatorname{mean}(g,G)}
+  } {
+    \begin{scope}[shift={(\leftx,0)}]
+      \node[font=\footnotesize\bfseries] at (2.635,-0.17)
+        {\windowtitle\ window $W_{\mathrm{\windowid}}$};
+      \path[fill=KairoPaper, rounded corners=2pt] (0,-1.66) rectangle (5.27,-0.50);
+      \draw[gap] (1.46,-0.91) -- node[midway, above=1pt, inner sep=1pt] {$g$} (3.56,-0.91);
+      \draw[gap] (0.74,-1.43) -- node[midway, above=1pt, inner sep=1pt] {$\focalgap$}
+        (\focalend,-1.43);
+      \node[receive] at (1.46,-0.91) {};
+      \node[resolve] at (3.56,-0.91) {};
+      \node[receive] at (0.74,-1.43) {};
+      \node[resolve] at (\focalend,-1.43) {};
+      \path[fill=KairoTealTint, rounded corners=2pt] (0,-2.15) rectangle (5.27,-1.77);
+      \node[text=KairoTeal] at (2.635,-1.96) {$\windowmean$};
+    \end{scope}
+  }
+  \node[anchor=east] at (1.96,-0.91) {Companion};
+  \node[anchor=east] at (1.96,-1.43) {Focal case};
+  \node[anchor=east, font=\footnotesize\bfseries] at (1.96,-1.96) {Window mean};
+\end{tikzpicture}

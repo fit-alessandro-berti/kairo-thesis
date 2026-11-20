@@ -1,0 +1,40 @@
+\begin{tikzpicture}[
+  kairo/base,
+  x=1cm,
+  y=1cm,
+  grid line/.style={draw=KairoLine, line width=0.45pt},
+  value line/.style={line width=0.91pt, line cap=round}
+]
+  \node[anchor=east, inner sep=0pt, text=KairoMuted] at (0.08,2.32)
+    {Score};
+  \foreach \level/\tickLabel in {0.38/$0$,1.10/$\alpha$,1.46/$\tfrac32\alpha$} {
+    \node[anchor=east, inner sep=0pt, text=KairoMuted] at (0.08,\level) {\tickLabel};
+  }
+
+  \foreach \fromX/\panelTitle/\ink in {
+    0.24/{Previous window}/KairoBlue,
+    4.65/{Recent mean}/KairoTeal,
+    9.06/{Whole-log mean}/KairoMuted%
+  } {
+    \node[font=\footnotesize\bfseries, inner sep=0pt, text=\ink]
+      at ({\fromX+2.02},2.32) {\panelTitle};
+    \fill[KairoPaper] (\fromX,0.38) rectangle ++(4.04,1.63);
+    \foreach \level in {1.10,1.46}
+      \draw[grid line] (\fromX,\level) -- ++(4.04,0);
+    \draw[KairoMuted, line width=0.5pt] (\fromX,0.38) -- ++(4.04,0);
+    \foreach \offset/\windowName in {0.60/A,2.02/B,3.44/C} {
+      \draw[KairoMuted, line width=0.45pt]
+        ({\fromX+\offset},0.38) -- ++(0,-0.06);
+      \node[anchor=north, text=KairoMuted, inner sep=0pt]
+        at ({\fromX+\offset},0.25) {$b(V_{\mathrm{\windowName}})$};
+    }
+  }
+
+  \draw[value line, KairoBlue] (2.26,1.10) -- (3.68,1.10);
+  \foreach \x in {2.26,3.68}
+    \fill[KairoBlue] (\x,1.10) circle[radius=2.0pt];
+  \fill[KairoTeal] (8.09,1.46) circle[radius=2.0pt];
+  \draw[value line, KairoMuted] (9.66,1.10) -- (11.08,0.38) -- (12.50,1.10);
+  \foreach \x/\y in {9.66/1.10,11.08/0.38,12.50/1.10}
+    \fill[KairoMuted] (\x,\y) circle[radius=2.0pt];
+\end{tikzpicture}

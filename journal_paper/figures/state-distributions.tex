@@ -1,0 +1,24 @@
+\begin{tikzpicture}[kairo/base, x=1cm, y=1cm]
+  \foreach \fromX/\windowName/\barDescription in {
+    0/A/{Frontline only},
+    4.50/B/{Equal shares},
+    9.00/C/{Specialist resolves the focal case}%
+  } {
+    \node[anchor=west, inner sep=0pt] at (\fromX,1.32) {$P_{\mathrm{\windowName}}$};
+    \node[anchor=east, inner sep=0pt, text=KairoMuted] at ({\fromX+4.10},1.32)
+      {Window $V_{\mathrm{\windowName}}$};
+    \node[anchor=north, inner sep=0pt, text=KairoMuted] at ({\fromX+2.05},0.53)
+      {\barDescription};
+  }
+
+  \foreach \fromX/\toX/\state/\shade/\ink in {
+    0/4.10/R/KairoBlueTint/KairoBlue,
+    4.50/6.55/R/KairoBlueTint/KairoBlue,
+    6.55/8.60/S/KairoAmberTint/KairoAmber,
+    9.00/13.10/S/KairoAmberTint/KairoAmber%
+  } {
+    \fill[fill=\shade] (\fromX,0.65) rectangle (\toX,1.10);
+    \draw[draw=\ink, line width=0.5pt] (\fromX,0.65) rectangle (\toX,1.10);
+    \node[text=\ink] at ({(\fromX+\toX)/2},0.875) {$\mathsf{\state}$};
+  }
+\end{tikzpicture}

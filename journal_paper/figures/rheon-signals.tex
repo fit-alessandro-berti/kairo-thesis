@@ -1,0 +1,68 @@
+\begin{figure}[H]
+  \centering
+  \input{figures/rheon-scores}
+  \begin{tikzpicture}[kairo/base,x=1cm,y=1cm,
+      rheon/grid/.style={draw=KairoLine,line width=.35pt},
+      rheon/axis/.style={draw=KairoMuted,line width=.5pt},
+      rheon/series/.style={draw=KairoBlue,line width=.8pt,line join=round},
+      rheon/threshold/.style={draw=KairoMuted,line width=.6pt,dash pattern=on 3pt off 2pt},
+      rheon/truth/.style={draw=KairoAmber,line width=.65pt},
+      rheon/alarm/.style={rectangle,rotate=45,inner sep=0pt,minimum size=5pt,
+                          fill=KairoTeal,draw=white,line width=.45pt},
+      rheon/tick/.style={inner sep=0pt,text=KairoMuted}]
+    \node[anchor=west,font=\small\bfseries,inner sep=0pt] at (.83,2.61)
+      {(a) Resource reassignment};
+    \node[anchor=west,font=\small\bfseries,inner sep=0pt] at (7.39,2.61)
+      {(b) Gradual waiting-time change};
+    \node[rotate=90,inner sep=0pt,text=KairoMuted] at (.02,1.14) {Total variation};
+
+    \begin{scope}[shift={(.83,0)},x=5.89cm,y=2.28cm]
+      \fill[KairoPaper] (0,0) rectangle (1,1);
+      \draw[rheon/grid] (0,.5) -- (1,.5) (0,1) -- (1,1);
+      \draw[rheon/truth] (\RheonReassignmentOnset,0) -- (\RheonReassignmentOnset,1);
+      \draw[rheon/threshold] (0,\RheonReassignmentThreshold) -- (1,\RheonReassignmentThreshold);
+      \RheonReassignmentPath
+      \filldraw[draw=KairoBlue,fill=white,line width=.55pt] \RheonReassignmentEdge circle[radius=1.5pt];
+      \node[rheon/alarm] at \RheonReassignmentAlarm {};
+      \draw[rheon/axis] (0,1) -- (0,0) -- (1,0);
+      \foreach \y/\value in {0/0,.5/0.5,1/1} {
+        \draw[rheon/axis] (0,\y) -- ++(-2.3pt,0);
+        \node[rheon/tick,anchor=east,xshift=-5pt] at (0,\y) {\value};
+      }
+      \foreach \x/\date in \RheonReassignmentTicks {
+        \draw[rheon/axis] (\x,0) -- ++(0,-2.3pt);
+        \node[rheon/tick,anchor=north,yshift=-5pt] at (\x,0) {\date};
+      }
+    \end{scope}
+
+    \begin{scope}[shift={(7.39,0)},x=5.89cm,y=2.28cm]
+      \fill[KairoPaper] (0,0) rectangle (1,1);
+      \fill[KairoAmberTint] (\RheonWaitingOnset,0) rectangle (\RheonWaitingEnd,1);
+      \draw[rheon/grid] (0,.5) -- (1,.5) (0,1) -- (1,1);
+      \draw[rheon/truth] (\RheonWaitingOnset,0) -- (\RheonWaitingOnset,1)
+        (\RheonWaitingEnd,0) -- (\RheonWaitingEnd,1);
+      \draw[rheon/threshold] (0,\RheonWaitingThreshold) -- (1,\RheonWaitingThreshold);
+      \RheonWaitingPath
+      \filldraw[draw=KairoBlue,fill=white,line width=.55pt] \RheonWaitingEdge circle[radius=1.5pt];
+      \node[rheon/alarm] at \RheonWaitingAlarm {};
+      \draw[rheon/axis] (0,1) -- (0,0) -- (1,0);
+      \foreach \x/\date in \RheonWaitingTicks {
+        \draw[rheon/axis] (\x,0) -- ++(0,-2.3pt);
+        \node[rheon/tick,anchor=north,yshift=-5pt] at (\x,0) {\date};
+      }
+    \end{scope}
+
+    \draw[rheon/series] (1.02,-.82) -- (1.49,-.82);
+    \fill[KairoBlue] (1.255,-.82) circle[radius=1.05pt];
+    \node[anchor=west,inner sep=0pt] at (1.61,-.82) {Window score};
+    \draw[rheon/threshold] (4.06,-.82) -- (4.53,-.82);
+    \node[anchor=west,inner sep=0pt] at (4.65,-.82) {Alarm threshold};
+    \fill[KairoAmberTint] (7.36,-.93) rectangle (7.83,-.71);
+    \draw[rheon/truth] (7.595,-.93) -- (7.595,-.71);
+    \node[anchor=west,inner sep=0pt] at (7.95,-.82) {Annotated drift};
+    \node[rheon/alarm] at (10.85,-.82) {};
+    \node[anchor=west,inner sep=0pt] at (11.04,-.82) {Estimated alarm};
+  \end{tikzpicture}
+  \caption{Recent-window Kairo SOM scores for Rheon Single 11 (a) and Rheon Single 15 (b). The annotated change is a point for resource reassignment and an interval for gradual waiting-time change. The diamond marks the alarm at the start of its signal window. Hollow circles mark finite scores from windows excluded from the alarm rule.}
+  \label{fig:assessment-rheon-signals}
+\end{figure}

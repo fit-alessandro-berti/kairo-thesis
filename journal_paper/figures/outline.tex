@@ -1,39 +1,44 @@
 \begin{figure}[H]
   \centering
-  \begin{tikzpicture}[
-    box/.style={
-      draw=black!60, line width=0.5pt, rounded corners=2pt,
-      align=center, inner xsep=5pt, inner ysep=4pt, font=\small
-    },
-    perspective/.style={box, text width=3.4cm, minimum height=0.85cm},
-    stage/.style={box, text width=6.6cm, fill=black!4},
-    connector/.style={draw=black!65, line width=0.55pt},
-    flow/.style={connector, ->, >=stealth}
-  ]
-    \node[stage] (log) at (0,0) {\textbf{Case-centric event log}};
-    \node[perspective, fill=blue!6] (intra) at (-4.1,-1.2)
-      {\textbf{Intra-case}\\Case prefixes};
-    \node[perspective, fill=teal!8] (resource) at (0,-1.2)
-      {\textbf{Resource}\\Work by resource};
-    \node[perspective, fill=orange!10] (inter) at (4.1,-1.2)
-      {\textbf{Inter-case}\\Conditions across cases};
-    \node[stage] (states) at (0,-2.65)
-      {\textbf{Learn and assign states}\\Fit a model for each perspective};
-    \node[stage] (scores) at (0,-3.92)
-      {\textbf{Measure changes in state shares}\\Compare signal windows with a reference};
-    \node[stage] (inspect) at (0,-5.19)
-      {\textbf{Inspect candidate changes}\\Review scores and supporting states};
-    \draw[connector] (log.south) -- ++(0,-0.22) coordinate (branch);
-    \draw[flow] (branch) -| (intra.north);
-    \draw[flow] (branch) -- (resource.north);
-    \draw[flow] (branch) -| (inter.north);
-    \coordinate (join) at (0,-1.93);
-    \draw[connector] (intra.south) |- (join) -| (inter.south);
-    \draw[connector] (resource.south) -- (join);
-    \draw[flow] (join) -- (states.north);
-    \draw[flow] (states.south) -- (scores.north);
-    \draw[flow] (scores.south) -- (inspect.north);
+  \begin{tikzpicture}[kairo/base,x=1cm,y=1cm,
+      box/.style={rounded corners=2pt,draw=KairoLine,line width=.45pt},
+      connector/.style={draw=KairoMuted,line width=.55pt},
+      flow/.style={connector,-{Latex[length=1.45mm,width=1mm]}}]
+    % Each perspective has its own state model and signal.
+    \path[box,fill=KairoPaper] (0,-.80) rectangle (2.12,.80);
+    \path[box,fill=KairoPaper] (6.84,-.91) rectangle (9.28,.91);
+    \path[box,fill=KairoPaper] (10.00,-1.10) rectangle (13.29,1.10);
+    \foreach \y/\hue/\tint/\title/\detail in {
+        .84/KairoBlue/KairoBlueTint/Intra-case/Case prefixes,
+        0/KairoAmber/KairoAmberTint/Resource/Work and handovers,
+        -.84/KairoTeal/KairoTealTint/Inter-case/Activity and timing} {
+      \path[box,fill=\tint] (2.94,{\y-.34}) rectangle (6.08,{\y+.34});
+      \draw[\hue,line width=1.45pt] (3.05,{\y-.20}) -- (3.05,{\y+.20});
+      \node[anchor=west,inner sep=0pt,font=\footnotesize\bfseries] at (3.19,{\y+.13}) {\title};
+      \node[anchor=west,inner sep=0pt,text=KairoMuted] at (3.19,{\y-.15}) {\detail};
+      \draw[flow] (2.47,\y) -- (2.87,\y);
+      \draw[\hue,line width=.55pt,-{Latex[length=1.45mm,width=1mm]}]
+        (6.13,\y) -- (6.42,\y) |- (6.78,{.64*\y});
+    }
+    \draw[connector] (2.47,-.84) -- (2.47,.84);
+    \draw[connector] (2.12,0) -- (2.47,0);
+    \draw[flow] (9.33,0) -- (9.93,0);
+
+    \begin{scope}[shift={(1.06,.39)}]
+      \path[draw=KairoBlue,fill=white,rounded corners=1pt,line width=.5pt]
+        (-.28,-.20) rectangle (.28,.20);
+      \foreach \y in {-.10,0,.10}
+        \draw[KairoBlue,line width=.45pt] (-.18,\y) -- (.18,\y);
+      \draw[KairoBlue,line width=.45pt] (-.07,-.15) -- (-.07,.15);
+    \end{scope}
+    \node[align=center,font=\footnotesize\bfseries] at (1.06,-.29) {Case-centric\\event log};
+    \node[font=\footnotesize\bfseries] at (8.06,.50) {Fit states};
+    \node[align=center,text=KairoMuted] at (8.06,-.18) {Scale features\\Optional PCA\\Assign states};
+    \node[font=\footnotesize\bfseries] at (11.645,.72) {Score drift};
+    \node[align=center,text=KairoMuted] at (11.645,.07) {State shares by window\\Compare to a reference};
+    \draw[KairoLine,line width=.4pt] (10.25,-.43) -- (13.04,-.43);
+    \node[text=KairoInk] at (11.645,-.72) {Inspect scores and states};
   \end{tikzpicture}
-  \caption{Outline of the Kairo workflow. Each perspective describes a different aspect of the log and yields its own state assignments and drift signal.}
+  \caption{Outline of the Kairo workflow. Each perspective describes a different aspect of the log and has its own state model and drift signal. PCA denotes principal component analysis.}
   \label{fig:approach-overview}
 \end{figure}

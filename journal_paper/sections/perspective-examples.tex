@@ -26,8 +26,8 @@ Compare the Receive and Resolve prefixes of cases $\mathrm c$ and $\mathrm d$. A
 
 \begin{figure}[H]
   \centering
-  \FigurePlaceholder{TikZ diagram of the two traces, with Receive and Resolve in order. Highlight the prefix at each event and align the matching prefixes of cases c and d.}
-  \caption{The corresponding events in cases $\mathrm c$ and $\mathrm d$ have matching activity prefixes. The selected intra-case features describe the order of the activities.}
+  \input{figures/intra-case}
+  \caption{Cases $\mathrm c$ and $\mathrm d$ have matching activity prefixes at each event. The shaded activity is the current event in each prefix.}
   \label{fig:example-intra-case}
 \end{figure}
 
@@ -55,7 +55,7 @@ Between $W_{\mathrm c}$ and $W_{\mathrm d}$, responsibility for resolving the fo
 
 \begin{figure}[H]
   \centering
-  \FigurePlaceholder{TikZ timeline with Frontline and Specialist lanes. Trace the focal case in each window. Highlight the handover in $W_{\mathrm d}$ and show the companion case in Frontline.}
+  \input{figures/resource}
   \caption{The focal case passes from Frontline to Specialist in $W_{\mathrm d}$. The handover is assigned to the window containing the Specialist event.}
   \label{fig:example-resource}
 \end{figure}
@@ -84,7 +84,7 @@ Both $W_{\mathrm c}$ and $W_{\mathrm d}$ have the same numbers of arrivals, comp
 
 \begin{figure}[H]
   \centering
-  \FigurePlaceholder{TikZ timeline of the overlapping focal and companion cases in $W_{\mathrm c}$ and $W_{\mathrm d}$. Mark arrivals, completions, and the gaps that contribute to each window's mean.}
-  \caption{The focal case's longer gap raises the window mean in $W_{\mathrm d}$. The companion case keeps its original gap, and the case counts stay the same.}
+  \input{figures/inter-case}
+  \caption{The focal case's longer gap raises the window mean in $W_{\mathrm d}$. Open circles mark arrivals and filled squares mark completions.}
   \label{fig:example-inter-case}
 \end{figure}

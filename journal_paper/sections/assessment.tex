@@ -161,12 +161,7 @@ On the three Padella control-flow logs, Kairo's recent-window intra-case SOM and
 \paragraph{Assignments and timing.}
 All three recent-window Kairo resource profiles matched the sudden reassignment in Rheon Single 11 with no unmatched alarms. The \softwarepm{} resource MMD and enriched indicator PELT profiles also matched it and each raised one unmatched alarm. Kairo's recent-window inter-case SOM matched the gradual waiting-time change in Rheon Single 15 with no unmatched alarms. The trained trace cluster frequency profile matched it and raised one unmatched alarm. \autoref{fig:assessment-rheon-signals} pairs the Kairo resource and inter-case SOM signals for these two changes. On the three Padella timing logs, previous-window resource SOM and fixed-model Page-Hinkley conformance each matched two injections and raised nine unmatched alarms. Both missed the speedup in bank account closures.
 
-\begin{figure}[H]
-\centering
-\FigurePlaceholder{TikZ timelines of resource reassignment and gradual waiting-time change. Mark the annotations, score thresholds, and estimated alarms.}
-\caption{Planned comparison of two retrospective Kairo SOM signals. The resource signal uses Rheon Single 11, with a point annotation for reassignment. The inter-case signal uses Rheon Single 15, with an interval annotation for the gradual change in waiting time. Each panel places the total variation scores and alarm threshold against calendar time. The estimated alarm time is the start of its signal window.}
-\label{fig:assessment-rheon-signals}
-\end{figure}
+\input{figures/rheon-signals}
 
 \paragraph{Case composition.}
 On Rheon Multi 03, the dominant region changed three times and returned to region 4 at the last change. Kairo's inter-case SOM with a previous-window reference matched all three shifts and raised two unmatched alarms. The recent-window version matched two with no unmatched alarms. The core \softwarepm{} PELT indicators and flow-and-timing MMD profiles matched none. We then ran a diagnostic with the case attributes supplied explicitly. PELT used region shares and average case amounts, and MMD used region as a categorical feature and amount as a numeric feature. Each detected all three shifts with zero unmatched alarms, including at the 1\% margin. This diagnostic evaluates an attribute choice made after looking at the scenario. It is reported separately from the core ranking.

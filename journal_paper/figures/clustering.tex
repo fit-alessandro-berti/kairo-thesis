@@ -1,0 +1,116 @@
+% The panels share feature-space positions. The rightmost observation
+% contributes to the amber centroid and wins a separate SOM cell.
+\begingroup
+\def\KairoCoreBlue{0.72/1.36,0.89/1.69,0.80/1.53,1.22/1.57}
+\def\KairoBorderBlue{1.02/1.12,1.47/1.28}
+\def\KairoCoreAmber{2.88/1.79,3.04/1.67,3.22/1.71}
+\def\KairoBorderAmber{2.62/1.55,3.04/1.28,3.45/1.54}
+\def\KairoOutlier{3.91/0.77}
+\def\KairoClusterFrame{%
+  \path[use as bounding box] (0,0) rectangle (4.24,2.24);
+  \fill[KairoPaper] (0.12,0.61) rectangle (4.12,2.17);}
+\def\KairoClusterGrid{%
+  \draw[KairoLine!46,line width=0.35pt]
+    (0.12,1.13) -- (4.12,1.13)
+    (0.12,1.65) -- (4.12,1.65)
+    (1.12,0.61) -- (1.12,2.17)
+    (2.12,0.61) -- (2.12,2.17)
+    (3.12,0.61) -- (3.12,2.17);
+  \draw[KairoLine,line width=0.45pt] (0.12,0.61) rectangle (4.12,2.17);}
+\def\KairoClusterPoints#1#2#3{%
+  \foreach \px/\py in #3
+    \draw[draw=#1,fill=#2,line width=0.52pt] (\px,\py) circle[radius=0.048];}
+\def\KairoCentroid#1#2#3{%
+  \begin{scope}[shift={(#2,#3)}]
+    \draw[draw=#1,fill=white,line width=0.65pt] (0,0) circle[radius=0.112];
+    \draw[#1,line width=0.65pt] (-0.060,0) -- (0.060,0) (0,-0.060) -- (0,0.060);
+  \end{scope}}
+\def\KairoClusterCross#1#2{%
+  \begin{scope}[shift={(#1,#2)}]
+    \draw[KairoInk,line width=0.72pt] (-0.066,-0.066) -- (0.066,0.066)
+      (-0.066,0.066) -- (0.066,-0.066);
+  \end{scope}}
+\tikzset{
+  kairo/cluster-caption/.style={anchor=west,inner sep=0pt,text=KairoMuted},
+  kairo/cluster-boundary/.style={KairoMuted,line width=0.55pt,dash pattern=on 2.1pt off 1.5pt},
+  kairo/cluster-assignment/.style={line width=0.58pt,-{Stealth[length=3.8pt,width=3.3pt]}}
+}
+\subfloat[$k$-means\label{fig:approach-clustering-kmeans}]{%
+  \begin{tikzpicture}[kairo/base,x=1cm,y=1cm]
+    \KairoClusterFrame
+    % Perpendicular bisector of the two means in the schematic plane.
+    \fill[KairoBlueTint] (0.12,0.61) -- (2.112,0.61) --
+      (2.077,2.17) -- (0.12,2.17) -- cycle;
+    \fill[KairoAmberTint] (2.112,0.61) -- (4.12,0.61) --
+      (4.12,2.17) -- (2.077,2.17) -- cycle;
+    \KairoClusterGrid
+    \draw[kairo/cluster-boundary] (2.112,0.61) -- (2.077,2.17);
+    \KairoClusterPoints{KairoBlue}{KairoBlue}{\KairoCoreBlue}
+    \KairoClusterPoints{KairoBlue}{KairoBlue}{\KairoBorderBlue}
+    \KairoClusterPoints{KairoAmber}{KairoAmber}{\KairoCoreAmber}
+    \KairoClusterPoints{KairoAmber}{KairoAmber}{\KairoBorderAmber}
+    \KairoClusterPoints{KairoAmber}{KairoAmber}{\KairoOutlier}
+    \KairoCentroid{KairoBlue}{1.020}{1.425}
+    \KairoCentroid{KairoAmber}{3.166}{1.473}
+    \KairoCentroid{KairoMuted}{0.32}{0.27}
+    \node[kairo/cluster-caption] at (0.52,0.27) {Centroid};
+    \draw[kairo/cluster-boundary] (1.94,0.27) -- (2.35,0.27);
+    \node[kairo/cluster-caption] at (2.48,0.27) {Boundary};
+  \end{tikzpicture}}%
+\hfill
+\subfloat[Self-organizing map\label{fig:approach-clustering-som}]{%
+  \begin{tikzpicture}[kairo/base,x=1cm,y=1cm]
+    \KairoClusterFrame
+    \KairoClusterGrid
+    % In feature space the grid prototypes are (1,1.42), (2.1,1.69),
+    % (3,1.58) on the top row and (1.9,0.65), (2.8,0.60), (3.91,0.77)
+    % on the bottom row. The inset shows their grid topology.
+    \fill[KairoPaper] (1.62,0.04) rectangle (3.00,0.53);
+    \fill[KairoBlueTint] (1.62,0.285) rectangle (2.08,0.53);
+    \fill[KairoAmberTint] (2.54,0.285) rectangle (3.00,0.53);
+    \fill[KairoTealTint] (2.54,0.04) rectangle (3.00,0.285);
+    \draw[KairoLine,line width=0.47pt] (1.62,0.04) rectangle (3.00,0.53)
+      (2.08,0.04) -- (2.08,0.53) (2.54,0.04) -- (2.54,0.53)
+      (1.62,0.285) -- (3.00,0.285);
+    \draw[KairoBlue,kairo/cluster-assignment,shorten >=1pt]
+      (1.02,1.12) .. controls (1.00,0.80) and (1.50,0.72) .. (1.85,0.53);
+    \draw[KairoAmber,kairo/cluster-assignment,shorten >=1pt]
+      (3.04,1.28) .. controls (3.02,1.02) and (2.76,0.77) .. (2.77,0.53);
+    \draw[KairoTeal,kairo/cluster-assignment,shorten >=1pt]
+      (3.91,0.77) .. controls (3.81,0.40) and (3.26,0.16) .. (3.00,0.16);
+    \KairoClusterPoints{KairoBlue}{KairoBlue}{\KairoCoreBlue}
+    \KairoClusterPoints{KairoBlue}{KairoBlue}{\KairoBorderBlue}
+    \KairoClusterPoints{KairoAmber}{KairoAmber}{\KairoCoreAmber}
+    \KairoClusterPoints{KairoAmber}{KairoAmber}{\KairoBorderAmber}
+    \KairoClusterPoints{KairoTeal}{KairoTeal}{\KairoOutlier}
+    \fill[KairoBlue] (1.85,0.41) circle[radius=0.048];
+    \fill[KairoAmber] (2.77,0.41) circle[radius=0.048];
+    \fill[KairoTeal] (2.77,0.16) circle[radius=0.048];
+    \node[kairo/cluster-caption] at (0.12,0.285) {Map grid};
+  \end{tikzpicture}}%
+\hfill
+\subfloat[DBSCAN\label{fig:approach-clustering-dbscan}]{%
+  \begin{tikzpicture}[kairo/base,x=1cm,y=1cm]
+    \KairoClusterFrame
+    % The radius is 0.44 and a core needs four points including itself.
+    \fill[KairoBlueTint] (0.72,1.36) circle[radius=0.44]
+      (1.22,1.57) circle[radius=0.44];
+    \fill[KairoAmberTint] (3.04,1.67) circle[radius=0.44];
+    \KairoClusterGrid
+    \draw[KairoBlue,line width=0.55pt,densely dashed]
+      (0.72,1.36) circle[radius=0.44] (1.22,1.57) circle[radius=0.44];
+    \draw[KairoAmber,line width=0.55pt,densely dashed] (3.04,1.67) circle[radius=0.44];
+    \KairoClusterPoints{KairoBlue}{KairoBlue}{\KairoCoreBlue}
+    \KairoClusterPoints{KairoBlue}{white}{\KairoBorderBlue}
+    \KairoClusterPoints{KairoAmber}{KairoAmber}{\KairoCoreAmber}
+    \KairoClusterPoints{KairoAmber}{white}{\KairoBorderAmber}
+    \foreach \px/\py in \KairoOutlier
+      \KairoClusterCross{\px}{\py}
+    \fill[KairoMuted] (0.26,0.27) circle[radius=0.048];
+    \node[kairo/cluster-caption] at (0.39,0.27) {Core};
+    \draw[KairoMuted,line width=0.52pt] (1.32,0.27) circle[radius=0.048];
+    \node[kairo/cluster-caption] at (1.45,0.27) {Border};
+    \KairoClusterCross{2.63}{0.27}
+    \node[kairo/cluster-caption] at (2.77,0.27) {Noise};
+  \end{tikzpicture}}%
+\endgroup

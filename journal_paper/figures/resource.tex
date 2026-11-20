@@ -1,0 +1,49 @@
+\begin{tikzpicture}[
+  kairo/base, x=1cm, y=1cm,
+  receive/.style={circle, minimum size=4.3pt, inner sep=0pt, line width=0.75pt, fill=white},
+  resolve/.style={rectangle, minimum size=4.1pt, inner sep=0pt},
+  same team/.style={draw=KairoBlue, line width=0.85pt, line cap=round},
+  handover/.style={draw=KairoAmber, line width=0.85pt, dash pattern=on 3pt off 1.5pt,
+    -{Stealth[length=4pt]}, shorten >=3pt}
+]
+  \path[use as bounding box] (0,0) rectangle (13.08,-2.75);
+  % Use the same local time positions as the inter-case diagram.
+  \foreach \windowid/\leftx/\windowtitle/\focalend/\focaly in {
+    c/2.10/Earlier/2.84/-1.31,
+    d/7.81/Later/4.49/-1.97
+  } {
+    \begin{scope}[shift={(\leftx,0)}]
+      \node[font=\footnotesize\bfseries] at (2.635,-0.17)
+        {\windowtitle\ window $W_{\mathrm{\windowid}}$};
+      \path[fill=KairoBlueTint, rounded corners=2pt] (0,-1.58) rectangle (5.27,-0.50);
+      \path[fill=KairoAmberTint, rounded corners=2pt] (0,-2.26) rectangle (5.27,-1.64);
+      \coordinate (companion-start-\windowid) at (1.46,-0.81);
+      \coordinate (companion-end-\windowid) at (3.56,-0.81);
+      \coordinate (focal-start-\windowid) at (0.74,-1.31);
+      \coordinate (focal-end-\windowid) at (\focalend,\focaly);
+    \end{scope}
+  }
+  \node[anchor=east, font=\footnotesize\bfseries] at (1.96,-0.49) {Frontline};
+  \node[anchor=east, text=KairoMuted] at (1.96,-0.81) {Companion};
+  \node[anchor=east, text=KairoMuted] at (1.96,-1.31) {Focal case};
+  \node[anchor=east, font=\footnotesize\bfseries] at (1.96,-1.97) {Specialist};
+  \foreach \windowid in {c,d} {
+    \draw[same team] (companion-start-\windowid) -- (companion-end-\windowid);
+    \node[receive, draw=KairoBlue] at (companion-start-\windowid) {};
+    \node[resolve, fill=KairoBlue] at (companion-end-\windowid) {};
+  }
+  \draw[same team] (focal-start-c) -- (focal-end-c);
+  \draw[handover] (focal-start-d) -- (focal-end-d);
+  \node[anchor=south, text=KairoAmber, inner sep=1pt] at (10.69,-1.59) {Handover};
+  \node[receive, draw=KairoBlue] at (focal-start-c) {};
+  \node[receive, draw=KairoBlue] at (focal-start-d) {};
+  \node[resolve, fill=KairoBlue] at (focal-end-c) {};
+  \node[resolve, fill=KairoAmber] at (focal-end-d) {};
+  \node[receive, draw=KairoMuted] at (4.85,-2.60) {};
+  \node[anchor=west, text=KairoMuted] at (4.98,-2.60) {Receive};
+  \node[resolve, fill=KairoMuted] at (6.56,-2.60) {};
+  \node[anchor=west, text=KairoMuted] at (6.69,-2.60) {Resolve};
+  \draw[-{Stealth[length=4pt]}, draw=KairoMuted, line width=0.5pt]
+    (8.19,-2.60) -- (8.74,-2.60);
+  \node[anchor=west, text=KairoMuted] at (8.84,-2.60) {Time within window};
+\end{tikzpicture}

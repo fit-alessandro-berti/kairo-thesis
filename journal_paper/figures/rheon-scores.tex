@@ -1,0 +1,42 @@
+% Data for the side-by-side assessment panels.
+% The source paths below are relative to assessments/concept-drift/results/.
+% Calendar coordinates are normalized from the first window start to the last window end.
+% Scores keep their original scale, with coordinates rounded to six decimal places.
+
+% rheon_single_11/dataset.json and rheon_single_11/kairo/resource-som/recent.json.
+\def\RheonReassignmentPath{%
+  \draw[rheon/series] plot[mark=*,mark size=1.05pt] coordinates {
+    (0.093750,0.240741) (0.125000,0.092593) (0.156250,0.074074) (0.187500,0.148148)
+    (0.218750,0.074074) (0.250000,0.092593) (0.281250,0.240741) (0.312500,0.111111)
+    (0.343750,0.259259) (0.375000,0.259259) (0.406250,0.777778) (0.437500,0.759259)
+    (0.468750,0.444444) (0.500000,0.314815) (0.531250,0.222222) (0.562500,0.111111)
+    (0.593750,0.111111) (0.625000,0.277778) (0.656250,0.111111) (0.687500,0.240741)
+    (0.718750,0.074074) (0.750000,0.129630) (0.781250,0.240741) (0.812500,0.055556)
+    (0.843750,0.222222) (0.875000,0.148148) (0.906250,0.203704) (0.937500,0.092593)
+    (0.968750,0.444444)
+  };%
+}
+\def\RheonReassignmentEdge{(0.968750,0.444444)}
+\def\RheonReassignmentAlarm{(0.406250,0.777778)}
+\def\RheonReassignmentThreshold{0.649074}
+\def\RheonReassignmentOnset{0.414687}
+\def\RheonReassignmentTicks{0.026042/Apr 2020, 0.343750/Jun, 0.661458/Aug, 0.979167/Oct}
+
+% rheon_single_15/dataset.json and rheon_single_15/kairo/inter-som/recent.json.
+\def\RheonWaitingPath{%
+  \draw[rheon/series] plot[mark=*,mark size=1.05pt] coordinates {
+    (0.100000,0.392857) (0.133333,0.273810) (0.166667,0.464286) (0.200000,0.190476)
+    (0.233333,0.047619) (0.266667,0.107143) (0.300000,0.095238) (0.333333,0.071429)
+    (0.366667,0.166667) (0.400000,0.607143) (0.433333,0.869048) (0.466667,0.785714)
+    (0.500000,0.511905) (0.533333,0.369048) (0.566667,0.285714) (0.600000,0.142857)
+    (0.633333,0.047619) (0.666667,0.154762) (0.700000,0.642857) (0.733333,0.369048)
+    (0.766667,0.250000) (0.800000,0.535714) (0.833333,0.190476) (0.866667,0.345238)
+    (0.900000,0.750000) (0.933333,0.761905) (0.966667,0.531746)
+  };%
+}
+\def\RheonWaitingEdge{(0.966667,0.531746)}
+\def\RheonWaitingAlarm{(0.433333,0.869048)}
+\def\RheonWaitingThreshold{0.779762}
+\def\RheonWaitingOnset{0.364286}
+\def\RheonWaitingEnd{0.468571}
+\def\RheonWaitingTicks{0.016667/2015, 0.233929/2016, 0.451786/2017, 0.669048/2018, 0.886310/2019}

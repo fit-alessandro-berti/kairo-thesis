@@ -22,28 +22,28 @@ The recent-window reference gives $V_{\mathrm C}$ a higher score because its ref
 
 \begin{figure}[H]
   \centering
-  \FigurePlaceholder[0.30]{TikZ timeline of $W_{\mathrm a}$ through $W_{\mathrm f}$. Label each state at its feature-window start. Bracket the pairs as $V_{\mathrm A}$, $V_{\mathrm B}$, and $V_{\mathrm C}$.}
+  \input{figures/signal-windows}
   \caption{Signal windows in the service-desk example. In the middle signal window, Frontline resolves both cases in the earlier feature window and Specialist resolves the focal case in the later one.}
   \label{fig:approach-signal-windows}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \FigurePlaceholder[0.30]{TikZ stacked bars for $P_{\mathrm A}$, $P_{\mathrm B}$, and $P_{\mathrm C}$ on the same share scale. Use a legend for states $\mathsf R$ and $\mathsf S$.}
+  \input{figures/state-distributions}
   \caption{Observed state distributions in the signal windows. The first and last windows contain only $\mathsf R$ and $\mathsf S$, respectively. The middle window contains equal shares.}
   \label{fig:approach-state-distributions}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \FigurePlaceholder[0.30]{TikZ bars for the references at $V_{\mathrm C}$. Show the previous window, recent mean, and whole-log mean beside $P_{\mathrm C}$.}
+  \input{figures/reference-distributions}
   \caption{Reference distributions for scoring $V_{\mathrm C}$. The recent-window reference has less $\mathsf S$ than the previous-window and whole-log references in this example.}
   \label{fig:approach-reference-distributions}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \FigurePlaceholder[0.30]{TikZ drift scores on a common total-variation scale. Mark each score at its signal-window start. Leave unavailable local scores blank.}
-  \caption{Illustrative total-variation scores. With the previous-window reference, the middle and last windows have equal scores. The recent-window reference gives a larger score to the last window, and the whole-log reference makes the middle score zero.}
+  \input{figures/drift-scores}
+  \caption{Illustrative total-variation scores with $\alpha=P_{\mathrm B}(\mathsf S)$. Missing points indicate that the reference needs more history. The whole-log reference gives the middle window a defined score of zero.}
   \label{fig:approach-drift-scores}
 \end{figure}

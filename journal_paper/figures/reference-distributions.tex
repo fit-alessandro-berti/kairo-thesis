@@ -1,0 +1,28 @@
+\begin{tikzpicture}[kairo/base, x=1cm, y=1cm]
+  \foreach \fromX/\barTitle/\barSource/\ink in {
+    0/{Current window}/{$P_{\mathrm C}$}/KairoInk,
+    3.52/{Previous window}/{$P_{\mathrm B}$}/KairoMuted,
+    6.88/{Recent mean}/{$\operatorname{mean}(P_{\mathrm A},P_{\mathrm B})$}/KairoTeal,
+    10.24/{Whole-log mean}/{Equals $P_{\mathrm B}$ here}/KairoMuted%
+  } {
+    \node[inner sep=0pt, text=\ink, font=\footnotesize\bfseries]
+      at ({\fromX+1.435},1.32) {\barTitle};
+    \node[anchor=north, inner sep=0pt, text=KairoMuted]
+      at ({\fromX+1.435},0.53) {\barSource};
+  }
+  \draw[KairoLine, line width=0.5pt] (3.19,0.22) -- (3.19,1.45);
+
+  \foreach \fromX/\toX/\state/\shade/\ink in {
+    0/2.87/S/KairoAmberTint/KairoAmber,
+    3.52/4.955/R/KairoBlueTint/KairoBlue,
+    4.955/6.39/S/KairoAmberTint/KairoAmber,
+    6.88/9.0325/R/KairoBlueTint/KairoBlue,
+    9.0325/9.75/S/KairoAmberTint/KairoAmber,
+    10.24/11.675/R/KairoBlueTint/KairoBlue,
+    11.675/13.11/S/KairoAmberTint/KairoAmber%
+  } {
+    \fill[fill=\shade] (\fromX,0.65) rectangle (\toX,1.10);
+    \draw[draw=\ink, line width=0.5pt] (\fromX,0.65) rectangle (\toX,1.10);
+    \node[text=\ink] at ({(\fromX+\toX)/2},0.875) {$\mathsf{\state}$};
+  }
+\end{tikzpicture}

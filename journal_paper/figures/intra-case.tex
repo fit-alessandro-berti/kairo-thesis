@@ -1,0 +1,23 @@
+\begin{tikzpicture}[
+  kairo/base, x=1cm, y=1cm,
+  activity/.style={
+    rounded corners=2pt, minimum width=1.58cm, minimum height=0.37cm,
+    draw=KairoLine, fill=white, inner sep=2pt
+  },
+  current/.style={activity, draw=KairoBlue, fill=KairoBlueTint, text=KairoBlue},
+  follows/.style={-{Stealth[length=4pt]}, draw=KairoMuted, line width=0.45pt}
+]
+  \path[use as bounding box] (0,0) rectangle (13.08,-1.56);
+  \path[fill=KairoPaper, rounded corners=3pt] (1.69,-1.55) rectangle (7.23,-0.40);
+  \path[fill=KairoPaper, rounded corners=3pt] (7.49,-1.55) rectangle (13.03,-0.40);
+  \node[anchor=west, font=\footnotesize\bfseries] at (0,-0.16) {Case};
+  \node[font=\footnotesize\bfseries] at (4.46,-0.16) {Prefix at Receive};
+  \node[font=\footnotesize\bfseries] at (10.26,-0.16) {Prefix at Resolve};
+  \foreach \caseid/\rowy in {c/-0.72,d/-1.23} {
+    \node[anchor=west] at (0,\rowy) {$\mathrm{\caseid}$};
+    \node[current] at (4.46,\rowy) {Receive};
+    \node[activity, text=KairoMuted] (receive-\caseid) at (9.29,\rowy) {Receive};
+    \node[current] (resolve-\caseid) at (11.23,\rowy) {Resolve};
+    \draw[follows] (receive-\caseid.east) -- (resolve-\caseid.west);
+  }
+\end{tikzpicture}
