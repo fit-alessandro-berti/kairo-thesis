@@ -1,0 +1,56 @@
+{
+  "id": "cdrift_ceravolo_rio_noise15",
+  "family": "cdrift",
+  "scenario": "ceravolo",
+  "source": {
+    "repository": "https://github.com/cpitsch/cdrift-evaluation",
+    "revision": "1ca37fa79eaf50c2f25ef7857ccf27065d15d57e",
+    "event_log": "https://raw.githubusercontent.com/cpitsch/cdrift-evaluation/1ca37fa79eaf50c2f25ef7857ccf27065d15d57e/EvaluationLogs/Ceravolo/sudden_trace_noise15_1000_RIO.xes.gz",
+    "sha256": "a2257a87a5b723952373b8cd10a9d06a57ef6b6921b1d3349e6533a5c48cec1c",
+    "ground_truth": "https://github.com/cpitsch/cdrift-evaluation/blob/1ca37fa79eaf50c2f25ef7857ccf27065d15d57e/testAll_reproducibility.py#L463-L482",
+    "archive_path": "EvaluationLogs/Ceravolo/sudden_trace_noise15_1000_RIO.xes.gz",
+    "truth_time_basis": "start of case 500, the first case of the changed half by numeric generator ID",
+    "original_drift_design": "https://doi.org/10.21227/2kxd-m509"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 139,
+    "adjacent_source_order_completion_inversions": 449,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "2019-01-17T14:00:00+00:00",
+      "end": "2019-01-17T14:00:00+00:00",
+      "native_first_post_change_case_id": "500",
+      "native_last_pre_change_case_start": "2019-01-17T06:20:00+00:00",
+      "native_first_post_change_case_completion": "2019-01-17T19:57:01.148000+00:00",
+      "native_archive_last_pre_change_ordinal": 499,
+      "native_archive_first_post_change_ordinal": 500,
+      "native_archive_first_post_change_case_id": "549",
+      "native_archive_first_post_change_case_start": "2019-01-18T06:20:00+00:00"
+    }
+  ],
+  "events": 10554,
+  "cases": 1000,
+  "activities": 15,
+  "resources": 0,
+  "first_timestamp": "2019-01-10T08:00:00+00:00",
+  "last_timestamp": "2019-01-24T20:53:44.218000+00:00",
+  "observation_span_seconds": 1256024.218,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2019-01-17T14:00:00+00:00",
+      "end": "2019-01-17T14:00:00+00:00",
+      "annotations": [
+        "d01"
+      ]
+    }
+  ]
+}

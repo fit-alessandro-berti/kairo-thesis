@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_single_03",
+  "library": "pm4py",
+  "method": "dfg-frequency",
+  "profile": "g-test-wide",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 1063,
+      "timestamp": "2022-09-15T11:51:44+00:00",
+      "available_at": "2022-10-15T01:04:01+00:00",
+      "score": 0.46199312165588724,
+      "p_value": 1.4296645754136748e-118,
+      "details": {
+        "changed_relations": {
+          "[\"a\", \"b\"]": -0.2393048128342246,
+          "[\"a\", \"d\"]": 0.19786096256684493,
+          "[\"d\", \"e\"]": 0.14572192513368987,
+          "[\"b\", \"c\"]": -0.05213903743315507,
+          "[\"c\", \"d\"]": -0.05213903743315507
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 296, "timestamp": "2022-09-05T08:39:50+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 355, "timestamp": "2022-09-06T00:34:26+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 414, "timestamp": "2022-09-06T19:50:59+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 473, "timestamp": "2022-09-07T22:24:50+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 532, "timestamp": "2022-09-08T16:39:07+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 591, "timestamp": "2022-09-09T09:25:03+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 650, "timestamp": "2022-09-10T06:02:47+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 709, "timestamp": "2022-09-11T01:51:15+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 768, "timestamp": "2022-09-11T19:08:47+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 827, "timestamp": "2022-09-12T15:38:59+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.11877456670771422, "p_value": 3.383214043841006e-09},
+    {"index": 886, "timestamp": "2022-09-13T08:50:44+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.1841977570164581, "p_value": 5.510927713358854e-22},
+    {"index": 945, "timestamp": "2022-09-13T23:49:01+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.2553243359458079, "p_value": 3.4340164896293056e-41},
+    {"index": 1004, "timestamp": "2022-09-14T17:39:12+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.33385078347696845, "p_value": 2.3958146858336517e-67},
+    {"index": 1063, "timestamp": "2022-09-15T11:51:44+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.46199312165588724, "p_value": 1.4296645754136748e-118},
+    {"index": 1122, "timestamp": "2022-09-16T10:27:58+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.42393806817311663, "p_value": 1.5776054657148805e-91},
+    {"index": 1181, "timestamp": "2022-09-17T06:37:52+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.3586564405697886, "p_value": 1.686035805854332e-62},
+    {"index": 1240, "timestamp": "2022-09-18T01:36:47+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.28687264054734896, "p_value": 2.6247241656416346e-38},
+    {"index": 1299, "timestamp": "2022-09-18T22:01:13+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.21344183083988352, "p_value": 4.079072326376527e-20},
+    {"index": 1358, "timestamp": "2022-09-19T21:24:05+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0777976264294815, "p_value": 0.014091202931291923},
+    {"index": 1417, "timestamp": "2022-09-20T15:24:18+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.010707426845449817, "p_value": 0.9716297407515826},
+    {"index": 1476, "timestamp": "2022-09-21T12:00:08+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.006413170903159908, "p_value": 0.9936114246684484},
+    {"index": 1535, "timestamp": "2022-09-22T05:12:11+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.019176910011574753, "p_value": 0.859222243863788},
+    {"index": 1594, "timestamp": "2022-09-22T21:42:19+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.008558354417606632, "p_value": 0.9851278608471732},
+    {"index": 1653, "timestamp": "2022-09-23T13:44:20+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.008529424222811808, "p_value": 0.9852159031398512},
+    {"index": 1712, "timestamp": "2022-09-24T07:38:47+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.006413170903159932, "p_value": 0.9936114246684484},
+    {"index": 1771, "timestamp": "2022-09-25T03:27:02+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.019380977559880046, "p_value": 0.8568449316823439},
+    {"index": 1830, "timestamp": "2022-09-25T17:52:34+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00431062668217993, "p_value": 0.998050587540501},
+    {"index": 1889, "timestamp": "2022-09-26T10:18:16+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.019309079653624914, "p_value": 0.8577085197425822},
+    {"index": 1948, "timestamp": "2022-09-27T06:45:59+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.03018115631768837, "p_value": 0.6011597354373717},
+    {"index": 2007, "timestamp": "2022-09-27T22:40:59+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.021640916387499397, "p_value": 0.8119802379912989},
+    {"index": 2066, "timestamp": "2022-09-28T19:31:10+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 2125, "timestamp": "2022-09-29T15:22:20+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 2184, "timestamp": "2022-09-30T12:23:34+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.010787289920727786, "p_value": 0.9712437040065238},
+    {"index": 2243, "timestamp": "2022-10-01T09:01:42+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.042963938147216975, "p_value": 0.2854175454666325},
+    {"index": 2302, "timestamp": "2022-10-02T04:00:17+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.053389429847900106, "p_value": 0.11784693667278529},
+    {"index": 2361, "timestamp": "2022-10-03T00:19:34+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.027843853279817095, "p_value": 0.660793548361504},
+    {"index": 2420, "timestamp": "2022-10-03T21:30:03+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0021532416938065736, "p_value": 0.9997546905078654},
+    {"index": 2479, "timestamp": "2022-10-04T17:46:47+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.006435830556506482, "p_value": 0.9935702478233127},
+    {"index": 2538, "timestamp": "2022-10-05T11:03:14+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.027795406433995747, "p_value": 0.6615648467210069},
+    {"index": 2597, "timestamp": "2022-10-06T07:37:15+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.062160675156964794, "p_value": 0.04722247332315374},
+    {"index": 2656, "timestamp": "2022-10-06T23:33:40+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.021397914141057208, "p_value": 0.8152974501988706},
+    {"index": 2715, "timestamp": "2022-10-07T18:41:11+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.010707426845449817, "p_value": 0.9716297407515826},
+    {"index": 2774, "timestamp": "2022-10-08T10:33:51+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.010653178304484713, "p_value": 0.9718770271093823},
+    {"index": 2833, "timestamp": "2022-10-09T04:59:05+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.019309079653624914, "p_value": 0.8577085197425822},
+    {"index": 2892, "timestamp": "2022-10-10T00:32:54+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.03463190337829733, "p_value": 0.484895726862559},
+    {"index": 2951, "timestamp": "2022-10-10T18:38:54+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.006459785139820542, "p_value": 0.9935252880387224}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "representation": "directly_follows_frequency",
+    "method": "dfg_frequency",
+    "test": "g_test",
+    "retrospective": true,
+    "window_size": 296,
+    "step": 59,
+    "alpha": 0.03,
+    "min_effect": 0.1,
+    "persistence": 2,
+    "min_separation": 296,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 296,
+    "step": 59,
+    "min_separation": 296,
+    "permutations": 99,
+    "random_state": 73,
+    "alpha": 0.03,
+    "persistence": 2,
+    "test": "g_test",
+    "min_effect": 0.1
+  },
+  "runtime_seconds": 1.173864,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 38054.41,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -2224.0,
+            "distance_to_truth_interval_seconds": 2224.0,
+            "availability_minus_onset_seconds": 2550913.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 95136.025,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -2224.0,
+            "distance_to_truth_interval_seconds": 2224.0,
+            "availability_minus_onset_seconds": 2550913.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 190272.05,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -2224.0,
+            "distance_to_truth_interval_seconds": 2224.0,
+            "availability_minus_onset_seconds": 2550913.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 46,
+    "published_count": 46,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

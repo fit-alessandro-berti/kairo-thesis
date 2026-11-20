@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_single_03",
+  "library": "kairo",
+  "method": "intra-kmeans",
+  "profile": "previous",
+  "status": "ok",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "intra",
+    "features": {
+      "groups": [
+        "act_freqs",
+        "df_counts",
+        "act_set",
+        "case_progress",
+        "current_act",
+        "past_acts"
+      ],
+      "sliding_window_size": 3,
+      "omitted_feature_groups": []
+    },
+    "reduction": {
+      "scaling": "minmax",
+      "feature_columns": 36,
+      "feature_rows": 12992,
+      "pca_components": 5,
+      "pca_seed": 0,
+      "pca_retained_variance": 0.8786461369062768
+    },
+    "clustering": {
+      "method": "kmeans",
+      "k": 5,
+      "random_seed": 0
+    },
+    "signal": {
+      "window": "1D",
+      "divergence": "js",
+      "reference": "previous",
+      "lookback": null,
+      "threshold_quantile": 0.9,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "changes": [
+    {
+      "index": 14,
+      "timestamp": "2022-09-15T00:00:00+00:00",
+      "available_at": "2022-10-15T01:04:01+00:00",
+      "score": 0.012247917205416266,
+      "details": {
+        "window_end": "2022-09-16T00:00:00+00:00",
+        "rows": 291,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    },
+    {
+      "index": 21,
+      "timestamp": "2022-09-22T00:00:00+00:00",
+      "available_at": "2022-10-15T01:04:01+00:00",
+      "score": 0.009170464994861037,
+      "details": {
+        "window_end": "2022-09-23T00:00:00+00:00",
+        "rows": 289,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    },
+    {
+      "index": 28,
+      "timestamp": "2022-09-29T00:00:00+00:00",
+      "available_at": "2022-10-15T01:04:01+00:00",
+      "score": 0.007420427124789382,
+      "details": {
+        "window_end": "2022-09-30T00:00:00+00:00",
+        "rows": 248,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    },
+    {
+      "index": 35,
+      "timestamp": "2022-10-06T00:00:00+00:00",
+      "available_at": "2022-10-15T01:04:01+00:00",
+      "score": 0.010757913942189204,
+      "details": {
+        "window_end": "2022-10-07T00:00:00+00:00",
+        "rows": 257,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2022-09-01T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": null, "details": {"window_end": "2022-09-02T00:00:00+00:00", "rows": 269, "coverage": 0.9944212962962963, "eligible": false}},
+    {"index": 1, "timestamp": "2022-09-02T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 4.724527407236768e-05, "details": {"window_end": "2022-09-03T00:00:00+00:00", "rows": 377, "coverage": 1.0, "eligible": true}},
+    {"index": 2, "timestamp": "2022-09-03T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00017085612401773363, "details": {"window_end": "2022-09-04T00:00:00+00:00", "rows": 342, "coverage": 1.0, "eligible": true}},
+    {"index": 3, "timestamp": "2022-09-04T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 9.02503267850561e-05, "details": {"window_end": "2022-09-05T00:00:00+00:00", "rows": 354, "coverage": 1.0, "eligible": true}},
+    {"index": 4, "timestamp": "2022-09-05T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 3.331881824857356e-05, "details": {"window_end": "2022-09-06T00:00:00+00:00", "rows": 436, "coverage": 1.0, "eligible": true}},
+    {"index": 5, "timestamp": "2022-09-06T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00020818409638248124, "details": {"window_end": "2022-09-07T00:00:00+00:00", "rows": 346, "coverage": 1.0, "eligible": true}},
+    {"index": 6, "timestamp": "2022-09-07T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00042624398545265923, "details": {"window_end": "2022-09-08T00:00:00+00:00", "rows": 271, "coverage": 1.0, "eligible": true}},
+    {"index": 7, "timestamp": "2022-09-08T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00019419521853918998, "details": {"window_end": "2022-09-09T00:00:00+00:00", "rows": 427, "coverage": 1.0, "eligible": true}},
+    {"index": 8, "timestamp": "2022-09-09T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00021152852780726913, "details": {"window_end": "2022-09-10T00:00:00+00:00", "rows": 327, "coverage": 1.0, "eligible": true}},
+    {"index": 9, "timestamp": "2022-09-10T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0003766385509860236, "details": {"window_end": "2022-09-11T00:00:00+00:00", "rows": 380, "coverage": 1.0, "eligible": true}},
+    {"index": 10, "timestamp": "2022-09-11T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00011201020229229799, "details": {"window_end": "2022-09-12T00:00:00+00:00", "rows": 406, "coverage": 1.0, "eligible": true}},
+    {"index": 11, "timestamp": "2022-09-12T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 5.724106780022147e-05, "details": {"window_end": "2022-09-13T00:00:00+00:00", "rows": 381, "coverage": 1.0, "eligible": true}},
+    {"index": 12, "timestamp": "2022-09-13T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00017975521646910369, "details": {"window_end": "2022-09-14T00:00:00+00:00", "rows": 439, "coverage": 1.0, "eligible": true}},
+    {"index": 13, "timestamp": "2022-09-14T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0003134763985923742, "details": {"window_end": "2022-09-15T00:00:00+00:00", "rows": 402, "coverage": 1.0, "eligible": true}},
+    {"index": 14, "timestamp": "2022-09-15T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.012247917205416266, "details": {"window_end": "2022-09-16T00:00:00+00:00", "rows": 291, "coverage": 1.0, "eligible": true}},
+    {"index": 15, "timestamp": "2022-09-16T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.032053854777858846, "details": {"window_end": "2022-09-17T00:00:00+00:00", "rows": 232, "coverage": 1.0, "eligible": true}},
+    {"index": 16, "timestamp": "2022-09-17T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 8.665050934199715e-05, "details": {"window_end": "2022-09-18T00:00:00+00:00", "rows": 250, "coverage": 1.0, "eligible": true}},
+    {"index": 17, "timestamp": "2022-09-18T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.003389514828490975, "details": {"window_end": "2022-09-19T00:00:00+00:00", "rows": 239, "coverage": 1.0, "eligible": true}},
+    {"index": 18, "timestamp": "2022-09-19T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0005328115605353232, "details": {"window_end": "2022-09-20T00:00:00+00:00", "rows": 241, "coverage": 1.0, "eligible": true}},
+    {"index": 19, "timestamp": "2022-09-20T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00014714216726780948, "details": {"window_end": "2022-09-21T00:00:00+00:00", "rows": 247, "coverage": 1.0, "eligible": true}},
+    {"index": 20, "timestamp": "2022-09-21T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0012870022398581192, "details": {"window_end": "2022-09-22T00:00:00+00:00", "rows": 263, "coverage": 1.0, "eligible": true}},
+    {"index": 21, "timestamp": "2022-09-22T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.009170464994861037, "details": {"window_end": "2022-09-23T00:00:00+00:00", "rows": 289, "coverage": 1.0, "eligible": true}},
+    {"index": 22, "timestamp": "2022-09-23T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.004013822185225886, "details": {"window_end": "2022-09-24T00:00:00+00:00", "rows": 308, "coverage": 1.0, "eligible": true}},
+    {"index": 23, "timestamp": "2022-09-24T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0001360598852157757, "details": {"window_end": "2022-09-25T00:00:00+00:00", "rows": 257, "coverage": 1.0, "eligible": true}},
+    {"index": 24, "timestamp": "2022-09-25T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00034253566030969206, "details": {"window_end": "2022-09-26T00:00:00+00:00", "rows": 325, "coverage": 1.0, "eligible": true}},
+    {"index": 25, "timestamp": "2022-09-26T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 7.856676463556392e-05, "details": {"window_end": "2022-09-27T00:00:00+00:00", "rows": 285, "coverage": 1.0, "eligible": true}},
+    {"index": 26, "timestamp": "2022-09-27T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00011218875588397698, "details": {"window_end": "2022-09-28T00:00:00+00:00", "rows": 278, "coverage": 1.0, "eligible": true}},
+    {"index": 27, "timestamp": "2022-09-28T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0028936943049410113, "details": {"window_end": "2022-09-29T00:00:00+00:00", "rows": 217, "coverage": 1.0, "eligible": true}},
+    {"index": 28, "timestamp": "2022-09-29T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.007420427124789382, "details": {"window_end": "2022-09-30T00:00:00+00:00", "rows": 248, "coverage": 1.0, "eligible": true}},
+    {"index": 29, "timestamp": "2022-09-30T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0004089304299165898, "details": {"window_end": "2022-10-01T00:00:00+00:00", "rows": 254, "coverage": 1.0, "eligible": true}},
+    {"index": 30, "timestamp": "2022-10-01T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0035286107841605097, "details": {"window_end": "2022-10-02T00:00:00+00:00", "rows": 221, "coverage": 1.0, "eligible": true}},
+    {"index": 31, "timestamp": "2022-10-02T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0016830921791748592, "details": {"window_end": "2022-10-03T00:00:00+00:00", "rows": 268, "coverage": 1.0, "eligible": true}},
+    {"index": 32, "timestamp": "2022-10-03T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0017003322686707607, "details": {"window_end": "2022-10-04T00:00:00+00:00", "rows": 233, "coverage": 1.0, "eligible": true}},
+    {"index": 33, "timestamp": "2022-10-04T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00022400197036962616, "details": {"window_end": "2022-10-05T00:00:00+00:00", "rows": 260, "coverage": 1.0, "eligible": true}},
+    {"index": 34, "timestamp": "2022-10-05T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00022604140026709135, "details": {"window_end": "2022-10-06T00:00:00+00:00", "rows": 289, "coverage": 1.0, "eligible": true}},
+    {"index": 35, "timestamp": "2022-10-06T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.010757913942189204, "details": {"window_end": "2022-10-07T00:00:00+00:00", "rows": 257, "coverage": 1.0, "eligible": true}},
+    {"index": 36, "timestamp": "2022-10-07T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.001629779397638747, "details": {"window_end": "2022-10-08T00:00:00+00:00", "rows": 264, "coverage": 1.0, "eligible": true}},
+    {"index": 37, "timestamp": "2022-10-08T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0005931811417505279, "details": {"window_end": "2022-10-09T00:00:00+00:00", "rows": 293, "coverage": 1.0, "eligible": true}},
+    {"index": 38, "timestamp": "2022-10-09T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.001142259251442788, "details": {"window_end": "2022-10-10T00:00:00+00:00", "rows": 260, "coverage": 1.0, "eligible": true}},
+    {"index": 39, "timestamp": "2022-10-10T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0023103078896088295, "details": {"window_end": "2022-10-11T00:00:00+00:00", "rows": 282, "coverage": 1.0, "eligible": true}},
+    {"index": 40, "timestamp": "2022-10-11T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.00012664770942336917, "details": {"window_end": "2022-10-12T00:00:00+00:00", "rows": 258, "coverage": 1.0, "eligible": true}},
+    {"index": 41, "timestamp": "2022-10-12T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0004153271911574593, "details": {"window_end": "2022-10-13T00:00:00+00:00", "rows": 241, "coverage": 1.0, "eligible": true}},
+    {"index": 42, "timestamp": "2022-10-13T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0028546648062268403, "details": {"window_end": "2022-10-14T00:00:00+00:00", "rows": 218, "coverage": 1.0, "eligible": true}},
+    {"index": 43, "timestamp": "2022-10-14T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.0009808409116768679, "details": {"window_end": "2022-10-15T00:00:00+00:00", "rows": 254, "coverage": 1.0, "eligible": true}},
+    {"index": 44, "timestamp": "2022-10-15T00:00:00+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.043172304589079405, "details": {"window_end": "2022-10-16T00:00:00+00:00", "rows": 13, "coverage": 0.04445601851851852, "eligible": false}}
+  ],
+  "metadata": {
+    "threshold": 0.006739106136876697,
+    "median_rows": 269.0,
+    "eligible_windows": 43,
+    "occupied_states": 5,
+    "distinct_feature_rows": 12
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 38054.41,
+        "tp": 0,
+        "fp": 4,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 95136.025,
+        "tp": 1,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -44928.0,
+            "distance_to_truth_interval_seconds": 44928.0,
+            "availability_minus_onset_seconds": 2550913.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          1,
+          2,
+          3
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 190272.05,
+        "tp": 1,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -44928.0,
+            "distance_to_truth_interval_seconds": 44928.0,
+            "availability_minus_onset_seconds": 2550913.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 45,
+    "published_count": 45,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

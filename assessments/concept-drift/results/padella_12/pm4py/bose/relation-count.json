@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_12",
+  "library": "pm4py",
+  "method": "bose",
+  "profile": "relation-count",
+  "status": "ok",
+  "detector_source_revision": "765435bc7f5190adf30be7314d7158b92ff433c4",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "timestamp": "2012-01-18T13:46:41.746000051+00:00",
+      "p_value": 0.0175,
+      "available_at": "2012-03-14T17:04:54.681000+00:00"
+    },
+    {
+      "timestamp": "2012-01-30T15:04:27.846999884+00:00",
+      "p_value": 0.015,
+      "available_at": "2012-03-14T17:04:54.681000+00:00"
+    }
+  ],
+  "scores": [],
+  "metadata": {
+    "retrospective": true,
+    "trace_order": "start",
+    "input_format": "EventLog",
+    "score_output": "legacy API returns p-values only for alarms"
+  },
+  "configuration": {
+    "sub_log_size": 50,
+    "window_size": 6,
+    "num_permutations": 399,
+    "thresh_p_value": 0.025,
+    "max_no_change_points": 100,
+    "random_state": 73
+  },
+  "runtime_seconds": 20.944207,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 142773.77981,
+        "tp": 0,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 356934.449525,
+        "tp": 0,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 713868.89905,
+        "tp": 0,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 0,
+    "published_count": 0,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

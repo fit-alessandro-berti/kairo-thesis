@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ostovar_loop",
+  "library": "pm4py",
+  "method": "conformance-profile",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [],
+  "scores": [
+    {"index": 120, "timestamp": "1970-01-02T22:17:02.193000+00:00", "available_at": "1970-01-03T20:20:46.862000+00:00", "score": 0.0},
+    {"index": 256, "timestamp": "1970-01-03T20:35:23.451000+00:00", "available_at": "1970-01-04T20:17:57.270000+00:00", "score": 0.0049227611999566045},
+    {"index": 392, "timestamp": "1970-01-04T20:19:43.080000+00:00", "available_at": "1970-01-05T17:24:46.290000+00:00", "score": 0.008829661640814113},
+    {"index": 528, "timestamp": "1970-01-05T17:27:26.350000+00:00", "available_at": "1970-01-06T16:56:02.569000+00:00", "score": 0.00041776380220459597},
+    {"index": 664, "timestamp": "1970-01-06T16:56:51.321000+00:00", "available_at": "1970-01-07T16:32:14.286000+00:00", "score": 0.0025961591947429863},
+    {"index": 800, "timestamp": "1970-01-07T16:46:26.557000+00:00", "available_at": "1970-01-08T14:35:28.420000+00:00", "score": 0.0029851299143623944},
+    {"index": 936, "timestamp": "1970-01-08T14:44:30.870000+00:00", "available_at": "1970-01-09T20:41:37.322000+00:00", "score": 0.06755751704811491},
+    {"index": 1072, "timestamp": "1970-01-09T20:52:57.052000+00:00", "available_at": "1970-01-10T19:36:35.898000+00:00", "score": 0.02551986658795378},
+    {"index": 1208, "timestamp": "1970-01-10T19:44:14.998000+00:00", "available_at": "1970-01-11T16:08:22.174000+00:00", "score": 0.008441291227426088},
+    {"index": 1344, "timestamp": "1970-01-11T16:12:26.149000+00:00", "available_at": "1970-01-12T16:08:33.449000+00:00", "score": 0.01662175104391028},
+    {"index": 1480, "timestamp": "1970-01-12T16:21:47.007000+00:00", "available_at": "1970-01-13T14:48:42.439000+00:00", "score": 0.007100525893533336},
+    {"index": 1616, "timestamp": "1970-01-13T15:05:41.589000+00:00", "available_at": "1970-01-14T14:07:02.306000+00:00", "score": 0.008337331152089131},
+    {"index": 1752, "timestamp": "1970-01-14T14:53:57.951000+00:00", "available_at": "1970-01-15T11:57:26.512000+00:00", "score": 0.0031480393068085643},
+    {"index": 1888, "timestamp": "1970-01-15T12:17:54.800000+00:00", "available_at": "1970-01-16T04:56:52.863000+00:00", "score": 0.041939550487424454},
+    {"index": 2024, "timestamp": "1970-01-16T04:58:13.870000+00:00", "available_at": "1970-01-17T02:10:51.702000+00:00", "score": 0.040100450869134635},
+    {"index": 2160, "timestamp": "1970-01-17T02:17:01.721000+00:00", "available_at": "1970-01-18T01:20:48.296000+00:00", "score": 0.02113958960295664},
+    {"index": 2296, "timestamp": "1970-01-18T01:22:46.877000+00:00", "available_at": "1970-01-18T23:52:50.931000+00:00", "score": 0.0060919262977146005},
+    {"index": 2432, "timestamp": "1970-01-19T00:01:26.149000+00:00", "available_at": "1970-01-19T22:23:55.244000+00:00", "score": 0.002090658296985737},
+    {"index": 2568, "timestamp": "1970-01-19T22:35:26.913000+00:00", "available_at": "1970-01-20T21:03:56.640000+00:00", "score": 0.004624211131386113},
+    {"index": 2704, "timestamp": "1970-01-20T21:08:17.052000+00:00", "available_at": "1970-01-21T20:03:42.280000+00:00", "score": 1.2555173945605347e-05},
+    {"index": 2840, "timestamp": "1970-01-21T20:12:55.131000+00:00", "available_at": "1970-01-22T17:50:06.160000+00:00", "score": 0.006663179907826167}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "variant": "conformance_profile",
+    "method": "pelt",
+    "retrospective": true,
+    "window_size": 136,
+    "step": 136,
+    "penalty": 0.1,
+    "min_size": 3,
+    "reference_model": [
+      {
+        "places": 49,
+        "transitions": 52,
+        "silent_transitions": 11,
+        "arcs": 118
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      }
+    ],
+    "reference_size": 120,
+    "input_format": "EventLog",
+    "precision_alignment_variant": "VERSION_DIJKSTRA_LESS_MEMORY"
+  },
+  "configuration": {
+    "window_size": 136,
+    "step": 136,
+    "reference_size": 120,
+    "penalty": 0.1,
+    "min_size": 3
+  },
+  "runtime_seconds": 41.512964,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 19393.5749,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 48483.93725,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 96967.8745,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 21,
+    "published_count": 21,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

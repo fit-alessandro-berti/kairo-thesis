@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_multi_07",
+  "library": "pm4py",
+  "method": "conformance-profile",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [],
+  "scores": [
+    {"index": 120, "timestamp": "2025-01-07T10:20:22+00:00", "available_at": "2025-01-09T05:05:10+00:00", "score": 0.0},
+    {"index": 262, "timestamp": "2025-01-09T05:45:10+00:00", "available_at": "2025-01-10T17:54:39+00:00", "score": 0.007140696569008731},
+    {"index": 404, "timestamp": "2025-01-10T18:10:49+00:00", "available_at": "2025-01-12T06:26:47+00:00", "score": 0.0012968231389284268},
+    {"index": 546, "timestamp": "2025-01-12T06:29:48+00:00", "available_at": "2025-01-13T19:49:48+00:00", "score": 0.0024566779217302104},
+    {"index": 688, "timestamp": "2025-01-13T19:51:58+00:00", "available_at": "2025-01-15T10:51:19+00:00", "score": 0.001987635815293043},
+    {"index": 830, "timestamp": "2025-01-15T11:02:05+00:00", "available_at": "2025-01-17T02:29:07+00:00", "score": 0.0053187961271563555},
+    {"index": 972, "timestamp": "2025-01-17T02:50:23+00:00", "available_at": "2025-01-18T10:52:38+00:00", "score": 0.0011379734154260968},
+    {"index": 1114, "timestamp": "2025-01-18T10:53:39+00:00", "available_at": "2025-01-20T05:27:50+00:00", "score": 0.003659538730389822},
+    {"index": 1256, "timestamp": "2025-01-20T06:00:01+00:00", "available_at": "2025-01-23T04:21:37+00:00", "score": 0.0013881684235409475},
+    {"index": 1398, "timestamp": "2025-01-23T05:47:13+00:00", "available_at": "2025-01-26T05:58:31+00:00", "score": 0.003405671029136026},
+    {"index": 1540, "timestamp": "2025-01-26T07:10:59+00:00", "available_at": "2025-01-29T05:24:51+00:00", "score": 0.006008195776798342},
+    {"index": 1682, "timestamp": "2025-01-29T05:27:58+00:00", "available_at": "2025-02-01T13:39:45+00:00", "score": 0.009593854441825034},
+    {"index": 1824, "timestamp": "2025-02-01T14:07:12+00:00", "available_at": "2025-02-04T18:32:56+00:00", "score": 0.006858334134206667},
+    {"index": 1966, "timestamp": "2025-02-04T19:11:00+00:00", "available_at": "2025-02-08T03:54:43+00:00", "score": 0.010320083103528166},
+    {"index": 2108, "timestamp": "2025-02-08T04:13:37+00:00", "available_at": "2025-02-11T01:03:42+00:00", "score": 0.0006975294209337068},
+    {"index": 2250, "timestamp": "2025-02-11T01:22:03+00:00", "available_at": "2025-02-14T08:09:03+00:00", "score": 0.00608610567514678},
+    {"index": 2392, "timestamp": "2025-02-14T09:03:08+00:00", "available_at": "2025-02-17T13:17:58+00:00", "score": 0.003227928308490724},
+    {"index": 2534, "timestamp": "2025-02-17T13:26:31+00:00", "available_at": "2025-02-20T15:12:50+00:00", "score": 0.005056991299439928},
+    {"index": 2676, "timestamp": "2025-02-20T15:38:46+00:00", "available_at": "2025-02-23T12:43:05+00:00", "score": 0.003729940370147844},
+    {"index": 2818, "timestamp": "2025-02-23T12:58:25+00:00", "available_at": "2025-02-26T13:51:54+00:00", "score": 0.0006941974646752502},
+    {"index": 2960, "timestamp": "2025-02-26T13:54:55+00:00", "available_at": "2025-03-01T12:21:10+00:00", "score": 0.002277259332836401}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "variant": "conformance_profile",
+    "method": "pelt",
+    "retrospective": true,
+    "window_size": 142,
+    "step": 142,
+    "penalty": 0.1,
+    "min_size": 3,
+    "reference_model": [
+      {
+        "places": 11,
+        "transitions": 7,
+        "silent_transitions": 2,
+        "arcs": 20
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      }
+    ],
+    "reference_size": 120,
+    "input_format": "EventLog",
+    "precision_alignment_variant": "VERSION_DIJKSTRA_LESS_MEMORY"
+  },
+  "configuration": {
+    "window_size": 142,
+    "step": 142,
+    "reference_size": 120,
+    "penalty": 0.1,
+    "min_size": 3
+  },
+  "runtime_seconds": 1.574788,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 47651.07,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03"
+        ],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 119127.675,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03"
+        ],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 238255.35,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 21,
+    "published_count": 21,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

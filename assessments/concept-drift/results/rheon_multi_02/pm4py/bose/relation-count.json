@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_multi_02",
+  "library": "pm4py",
+  "method": "bose",
+  "profile": "relation-count",
+  "status": "ok",
+  "detector_source_revision": "765435bc7f5190adf30be7314d7158b92ff433c4",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "timestamp": "2024-04-17T18:16:17+00:00",
+      "p_value": 0.015,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-04-18T23:03:44+00:00",
+      "p_value": 0.005,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-04-19T18:59:56+00:00",
+      "p_value": 0.005,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-04-20T22:40:17+00:00",
+      "p_value": 0.0175,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-05-04T22:34:53+00:00",
+      "p_value": 0.0225,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-05-06T03:11:26+00:00",
+      "p_value": 0.0025,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-05-07T03:39:00+00:00",
+      "p_value": 0.005,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-05-08T00:42:37+00:00",
+      "p_value": 0.02,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-05-23T03:18:58+00:00",
+      "p_value": 0.0225,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-05-24T08:33:37+00:00",
+      "p_value": 0.0025,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-05-25T15:01:30+00:00",
+      "p_value": 0.01,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-05-27T03:20:57+00:00",
+      "p_value": 0.02,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-06-11T10:12:25+00:00",
+      "p_value": 0.0175,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-06-12T10:15:23+00:00",
+      "p_value": 0.005,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    },
+    {
+      "timestamp": "2024-06-13T14:22:55+00:00",
+      "p_value": 0.0075,
+      "available_at": "2024-06-30T03:33:20+00:00"
+    }
+  ],
+  "scores": [],
+  "metadata": {
+    "retrospective": true,
+    "trace_order": "start",
+    "input_format": "EventLog",
+    "score_output": "legacy API returns p-values only for alarms"
+  },
+  "configuration": {
+    "sub_log_size": 39,
+    "window_size": 6,
+    "num_permutations": 399,
+    "thresh_p_value": 0.025,
+    "max_no_change_points": 100,
+    "random_state": 73
+  },
+  "runtime_seconds": 11.318076,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 77888.0,
+        "tp": 4,
+        "fp": 11,
+        "fn": 0,
+        "precision": 0.26666666666666666,
+        "recall": 1.0,
+        "f1": 0.42105263157894735,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": -3376.0,
+            "distance_to_truth_interval_seconds": 3376.0,
+            "availability_minus_onset_seconds": 6233600.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 6,
+            "estimate_minus_onset_seconds": 13140.0,
+            "distance_to_truth_interval_seconds": 13140.0,
+            "availability_minus_onset_seconds": 4678400.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 10,
+            "estimate_minus_onset_seconds": 54090.0,
+            "distance_to_truth_interval_seconds": 54090.0,
+            "availability_minus_onset_seconds": 3123200.0
+          },
+          {
+            "truth_id": "d04",
+            "change_offset": 13,
+            "estimate_minus_onset_seconds": 36923.0,
+            "distance_to_truth_interval_seconds": 36923.0,
+            "availability_minus_onset_seconds": 1568000.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          11,
+          12,
+          14
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 194720.0,
+        "tp": 4,
+        "fp": 11,
+        "fn": 0,
+        "precision": 0.26666666666666666,
+        "recall": 1.0,
+        "f1": 0.42105263157894735,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": -3376.0,
+            "distance_to_truth_interval_seconds": 3376.0,
+            "availability_minus_onset_seconds": 6233600.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 6,
+            "estimate_minus_onset_seconds": 13140.0,
+            "distance_to_truth_interval_seconds": 13140.0,
+            "availability_minus_onset_seconds": 4678400.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 10,
+            "estimate_minus_onset_seconds": 54090.0,
+            "distance_to_truth_interval_seconds": 54090.0,
+            "availability_minus_onset_seconds": 3123200.0
+          },
+          {
+            "truth_id": "d04",
+            "change_offset": 13,
+            "estimate_minus_onset_seconds": 36923.0,
+            "distance_to_truth_interval_seconds": 36923.0,
+            "availability_minus_onset_seconds": 1568000.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          11,
+          12,
+          14
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 389440.0,
+        "tp": 4,
+        "fp": 11,
+        "fn": 0,
+        "precision": 0.26666666666666666,
+        "recall": 1.0,
+        "f1": 0.42105263157894735,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": -3376.0,
+            "distance_to_truth_interval_seconds": 3376.0,
+            "availability_minus_onset_seconds": 6233600.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 6,
+            "estimate_minus_onset_seconds": 13140.0,
+            "distance_to_truth_interval_seconds": 13140.0,
+            "availability_minus_onset_seconds": 4678400.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 10,
+            "estimate_minus_onset_seconds": 54090.0,
+            "distance_to_truth_interval_seconds": 54090.0,
+            "availability_minus_onset_seconds": 3123200.0
+          },
+          {
+            "truth_id": "d04",
+            "change_offset": 13,
+            "estimate_minus_onset_seconds": 36923.0,
+            "distance_to_truth_interval_seconds": 36923.0,
+            "availability_minus_onset_seconds": 1568000.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          11,
+          12,
+          14
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 0,
+    "published_count": 0,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

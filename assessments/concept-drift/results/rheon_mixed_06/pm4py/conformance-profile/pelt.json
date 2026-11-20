@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_mixed_06",
+  "library": "pm4py",
+  "method": "conformance-profile",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [],
+  "scores": [
+    {"index": 120, "timestamp": "2023-11-03T03:52:40+00:00", "available_at": "2023-11-05T16:21:19+00:00", "score": 0.0},
+    {"index": 270, "timestamp": "2023-11-05T16:32:31+00:00", "available_at": "2023-11-08T05:12:56+00:00", "score": 0.0},
+    {"index": 420, "timestamp": "2023-11-08T05:57:21+00:00", "available_at": "2023-11-10T16:51:53+00:00", "score": 0.0},
+    {"index": 570, "timestamp": "2023-11-10T17:01:08+00:00", "available_at": "2023-11-13T09:45:45+00:00", "score": 0.0},
+    {"index": 720, "timestamp": "2023-11-13T10:29:53+00:00", "available_at": "2023-11-15T23:18:37+00:00", "score": 0.0},
+    {"index": 870, "timestamp": "2023-11-15T23:38:39+00:00", "available_at": "2023-11-18T08:13:59+00:00", "score": 0.0},
+    {"index": 1020, "timestamp": "2023-11-18T09:15:47+00:00", "available_at": "2023-11-21T06:00:05+00:00", "score": 0.0},
+    {"index": 1170, "timestamp": "2023-11-21T06:06:29+00:00", "available_at": "2023-11-23T20:09:06+00:00", "score": 0.0},
+    {"index": 1320, "timestamp": "2023-11-23T21:25:08+00:00", "available_at": "2023-11-26T08:13:18+00:00", "score": 0.0},
+    {"index": 1470, "timestamp": "2023-11-26T08:22:51+00:00", "available_at": "2023-11-29T06:31:11+00:00", "score": 0.0},
+    {"index": 1620, "timestamp": "2023-11-29T06:37:54+00:00", "available_at": "2023-12-01T08:43:11+00:00", "score": 0.0},
+    {"index": 1770, "timestamp": "2023-12-01T08:52:40+00:00", "available_at": "2023-12-02T20:41:13+00:00", "score": 0.0},
+    {"index": 1920, "timestamp": "2023-12-02T20:58:02+00:00", "available_at": "2023-12-04T08:45:20+00:00", "score": 0.0},
+    {"index": 2070, "timestamp": "2023-12-04T09:09:52+00:00", "available_at": "2023-12-06T02:23:25+00:00", "score": 0.0},
+    {"index": 2220, "timestamp": "2023-12-06T02:24:22+00:00", "available_at": "2023-12-07T15:23:09+00:00", "score": 0.0},
+    {"index": 2370, "timestamp": "2023-12-07T15:45:10+00:00", "available_at": "2023-12-08T23:37:28+00:00", "score": 0.0},
+    {"index": 2520, "timestamp": "2023-12-08T23:52:23+00:00", "available_at": "2023-12-10T07:36:51+00:00", "score": 0.0},
+    {"index": 2670, "timestamp": "2023-12-10T07:45:48+00:00", "available_at": "2023-12-11T19:40:55+00:00", "score": 0.0},
+    {"index": 2820, "timestamp": "2023-12-11T20:05:20+00:00", "available_at": "2023-12-13T02:18:29+00:00", "score": 0.0},
+    {"index": 2970, "timestamp": "2023-12-13T02:44:30+00:00", "available_at": "2023-12-14T18:47:49+00:00", "score": 0.0},
+    {"index": 3120, "timestamp": "2023-12-14T18:55:16+00:00", "available_at": "2023-12-16T03:59:46+00:00", "score": 0.0},
+    {"index": 3270, "timestamp": "2023-12-16T04:18:35+00:00", "available_at": "2023-12-17T17:36:20+00:00", "score": 0.0},
+    {"index": 3420, "timestamp": "2023-12-17T17:55:50+00:00", "available_at": "2023-12-18T21:20:50+00:00", "score": 0.0},
+    {"index": 3570, "timestamp": "2023-12-18T21:27:54+00:00", "available_at": "2023-12-20T10:13:33+00:00", "score": 0.0},
+    {"index": 3720, "timestamp": "2023-12-20T10:14:46+00:00", "available_at": "2023-12-21T22:23:30+00:00", "score": 0.0},
+    {"index": 3870, "timestamp": "2023-12-21T22:35:20+00:00", "available_at": "2023-12-23T13:27:38+00:00", "score": 0.0},
+    {"index": 4020, "timestamp": "2023-12-23T13:28:47+00:00", "available_at": "2023-12-24T21:53:48+00:00", "score": 0.0},
+    {"index": 4170, "timestamp": "2023-12-24T22:03:40+00:00", "available_at": "2023-12-26T09:15:09+00:00", "score": 0.0},
+    {"index": 4320, "timestamp": "2023-12-26T09:33:47+00:00", "available_at": "2023-12-27T21:34:56+00:00", "score": 0.0},
+    {"index": 4470, "timestamp": "2023-12-27T21:47:53+00:00", "available_at": "2023-12-29T09:16:36+00:00", "score": 0.0},
+    {"index": 4620, "timestamp": "2023-12-29T09:25:08+00:00", "available_at": "2023-12-30T20:59:10+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "variant": "conformance_profile",
+    "method": "pelt",
+    "retrospective": true,
+    "window_size": 150,
+    "step": 150,
+    "penalty": 0.1,
+    "min_size": 3,
+    "reference_model": [
+      {
+        "places": 6,
+        "transitions": 5,
+        "silent_transitions": 0,
+        "arcs": 10
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      }
+    ],
+    "reference_size": 120,
+    "input_format": "EventLog",
+    "precision_alignment_variant": "VERSION_DIJKSTRA_LESS_MEMORY"
+  },
+  "configuration": {
+    "window_size": 150,
+    "step": 150,
+    "reference_size": 120,
+    "penalty": 0.1,
+    "min_size": 3
+  },
+  "runtime_seconds": 2.682232,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 52053.15,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 130132.875,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 260265.75,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 31,
+    "published_count": 31,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

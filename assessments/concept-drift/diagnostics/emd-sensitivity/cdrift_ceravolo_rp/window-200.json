@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ceravolo_rp",
+  "library": "pm4py",
+  "method": "earth-mover",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "diagnostic": "post-hoc window sensitivity, distinct from the frozen benchmark",
+  "configuration": {
+    "window_size": 200,
+    "step": 16,
+    "min_separation": 45,
+    "threshold": 0.2
+  },
+  "primary_configuration": {
+    "window_size": 35,
+    "step": 9,
+    "min_separation": 45,
+    "threshold": 0.2
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "2019-01-17T13:00:00+00:00",
+      "end": "2019-01-17T13:00:00+00:00",
+      "native_first_post_change_case_id": "500",
+      "native_last_pre_change_case_start": "2019-01-17T06:20:00+00:00",
+      "native_first_post_change_case_completion": "2019-01-17T17:11:21.984000+00:00",
+      "native_archive_last_pre_change_ordinal": 499,
+      "native_archive_first_post_change_ordinal": 500,
+      "native_archive_first_post_change_case_id": "549",
+      "native_archive_first_post_change_case_start": "2019-01-18T05:20:00+00:00"
+    }
+  ],
+  "runtime_seconds": 1.582671,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 12520.74864,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 31301.8716,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 62603.7432,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "observation_unit": "trace",
+  "changes": [],
+  "scores": [
+    {"index": 200, "timestamp": "2019-01-13T08:23:07.587000+00:00", "available_at": "2019-01-16T01:58:29.188000+00:00", "score": 0.07721701690122744},
+    {"index": 216, "timestamp": "2019-01-13T13:21:07.096000+00:00", "available_at": "2019-01-16T08:04:39.956000+00:00", "score": 0.07223004955570744},
+    {"index": 232, "timestamp": "2019-01-13T18:19:29.882000+00:00", "available_at": "2019-01-16T13:24:41.563000+00:00", "score": 0.06301511799603908},
+    {"index": 248, "timestamp": "2019-01-13T22:40:47.017000+00:00", "available_at": "2019-01-16T17:23:35.655000+00:00", "score": 0.074271190870533},
+    {"index": 264, "timestamp": "2019-01-14T03:59:28.276000+00:00", "available_at": "2019-01-16T23:35:37.907000+00:00", "score": 0.07747325452325451},
+    {"index": 280, "timestamp": "2019-01-14T11:12:52.148000+00:00", "available_at": "2019-01-17T05:00:47.026000+00:00", "score": 0.07777751342225027},
+    {"index": 296, "timestamp": "2019-01-14T15:56:56.668000+00:00", "available_at": "2019-01-17T09:49:00.228000+00:00", "score": 0.06690087251929358},
+    {"index": 312, "timestamp": "2019-01-14T20:51:00.606000+00:00", "available_at": "2019-01-17T21:46:12.370000+00:00", "score": 0.04706141263707053},
+    {"index": 328, "timestamp": "2019-01-15T02:12:07.480000+00:00", "available_at": "2019-01-18T02:44:23.904000+00:00", "score": 0.03440967512020146},
+    {"index": 344, "timestamp": "2019-01-15T08:24:55.210000+00:00", "available_at": "2019-01-18T08:37:14.205000+00:00", "score": 0.03636593231330075},
+    {"index": 360, "timestamp": "2019-01-15T14:32:07.794000+00:00", "available_at": "2019-01-18T13:28:44.854000+00:00", "score": 0.051964331720910674},
+    {"index": 376, "timestamp": "2019-01-15T18:24:24.099000+00:00", "available_at": "2019-01-18T20:14:03.142000+00:00", "score": 0.05527730821809771},
+    {"index": 392, "timestamp": "2019-01-16T00:08:33.381000+00:00", "available_at": "2019-01-19T00:11:29.070000+00:00", "score": 0.06362477588201275},
+    {"index": 408, "timestamp": "2019-01-16T05:09:13.632000+00:00", "available_at": "2019-01-19T04:33:00.469000+00:00", "score": 0.06821404910878595},
+    {"index": 424, "timestamp": "2019-01-16T11:07:29.451000+00:00", "available_at": "2019-01-19T10:07:24.992000+00:00", "score": 0.08149288124156548},
+    {"index": 440, "timestamp": "2019-01-16T15:29:52.597000+00:00", "available_at": "2019-01-19T16:50:20.400000+00:00", "score": 0.0819970231522863},
+    {"index": 456, "timestamp": "2019-01-16T19:42:59.103000+00:00", "available_at": "2019-01-19T21:42:05.988000+00:00", "score": 0.09359475787370525},
+    {"index": 472, "timestamp": "2019-01-17T03:21:36.782000+00:00", "available_at": "2019-01-20T02:12:43.811000+00:00", "score": 0.09401930503706823},
+    {"index": 488, "timestamp": "2019-01-17T07:24:22.468000+00:00", "available_at": "2019-01-20T08:32:21.620000+00:00", "score": 0.08749418344813086},
+    {"index": 504, "timestamp": "2019-01-17T18:30:45.341000+00:00", "available_at": "2019-01-20T13:26:27.623000+00:00", "score": 0.08888400904650905},
+    {"index": 520, "timestamp": "2019-01-18T01:00:26.437000+00:00", "available_at": "2019-01-20T18:39:51.068000+00:00", "score": 0.08365602321654954},
+    {"index": 536, "timestamp": "2019-01-18T06:18:12.920000+00:00", "available_at": "2019-01-20T23:25:01.716000+00:00", "score": 0.08767754358214885},
+    {"index": 552, "timestamp": "2019-01-18T11:12:53.836000+00:00", "available_at": "2019-01-21T06:26:15.161000+00:00", "score": 0.07488265720634144},
+    {"index": 568, "timestamp": "2019-01-18T16:48:12.676000+00:00", "available_at": "2019-01-21T10:28:53.379000+00:00", "score": 0.08066320806386595},
+    {"index": 584, "timestamp": "2019-01-18T22:12:26.594000+00:00", "available_at": "2019-01-21T17:40:03.826000+00:00", "score": 0.07385304563857197},
+    {"index": 600, "timestamp": "2019-01-19T02:28:31.849000+00:00", "available_at": "2019-01-21T21:32:33.171000+00:00", "score": 0.07734779321555636},
+    {"index": 616, "timestamp": "2019-01-19T07:48:07.091000+00:00", "available_at": "2019-01-22T02:09:33.474000+00:00", "score": 0.07803373760742181},
+    {"index": 632, "timestamp": "2019-01-19T15:27:11.161000+00:00", "available_at": "2019-01-22T08:52:14.295000+00:00", "score": 0.06901447923421611},
+    {"index": 648, "timestamp": "2019-01-19T19:06:18.196000+00:00", "available_at": "2019-01-22T14:15:55.402000+00:00", "score": 0.03992926282523805},
+    {"index": 664, "timestamp": "2019-01-20T00:13:04.973000+00:00", "available_at": "2019-01-22T18:29:05.555000+00:00", "score": 0.03553206959449219},
+    {"index": 680, "timestamp": "2019-01-20T05:55:36.407000+00:00", "available_at": "2019-01-23T00:17:46.133000+00:00", "score": 0.039440711829450206},
+    {"index": 696, "timestamp": "2019-01-20T10:28:56.480000+00:00", "available_at": "2019-01-23T04:55:42.659000+00:00", "score": 0.046148536899117396},
+    {"index": 712, "timestamp": "2019-01-20T16:45:58.544000+00:00", "available_at": "2019-01-23T11:03:19.506000+00:00", "score": 0.05328304099151622},
+    {"index": 728, "timestamp": "2019-01-20T21:18:13.235000+00:00", "available_at": "2019-01-23T15:13:36.005000+00:00", "score": 0.04361447271768481},
+    {"index": 744, "timestamp": "2019-01-21T03:14:27.768000+00:00", "available_at": "2019-01-23T22:30:43.928000+00:00", "score": 0.04194273612094819},
+    {"index": 760, "timestamp": "2019-01-21T09:04:05.793000+00:00", "available_at": "2019-01-24T02:33:29.037000+00:00", "score": 0.04836603234227073},
+    {"index": 776, "timestamp": "2019-01-21T13:41:58.306000+00:00", "available_at": "2019-01-24T07:39:49.098000+00:00", "score": 0.053277703140512736},
+    {"index": 792, "timestamp": "2019-01-21T19:56:23.347000+00:00", "available_at": "2019-01-24T14:26:09.793000+00:00", "score": 0.054769491280133684}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "window_size": 200,
+    "step": 16,
+    "time_feature": null,
+    "percentiles": null,
+    "threshold": 0.2,
+    "persistence": 1,
+    "min_separation": 45,
+    "representation": "stochastic language of trace descriptors",
+    "mode": "retrospective",
+    "input_format": "EventLog"
+  }
+}

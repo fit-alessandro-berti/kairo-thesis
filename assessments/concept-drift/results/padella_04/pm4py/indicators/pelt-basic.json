@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_04",
+  "library": "pm4py",
+  "method": "indicators",
+  "profile": "pelt-basic",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "calendar_bin",
+  "changes": [
+    {
+      "index": 6,
+      "timestamp": "2011-10-11T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 16.38754301442331
+        }
+      }
+    },
+    {
+      "index": 65,
+      "timestamp": "2012-01-17T08:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 34.1726886392906
+        }
+      }
+    },
+    {
+      "index": 79,
+      "timestamp": "2012-02-09T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 46.69460295310007
+        }
+      }
+    },
+    {
+      "index": 92,
+      "timestamp": "2012-03-02T08:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 23.143253999782672
+        }
+      }
+    },
+    {
+      "index": 93,
+      "timestamp": "2012-03-04T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "case_duration": 45.61109451776974
+        }
+      }
+    },
+    {
+      "index": 96,
+      "timestamp": "2012-03-09T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 19.305966302924272
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2011-10-01T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 1, "timestamp": "2011-10-02T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 2, "timestamp": "2011-10-04T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 3, "timestamp": "2011-10-06T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 4, "timestamp": "2011-10-07T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 5, "timestamp": "2011-10-09T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 6, "timestamp": "2011-10-11T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 7, "timestamp": "2011-10-12T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 8, "timestamp": "2011-10-14T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 9, "timestamp": "2011-10-16T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 10, "timestamp": "2011-10-17T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 11, "timestamp": "2011-10-19T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 12, "timestamp": "2011-10-21T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 13, "timestamp": "2011-10-22T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 14, "timestamp": "2011-10-24T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 15, "timestamp": "2011-10-26T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 16, "timestamp": "2011-10-27T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 17, "timestamp": "2011-10-29T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 18, "timestamp": "2011-10-31T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 19, "timestamp": "2011-11-01T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 20, "timestamp": "2011-11-03T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 21, "timestamp": "2011-11-05T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 22, "timestamp": "2011-11-06T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 23, "timestamp": "2011-11-08T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 24, "timestamp": "2011-11-10T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 25, "timestamp": "2011-11-11T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 26, "timestamp": "2011-11-13T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 27, "timestamp": "2011-11-15T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 28, "timestamp": "2011-11-16T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 29, "timestamp": "2011-11-18T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 30, "timestamp": "2011-11-20T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 31, "timestamp": "2011-11-21T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 32, "timestamp": "2011-11-23T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 33, "timestamp": "2011-11-25T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 34, "timestamp": "2011-11-26T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 35, "timestamp": "2011-11-28T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 36, "timestamp": "2011-11-30T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 37, "timestamp": "2011-12-01T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 38, "timestamp": "2011-12-03T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 39, "timestamp": "2011-12-05T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 40, "timestamp": "2011-12-06T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 41, "timestamp": "2011-12-08T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 42, "timestamp": "2011-12-10T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 43, "timestamp": "2011-12-11T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 44, "timestamp": "2011-12-13T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 45, "timestamp": "2011-12-15T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 46, "timestamp": "2011-12-16T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 47, "timestamp": "2011-12-18T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 48, "timestamp": "2011-12-20T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 49, "timestamp": "2011-12-21T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 50, "timestamp": "2011-12-23T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 51, "timestamp": "2011-12-25T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 52, "timestamp": "2011-12-26T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 53, "timestamp": "2011-12-28T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 54, "timestamp": "2011-12-30T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 55, "timestamp": "2011-12-31T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 56, "timestamp": "2012-01-02T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 57, "timestamp": "2012-01-04T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 58, "timestamp": "2012-01-05T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 59, "timestamp": "2012-01-07T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 60, "timestamp": "2012-01-09T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 61, "timestamp": "2012-01-10T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 62, "timestamp": "2012-01-12T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 63, "timestamp": "2012-01-14T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 64, "timestamp": "2012-01-15T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 65, "timestamp": "2012-01-17T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 66, "timestamp": "2012-01-19T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 67, "timestamp": "2012-01-20T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 68, "timestamp": "2012-01-22T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 69, "timestamp": "2012-01-24T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 70, "timestamp": "2012-01-25T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 71, "timestamp": "2012-01-27T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 72, "timestamp": "2012-01-29T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 73, "timestamp": "2012-01-30T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 74, "timestamp": "2012-02-01T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 75, "timestamp": "2012-02-03T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 76, "timestamp": "2012-02-04T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 77, "timestamp": "2012-02-06T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 78, "timestamp": "2012-02-08T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 79, "timestamp": "2012-02-09T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 80, "timestamp": "2012-02-11T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 81, "timestamp": "2012-02-13T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 82, "timestamp": "2012-02-14T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 83, "timestamp": "2012-02-16T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 84, "timestamp": "2012-02-18T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 85, "timestamp": "2012-02-19T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 86, "timestamp": "2012-02-21T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 87, "timestamp": "2012-02-23T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 88, "timestamp": "2012-02-24T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 89, "timestamp": "2012-02-26T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2012-02-28T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 91, "timestamp": "2012-02-29T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 92, "timestamp": "2012-03-02T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 93, "timestamp": "2012-03-04T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 94, "timestamp": "2012-03-05T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 95, "timestamp": "2012-03-07T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 96, "timestamp": "2012-03-09T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 97, "timestamp": "2012-03-10T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 98, "timestamp": "2012-03-12T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 99, "timestamp": "2012-03-14T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "variant": "indicators",
+    "method": "pelt",
+    "bin_size": "40h",
+    "observed_through": "2012-03-14T16:57:07.354200+00:00",
+    "features": [
+      "arrivals",
+      "completions",
+      "work_in_progress",
+      "events",
+      "case_duration"
+    ],
+    "retrospective": true,
+    "aggregation": "any_feature",
+    "case_boundaries": "first_and_last_case_event",
+    "penalty": 14,
+    "min_size": 3,
+    "standardize": true,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "bin_size": "40h",
+    "features": [
+      "arrivals",
+      "completions",
+      "work_in_progress",
+      "events",
+      "case_duration"
+    ],
+    "penalty": 14
+  },
+  "runtime_seconds": 3.770215,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 142769.106542,
+        "tp": 0,
+        "fp": 6,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 356922.766355,
+        "tp": 0,
+        "fp": 6,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 713845.53271,
+        "tp": 0,
+        "fp": 6,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 100,
+    "published_count": 100,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

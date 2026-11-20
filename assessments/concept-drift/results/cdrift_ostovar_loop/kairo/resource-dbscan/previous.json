@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ostovar_loop",
+  "library": "kairo",
+  "method": "resource-dbscan",
+  "profile": "previous",
+  "status": "unsupported",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "resource",
+    "features": {},
+    "reduction": {},
+    "clustering": {
+      "method": "dbscan"
+    },
+    "signal": {
+      "window": "12h",
+      "divergence": "js",
+      "reference": "previous",
+      "lookback": null,
+      "threshold_quantile": 0.9,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "reason": "The event log has no observed resources",
+  "changes": [],
+  "scores": []
+}

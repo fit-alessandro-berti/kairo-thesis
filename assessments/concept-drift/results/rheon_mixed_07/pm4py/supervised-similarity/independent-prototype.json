@@ -1,0 +1,509 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_mixed_07",
+  "library": "pm4py",
+  "method": "supervised-similarity",
+  "profile": "independent-prototype",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 300,
+      "timestamp": "2024-10-09T02:25:40+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "score": 0.9238754325259515,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          5,
+          5
+        ],
+        "confidence": 0.9238754325259515
+      }
+    },
+    {
+      "index": 540,
+      "timestamp": "2024-10-15T14:01:26+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "score": 0.8018018018018017,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          9,
+          9
+        ],
+        "confidence": 0.8018018018018017
+      }
+    },
+    {
+      "index": 1140,
+      "timestamp": "2024-10-26T09:38:55+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "score": 0.9874822190611663,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          19,
+          20
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "index": 1500,
+      "timestamp": "2024-10-31T15:37:21+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "score": 0.8628808864265927,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          25,
+          25
+        ],
+        "confidence": 0.8628808864265927
+      }
+    },
+    {
+      "index": 1916,
+      "timestamp": "2024-11-07T13:10:00+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          32,
+          39
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 2447,
+      "timestamp": "2024-11-18T10:13:50+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "score": 0.9874822190611663,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          41,
+          41
+        ],
+        "confidence": 0.9874822190611663
+      }
+    }
+  ],
+  "scores": [
+    {"index": 300, "timestamp": "2024-10-09T02:25:40+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.9238754325259515},
+    {"index": 540, "timestamp": "2024-10-15T14:01:26+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.8018018018018017},
+    {"index": 1140, "timestamp": "2024-10-26T09:38:55+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.9874822190611663},
+    {"index": 1500, "timestamp": "2024-10-31T15:37:21+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.8628808864265927},
+    {"index": 1916, "timestamp": "2024-11-07T13:10:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 1.0},
+    {"index": 2447, "timestamp": "2024-11-18T10:13:50+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.9874822190611663}
+  ],
+  "intervals": [
+    {
+      "start_index": 300,
+      "end_index": 359,
+      "start_timestamp": "2024-10-09T02:25:40+00:00",
+      "end_timestamp": "2024-10-10T13:11:55+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          5,
+          5
+        ],
+        "confidence": 0.9238754325259515
+      }
+    },
+    {
+      "start_index": 540,
+      "end_index": 599,
+      "start_timestamp": "2024-10-15T14:01:26+00:00",
+      "end_timestamp": "2024-10-17T00:07:45+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          9,
+          9
+        ],
+        "confidence": 0.8018018018018017
+      }
+    },
+    {
+      "start_index": 1140,
+      "end_index": 1259,
+      "start_timestamp": "2024-10-26T09:38:55+00:00",
+      "end_timestamp": "2024-10-28T00:22:02+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          19,
+          20
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "start_index": 1500,
+      "end_index": 1559,
+      "start_timestamp": "2024-10-31T15:37:21+00:00",
+      "end_timestamp": "2024-11-01T12:32:39+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          25,
+          25
+        ],
+        "confidence": 0.8628808864265927
+      }
+    },
+    {
+      "start_index": 1916,
+      "end_index": 2387,
+      "start_timestamp": "2024-11-07T13:10:00+00:00",
+      "end_timestamp": "2024-11-16T14:25:51+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          32,
+          39
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "start_index": 2447,
+      "end_index": 2505,
+      "start_timestamp": "2024-11-18T10:13:50+00:00",
+      "end_timestamp": "2024-11-20T05:39:35+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          41,
+          41
+        ],
+        "confidence": 0.9874822190611663
+      }
+    }
+  ],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "supervised_similarity",
+    "representation": "directly_follows_cosine_similarity_image",
+    "predictor": "_PatchPredictor",
+    "retrospective": true,
+    "trace_order": "start",
+    "num_windows": 48,
+    "min_confidence": 0.8,
+    "windows": [
+      [
+        0,
+        60
+      ],
+      [
+        60,
+        120
+      ],
+      [
+        120,
+        180
+      ],
+      [
+        180,
+        240
+      ],
+      [
+        240,
+        300
+      ],
+      [
+        300,
+        360
+      ],
+      [
+        360,
+        420
+      ],
+      [
+        420,
+        480
+      ],
+      [
+        480,
+        540
+      ],
+      [
+        540,
+        600
+      ],
+      [
+        600,
+        660
+      ],
+      [
+        660,
+        720
+      ],
+      [
+        720,
+        780
+      ],
+      [
+        780,
+        840
+      ],
+      [
+        840,
+        900
+      ],
+      [
+        900,
+        960
+      ],
+      [
+        960,
+        1020
+      ],
+      [
+        1020,
+        1080
+      ],
+      [
+        1080,
+        1140
+      ],
+      [
+        1140,
+        1200
+      ],
+      [
+        1200,
+        1260
+      ],
+      [
+        1260,
+        1320
+      ],
+      [
+        1320,
+        1380
+      ],
+      [
+        1380,
+        1440
+      ],
+      [
+        1440,
+        1500
+      ],
+      [
+        1500,
+        1560
+      ],
+      [
+        1560,
+        1620
+      ],
+      [
+        1620,
+        1680
+      ],
+      [
+        1680,
+        1739
+      ],
+      [
+        1739,
+        1798
+      ],
+      [
+        1798,
+        1857
+      ],
+      [
+        1857,
+        1916
+      ],
+      [
+        1916,
+        1975
+      ],
+      [
+        1975,
+        2034
+      ],
+      [
+        2034,
+        2093
+      ],
+      [
+        2093,
+        2152
+      ],
+      [
+        2152,
+        2211
+      ],
+      [
+        2211,
+        2270
+      ],
+      [
+        2270,
+        2329
+      ],
+      [
+        2329,
+        2388
+      ],
+      [
+        2388,
+        2447
+      ],
+      [
+        2447,
+        2506
+      ],
+      [
+        2506,
+        2565
+      ],
+      [
+        2565,
+        2624
+      ],
+      [
+        2624,
+        2683
+      ],
+      [
+        2683,
+        2742
+      ],
+      [
+        2742,
+        2801
+      ],
+      [
+        2801,
+        2860
+      ]
+    ],
+    "input_format": "EventLog",
+    "training": {
+      "source": "independently generated by train_prototype",
+      "seed": 73,
+      "logs": 24,
+      "cases_per_log": 480,
+      "radius": 2
+    }
+  },
+  "configuration": {
+    "num_windows": 48,
+    "min_confidence": 0.8
+  },
+  "runtime_seconds": 1.739572,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 51983.34,
+        "tp": 1,
+        "fp": 5,
+        "fn": 1,
+        "precision": 0.16666666666666666,
+        "recall": 0.5,
+        "f1": 0.25,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 223286.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4161534.0
+          }
+        ],
+        "unmatched_truth": [
+          "d02"
+        ],
+        "unmatched_changes": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 129958.35,
+        "tp": 1,
+        "fp": 5,
+        "fn": 1,
+        "precision": 0.16666666666666666,
+        "recall": 0.5,
+        "f1": 0.25,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 223286.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4161534.0
+          }
+        ],
+        "unmatched_truth": [
+          "d02"
+        ],
+        "unmatched_changes": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 259916.7,
+        "tp": 1,
+        "fp": 5,
+        "fn": 1,
+        "precision": 0.16666666666666666,
+        "recall": 0.5,
+        "f1": 0.25,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 223286.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4161534.0
+          }
+        ],
+        "unmatched_truth": [
+          "d02"
+        ],
+        "unmatched_changes": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 6,
+    "published_count": 6,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

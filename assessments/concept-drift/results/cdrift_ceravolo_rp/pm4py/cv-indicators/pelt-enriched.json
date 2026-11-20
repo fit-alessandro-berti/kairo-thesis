@@ -1,0 +1,509 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ceravolo_rp",
+  "library": "pm4py",
+  "method": "cv-indicators",
+  "profile": "pelt-enriched",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "calendar_bin",
+  "changes": [
+    {
+      "index": 3,
+      "timestamp": "2019-01-10T20:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "completions": 28.290412201276652,
+          "case_duration": 14.602884202042375
+        }
+      }
+    },
+    {
+      "index": 13,
+      "timestamp": "2019-01-12T12:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"inter_event_gap\", \"F\"]": 23.439116890715425
+        }
+      }
+    },
+    {
+      "index": 25,
+      "timestamp": "2019-01-14T12:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"inter_event_gap\", \"F\"]": 31.894636915258957
+        }
+      }
+    },
+    {
+      "index": 38,
+      "timestamp": "2019-01-16T16:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 27.15094746971028
+        }
+      }
+    },
+    {
+      "index": 40,
+      "timestamp": "2019-01-17T00:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "events": 32.279902794642865
+        }
+      }
+    },
+    {
+      "index": 41,
+      "timestamp": "2019-01-17T04:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "completions": 27.944624180106267
+        }
+      }
+    },
+    {
+      "index": 46,
+      "timestamp": "2019-01-18T00:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "completions": 24.285902313257075,
+          "events": 27.423240423520554
+        }
+      }
+    },
+    {
+      "index": 47,
+      "timestamp": "2019-01-18T04:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 25.602374606234978
+        }
+      }
+    },
+    {
+      "index": 50,
+      "timestamp": "2019-01-18T16:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"inter_event_gap\", \"B\"]": 18.386684202762552
+        }
+      }
+    },
+    {
+      "index": 52,
+      "timestamp": "2019-01-19T00:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"C\"]": 18.553566036882216
+        }
+      }
+    },
+    {
+      "index": 82,
+      "timestamp": "2019-01-24T00:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 54.38464502410516,
+          "work_in_progress": 40.52169169397323
+        }
+      }
+    },
+    {
+      "index": 84,
+      "timestamp": "2019-01-24T08:00:00+00:00",
+      "available_at": "2019-01-24T20:00:00+00:00",
+      "score": 5.0,
+      "details": {
+        "changed_features": {
+          "events": 26.767697637673464,
+          "case_duration": 29.887063941069826,
+          "[\"activity_frequency\", \"A\"]": 47.64384618372067,
+          "[\"activity_frequency\", \"B\"]": 19.603544985293645,
+          "[\"activity_frequency\", \"F\"]": 47.16404942338836
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2019-01-10T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 1, "timestamp": "2019-01-10T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 2, "timestamp": "2019-01-10T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 3, "timestamp": "2019-01-10T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 2.0},
+    {"index": 4, "timestamp": "2019-01-11T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 5, "timestamp": "2019-01-11T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 6, "timestamp": "2019-01-11T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 7, "timestamp": "2019-01-11T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 8, "timestamp": "2019-01-11T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 9, "timestamp": "2019-01-11T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 10, "timestamp": "2019-01-12T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 11, "timestamp": "2019-01-12T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 12, "timestamp": "2019-01-12T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 13, "timestamp": "2019-01-12T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 1.0},
+    {"index": 14, "timestamp": "2019-01-12T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 15, "timestamp": "2019-01-12T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 16, "timestamp": "2019-01-13T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 17, "timestamp": "2019-01-13T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 18, "timestamp": "2019-01-13T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 19, "timestamp": "2019-01-13T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 20, "timestamp": "2019-01-13T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 21, "timestamp": "2019-01-13T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 22, "timestamp": "2019-01-14T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 23, "timestamp": "2019-01-14T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 24, "timestamp": "2019-01-14T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 25, "timestamp": "2019-01-14T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 1.0},
+    {"index": 26, "timestamp": "2019-01-14T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 27, "timestamp": "2019-01-14T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 28, "timestamp": "2019-01-15T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 29, "timestamp": "2019-01-15T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 30, "timestamp": "2019-01-15T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 31, "timestamp": "2019-01-15T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 32, "timestamp": "2019-01-15T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 33, "timestamp": "2019-01-15T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 34, "timestamp": "2019-01-16T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 35, "timestamp": "2019-01-16T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 36, "timestamp": "2019-01-16T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 37, "timestamp": "2019-01-16T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 38, "timestamp": "2019-01-16T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 1.0},
+    {"index": 39, "timestamp": "2019-01-16T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 40, "timestamp": "2019-01-17T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 1.0},
+    {"index": 41, "timestamp": "2019-01-17T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 1.0},
+    {"index": 42, "timestamp": "2019-01-17T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 43, "timestamp": "2019-01-17T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 44, "timestamp": "2019-01-17T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 45, "timestamp": "2019-01-17T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 46, "timestamp": "2019-01-18T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 2.0},
+    {"index": 47, "timestamp": "2019-01-18T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 1.0},
+    {"index": 48, "timestamp": "2019-01-18T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 49, "timestamp": "2019-01-18T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 50, "timestamp": "2019-01-18T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 1.0},
+    {"index": 51, "timestamp": "2019-01-18T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 52, "timestamp": "2019-01-19T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 1.0},
+    {"index": 53, "timestamp": "2019-01-19T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 54, "timestamp": "2019-01-19T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 55, "timestamp": "2019-01-19T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 56, "timestamp": "2019-01-19T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 57, "timestamp": "2019-01-19T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 58, "timestamp": "2019-01-20T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 59, "timestamp": "2019-01-20T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 60, "timestamp": "2019-01-20T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 61, "timestamp": "2019-01-20T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 62, "timestamp": "2019-01-20T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 63, "timestamp": "2019-01-20T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 64, "timestamp": "2019-01-21T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 65, "timestamp": "2019-01-21T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 66, "timestamp": "2019-01-21T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 67, "timestamp": "2019-01-21T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 68, "timestamp": "2019-01-21T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 69, "timestamp": "2019-01-21T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 70, "timestamp": "2019-01-22T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 71, "timestamp": "2019-01-22T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 72, "timestamp": "2019-01-22T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 73, "timestamp": "2019-01-22T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 74, "timestamp": "2019-01-22T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 75, "timestamp": "2019-01-22T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 76, "timestamp": "2019-01-23T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 77, "timestamp": "2019-01-23T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 78, "timestamp": "2019-01-23T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 79, "timestamp": "2019-01-23T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 80, "timestamp": "2019-01-23T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 81, "timestamp": "2019-01-23T20:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 82, "timestamp": "2019-01-24T00:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 2.0},
+    {"index": 83, "timestamp": "2019-01-24T04:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 84, "timestamp": "2019-01-24T08:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 5.0},
+    {"index": 85, "timestamp": "2019-01-24T12:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0},
+    {"index": 86, "timestamp": "2019-01-24T16:00:00+00:00", "available_at": "2019-01-24T20:00:00+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "cv_indicators",
+    "mode": "retrospective",
+    "bin_size": "4h",
+    "statistic": "mean",
+    "candidate_windows": [
+      1,
+      3,
+      5,
+      9,
+      17
+    ],
+    "selected_windows": {
+      "arrivals": 9,
+      "completions": 5,
+      "work_in_progress": 9,
+      "events": 5,
+      "case_duration": 5,
+      "[\"activity_frequency\", \"A\"]": 5,
+      "[\"activity_frequency\", \"B\"]": 5,
+      "[\"activity_frequency\", \"C\"]": 5,
+      "[\"activity_frequency\", \"F\"]": 5,
+      "[\"inter_event_gap\", \"A\"]": 5,
+      "[\"inter_event_gap\", \"B\"]": 5,
+      "[\"inter_event_gap\", \"C\"]": 5,
+      "[\"inter_event_gap\", \"F\"]": 5
+    },
+    "cv_curves": {
+      "arrivals": {
+        "1": 0.19470490492024078,
+        "3": 0.16327277789025335,
+        "5": 0.12625495543163556,
+        "9": 0.09023032164220597,
+        "17": 0.06031947414611608
+      },
+      "completions": {
+        "1": 0.273173937263422,
+        "3": 0.1481802664614942,
+        "5": 0.11701170337649872,
+        "9": 0.07788566205952768,
+        "17": 0.04456502696427033
+      },
+      "work_in_progress": {
+        "1": 0.2328407817929075,
+        "3": 0.18082302557093494,
+        "5": 0.14224178607883928,
+        "9": 0.10074526114022964,
+        "17": 0.06738915113232109
+      },
+      "events": {
+        "1": 0.19174757704177853,
+        "3": 0.14407445015491216,
+        "5": 0.1111116608511032,
+        "9": 0.07964227702560836,
+        "17": 0.05329096841479203
+      },
+      "case_duration": {
+        "1": 0.17395443860629567,
+        "3": 0.11909237419471282,
+        "5": 0.08856151038327313,
+        "9": 0.05606020972499846,
+        "17": 0.03650416443327779
+      },
+      "[\"activity_frequency\", \"A\"]": {
+        "1": 0.21081364456393809,
+        "3": 0.13378241967104532,
+        "5": 0.0997676579389419,
+        "9": 0.07337922544827383,
+        "17": 0.046361995432527704
+      },
+      "[\"activity_frequency\", \"B\"]": {
+        "1": 0.32507838772977515,
+        "3": 0.18662573873885208,
+        "5": 0.14162902144940484,
+        "9": 0.10781719811051411,
+        "17": 0.07239161352041364
+      },
+      "[\"activity_frequency\", \"C\"]": {
+        "1": 0.3067415005220699,
+        "3": 0.16913100089859334,
+        "5": 0.13131014928104723,
+        "9": 0.10194118854872984,
+        "17": 0.06898394155856538
+      },
+      "[\"activity_frequency\", \"F\"]": {
+        "1": 0.2151636600254307,
+        "3": 0.11550529547048674,
+        "5": 0.08956355246682743,
+        "9": 0.06355515725070456,
+        "17": 0.03975343326184474
+      },
+      "[\"inter_event_gap\", \"A\"]": {
+        "1": 0.031451726770057434,
+        "3": 0.019492782712386622,
+        "5": 0.013853680107410228,
+        "9": 0.0073987517036752035,
+        "17": 0.004511341126700025
+      },
+      "[\"inter_event_gap\", \"B\"]": {
+        "1": 0.03225108193399917,
+        "3": 0.020637497611656747,
+        "5": 0.015692302089914404,
+        "9": 0.01087234790466562,
+        "17": 0.008266037861773901
+      },
+      "[\"inter_event_gap\", \"C\"]": {
+        "1": 0.030248682053360215,
+        "3": 0.017705868332560465,
+        "5": 0.0127298797276188,
+        "9": 0.00967873208695569,
+        "17": 0.005862670719342045
+      },
+      "[\"inter_event_gap\", \"F\"]": {
+        "1": 0.02849701636275543,
+        "3": 0.015447842130302147,
+        "5": 0.011345126743713097,
+        "9": 0.007932358316037424,
+        "17": 0.005646870657187341
+      }
+    },
+    "min_size": 3,
+    "penalty_scale": 3.0,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "bin_size": "4h",
+    "features": [
+      "arrivals",
+      "completions",
+      "work_in_progress",
+      "events",
+      "case_duration",
+      [
+        "activity_frequency",
+        "A"
+      ],
+      [
+        "activity_frequency",
+        "B"
+      ],
+      [
+        "activity_frequency",
+        "C"
+      ],
+      [
+        "activity_frequency",
+        "F"
+      ],
+      [
+        "inter_event_gap",
+        "A"
+      ],
+      [
+        "inter_event_gap",
+        "B"
+      ],
+      [
+        "inter_event_gap",
+        "C"
+      ],
+      [
+        "inter_event_gap",
+        "F"
+      ]
+    ],
+    "penalty_scale": 3,
+    "start_timestamp_key": "start:timestamp"
+  },
+  "runtime_seconds": 1.562775,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 12520.74864,
+        "tp": 0,
+        "fp": 12,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 31301.8716,
+        "tp": 0,
+        "fp": 12,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 62603.7432,
+        "tp": 1,
+        "fp": 11,
+        "fn": 0,
+        "precision": 0.08333333333333333,
+        "recall": 1.0,
+        "f1": 0.15384615384615385,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": -32400.0,
+            "distance_to_truth_interval_seconds": 32400.0,
+            "availability_minus_onset_seconds": 630000.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 87,
+    "published_count": 87,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

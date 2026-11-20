@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ceravolo_rio_noise15",
+  "library": "pm4py",
+  "method": "graph-metrics",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 495,
+      "timestamp": "2019-01-17T09:02:48.045000+00:00",
+      "available_at": "2019-01-24T20:53:44.218000+00:00",
+      "score": 64.36469221835075,
+      "details": {
+        "metric_changes": {
+          "edge_density": 0.00519480519480521,
+          "branching_fraction": 0.006060606060606044,
+          "merging_fraction": 0.06666666666666667,
+          "cyclic_activity_fraction": 0.19999999999999998
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2019-01-10T10:27:10.048000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 45, "timestamp": "2019-01-11T05:02:39.568000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2019-01-11T18:03:29.720000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 135, "timestamp": "2019-01-12T08:37:49.246000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 180, "timestamp": "2019-01-13T01:38:39.284000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 225, "timestamp": "2019-01-13T15:46:35.481000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 270, "timestamp": "2019-01-14T06:44:10.561000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 315, "timestamp": "2019-01-14T21:03:43.649000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 360, "timestamp": "2019-01-15T13:26:04.784000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 405, "timestamp": "2019-01-16T03:15:55.992000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 450, "timestamp": "2019-01-16T18:38:11.089000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 495, "timestamp": "2019-01-17T09:02:48.045000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 6.546181871625591},
+    {"index": 540, "timestamp": "2019-01-18T09:42:47.902000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 5.098905623740663},
+    {"index": 585, "timestamp": "2019-01-18T22:59:37.033000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 630, "timestamp": "2019-01-19T15:37:05.932000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 675, "timestamp": "2019-01-20T04:56:46.800000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 720, "timestamp": "2019-01-20T21:08:54.096000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 765, "timestamp": "2019-01-21T11:26:09.636000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 810, "timestamp": "2019-01-22T02:06:25.618000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 855, "timestamp": "2019-01-22T17:31:35.699000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 900, "timestamp": "2019-01-23T07:30:01.862000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 945, "timestamp": "2019-01-24T00:09:35.420000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "window_size": 45,
+    "min_edge_count": 1,
+    "min_size": 3,
+    "penalty": 12.0,
+    "standardize": true,
+    "metrics": [
+      "activity_count",
+      "edge_density",
+      "branching_fraction",
+      "merging_fraction",
+      "weak_component_count",
+      "cyclic_activity_fraction",
+      "self_loop_fraction"
+    ],
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 45,
+    "penalty": 12,
+    "min_size": 3
+  },
+  "runtime_seconds": 1.239153,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 12560.24218,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 31400.60545,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -17831.955,
+            "distance_to_truth_interval_seconds": 17831.955,
+            "availability_minus_onset_seconds": 629624.218
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 62801.2109,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -17831.955,
+            "distance_to_truth_interval_seconds": 17831.955,
+            "availability_minus_onset_seconds": 629624.218
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 22,
+    "published_count": 22,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

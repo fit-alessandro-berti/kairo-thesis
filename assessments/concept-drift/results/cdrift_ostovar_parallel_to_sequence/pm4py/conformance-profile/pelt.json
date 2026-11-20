@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ostovar_parallel_to_sequence",
+  "library": "pm4py",
+  "method": "conformance-profile",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [],
+  "scores": [
+    {"index": 0, "timestamp": "1970-01-02T06:47:22.083000+00:00", "available_at": "1970-01-03T05:49:34.734000+00:00", "score": 0.0},
+    {"index": 136, "timestamp": "1970-01-03T06:05:59.738000+00:00", "available_at": "1970-01-04T05:15:27.482000+00:00", "score": 0.014874810683702666},
+    {"index": 272, "timestamp": "1970-01-04T05:21:10.043000+00:00", "available_at": "1970-01-05T02:56:22.876000+00:00", "score": 0.001209015715494588},
+    {"index": 408, "timestamp": "1970-01-05T03:08:38.947000+00:00", "available_at": "1970-01-06T02:01:29.411000+00:00", "score": 0.003966788388644282},
+    {"index": 544, "timestamp": "1970-01-06T02:09:08.148000+00:00", "available_at": "1970-01-07T01:04:29.586000+00:00", "score": 0.011383832133263105},
+    {"index": 680, "timestamp": "1970-01-07T01:16:59.268000+00:00", "available_at": "1970-01-07T23:55:33.113000+00:00", "score": 0.015596657117341373},
+    {"index": 816, "timestamp": "1970-01-08T00:27:44.068000+00:00", "available_at": "1970-01-08T22:24:28.115000+00:00", "score": 0.00850635056311344},
+    {"index": 952, "timestamp": "1970-01-08T22:36:53.974000+00:00", "available_at": "1970-01-09T21:36:14.996000+00:00", "score": 0.004760540616255748},
+    {"index": 1088, "timestamp": "1970-01-09T21:47:34.565000+00:00", "available_at": "1970-01-10T18:59:42.507000+00:00", "score": 0.00454402070897042},
+    {"index": 1224, "timestamp": "1970-01-10T19:05:07.131000+00:00", "available_at": "1970-01-11T18:21:45.083000+00:00", "score": 0.005297454348745734},
+    {"index": 1360, "timestamp": "1970-01-11T18:45:23.548000+00:00", "available_at": "1970-01-12T17:18:36.877000+00:00", "score": 0.006613173371164738},
+    {"index": 1496, "timestamp": "1970-01-12T17:20:45.701000+00:00", "available_at": "1970-01-13T15:13:25.400000+00:00", "score": 0.004741307701292996},
+    {"index": 1632, "timestamp": "1970-01-13T15:13:44.976000+00:00", "available_at": "1970-01-14T13:49:07.774000+00:00", "score": 0.00687725162670727},
+    {"index": 1768, "timestamp": "1970-01-14T14:01:51.003000+00:00", "available_at": "1970-01-15T13:39:44.083000+00:00", "score": 0.012218075315962751},
+    {"index": 1904, "timestamp": "1970-01-15T13:48:01.698000+00:00", "available_at": "1970-01-16T10:31:44.871000+00:00", "score": 0.007743937170156645},
+    {"index": 2040, "timestamp": "1970-01-16T10:32:17.768000+00:00", "available_at": "1970-01-17T10:34:52.453000+00:00", "score": 0.014641608715972976},
+    {"index": 2176, "timestamp": "1970-01-17T10:36:08.102000+00:00", "available_at": "1970-01-18T09:28:58.750000+00:00", "score": 0.00930883004845795},
+    {"index": 2312, "timestamp": "1970-01-18T09:31:25.629000+00:00", "available_at": "1970-01-19T08:25:42.631000+00:00", "score": 0.0024963528789795353},
+    {"index": 2448, "timestamp": "1970-01-19T08:29:16.012000+00:00", "available_at": "1970-01-20T05:52:32.336000+00:00", "score": 0.0012313569768115373},
+    {"index": 2584, "timestamp": "1970-01-20T06:05:37.247000+00:00", "available_at": "1970-01-21T04:34:58.403000+00:00", "score": 0.0008581067440599499},
+    {"index": 2720, "timestamp": "1970-01-21T04:52:28.389000+00:00", "available_at": "1970-01-22T02:26:12.806000+00:00", "score": 5.9537006873555676e-05}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "variant": "conformance_profile",
+    "method": "pelt",
+    "retrospective": true,
+    "window_size": 136,
+    "step": 136,
+    "penalty": 0.1,
+    "min_size": 3,
+    "reference_model": [
+      {
+        "places": 34,
+        "transitions": 33,
+        "silent_transitions": 0,
+        "arcs": 66
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      }
+    ],
+    "reference_size": 0,
+    "input_format": "EventLog",
+    "reference_model_strategy": "sequential_medoid",
+    "source_training_traces_excluded": 30,
+    "precision_alignment_variant": "VERSION_DIJKSTRA_LESS_MEMORY"
+  },
+  "configuration": {
+    "window_size": 136,
+    "step": 136,
+    "reference_size": 30,
+    "reference_model_strategy": "sequential_medoid",
+    "penalty": 0.1,
+    "min_size": 3
+  },
+  "runtime_seconds": 12.239133,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 19114.20139,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 47785.503475,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 95571.00695,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 21,
+    "published_count": 21,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

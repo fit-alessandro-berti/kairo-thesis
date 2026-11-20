@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_bose",
+  "library": "pm4py",
+  "method": "earth-mover",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "diagnostic": "post-hoc window sensitivity, distinct from the frozen benchmark",
+  "configuration": {
+    "window_size": 200,
+    "step": 144,
+    "min_separation": 150,
+    "threshold": 0.2
+  },
+  "primary_configuration": {
+    "window_size": 35,
+    "step": 57,
+    "min_separation": 150,
+    "threshold": 0.2
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "1974-01-01T00:41:00+00:00",
+      "end": "1974-01-01T00:41:00+00:00",
+      "native_first_post_change_case_id": "1",
+      "native_last_pre_change_case_start": "1970-09-02T23:56:00+00:00",
+      "native_first_post_change_case_completion": "1974-01-07T01:23:00+00:00",
+      "native_last_pre_change_trace_index": 1199,
+      "native_first_post_change_trace_index": 1200
+    },
+    {
+      "id": "d02",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "1976-01-01T01:43:00+00:00",
+      "end": "1976-01-01T01:43:00+00:00",
+      "native_first_post_change_case_id": "1",
+      "native_last_pre_change_case_start": "1974-05-27T04:57:00+00:00",
+      "native_first_post_change_case_completion": "1976-01-01T22:42:00+00:00",
+      "native_last_pre_change_trace_index": 2399,
+      "native_first_post_change_trace_index": 2400
+    },
+    {
+      "id": "d03",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "1978-01-01T00:21:00+00:00",
+      "end": "1978-01-01T00:21:00+00:00",
+      "native_first_post_change_case_id": "1",
+      "native_last_pre_change_case_start": "1976-09-27T14:25:00+00:00",
+      "native_first_post_change_case_completion": "1978-01-01T23:15:00+00:00",
+      "native_last_pre_change_trace_index": 3599,
+      "native_first_post_change_trace_index": 3600
+    },
+    {
+      "id": "d04",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "1980-01-01T00:42:00+00:00",
+      "end": "1980-01-01T00:42:00+00:00",
+      "native_first_post_change_case_id": "1",
+      "native_last_pre_change_case_start": "1978-08-05T20:11:00+00:00",
+      "native_first_post_change_case_completion": "1980-01-02T00:16:00+00:00",
+      "native_last_pre_change_trace_index": 4799,
+      "native_first_post_change_trace_index": 4800
+    }
+  ],
+  "runtime_seconds": 142.154241,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 3482045.4,
+        "tp": 1,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "matches": [
+          {
+            "truth_id": "d04",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 684480.0,
+            "distance_to_truth_interval_seconds": 684480.0,
+            "availability_minus_onset_seconds": 32669580.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03"
+        ],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 8705113.5,
+        "tp": 1,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "matches": [
+          {
+            "truth_id": "d04",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 684480.0,
+            "distance_to_truth_interval_seconds": 684480.0,
+            "availability_minus_onset_seconds": 32669580.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03"
+        ],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 17410227.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "matches": [
+          {
+            "truth_id": "d04",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 684480.0,
+            "distance_to_truth_interval_seconds": 684480.0,
+            "availability_minus_onset_seconds": 32669580.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 4808,
+      "timestamp": "1980-01-08T22:50:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 0.2274747474747479
+    }
+  ],
+  "scores": [
+    {"index": 200, "timestamp": "1970-02-24T15:07:00+00:00", "available_at": "1970-04-18T19:30:00+00:00", "score": 0.17162626262626288},
+    {"index": 344, "timestamp": "1970-04-05T12:13:00+00:00", "available_at": "1970-05-27T04:02:00+00:00", "score": 0.1363257575757577},
+    {"index": 488, "timestamp": "1970-05-13T22:04:00+00:00", "available_at": "1970-07-03T15:24:00+00:00", "score": 0.12713131313131326},
+    {"index": 632, "timestamp": "1970-06-20T19:56:00+00:00", "available_at": "1970-08-07T04:16:00+00:00", "score": 0.14223989898989914},
+    {"index": 776, "timestamp": "1970-07-25T19:58:00+00:00", "available_at": "1970-09-19T14:59:00+00:00", "score": 0.13798737373737385},
+    {"index": 920, "timestamp": "1970-09-03T20:22:00+00:00", "available_at": "1970-10-24T05:05:00+00:00", "score": 0.13747474747474756},
+    {"index": 1064, "timestamp": "1970-10-11T13:20:00+00:00", "available_at": "1974-01-19T04:54:00+00:00", "score": 0.14678409090909103},
+    {"index": 1208, "timestamp": "1974-01-06T10:11:00+00:00", "available_at": "1974-02-28T00:45:00+00:00", "score": 0.16698484848484846},
+    {"index": 1352, "timestamp": "1974-02-16T03:37:00+00:00", "available_at": "1974-04-06T22:54:00+00:00", "score": 0.1432442279942281},
+    {"index": 1496, "timestamp": "1974-03-23T19:15:00+00:00", "available_at": "1974-05-18T02:29:00+00:00", "score": 0.1464242424242425},
+    {"index": 1640, "timestamp": "1974-05-04T07:20:00+00:00", "available_at": "1974-06-28T10:52:00+00:00", "score": 0.13902398989898995},
+    {"index": 1784, "timestamp": "1974-06-09T16:52:00+00:00", "available_at": "1974-08-05T13:45:00+00:00", "score": 0.14310858585858593},
+    {"index": 1928, "timestamp": "1974-07-20T19:45:00+00:00", "available_at": "1974-09-08T21:57:00+00:00", "score": 0.13854040404040407},
+    {"index": 2072, "timestamp": "1974-08-22T15:58:00+00:00", "available_at": "1974-10-16T23:54:00+00:00", "score": 0.13759613997114004},
+    {"index": 2216, "timestamp": "1974-10-06T10:44:00+00:00", "available_at": "1976-01-07T08:28:00+00:00", "score": 0.14110407647907658},
+    {"index": 2360, "timestamp": "1974-11-10T09:01:00+00:00", "available_at": "1976-02-24T22:29:00+00:00", "score": 0.15627272727272748},
+    {"index": 2504, "timestamp": "1976-02-06T18:37:00+00:00", "available_at": "1976-04-07T22:46:00+00:00", "score": 0.1489040404040406},
+    {"index": 2648, "timestamp": "1976-03-24T05:49:00+00:00", "available_at": "1976-05-26T08:46:00+00:00", "score": 0.1453030303030305},
+    {"index": 2792, "timestamp": "1976-05-06T10:14:00+00:00", "available_at": "1976-07-17T02:33:00+00:00", "score": 0.13851010101010125},
+    {"index": 2936, "timestamp": "1976-06-25T20:19:00+00:00", "available_at": "1976-09-07T19:19:00+00:00", "score": 0.14107828282828302},
+    {"index": 3080, "timestamp": "1976-08-24T14:49:00+00:00", "available_at": "1976-10-26T05:00:00+00:00", "score": 0.13572727272727295},
+    {"index": 3224, "timestamp": "1976-10-05T16:54:00+00:00", "available_at": "1976-12-12T02:37:00+00:00", "score": 0.14824494949494962},
+    {"index": 3368, "timestamp": "1976-11-23T11:52:00+00:00", "available_at": "1977-01-13T16:42:00+00:00", "score": 0.1322752525252527},
+    {"index": 3512, "timestamp": "1977-01-04T18:25:00+00:00", "available_at": "1978-01-30T01:48:00+00:00", "score": 0.18571085858585876},
+    {"index": 3656, "timestamp": "1978-01-17T20:58:00+00:00", "available_at": "1978-03-09T03:58:00+00:00", "score": 0.1655113636363638},
+    {"index": 3800, "timestamp": "1978-02-23T05:43:00+00:00", "available_at": "1978-04-10T09:34:00+00:00", "score": 0.186875},
+    {"index": 3944, "timestamp": "1978-03-27T12:02:00+00:00", "available_at": "1978-05-12T08:52:00+00:00", "score": 0.0853611111111111},
+    {"index": 4088, "timestamp": "1978-05-03T01:26:00+00:00", "available_at": "1978-06-16T07:32:00+00:00", "score": 0.09930555555555551},
+    {"index": 4232, "timestamp": "1978-06-05T21:40:00+00:00", "available_at": "1978-07-19T12:54:00+00:00", "score": 0.11641666666666657},
+    {"index": 4376, "timestamp": "1978-07-03T08:15:00+00:00", "available_at": "1978-08-21T03:58:00+00:00", "score": 0.10148611111111101},
+    {"index": 4520, "timestamp": "1978-08-04T01:22:00+00:00", "available_at": "1978-09-20T21:12:00+00:00", "score": 0.11256944444444432},
+    {"index": 4664, "timestamp": "1978-09-10T21:54:00+00:00", "available_at": "1980-01-26T08:36:00+00:00", "score": 0.14376767676767685},
+    {"index": 4808, "timestamp": "1980-01-08T22:50:00+00:00", "available_at": "1980-03-18T11:38:00+00:00", "score": 0.2274747474747479},
+    {"index": 4952, "timestamp": "1980-02-23T23:13:00+00:00", "available_at": "1980-05-07T07:08:00+00:00", "score": 0.193616161616162},
+    {"index": 5096, "timestamp": "1980-04-12T06:22:00+00:00", "available_at": "1980-06-16T14:50:00+00:00", "score": 0.16518434343434363},
+    {"index": 5240, "timestamp": "1980-06-05T01:28:00+00:00", "available_at": "1980-08-11T15:56:00+00:00", "score": 0.11593181818181833},
+    {"index": 5384, "timestamp": "1980-07-21T20:21:00+00:00", "available_at": "1980-10-01T03:44:00+00:00", "score": 0.1233181818181819},
+    {"index": 5528, "timestamp": "1980-09-09T12:28:00+00:00", "available_at": "1980-11-13T03:39:00+00:00", "score": 0.12366919191919205},
+    {"index": 5672, "timestamp": "1980-10-25T16:02:00+00:00", "available_at": "1980-12-30T03:15:00+00:00", "score": 0.15310984848484868}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "window_size": 200,
+    "step": 144,
+    "time_feature": null,
+    "percentiles": null,
+    "threshold": 0.2,
+    "persistence": 1,
+    "min_separation": 150,
+    "representation": "stochastic language of trace descriptors",
+    "mode": "retrospective",
+    "input_format": "EventLog"
+  }
+}

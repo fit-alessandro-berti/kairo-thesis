@@ -1,0 +1,597 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_06",
+  "library": "pm4py",
+  "method": "trace-variant-frequency",
+  "profile": "permutation-wide",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 447,
+      "timestamp": "2018-09-13T03:11:12+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.5979971124946315,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.32333333333333336,
+          "[\"Request created\", \"Request deleted\"]": -0.19666666666666666,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.16666666666666666,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\", \"Request completed with account closure\"]": -0.10333333333333333,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Network Adjustment Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\", \"Request completed with account closure\"]": -0.06666666666666667
+        }
+      }
+    },
+    {
+      "index": 3240,
+      "timestamp": "2018-09-22T03:09:11+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.30410330853275086,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Request deleted\"]": -0.10666666666666666,
+          "[\"Request created\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.06333333333333332,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.0633333333333333,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.04999999999999999,
+          "[\"Request created\", \"Pending Request for Network Information\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": 0.023333333333333334
+        }
+      }
+    },
+    {
+      "index": 4122,
+      "timestamp": "2018-09-26T09:29:23+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.44916893239647676,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.21666666666666667,
+          "[\"Request created\", \"Request deleted\"]": 0.11333333333333333,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.09333333333333332,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Network Adjustment Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\", \"Request completed with account closure\"]": 0.06666666666666667,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\", \"Request completed with account closure\"]": 0.06333333333333334
+        }
+      }
+    },
+    {
+      "index": 10590,
+      "timestamp": "2018-11-01T03:08:45+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.6123798606905124,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Request deleted\"]": 0.4266666666666667,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.3466666666666667,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.18,
+          "[\"Request created\", \"Pending Request for Network Information\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.06333333333333334,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Network Adjustment Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.05333333333333333
+        }
+      }
+    },
+    {
+      "index": 15000,
+      "timestamp": "2018-11-29T13:24:29+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.5907045530703815,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.37333333333333335,
+          "[\"Request created\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": 0.35333333333333333,
+          "[\"Request created\", \"Pending Request for Network Information\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.05,
+          "[\"Request created\", \"Pending Request for Network Information\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.05,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.03999999999999998
+        }
+      }
+    },
+    {
+      "index": 16323,
+      "timestamp": "2018-12-07T19:19:41+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.5572449313135653,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Request deleted\"]": -0.25,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.2233333333333333,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.18333333333333332,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.08,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.08
+        }
+      }
+    },
+    {
+      "index": 20439,
+      "timestamp": "2018-12-30T01:40:29.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.6678574197250979,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": 0.6633333333333333,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.3566666666666667,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.19666666666666666,
+          "[\"Request created\", \"Request deleted\"]": -0.06,
+          "[\"Request created\", \"Evaluating Request (WITH registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.03333333333333333
+        }
+      }
+    },
+    {
+      "index": 24114,
+      "timestamp": "2019-01-19T10:55:23.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.4803000941071894,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.22666666666666668,
+          "[\"Request created\", \"Request deleted\"]": -0.18,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.10666666666666666,
+          "[\"Request created\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.09,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Network Adjustment Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\", \"Request completed with account closure\"]": -0.03333333333333334
+        }
+      }
+    },
+    {
+      "index": 26613,
+      "timestamp": "2019-01-30T01:19:09.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.2780356522804378,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.14666666666666667,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\", \"Request completed with account closure\"]": -0.04,
+          "[\"Request created\", \"Evaluating Request (WITH registered letter)\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.02333333333333333,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.02,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.016666666666666666
+        }
+      }
+    },
+    {
+      "index": 27642,
+      "timestamp": "2019-02-02T03:04:03+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.48112215292415944,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.24000000000000002,
+          "[\"Request created\", \"Request deleted\"]": 0.1933333333333333,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.1366666666666667,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Network Adjustment Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\", \"Request completed with account closure\"]": 0.060000000000000005,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\", \"Request completed with account closure\"]": 0.04666666666666667
+        }
+      }
+    },
+    {
+      "index": 29553,
+      "timestamp": "2019-02-12T03:41:49+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.3616568435612508,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": 0.13666666666666666,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.08333333333333331,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.08000000000000002,
+          "[\"Request created\", \"Request deleted\"]": 0.08,
+          "[\"Request created\", \"Evaluating Request (WITH registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.03666666666666667
+        }
+      }
+    },
+    {
+      "index": 30435,
+      "timestamp": "2019-02-17T00:08:01+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.446040348754393,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.18333333333333335,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.18,
+          "[\"Request created\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.15333333333333335,
+          "[\"Request created\", \"Request deleted\"]": -0.08333333333333333,
+          "[\"Request created\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.06
+        }
+      }
+    },
+    {
+      "index": 31464,
+      "timestamp": "2019-02-21T12:32:44+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.3091606426936868,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.1433333333333333,
+          "[\"Request created\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.11666666666666667,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.05666666666666664,
+          "[\"Request created\", \"Request deleted\"]": -0.05,
+          "[\"Request created\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.02666666666666667
+        }
+      }
+    },
+    {
+      "index": 31905,
+      "timestamp": "2019-02-25T11:16:36+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.32516510734853105,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"Request created\", \"Request deleted\"]": 0.2366666666666667,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.11000000000000001,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.1033333333333333,
+          "[\"Request created\", \"Service closure Request with network responsibility\", \"Authorization Requested\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.023333333333333334,
+          "[\"Request created\", \"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\", \"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.02333333333333333
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 300, "timestamp": "2018-09-12T03:07:19+00:00", "available_at": "2018-09-13T03:27:41+00:00", "score": 0.44050316353490165, "p_value": 0.01},
+    {"index": 447, "timestamp": "2018-09-13T03:11:12+00:00", "available_at": "2018-09-13T03:41:56+00:00", "score": 0.5979971124946315, "p_value": 0.01},
+    {"index": 594, "timestamp": "2018-09-13T03:26:43+00:00", "available_at": "2018-09-13T09:48:41+00:00", "score": 0.36340594979138446, "p_value": 0.01},
+    {"index": 741, "timestamp": "2018-09-13T03:41:31+00:00", "available_at": "2018-09-14T03:17:20+00:00", "score": 0.44576182596231023, "p_value": 0.01},
+    {"index": 888, "timestamp": "2018-09-13T09:41:23+00:00", "available_at": "2018-09-14T03:31:38+00:00", "score": 0.38206728277288343, "p_value": 0.01},
+    {"index": 1035, "timestamp": "2018-09-14T03:16:57+00:00", "available_at": "2018-09-14T03:49:00+00:00", "score": 0.46913533401048263, "p_value": 0.01},
+    {"index": 1182, "timestamp": "2018-09-14T03:30:57+00:00", "available_at": "2018-09-14T09:47:30+00:00", "score": 0.3831808752782933, "p_value": 0.01},
+    {"index": 1329, "timestamp": "2018-09-14T03:48:29+00:00", "available_at": "2018-09-15T03:15:38+00:00", "score": 0.4531886379769353, "p_value": 0.01},
+    {"index": 1476, "timestamp": "2018-09-14T09:31:58+00:00", "available_at": "2018-09-15T03:26:40+00:00", "score": 0.3429875488085305, "p_value": 0.01},
+    {"index": 1623, "timestamp": "2018-09-15T03:15:17+00:00", "available_at": "2018-09-17T08:58:45+00:00", "score": 0.38794251060263735, "p_value": 0.01},
+    {"index": 1770, "timestamp": "2018-09-15T03:26:14+00:00", "available_at": "2018-09-18T03:10:58+00:00", "score": 0.32544936180352974, "p_value": 0.01},
+    {"index": 1917, "timestamp": "2018-09-17T08:41:56+00:00", "available_at": "2018-09-18T03:21:46+00:00", "score": 0.460416021891436, "p_value": 0.01},
+    {"index": 2064, "timestamp": "2018-09-18T03:10:38+00:00", "available_at": "2018-09-19T03:10:06+00:00", "score": 0.2102439517158237, "p_value": 0.27},
+    {"index": 2211, "timestamp": "2018-09-18T03:21:26+00:00", "available_at": "2018-09-19T03:22:40+00:00", "score": 0.26821425774645613, "p_value": 0.01},
+    {"index": 2358, "timestamp": "2018-09-19T03:09:30+00:00", "available_at": "2018-09-20T03:03:45+00:00", "score": 0.2841917447188001, "p_value": 0.01},
+    {"index": 2505, "timestamp": "2018-09-19T03:22:19+00:00", "available_at": "2018-09-20T03:17:19+00:00", "score": 0.2300419407140673, "p_value": 0.02},
+    {"index": 2652, "timestamp": "2018-09-19T16:33:27+00:00", "available_at": "2018-09-20T12:09:34+00:00", "score": 0.24294462414287282, "p_value": 0.02},
+    {"index": 2799, "timestamp": "2018-09-20T03:16:55+00:00", "available_at": "2018-09-21T03:15:39+00:00", "score": 0.25881263087921985, "p_value": 0.02},
+    {"index": 2946, "timestamp": "2018-09-20T10:30:44+00:00", "available_at": "2018-09-22T03:09:33+00:00", "score": 0.29239844573483353, "p_value": 0.01},
+    {"index": 3093, "timestamp": "2018-09-21T03:15:18+00:00", "available_at": "2018-09-22T03:23:31+00:00", "score": 0.23952868841881506, "p_value": 0.07},
+    {"index": 3240, "timestamp": "2018-09-22T03:09:11+00:00", "available_at": "2018-09-25T03:07:09+00:00", "score": 0.30410330853275086, "p_value": 0.01},
+    {"index": 3387, "timestamp": "2018-09-22T03:23:10+00:00", "available_at": "2018-09-25T03:18:56+00:00", "score": 0.2675331358978048, "p_value": 0.01},
+    {"index": 3534, "timestamp": "2018-09-25T03:06:11+00:00", "available_at": "2018-09-26T03:06:43+00:00", "score": 0.18466818846819533, "p_value": 0.87},
+    {"index": 3681, "timestamp": "2018-09-25T03:18:36+00:00", "available_at": "2018-09-26T03:19:42+00:00", "score": 0.18692017663104948, "p_value": 0.46},
+    {"index": 3828, "timestamp": "2018-09-26T03:06:02+00:00", "available_at": "2018-09-26T09:36:34+00:00", "score": 0.2916291828071945, "p_value": 0.01},
+    {"index": 3975, "timestamp": "2018-09-26T03:19:22+00:00", "available_at": "2018-09-27T03:14:48+00:00", "score": 0.22955689695310105, "p_value": 0.09},
+    {"index": 4122, "timestamp": "2018-09-26T09:29:23+00:00", "available_at": "2018-09-28T03:06:15+00:00", "score": 0.44916893239647676, "p_value": 0.01},
+    {"index": 4269, "timestamp": "2018-09-27T03:14:28+00:00", "available_at": "2018-09-28T03:21:26+00:00", "score": 0.2553264953864967, "p_value": 0.03},
+    {"index": 4416, "timestamp": "2018-09-28T03:05:21+00:00", "available_at": "2018-09-29T03:17:42+00:00", "score": 0.2967923970186421, "p_value": 0.01},
+    {"index": 4563, "timestamp": "2018-09-28T03:21:03+00:00", "available_at": "2018-10-01T08:44:32+00:00", "score": 0.20326898819956687, "p_value": 0.34},
+    {"index": 4710, "timestamp": "2018-09-29T03:17:21+00:00", "available_at": "2018-10-02T03:14:08+00:00", "score": 0.27363888241214157, "p_value": 0.01},
+    {"index": 4857, "timestamp": "2018-09-29T03:28:09+00:00", "available_at": "2018-10-02T10:29:52+00:00", "score": 0.2639475509415181, "p_value": 0.01},
+    {"index": 5004, "timestamp": "2018-10-02T03:13:47+00:00", "available_at": "2018-10-08T09:50:32+00:00", "score": 0.5089704429231319, "p_value": 0.01},
+    {"index": 5151, "timestamp": "2018-10-02T10:08:22+00:00", "available_at": "2018-10-10T03:11:47+00:00", "score": 0.5258934048024276, "p_value": 0.01},
+    {"index": 5298, "timestamp": "2018-10-08T09:28:15+00:00", "available_at": "2018-10-11T08:20:06+00:00", "score": 0.2859463784985271, "p_value": 0.01},
+    {"index": 5445, "timestamp": "2018-10-10T03:11:22+00:00", "available_at": "2018-10-12T03:21:08+00:00", "score": 0.49091473102397215, "p_value": 0.01},
+    {"index": 5592, "timestamp": "2018-10-11T08:18:13+00:00", "available_at": "2018-10-12T03:36:34+00:00", "score": 0.45203161746555914, "p_value": 0.01},
+    {"index": 5739, "timestamp": "2018-10-12T03:19:54+00:00", "available_at": "2018-10-12T03:47:32+00:00", "score": 0.5253199171094121, "p_value": 0.01},
+    {"index": 5886, "timestamp": "2018-10-12T03:36:11+00:00", "available_at": "2018-10-12T03:57:52+00:00", "score": 0.3466884057513233, "p_value": 0.01},
+    {"index": 6033, "timestamp": "2018-10-12T03:47:12+00:00", "available_at": "2018-10-12T12:04:26+00:00", "score": 0.504394090462735, "p_value": 0.01},
+    {"index": 6180, "timestamp": "2018-10-12T03:57:33+00:00", "available_at": "2018-10-13T03:18:24+00:00", "score": 0.5547278673923036, "p_value": 0.01},
+    {"index": 6327, "timestamp": "2018-10-12T11:32:12+00:00", "available_at": "2018-10-13T03:29:25+00:00", "score": 0.4618059582342845, "p_value": 0.01},
+    {"index": 6474, "timestamp": "2018-10-13T03:17:59+00:00", "available_at": "2018-10-15T10:29:01+00:00", "score": 0.47142580036796683, "p_value": 0.01},
+    {"index": 6621, "timestamp": "2018-10-13T03:28:58+00:00", "available_at": "2018-10-16T03:08:35+00:00", "score": 0.5517367986506143, "p_value": 0.01},
+    {"index": 6768, "timestamp": "2018-10-15T10:21:42+00:00", "available_at": "2018-10-16T03:19:06+00:00", "score": 0.4473060285474425, "p_value": 0.01},
+    {"index": 6915, "timestamp": "2018-10-16T03:08:08+00:00", "available_at": "2018-10-16T10:04:16+00:00", "score": 0.47546876297286983, "p_value": 0.01},
+    {"index": 7062, "timestamp": "2018-10-16T03:18:46+00:00", "available_at": "2018-10-17T03:11:00+00:00", "score": 0.2929029714698355, "p_value": 0.01},
+    {"index": 7209, "timestamp": "2018-10-16T09:52:15+00:00", "available_at": "2018-10-17T03:21:28+00:00", "score": 0.29217474788522846, "p_value": 0.01},
+    {"index": 7356, "timestamp": "2018-10-17T03:10:39+00:00", "available_at": "2018-10-18T03:10:05+00:00", "score": 0.2772083034937229, "p_value": 0.01},
+    {"index": 7503, "timestamp": "2018-10-17T03:21:08+00:00", "available_at": "2018-10-18T03:21:20+00:00", "score": 0.2790337411771992, "p_value": 0.01},
+    {"index": 7650, "timestamp": "2018-10-18T03:09:45+00:00", "available_at": "2018-10-19T03:30:05+00:00", "score": 0.271146133377579, "p_value": 0.01},
+    {"index": 7797, "timestamp": "2018-10-18T03:21:00+00:00", "available_at": "2018-10-20T03:06:21+00:00", "score": 0.4196468895877236, "p_value": 0.01},
+    {"index": 7944, "timestamp": "2018-10-19T03:29:46+00:00", "available_at": "2018-10-20T03:19:28+00:00", "score": 0.3145935195481537, "p_value": 0.01},
+    {"index": 8091, "timestamp": "2018-10-20T03:05:47+00:00", "available_at": "2018-10-22T09:41:34+00:00", "score": 0.41940407703534, "p_value": 0.01},
+    {"index": 8238, "timestamp": "2018-10-20T03:19:08+00:00", "available_at": "2018-10-23T03:12:00+00:00", "score": 0.3831247244524397, "p_value": 0.01},
+    {"index": 8385, "timestamp": "2018-10-22T09:36:37+00:00", "available_at": "2018-10-23T03:22:29+00:00", "score": 0.34702594392396474, "p_value": 0.01},
+    {"index": 8532, "timestamp": "2018-10-23T03:11:41+00:00", "available_at": "2018-10-24T03:07:29+00:00", "score": 0.29869099427045487, "p_value": 0.01},
+    {"index": 8679, "timestamp": "2018-10-23T03:22:09+00:00", "available_at": "2018-10-24T03:19:48+00:00", "score": 0.3386514859815896, "p_value": 0.01},
+    {"index": 8826, "timestamp": "2018-10-24T03:07:02+00:00", "available_at": "2018-10-24T03:29:32+00:00", "score": 0.47007504944421724, "p_value": 0.01},
+    {"index": 8973, "timestamp": "2018-10-24T03:19:24+00:00", "available_at": "2018-10-25T03:04:38+00:00", "score": 0.30950749310068026, "p_value": 0.01},
+    {"index": 9120, "timestamp": "2018-10-24T03:29:14+00:00", "available_at": "2018-10-25T03:18:09+00:00", "score": 0.46750852420005423, "p_value": 0.01},
+    {"index": 9267, "timestamp": "2018-10-25T03:04:12+00:00", "available_at": "2018-10-25T03:28:05+00:00", "score": 0.4511856482106007, "p_value": 0.01},
+    {"index": 9414, "timestamp": "2018-10-25T03:17:49+00:00", "available_at": "2018-10-26T03:21:00+00:00", "score": 0.22646130004103965, "p_value": 0.01},
+    {"index": 9561, "timestamp": "2018-10-25T03:27:46+00:00", "available_at": "2018-10-27T03:12:21+00:00", "score": 0.49627724258415695, "p_value": 0.01},
+    {"index": 9708, "timestamp": "2018-10-26T03:20:41+00:00", "available_at": "2018-10-29T10:26:54+00:00", "score": 0.31695621236342214, "p_value": 0.01},
+    {"index": 9855, "timestamp": "2018-10-27T03:11:57+00:00", "available_at": "2018-10-30T03:10:54+00:00", "score": 0.3286604856739132, "p_value": 0.01},
+    {"index": 10002, "timestamp": "2018-10-29T10:14:42+00:00", "available_at": "2018-10-31T03:05:23+00:00", "score": 0.3458361108424093, "p_value": 0.01},
+    {"index": 10149, "timestamp": "2018-10-30T03:10:37+00:00", "available_at": "2018-10-31T03:17:38+00:00", "score": 0.30039677611175974, "p_value": 0.01},
+    {"index": 10296, "timestamp": "2018-10-31T03:04:47+00:00", "available_at": "2018-11-01T03:09:08+00:00", "score": 0.2855216915024274, "p_value": 0.01},
+    {"index": 10443, "timestamp": "2018-10-31T03:17:21+00:00", "available_at": "2018-11-06T11:47:56+00:00", "score": 0.3654035794256739, "p_value": 0.01},
+    {"index": 10590, "timestamp": "2018-11-01T03:08:45+00:00", "available_at": "2018-11-08T18:36:28+00:00", "score": 0.6123798606905124, "p_value": 0.01},
+    {"index": 10737, "timestamp": "2018-11-06T09:54:01+00:00", "available_at": "2018-11-13T03:08:53+00:00", "score": 0.5260504156073258, "p_value": 0.01},
+    {"index": 10884, "timestamp": "2018-11-08T17:49:27+00:00", "available_at": "2018-11-14T03:04:47+00:00", "score": 0.44265973758918437, "p_value": 0.01},
+    {"index": 11031, "timestamp": "2018-11-13T03:08:33+00:00", "available_at": "2018-11-14T03:22:20+00:00", "score": 0.5733642368444587, "p_value": 0.01},
+    {"index": 11178, "timestamp": "2018-11-14T03:04:19+00:00", "available_at": "2018-11-14T12:09:07+00:00", "score": 0.5949845405347115, "p_value": 0.01},
+    {"index": 11325, "timestamp": "2018-11-14T03:22:00+00:00", "available_at": "2018-11-15T03:13:26+00:00", "score": 0.43722719417946687, "p_value": 0.01},
+    {"index": 11472, "timestamp": "2018-11-14T11:29:41+00:00", "available_at": "2018-11-15T03:24:11+00:00", "score": 0.4280420839357448, "p_value": 0.01},
+    {"index": 11619, "timestamp": "2018-11-15T03:12:48+00:00", "available_at": "2018-11-15T10:36:57+00:00", "score": 0.4856092894816359, "p_value": 0.01},
+    {"index": 11766, "timestamp": "2018-11-15T03:23:52+00:00", "available_at": "2018-11-17T03:11:45+00:00", "score": 0.39886668419095134, "p_value": 0.01},
+    {"index": 11913, "timestamp": "2018-11-15T10:31:21+00:00", "available_at": "2018-11-17T03:24:00+00:00", "score": 0.4252495617325596, "p_value": 0.01},
+    {"index": 12060, "timestamp": "2018-11-17T03:11:26+00:00", "available_at": "2018-11-19T09:26:30+00:00", "score": 0.4566516405292603, "p_value": 0.01},
+    {"index": 12207, "timestamp": "2018-11-17T03:23:41+00:00", "available_at": "2018-11-20T03:18:27+00:00", "score": 0.4077063202786215, "p_value": 0.01},
+    {"index": 12354, "timestamp": "2018-11-19T09:16:32+00:00", "available_at": "2018-11-20T03:29:54+00:00", "score": 0.3516076539941351, "p_value": 0.01},
+    {"index": 12501, "timestamp": "2018-11-20T03:17:57+00:00", "available_at": "2018-11-20T11:10:53+00:00", "score": 0.3873708471192342, "p_value": 0.01},
+    {"index": 12648, "timestamp": "2018-11-20T03:29:34+00:00", "available_at": "2018-11-21T03:21:25+00:00", "score": 0.37309266026327365, "p_value": 0.01},
+    {"index": 12795, "timestamp": "2018-11-20T11:03:31+00:00", "available_at": "2018-11-22T04:22:04+00:00", "score": 0.33494656087095404, "p_value": 0.01},
+    {"index": 12942, "timestamp": "2018-11-21T03:20:57+00:00", "available_at": "2018-11-22T04:47:54+00:00", "score": 0.25682878229273587, "p_value": 0.07},
+    {"index": 13089, "timestamp": "2018-11-22T04:21:36+00:00", "available_at": "2018-11-23T03:06:28+00:00", "score": 0.33338362011699796, "p_value": 0.01},
+    {"index": 13236, "timestamp": "2018-11-22T04:47:29+00:00", "available_at": "2018-11-23T03:18:05+00:00", "score": 0.23977096485492239, "p_value": 0.27},
+    {"index": 13383, "timestamp": "2018-11-23T03:06:08+00:00", "available_at": "2018-11-23T09:16:48+00:00", "score": 0.32540898677536545, "p_value": 0.01},
+    {"index": 13530, "timestamp": "2018-11-23T03:17:47+00:00", "available_at": "2018-11-24T03:08:50+00:00", "score": 0.2645390673729559, "p_value": 0.04},
+    {"index": 13677, "timestamp": "2018-11-23T09:09:08+00:00", "available_at": "2018-11-24T03:20:29+00:00", "score": 0.3582707193333264, "p_value": 0.01},
+    {"index": 13824, "timestamp": "2018-11-24T03:08:31+00:00", "available_at": "2018-11-27T03:11:51+00:00", "score": 0.3914563560112091, "p_value": 0.01},
+    {"index": 13971, "timestamp": "2018-11-24T03:20:11+00:00", "available_at": "2018-11-27T13:08:41+00:00", "score": 0.40386527111870096, "p_value": 0.01},
+    {"index": 14118, "timestamp": "2018-11-27T03:11:25+00:00", "available_at": "2018-11-28T03:13:55+00:00", "score": 0.44794033096223734, "p_value": 0.01},
+    {"index": 14265, "timestamp": "2018-11-27T12:55:35+00:00", "available_at": "2018-11-28T15:07:58+00:00", "score": 0.3387643964036675, "p_value": 0.01},
+    {"index": 14412, "timestamp": "2018-11-28T03:13:30+00:00", "available_at": "2018-11-29T03:13:51+00:00", "score": 0.3305576933959998, "p_value": 0.01},
+    {"index": 14559, "timestamp": "2018-11-28T13:35:11+00:00", "available_at": "2018-11-29T03:24:03+00:00", "score": 0.502249420989161, "p_value": 0.01},
+    {"index": 14706, "timestamp": "2018-11-29T03:13:21+00:00", "available_at": "2018-11-29T13:41:48.500000+00:00", "score": 0.2947692663530463, "p_value": 0.01},
+    {"index": 14853, "timestamp": "2018-11-29T03:23:40+00:00", "available_at": "2018-11-30T02:09:07.500000+00:00", "score": 0.46648989927869833, "p_value": 0.01},
+    {"index": 15000, "timestamp": "2018-11-29T13:24:29+00:00", "available_at": "2018-11-30T14:29:22.500000+00:00", "score": 0.5907045530703815, "p_value": 0.01},
+    {"index": 15147, "timestamp": "2018-11-30T01:51:56.500000+00:00", "available_at": "2018-12-01T03:09:12+00:00", "score": 0.3666219304936799, "p_value": 0.01},
+    {"index": 15294, "timestamp": "2018-11-30T13:29:55+00:00", "available_at": "2018-12-03T09:40:57+00:00", "score": 0.5816700794662936, "p_value": 0.01},
+    {"index": 15441, "timestamp": "2018-12-01T03:08:46+00:00", "available_at": "2018-12-03T19:54:47.500000+00:00", "score": 0.4995261772770546, "p_value": 0.01},
+    {"index": 15588, "timestamp": "2018-12-03T09:13:12.500000+00:00", "available_at": "2018-12-04T03:21:59+00:00", "score": 0.3072581999914988, "p_value": 0.01},
+    {"index": 15735, "timestamp": "2018-12-03T18:28:19+00:00", "available_at": "2018-12-04T14:52:41+00:00", "score": 0.19569633085592522, "p_value": 0.27},
+    {"index": 15882, "timestamp": "2018-12-04T03:21:06+00:00", "available_at": "2018-12-06T12:29:37+00:00", "score": 0.4653686778956216, "p_value": 0.01},
+    {"index": 16029, "timestamp": "2018-12-04T14:39:49+00:00", "available_at": "2018-12-08T02:05:49.500000+00:00", "score": 0.4569877731126704, "p_value": 0.01},
+    {"index": 16176, "timestamp": "2018-12-06T11:22:16+00:00", "available_at": "2018-12-09T04:32:15.500000+00:00", "score": 0.500571405394511, "p_value": 0.01},
+    {"index": 16323, "timestamp": "2018-12-07T19:19:41+00:00", "available_at": "2018-12-09T16:22:53.500000+00:00", "score": 0.5572449313135653, "p_value": 0.01},
+    {"index": 16470, "timestamp": "2018-12-09T04:15:36+00:00", "available_at": "2018-12-10T04:28:12+00:00", "score": 0.3515569718029472, "p_value": 0.01},
+    {"index": 16617, "timestamp": "2018-12-09T16:07:09+00:00", "available_at": "2018-12-10T14:10:29+00:00", "score": 0.3608141947978973, "p_value": 0.01},
+    {"index": 16764, "timestamp": "2018-12-10T04:09:56+00:00", "available_at": "2018-12-11T02:33:23.500000+00:00", "score": 0.3448879318455478, "p_value": 0.01},
+    {"index": 16911, "timestamp": "2018-12-10T14:07:59+00:00", "available_at": "2018-12-11T10:28:21+00:00", "score": 0.2780608828903951, "p_value": 0.01},
+    {"index": 17058, "timestamp": "2018-12-11T01:59:00.500000+00:00", "available_at": "2018-12-11T15:38:25+00:00", "score": 0.505582131115673, "p_value": 0.01},
+    {"index": 17205, "timestamp": "2018-12-11T10:16:49+00:00", "available_at": "2018-12-12T09:12:09+00:00", "score": 0.5372885910260966, "p_value": 0.01},
+    {"index": 17352, "timestamp": "2018-12-11T15:15:49+00:00", "available_at": "2018-12-12T16:48:01+00:00", "score": 0.42305983204248115, "p_value": 0.01},
+    {"index": 17499, "timestamp": "2018-12-12T08:45:43+00:00", "available_at": "2018-12-13T03:33:29+00:00", "score": 0.5314052175966454, "p_value": 0.01},
+    {"index": 17646, "timestamp": "2018-12-12T16:17:34.500000+00:00", "available_at": "2018-12-14T01:38:32+00:00", "score": 0.31244576136986535, "p_value": 0.01},
+    {"index": 17793, "timestamp": "2018-12-13T03:33:08+00:00", "available_at": "2018-12-14T17:37:44.500000+00:00", "score": 0.30109970597946123, "p_value": 0.01},
+    {"index": 17940, "timestamp": "2018-12-14T00:57:12.500000+00:00", "available_at": "2018-12-16T02:04:40.500000+00:00", "score": 0.34719529504561575, "p_value": 0.01},
+    {"index": 18087, "timestamp": "2018-12-14T17:03:49.500000+00:00", "available_at": "2018-12-17T00:01:18+00:00", "score": 0.48664778555020677, "p_value": 0.01},
+    {"index": 18234, "timestamp": "2018-12-16T00:25:14.500000+00:00", "available_at": "2018-12-17T11:05:09.500000+00:00", "score": 0.43830456108227894, "p_value": 0.01},
+    {"index": 18381, "timestamp": "2018-12-16T23:39:15.500000+00:00", "available_at": "2018-12-17T17:26:55.500000+00:00", "score": 0.28171120027804625, "p_value": 0.01},
+    {"index": 18528, "timestamp": "2018-12-17T10:18:43+00:00", "available_at": "2018-12-18T09:44:15+00:00", "score": 0.3971893783487176, "p_value": 0.01},
+    {"index": 18675, "timestamp": "2018-12-17T17:18:36+00:00", "available_at": "2018-12-19T10:42:10.500000+00:00", "score": 0.3351234789505315, "p_value": 0.01},
+    {"index": 18822, "timestamp": "2018-12-18T09:24:43+00:00", "available_at": "2018-12-19T16:34:04+00:00", "score": 0.3590643480260273, "p_value": 0.01},
+    {"index": 18969, "timestamp": "2018-12-19T10:27:47.500000+00:00", "available_at": "2018-12-20T08:21:47.500000+00:00", "score": 0.30337831699868956, "p_value": 0.01},
+    {"index": 19116, "timestamp": "2018-12-19T16:32:37.500000+00:00", "available_at": "2018-12-21T04:00:15.500000+00:00", "score": 0.299653473534167, "p_value": 0.01},
+    {"index": 19263, "timestamp": "2018-12-20T08:17:58.500000+00:00", "available_at": "2018-12-21T16:00:20+00:00", "score": 0.35583275147534493, "p_value": 0.01},
+    {"index": 19410, "timestamp": "2018-12-21T03:32:41.500000+00:00", "available_at": "2018-12-24T04:32:02+00:00", "score": 0.385222291358024, "p_value": 0.01},
+    {"index": 19557, "timestamp": "2018-12-21T15:47:47.500000+00:00", "available_at": "2018-12-25T02:11:35.500000+00:00", "score": 0.35663541207865324, "p_value": 0.01},
+    {"index": 19704, "timestamp": "2018-12-24T03:01:22+00:00", "available_at": "2018-12-26T02:35:21.500000+00:00", "score": 0.26503741964667377, "p_value": 0.01},
+    {"index": 19851, "timestamp": "2018-12-25T01:58:58+00:00", "available_at": "2018-12-27T15:12:21+00:00", "score": 0.20297781490549185, "p_value": 0.18},
+    {"index": 19998, "timestamp": "2018-12-26T01:59:32.500000+00:00", "available_at": "2018-12-28T14:24:22+00:00", "score": 0.2719466815379004, "p_value": 0.01},
+    {"index": 20145, "timestamp": "2018-12-27T15:04:40.500000+00:00", "available_at": "2018-12-30T02:01:01.500000+00:00", "score": 0.2937126000169643, "p_value": 0.01},
+    {"index": 20292, "timestamp": "2018-12-28T14:20:58+00:00", "available_at": "2018-12-31T08:41:19+00:00", "score": 0.4515463851807577, "p_value": 0.01},
+    {"index": 20439, "timestamp": "2018-12-30T01:40:29.500000+00:00", "available_at": "2018-12-31T11:10:28+00:00", "score": 0.6678574197250979, "p_value": 0.01},
+    {"index": 20586, "timestamp": "2018-12-31T08:39:12+00:00", "available_at": "2019-01-01T02:16:56.500000+00:00", "score": 0.19436770532925507, "p_value": 0.18},
+    {"index": 20733, "timestamp": "2018-12-31T10:55:06+00:00", "available_at": "2019-01-02T10:17:54+00:00", "score": 0.6331572419710289, "p_value": 0.01},
+    {"index": 20880, "timestamp": "2019-01-01T01:57:34.500000+00:00", "available_at": "2019-01-04T11:25:50+00:00", "score": 0.4415657676429887, "p_value": 0.01},
+    {"index": 21027, "timestamp": "2019-01-02T10:16:51.500000+00:00", "available_at": "2019-01-07T09:14:29+00:00", "score": 0.4259843648164817, "p_value": 0.01},
+    {"index": 21174, "timestamp": "2019-01-04T10:25:43+00:00", "available_at": "2019-01-08T03:38:22+00:00", "score": 0.42913288756247314, "p_value": 0.01},
+    {"index": 21321, "timestamp": "2019-01-07T08:22:59.500000+00:00", "available_at": "2019-01-08T17:17:12.500000+00:00", "score": 0.3202197180837807, "p_value": 0.01},
+    {"index": 21468, "timestamp": "2019-01-08T03:21:39.500000+00:00", "available_at": "2019-01-09T17:28:33.500000+00:00", "score": 0.26690866598919455, "p_value": 0.01},
+    {"index": 21615, "timestamp": "2019-01-08T16:30:41.500000+00:00", "available_at": "2019-01-10T13:07:30.500000+00:00", "score": 0.2782993146784105, "p_value": 0.01},
+    {"index": 21762, "timestamp": "2019-01-09T16:20:57+00:00", "available_at": "2019-01-10T18:34:57+00:00", "score": 0.2531405793578801, "p_value": 0.01},
+    {"index": 21909, "timestamp": "2019-01-10T12:52:45+00:00", "available_at": "2019-01-11T03:14:38+00:00", "score": 0.3050670866021725, "p_value": 0.01},
+    {"index": 22056, "timestamp": "2019-01-10T18:19:00.500000+00:00", "available_at": "2019-01-11T11:42:47+00:00", "score": 0.31404551841881945, "p_value": 0.01},
+    {"index": 22203, "timestamp": "2019-01-11T03:06:20.500000+00:00", "available_at": "2019-01-11T22:37:31+00:00", "score": 0.273945106286358, "p_value": 0.01},
+    {"index": 22350, "timestamp": "2019-01-11T11:30:20+00:00", "available_at": "2019-01-12T16:43:11.500000+00:00", "score": 0.3117347227441094, "p_value": 0.01},
+    {"index": 22497, "timestamp": "2019-01-11T19:57:30.500000+00:00", "available_at": "2019-01-13T11:53:11.500000+00:00", "score": 0.33314102775032356, "p_value": 0.01},
+    {"index": 22644, "timestamp": "2019-01-12T16:03:17.500000+00:00", "available_at": "2019-01-13T20:48:25.500000+00:00", "score": 0.33796544093929376, "p_value": 0.01},
+    {"index": 22791, "timestamp": "2019-01-13T06:46:52.500000+00:00", "available_at": "2019-01-14T06:42:44+00:00", "score": 0.20643384754884966, "p_value": 0.04},
+    {"index": 22938, "timestamp": "2019-01-13T19:14:17+00:00", "available_at": "2019-01-14T16:00:45.500000+00:00", "score": 0.3009055239674407, "p_value": 0.01},
+    {"index": 23085, "timestamp": "2019-01-14T06:18:27+00:00", "available_at": "2019-01-15T02:26:44+00:00", "score": 0.30990422009187246, "p_value": 0.01},
+    {"index": 23232, "timestamp": "2019-01-14T15:49:06.500000+00:00", "available_at": "2019-01-15T11:06:37.500000+00:00", "score": 0.29936536490246946, "p_value": 0.01},
+    {"index": 23379, "timestamp": "2019-01-15T02:08:25.500000+00:00", "available_at": "2019-01-16T09:03:38+00:00", "score": 0.3540000697848225, "p_value": 0.01},
+    {"index": 23526, "timestamp": "2019-01-15T10:16:48.500000+00:00", "available_at": "2019-01-16T19:07:38+00:00", "score": 0.46285023736039527, "p_value": 0.01},
+    {"index": 23673, "timestamp": "2019-01-16T08:52:38+00:00", "available_at": "2019-01-17T16:01:35+00:00", "score": 0.3093518868609553, "p_value": 0.01},
+    {"index": 23820, "timestamp": "2019-01-16T18:40:53.500000+00:00", "available_at": "2019-01-19T15:14:28+00:00", "score": 0.411370142720869, "p_value": 0.01},
+    {"index": 23967, "timestamp": "2019-01-17T15:30:44.500000+00:00", "available_at": "2019-01-20T16:37:29+00:00", "score": 0.3918536671083554, "p_value": 0.01},
+    {"index": 24114, "timestamp": "2019-01-19T10:55:23.500000+00:00", "available_at": "2019-01-21T05:23:24+00:00", "score": 0.4803000941071894, "p_value": 0.01},
+    {"index": 24261, "timestamp": "2019-01-20T16:29:47.500000+00:00", "available_at": "2019-01-21T13:47:46.500000+00:00", "score": 0.3188912599581462, "p_value": 0.01},
+    {"index": 24408, "timestamp": "2019-01-21T05:08:49+00:00", "available_at": "2019-01-21T18:02:01.500000+00:00", "score": 0.3210089763466988, "p_value": 0.01},
+    {"index": 24555, "timestamp": "2019-01-21T13:40:14+00:00", "available_at": "2019-01-22T03:19:31.500000+00:00", "score": 0.2178001679928354, "p_value": 0.02},
+    {"index": 24702, "timestamp": "2019-01-21T17:53:09+00:00", "available_at": "2019-01-23T01:21:55+00:00", "score": 0.28099027235159935, "p_value": 0.01},
+    {"index": 24849, "timestamp": "2019-01-22T03:16:22+00:00", "available_at": "2019-01-23T15:36:17+00:00", "score": 0.3630987257323169, "p_value": 0.01},
+    {"index": 24996, "timestamp": "2019-01-23T01:07:23.500000+00:00", "available_at": "2019-01-24T11:20:44.500000+00:00", "score": 0.2491367760033154, "p_value": 0.02},
+    {"index": 25143, "timestamp": "2019-01-23T15:03:54.500000+00:00", "available_at": "2019-01-25T01:50:06+00:00", "score": 0.32369398040839353, "p_value": 0.01},
+    {"index": 25290, "timestamp": "2019-01-24T10:57:34+00:00", "available_at": "2019-01-25T12:51:18.500000+00:00", "score": 0.3195657881166742, "p_value": 0.01},
+    {"index": 25437, "timestamp": "2019-01-25T01:40:08+00:00", "available_at": "2019-01-26T02:44:56+00:00", "score": 0.24972553515495782, "p_value": 0.01},
+    {"index": 25584, "timestamp": "2019-01-25T12:42:06.500000+00:00", "available_at": "2019-01-27T13:14:00.500000+00:00", "score": 0.2770118669290613, "p_value": 0.01},
+    {"index": 25731, "timestamp": "2019-01-26T02:15:18+00:00", "available_at": "2019-01-28T01:41:22+00:00", "score": 0.30463403282071766, "p_value": 0.01},
+    {"index": 25878, "timestamp": "2019-01-27T13:09:07+00:00", "available_at": "2019-01-28T12:24:05.500000+00:00", "score": 0.1939073496003198, "p_value": 0.35},
+    {"index": 26025, "timestamp": "2019-01-28T01:30:20+00:00", "available_at": "2019-01-28T16:00:06+00:00", "score": 0.285872787562372, "p_value": 0.01},
+    {"index": 26172, "timestamp": "2019-01-28T12:06:25.500000+00:00", "available_at": "2019-01-29T03:03:50+00:00", "score": 0.19134396049220204, "p_value": 0.32},
+    {"index": 26319, "timestamp": "2019-01-28T15:55:54+00:00", "available_at": "2019-01-30T01:30:06.500000+00:00", "score": 0.24831738806618445, "p_value": 0.03},
+    {"index": 26466, "timestamp": "2019-01-29T03:03:14+00:00", "available_at": "2019-01-30T16:33:11+00:00", "score": 0.26643290060080194, "p_value": 0.01},
+    {"index": 26613, "timestamp": "2019-01-30T01:19:09.500000+00:00", "available_at": "2019-01-31T03:28:17.500000+00:00", "score": 0.2780356522804378, "p_value": 0.01},
+    {"index": 26760, "timestamp": "2019-01-30T16:07:26.500000+00:00", "available_at": "2019-01-31T15:20:32.500000+00:00", "score": 0.22440525461340208, "p_value": 0.04},
+    {"index": 26907, "timestamp": "2019-01-31T03:26:22.500000+00:00", "available_at": "2019-02-01T01:49:43.500000+00:00", "score": 0.21316633886329334, "p_value": 0.02},
+    {"index": 27054, "timestamp": "2019-01-31T15:13:50+00:00", "available_at": "2019-02-01T11:17:20+00:00", "score": 0.25142347262963666, "p_value": 0.01},
+    {"index": 27201, "timestamp": "2019-02-01T01:33:43.500000+00:00", "available_at": "2019-02-01T16:42:38.500000+00:00", "score": 0.43745960047403115, "p_value": 0.01},
+    {"index": 27348, "timestamp": "2019-02-01T11:13:33.500000+00:00", "available_at": "2019-02-02T03:06:38.500000+00:00", "score": 0.36559083226620553, "p_value": 0.01},
+    {"index": 27495, "timestamp": "2019-02-01T16:31:37+00:00", "available_at": "2019-02-05T05:33:59+00:00", "score": 0.37892251820943973, "p_value": 0.01},
+    {"index": 27642, "timestamp": "2019-02-02T03:04:03+00:00", "available_at": "2019-02-06T13:07:14+00:00", "score": 0.48112215292415944, "p_value": 0.01},
+    {"index": 27789, "timestamp": "2019-02-05T04:24:06.500000+00:00", "available_at": "2019-02-07T19:08:54+00:00", "score": 0.3324856167175858, "p_value": 0.01},
+    {"index": 27936, "timestamp": "2019-02-06T12:32:44+00:00", "available_at": "2019-02-08T10:50:01+00:00", "score": 0.29460322605296696, "p_value": 0.01},
+    {"index": 28083, "timestamp": "2019-02-07T17:58:37+00:00", "available_at": "2019-02-08T15:18:11+00:00", "score": 0.40326485954587193, "p_value": 0.01},
+    {"index": 28230, "timestamp": "2019-02-08T10:24:13.500000+00:00", "available_at": "2019-02-09T14:25:07+00:00", "score": 0.35502614967986496, "p_value": 0.01},
+    {"index": 28377, "timestamp": "2019-02-08T15:11:23.500000+00:00", "available_at": "2019-02-10T02:26:28+00:00", "score": 0.27157815315271505, "p_value": 0.01},
+    {"index": 28524, "timestamp": "2019-02-09T14:08:25+00:00", "available_at": "2019-02-10T12:23:44.500000+00:00", "score": 0.37794011808428307, "p_value": 0.01},
+    {"index": 28671, "timestamp": "2019-02-10T02:19:01.500000+00:00", "available_at": "2019-02-10T17:39:25+00:00", "score": 0.23060964552605184, "p_value": 0.02},
+    {"index": 28818, "timestamp": "2019-02-10T12:17:32+00:00", "available_at": "2019-02-11T03:30:20.500000+00:00", "score": 0.18576059298480024, "p_value": 0.34},
+    {"index": 28965, "timestamp": "2019-02-10T17:21:00+00:00", "available_at": "2019-02-11T12:52:49+00:00", "score": 0.31285308310716997, "p_value": 0.01},
+    {"index": 29112, "timestamp": "2019-02-11T03:21:49.500000+00:00", "available_at": "2019-02-11T17:12:16+00:00", "score": 0.330646291602277, "p_value": 0.01},
+    {"index": 29259, "timestamp": "2019-02-11T12:47:03+00:00", "available_at": "2019-02-12T03:46:56+00:00", "score": 0.29553502682240373, "p_value": 0.01},
+    {"index": 29406, "timestamp": "2019-02-11T16:56:25+00:00", "available_at": "2019-02-13T02:16:22+00:00", "score": 0.31106609140029634, "p_value": 0.01},
+    {"index": 29553, "timestamp": "2019-02-12T03:41:49+00:00", "available_at": "2019-02-13T15:49:57+00:00", "score": 0.3616568435612508, "p_value": 0.01},
+    {"index": 29700, "timestamp": "2019-02-13T01:59:04+00:00", "available_at": "2019-02-14T03:22:42+00:00", "score": 0.2336149131395147, "p_value": 0.03},
+    {"index": 29847, "timestamp": "2019-02-13T15:35:05+00:00", "available_at": "2019-02-14T16:10:04+00:00", "score": 0.350505822458664, "p_value": 0.01},
+    {"index": 29994, "timestamp": "2019-02-14T03:20:12+00:00", "available_at": "2019-02-15T09:09:34+00:00", "score": 0.2260371965929043, "p_value": 0.08},
+    {"index": 30141, "timestamp": "2019-02-14T15:59:06+00:00", "available_at": "2019-02-17T00:29:47.500000+00:00", "score": 0.38416538689879903, "p_value": 0.01},
+    {"index": 30288, "timestamp": "2019-02-15T07:24:13.500000+00:00", "available_at": "2019-02-17T22:53:18.500000+00:00", "score": 0.3615054070830898, "p_value": 0.01},
+    {"index": 30435, "timestamp": "2019-02-17T00:08:01+00:00", "available_at": "2019-02-18T04:55:21.500000+00:00", "score": 0.446040348754393, "p_value": 0.01},
+    {"index": 30582, "timestamp": "2019-02-17T19:00:55+00:00", "available_at": "2019-02-18T13:42:50+00:00", "score": 0.2654405724567478, "p_value": 0.01},
+    {"index": 30729, "timestamp": "2019-02-18T04:42:57+00:00", "available_at": "2019-02-19T01:25:17.500000+00:00", "score": 0.33669795545476655, "p_value": 0.01},
+    {"index": 30876, "timestamp": "2019-02-18T13:36:52.500000+00:00", "available_at": "2019-02-20T00:26:49+00:00", "score": 0.2149934336264983, "p_value": 0.04},
+    {"index": 31023, "timestamp": "2019-02-19T01:15:27+00:00", "available_at": "2019-02-20T12:20:29+00:00", "score": 0.2451660338023305, "p_value": 0.01},
+    {"index": 31170, "timestamp": "2019-02-20T00:04:47.500000+00:00", "available_at": "2019-02-21T12:48:25+00:00", "score": 0.2245485770854941, "p_value": 0.02},
+    {"index": 31317, "timestamp": "2019-02-20T12:00:24+00:00", "available_at": "2019-02-22T04:05:25.500000+00:00", "score": 0.2252688157554783, "p_value": 0.02},
+    {"index": 31464, "timestamp": "2019-02-21T12:32:44+00:00", "available_at": "2019-02-22T17:49:44+00:00", "score": 0.3091606426936868, "p_value": 0.01},
+    {"index": 31611, "timestamp": "2019-02-22T03:49:12.500000+00:00", "available_at": "2019-02-25T11:25:14.500000+00:00", "score": 0.21769805148501037, "p_value": 0.14},
+    {"index": 31758, "timestamp": "2019-02-22T17:40:00.500000+00:00", "available_at": "2019-02-26T15:01:49.500000+00:00", "score": 0.2970869097394273, "p_value": 0.01},
+    {"index": 31905, "timestamp": "2019-02-25T11:16:36+00:00", "available_at": "2019-02-28T13:33:13+00:00", "score": 0.32516510734853105, "p_value": 0.01},
+    {"index": 32052, "timestamp": "2019-02-26T14:41:52+00:00", "available_at": "2019-03-04T09:37:56+00:00", "score": 0.3070337218762054, "p_value": 0.01}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "trace_variant_frequency",
+    "representation": "exact_activity_sequences",
+    "window_size": 300,
+    "step": 147,
+    "alpha": 0.03,
+    "min_effect": 0.12,
+    "persistence": 2,
+    "min_separation": 300,
+    "retrospective": true,
+    "permutations": 99,
+    "permutation_block_size": 1,
+    "random_state": 73,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 300,
+    "step": 147,
+    "min_separation": 300,
+    "permutations": 99,
+    "random_state": 73,
+    "alpha": 0.03,
+    "persistence": 2,
+    "min_effect": 0.12
+  },
+  "runtime_seconds": 15.995853,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 558426.73,
+        "tp": 1,
+        "fp": 13,
+        "fn": 0,
+        "precision": 0.07142857142857142,
+        "recall": 1.0,
+        "f1": 0.13333333333333333,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 4,
+            "estimate_minus_onset_seconds": 262745.0,
+            "distance_to_truth_interval_seconds": 262745.0,
+            "availability_minus_onset_seconds": 8655215.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 1396066.825,
+        "tp": 1,
+        "fp": 13,
+        "fn": 0,
+        "precision": 0.07142857142857142,
+        "recall": 1.0,
+        "f1": 0.13333333333333333,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 4,
+            "estimate_minus_onset_seconds": 262745.0,
+            "distance_to_truth_interval_seconds": 262745.0,
+            "availability_minus_onset_seconds": 8655215.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 2792133.65,
+        "tp": 1,
+        "fp": 13,
+        "fn": 0,
+        "precision": 0.07142857142857142,
+        "recall": 1.0,
+        "f1": 0.13333333333333333,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 4,
+            "estimate_minus_onset_seconds": 262745.0,
+            "distance_to_truth_interval_seconds": 262745.0,
+            "availability_minus_onset_seconds": 8655215.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 217,
+    "published_count": 217,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

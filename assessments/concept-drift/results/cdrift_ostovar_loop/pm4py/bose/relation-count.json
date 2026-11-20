@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ostovar_loop",
+  "library": "pm4py",
+  "method": "bose",
+  "profile": "relation-count",
+  "status": "ok",
+  "detector_source_revision": "765435bc7f5190adf30be7314d7158b92ff433c4",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "timestamp": "1970-01-06T23:02:25.684000+00:00",
+      "p_value": 0.02,
+      "available_at": "1970-01-23T11:16:24.952000+00:00"
+    },
+    {
+      "timestamp": "1970-01-07T04:59:14.235000+00:00",
+      "p_value": 0.005,
+      "available_at": "1970-01-23T11:16:24.952000+00:00"
+    },
+    {
+      "timestamp": "1970-01-07T11:00:35.860000+00:00",
+      "p_value": 0.015,
+      "available_at": "1970-01-23T11:16:24.952000+00:00"
+    },
+    {
+      "timestamp": "1970-01-07T17:32:18.584000+00:00",
+      "p_value": 0.0175,
+      "available_at": "1970-01-23T11:16:24.952000+00:00"
+    },
+    {
+      "timestamp": "1970-01-14T09:39:21.879000+00:00",
+      "p_value": 0.02,
+      "available_at": "1970-01-23T11:16:24.952000+00:00"
+    },
+    {
+      "timestamp": "1970-01-14T15:57:29.733000+00:00",
+      "p_value": 0.005,
+      "available_at": "1970-01-23T11:16:24.952000+00:00"
+    },
+    {
+      "timestamp": "1970-01-14T22:03:14.024000+00:00",
+      "p_value": 0.01,
+      "available_at": "1970-01-23T11:16:24.952000+00:00"
+    }
+  ],
+  "scores": [],
+  "metadata": {
+    "retrospective": true,
+    "trace_order": "start",
+    "input_format": "EventLog",
+    "score_output": "legacy API returns p-values only for alarms"
+  },
+  "configuration": {
+    "sub_log_size": 37,
+    "window_size": 6,
+    "num_permutations": 399,
+    "thresh_p_value": 0.025,
+    "max_no_change_points": 100,
+    "random_state": 73
+  },
+  "runtime_seconds": 21.425878,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 19393.5749,
+        "tp": 1,
+        "fp": 6,
+        "fn": 1,
+        "precision": 0.14285714285714285,
+        "recall": 0.5,
+        "f1": 0.2222222222222222,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 6,
+            "estimate_minus_onset_seconds": -1860.357,
+            "distance_to_truth_interval_seconds": 1860.357,
+            "availability_minus_onset_seconds": 736930.571
+          }
+        ],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 48483.93725,
+        "tp": 2,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.2857142857142857,
+        "recall": 1.0,
+        "f1": 0.4444444444444444,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": -21628.877,
+            "distance_to_truth_interval_seconds": 21628.877,
+            "availability_minus_onset_seconds": 1338217.491
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 6,
+            "estimate_minus_onset_seconds": -1860.357,
+            "distance_to_truth_interval_seconds": 1860.357,
+            "availability_minus_onset_seconds": 736930.571
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 96967.8745,
+        "tp": 2,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.2857142857142857,
+        "recall": 1.0,
+        "f1": 0.4444444444444444,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": -21628.877,
+            "distance_to_truth_interval_seconds": 21628.877,
+            "availability_minus_onset_seconds": 1338217.491
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 6,
+            "estimate_minus_onset_seconds": -1860.357,
+            "distance_to_truth_interval_seconds": 1860.357,
+            "availability_minus_onset_seconds": 736930.571
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 0,
+    "published_count": 0,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

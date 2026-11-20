@@ -1,0 +1,71 @@
+{
+  "id": "rheon_mixed_07",
+  "family": "rheon",
+  "scenario": "mixed",
+  "source": {
+    "thesis_files": "https://drive.google.com/drive/folders/1sie4iFTUNmHuyvMVoW8tktyvtoUzbmEp",
+    "event_log": "https://drive.google.com/file/d/1eS4VDEuJAdktCURmbmboBovHRW2r3o1M/view",
+    "sha256": "a80834629ca449ead6128a4f59844ddd26072821cda327da8c264a59092d6aed",
+    "ground_truth": "https://drive.google.com/file/d/1MaOBX9hanHAQaIFd3PTgaehB4nG-FfuY/view",
+    "ground_truth_sha256": "8d13af1aa7a82c476483795c8e127e707bbb6df56aacf718c1a21a7693bca6f6",
+    "generator_scenario": "mixed_03",
+    "truth_time_basis": "generator metadata expressed in UTC"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 858,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "workload",
+      "perspective": "resource",
+      "mode": "gradual",
+      "start": "2024-10-13T00:00:00+00:00",
+      "end": "2024-10-25T00:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.2,
+        0.4
+      ]
+    },
+    {
+      "id": "d02",
+      "kind": "arrival_rate",
+      "perspective": "inter",
+      "mode": "sudden",
+      "start": "2024-11-12T00:00:00+00:00",
+      "end": "2024-11-12T00:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.7
+      ]
+    }
+  ],
+  "events": 14300,
+  "cases": 2860,
+  "activities": 6,
+  "resources": 4,
+  "first_timestamp": "2024-10-01T00:00:00+00:00",
+  "last_timestamp": "2024-11-30T03:58:54+00:00",
+  "observation_span_seconds": 5198334.0,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2024-10-13T00:00:00+00:00",
+      "end": "2024-10-25T00:00:00+00:00",
+      "annotations": [
+        "d01"
+      ]
+    },
+    {
+      "id": "d02",
+      "start": "2024-11-12T00:00:00+00:00",
+      "end": "2024-11-12T00:00:00+00:00",
+      "annotations": [
+        "d02"
+      ]
+    }
+  ]
+}

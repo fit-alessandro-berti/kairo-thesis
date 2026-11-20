@@ -1,0 +1,108 @@
+{
+  "id": "rheon_multi_02",
+  "family": "rheon",
+  "scenario": "multi",
+  "source": {
+    "thesis_files": "https://drive.google.com/drive/folders/1sie4iFTUNmHuyvMVoW8tktyvtoUzbmEp",
+    "event_log": "https://drive.google.com/file/d/1xfViA65xBLZ8L4YT4Yluxqu8HkqhpxmM/view",
+    "sha256": "2805962c79632a270f7fda1a7b8349db53237802fb3448eeac3e1835fe9ad5b2",
+    "ground_truth": "https://drive.google.com/file/d/1diQscVoJCzp70ZMmnZDNISRd_dZYY4ze/view",
+    "ground_truth_sha256": "d76b738e1ba444354efe4ac0bbbe8c82482700e2fc012f77cc1bfd6c999da90e",
+    "generator_scenario": "multi_intra_3",
+    "truth_time_basis": "generator metadata expressed in UTC"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 860,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "2024-04-19T00:00:00+00:00",
+      "end": "2024-04-19T00:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.2
+      ]
+    },
+    {
+      "id": "d02",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "2024-05-07T00:00:00+00:00",
+      "end": "2024-05-07T00:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.4
+      ]
+    },
+    {
+      "id": "d03",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "2024-05-25T00:00:00+00:00",
+      "end": "2024-05-25T00:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.6
+      ]
+    },
+    {
+      "id": "d04",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "2024-06-12T00:00:00+00:00",
+      "end": "2024-06-12T00:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.8
+      ]
+    }
+  ],
+  "events": 20514,
+  "cases": 3161,
+  "activities": 8,
+  "resources": 3,
+  "first_timestamp": "2024-04-01T00:00:00+00:00",
+  "last_timestamp": "2024-06-30T03:33:20+00:00",
+  "observation_span_seconds": 7788800.0,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2024-04-19T00:00:00+00:00",
+      "end": "2024-04-19T00:00:00+00:00",
+      "annotations": [
+        "d01"
+      ]
+    },
+    {
+      "id": "d02",
+      "start": "2024-05-07T00:00:00+00:00",
+      "end": "2024-05-07T00:00:00+00:00",
+      "annotations": [
+        "d02"
+      ]
+    },
+    {
+      "id": "d03",
+      "start": "2024-05-25T00:00:00+00:00",
+      "end": "2024-05-25T00:00:00+00:00",
+      "annotations": [
+        "d03"
+      ]
+    },
+    {
+      "id": "d04",
+      "start": "2024-06-12T00:00:00+00:00",
+      "end": "2024-06-12T00:00:00+00:00",
+      "annotations": [
+        "d04"
+      ]
+    }
+  ]
+}

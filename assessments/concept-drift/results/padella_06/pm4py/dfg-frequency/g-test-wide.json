@@ -1,0 +1,615 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_06",
+  "library": "pm4py",
+  "method": "dfg-frequency",
+  "profile": "g-test-wide",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 447,
+      "timestamp": "2018-09-13T03:11:12+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.3524391196578102,
+      "p_value": 3.662825767638117e-106,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.06833847019743601,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.052385578540161126,
+          "[\"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\"]": 0.046734018158780935,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.04549255323016517,
+          "[\"Request created\", \"Request deleted\"]": -0.03662321539416512
+        }
+      }
+    },
+    {
+      "index": 2358,
+      "timestamp": "2018-09-19T03:09:30+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.1459090489734891,
+      "p_value": 4.328767846870745e-09,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.022997032640949558,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.022711286954610402,
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": -0.022531780049089643,
+          "[\"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\"]": 0.022403560830860536,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.009645748617064132
+        }
+      }
+    },
+    {
+      "index": 2946,
+      "timestamp": "2018-09-20T10:30:44+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.133893779517287,
+      "p_value": 2.114074423314644e-06,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Request deleted\"]": 0.01853891095560126,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": -0.012957641778887169,
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.012957641778887169,
+          "[\"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\"]": -0.012385127056678588,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.010736524453460128
+        }
+      }
+    },
+    {
+      "index": 4122,
+      "timestamp": "2018-09-26T09:29:23+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.2567396073476703,
+      "p_value": 1.4124655679145187e-51,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.05450416833695432,
+          "[\"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\"]": -0.033477344526225694,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": -0.03291109311059715,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": -0.030034268248304276,
+          "[\"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\"]": 0.0232163080407701
+        }
+      }
+    },
+    {
+      "index": 6180,
+      "timestamp": "2018-10-12T03:57:33+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.37154353496474435,
+      "p_value": 1.3876732685539175e-125,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.06729449507460854,
+          "[\"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\"]": -0.0397873317508263,
+          "[\"Request created\", \"Pending Request for Network Information\"]": 0.032091690544412604,
+          "[\"Pending Request for Network Information\", \"Pending Request for Reservation Closure\"]": 0.032091690544412604,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": 0.032091690544412604
+        }
+      }
+    },
+    {
+      "index": 11178,
+      "timestamp": "2018-11-14T03:04:19+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.32924746097343827,
+      "p_value": 1.0227923418364623e-75,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Request deleted\"]": -0.057382213855519115,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.04483345301168967,
+          "[\"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\"]": 0.03537821595150763,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.03271812189078865,
+          "[\"Evaluating Request (WITH registered letter)\", \"Service closure Request with BO responsibility\"]": -0.027363000627502732
+        }
+      }
+    },
+    {
+      "index": 15294,
+      "timestamp": "2018-11-30T13:29:55+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.388990191240669,
+      "p_value": 1.5551689781827126e-131,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": -0.07237416871165428,
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.07237416871165428,
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": -0.07152705219723277,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.05913439194011964,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.0530616806933127
+        }
+      }
+    },
+    {
+      "index": 17205,
+      "timestamp": "2018-12-11T10:16:49+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.312078374884487,
+      "p_value": 5.840948762598027e-78,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": 0.079401002610676,
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": 0.06930754596456146,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": 0.06869480086652224,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.053487613175581844,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": -0.04013810198300283
+        }
+      }
+    },
+    {
+      "index": 20439,
+      "timestamp": "2018-12-30T01:40:29.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.48334292486414765,
+      "p_value": 4.399337403144935e-208,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": 0.12744911804613296,
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": 0.12744911804613296,
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": 0.12500640735715363,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.11366651590532187,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": -0.0717586310869893
+        }
+      }
+    },
+    {
+      "index": 23820,
+      "timestamp": "2019-01-16T18:40:53.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.27117620940096954,
+      "p_value": 2.6270225773012526e-46,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Pending Request for Network Information\"]": -0.03464203233256351,
+          "[\"Pending Request for Network Information\", \"Request deleted\"]": -0.03464203233256351,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": -0.027125167164687013,
+          "[\"Authorization Requested\", \"Service closure Request with BO responsibility\"]": 0.025860492871946604,
+          "[\"Service closure Request with network responsibility\", \"Authorization Requested\"]": 0.025227180649020707
+        }
+      }
+    },
+    {
+      "index": 26613,
+      "timestamp": "2019-01-30T01:19:09.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.16113152670345743,
+      "p_value": 3.6203308733858964e-14,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.02727087908480816,
+          "[\"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\"]": 0.023412754717034412,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.022504254843038474,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.02166246300174853,
+          "[\"Request created\", \"Service closure Request with network responsibility\"]": -0.018331649749650757
+        }
+      }
+    },
+    {
+      "index": 27642,
+      "timestamp": "2019-02-02T03:04:03+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.30551980169728177,
+      "p_value": 5.911725707078069e-68,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": -0.04539976605976109,
+          "[\"Request created\", \"Service closure Request with network responsibility\"]": 0.042150596075002655,
+          "[\"Service closure Request with network responsibility\", \"Authorization Requested\"]": 0.04014792584803337,
+          "[\"Authorization Requested\", \"Service closure Request with BO responsibility\"]": 0.04014792584803337,
+          "[\"Request created\", \"Request deleted\"]": 0.039568982832567316
+        }
+      }
+    },
+    {
+      "index": 29847,
+      "timestamp": "2019-02-13T15:35:05+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.17968281512060805,
+      "p_value": 2.7815775247033785e-18,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": -0.03462012753336176,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": -0.02396598804737652,
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.02396598804737652,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.016868449322068352,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.015344191853206748
+        }
+      }
+    },
+    {
+      "index": 30435,
+      "timestamp": "2019-02-17T00:08:01+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.241981199345555,
+      "p_value": 2.9252665348708224e-44,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": -0.03893477343927437,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.036887092762097715,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": -0.029302022084668713,
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.028699975125005855,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.024500066693824867
+        }
+      }
+    },
+    {
+      "index": 31758,
+      "timestamp": "2019-02-22T17:40:00.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.1520268979328128,
+      "p_value": 3.977275700560807e-11,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.0335191802559954,
+          "[\"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\"]": 0.016460450300497788,
+          "[\"Pending Request for acquittance of heirs\", \"Request completed with account closure\"]": 0.015843547154291742,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": -0.015417534792949453,
+          "[\"Request created\", \"Request deleted\"]": 0.013023640194149894
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 300, "timestamp": "2018-09-12T03:07:19+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.23631614084437508, "p_value": 3.03189214959886e-38},
+    {"index": 447, "timestamp": "2018-09-13T03:11:12+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3524391196578102, "p_value": 3.662825767638117e-106},
+    {"index": 594, "timestamp": "2018-09-13T03:26:43+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17509776747550784, "p_value": 4.246815692562289e-17},
+    {"index": 741, "timestamp": "2018-09-13T03:41:31+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.25947328294184496, "p_value": 3.5432001852930406e-54},
+    {"index": 888, "timestamp": "2018-09-13T09:41:23+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1791029465331049, "p_value": 4.002530379919931e-19},
+    {"index": 1035, "timestamp": "2018-09-14T03:16:57+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2876238620643387, "p_value": 5.414175653299632e-67},
+    {"index": 1182, "timestamp": "2018-09-14T03:30:57+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.180510188988149, "p_value": 1.5574453662197592e-19},
+    {"index": 1329, "timestamp": "2018-09-14T03:48:29+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.26607855573510353, "p_value": 5.398466755850725e-55},
+    {"index": 1476, "timestamp": "2018-09-14T09:31:58+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15397808161968946, "p_value": 7.412586044240532e-12},
+    {"index": 1623, "timestamp": "2018-09-15T03:15:17+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.20058029730069585, "p_value": 1.1769511068603666e-26},
+    {"index": 1770, "timestamp": "2018-09-15T03:26:14+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1404308275338858, "p_value": 2.5193180195331175e-08},
+    {"index": 1917, "timestamp": "2018-09-17T08:41:56+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.23143061262614598, "p_value": 2.215696672118398e-37},
+    {"index": 2064, "timestamp": "2018-09-18T03:10:38+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08417259145453254, "p_value": 0.34314379801429234},
+    {"index": 2211, "timestamp": "2018-09-18T03:21:26+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1119574015052438, "p_value": 0.002152005193385482},
+    {"index": 2358, "timestamp": "2018-09-19T03:09:30+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1459090489734891, "p_value": 4.328767846870745e-09},
+    {"index": 2505, "timestamp": "2018-09-19T03:22:19+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.09079114972154533, "p_value": 0.06986191842097333},
+    {"index": 2652, "timestamp": "2018-09-19T16:33:27+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.11467390172239865, "p_value": 0.00020364178874905363},
+    {"index": 2799, "timestamp": "2018-09-20T03:16:55+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1183787924754788, "p_value": 0.00022294095892199493},
+    {"index": 2946, "timestamp": "2018-09-20T10:30:44+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.133893779517287, "p_value": 2.114074423314644e-06},
+    {"index": 3093, "timestamp": "2018-09-21T03:15:18+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12116796591847531, "p_value": 0.0006470506522166493},
+    {"index": 3240, "timestamp": "2018-09-22T03:09:11+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12866323516134073, "p_value": 4.4601262315938294e-05},
+    {"index": 3387, "timestamp": "2018-09-22T03:23:10+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1185021020433667, "p_value": 0.00033281082453098543},
+    {"index": 3534, "timestamp": "2018-09-25T03:06:11+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.07691818314145955, "p_value": 0.5037733873500313},
+    {"index": 3681, "timestamp": "2018-09-25T03:18:36+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.07283909224982185, "p_value": 0.4884169551008619},
+    {"index": 3828, "timestamp": "2018-09-26T03:06:02+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15177797673838728, "p_value": 1.6315803038895314e-12},
+    {"index": 3975, "timestamp": "2018-09-26T03:19:22+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08794081424892644, "p_value": 0.1350081545916464},
+    {"index": 4122, "timestamp": "2018-09-26T09:29:23+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2567396073476703, "p_value": 1.4124655679145187e-51},
+    {"index": 4269, "timestamp": "2018-09-27T03:14:28+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12169896990992163, "p_value": 3.9558715045389276e-05},
+    {"index": 4416, "timestamp": "2018-09-28T03:05:21+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15976427157109088, "p_value": 8.269394333678522e-13},
+    {"index": 4563, "timestamp": "2018-09-28T03:21:03+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08219058229638367, "p_value": 0.2281453519659004},
+    {"index": 4710, "timestamp": "2018-09-29T03:17:21+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.11313792365610638, "p_value": 0.00039121997374423135},
+    {"index": 4857, "timestamp": "2018-09-29T03:28:09+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13935845361981097, "p_value": 6.02801957528356e-09},
+    {"index": 5004, "timestamp": "2018-10-02T03:13:47+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2764258987155319, "p_value": 9.732175425366084e-52},
+    {"index": 5151, "timestamp": "2018-10-02T10:08:22+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2806086140370387, "p_value": 3.6818591379459066e-45},
+    {"index": 5298, "timestamp": "2018-10-08T09:28:15+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1465466019284561, "p_value": 3.721722441534095e-06},
+    {"index": 5445, "timestamp": "2018-10-10T03:11:22+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2733737883228638, "p_value": 5.646250361168413e-41},
+    {"index": 5592, "timestamp": "2018-10-11T08:18:13+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2169390845964962, "p_value": 2.432520585189091e-28},
+    {"index": 5739, "timestamp": "2018-10-12T03:19:54+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.29298818297173074, "p_value": 2.8507943812957777e-70},
+    {"index": 5886, "timestamp": "2018-10-12T03:36:11+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.19083295829066999, "p_value": 1.5328759081415257e-23},
+    {"index": 6033, "timestamp": "2018-10-12T03:47:12+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.32929009776277984, "p_value": 1.3409749062456252e-94},
+    {"index": 6180, "timestamp": "2018-10-12T03:57:33+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.37154353496474435, "p_value": 1.3876732685539175e-125},
+    {"index": 6327, "timestamp": "2018-10-12T11:32:12+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.31049778308085685, "p_value": 6.586180606202209e-85},
+    {"index": 6474, "timestamp": "2018-10-13T03:17:59+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.19840787464832402, "p_value": 6.233905177503987e-27},
+    {"index": 6621, "timestamp": "2018-10-13T03:28:58+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.30180547018360016, "p_value": 1.1077871916612675e-79},
+    {"index": 6768, "timestamp": "2018-10-15T10:21:42+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1902284780724364, "p_value": 1.872649294093436e-24},
+    {"index": 6915, "timestamp": "2018-10-16T03:08:08+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.26131620100459446, "p_value": 3.917387511179965e-54},
+    {"index": 7062, "timestamp": "2018-10-16T03:18:46+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.11328830845294975, "p_value": 0.00015897764589109444},
+    {"index": 7209, "timestamp": "2018-10-16T09:52:15+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1363069604354836, "p_value": 1.2173473567703834e-08},
+    {"index": 7356, "timestamp": "2018-10-17T03:10:39+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15361302683235753, "p_value": 1.4983295665275858e-11},
+    {"index": 7503, "timestamp": "2018-10-17T03:21:08+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13655231225241532, "p_value": 6.296648360182955e-08},
+    {"index": 7650, "timestamp": "2018-10-18T03:09:45+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13184558307558777, "p_value": 2.936115310039212e-07},
+    {"index": 7797, "timestamp": "2018-10-18T03:21:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2112998417279435, "p_value": 1.6237667823521896e-26},
+    {"index": 7944, "timestamp": "2018-10-19T03:29:46+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12056485443019649, "p_value": 0.00016566314765424997},
+    {"index": 8091, "timestamp": "2018-10-20T03:05:47+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.18922752501166193, "p_value": 7.498861913117374e-20},
+    {"index": 8238, "timestamp": "2018-10-20T03:19:08+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.20956817093254185, "p_value": 1.6720462873752803e-25},
+    {"index": 8385, "timestamp": "2018-10-22T09:36:37+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16777866729889487, "p_value": 1.3066711002043216e-14},
+    {"index": 8532, "timestamp": "2018-10-23T03:11:41+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1539478821089278, "p_value": 2.7612632436867417e-10},
+    {"index": 8679, "timestamp": "2018-10-23T03:22:09+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17538957566725397, "p_value": 4.669868601383329e-15},
+    {"index": 8826, "timestamp": "2018-10-24T03:07:02+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.26118205910304654, "p_value": 2.4608916145263045e-51},
+    {"index": 8973, "timestamp": "2018-10-24T03:19:24+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14556764283327694, "p_value": 6.198826326972958e-09},
+    {"index": 9120, "timestamp": "2018-10-24T03:29:14+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.27151481947217676, "p_value": 3.461210518182588e-61},
+    {"index": 9267, "timestamp": "2018-10-25T03:04:12+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2492886020655306, "p_value": 4.932719266985592e-49},
+    {"index": 9414, "timestamp": "2018-10-25T03:17:49+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08924368665400749, "p_value": 0.09067636689341772},
+    {"index": 9561, "timestamp": "2018-10-25T03:27:46+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2700163236300713, "p_value": 6.901549599661407e-57},
+    {"index": 9708, "timestamp": "2018-10-26T03:20:41+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10172970434493966, "p_value": 0.00797132567743386},
+    {"index": 9855, "timestamp": "2018-10-27T03:11:57+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1131673178460705, "p_value": 0.001581002439254272},
+    {"index": 10002, "timestamp": "2018-10-29T10:14:42+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12158695635243383, "p_value": 0.00022177557963310877},
+    {"index": 10149, "timestamp": "2018-10-30T03:10:37+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17076466475563581, "p_value": 1.4678064878422806e-15},
+    {"index": 10296, "timestamp": "2018-10-31T03:04:47+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1547822468496318, "p_value": 3.440544378124118e-11},
+    {"index": 10443, "timestamp": "2018-10-31T03:17:21+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17884606793127103, "p_value": 1.075283191567855e-17},
+    {"index": 10590, "timestamp": "2018-11-01T03:08:45+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.30680249697885986, "p_value": 3.20878404595704e-59},
+    {"index": 10737, "timestamp": "2018-11-06T09:54:01+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2918335513408491, "p_value": 2.640171594995405e-41},
+    {"index": 10884, "timestamp": "2018-11-08T17:49:27+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.23664569607093525, "p_value": 5.844544194346329e-22},
+    {"index": 11031, "timestamp": "2018-11-13T03:08:33+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3292114177410307, "p_value": 4.977049008396499e-58},
+    {"index": 11178, "timestamp": "2018-11-14T03:04:19+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.32924746097343827, "p_value": 1.0227923418364623e-75},
+    {"index": 11325, "timestamp": "2018-11-14T03:22:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.19687083789348556, "p_value": 1.1874167879649171e-20},
+    {"index": 11472, "timestamp": "2018-11-14T11:29:41+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2766393462133612, "p_value": 2.345189129715271e-55},
+    {"index": 11619, "timestamp": "2018-11-15T03:12:48+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24702851834361453, "p_value": 9.563508089717166e-41},
+    {"index": 11766, "timestamp": "2018-11-15T03:23:52+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13668489455352759, "p_value": 1.852300988585175e-05},
+    {"index": 11913, "timestamp": "2018-11-15T10:31:21+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16652719086207285, "p_value": 1.58703289778482e-11},
+    {"index": 12060, "timestamp": "2018-11-17T03:11:26+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.20873813881203662, "p_value": 5.14107085764852e-25},
+    {"index": 12207, "timestamp": "2018-11-17T03:23:41+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2260344875746231, "p_value": 2.974352879847961e-29},
+    {"index": 12354, "timestamp": "2018-11-19T09:16:32+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1535626268582341, "p_value": 1.8017102972263486e-10},
+    {"index": 12501, "timestamp": "2018-11-20T03:17:57+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1398881618419573, "p_value": 1.3263809285418206e-08},
+    {"index": 12648, "timestamp": "2018-11-20T03:29:34+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17594345431743363, "p_value": 1.0385856768233028e-16},
+    {"index": 12795, "timestamp": "2018-11-20T11:03:31+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13782167576797572, "p_value": 1.2214705191842098e-07},
+    {"index": 12942, "timestamp": "2018-11-21T03:20:57+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10856565885500644, "p_value": 0.005302629154355487},
+    {"index": 13089, "timestamp": "2018-11-22T04:21:36+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15571439510767346, "p_value": 4.125445517412968e-11},
+    {"index": 13236, "timestamp": "2018-11-22T04:47:29+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10679431441624604, "p_value": 0.006257140647448673},
+    {"index": 13383, "timestamp": "2018-11-23T03:06:08+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14320125570493827, "p_value": 1.0284405993858788e-09},
+    {"index": 13530, "timestamp": "2018-11-23T03:17:47+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08772464048479954, "p_value": 0.22578337805923673},
+    {"index": 13677, "timestamp": "2018-11-23T09:09:08+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15357800706973773, "p_value": 1.9725096467780425e-12},
+    {"index": 13824, "timestamp": "2018-11-24T03:08:31+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21848195464064393, "p_value": 1.2790402687543666e-31},
+    {"index": 13971, "timestamp": "2018-11-24T03:20:11+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.176014948777109, "p_value": 1.7289497687634644e-16},
+    {"index": 14118, "timestamp": "2018-11-27T03:11:25+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24182894645936984, "p_value": 1.7717108054975063e-39},
+    {"index": 14265, "timestamp": "2018-11-27T12:55:35+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.18193297145762213, "p_value": 4.5580608655244814e-17},
+    {"index": 14412, "timestamp": "2018-11-28T03:13:30+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15675674554084704, "p_value": 4.086280125517731e-11},
+    {"index": 14559, "timestamp": "2018-11-28T13:35:11+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2536314751183636, "p_value": 2.5617013590610194e-46},
+    {"index": 14706, "timestamp": "2018-11-29T03:13:21+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14351790519251567, "p_value": 3.4400443301500957e-08},
+    {"index": 14853, "timestamp": "2018-11-29T03:23:40+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.31006308069591304, "p_value": 3.6967810571733453e-75},
+    {"index": 15000, "timestamp": "2018-11-29T13:24:29+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3529506205710278, "p_value": 1.5039908752240665e-99},
+    {"index": 15147, "timestamp": "2018-11-30T01:51:56.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.172063826237223, "p_value": 2.5634368229312092e-14},
+    {"index": 15294, "timestamp": "2018-11-30T13:29:55+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.388990191240669, "p_value": 1.5551689781827126e-131},
+    {"index": 15441, "timestamp": "2018-12-01T03:08:46+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24597197462313766, "p_value": 3.070884487203923e-43},
+    {"index": 15588, "timestamp": "2018-12-03T09:13:12.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16203973086663606, "p_value": 3.2989199874413616e-15},
+    {"index": 15735, "timestamp": "2018-12-03T18:28:19+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08355828351892233, "p_value": 0.17063448916627771},
+    {"index": 15882, "timestamp": "2018-12-04T03:21:06+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.23728533179288763, "p_value": 1.887560178736728e-38},
+    {"index": 16029, "timestamp": "2018-12-04T14:39:49+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.20710014900496718, "p_value": 8.66031104828258e-27},
+    {"index": 16176, "timestamp": "2018-12-06T11:22:16+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2653993083649978, "p_value": 4.1894328012369766e-50},
+    {"index": 16323, "timestamp": "2018-12-07T19:19:41+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.25555849448941487, "p_value": 2.8526616393596684e-48},
+    {"index": 16470, "timestamp": "2018-12-09T04:15:36+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1505260206998361, "p_value": 4.874264872141232e-12},
+    {"index": 16617, "timestamp": "2018-12-09T16:07:09+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16184739579797933, "p_value": 1.4399197596577608e-15},
+    {"index": 16764, "timestamp": "2018-12-10T04:09:56+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1740835532055223, "p_value": 2.6270872003887025e-19},
+    {"index": 16911, "timestamp": "2018-12-10T14:07:59+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10408804983027428, "p_value": 0.0007225787446669955},
+    {"index": 17058, "timestamp": "2018-12-11T01:59:00.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.28326468573076125, "p_value": 3.2692010726799254e-62},
+    {"index": 17205, "timestamp": "2018-12-11T10:16:49+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.312078374884487, "p_value": 5.840948762598027e-78},
+    {"index": 17352, "timestamp": "2018-12-11T15:15:49+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.197642468453621, "p_value": 1.03565977840125e-21},
+    {"index": 17499, "timestamp": "2018-12-12T08:45:43+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2841667710045805, "p_value": 7.5002108878363e-58},
+    {"index": 17646, "timestamp": "2018-12-12T16:17:34.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15142729502163332, "p_value": 1.1749584695431512e-08},
+    {"index": 17793, "timestamp": "2018-12-13T03:33:08+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12812017151788882, "p_value": 0.00012653013591389494},
+    {"index": 17940, "timestamp": "2018-12-14T00:57:12.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.20334657488594562, "p_value": 1.5456121459294437e-24},
+    {"index": 18087, "timestamp": "2018-12-14T17:03:49.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.253701900778335, "p_value": 1.3672152828767123e-47},
+    {"index": 18234, "timestamp": "2018-12-16T00:25:14.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.22353440559448137, "p_value": 5.942414420971615e-38},
+    {"index": 18381, "timestamp": "2018-12-16T23:39:15.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12568481467940487, "p_value": 5.5157385114120884e-08},
+    {"index": 18528, "timestamp": "2018-12-17T10:18:43+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1904442792726164, "p_value": 2.0180372581490483e-25},
+    {"index": 18675, "timestamp": "2018-12-17T17:18:36+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13271005049113974, "p_value": 2.3762363975949402e-07},
+    {"index": 18822, "timestamp": "2018-12-18T09:24:43+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.22947970410144639, "p_value": 2.150459970631663e-35},
+    {"index": 18969, "timestamp": "2018-12-19T10:27:47.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17405650626662333, "p_value": 1.2356219767793438e-16},
+    {"index": 19116, "timestamp": "2018-12-19T16:32:37.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13561060181072357, "p_value": 2.9879327397260643e-07},
+    {"index": 19263, "timestamp": "2018-12-20T08:17:58.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14032520739395085, "p_value": 1.1625156809180087e-07},
+    {"index": 19410, "timestamp": "2018-12-21T03:32:41.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.20582204935633333, "p_value": 7.70814856688051e-26},
+    {"index": 19557, "timestamp": "2018-12-21T15:47:47.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21576752433665247, "p_value": 3.701749469630048e-29},
+    {"index": 19704, "timestamp": "2018-12-24T03:01:22+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12013144581998922, "p_value": 4.897943187650453e-05},
+    {"index": 19851, "timestamp": "2018-12-25T01:58:58+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.0760569125823152, "p_value": 0.26786732082705883},
+    {"index": 19998, "timestamp": "2018-12-26T01:59:32.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1283895295383876, "p_value": 9.036151489908293e-08},
+    {"index": 20145, "timestamp": "2018-12-27T15:04:40.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.157749773329987, "p_value": 8.244584410659418e-14},
+    {"index": 20292, "timestamp": "2018-12-28T14:20:58+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.28792598616806436, "p_value": 9.364081292045585e-66},
+    {"index": 20439, "timestamp": "2018-12-30T01:40:29.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.48334292486414765, "p_value": 4.399337403144935e-208},
+    {"index": 20586, "timestamp": "2018-12-31T08:39:12+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08817473852661073, "p_value": 0.08277380857419331},
+    {"index": 20733, "timestamp": "2018-12-31T10:55:06+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.4487985449699055, "p_value": 3.16470685610803e-185},
+    {"index": 20880, "timestamp": "2019-01-01T01:57:34.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.25672066158564055, "p_value": 1.215108923218691e-43},
+    {"index": 21027, "timestamp": "2019-01-02T10:16:51.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.206967817402733, "p_value": 1.9554730981671566e-25},
+    {"index": 21174, "timestamp": "2019-01-04T10:25:43+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.23089766180470708, "p_value": 1.8460854284418537e-31},
+    {"index": 21321, "timestamp": "2019-01-07T08:22:59.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.18463641647797216, "p_value": 4.860071731521832e-15},
+    {"index": 21468, "timestamp": "2019-01-08T03:21:39.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12459147064281391, "p_value": 5.107579082389691e-05},
+    {"index": 21615, "timestamp": "2019-01-08T16:30:41.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14586268447086811, "p_value": 1.9750449021218088e-08},
+    {"index": 21762, "timestamp": "2019-01-09T16:20:57+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15018487243124004, "p_value": 2.265818023530682e-10},
+    {"index": 21909, "timestamp": "2019-01-10T12:52:45+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14091757779643066, "p_value": 1.895777193698644e-09},
+    {"index": 22056, "timestamp": "2019-01-10T18:19:00.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17982285204381104, "p_value": 6.629093889969367e-20},
+    {"index": 22203, "timestamp": "2019-01-11T03:06:20.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15348617950966587, "p_value": 1.7575953320732736e-12},
+    {"index": 22350, "timestamp": "2019-01-11T11:30:20+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12916193910318802, "p_value": 5.19401379208018e-08},
+    {"index": 22497, "timestamp": "2019-01-11T19:57:30.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12796198127571906, "p_value": 6.026836740844213e-08},
+    {"index": 22644, "timestamp": "2019-01-12T16:03:17.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1304562022501755, "p_value": 3.0067680453670495e-08},
+    {"index": 22791, "timestamp": "2019-01-13T06:46:52.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08809013803203296, "p_value": 0.01793729706903936},
+    {"index": 22938, "timestamp": "2019-01-13T19:14:17+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.119474928546898, "p_value": 3.5951766377153585e-06},
+    {"index": 23085, "timestamp": "2019-01-14T06:18:27+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12412954564222448, "p_value": 6.016465779459465e-07},
+    {"index": 23232, "timestamp": "2019-01-14T15:49:06.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13133874711042673, "p_value": 9.178378971837976e-08},
+    {"index": 23379, "timestamp": "2019-01-15T02:08:25.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16472430473020158, "p_value": 4.3814401423635214e-14},
+    {"index": 23526, "timestamp": "2019-01-15T10:16:48.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24379468707388355, "p_value": 9.55009051145401e-40},
+    {"index": 23673, "timestamp": "2019-01-16T08:52:38+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1581902075446259, "p_value": 8.599514155663698e-11},
+    {"index": 23820, "timestamp": "2019-01-16T18:40:53.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.27117620940096954, "p_value": 2.6270225773012526e-46},
+    {"index": 23967, "timestamp": "2019-01-17T15:30:44.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21259885346742782, "p_value": 5.827575155922712e-27},
+    {"index": 24114, "timestamp": "2019-01-19T10:55:23.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2186164277527659, "p_value": 2.255038541390744e-34},
+    {"index": 24261, "timestamp": "2019-01-20T16:29:47.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15445155222635118, "p_value": 1.6133544124742751e-12},
+    {"index": 24408, "timestamp": "2019-01-21T05:08:49+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13614006667511175, "p_value": 3.635492569615901e-09},
+    {"index": 24555, "timestamp": "2019-01-21T13:40:14+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10249183783853334, "p_value": 0.002423210227744346},
+    {"index": 24702, "timestamp": "2019-01-21T17:53:09+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12186305850023364, "p_value": 9.35699892395038e-06},
+    {"index": 24849, "timestamp": "2019-01-22T03:16:22+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1570158559030032, "p_value": 1.4820089392136495e-12},
+    {"index": 24996, "timestamp": "2019-01-23T01:07:23.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10085048771732864, "p_value": 0.021676432039251937},
+    {"index": 25143, "timestamp": "2019-01-23T15:03:54.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16950965777364718, "p_value": 7.527990815140639e-14},
+    {"index": 25290, "timestamp": "2019-01-24T10:57:34+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17426143107259284, "p_value": 7.81989606347591e-18},
+    {"index": 25437, "timestamp": "2019-01-25T01:40:08+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10429518759771163, "p_value": 0.0009299171104547498},
+    {"index": 25584, "timestamp": "2019-01-25T12:42:06.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13198104337602082, "p_value": 5.691099742963996e-09},
+    {"index": 25731, "timestamp": "2019-01-26T02:15:18+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1306973715291143, "p_value": 6.368042247967176e-09},
+    {"index": 25878, "timestamp": "2019-01-27T13:09:07+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.056552429873957394, "p_value": 0.8475285160286959},
+    {"index": 26025, "timestamp": "2019-01-28T01:30:20+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12155471401448144, "p_value": 2.3341022952167593e-07},
+    {"index": 26172, "timestamp": "2019-01-28T12:06:25.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.09197904686374674, "p_value": 0.00886339068785706},
+    {"index": 26319, "timestamp": "2019-01-28T15:55:54+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.11808567369295361, "p_value": 2.7164725734248067e-05},
+    {"index": 26466, "timestamp": "2019-01-29T03:03:14+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.11005605929745986, "p_value": 0.000446690216853023},
+    {"index": 26613, "timestamp": "2019-01-30T01:19:09.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16113152670345743, "p_value": 3.6203308733858964e-14},
+    {"index": 26760, "timestamp": "2019-01-30T16:07:26.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.09305271165698042, "p_value": 0.04175095579499973},
+    {"index": 26907, "timestamp": "2019-01-31T03:26:22.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10956865681258977, "p_value": 0.00015186718835895075},
+    {"index": 27054, "timestamp": "2019-01-31T15:13:50+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12645027451743818, "p_value": 1.601497939481629e-07},
+    {"index": 27201, "timestamp": "2019-02-01T01:33:43.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2799975080509118, "p_value": 4.843193484247511e-62},
+    {"index": 27348, "timestamp": "2019-02-01T11:13:33.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.19418306418785794, "p_value": 1.737766687978825e-24},
+    {"index": 27495, "timestamp": "2019-02-01T16:31:37+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24155302438565013, "p_value": 1.0448187735239867e-40},
+    {"index": 27642, "timestamp": "2019-02-02T03:04:03+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.30551980169728177, "p_value": 5.911725707078069e-68},
+    {"index": 27789, "timestamp": "2019-02-05T04:24:06.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15390173927201228, "p_value": 2.467211808400057e-10},
+    {"index": 27936, "timestamp": "2019-02-06T12:32:44+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.11364394552584028, "p_value": 0.0007638710452150174},
+    {"index": 28083, "timestamp": "2019-02-07T17:58:37+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2037647815265283, "p_value": 1.7048678410429464e-25},
+    {"index": 28230, "timestamp": "2019-02-08T10:24:13.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.18468529013232735, "p_value": 8.045993625161609e-22},
+    {"index": 28377, "timestamp": "2019-02-08T15:11:23.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10763316382359404, "p_value": 0.00029885579392721146},
+    {"index": 28524, "timestamp": "2019-02-09T14:08:25+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16894408678401843, "p_value": 2.578254920361457e-18},
+    {"index": 28671, "timestamp": "2019-02-10T02:19:01.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.0921220548451632, "p_value": 0.03550429100214721},
+    {"index": 28818, "timestamp": "2019-02-10T12:17:32+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.06816452774849231, "p_value": 0.656050378506794},
+    {"index": 28965, "timestamp": "2019-02-10T17:21:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14873180553476265, "p_value": 2.222402223964208e-12},
+    {"index": 29112, "timestamp": "2019-02-11T03:21:49.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13790295364455746, "p_value": 1.657427269662132e-09},
+    {"index": 29259, "timestamp": "2019-02-11T12:47:03+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12262695232390025, "p_value": 4.259984240533957e-06},
+    {"index": 29406, "timestamp": "2019-02-11T16:56:25+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16451908835883317, "p_value": 9.39883073537869e-15},
+    {"index": 29553, "timestamp": "2019-02-12T03:41:49+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1738811145103443, "p_value": 5.55353714430835e-17},
+    {"index": 29700, "timestamp": "2019-02-13T01:59:04+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12384949025913689, "p_value": 3.7380345853628397e-06},
+    {"index": 29847, "timestamp": "2019-02-13T15:35:05+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17968281512060805, "p_value": 2.7815775247033785e-18},
+    {"index": 29994, "timestamp": "2019-02-14T03:20:12+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08568095177067554, "p_value": 0.169803039785216},
+    {"index": 30141, "timestamp": "2019-02-14T15:59:06+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2084632048855556, "p_value": 6.186095009613537e-28},
+    {"index": 30288, "timestamp": "2019-02-15T07:24:13.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17663182297662505, "p_value": 1.4779518230433605e-17},
+    {"index": 30435, "timestamp": "2019-02-17T00:08:01+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.241981199345555, "p_value": 2.9252665348708224e-44},
+    {"index": 30582, "timestamp": "2019-02-17T19:00:55+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13756316335086297, "p_value": 3.169284202016811e-08},
+    {"index": 30729, "timestamp": "2019-02-18T04:42:57+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1700571383471526, "p_value": 5.5609116071064215e-18},
+    {"index": 30876, "timestamp": "2019-02-18T13:36:52.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10145717563934513, "p_value": 0.011124526833513594},
+    {"index": 31023, "timestamp": "2019-02-19T01:15:27+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10906323555621457, "p_value": 0.0018024591458121724},
+    {"index": 31170, "timestamp": "2019-02-20T00:04:47.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1401542673574104, "p_value": 1.0141959075539992e-07},
+    {"index": 31317, "timestamp": "2019-02-20T12:00:24+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12620418577403875, "p_value": 2.1310519243275903e-05},
+    {"index": 31464, "timestamp": "2019-02-21T12:32:44+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1853837467321314, "p_value": 9.202506068783904e-19},
+    {"index": 31611, "timestamp": "2019-02-22T03:49:12.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.09608704092864494, "p_value": 0.0690901252016278},
+    {"index": 31758, "timestamp": "2019-02-22T17:40:00.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1520268979328128, "p_value": 3.977275700560807e-11},
+    {"index": 31905, "timestamp": "2019-02-25T11:16:36+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15474701247392214, "p_value": 1.7370896847068762e-10},
+    {"index": 32052, "timestamp": "2019-02-26T14:41:52+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13955330319887732, "p_value": 1.1828635070548913e-07}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "representation": "directly_follows_frequency",
+    "method": "dfg_frequency",
+    "test": "g_test",
+    "retrospective": true,
+    "window_size": 300,
+    "step": 147,
+    "alpha": 0.03,
+    "min_effect": 0.1,
+    "persistence": 2,
+    "min_separation": 300,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 300,
+    "step": 147,
+    "min_separation": 300,
+    "permutations": 99,
+    "random_state": 73,
+    "alpha": 0.03,
+    "persistence": 2,
+    "test": "g_test",
+    "min_effect": 0.1
+  },
+  "runtime_seconds": 10.915749,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 558426.73,
+        "tp": 1,
+        "fp": 14,
+        "fn": 0,
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1": 0.125,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 6,
+            "estimate_minus_onset_seconds": 349471.0,
+            "distance_to_truth_interval_seconds": 349471.0,
+            "availability_minus_onset_seconds": 8655215.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 1396066.825,
+        "tp": 1,
+        "fp": 14,
+        "fn": 0,
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1": 0.125,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 6,
+            "estimate_minus_onset_seconds": 349471.0,
+            "distance_to_truth_interval_seconds": 349471.0,
+            "availability_minus_onset_seconds": 8655215.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 2792133.65,
+        "tp": 1,
+        "fp": 14,
+        "fn": 0,
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1": 0.125,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 6,
+            "estimate_minus_onset_seconds": 349471.0,
+            "distance_to_truth_interval_seconds": 349471.0,
+            "availability_minus_onset_seconds": 8655215.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 217,
+    "published_count": 217,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

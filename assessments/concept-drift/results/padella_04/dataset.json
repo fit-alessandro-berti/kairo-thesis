@@ -1,0 +1,58 @@
+{
+  "id": "padella_04",
+  "family": "padella",
+  "scenario": "loan_application_process_bpi12w",
+  "source": {
+    "dataset": "https://zenodo.org/records/21005862",
+    "archive_sha256": "e6fc4f90aa76c3b6231c8305df1ffd061600e3f7fd3535be7b7366347cd8131f",
+    "archive_path": "time_fast/gradual/loan_application_process_bpi12w/loan_application_process_bpi12w_time_fast_x01_gradual.xes",
+    "sha256": "63dc310336e22e4c4e571d61974afb77fffa33924f5604145cbba1353c10876c",
+    "ground_truth_archive_path": "time_fast/gradual/loan_application_process_bpi12w/README.md",
+    "thesis_files": "https://drive.google.com/drive/folders/1xnnOfJcT3rrR5ALP8nuQPPmt9SCWND5X",
+    "truth_time_basis": "start of the trace with the published case label"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 3646,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "time_fast",
+      "perspective": "resource",
+      "mode": "gradual",
+      "start": "2011-11-25T18:40:36.678000+00:00",
+      "end": "2012-01-02T15:58:20.681000+00:00",
+      "native_case_ids": [
+        "case_003219",
+        "case_004829"
+      ],
+      "native_zero_based_case_labels": [
+        3219,
+        4829
+      ],
+      "target_activity": "W_Completeren aanvraag",
+      "technique": "fast ×0.1"
+    }
+  ],
+  "events": 51059,
+  "cases": 8049,
+  "activities": 6,
+  "resources": 58,
+  "first_timestamp": "2011-10-01T11:08:36.700000+00:00",
+  "last_timestamp": "2012-03-14T16:57:07.354200+00:00",
+  "observation_span_seconds": 14276910.6542,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2011-11-25T18:40:36.678000+00:00",
+      "end": "2012-01-02T15:58:20.681000+00:00",
+      "annotations": [
+        "d01"
+      ]
+    }
+  ]
+}

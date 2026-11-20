@@ -1,0 +1,56 @@
+{
+  "id": "padella_06",
+  "family": "padella",
+  "scenario": "bank_account_closure",
+  "source": {
+    "dataset": "https://zenodo.org/records/21005862",
+    "archive_sha256": "e6fc4f90aa76c3b6231c8305df1ffd061600e3f7fd3535be7b7366347cd8131f",
+    "archive_path": "time_fast/sudden/bank_account_closure/bank_account_closure_time_fast_x05_sudden.xes",
+    "sha256": "459ef228dff105c6a23e33f14cdb41c9695ff0c65b30d838a67cab45118b5967",
+    "ground_truth_archive_path": "time_fast/sudden/bank_account_closure/README.md",
+    "thesis_files": "https://drive.google.com/drive/folders/1OwabGKdMwpgv40rNcvyHCHoZnv7FBfdf",
+    "truth_time_basis": "start of the trace with the published case label"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 15678,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "time_fast",
+      "perspective": "resource",
+      "mode": "sudden",
+      "start": "2018-11-26T12:25:24+00:00",
+      "end": "2018-11-26T12:25:24+00:00",
+      "native_case_ids": [
+        "case_016214"
+      ],
+      "native_zero_based_case_labels": [
+        16214
+      ],
+      "target_activity": "Service closure Request with BO responsibility",
+      "technique": "fast ×0.5"
+    }
+  ],
+  "events": 212721,
+  "cases": 32429,
+  "activities": 15,
+  "resources": 654,
+  "first_timestamp": "2017-05-29T08:47:46+00:00",
+  "last_timestamp": "2019-03-06T16:38:59+00:00",
+  "observation_span_seconds": 55842673.0,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2018-11-26T12:25:24+00:00",
+      "end": "2018-11-26T12:25:24+00:00",
+      "annotations": [
+        "d01"
+      ]
+    }
+  ]
+}

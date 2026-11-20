@@ -1,0 +1,626 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_multi_07",
+  "library": "pm4py",
+  "method": "cv-indicators",
+  "profile": "pelt-enriched",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "calendar_bin",
+  "changes": [
+    {
+      "index": 22,
+      "timestamp": "2025-01-18T20:00:00+00:00",
+      "available_at": "2025-03-02T10:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 77.59634387280708
+        }
+      }
+    },
+    {
+      "index": 24,
+      "timestamp": "2025-01-20T00:00:00+00:00",
+      "available_at": "2025-03-02T10:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 89.71377814610129,
+          "completions": 89.34920488052046,
+          "events": 89.58999830059872
+        }
+      }
+    },
+    {
+      "index": 47,
+      "timestamp": "2025-02-02T10:00:00+00:00",
+      "available_at": "2025-03-02T10:00:00+00:00",
+      "score": 9.0,
+      "details": {
+        "changed_features": {
+          "case_duration": 82.57200893232337,
+          "[\"service_time\", \"d\"]": 92.25268981392394,
+          "[\"service_time\", \"a\"]": 92.33800545006315,
+          "[\"service_time\", \"c\"]": 92.03277311441988,
+          "[\"service_time\", \"b\"]": 89.0582567734683,
+          "active_resources": 93.97755453979796,
+          "[\"resource_assignment\", \"d\", \"res_03\"]": 93.06555548410323,
+          "[\"resource_assignment\", \"a\", \"res_02\"]": 93.2673358958827,
+          "[\"resource_assignment\", \"a\", \"res_05\"]": 81.6995479927241
+        }
+      }
+    },
+    {
+      "index": 49,
+      "timestamp": "2025-02-03T14:00:00+00:00",
+      "available_at": "2025-03-02T10:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"b\"]": 28.005603753899255
+        }
+      }
+    },
+    {
+      "index": 54,
+      "timestamp": "2025-02-06T12:00:00+00:00",
+      "available_at": "2025-03-02T10:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"b\"]": 32.60146238495159
+        }
+      }
+    },
+    {
+      "index": 71,
+      "timestamp": "2025-02-16T10:00:00+00:00",
+      "available_at": "2025-03-02T10:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"c\", \"res_02\"]": 86.02485741935736,
+          "[\"resource_assignment\", \"c\", \"res_05\"]": 86.52862052945767,
+          "[\"resource_assignment\", \"b\", \"res_02\"]": 86.50933676170976
+        }
+      }
+    },
+    {
+      "index": 73,
+      "timestamp": "2025-02-17T14:00:00+00:00",
+      "available_at": "2025-03-02T10:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"b\", \"res_01\"]": 86.00874192380074
+        }
+      }
+    },
+    {
+      "index": 74,
+      "timestamp": "2025-02-18T04:00:00+00:00",
+      "available_at": "2025-03-02T10:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"d\", \"res_01\"]": 87.09996651116992,
+          "[\"resource_assignment\", \"a\", \"res_05\"]": 43.48969181029207
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2025-01-06T00:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 1, "timestamp": "2025-01-06T14:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 2, "timestamp": "2025-01-07T04:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 3, "timestamp": "2025-01-07T18:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 4, "timestamp": "2025-01-08T08:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 5, "timestamp": "2025-01-08T22:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 6, "timestamp": "2025-01-09T12:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 7, "timestamp": "2025-01-10T02:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 8, "timestamp": "2025-01-10T16:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 9, "timestamp": "2025-01-11T06:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 10, "timestamp": "2025-01-11T20:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 11, "timestamp": "2025-01-12T10:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 12, "timestamp": "2025-01-13T00:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 13, "timestamp": "2025-01-13T14:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 14, "timestamp": "2025-01-14T04:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 15, "timestamp": "2025-01-14T18:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 16, "timestamp": "2025-01-15T08:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 17, "timestamp": "2025-01-15T22:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 18, "timestamp": "2025-01-16T12:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 19, "timestamp": "2025-01-17T02:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 20, "timestamp": "2025-01-17T16:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 21, "timestamp": "2025-01-18T06:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 22, "timestamp": "2025-01-18T20:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 1.0},
+    {"index": 23, "timestamp": "2025-01-19T10:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 24, "timestamp": "2025-01-20T00:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 3.0},
+    {"index": 25, "timestamp": "2025-01-20T14:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 26, "timestamp": "2025-01-21T04:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 27, "timestamp": "2025-01-21T18:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 28, "timestamp": "2025-01-22T08:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 29, "timestamp": "2025-01-22T22:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 30, "timestamp": "2025-01-23T12:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 31, "timestamp": "2025-01-24T02:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 32, "timestamp": "2025-01-24T16:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 33, "timestamp": "2025-01-25T06:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 34, "timestamp": "2025-01-25T20:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 35, "timestamp": "2025-01-26T10:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 36, "timestamp": "2025-01-27T00:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 37, "timestamp": "2025-01-27T14:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 38, "timestamp": "2025-01-28T04:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 39, "timestamp": "2025-01-28T18:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 40, "timestamp": "2025-01-29T08:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 41, "timestamp": "2025-01-29T22:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 42, "timestamp": "2025-01-30T12:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 43, "timestamp": "2025-01-31T02:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 44, "timestamp": "2025-01-31T16:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 45, "timestamp": "2025-02-01T06:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 46, "timestamp": "2025-02-01T20:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 47, "timestamp": "2025-02-02T10:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 9.0},
+    {"index": 48, "timestamp": "2025-02-03T00:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 49, "timestamp": "2025-02-03T14:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 1.0},
+    {"index": 50, "timestamp": "2025-02-04T04:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 51, "timestamp": "2025-02-04T18:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 52, "timestamp": "2025-02-05T08:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 53, "timestamp": "2025-02-05T22:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 54, "timestamp": "2025-02-06T12:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 1.0},
+    {"index": 55, "timestamp": "2025-02-07T02:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 56, "timestamp": "2025-02-07T16:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 57, "timestamp": "2025-02-08T06:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 58, "timestamp": "2025-02-08T20:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 59, "timestamp": "2025-02-09T10:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 60, "timestamp": "2025-02-10T00:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 61, "timestamp": "2025-02-10T14:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 62, "timestamp": "2025-02-11T04:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 63, "timestamp": "2025-02-11T18:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 64, "timestamp": "2025-02-12T08:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 65, "timestamp": "2025-02-12T22:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 66, "timestamp": "2025-02-13T12:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 67, "timestamp": "2025-02-14T02:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 68, "timestamp": "2025-02-14T16:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 69, "timestamp": "2025-02-15T06:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 70, "timestamp": "2025-02-15T20:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 71, "timestamp": "2025-02-16T10:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 3.0},
+    {"index": 72, "timestamp": "2025-02-17T00:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 73, "timestamp": "2025-02-17T14:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 1.0},
+    {"index": 74, "timestamp": "2025-02-18T04:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 2.0},
+    {"index": 75, "timestamp": "2025-02-18T18:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 76, "timestamp": "2025-02-19T08:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 77, "timestamp": "2025-02-19T22:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 78, "timestamp": "2025-02-20T12:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 79, "timestamp": "2025-02-21T02:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 80, "timestamp": "2025-02-21T16:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 81, "timestamp": "2025-02-22T06:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 82, "timestamp": "2025-02-22T20:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 83, "timestamp": "2025-02-23T10:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 84, "timestamp": "2025-02-24T00:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 85, "timestamp": "2025-02-24T14:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 86, "timestamp": "2025-02-25T04:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 87, "timestamp": "2025-02-25T18:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 88, "timestamp": "2025-02-26T08:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 89, "timestamp": "2025-02-26T22:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2025-02-27T12:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 91, "timestamp": "2025-02-28T02:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 92, "timestamp": "2025-02-28T16:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 93, "timestamp": "2025-03-01T06:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0},
+    {"index": 94, "timestamp": "2025-03-01T20:00:00+00:00", "available_at": "2025-03-02T10:00:00+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "cv_indicators",
+    "mode": "retrospective",
+    "bin_size": "14h",
+    "statistic": "mean",
+    "candidate_windows": [
+      1,
+      3,
+      5,
+      9,
+      17
+    ],
+    "selected_windows": {
+      "arrivals": 5,
+      "completions": 5,
+      "work_in_progress": 5,
+      "events": 5,
+      "case_duration": 5,
+      "[\"activity_frequency\", \"d\"]": 5,
+      "[\"activity_frequency\", \"a\"]": 3,
+      "[\"activity_frequency\", \"c\"]": 3,
+      "[\"activity_frequency\", \"b\"]": 5,
+      "[\"service_time\", \"d\"]": 3,
+      "[\"service_time\", \"a\"]": 5,
+      "[\"service_time\", \"c\"]": 5,
+      "[\"service_time\", \"b\"]": 5,
+      "active_resources": 3,
+      "[\"resource_assignment\", \"d\", \"res_03\"]": 5,
+      "[\"resource_assignment\", \"d\", \"res_01\"]": 3,
+      "[\"resource_assignment\", \"a\", \"res_02\"]": 5,
+      "[\"resource_assignment\", \"a\", \"res_05\"]": 9,
+      "[\"resource_assignment\", \"c\", \"res_02\"]": 3,
+      "[\"resource_assignment\", \"c\", \"res_05\"]": 3,
+      "[\"resource_assignment\", \"b\", \"res_02\"]": 3,
+      "[\"resource_assignment\", \"b\", \"res_01\"]": 9
+    },
+    "cv_curves": {
+      "arrivals": {
+        "1": 0.38996897281903786,
+        "3": 0.35174315918953414,
+        "5": 0.3397621887417561,
+        "9": 0.32908333674968,
+        "17": 0.31583824546885575
+      },
+      "completions": {
+        "1": 0.38705246628212797,
+        "3": 0.34698427928199366,
+        "5": 0.33509473106994847,
+        "9": 0.3238987980049582,
+        "17": 0.3105198131112891
+      },
+      "work_in_progress": {
+        "1": 0.5109561463226698,
+        "3": 0.40933256644194643,
+        "5": 0.3810419689140171,
+        "9": 0.3589093060542819,
+        "17": 0.34570939568226927
+      },
+      "events": {
+        "1": 0.3838747246232939,
+        "3": 0.3482696718012678,
+        "5": 0.3369512065542158,
+        "9": 0.32616231984580224,
+        "17": 0.3131115775457746
+      },
+      "case_duration": {
+        "1": 0.05846961366167663,
+        "3": 0.04871930964210725,
+        "5": 0.046529851773050496,
+        "9": 0.04460720812938109,
+        "17": 0.04260018581159054
+      },
+      "[\"activity_frequency\", \"d\"]": {
+        "1": 0.057933644259411665,
+        "3": 0.021064858308042115,
+        "5": 0.014103519303734687,
+        "9": 0.008165805713488383,
+        "17": 0.004572678260784067
+      },
+      "[\"activity_frequency\", \"a\"]": {
+        "1": 0.062419562555431296,
+        "3": 0.01885400268496928,
+        "5": 0.012632719274458252,
+        "9": 0.00753340952968233,
+        "17": 0.004031492250299745
+      },
+      "[\"activity_frequency\", \"c\"]": {
+        "1": 0.06230218643999649,
+        "3": 0.020945110508654555,
+        "5": 0.014560600136439486,
+        "9": 0.008854686121395778,
+        "17": 0.004565457441774743
+      },
+      "[\"activity_frequency\", \"b\"]": {
+        "1": 0.05444496455645067,
+        "3": 0.021622616098924904,
+        "5": 0.013070601802475556,
+        "9": 0.007347741990847998,
+        "17": 0.004598269897664795
+      },
+      "[\"service_time\", \"d\"]": {
+        "1": 0.16896731100793086,
+        "3": 0.1641694834285849,
+        "5": 0.1626752562069595,
+        "9": 0.1595974008458781,
+        "17": 0.1538208625441781
+      },
+      "[\"service_time\", \"a\"]": {
+        "1": 0.17702687176730542,
+        "3": 0.169937987704069,
+        "5": 0.16714098437576835,
+        "9": 0.16430891747550508,
+        "17": 0.15936060731316726
+      },
+      "[\"service_time\", \"c\"]": {
+        "1": 0.1794643461904314,
+        "3": 0.17235081030864915,
+        "5": 0.16988288915105615,
+        "9": 0.16744497156064772,
+        "17": 0.16171219125323966
+      },
+      "[\"service_time\", \"b\"]": {
+        "1": 0.18197342565167532,
+        "3": 0.1693261865483602,
+        "5": 0.16478649383447988,
+        "9": 0.1615261100675575,
+        "17": 0.15729506366066517
+      },
+      "active_resources": {
+        "1": 0.27118716101707674,
+        "3": 0.2681821868248069,
+        "5": 0.26601499486713087,
+        "9": 0.2619215967937821,
+        "17": 0.25354650288059233
+      },
+      "[\"resource_assignment\", \"d\", \"res_03\"]": {
+        "1": 0.9352325505959481,
+        "3": 0.9244559020539681,
+        "5": 0.9169073599961463,
+        "9": 0.9024550270177394,
+        "17": 0.8755816669604559
+      },
+      "[\"resource_assignment\", \"d\", \"res_01\"]": {
+        "1": 1.4398868757972814,
+        "3": 1.4155477641546474,
+        "5": 1.4073638225567102,
+        "9": 1.3905327238297551,
+        "17": 1.343971335996519
+      },
+      "[\"resource_assignment\", \"a\", \"res_02\"]": {
+        "1": 0.9534439815635397,
+        "3": 0.9401292201712792,
+        "5": 0.932282923743822,
+        "9": 0.9192187721798599,
+        "17": 0.8910924631128195
+      },
+      "[\"resource_assignment\", \"a\", \"res_05\"]": {
+        "1": 1.4515904349383466,
+        "3": 1.4243869379982967,
+        "5": 1.4045588245395884,
+        "9": 1.3623865333278276,
+        "17": 1.257137316496382
+      },
+      "[\"resource_assignment\", \"c\", \"res_02\"]": {
+        "1": 0.4769588580063258,
+        "3": 0.4717320729915615,
+        "5": 0.46920688534934235,
+        "9": 0.463873579670694,
+        "17": 0.44942717870287224
+      },
+      "[\"resource_assignment\", \"c\", \"res_05\"]": {
+        "1": 1.7228445235214775,
+        "3": 1.7022548297058786,
+        "5": 1.693658817655791,
+        "9": 1.6759997369832773,
+        "17": 1.62345222969002
+      },
+      "[\"resource_assignment\", \"b\", \"res_02\"]": {
+        "1": 0.49258245219165187,
+        "3": 0.48544590933498505,
+        "5": 0.4832715989984537,
+        "9": 0.4788270776374479,
+        "17": 0.4646252482527082
+      },
+      "[\"resource_assignment\", \"b\", \"res_01\"]": {
+        "1": 1.3213363633430204,
+        "3": 1.3108584096832545,
+        "5": 1.303332194860262,
+        "9": 1.2886201815410978,
+        "17": 1.251431918853854
+      }
+    },
+    "min_size": 3,
+    "penalty_scale": 3.0,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "bin_size": "14h",
+    "features": [
+      "arrivals",
+      "completions",
+      "work_in_progress",
+      "events",
+      "case_duration",
+      [
+        "activity_frequency",
+        "d"
+      ],
+      [
+        "activity_frequency",
+        "a"
+      ],
+      [
+        "activity_frequency",
+        "c"
+      ],
+      [
+        "activity_frequency",
+        "b"
+      ],
+      [
+        "service_time",
+        "d"
+      ],
+      [
+        "service_time",
+        "a"
+      ],
+      [
+        "service_time",
+        "c"
+      ],
+      [
+        "service_time",
+        "b"
+      ],
+      "active_resources",
+      [
+        "resource_assignment",
+        "d",
+        "res_03"
+      ],
+      [
+        "resource_assignment",
+        "d",
+        "res_01"
+      ],
+      [
+        "resource_assignment",
+        "a",
+        "res_02"
+      ],
+      [
+        "resource_assignment",
+        "a",
+        "res_05"
+      ],
+      [
+        "resource_assignment",
+        "c",
+        "res_02"
+      ],
+      [
+        "resource_assignment",
+        "c",
+        "res_05"
+      ],
+      [
+        "resource_assignment",
+        "b",
+        "res_02"
+      ],
+      [
+        "resource_assignment",
+        "b",
+        "res_01"
+      ]
+    ],
+    "penalty_scale": 3,
+    "start_timestamp_key": "start:timestamp"
+  },
+  "runtime_seconds": 2.415181,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 47651.07,
+        "tp": 3,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5454545454545454,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 21600.0,
+            "distance_to_truth_interval_seconds": 21600.0,
+            "availability_minus_onset_seconds": 3600000.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": -7200.0,
+            "distance_to_truth_interval_seconds": 7200.0,
+            "availability_minus_onset_seconds": 2412000.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": 252000.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 1461600.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          3,
+          4,
+          6,
+          7
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 119127.675,
+        "tp": 3,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5454545454545454,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 21600.0,
+            "distance_to_truth_interval_seconds": 21600.0,
+            "availability_minus_onset_seconds": 3600000.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": -7200.0,
+            "distance_to_truth_interval_seconds": 7200.0,
+            "availability_minus_onset_seconds": 2412000.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": 252000.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 1461600.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          3,
+          4,
+          6,
+          7
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 238255.35,
+        "tp": 3,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5454545454545454,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 21600.0,
+            "distance_to_truth_interval_seconds": 21600.0,
+            "availability_minus_onset_seconds": 3600000.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": -7200.0,
+            "distance_to_truth_interval_seconds": 7200.0,
+            "availability_minus_onset_seconds": 2412000.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": 252000.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 1461600.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          3,
+          4,
+          6,
+          7
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 95,
+    "published_count": 95,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

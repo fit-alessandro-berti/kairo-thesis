@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ostovar_parallel_to_sequence",
+  "library": "kairo",
+  "method": "intra-kmeans",
+  "profile": "previous",
+  "status": "ok",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "intra",
+    "features": {
+      "groups": [
+        "act_freqs",
+        "case_progress",
+        "current_act"
+      ],
+      "sliding_window_size": 3,
+      "omitted_feature_groups": [
+        "act_set",
+        "df_counts",
+        "past_acts"
+      ]
+    },
+    "reduction": {
+      "scaling": "minmax",
+      "feature_columns": 99,
+      "feature_rows": 112011,
+      "pca_components": 5,
+      "pca_seed": 0,
+      "pca_retained_variance": 0.30733777063958845
+    },
+    "clustering": {
+      "method": "kmeans",
+      "k": 5,
+      "random_seed": 0
+    },
+    "signal": {
+      "window": "12h",
+      "divergence": "js",
+      "reference": "previous",
+      "lookback": null,
+      "threshold_quantile": 0.9,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "changes": [
+    {
+      "index": 1,
+      "timestamp": "1970-01-01T12:00:00+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 0.1676474350088015,
+      "details": {
+        "window_end": "1970-01-02T00:00:00+00:00",
+        "rows": 1821,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    },
+    {
+      "index": 25,
+      "timestamp": "1970-01-13T12:00:00+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 0.003916288372575959,
+      "details": {
+        "window_end": "1970-01-14T00:00:00+00:00",
+        "rows": 2667,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    },
+    {
+      "index": 29,
+      "timestamp": "1970-01-15T12:00:00+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 0.003464615197253355,
+      "details": {
+        "window_end": "1970-01-16T00:00:00+00:00",
+        "rows": 2715,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    },
+    {
+      "index": 42,
+      "timestamp": "1970-01-22T00:00:00+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 0.0606337421098012,
+      "details": {
+        "window_end": "1970-01-22T12:00:00+00:00",
+        "rows": 1726,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "1970-01-01T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": null, "details": {"window_end": "1970-01-01T12:00:00+00:00", "rows": 546, "coverage": 0.9170397453703704, "eligible": false}},
+    {"index": 1, "timestamp": "1970-01-01T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.1676474350088015, "details": {"window_end": "1970-01-02T00:00:00+00:00", "rows": 1821, "coverage": 1.0, "eligible": true}},
+    {"index": 2, "timestamp": "1970-01-02T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.03503348990482825, "details": {"window_end": "1970-01-02T12:00:00+00:00", "rows": 2581, "coverage": 1.0, "eligible": true}},
+    {"index": 3, "timestamp": "1970-01-02T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0029656051470414472, "details": {"window_end": "1970-01-03T00:00:00+00:00", "rows": 2653, "coverage": 1.0, "eligible": true}},
+    {"index": 4, "timestamp": "1970-01-03T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.001066552364153481, "details": {"window_end": "1970-01-03T12:00:00+00:00", "rows": 2680, "coverage": 1.0, "eligible": true}},
+    {"index": 5, "timestamp": "1970-01-03T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0005896903511431037, "details": {"window_end": "1970-01-04T00:00:00+00:00", "rows": 2652, "coverage": 1.0, "eligible": true}},
+    {"index": 6, "timestamp": "1970-01-04T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.00019936498122264285, "details": {"window_end": "1970-01-04T12:00:00+00:00", "rows": 2688, "coverage": 1.0, "eligible": true}},
+    {"index": 7, "timestamp": "1970-01-04T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0013305545742184656, "details": {"window_end": "1970-01-05T00:00:00+00:00", "rows": 2683, "coverage": 1.0, "eligible": true}},
+    {"index": 8, "timestamp": "1970-01-05T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0006599657181086955, "details": {"window_end": "1970-01-05T12:00:00+00:00", "rows": 2662, "coverage": 1.0, "eligible": true}},
+    {"index": 9, "timestamp": "1970-01-05T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0008848299486919238, "details": {"window_end": "1970-01-06T00:00:00+00:00", "rows": 2791, "coverage": 1.0, "eligible": true}},
+    {"index": 10, "timestamp": "1970-01-06T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0007233909170314746, "details": {"window_end": "1970-01-06T12:00:00+00:00", "rows": 2632, "coverage": 1.0, "eligible": true}},
+    {"index": 11, "timestamp": "1970-01-06T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.00016218400775090333, "details": {"window_end": "1970-01-07T00:00:00+00:00", "rows": 2681, "coverage": 1.0, "eligible": true}},
+    {"index": 12, "timestamp": "1970-01-07T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 8.041921893732669e-05, "details": {"window_end": "1970-01-07T12:00:00+00:00", "rows": 2721, "coverage": 1.0, "eligible": true}},
+    {"index": 13, "timestamp": "1970-01-07T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.000446914400047897, "details": {"window_end": "1970-01-08T00:00:00+00:00", "rows": 2734, "coverage": 1.0, "eligible": true}},
+    {"index": 14, "timestamp": "1970-01-08T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.00020725176872870768, "details": {"window_end": "1970-01-08T12:00:00+00:00", "rows": 2752, "coverage": 1.0, "eligible": true}},
+    {"index": 15, "timestamp": "1970-01-08T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.000426888480277689, "details": {"window_end": "1970-01-09T00:00:00+00:00", "rows": 2666, "coverage": 1.0, "eligible": true}},
+    {"index": 16, "timestamp": "1970-01-09T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0015508585582760057, "details": {"window_end": "1970-01-09T12:00:00+00:00", "rows": 2794, "coverage": 1.0, "eligible": true}},
+    {"index": 17, "timestamp": "1970-01-09T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0014308014107107304, "details": {"window_end": "1970-01-10T00:00:00+00:00", "rows": 2691, "coverage": 1.0, "eligible": true}},
+    {"index": 18, "timestamp": "1970-01-10T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0012556474620677286, "details": {"window_end": "1970-01-10T12:00:00+00:00", "rows": 2762, "coverage": 1.0, "eligible": true}},
+    {"index": 19, "timestamp": "1970-01-10T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.001002654232711186, "details": {"window_end": "1970-01-11T00:00:00+00:00", "rows": 2672, "coverage": 1.0, "eligible": true}},
+    {"index": 20, "timestamp": "1970-01-11T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0005050355568232655, "details": {"window_end": "1970-01-11T12:00:00+00:00", "rows": 2649, "coverage": 1.0, "eligible": true}},
+    {"index": 21, "timestamp": "1970-01-11T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0004902980651744224, "details": {"window_end": "1970-01-12T00:00:00+00:00", "rows": 2706, "coverage": 1.0, "eligible": true}},
+    {"index": 22, "timestamp": "1970-01-12T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0011289977931303189, "details": {"window_end": "1970-01-12T12:00:00+00:00", "rows": 2653, "coverage": 1.0, "eligible": true}},
+    {"index": 23, "timestamp": "1970-01-12T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0020084354964090088, "details": {"window_end": "1970-01-13T00:00:00+00:00", "rows": 2699, "coverage": 1.0, "eligible": true}},
+    {"index": 24, "timestamp": "1970-01-13T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0030286938471430934, "details": {"window_end": "1970-01-13T12:00:00+00:00", "rows": 2727, "coverage": 1.0, "eligible": true}},
+    {"index": 25, "timestamp": "1970-01-13T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.003916288372575959, "details": {"window_end": "1970-01-14T00:00:00+00:00", "rows": 2667, "coverage": 1.0, "eligible": true}},
+    {"index": 26, "timestamp": "1970-01-14T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.00040292902558778087, "details": {"window_end": "1970-01-14T12:00:00+00:00", "rows": 2701, "coverage": 1.0, "eligible": true}},
+    {"index": 27, "timestamp": "1970-01-14T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0011949304365979304, "details": {"window_end": "1970-01-15T00:00:00+00:00", "rows": 2655, "coverage": 1.0, "eligible": true}},
+    {"index": 28, "timestamp": "1970-01-15T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0029485582957418446, "details": {"window_end": "1970-01-15T12:00:00+00:00", "rows": 2679, "coverage": 1.0, "eligible": true}},
+    {"index": 29, "timestamp": "1970-01-15T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.003464615197253355, "details": {"window_end": "1970-01-16T00:00:00+00:00", "rows": 2715, "coverage": 1.0, "eligible": true}},
+    {"index": 30, "timestamp": "1970-01-16T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0006505203262115048, "details": {"window_end": "1970-01-16T12:00:00+00:00", "rows": 2655, "coverage": 1.0, "eligible": true}},
+    {"index": 31, "timestamp": "1970-01-16T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0008946050389245204, "details": {"window_end": "1970-01-17T00:00:00+00:00", "rows": 2682, "coverage": 1.0, "eligible": true}},
+    {"index": 32, "timestamp": "1970-01-17T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.000770884689476991, "details": {"window_end": "1970-01-17T12:00:00+00:00", "rows": 2666, "coverage": 1.0, "eligible": true}},
+    {"index": 33, "timestamp": "1970-01-17T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0003856054607562728, "details": {"window_end": "1970-01-18T00:00:00+00:00", "rows": 2696, "coverage": 1.0, "eligible": true}},
+    {"index": 34, "timestamp": "1970-01-18T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.00212829926350064, "details": {"window_end": "1970-01-18T12:00:00+00:00", "rows": 2742, "coverage": 1.0, "eligible": true}},
+    {"index": 35, "timestamp": "1970-01-18T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.002220223770378765, "details": {"window_end": "1970-01-19T00:00:00+00:00", "rows": 2604, "coverage": 1.0, "eligible": true}},
+    {"index": 36, "timestamp": "1970-01-19T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.002276896734553102, "details": {"window_end": "1970-01-19T12:00:00+00:00", "rows": 2809, "coverage": 1.0, "eligible": true}},
+    {"index": 37, "timestamp": "1970-01-19T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.001265607328702352, "details": {"window_end": "1970-01-20T00:00:00+00:00", "rows": 2593, "coverage": 1.0, "eligible": true}},
+    {"index": 38, "timestamp": "1970-01-20T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.00023126185791683845, "details": {"window_end": "1970-01-20T12:00:00+00:00", "rows": 2693, "coverage": 1.0, "eligible": true}},
+    {"index": 39, "timestamp": "1970-01-20T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 2.9892467551863983e-05, "details": {"window_end": "1970-01-21T00:00:00+00:00", "rows": 2694, "coverage": 1.0, "eligible": true}},
+    {"index": 40, "timestamp": "1970-01-21T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0005927029340368479, "details": {"window_end": "1970-01-21T12:00:00+00:00", "rows": 2737, "coverage": 1.0, "eligible": true}},
+    {"index": 41, "timestamp": "1970-01-21T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0030810684382993943, "details": {"window_end": "1970-01-22T00:00:00+00:00", "rows": 2562, "coverage": 1.0, "eligible": true}},
+    {"index": 42, "timestamp": "1970-01-22T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0606337421098012, "details": {"window_end": "1970-01-22T12:00:00+00:00", "rows": 1726, "coverage": 1.0, "eligible": true}},
+    {"index": 43, "timestamp": "1970-01-22T12:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.13052153643849662, "details": {"window_end": "1970-01-23T00:00:00+00:00", "rows": 429, "coverage": 1.0, "eligible": false}},
+    {"index": 44, "timestamp": "1970-01-23T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.13017310575649624, "details": {"window_end": "1970-01-23T12:00:00+00:00", "rows": 10, "coverage": 0.32879680555555557, "eligible": false}}
+  ],
+  "metadata": {
+    "threshold": 0.0034262605213579585,
+    "median_rows": 2680.0,
+    "eligible_windows": 42,
+    "occupied_states": 5,
+    "distinct_feature_rows": 49970
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 19114.20139,
+        "tp": 0,
+        "fp": 4,
+        "fn": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 47785.503475,
+        "tp": 0,
+        "fp": 4,
+        "fn": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 95571.00695,
+        "tp": 1,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.25,
+        "recall": 0.5,
+        "f1": 0.3333333333333333,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 48883.431,
+            "distance_to_truth_interval_seconds": 48883.431,
+            "availability_minus_onset_seconds": 711087.453
+          }
+        ],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          3
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 45,
+    "published_count": 45,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

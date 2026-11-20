@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ostovar_loop",
+  "library": "kairo",
+  "method": "intra-dbscan",
+  "profile": "recent",
+  "status": "unsupported",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "intra",
+    "features": {
+      "groups": [
+        "df_counts",
+        "case_progress",
+        "current_act"
+      ],
+      "sliding_window_size": 3,
+      "omitted_feature_groups": [
+        "act_freqs",
+        "act_set",
+        "past_acts"
+      ]
+    },
+    "reduction": {
+      "scaling": "minmax",
+      "feature_columns": 125,
+      "feature_rows": 100471,
+      "pca_components": 5,
+      "pca_seed": 0,
+      "pca_retained_variance": 0.3881357455000342
+    },
+    "clustering": {
+      "method": "dbscan"
+    },
+    "signal": {
+      "window": "1D",
+      "divergence": "tv",
+      "reference": "recent",
+      "lookback": 3,
+      "threshold_quantile": 0.95,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "reason": "63468 distinct rows exceed the DBSCAN cap of 10000",
+  "changes": [],
+  "scores": []
+}

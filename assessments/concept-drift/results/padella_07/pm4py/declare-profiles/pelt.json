@@ -1,0 +1,2152 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_07",
+  "library": "pm4py",
+  "method": "declare-profiles",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 1050,
+      "timestamp": "2017-12-20T14:42:02+00:00",
+      "available_at": "2019-08-08T12:57:18+00:00",
+      "score": 7.661483068169581,
+      "details": {
+        "constraint_deltas": {
+          "[\"existence\", \"Request For Payment SUBMITTED by EMPLOYEE\"]": 0.0020300751879699375,
+          "[\"existence\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": -0.02997493734335821,
+          "[\"existence\", \"Payment Handled\"]": 0.009473684210526523,
+          "[\"existence\", \"Request Payment\"]": 0.008170426065162939,
+          "[\"existence\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.9147368421052635,
+          "[\"existence\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.3382456140350878,
+          "[\"existence\", \"Request For Payment REJECTED by EMPLOYEE\"]": 0.07669172932330827,
+          "[\"existence\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.13087719298245612,
+          "[\"existence\", \"Request For Payment APPROVED by PRE_APPROVER\"]": -0.36298245614035085,
+          "[\"existence\", \"Request For Payment REJECTED by SUPERVISOR\"]": -0.01355889724310777,
+          "[\"response\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": -0.02997493734335821,
+          "[\"precedence\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": -0.02997493734335821,
+          "[\"response\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Payment Handled\"]": 0.009473684210526523,
+          "[\"precedence\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Payment Handled\"]": 0.009473684210526523,
+          "[\"response\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request Payment\"]": 0.008170426065162939,
+          "[\"precedence\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request Payment\"]": 0.008170426065162939,
+          "[\"response\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.914385964912281,
+          "[\"precedence\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.9147368421052635,
+          "[\"response\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.33666666666666667,
+          "[\"precedence\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.3382456140350878,
+          "[\"response\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment REJECTED by EMPLOYEE\"]": 0.038345864661654135,
+          "[\"precedence\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment REJECTED by EMPLOYEE\"]": 0.07669172932330827,
+          "[\"response\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.06578947368421054,
+          "[\"precedence\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.13087719298245612,
+          "[\"response\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by PRE_APPROVER\"]": -0.36298245614035085,
+          "[\"precedence\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by PRE_APPROVER\"]": -0.36298245614035085,
+          "[\"response\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment REJECTED by SUPERVISOR\"]": -0.013533834586466169,
+          "[\"precedence\", \"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment REJECTED by SUPERVISOR\"]": -0.01355889724310777,
+          "[\"response\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\", \"Payment Handled\"]": 0.015213032581453567,
+          "[\"precedence\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\", \"Payment Handled\"]": 0.015213032581453567,
+          "[\"response\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\", \"Request Payment\"]": 0.01408521303258159,
+          "[\"precedence\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\", \"Request Payment\"]": 0.01408521303258159,
+          "[\"precedence\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\", \"Request For Payment APPROVED by PRE_APPROVER\"]": -0.00380952380952381,
+          "[\"response\", \"Payment Handled\", \"Request Payment\"]": 0.00035087719298245617,
+          "[\"precedence\", \"Payment Handled\", \"Request Payment\"]": 0.00035087719298245617,
+          "[\"response\", \"Request Payment\", \"Payment Handled\"]": 0.008771929824561542,
+          "[\"precedence\", \"Request Payment\", \"Payment Handled\"]": 0.008771929824561542,
+          "[\"response\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment SUBMITTED by EMPLOYEE\"]": 0.00035087719298245617,
+          "[\"response\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": 0.9029824561403509,
+          "[\"precedence\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": 0.9029824561403509,
+          "[\"response\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Payment Handled\"]": 0.9075438596491228,
+          "[\"precedence\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Payment Handled\"]": 0.9075438596491228,
+          "[\"response\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request Payment\"]": 0.9071929824561404,
+          "[\"precedence\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request Payment\"]": 0.9071929824561404,
+          "[\"response\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.33666666666666667,
+          "[\"precedence\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.3382456140350878,
+          "[\"response\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment REJECTED by EMPLOYEE\"]": 0.0070175438596491195,
+          "[\"precedence\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment REJECTED by EMPLOYEE\"]": 0.028771929824561396,
+          "[\"response\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.00035087719298245617,
+          "[\"precedence\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.0008771929824561404,
+          "[\"response\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment REJECTED by SUPERVISOR\"]": 0.0045614035087719286,
+          "[\"precedence\", \"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment REJECTED by SUPERVISOR\"]": 0.02157894736842106,
+          "[\"response\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment SUBMITTED by EMPLOYEE\"]": 0.0015789473684210528,
+          "[\"response\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": 0.3356140350877194,
+          "[\"precedence\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": 0.3356140350877194,
+          "[\"response\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Payment Handled\"]": 0.3371929824561405,
+          "[\"precedence\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Payment Handled\"]": 0.3371929824561405,
+          "[\"response\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request Payment\"]": 0.3371929824561405,
+          "[\"precedence\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request Payment\"]": 0.3371929824561405,
+          "[\"response\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.0015789473684210528,
+          "[\"response\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment REJECTED by EMPLOYEE\"]": 0.002631578947368421,
+          "[\"precedence\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment REJECTED by EMPLOYEE\"]": 0.005438596491228068,
+          "[\"response\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.00035087719298245617,
+          "[\"precedence\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.00035087719298245617,
+          "[\"response\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment REJECTED by SUPERVISOR\"]": 0.002631578947368421,
+          "[\"precedence\", \"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment REJECTED by SUPERVISOR\"]": 0.005438596491228068,
+          "[\"response\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment SUBMITTED by EMPLOYEE\"]": 0.038345864661654155,
+          "[\"response\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": 0.03746867167919801,
+          "[\"precedence\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": 0.03746867167919801,
+          "[\"response\", \"Request For Payment REJECTED by EMPLOYEE\", \"Payment Handled\"]": 0.04388471177944864,
+          "[\"precedence\", \"Request For Payment REJECTED by EMPLOYEE\", \"Payment Handled\"]": 0.04388471177944864,
+          "[\"response\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request Payment\"]": 0.04388471177944864,
+          "[\"precedence\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request Payment\"]": 0.04388471177944864,
+          "[\"response\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.08561403508771934,
+          "[\"precedence\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.063859649122807,
+          "[\"response\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.03473684210526316,
+          "[\"precedence\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.03192982456140352,
+          "[\"response\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.00035087719298245617,
+          "[\"precedence\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.0010526315789473684,
+          "[\"response\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment APPROVED by PRE_APPROVER\"]": -0.0293483709273183,
+          "[\"precedence\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment APPROVED by PRE_APPROVER\"]": -0.028395989974937346,
+          "[\"response\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment REJECTED by SUPERVISOR\"]": 0.00017543859649122808,
+          "[\"precedence\", \"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment REJECTED by SUPERVISOR\"]": 0.0005263157894736842,
+          "[\"response\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment SUBMITTED by EMPLOYEE\"]": 0.06508771929824561,
+          "[\"response\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": 0.0643859649122807,
+          "[\"precedence\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": 0.0643859649122807,
+          "[\"response\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Payment Handled\"]": 0.06491228070175438,
+          "[\"precedence\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Payment Handled\"]": 0.06491228070175438,
+          "[\"response\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request Payment\"]": 0.06491228070175438,
+          "[\"precedence\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request Payment\"]": 0.06491228070175438,
+          "[\"response\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.06508771929824561,
+          "[\"precedence\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.06456140350877193,
+          "[\"response\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.023333333333333327,
+          "[\"precedence\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.023333333333333327,
+          "[\"response\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment REJECTED by EMPLOYEE\"]": 0.12929824561403505,
+          "[\"precedence\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment REJECTED by EMPLOYEE\"]": 0.12859649122807015,
+          "[\"response\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment REJECTED by SUPERVISOR\"]": 0.0005263157894736842,
+          "[\"precedence\", \"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment REJECTED by SUPERVISOR\"]": 0.0005263157894736842,
+          "[\"response\", \"Request For Payment APPROVED by PRE_APPROVER\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": -0.3623809523809523,
+          "[\"precedence\", \"Request For Payment APPROVED by PRE_APPROVER\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": -0.35857142857142854,
+          "[\"response\", \"Request For Payment APPROVED by PRE_APPROVER\", \"Payment Handled\"]": -0.33779448621553887,
+          "[\"precedence\", \"Request For Payment APPROVED by PRE_APPROVER\", \"Payment Handled\"]": -0.33779448621553887,
+          "[\"response\", \"Request For Payment APPROVED by PRE_APPROVER\", \"Request Payment\"]": -0.33779448621553887,
+          "[\"precedence\", \"Request For Payment APPROVED by PRE_APPROVER\", \"Request Payment\"]": -0.33779448621553887,
+          "[\"response\", \"Request For Payment APPROVED by PRE_APPROVER\", \"Request For Payment REJECTED by EMPLOYEE\"]": -0.0007769423558897245,
+          "[\"precedence\", \"Request For Payment APPROVED by PRE_APPROVER\", \"Request For Payment REJECTED by EMPLOYEE\"]": -0.0017293233082706768,
+          "[\"response\", \"Request For Payment APPROVED by PRE_APPROVER\", \"Request For Payment REJECTED by SUPERVISOR\"]": -0.0007769423558897245,
+          "[\"precedence\", \"Request For Payment APPROVED by PRE_APPROVER\", \"Request For Payment REJECTED by SUPERVISOR\"]": -0.0017293233082706768,
+          "[\"response\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment SUBMITTED by EMPLOYEE\"]": -2.506265664160845e-05,
+          "[\"response\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": -0.0007268170426065201,
+          "[\"precedence\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": -0.0007268170426065201,
+          "[\"response\", \"Request For Payment REJECTED by SUPERVISOR\", \"Payment Handled\"]": -0.0005513784461152922,
+          "[\"precedence\", \"Request For Payment REJECTED by SUPERVISOR\", \"Payment Handled\"]": -0.0005513784461152922,
+          "[\"response\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request Payment\"]": -0.0005513784461152922,
+          "[\"precedence\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request Payment\"]": -0.0005513784461152922,
+          "[\"response\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.017368421052631578,
+          "[\"precedence\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.00035087719298245617,
+          "[\"response\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.008421052631578944,
+          "[\"precedence\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.005614035087719297,
+          "[\"response\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment REJECTED by EMPLOYEE\"]": -0.013734335839598998,
+          "[\"precedence\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment REJECTED by EMPLOYEE\"]": -0.014085213032581458,
+          "[\"response\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.0010526315789473684,
+          "[\"precedence\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.0010526315789473684,
+          "[\"response\", \"Request For Payment REJECTED by SUPERVISOR\", \"Request For Payment APPROVED by PRE_APPROVER\"]": -0.0009523809523809525
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2017-01-12T16:31:32+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.0},
+    {"index": 150, "timestamp": "2017-03-20T16:30:50+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.1319932658214889},
+    {"index": 300, "timestamp": "2017-05-15T15:30:52+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.2765662468358871},
+    {"index": 450, "timestamp": "2017-07-10T15:31:09+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.3894155164402729},
+    {"index": 600, "timestamp": "2017-09-11T15:31:09+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.5563771702321686},
+    {"index": 750, "timestamp": "2017-10-12T15:31:34+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.4269270039089431},
+    {"index": 900, "timestamp": "2017-11-23T16:30:59+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.24303634844744232},
+    {"index": 1050, "timestamp": "2017-12-20T14:42:02+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 1.8947881734437284},
+    {"index": 1200, "timestamp": "2018-01-18T16:31:10+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 1.3888764443886927},
+    {"index": 1350, "timestamp": "2018-01-29T16:31:11+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.23916521486202796},
+    {"index": 1500, "timestamp": "2018-02-05T16:31:03+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.3426692606905707},
+    {"index": 1650, "timestamp": "2018-02-15T16:31:19+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.6383311575245774},
+    {"index": 1800, "timestamp": "2018-02-26T16:31:27+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.493198179684845},
+    {"index": 1950, "timestamp": "2018-03-05T16:30:58+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.26102362600602513},
+    {"index": 2100, "timestamp": "2018-03-15T16:31:16+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.2805550055000107},
+    {"index": 2250, "timestamp": "2018-03-22T16:31:12+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.1334998959633386},
+    {"index": 2400, "timestamp": "2018-04-05T15:30:53+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09237604307034009},
+    {"index": 2550, "timestamp": "2018-04-12T15:31:12+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09451631252505215},
+    {"index": 2700, "timestamp": "2018-04-19T15:31:32+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.435022349362012},
+    {"index": 2850, "timestamp": "2018-04-30T15:31:12+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.5756928193248743},
+    {"index": 3000, "timestamp": "2018-05-14T15:31:23+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.5245950819441602},
+    {"index": 3150, "timestamp": "2018-05-24T15:31:08+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.375410886008029},
+    {"index": 3300, "timestamp": "2018-06-04T15:31:15+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.3758250183854776},
+    {"index": 3450, "timestamp": "2018-06-14T15:31:33+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.48566106150963634},
+    {"index": 3600, "timestamp": "2018-06-21T15:31:09+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.7483314773547884},
+    {"index": 3750, "timestamp": "2018-07-03T13:12:19+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.6053098380168622},
+    {"index": 3900, "timestamp": "2018-07-12T08:09:45+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.7026299800669545},
+    {"index": 4050, "timestamp": "2018-07-19T15:32:04+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.511468474101777},
+    {"index": 4200, "timestamp": "2018-08-02T15:31:28+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.6181693403375272},
+    {"index": 4350, "timestamp": "2018-08-20T15:31:18+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.6424605478592097},
+    {"index": 4500, "timestamp": "2018-09-03T15:31:14+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.15055453054181622},
+    {"index": 4650, "timestamp": "2018-09-13T15:31:15+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.7425481652915031},
+    {"index": 4800, "timestamp": "2018-09-20T15:31:17+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.8756965481514953},
+    {"index": 4950, "timestamp": "2018-10-01T15:31:15+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.18973665961010275},
+    {"index": 5100, "timestamp": "2018-10-08T15:31:17+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.1070825226947267},
+    {"index": 5250, "timestamp": "2018-10-18T15:31:18+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.1995550606279435},
+    {"index": 5400, "timestamp": "2018-10-25T15:31:43+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.2474761492436078},
+    {"index": 5550, "timestamp": "2018-11-01T16:31:17+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.22920151250228107},
+    {"index": 5700, "timestamp": "2018-11-12T16:30:47+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.2610236260060253},
+    {"index": 5850, "timestamp": "2018-11-19T16:31:20+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.37835902996433923},
+    {"index": 6000, "timestamp": "2018-11-26T16:31:23+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.38023384617597866},
+    {"index": 6150, "timestamp": "2018-12-03T16:31:24+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.38470768123342686},
+    {"index": 6300, "timestamp": "2018-12-13T16:31:08+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.5544967688514214},
+    {"index": 6450, "timestamp": "2018-12-18T08:12:54+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.4134945921989521},
+    {"index": 6600, "timestamp": "2019-01-03T10:59:16+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 1.0137499143718278}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "declare_profiles",
+    "detector": "pelt",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "constraints": [
+      [
+        "existence",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "existence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "existence",
+        "Payment Handled"
+      ],
+      [
+        "existence",
+        "Request Payment"
+      ],
+      [
+        "existence",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "existence",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "existence",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "existence",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "existence",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "existence",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ]
+    ],
+    "statistic": "confidence",
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "min_size": 2,
+    "gamma": null,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "constraints": [
+      [
+        "existence",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "existence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "existence",
+        "Payment Handled"
+      ],
+      [
+        "existence",
+        "Request Payment"
+      ],
+      [
+        "existence",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "existence",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "existence",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "existence",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "existence",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "existence",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment SUBMITTED by EMPLOYEE",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by ADMINISTRATION",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by BUDGET OWNER",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by EMPLOYEE",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by ADMINISTRATION",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment APPROVED by PRE_APPROVER",
+        "Request For Payment REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request For Payment REJECTED by SUPERVISOR",
+        "Request For Payment APPROVED by PRE_APPROVER"
+      ]
+    ]
+  },
+  "runtime_seconds": 1.362747,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 813192.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 2032980.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 4065960.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 45,
+    "published_count": 45,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

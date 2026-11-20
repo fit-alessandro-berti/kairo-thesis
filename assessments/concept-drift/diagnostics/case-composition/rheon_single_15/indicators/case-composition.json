@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_single_15",
+  "input": {
+    "thesis_files": "https://drive.google.com/drive/folders/1sie4iFTUNmHuyvMVoW8tktyvtoUzbmEp",
+    "event_log": "https://drive.google.com/file/d/1vFiT5135Lxkxu1Q83QsVSEK9dUVYmzLZ/view",
+    "sha256": "27a8f74f34276f60c033da1871a23e720dc3e6f3ac5801b2bcc83742f1a37cc0",
+    "ground_truth": "https://drive.google.com/file/d/1-ec6pvYu-MRgapIXE5sstREVOwPJ30m9/view",
+    "ground_truth_sha256": "232195d04cc140d9210f58fee03179e134948dbfbf16083bd4a14ede0fe3d557",
+    "generator_scenario": "waiting_time_gradual",
+    "truth_time_basis": "generator metadata expressed in UTC"
+  },
+  "first_timestamp": "2015-01-01T00:00:00+00:00",
+  "last_timestamp": "2019-07-08T09:59:45+00:00",
+  "truth_annotations": [
+    {
+      "id": "d01",
+      "kind": "waiting_time",
+      "perspective": "inter",
+      "mode": "gradual",
+      "start": "2016-08-07T00:00:00+00:00",
+      "end": "2017-01-29T04:48:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.4,
+        0.52
+      ]
+    }
+  ],
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2016-08-07T00:00:00+00:00",
+      "end": "2017-01-29T04:48:00+00:00",
+      "annotations": [
+        "d01"
+      ]
+    }
+  ],
+  "library": "pm4py",
+  "method": "indicators",
+  "profile": "case-composition",
+  "detector_source_revision": "765435bc7f5190adf30be7314d7158b92ff433c4",
+  "status": "ok",
+  "configuration": {
+    "bin_size": "396h",
+    "features": [
+      [
+        "case_type",
+        "region",
+        "region_1"
+      ],
+      [
+        "case_type",
+        "region",
+        "region_2"
+      ],
+      [
+        "case_type",
+        "region",
+        "region_3"
+      ],
+      [
+        "case_type",
+        "region",
+        "region_4"
+      ],
+      [
+        "case_value",
+        "amount"
+      ]
+    ],
+    "penalty": 14
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 1425095.85,
+        "tp": 0,
+        "fp": 4,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 3562739.625,
+        "tp": 0,
+        "fp": 4,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 7125479.25,
+        "tp": 0,
+        "fp": 4,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  },
+  "observation_unit": "calendar_bin",
+  "changes": [
+    {
+      "index": 92,
+      "timestamp": "2019-02-27T00:00:00+00:00",
+      "available_at": "2019-07-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"case_type\", \"region\", \"region_1\"]": 27.645512082400103
+        }
+      }
+    },
+    {
+      "index": 93,
+      "timestamp": "2019-03-15T12:00:00+00:00",
+      "available_at": "2019-07-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"case_type\", \"region\", \"region_4\"]": 25.624353257273235
+        }
+      }
+    },
+    {
+      "index": 95,
+      "timestamp": "2019-04-17T12:00:00+00:00",
+      "available_at": "2019-07-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"case_value\", \"amount\", null]": 48.44436420375593
+        }
+      }
+    },
+    {
+      "index": 97,
+      "timestamp": "2019-05-20T12:00:00+00:00",
+      "available_at": "2019-07-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"case_type\", \"region\", \"region_2\"]": 24.86519683406638
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2015-01-01T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 1, "timestamp": "2015-01-17T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 2, "timestamp": "2015-02-03T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 3, "timestamp": "2015-02-19T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 4, "timestamp": "2015-03-08T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 5, "timestamp": "2015-03-24T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 6, "timestamp": "2015-04-10T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 7, "timestamp": "2015-04-26T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 8, "timestamp": "2015-05-13T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 9, "timestamp": "2015-05-29T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 10, "timestamp": "2015-06-15T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 11, "timestamp": "2015-07-01T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 12, "timestamp": "2015-07-18T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 13, "timestamp": "2015-08-03T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 14, "timestamp": "2015-08-20T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 15, "timestamp": "2015-09-05T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 16, "timestamp": "2015-09-22T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 17, "timestamp": "2015-10-08T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 18, "timestamp": "2015-10-25T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 19, "timestamp": "2015-11-10T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 20, "timestamp": "2015-11-27T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 21, "timestamp": "2015-12-13T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 22, "timestamp": "2015-12-30T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 23, "timestamp": "2016-01-15T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 24, "timestamp": "2016-02-01T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 25, "timestamp": "2016-02-17T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 26, "timestamp": "2016-03-05T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 27, "timestamp": "2016-03-21T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 28, "timestamp": "2016-04-07T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 29, "timestamp": "2016-04-23T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 30, "timestamp": "2016-05-10T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 31, "timestamp": "2016-05-26T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 32, "timestamp": "2016-06-12T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 33, "timestamp": "2016-06-28T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 34, "timestamp": "2016-07-15T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 35, "timestamp": "2016-07-31T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 36, "timestamp": "2016-08-17T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 37, "timestamp": "2016-09-02T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 38, "timestamp": "2016-09-19T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 39, "timestamp": "2016-10-05T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 40, "timestamp": "2016-10-22T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 41, "timestamp": "2016-11-07T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 42, "timestamp": "2016-11-24T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 43, "timestamp": "2016-12-10T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 44, "timestamp": "2016-12-27T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 45, "timestamp": "2017-01-12T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 46, "timestamp": "2017-01-29T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 47, "timestamp": "2017-02-14T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 48, "timestamp": "2017-03-03T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 49, "timestamp": "2017-03-19T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 50, "timestamp": "2017-04-05T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 51, "timestamp": "2017-04-21T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 52, "timestamp": "2017-05-08T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 53, "timestamp": "2017-05-24T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 54, "timestamp": "2017-06-10T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 55, "timestamp": "2017-06-26T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 56, "timestamp": "2017-07-13T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 57, "timestamp": "2017-07-29T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 58, "timestamp": "2017-08-15T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 59, "timestamp": "2017-08-31T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 60, "timestamp": "2017-09-17T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 61, "timestamp": "2017-10-03T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 62, "timestamp": "2017-10-20T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 63, "timestamp": "2017-11-05T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 64, "timestamp": "2017-11-22T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 65, "timestamp": "2017-12-08T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 66, "timestamp": "2017-12-25T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 67, "timestamp": "2018-01-10T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 68, "timestamp": "2018-01-27T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 69, "timestamp": "2018-02-12T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 70, "timestamp": "2018-03-01T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 71, "timestamp": "2018-03-17T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 72, "timestamp": "2018-04-03T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 73, "timestamp": "2018-04-19T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 74, "timestamp": "2018-05-06T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 75, "timestamp": "2018-05-22T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 76, "timestamp": "2018-06-08T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 77, "timestamp": "2018-06-24T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 78, "timestamp": "2018-07-11T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 79, "timestamp": "2018-07-27T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 80, "timestamp": "2018-08-13T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 81, "timestamp": "2018-08-29T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 82, "timestamp": "2018-09-15T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 83, "timestamp": "2018-10-01T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 84, "timestamp": "2018-10-18T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 85, "timestamp": "2018-11-03T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 86, "timestamp": "2018-11-20T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 87, "timestamp": "2018-12-06T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 88, "timestamp": "2018-12-23T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 89, "timestamp": "2019-01-08T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2019-01-25T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 91, "timestamp": "2019-02-10T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 92, "timestamp": "2019-02-27T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 1.0},
+    {"index": 93, "timestamp": "2019-03-15T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 1.0},
+    {"index": 94, "timestamp": "2019-04-01T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 95, "timestamp": "2019-04-17T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 1.0},
+    {"index": 96, "timestamp": "2019-05-04T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 97, "timestamp": "2019-05-20T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 1.0},
+    {"index": 98, "timestamp": "2019-06-06T00:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0},
+    {"index": 99, "timestamp": "2019-06-22T12:00:00+00:00", "available_at": "2019-07-09T00:00:00+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "variant": "indicators",
+    "method": "pelt",
+    "bin_size": "396h",
+    "observed_through": "2019-07-08T09:59:45+00:00",
+    "features": [
+      [
+        "case_type",
+        "region",
+        "region_1"
+      ],
+      [
+        "case_type",
+        "region",
+        "region_2"
+      ],
+      [
+        "case_type",
+        "region",
+        "region_3"
+      ],
+      [
+        "case_type",
+        "region",
+        "region_4"
+      ],
+      [
+        "case_value",
+        "amount",
+        null
+      ]
+    ],
+    "retrospective": true,
+    "aggregation": "any_feature",
+    "case_boundaries": "first_and_last_case_event",
+    "penalty": 14,
+    "min_size": 3,
+    "standardize": true,
+    "input_format": "EventLog"
+  },
+  "score_series": {
+    "observation_count": 100,
+    "published_count": 100,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

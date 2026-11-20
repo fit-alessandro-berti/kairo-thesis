@@ -1,0 +1,89 @@
+{
+  "id": "rheon_multi_03",
+  "family": "rheon",
+  "scenario": "multi",
+  "source": {
+    "thesis_files": "https://drive.google.com/drive/folders/1sie4iFTUNmHuyvMVoW8tktyvtoUzbmEp",
+    "event_log": "https://drive.google.com/file/d/19Ly8i3eBP8I-YpnUerTCq1EAP0glIwyo/view",
+    "sha256": "3a1effa9c782d06e4b947606a30527a966ef7be245d2baab01974e478f887b26",
+    "ground_truth": "https://drive.google.com/file/d/1eF6r45rI-jzsJmuPBRIS9zkhe7wmv6Ox/view",
+    "ground_truth_sha256": "9c19bc5531e32ddd05b358e26074e8c936a03752c607322a1225102612c4df4d",
+    "generator_scenario": "multi_inter_4",
+    "truth_time_basis": "generator metadata expressed in UTC"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 4086,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "region",
+      "perspective": "inter",
+      "mode": "sudden",
+      "start": "2018-08-07T16:48:00+00:00",
+      "end": "2018-08-07T16:48:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.3
+      ]
+    },
+    {
+      "id": "d02",
+      "kind": "region",
+      "perspective": "inter",
+      "mode": "sudden",
+      "start": "2018-12-31T12:00:00+00:00",
+      "end": "2018-12-31T12:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.5
+      ]
+    },
+    {
+      "id": "d03",
+      "kind": "region",
+      "perspective": "inter",
+      "mode": "sudden",
+      "start": "2019-05-26T07:12:00+00:00",
+      "end": "2019-05-26T07:12:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.7
+      ]
+    }
+  ],
+  "events": 23852,
+  "cases": 9523,
+  "activities": 5,
+  "resources": 5,
+  "first_timestamp": "2018-01-01T00:00:00+00:00",
+  "last_timestamp": "2019-12-31T22:24:52+00:00",
+  "observation_span_seconds": 63066292.0,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2018-08-07T16:48:00+00:00",
+      "end": "2018-08-07T16:48:00+00:00",
+      "annotations": [
+        "d01"
+      ]
+    },
+    {
+      "id": "d02",
+      "start": "2018-12-31T12:00:00+00:00",
+      "end": "2018-12-31T12:00:00+00:00",
+      "annotations": [
+        "d02"
+      ]
+    },
+    {
+      "id": "d03",
+      "start": "2019-05-26T07:12:00+00:00",
+      "end": "2019-05-26T07:12:00+00:00",
+      "annotations": [
+        "d03"
+      ]
+    }
+  ]
+}

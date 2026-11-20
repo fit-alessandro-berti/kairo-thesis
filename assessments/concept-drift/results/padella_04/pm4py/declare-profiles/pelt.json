@@ -1,0 +1,854 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_04",
+  "library": "pm4py",
+  "method": "declare-profiles",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 7350,
+      "timestamp": "2012-03-01T16:22:03.591000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 3.424685797891044,
+      "details": {
+        "constraint_deltas": {
+          "[\"existence\", \"W_Completeren aanvraag\"]": 0.3115646258503403,
+          "[\"existence\", \"W_Nabellen offertes\"]": 0.4156462585034014,
+          "[\"existence\", \"W_Nabellen incomplete dossiers\"]": 0.09642857142857147,
+          "[\"existence\", \"W_Valideren aanvraag\"]": 0.094829931972789,
+          "[\"existence\", \"W_Afhandelen leads\"]": -0.26030612244897966,
+          "[\"existence\", \"W_Beoordelen fraude\"]": -0.0077891156462585,
+          "[\"response\", \"W_Completeren aanvraag\", \"W_Nabellen offertes\"]": 0.4156462585034014,
+          "[\"precedence\", \"W_Completeren aanvraag\", \"W_Nabellen offertes\"]": 0.4156462585034014,
+          "[\"response\", \"W_Completeren aanvraag\", \"W_Nabellen incomplete dossiers\"]": 0.09642857142857147,
+          "[\"precedence\", \"W_Completeren aanvraag\", \"W_Nabellen incomplete dossiers\"]": 0.09642857142857147,
+          "[\"response\", \"W_Completeren aanvraag\", \"W_Valideren aanvraag\"]": 0.094829931972789,
+          "[\"precedence\", \"W_Completeren aanvraag\", \"W_Valideren aanvraag\"]": 0.094829931972789,
+          "[\"response\", \"W_Completeren aanvraag\", \"W_Beoordelen fraude\"]": -0.0003401360544217683,
+          "[\"precedence\", \"W_Completeren aanvraag\", \"W_Beoordelen fraude\"]": -0.00047619047619047554,
+          "[\"response\", \"W_Nabellen offertes\", \"W_Nabellen incomplete dossiers\"]": 0.09642857142857147,
+          "[\"precedence\", \"W_Nabellen offertes\", \"W_Nabellen incomplete dossiers\"]": 0.09642857142857147,
+          "[\"response\", \"W_Nabellen offertes\", \"W_Valideren aanvraag\"]": 0.094829931972789,
+          "[\"precedence\", \"W_Nabellen offertes\", \"W_Valideren aanvraag\"]": 0.094829931972789,
+          "[\"response\", \"W_Nabellen offertes\", \"W_Beoordelen fraude\"]": -0.00020408163265306064,
+          "[\"precedence\", \"W_Nabellen offertes\", \"W_Beoordelen fraude\"]": -0.00020408163265306064,
+          "[\"response\", \"W_Nabellen incomplete dossiers\", \"W_Valideren aanvraag\"]": 0.032959183673469394,
+          "[\"response\", \"W_Valideren aanvraag\", \"W_Nabellen incomplete dossiers\"]": 0.06346938775510205,
+          "[\"precedence\", \"W_Valideren aanvraag\", \"W_Nabellen incomplete dossiers\"]": 0.09642857142857147,
+          "[\"precedence\", \"W_Valideren aanvraag\", \"W_Beoordelen fraude\"]": -0.00020408163265306064,
+          "[\"response\", \"W_Afhandelen leads\", \"W_Completeren aanvraag\"]": 0.04431972789115651,
+          "[\"precedence\", \"W_Afhandelen leads\", \"W_Completeren aanvraag\"]": 0.04431972789115651,
+          "[\"response\", \"W_Afhandelen leads\", \"W_Nabellen offertes\"]": 0.10785714285714287,
+          "[\"precedence\", \"W_Afhandelen leads\", \"W_Nabellen offertes\"]": 0.10785714285714287,
+          "[\"response\", \"W_Afhandelen leads\", \"W_Nabellen incomplete dossiers\"]": 0.020816326530612238,
+          "[\"precedence\", \"W_Afhandelen leads\", \"W_Nabellen incomplete dossiers\"]": 0.020816326530612238,
+          "[\"response\", \"W_Afhandelen leads\", \"W_Valideren aanvraag\"]": 0.028197278911564636,
+          "[\"precedence\", \"W_Afhandelen leads\", \"W_Valideren aanvraag\"]": 0.028197278911564636,
+          "[\"response\", \"W_Afhandelen leads\", \"W_Beoordelen fraude\"]": -0.0020408163265306124,
+          "[\"precedence\", \"W_Afhandelen leads\", \"W_Beoordelen fraude\"]": -0.0020408163265306124,
+          "[\"response\", \"W_Beoordelen fraude\", \"W_Completeren aanvraag\"]": 0.0013945578231292519,
+          "[\"precedence\", \"W_Beoordelen fraude\", \"W_Completeren aanvraag\"]": 0.0015306122448979593,
+          "[\"response\", \"W_Beoordelen fraude\", \"W_Nabellen offertes\"]": -0.00027210884353741496,
+          "[\"precedence\", \"W_Beoordelen fraude\", \"W_Nabellen offertes\"]": -0.00027210884353741496,
+          "[\"response\", \"W_Beoordelen fraude\", \"W_Nabellen incomplete dossiers\"]": 0.0008843537414965985,
+          "[\"precedence\", \"W_Beoordelen fraude\", \"W_Nabellen incomplete dossiers\"]": 0.0008843537414965985,
+          "[\"response\", \"W_Beoordelen fraude\", \"W_Valideren aanvraag\"]": -0.00047619047619047554,
+          "[\"precedence\", \"W_Beoordelen fraude\", \"W_Valideren aanvraag\"]": -0.00027210884353741496,
+          "[\"response\", \"W_Beoordelen fraude\", \"W_Afhandelen leads\"]": 0.00030612244897959204,
+          "[\"precedence\", \"W_Beoordelen fraude\", \"W_Afhandelen leads\"]": 0.00030612244897959204
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2011-10-01T14:02:12.557000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.0},
+    {"index": 150, "timestamp": "2011-10-07T12:50:24.063000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.5327079666926128},
+    {"index": 300, "timestamp": "2011-10-12T19:11:59.624000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.46666666666666673},
+    {"index": 450, "timestamp": "2011-10-17T17:16:36.069000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.1972026594366539},
+    {"index": 600, "timestamp": "2011-10-20T09:29:25.128000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.4212151733048351},
+    {"index": 750, "timestamp": "2011-10-24T16:41:25.595000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.21756225162774304},
+    {"index": 900, "timestamp": "2011-10-27T12:53:40.043000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.453970140966219},
+    {"index": 1050, "timestamp": "2011-10-31T12:05:58.723000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.4071581729227325},
+    {"index": 1200, "timestamp": "2011-11-02T10:48:11.892000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.5319565562879903},
+    {"index": 1350, "timestamp": "2011-11-04T12:57:00.397000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.3566510900025402},
+    {"index": 1500, "timestamp": "2011-11-08T10:24:22.295000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.25759572115148877},
+    {"index": 1650, "timestamp": "2011-11-10T12:10:52.839000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.8572566062089512},
+    {"index": 1800, "timestamp": "2011-11-11T15:59:43.264000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.4769346566005313},
+    {"index": 1950, "timestamp": "2011-11-14T19:03:01.700000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.2560381915956203},
+    {"index": 2100, "timestamp": "2011-11-16T15:08:05.086000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.6177737809622909},
+    {"index": 2250, "timestamp": "2011-11-18T10:38:05.715000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.21364560478616088},
+    {"index": 2400, "timestamp": "2011-11-21T11:04:32.486000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.6156839015815394},
+    {"index": 2550, "timestamp": "2011-11-22T16:37:45.698000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.3150308626856177},
+    {"index": 2700, "timestamp": "2011-11-24T18:18:00.614000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.29013406862651925},
+    {"index": 2850, "timestamp": "2011-11-28T13:07:21.986000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.17838784213679532},
+    {"index": 3000, "timestamp": "2011-11-30T14:33:30.108000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.24156894575991253},
+    {"index": 3150, "timestamp": "2011-12-02T16:40:05.206000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.22050447211388308},
+    {"index": 3300, "timestamp": "2011-12-06T14:49:30.591000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.5464633768352846},
+    {"index": 3450, "timestamp": "2011-12-08T16:27:36.566100+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.27292652653944965},
+    {"index": 3600, "timestamp": "2011-12-12T15:26:29.040000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.23209193580705617},
+    {"index": 3750, "timestamp": "2011-12-15T10:24:59.781200+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.30753500252455457},
+    {"index": 3900, "timestamp": "2011-12-19T14:21:48.152000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.4851574772976068},
+    {"index": 4050, "timestamp": "2011-12-21T16:16:10.563000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.2325701805668322},
+    {"index": 4200, "timestamp": "2011-12-24T15:53:15.925000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.22221111083331946},
+    {"index": 4350, "timestamp": "2011-12-29T13:01:11.056000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.6317875873705936},
+    {"index": 4500, "timestamp": "2012-01-03T10:32:14.586000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.24110855093366834},
+    {"index": 4650, "timestamp": "2012-01-05T14:05:21.082600+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.30710114150082723},
+    {"index": 4800, "timestamp": "2012-01-09T16:09:52.043000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.4829538740339956},
+    {"index": 4950, "timestamp": "2012-01-12T13:30:39.957000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.4187813006543843},
+    {"index": 5100, "timestamp": "2012-01-14T16:55:52.841700+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.4403533934365797},
+    {"index": 5250, "timestamp": "2012-01-17T11:42:19.067700+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.5756156124822652},
+    {"index": 5400, "timestamp": "2012-01-18T21:28:12.617500+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.2328566559543065},
+    {"index": 5550, "timestamp": "2012-01-23T10:15:00.688800+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.13148721948877357},
+    {"index": 5700, "timestamp": "2012-01-24T17:29:03.305000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.2622128058572951},
+    {"index": 5850, "timestamp": "2012-01-27T16:45:50.949300+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.727064111493768},
+    {"index": 6000, "timestamp": "2012-02-01T10:37:27.771000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.730114146326906},
+    {"index": 6150, "timestamp": "2012-02-07T18:35:49.639000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.40077702307171037},
+    {"index": 6300, "timestamp": "2012-02-13T10:15:16.420000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.3859763953634701},
+    {"index": 6450, "timestamp": "2012-02-14T21:39:27.416000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.7215107606805167},
+    {"index": 6600, "timestamp": "2012-02-16T21:13:33.995900+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.27071920672329275},
+    {"index": 6750, "timestamp": "2012-02-20T17:55:23.210900+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.18926759422104522},
+    {"index": 6900, "timestamp": "2012-02-22T20:19:37.883300+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.17165857586111646},
+    {"index": 7050, "timestamp": "2012-02-24T21:37:42.474000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.24083189157584592},
+    {"index": 7200, "timestamp": "2012-02-28T15:54:59.968000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.5116856673996472},
+    {"index": 7350, "timestamp": "2012-03-01T16:22:03.591000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.5882931997642747},
+    {"index": 7500, "timestamp": "2012-03-06T12:27:54.923100+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.2396293434081523},
+    {"index": 7650, "timestamp": "2012-03-09T11:05:39.969600+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.7066981125078956},
+    {"index": 7800, "timestamp": "2012-03-12T12:09:23.533100+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.5251454824882128}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "declare_profiles",
+    "detector": "pelt",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "constraints": [
+      [
+        "existence",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "existence",
+        "W_Nabellen offertes"
+      ],
+      [
+        "existence",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "existence",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "existence",
+        "W_Afhandelen leads"
+      ],
+      [
+        "existence",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Completeren aanvraag",
+        "W_Nabellen offertes"
+      ],
+      [
+        "precedence",
+        "W_Completeren aanvraag",
+        "W_Nabellen offertes"
+      ],
+      [
+        "response",
+        "W_Completeren aanvraag",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "precedence",
+        "W_Completeren aanvraag",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "response",
+        "W_Completeren aanvraag",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Completeren aanvraag",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "response",
+        "W_Completeren aanvraag",
+        "W_Afhandelen leads"
+      ],
+      [
+        "precedence",
+        "W_Completeren aanvraag",
+        "W_Afhandelen leads"
+      ],
+      [
+        "response",
+        "W_Completeren aanvraag",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "precedence",
+        "W_Completeren aanvraag",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Nabellen offertes",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Nabellen offertes",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "response",
+        "W_Nabellen offertes",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "precedence",
+        "W_Nabellen offertes",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "response",
+        "W_Nabellen offertes",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Nabellen offertes",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "response",
+        "W_Nabellen offertes",
+        "W_Afhandelen leads"
+      ],
+      [
+        "precedence",
+        "W_Nabellen offertes",
+        "W_Afhandelen leads"
+      ],
+      [
+        "response",
+        "W_Nabellen offertes",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "precedence",
+        "W_Nabellen offertes",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Nabellen incomplete dossiers",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Nabellen incomplete dossiers",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "response",
+        "W_Nabellen incomplete dossiers",
+        "W_Nabellen offertes"
+      ],
+      [
+        "precedence",
+        "W_Nabellen incomplete dossiers",
+        "W_Nabellen offertes"
+      ],
+      [
+        "response",
+        "W_Nabellen incomplete dossiers",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Nabellen incomplete dossiers",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "response",
+        "W_Nabellen incomplete dossiers",
+        "W_Afhandelen leads"
+      ],
+      [
+        "precedence",
+        "W_Nabellen incomplete dossiers",
+        "W_Afhandelen leads"
+      ],
+      [
+        "response",
+        "W_Nabellen incomplete dossiers",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "precedence",
+        "W_Nabellen incomplete dossiers",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Valideren aanvraag",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Valideren aanvraag",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "response",
+        "W_Valideren aanvraag",
+        "W_Nabellen offertes"
+      ],
+      [
+        "precedence",
+        "W_Valideren aanvraag",
+        "W_Nabellen offertes"
+      ],
+      [
+        "response",
+        "W_Valideren aanvraag",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "precedence",
+        "W_Valideren aanvraag",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "response",
+        "W_Valideren aanvraag",
+        "W_Afhandelen leads"
+      ],
+      [
+        "precedence",
+        "W_Valideren aanvraag",
+        "W_Afhandelen leads"
+      ],
+      [
+        "response",
+        "W_Valideren aanvraag",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "precedence",
+        "W_Valideren aanvraag",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Afhandelen leads",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Afhandelen leads",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "response",
+        "W_Afhandelen leads",
+        "W_Nabellen offertes"
+      ],
+      [
+        "precedence",
+        "W_Afhandelen leads",
+        "W_Nabellen offertes"
+      ],
+      [
+        "response",
+        "W_Afhandelen leads",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "precedence",
+        "W_Afhandelen leads",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "response",
+        "W_Afhandelen leads",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Afhandelen leads",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "response",
+        "W_Afhandelen leads",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "precedence",
+        "W_Afhandelen leads",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Beoordelen fraude",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Beoordelen fraude",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "response",
+        "W_Beoordelen fraude",
+        "W_Nabellen offertes"
+      ],
+      [
+        "precedence",
+        "W_Beoordelen fraude",
+        "W_Nabellen offertes"
+      ],
+      [
+        "response",
+        "W_Beoordelen fraude",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "precedence",
+        "W_Beoordelen fraude",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "response",
+        "W_Beoordelen fraude",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Beoordelen fraude",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "response",
+        "W_Beoordelen fraude",
+        "W_Afhandelen leads"
+      ],
+      [
+        "precedence",
+        "W_Beoordelen fraude",
+        "W_Afhandelen leads"
+      ]
+    ],
+    "statistic": "confidence",
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "min_size": 2,
+    "gamma": null,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "constraints": [
+      [
+        "existence",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "existence",
+        "W_Nabellen offertes"
+      ],
+      [
+        "existence",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "existence",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "existence",
+        "W_Afhandelen leads"
+      ],
+      [
+        "existence",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Completeren aanvraag",
+        "W_Nabellen offertes"
+      ],
+      [
+        "precedence",
+        "W_Completeren aanvraag",
+        "W_Nabellen offertes"
+      ],
+      [
+        "response",
+        "W_Completeren aanvraag",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "precedence",
+        "W_Completeren aanvraag",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "response",
+        "W_Completeren aanvraag",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Completeren aanvraag",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "response",
+        "W_Completeren aanvraag",
+        "W_Afhandelen leads"
+      ],
+      [
+        "precedence",
+        "W_Completeren aanvraag",
+        "W_Afhandelen leads"
+      ],
+      [
+        "response",
+        "W_Completeren aanvraag",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "precedence",
+        "W_Completeren aanvraag",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Nabellen offertes",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Nabellen offertes",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "response",
+        "W_Nabellen offertes",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "precedence",
+        "W_Nabellen offertes",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "response",
+        "W_Nabellen offertes",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Nabellen offertes",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "response",
+        "W_Nabellen offertes",
+        "W_Afhandelen leads"
+      ],
+      [
+        "precedence",
+        "W_Nabellen offertes",
+        "W_Afhandelen leads"
+      ],
+      [
+        "response",
+        "W_Nabellen offertes",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "precedence",
+        "W_Nabellen offertes",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Nabellen incomplete dossiers",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Nabellen incomplete dossiers",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "response",
+        "W_Nabellen incomplete dossiers",
+        "W_Nabellen offertes"
+      ],
+      [
+        "precedence",
+        "W_Nabellen incomplete dossiers",
+        "W_Nabellen offertes"
+      ],
+      [
+        "response",
+        "W_Nabellen incomplete dossiers",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Nabellen incomplete dossiers",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "response",
+        "W_Nabellen incomplete dossiers",
+        "W_Afhandelen leads"
+      ],
+      [
+        "precedence",
+        "W_Nabellen incomplete dossiers",
+        "W_Afhandelen leads"
+      ],
+      [
+        "response",
+        "W_Nabellen incomplete dossiers",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "precedence",
+        "W_Nabellen incomplete dossiers",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Valideren aanvraag",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Valideren aanvraag",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "response",
+        "W_Valideren aanvraag",
+        "W_Nabellen offertes"
+      ],
+      [
+        "precedence",
+        "W_Valideren aanvraag",
+        "W_Nabellen offertes"
+      ],
+      [
+        "response",
+        "W_Valideren aanvraag",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "precedence",
+        "W_Valideren aanvraag",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "response",
+        "W_Valideren aanvraag",
+        "W_Afhandelen leads"
+      ],
+      [
+        "precedence",
+        "W_Valideren aanvraag",
+        "W_Afhandelen leads"
+      ],
+      [
+        "response",
+        "W_Valideren aanvraag",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "precedence",
+        "W_Valideren aanvraag",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Afhandelen leads",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Afhandelen leads",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "response",
+        "W_Afhandelen leads",
+        "W_Nabellen offertes"
+      ],
+      [
+        "precedence",
+        "W_Afhandelen leads",
+        "W_Nabellen offertes"
+      ],
+      [
+        "response",
+        "W_Afhandelen leads",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "precedence",
+        "W_Afhandelen leads",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "response",
+        "W_Afhandelen leads",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Afhandelen leads",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "response",
+        "W_Afhandelen leads",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "precedence",
+        "W_Afhandelen leads",
+        "W_Beoordelen fraude"
+      ],
+      [
+        "response",
+        "W_Beoordelen fraude",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Beoordelen fraude",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "response",
+        "W_Beoordelen fraude",
+        "W_Nabellen offertes"
+      ],
+      [
+        "precedence",
+        "W_Beoordelen fraude",
+        "W_Nabellen offertes"
+      ],
+      [
+        "response",
+        "W_Beoordelen fraude",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "precedence",
+        "W_Beoordelen fraude",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "response",
+        "W_Beoordelen fraude",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "precedence",
+        "W_Beoordelen fraude",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "response",
+        "W_Beoordelen fraude",
+        "W_Afhandelen leads"
+      ],
+      [
+        "precedence",
+        "W_Beoordelen fraude",
+        "W_Afhandelen leads"
+      ]
+    ]
+  },
+  "runtime_seconds": 3.093687,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 142769.106542,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 356922.766355,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 713845.53271,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 53,
+    "published_count": 53,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

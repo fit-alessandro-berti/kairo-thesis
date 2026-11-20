@@ -1,0 +1,640 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_bose",
+  "library": "pm4py",
+  "method": "cv-indicators",
+  "profile": "pelt-enriched",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "calendar_bin",
+  "changes": [
+    {
+      "index": 5,
+      "timestamp": "1970-07-21T16:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"Send Questionnaire\"]": 20.625060146199356,
+          "[\"inter_event_gap\", \"Prepare Notification Content\"]": 22.77783016484702
+        }
+      }
+    },
+    {
+      "index": 8,
+      "timestamp": "1970-11-19T16:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 4.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 37.97991638875223,
+          "work_in_progress": 17.26847275669043,
+          "events": 32.48562240471171,
+          "active_resources": 29.358571383973626
+        }
+      }
+    },
+    {
+      "index": 9,
+      "timestamp": "1970-12-30T00:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "completions": 36.42893064915302
+        }
+      }
+    },
+    {
+      "index": 34,
+      "timestamp": "1973-10-03T08:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 30.627493192444746,
+          "completions": 31.746691634354875,
+          "active_resources": 36.518846843991795
+        }
+      }
+    },
+    {
+      "index": 35,
+      "timestamp": "1973-11-12T16:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "events": 25.168176474580292
+        }
+      }
+    },
+    {
+      "index": 36,
+      "timestamp": "1973-12-23T00:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"Send Questionnaire\"]": 21.519540583842186,
+          "[\"inter_event_gap\", \"Prepare Notification Content\"]": 30.71875040608684,
+          "[\"inter_event_gap\", \"Send Questionnaire\"]": 12.688102399200574
+        }
+      }
+    },
+    {
+      "index": 44,
+      "timestamp": "1974-11-10T16:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"Send Questionnaire\", \"PR3\"]": 23.2989483056982
+        }
+      }
+    },
+    {
+      "index": 60,
+      "timestamp": "1976-08-17T00:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"Send Questionnaire\", \"PR1\"]": 21.683851035831793
+        }
+      }
+    },
+    {
+      "index": 75,
+      "timestamp": "1978-04-14T00:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"Register\", \"PR4\"]": 22.405028891097146
+        }
+      }
+    },
+    {
+      "index": 92,
+      "timestamp": "1980-02-28T16:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 41.83360371703956
+        }
+      }
+    },
+    {
+      "index": 93,
+      "timestamp": "1980-04-09T00:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "case_duration": 21.103045803921297
+        }
+      }
+    },
+    {
+      "index": 94,
+      "timestamp": "1980-05-19T08:00:00+00:00",
+      "available_at": "1981-01-16T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"Send Questionnaire\", \"PR3\"]": 16.841118736390648
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "1970-01-01T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 1, "timestamp": "1970-02-10T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 2, "timestamp": "1970-03-22T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 3, "timestamp": "1970-05-02T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 4, "timestamp": "1970-06-11T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 5, "timestamp": "1970-07-21T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 2.0},
+    {"index": 6, "timestamp": "1970-08-31T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 7, "timestamp": "1970-10-10T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 8, "timestamp": "1970-11-19T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 4.0},
+    {"index": 9, "timestamp": "1970-12-30T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 1.0},
+    {"index": 10, "timestamp": "1971-02-08T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 11, "timestamp": "1971-03-20T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 12, "timestamp": "1971-04-30T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 13, "timestamp": "1971-06-09T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 14, "timestamp": "1971-07-19T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 15, "timestamp": "1971-08-29T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 16, "timestamp": "1971-10-08T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 17, "timestamp": "1971-11-17T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 18, "timestamp": "1971-12-28T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 19, "timestamp": "1972-02-06T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 20, "timestamp": "1972-03-17T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 21, "timestamp": "1972-04-27T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 22, "timestamp": "1972-06-06T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 23, "timestamp": "1972-07-16T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 24, "timestamp": "1972-08-26T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 25, "timestamp": "1972-10-05T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 26, "timestamp": "1972-11-14T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 27, "timestamp": "1972-12-25T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 28, "timestamp": "1973-02-03T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 29, "timestamp": "1973-03-15T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 30, "timestamp": "1973-04-25T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 31, "timestamp": "1973-06-04T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 32, "timestamp": "1973-07-14T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 33, "timestamp": "1973-08-24T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 34, "timestamp": "1973-10-03T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 3.0},
+    {"index": 35, "timestamp": "1973-11-12T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 1.0},
+    {"index": 36, "timestamp": "1973-12-23T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 3.0},
+    {"index": 37, "timestamp": "1974-02-01T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 38, "timestamp": "1974-03-13T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 39, "timestamp": "1974-04-23T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 40, "timestamp": "1974-06-02T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 41, "timestamp": "1974-07-12T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 42, "timestamp": "1974-08-22T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 43, "timestamp": "1974-10-01T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 44, "timestamp": "1974-11-10T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 1.0},
+    {"index": 45, "timestamp": "1974-12-21T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 46, "timestamp": "1975-01-30T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 47, "timestamp": "1975-03-11T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 48, "timestamp": "1975-04-21T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 49, "timestamp": "1975-05-31T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 50, "timestamp": "1975-07-10T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 51, "timestamp": "1975-08-20T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 52, "timestamp": "1975-09-29T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 53, "timestamp": "1975-11-08T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 54, "timestamp": "1975-12-19T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 55, "timestamp": "1976-01-28T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 56, "timestamp": "1976-03-08T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 57, "timestamp": "1976-04-18T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 58, "timestamp": "1976-05-28T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 59, "timestamp": "1976-07-07T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 60, "timestamp": "1976-08-17T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 1.0},
+    {"index": 61, "timestamp": "1976-09-26T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 62, "timestamp": "1976-11-05T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 63, "timestamp": "1976-12-16T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 64, "timestamp": "1977-01-25T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 65, "timestamp": "1977-03-06T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 66, "timestamp": "1977-04-16T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 67, "timestamp": "1977-05-26T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 68, "timestamp": "1977-07-05T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 69, "timestamp": "1977-08-15T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 70, "timestamp": "1977-09-24T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 71, "timestamp": "1977-11-03T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 72, "timestamp": "1977-12-14T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 73, "timestamp": "1978-01-23T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 74, "timestamp": "1978-03-04T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 75, "timestamp": "1978-04-14T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 1.0},
+    {"index": 76, "timestamp": "1978-05-24T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 77, "timestamp": "1978-07-03T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 78, "timestamp": "1978-08-13T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 79, "timestamp": "1978-09-22T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 80, "timestamp": "1978-11-01T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 81, "timestamp": "1978-12-12T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 82, "timestamp": "1979-01-21T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 83, "timestamp": "1979-03-02T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 84, "timestamp": "1979-04-12T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 85, "timestamp": "1979-05-22T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 86, "timestamp": "1979-07-01T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 87, "timestamp": "1979-08-11T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 88, "timestamp": "1979-09-20T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 89, "timestamp": "1979-10-30T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "1979-12-10T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 91, "timestamp": "1980-01-19T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 92, "timestamp": "1980-02-28T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 1.0},
+    {"index": 93, "timestamp": "1980-04-09T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 1.0},
+    {"index": 94, "timestamp": "1980-05-19T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 1.0},
+    {"index": 95, "timestamp": "1980-06-28T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 96, "timestamp": "1980-08-08T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 97, "timestamp": "1980-09-17T08:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 98, "timestamp": "1980-10-27T16:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0},
+    {"index": 99, "timestamp": "1980-12-07T00:00:00+00:00", "available_at": "1981-01-16T08:00:00+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "cv_indicators",
+    "mode": "retrospective",
+    "bin_size": "968h",
+    "statistic": "mean",
+    "candidate_windows": [
+      1,
+      3,
+      5,
+      9,
+      17
+    ],
+    "selected_windows": {
+      "arrivals": 9,
+      "completions": 9,
+      "work_in_progress": 5,
+      "events": 5,
+      "case_duration": 9,
+      "[\"activity_frequency\", \"Register\"]": 5,
+      "[\"activity_frequency\", \"Create Questionnaire\"]": 5,
+      "[\"activity_frequency\", \"Prepare Notification Content\"]": 5,
+      "[\"activity_frequency\", \"Send Questionnaire\"]": 5,
+      "[\"inter_event_gap\", \"Create Questionnaire\"]": 5,
+      "[\"inter_event_gap\", \"Prepare Notification Content\"]": 5,
+      "[\"inter_event_gap\", \"Send Questionnaire\"]": 9,
+      "active_resources": 9,
+      "[\"resource_assignment\", \"Register\", \"PR1\"]": 3,
+      "[\"resource_assignment\", \"Register\", \"PR4\"]": 5,
+      "[\"resource_assignment\", \"Create Questionnaire\", \"Mgr1\"]": 1,
+      "[\"resource_assignment\", \"Prepare Notification Content\", \"Mgr1\"]": 1,
+      "[\"resource_assignment\", \"Send Questionnaire\", \"PR1\"]": 5,
+      "[\"resource_assignment\", \"Send Questionnaire\", \"PR3\"]": 5
+    },
+    "cv_curves": {
+      "arrivals": {
+        "1": 1.2149531312405062,
+        "3": 1.1216265278703021,
+        "5": 1.0372570185665597,
+        "9": 0.8553824152190714,
+        "17": 0.5214503620047836
+      },
+      "completions": {
+        "1": 1.1729094878406714,
+        "3": 1.09062656126746,
+        "5": 1.01131215758668,
+        "9": 0.8374835550030606,
+        "17": 0.5230774998191411
+      },
+      "work_in_progress": {
+        "1": 1.483441518299996,
+        "3": 1.3320161942480497,
+        "5": 1.237613851608476,
+        "9": 1.0651806577441651,
+        "17": 0.7550931460201663
+      },
+      "events": {
+        "1": 1.1774511771950478,
+        "3": 1.1026513500468123,
+        "5": 1.0245130072729722,
+        "9": 0.8535721847588915,
+        "17": 0.535648785503045
+      },
+      "case_duration": {
+        "1": 0.6510023043510298,
+        "3": 0.6139771588764015,
+        "5": 0.5766147382009561,
+        "9": 0.4849144209677744,
+        "17": 0.36780606211489564
+      },
+      "[\"activity_frequency\", \"Register\"]": {
+        "1": 0.2497465442255229,
+        "3": 0.1494831401748696,
+        "5": 0.11894815844125847,
+        "9": 0.08909595064162412,
+        "17": 0.012424163935924373
+      },
+      "[\"activity_frequency\", \"Create Questionnaire\"]": {
+        "1": 0.21913551850972324,
+        "3": 0.13714296008360333,
+        "5": 0.10965249479241385,
+        "9": 0.08325007722475312,
+        "17": 0.012278140842077033
+      },
+      "[\"activity_frequency\", \"Prepare Notification Content\"]": {
+        "1": 0.21943552484072631,
+        "3": 0.1362648986481698,
+        "5": 0.10845910823815343,
+        "9": 0.08319808540908757,
+        "17": 0.012205664920109584
+      },
+      "[\"activity_frequency\", \"Send Questionnaire\"]": {
+        "1": 0.2930364873140072,
+        "3": 0.17446864174140783,
+        "5": 0.13481130912355957,
+        "9": 0.10095226569620516,
+        "17": 0.054031121980995675
+      },
+      "[\"inter_event_gap\", \"Register\"]": {},
+      "[\"inter_event_gap\", \"Create Questionnaire\"]": {
+        "1": 1.2536324243078516,
+        "3": 0.791463094692195,
+        "5": 0.605933299762145,
+        "9": 0.4392338736097343,
+        "17": 0.11972827879642639
+      },
+      "[\"inter_event_gap\", \"Prepare Notification Content\"]": {
+        "1": 1.4029141232280125,
+        "3": 0.8826028925712134,
+        "5": 0.6582112273898209,
+        "9": 0.4575365742510901,
+        "17": 0.14334041859429164
+      },
+      "[\"inter_event_gap\", \"Send Questionnaire\"]": {
+        "1": 0.8629930514452406,
+        "3": 0.782972724155696,
+        "5": 0.7182131268715748,
+        "9": 0.5890478159970886,
+        "17": 0.4401952849229459
+      },
+      "active_resources": {
+        "1": 1.116789895845273,
+        "3": 1.039504694488168,
+        "5": 0.9680120040978538,
+        "9": 0.8109078173457384,
+        "17": 0.5273848565942917
+      },
+      "[\"resource_assignment\", \"Register\", \"PR1\"]": {
+        "1": 0.13736785574021074,
+        "3": 0.08293989065921539,
+        "5": 0.07238417885085867,
+        "9": 0.051096632256240004,
+        "17": 0.03260627601719513
+      },
+      "[\"resource_assignment\", \"Register\", \"PR4\"]": {
+        "1": 0.19229215128391733,
+        "3": 0.12477014436027939,
+        "5": 0.09621047054529372,
+        "9": 0.05391094360372119,
+        "17": 0.01773475343708514
+      },
+      "[\"resource_assignment\", \"Create Questionnaire\", \"Mgr1\"]": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "9": 0.0,
+        "17": 0.0
+      },
+      "[\"resource_assignment\", \"Prepare Notification Content\", \"Mgr1\"]": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "9": 0.0,
+        "17": 0.0
+      },
+      "[\"resource_assignment\", \"Send Questionnaire\", \"PR1\"]": {
+        "1": 0.2098877713209098,
+        "3": 0.13301799420610871,
+        "5": 0.110094903332243,
+        "9": 0.08478550226388666,
+        "17": 0.07436380126028548
+      },
+      "[\"resource_assignment\", \"Send Questionnaire\", \"PR3\"]": {
+        "1": 0.19509248692364087,
+        "3": 0.1359199490676587,
+        "5": 0.11517089484383311,
+        "9": 0.0992022340221433,
+        "17": 0.0944181799024625
+      }
+    },
+    "min_size": 3,
+    "penalty_scale": 3.0,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "bin_size": "968h",
+    "features": [
+      "arrivals",
+      "completions",
+      "work_in_progress",
+      "events",
+      "case_duration",
+      [
+        "activity_frequency",
+        "Register"
+      ],
+      [
+        "activity_frequency",
+        "Create Questionnaire"
+      ],
+      [
+        "activity_frequency",
+        "Prepare Notification Content"
+      ],
+      [
+        "activity_frequency",
+        "Send Questionnaire"
+      ],
+      [
+        "inter_event_gap",
+        "Register"
+      ],
+      [
+        "inter_event_gap",
+        "Create Questionnaire"
+      ],
+      [
+        "inter_event_gap",
+        "Prepare Notification Content"
+      ],
+      [
+        "inter_event_gap",
+        "Send Questionnaire"
+      ],
+      "active_resources",
+      [
+        "resource_assignment",
+        "Register",
+        "PR1"
+      ],
+      [
+        "resource_assignment",
+        "Register",
+        "PR4"
+      ],
+      [
+        "resource_assignment",
+        "Create Questionnaire",
+        "Mgr1"
+      ],
+      [
+        "resource_assignment",
+        "Prepare Notification Content",
+        "Mgr1"
+      ],
+      [
+        "resource_assignment",
+        "Send Questionnaire",
+        "PR1"
+      ],
+      [
+        "resource_assignment",
+        "Send Questionnaire",
+        "PR3"
+      ]
+    ],
+    "penalty_scale": 3,
+    "start_timestamp_key": "start:timestamp"
+  },
+  "runtime_seconds": 5.445998,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 3482045.4,
+        "tp": 1,
+        "fp": 11,
+        "fn": 3,
+        "precision": 0.08333333333333333,
+        "recall": 0.25,
+        "f1": 0.125,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": -780060.0,
+            "distance_to_truth_interval_seconds": 780060.0,
+            "availability_minus_onset_seconds": 222247140.0
+          }
+        ],
+        "unmatched_truth": [
+          "d02",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 8705113.5,
+        "tp": 2,
+        "fp": 10,
+        "fn": 2,
+        "precision": 0.16666666666666666,
+        "recall": 0.5,
+        "f1": 0.25,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": -780060.0,
+            "distance_to_truth_interval_seconds": 780060.0,
+            "availability_minus_onset_seconds": 222247140.0
+          },
+          {
+            "truth_id": "d04",
+            "change_offset": 9,
+            "estimate_minus_onset_seconds": 5066280.0,
+            "distance_to_truth_interval_seconds": 5066280.0,
+            "availability_minus_onset_seconds": 32944680.0
+          }
+        ],
+        "unmatched_truth": [
+          "d02",
+          "d03"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          10,
+          11
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 17410227.0,
+        "tp": 3,
+        "fp": 9,
+        "fn": 1,
+        "precision": 0.25,
+        "recall": 0.75,
+        "f1": 0.375,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": -780060.0,
+            "distance_to_truth_interval_seconds": 780060.0,
+            "availability_minus_onset_seconds": 222247140.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 8,
+            "estimate_minus_onset_seconds": 8897940.0,
+            "distance_to_truth_interval_seconds": 8897940.0,
+            "availability_minus_onset_seconds": 96017940.0
+          },
+          {
+            "truth_id": "d04",
+            "change_offset": 9,
+            "estimate_minus_onset_seconds": 5066280.0,
+            "distance_to_truth_interval_seconds": 5066280.0,
+            "availability_minus_onset_seconds": 32944680.0
+          }
+        ],
+        "unmatched_truth": [
+          "d02"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          10,
+          11
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 100,
+    "published_count": 100,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

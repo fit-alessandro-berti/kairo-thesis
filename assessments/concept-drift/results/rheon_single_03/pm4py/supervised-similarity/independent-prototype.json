@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_single_03",
+  "library": "pm4py",
+  "method": "supervised-similarity",
+  "profile": "independent-prototype",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 1088,
+      "timestamp": "2022-09-15T19:29:02+00:00",
+      "available_at": "2022-10-15T01:04:01+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "sudden",
+        "window_range": [
+          16,
+          16
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 2516,
+      "timestamp": "2022-10-05T03:51:33+00:00",
+      "available_at": "2022-10-15T01:04:01+00:00",
+      "score": 0.9874822190611663,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          37,
+          38
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "index": 3120,
+      "timestamp": "2022-10-13T00:50:59+00:00",
+      "available_at": "2022-10-15T01:04:01+00:00",
+      "score": 0.8628808864265927,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          46,
+          46
+        ],
+        "confidence": 0.8628808864265927
+      }
+    }
+  ],
+  "scores": [
+    {"index": 1088, "timestamp": "2022-09-15T19:29:02+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 1.0},
+    {"index": 2516, "timestamp": "2022-10-05T03:51:33+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.9874822190611663},
+    {"index": 3120, "timestamp": "2022-10-13T00:50:59+00:00", "available_at": "2022-10-15T01:04:01+00:00", "score": 0.8628808864265927}
+  ],
+  "intervals": [
+    {
+      "start_index": 2516,
+      "end_index": 2650,
+      "start_timestamp": "2022-10-05T03:51:33+00:00",
+      "end_timestamp": "2022-10-06T21:31:12+00:00",
+      "available_at": "2022-10-15T01:04:01+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          37,
+          38
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "start_index": 3120,
+      "end_index": 3186,
+      "start_timestamp": "2022-10-13T00:50:59+00:00",
+      "end_timestamp": "2022-10-14T03:00:28+00:00",
+      "available_at": "2022-10-15T01:04:01+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          46,
+          46
+        ],
+        "confidence": 0.8628808864265927
+      }
+    }
+  ],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "supervised_similarity",
+    "representation": "directly_follows_cosine_similarity_image",
+    "predictor": "_PatchPredictor",
+    "retrospective": true,
+    "trace_order": "start",
+    "num_windows": 48,
+    "min_confidence": 0.8,
+    "windows": [
+      [
+        0,
+        68
+      ],
+      [
+        68,
+        136
+      ],
+      [
+        136,
+        204
+      ],
+      [
+        204,
+        272
+      ],
+      [
+        272,
+        340
+      ],
+      [
+        340,
+        408
+      ],
+      [
+        408,
+        476
+      ],
+      [
+        476,
+        544
+      ],
+      [
+        544,
+        612
+      ],
+      [
+        612,
+        680
+      ],
+      [
+        680,
+        748
+      ],
+      [
+        748,
+        816
+      ],
+      [
+        816,
+        884
+      ],
+      [
+        884,
+        952
+      ],
+      [
+        952,
+        1020
+      ],
+      [
+        1020,
+        1088
+      ],
+      [
+        1088,
+        1156
+      ],
+      [
+        1156,
+        1224
+      ],
+      [
+        1224,
+        1292
+      ],
+      [
+        1292,
+        1360
+      ],
+      [
+        1360,
+        1428
+      ],
+      [
+        1428,
+        1496
+      ],
+      [
+        1496,
+        1564
+      ],
+      [
+        1564,
+        1632
+      ],
+      [
+        1632,
+        1700
+      ],
+      [
+        1700,
+        1768
+      ],
+      [
+        1768,
+        1836
+      ],
+      [
+        1836,
+        1904
+      ],
+      [
+        1904,
+        1972
+      ],
+      [
+        1972,
+        2040
+      ],
+      [
+        2040,
+        2108
+      ],
+      [
+        2108,
+        2176
+      ],
+      [
+        2176,
+        2244
+      ],
+      [
+        2244,
+        2312
+      ],
+      [
+        2312,
+        2380
+      ],
+      [
+        2380,
+        2448
+      ],
+      [
+        2448,
+        2516
+      ],
+      [
+        2516,
+        2584
+      ],
+      [
+        2584,
+        2651
+      ],
+      [
+        2651,
+        2718
+      ],
+      [
+        2718,
+        2785
+      ],
+      [
+        2785,
+        2852
+      ],
+      [
+        2852,
+        2919
+      ],
+      [
+        2919,
+        2986
+      ],
+      [
+        2986,
+        3053
+      ],
+      [
+        3053,
+        3120
+      ],
+      [
+        3120,
+        3187
+      ],
+      [
+        3187,
+        3254
+      ]
+    ],
+    "input_format": "EventLog",
+    "training": {
+      "source": "independently generated by train_prototype",
+      "seed": 73,
+      "logs": 24,
+      "cases_per_log": 480,
+      "radius": 2
+    }
+  },
+  "configuration": {
+    "num_windows": 48,
+    "min_confidence": 0.8
+  },
+  "runtime_seconds": 42.77255,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 38054.41,
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 25214.0,
+            "distance_to_truth_interval_seconds": 25214.0,
+            "availability_minus_onset_seconds": 2550913.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          1,
+          2
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 95136.025,
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 25214.0,
+            "distance_to_truth_interval_seconds": 25214.0,
+            "availability_minus_onset_seconds": 2550913.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          1,
+          2
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 190272.05,
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 25214.0,
+            "distance_to_truth_interval_seconds": 25214.0,
+            "availability_minus_onset_seconds": 2550913.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 3,
+    "published_count": 3,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

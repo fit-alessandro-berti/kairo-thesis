@@ -1,0 +1,52 @@
+{
+  "id": "rheon_single_15",
+  "family": "rheon",
+  "scenario": "single",
+  "source": {
+    "thesis_files": "https://drive.google.com/drive/folders/1sie4iFTUNmHuyvMVoW8tktyvtoUzbmEp",
+    "event_log": "https://drive.google.com/file/d/1vFiT5135Lxkxu1Q83QsVSEK9dUVYmzLZ/view",
+    "sha256": "27a8f74f34276f60c033da1871a23e720dc3e6f3ac5801b2bcc83742f1a37cc0",
+    "ground_truth": "https://drive.google.com/file/d/1-ec6pvYu-MRgapIXE5sstREVOwPJ30m9/view",
+    "ground_truth_sha256": "232195d04cc140d9210f58fee03179e134948dbfbf16083bd4a14ede0fe3d557",
+    "generator_scenario": "waiting_time_gradual",
+    "truth_time_basis": "generator metadata expressed in UTC"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 4435,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "waiting_time",
+      "perspective": "inter",
+      "mode": "gradual",
+      "start": "2016-08-07T00:00:00+00:00",
+      "end": "2017-01-29T04:48:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.4,
+        0.52
+      ]
+    }
+  ],
+  "events": 72684,
+  "cases": 9042,
+  "activities": 7,
+  "resources": 9,
+  "first_timestamp": "2015-01-01T00:00:00+00:00",
+  "last_timestamp": "2019-07-08T09:59:45+00:00",
+  "observation_span_seconds": 142509585.0,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2016-08-07T00:00:00+00:00",
+      "end": "2017-01-29T04:48:00+00:00",
+      "annotations": [
+        "d01"
+      ]
+    }
+  ]
+}

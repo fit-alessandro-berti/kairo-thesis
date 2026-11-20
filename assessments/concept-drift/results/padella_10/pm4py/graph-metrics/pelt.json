@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_10",
+  "library": "pm4py",
+  "method": "graph-metrics",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 1950,
+      "timestamp": "2017-12-07T16:31:17+00:00",
+      "available_at": "2019-12-15T06:27:14+00:00",
+      "score": 29.78153201764909,
+      "details": {
+        "metric_changes": {
+          "activity_count": 2.4102564102564106,
+          "edge_density": -0.014775039775039744,
+          "branching_fraction": 0.04501054501054497,
+          "merging_fraction": -0.037662337662337564,
+          "weak_component_count": 0.07692307692307687,
+          "cyclic_activity_fraction": 0.16625596625596628
+        }
+      }
+    },
+    {
+      "index": 2400,
+      "timestamp": "2018-01-25T16:31:07+00:00",
+      "available_at": "2019-12-15T06:27:14+00:00",
+      "score": 39.67260815081397,
+      "details": {
+        "metric_changes": {
+          "activity_count": -1.9533333333333331,
+          "edge_density": 0.004249010249010254,
+          "branching_fraction": -0.03641147741147738,
+          "merging_fraction": -0.07196703296703305,
+          "weak_component_count": -0.19999999999999996,
+          "cyclic_activity_fraction": -0.26051626151626117
+        }
+      }
+    },
+    {
+      "index": 9900,
+      "timestamp": "2018-12-21T00:47:43+00:00",
+      "available_at": "2019-12-15T06:27:14+00:00",
+      "score": 33.50389789043396,
+      "details": {
+        "metric_changes": {
+          "activity_count": -0.8800000000000008,
+          "edge_density": 0.02929545454545454,
+          "branching_fraction": 0.05066666666666664,
+          "merging_fraction": 0.05288888888888893,
+          "weak_component_count": -0.8,
+          "cyclic_activity_fraction": 0.027030303030302627
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2017-01-10T12:41:35+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 0.0},
+    {"index": 150, "timestamp": "2017-02-13T16:32:14+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.950677903993167},
+    {"index": 300, "timestamp": "2017-03-13T16:30:59+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 4.184034260399012},
+    {"index": 450, "timestamp": "2017-04-06T15:30:54+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 5.170064249164751},
+    {"index": 600, "timestamp": "2017-05-01T15:31:05+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.4797368456463742},
+    {"index": 750, "timestamp": "2017-05-29T15:30:47+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.5983260582890613},
+    {"index": 900, "timestamp": "2017-06-15T15:31:06+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.5983260582890613},
+    {"index": 1050, "timestamp": "2017-07-10T15:31:08+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 0.0},
+    {"index": 1200, "timestamp": "2017-08-10T15:31:26+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 0.0},
+    {"index": 1350, "timestamp": "2017-09-14T15:30:52+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.9352715895797075},
+    {"index": 1500, "timestamp": "2017-10-05T15:31:27+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 4.015492121760095},
+    {"index": 1650, "timestamp": "2017-10-26T15:31:20+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 4.077556105220221},
+    {"index": 1800, "timestamp": "2017-11-17T12:40:13+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.39561940730108},
+    {"index": 1950, "timestamp": "2017-12-07T16:31:17+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.1887988043111752},
+    {"index": 2100, "timestamp": "2017-12-20T07:31:00+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.9109560884320898},
+    {"index": 2250, "timestamp": "2018-01-11T16:30:56+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.911351230878225},
+    {"index": 2400, "timestamp": "2018-01-25T16:31:07+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 5.561959474488794},
+    {"index": 2550, "timestamp": "2018-02-01T16:31:17+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.3508483926081842},
+    {"index": 2700, "timestamp": "2018-02-08T16:31:10+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.783758467085441},
+    {"index": 2850, "timestamp": "2018-02-12T16:31:20+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.210961013589856},
+    {"index": 3000, "timestamp": "2018-02-19T16:31:31+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.2027269282306827},
+    {"index": 3150, "timestamp": "2018-02-26T16:31:27+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.3581864799221368},
+    {"index": 3300, "timestamp": "2018-03-05T16:30:57+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.6643879540280535},
+    {"index": 3450, "timestamp": "2018-03-12T16:31:14+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 4.45904334648208},
+    {"index": 3600, "timestamp": "2018-03-15T16:31:14+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.994515980434697},
+    {"index": 3750, "timestamp": "2018-03-26T15:31:13+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 0.0},
+    {"index": 3900, "timestamp": "2018-03-29T15:31:10+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.6643879540280535},
+    {"index": 4050, "timestamp": "2018-04-06T09:15:07+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.9914750701298258},
+    {"index": 4200, "timestamp": "2018-04-12T15:31:10+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.1918556914642773},
+    {"index": 4350, "timestamp": "2018-04-19T15:31:30+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.271292755252624},
+    {"index": 4500, "timestamp": "2018-04-26T15:30:51+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 0.0},
+    {"index": 4650, "timestamp": "2018-04-30T15:31:10+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.776544190964064},
+    {"index": 4800, "timestamp": "2018-05-07T15:31:13+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.846418812579389},
+    {"index": 4950, "timestamp": "2018-05-17T15:31:32+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 4.065746121461466},
+    {"index": 5100, "timestamp": "2018-05-24T15:31:06+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.299342010961964},
+    {"index": 5250, "timestamp": "2018-05-31T15:31:11+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.837142249480807},
+    {"index": 5400, "timestamp": "2018-06-07T15:31:35+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.3101603290530164},
+    {"index": 5550, "timestamp": "2018-06-11T09:32:01+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 0.0},
+    {"index": 5700, "timestamp": "2018-06-14T15:31:30+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.9914750701298258},
+    {"index": 5850, "timestamp": "2018-06-21T15:31:07+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.3581864799221368},
+    {"index": 6000, "timestamp": "2018-06-25T15:31:27+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.6643879540280535},
+    {"index": 6150, "timestamp": "2018-07-02T11:06:27+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 4.457358278436847},
+    {"index": 6300, "timestamp": "2018-07-08T05:15:51+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.5617201915175807},
+    {"index": 6450, "timestamp": "2018-07-15T03:14:36+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 4.1155266622406526},
+    {"index": 6600, "timestamp": "2018-07-20T02:27:47+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.994515980434697},
+    {"index": 6750, "timestamp": "2018-07-29T04:27:44+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.7483870365088836},
+    {"index": 6900, "timestamp": "2018-08-09T04:38:32+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 4.182464217373741},
+    {"index": 7050, "timestamp": "2018-08-24T08:03:10+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 0.0},
+    {"index": 7200, "timestamp": "2018-09-07T19:25:33+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 4.457358278436847},
+    {"index": 7350, "timestamp": "2018-09-16T08:55:44+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.3312244676628926},
+    {"index": 7500, "timestamp": "2018-09-24T08:01:17+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 5.858455389560115},
+    {"index": 7650, "timestamp": "2018-10-01T03:14:43+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.277410891584979},
+    {"index": 7800, "timestamp": "2018-10-07T04:10:34+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.9542436979812678},
+    {"index": 7950, "timestamp": "2018-10-12T20:02:23+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.294442773707593},
+    {"index": 8100, "timestamp": "2018-10-18T19:22:37+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.7503020378786536},
+    {"index": 8250, "timestamp": "2018-10-23T19:33:09+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.1069595635887945},
+    {"index": 8400, "timestamp": "2018-10-30T04:21:18+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 5.8768024263276635},
+    {"index": 8550, "timestamp": "2018-11-05T02:07:30+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 5.8768024263276635},
+    {"index": 8700, "timestamp": "2018-11-12T18:42:33+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.9914750701298258},
+    {"index": 8850, "timestamp": "2018-11-17T18:27:22+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.9914750701298258},
+    {"index": 9000, "timestamp": "2018-11-22T22:28:03+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 0.0},
+    {"index": 9150, "timestamp": "2018-11-28T10:17:49+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 5.417195557917087},
+    {"index": 9300, "timestamp": "2018-12-03T17:38:43+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.487872256694272},
+    {"index": 9450, "timestamp": "2018-12-08T13:32:47+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.3012988201405986},
+    {"index": 9600, "timestamp": "2018-12-13T17:11:50+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.829635264678547},
+    {"index": 9750, "timestamp": "2018-12-17T04:28:32+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 3.8218931585025273},
+    {"index": 9900, "timestamp": "2018-12-21T00:47:43+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 6.254594798449847},
+    {"index": 10050, "timestamp": "2018-12-26T07:13:52+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 4.053124696300892},
+    {"index": 10200, "timestamp": "2019-01-06T11:18:27+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 2.185934073864872},
+    {"index": 10350, "timestamp": "2019-01-28T07:23:39+00:00", "available_at": "2019-12-15T06:27:14+00:00", "score": 1.539661433025064}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "window_size": 150,
+    "min_edge_count": 1,
+    "min_size": 3,
+    "penalty": 12.0,
+    "standardize": true,
+    "metrics": [
+      "activity_count",
+      "edge_density",
+      "branching_fraction",
+      "merging_fraction",
+      "weak_component_count",
+      "cyclic_activity_fraction",
+      "self_loop_fraction"
+    ],
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 150,
+    "penalty": 12,
+    "min_size": 3
+  },
+  "runtime_seconds": 2.117398,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 924394.44,
+        "tp": 0,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 2310986.1,
+        "tp": 0,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 4621972.2,
+        "tp": 0,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 70,
+    "published_count": 70,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

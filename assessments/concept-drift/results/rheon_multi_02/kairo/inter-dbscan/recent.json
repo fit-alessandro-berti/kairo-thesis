@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_multi_02",
+  "library": "kairo",
+  "method": "inter-dbscan",
+  "profile": "recent",
+  "status": "ok",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "inter",
+    "features": {
+      "groups": [
+        "active_cases",
+        "new_arrivals",
+        "completions",
+        "events_per_case",
+        "mean_delta_t",
+        "std_delta_t",
+        "stalled_cases",
+        "attr_means",
+        "attr_stds",
+        "attr_shares"
+      ],
+      "feature_window": "4h",
+      "case_attributes": {
+        "case:amount": "numerical",
+        "case:region": "categorical"
+      },
+      "stall_threshold": "1D",
+      "omitted_feature_groups": []
+    },
+    "reduction": {
+      "scaling": "zscore",
+      "feature_columns": 11,
+      "feature_rows": 541,
+      "pca_components": 5,
+      "pca_seed": 0,
+      "pca_retained_variance": 0.7518264285580396
+    },
+    "clustering": {
+      "method": "dbscan",
+      "eps": 1.5257764132759934,
+      "min_samples": 5,
+      "distance": "euclidean",
+      "eps_k_distance_quantile": 0.8,
+      "eps_k_distance_sample_rows": 541
+    },
+    "signal": {
+      "window": "4D",
+      "divergence": "tv",
+      "reference": "recent",
+      "lookback": 3,
+      "threshold_quantile": 0.95,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "changes": [
+    {
+      "index": 4,
+      "timestamp": "2024-04-15T00:00:00+00:00",
+      "available_at": "2024-06-30T03:33:20+00:00",
+      "score": 0.20833333333333337,
+      "details": {
+        "window_end": "2024-04-19T00:00:00+00:00",
+        "rows": 24,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2024-03-30T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": null, "details": {"window_end": "2024-04-03T00:00:00+00:00", "rows": 12, "coverage": 0.49778645833333335, "eligible": false}},
+    {"index": 1, "timestamp": "2024-04-03T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": null, "details": {"window_end": "2024-04-07T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": false}},
+    {"index": 2, "timestamp": "2024-04-07T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": null, "details": {"window_end": "2024-04-11T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": false}},
+    {"index": 3, "timestamp": "2024-04-11T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.1527777777777778, "details": {"window_end": "2024-04-15T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 4, "timestamp": "2024-04-15T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.20833333333333337, "details": {"window_end": "2024-04-19T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 5, "timestamp": "2024-04-19T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.04166666666666665, "details": {"window_end": "2024-04-23T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 6, "timestamp": "2024-04-23T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.06944444444444449, "details": {"window_end": "2024-04-27T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 7, "timestamp": "2024-04-27T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.0, "details": {"window_end": "2024-05-01T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 8, "timestamp": "2024-05-01T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.08333333333333329, "details": {"window_end": "2024-05-05T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 9, "timestamp": "2024-05-05T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.027777777777777735, "details": {"window_end": "2024-05-09T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 10, "timestamp": "2024-05-09T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.0, "details": {"window_end": "2024-05-13T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 11, "timestamp": "2024-05-13T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.04166666666666665, "details": {"window_end": "2024-05-17T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 12, "timestamp": "2024-05-17T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.05555555555555562, "details": {"window_end": "2024-05-21T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 13, "timestamp": "2024-05-21T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.0, "details": {"window_end": "2024-05-25T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 14, "timestamp": "2024-05-25T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.01388888888888886, "details": {"window_end": "2024-05-29T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 15, "timestamp": "2024-05-29T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.013888888888888978, "details": {"window_end": "2024-06-02T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 16, "timestamp": "2024-06-02T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.08333333333333329, "details": {"window_end": "2024-06-06T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 17, "timestamp": "2024-06-06T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.027777777777777735, "details": {"window_end": "2024-06-10T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 18, "timestamp": "2024-06-10T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.02777777777777779, "details": {"window_end": "2024-06-14T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 19, "timestamp": "2024-06-14T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.027777777777777728, "details": {"window_end": "2024-06-18T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 20, "timestamp": "2024-06-18T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.08333333333333329, "details": {"window_end": "2024-06-22T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 21, "timestamp": "2024-06-22T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.11111111111111108, "details": {"window_end": "2024-06-26T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 22, "timestamp": "2024-06-26T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.08333333333333334, "details": {"window_end": "2024-06-30T00:00:00+00:00", "rows": 24, "coverage": 1.0, "eligible": true}},
+    {"index": 23, "timestamp": "2024-06-30T00:00:00+00:00", "available_at": "2024-06-30T03:33:20+00:00", "score": 0.05555555555555551, "details": {"window_end": "2024-07-04T00:00:00+00:00", "rows": 1, "coverage": 0.037037037037037035, "eligible": false}}
+  ],
+  "metadata": {
+    "threshold": 0.1555555555555556,
+    "median_rows": 24.0,
+    "eligible_windows": 20,
+    "occupied_states": 2,
+    "distinct_feature_rows": 541,
+    "noise_rows": 51
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 77888.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 194720.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 389440.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -345600.0,
+            "distance_to_truth_interval_seconds": 345600.0,
+            "availability_minus_onset_seconds": 6233600.0
+          }
+        ],
+        "unmatched_truth": [
+          "d02",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 24,
+    "published_count": 24,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

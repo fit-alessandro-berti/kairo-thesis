@@ -1,0 +1,116 @@
+{
+  "id": "cdrift_bose",
+  "family": "cdrift",
+  "scenario": "bose",
+  "source": {
+    "repository": "https://github.com/cpitsch/cdrift-evaluation",
+    "revision": "1ca37fa79eaf50c2f25ef7857ccf27065d15d57e",
+    "event_log": "https://raw.githubusercontent.com/cpitsch/cdrift-evaluation/1ca37fa79eaf50c2f25ef7857ccf27065d15d57e/EvaluationLogs/Bose/bose_log.xes.gz",
+    "sha256": "3e7263885628d82188e9d178f6e22e1a799434c9b52827428b81b25663040680",
+    "ground_truth": "https://github.com/cpitsch/cdrift-evaluation/blob/1ca37fa79eaf50c2f25ef7857ccf27065d15d57e/testAll_reproducibility.py#L463-L482",
+    "archive_path": "EvaluationLogs/Bose/bose_log.xes.gz",
+    "truth_time_basis": "start of the first post-change trace in original XES trace order"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 4800,
+    "case_identity": "zero-based XES trace position",
+    "adjacent_source_order_start_inversions": 2970,
+    "adjacent_source_order_completion_inversions": 2937,
+    "case_start_coordinate": "first observed event completion"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "1974-01-01T00:41:00+00:00",
+      "end": "1974-01-01T00:41:00+00:00",
+      "native_last_pre_change_trace_index": 1199,
+      "native_first_post_change_trace_index": 1200,
+      "native_first_post_change_case_id": "1",
+      "native_last_pre_change_case_start": "1970-09-02T23:56:00+00:00",
+      "native_first_post_change_case_completion": "1974-01-07T01:23:00+00:00"
+    },
+    {
+      "id": "d02",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "1976-01-01T01:43:00+00:00",
+      "end": "1976-01-01T01:43:00+00:00",
+      "native_last_pre_change_trace_index": 2399,
+      "native_first_post_change_trace_index": 2400,
+      "native_first_post_change_case_id": "1",
+      "native_last_pre_change_case_start": "1974-05-27T04:57:00+00:00",
+      "native_first_post_change_case_completion": "1976-01-01T22:42:00+00:00"
+    },
+    {
+      "id": "d03",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "1978-01-01T00:21:00+00:00",
+      "end": "1978-01-01T00:21:00+00:00",
+      "native_last_pre_change_trace_index": 3599,
+      "native_first_post_change_trace_index": 3600,
+      "native_first_post_change_case_id": "1",
+      "native_last_pre_change_case_start": "1976-09-27T14:25:00+00:00",
+      "native_first_post_change_case_completion": "1978-01-01T23:15:00+00:00"
+    },
+    {
+      "id": "d04",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "1980-01-01T00:42:00+00:00",
+      "end": "1980-01-01T00:42:00+00:00",
+      "native_last_pre_change_trace_index": 4799,
+      "native_first_post_change_trace_index": 4800,
+      "native_first_post_change_case_id": "1",
+      "native_last_pre_change_case_start": "1978-08-05T20:11:00+00:00",
+      "native_first_post_change_case_completion": "1980-01-02T00:16:00+00:00"
+    }
+  ],
+  "events": 58838,
+  "cases": 6000,
+  "activities": 15,
+  "resources": 9,
+  "first_timestamp": "1970-01-01T00:06:00+00:00",
+  "last_timestamp": "1981-01-13T03:35:00+00:00",
+  "observation_span_seconds": 348204540.0,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "1974-01-01T00:41:00+00:00",
+      "end": "1974-01-01T00:41:00+00:00",
+      "annotations": [
+        "d01"
+      ]
+    },
+    {
+      "id": "d02",
+      "start": "1976-01-01T01:43:00+00:00",
+      "end": "1976-01-01T01:43:00+00:00",
+      "annotations": [
+        "d02"
+      ]
+    },
+    {
+      "id": "d03",
+      "start": "1978-01-01T00:21:00+00:00",
+      "end": "1978-01-01T00:21:00+00:00",
+      "annotations": [
+        "d03"
+      ]
+    },
+    {
+      "id": "d04",
+      "start": "1980-01-01T00:42:00+00:00",
+      "end": "1980-01-01T00:42:00+00:00",
+      "annotations": [
+        "d04"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_04",
+  "library": "kairo",
+  "method": "intra-som",
+  "profile": "recent",
+  "status": "ok",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "intra",
+    "features": {
+      "groups": [
+        "act_freqs",
+        "df_counts",
+        "act_set",
+        "case_progress",
+        "current_act",
+        "past_acts"
+      ],
+      "sliding_window_size": 3,
+      "omitted_feature_groups": []
+    },
+    "reduction": {
+      "scaling": "minmax",
+      "feature_columns": 54,
+      "feature_rows": 51059,
+      "pca_components": 5,
+      "pca_seed": 0,
+      "pca_retained_variance": 0.7566599130025159
+    },
+    "clustering": {
+      "method": "som",
+      "size": [
+        5,
+        5
+      ],
+      "learning_rate": 0.5,
+      "distance": "euclidean",
+      "random_seed": 0
+    },
+    "signal": {
+      "window": "6D",
+      "divergence": "tv",
+      "reference": "recent",
+      "lookback": 3,
+      "threshold_quantile": 0.95,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "changes": [
+    {
+      "index": 21,
+      "timestamp": "2012-02-02T00:00:00+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 0.40506968248439773,
+      "details": {
+        "window_end": "2012-02-08T00:00:00+00:00",
+        "rows": 968,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    },
+    {
+      "index": 26,
+      "timestamp": "2012-03-03T00:00:00+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 0.34473152918561756,
+      "details": {
+        "window_end": "2012-03-09T00:00:00+00:00",
+        "rows": 1459,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2011-09-29T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": null, "details": {"window_end": "2011-10-05T00:00:00+00:00", "rows": 563, "coverage": 0.5890706809413581, "eligible": false}},
+    {"index": 1, "timestamp": "2011-10-05T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": null, "details": {"window_end": "2011-10-11T00:00:00+00:00", "rows": 1098, "coverage": 1.0, "eligible": false}},
+    {"index": 2, "timestamp": "2011-10-11T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": null, "details": {"window_end": "2011-10-17T00:00:00+00:00", "rows": 1304, "coverage": 1.0, "eligible": false}},
+    {"index": 3, "timestamp": "2011-10-17T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.27530766902675374, "details": {"window_end": "2011-10-23T00:00:00+00:00", "rows": 2017, "coverage": 1.0, "eligible": true}},
+    {"index": 4, "timestamp": "2011-10-23T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.19085575364995605, "details": {"window_end": "2011-10-29T00:00:00+00:00", "rows": 2103, "coverage": 1.0, "eligible": true}},
+    {"index": 5, "timestamp": "2011-10-29T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.12808358011249946, "details": {"window_end": "2011-11-04T00:00:00+00:00", "rows": 2181, "coverage": 1.0, "eligible": true}},
+    {"index": 6, "timestamp": "2011-11-04T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.0840687083109108, "details": {"window_end": "2011-11-10T00:00:00+00:00", "rows": 2166, "coverage": 1.0, "eligible": true}},
+    {"index": 7, "timestamp": "2011-11-10T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.12846231576627712, "details": {"window_end": "2011-11-16T00:00:00+00:00", "rows": 2397, "coverage": 1.0, "eligible": true}},
+    {"index": 8, "timestamp": "2011-11-16T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.06792939045380804, "details": {"window_end": "2011-11-22T00:00:00+00:00", "rows": 2318, "coverage": 1.0, "eligible": true}},
+    {"index": 9, "timestamp": "2011-11-22T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.0977399529025531, "details": {"window_end": "2011-11-28T00:00:00+00:00", "rows": 2026, "coverage": 1.0, "eligible": true}},
+    {"index": 10, "timestamp": "2011-11-28T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.06684277299681726, "details": {"window_end": "2011-12-04T00:00:00+00:00", "rows": 2452, "coverage": 1.0, "eligible": true}},
+    {"index": 11, "timestamp": "2011-12-04T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.07903889730318919, "details": {"window_end": "2011-12-10T00:00:00+00:00", "rows": 2335, "coverage": 1.0, "eligible": true}},
+    {"index": 12, "timestamp": "2011-12-10T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.09346307717897462, "details": {"window_end": "2011-12-16T00:00:00+00:00", "rows": 1947, "coverage": 1.0, "eligible": true}},
+    {"index": 13, "timestamp": "2011-12-16T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.13730409460532944, "details": {"window_end": "2011-12-22T00:00:00+00:00", "rows": 2076, "coverage": 1.0, "eligible": true}},
+    {"index": 14, "timestamp": "2011-12-22T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.0856050615264481, "details": {"window_end": "2011-12-28T00:00:00+00:00", "rows": 1489, "coverage": 1.0, "eligible": true}},
+    {"index": 15, "timestamp": "2011-12-28T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.14415230965433826, "details": {"window_end": "2012-01-03T00:00:00+00:00", "rows": 1625, "coverage": 1.0, "eligible": true}},
+    {"index": 16, "timestamp": "2012-01-03T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.1740594871264012, "details": {"window_end": "2012-01-09T00:00:00+00:00", "rows": 1621, "coverage": 1.0, "eligible": true}},
+    {"index": 17, "timestamp": "2012-01-09T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.12125634252036531, "details": {"window_end": "2012-01-15T00:00:00+00:00", "rows": 1948, "coverage": 1.0, "eligible": true}},
+    {"index": 18, "timestamp": "2012-01-15T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.14274455907001793, "details": {"window_end": "2012-01-21T00:00:00+00:00", "rows": 1960, "coverage": 1.0, "eligible": true}},
+    {"index": 19, "timestamp": "2012-01-21T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.12252399360879496, "details": {"window_end": "2012-01-27T00:00:00+00:00", "rows": 1061, "coverage": 1.0, "eligible": true}},
+    {"index": 20, "timestamp": "2012-01-27T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.2932898593604194, "details": {"window_end": "2012-02-02T00:00:00+00:00", "rows": 750, "coverage": 1.0, "eligible": true}},
+    {"index": 21, "timestamp": "2012-02-02T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.40506968248439773, "details": {"window_end": "2012-02-08T00:00:00+00:00", "rows": 968, "coverage": 1.0, "eligible": true}},
+    {"index": 22, "timestamp": "2012-02-08T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.2127917738645601, "details": {"window_end": "2012-02-14T00:00:00+00:00", "rows": 1651, "coverage": 1.0, "eligible": true}},
+    {"index": 23, "timestamp": "2012-02-14T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.22799209887776678, "details": {"window_end": "2012-02-20T00:00:00+00:00", "rows": 2237, "coverage": 1.0, "eligible": true}},
+    {"index": 24, "timestamp": "2012-02-20T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.19738730394368356, "details": {"window_end": "2012-02-26T00:00:00+00:00", "rows": 3352, "coverage": 1.0, "eligible": true}},
+    {"index": 25, "timestamp": "2012-02-26T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.15448766642009829, "details": {"window_end": "2012-03-03T00:00:00+00:00", "rows": 2823, "coverage": 1.0, "eligible": true}},
+    {"index": 26, "timestamp": "2012-03-03T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.34473152918561756, "details": {"window_end": "2012-03-09T00:00:00+00:00", "rows": 1459, "coverage": 1.0, "eligible": true}},
+    {"index": 27, "timestamp": "2012-03-09T00:00:00+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.34210581354005776, "details": {"window_end": "2012-03-15T00:00:00+00:00", "rows": 1132, "coverage": 0.9510558530092592, "eligible": false}}
+  ],
+  "metadata": {
+    "threshold": 0.33701527871183773,
+    "median_rows": 1954.0,
+    "eligible_windows": 24,
+    "occupied_states": 23,
+    "distinct_feature_rows": 16337
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 142769.106542,
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 356922.766355,
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 713845.53271,
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 28,
+    "published_count": 28,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_08",
+  "library": "pm4py",
+  "method": "dfg-frequency",
+  "profile": "g-test-wide",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 360,
+      "timestamp": "2017-06-12T15:31:02+00:00",
+      "available_at": "2019-08-08T12:57:18+00:00",
+      "score": 0.10695894163275238,
+      "p_value": 0.00682756673176577,
+      "details": {
+        "changed_relations": {
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment REJECTED by PRE_APPROVER\"]": -0.015076851513681367,
+          "[\"Request For Payment REJECTED by PRE_APPROVER\", \"Request For Payment REJECTED by EMPLOYEE\"]": -0.015076851513681367,
+          "[\"Request For Payment REJECTED by MISSING\", \"Request For Payment SUBMITTED by EMPLOYEE\"]": 0.009085177170039992,
+          "[\"Request For Payment FINAL_APPROVED by SUPERVISOR\", \"Request For Payment REJECTED by MISSING\"]": 0.0055001662587422125,
+          "[\"Request For Payment FINAL_APPROVED by SUPERVISOR\", \"Request Payment\"]": -0.005463825550062029
+        }
+      }
+    },
+    {
+      "index": 1080,
+      "timestamp": "2018-01-02T08:02:32+00:00",
+      "available_at": "2019-08-08T12:57:18+00:00",
+      "score": 0.6468828107804396,
+      "p_value": 1.2997675028482597e-249,
+      "details": {
+        "changed_relations": {
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.20853462157809985,
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": -0.17278392362004402,
+          "[\"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": 0.14492753623188406,
+          "[\"Request For Payment APPROVED by PRE_APPROVER\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": -0.09926249892805077,
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by PRE_APPROVER\"]": -0.09863838626380432
+        }
+      }
+    },
+    {
+      "index": 2520,
+      "timestamp": "2018-04-09T15:30:59+00:00",
+      "available_at": "2019-08-08T12:57:18+00:00",
+      "score": 0.11002176897059782,
+      "p_value": 0.0005643162815916152,
+      "details": {
+        "changed_relations": {
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.020949408802460708,
+          "[\"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment REJECTED by EMPLOYEE\"]": 0.02021787990706934,
+          "[\"Request For Payment FINAL_APPROVED by SUPERVISOR\", \"Request Payment\"]": -0.016734872409573998,
+          "[\"Request Payment\", \"Payment Handled\"]": -0.01454028572339991,
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by ADMINISTRATION\"]": -0.011697433593342382
+        }
+      }
+    },
+    {
+      "index": 3060,
+      "timestamp": "2018-05-17T15:31:35+00:00",
+      "available_at": "2019-08-08T12:57:18+00:00",
+      "score": 0.5201411850744962,
+      "p_value": 3.051023817106173e-206,
+      "details": {
+        "changed_relations": {
+          "[\"Request For Payment FINAL_APPROVED by DIRECTOR\", \"Request Payment\"]": 0.1722889082642429,
+          "[\"Request For Payment FINAL_APPROVED by SUPERVISOR\", \"Request Payment\"]": -0.16615043852222378,
+          "[\"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment FINAL_APPROVED by DIRECTOR\"]": 0.11930391761945379,
+          "[\"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": -0.10024694811880855,
+          "[\"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment FINAL_APPROVED by SUPERVISOR\"]": -0.06590349040341521
+        }
+      }
+    },
+    {
+      "index": 3840,
+      "timestamp": "2018-07-09T15:31:27+00:00",
+      "available_at": "2019-08-08T12:57:18+00:00",
+      "score": 0.1448708059121168,
+      "p_value": 2.3091607284302627e-09,
+      "details": {
+        "changed_relations": {
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment REJECTED by ADMINISTRATION\"]": -0.035356779768350166,
+          "[\"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment REJECTED by EMPLOYEE\"]": -0.035356779768350166,
+          "[\"Request For Payment FINAL_APPROVED by DIRECTOR\", \"Request Payment\"]": 0.0215629917082093,
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.018101137710817672,
+          "[\"Request Payment\", \"Payment Handled\"]": 0.016897361848178194
+        }
+      }
+    },
+    {
+      "index": 4560,
+      "timestamp": "2018-09-03T15:31:14+00:00",
+      "available_at": "2019-08-08T12:57:18+00:00",
+      "score": 0.12140634187347159,
+      "p_value": 1.3319220441089454e-05,
+      "details": {
+        "changed_relations": {
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment REJECTED by ADMINISTRATION\"]": 0.02704790209173708,
+          "[\"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment REJECTED by EMPLOYEE\"]": 0.025008473131845853,
+          "[\"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment SUBMITTED by EMPLOYEE\"]": 0.02173137919077183,
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by ADMINISTRATION\"]": -0.016791494347000696,
+          "[\"Request Payment\", \"Payment Handled\"]": -0.016344328487159027
+        }
+      }
+    },
+    {
+      "index": 4920,
+      "timestamp": "2018-09-27T15:31:25+00:00",
+      "available_at": "2019-08-08T12:57:18+00:00",
+      "score": 0.13687472781502788,
+      "p_value": 7.349257184373471e-08,
+      "details": {
+        "changed_relations": {
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment REJECTED by ADMINISTRATION\"]": -0.030695000670274426,
+          "[\"Request For Payment REJECTED by ADMINISTRATION\", \"Request For Payment REJECTED by EMPLOYEE\"]": -0.030198029138332916,
+          "[\"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment SUBMITTED by EMPLOYEE\"]": -0.028582744230925085,
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by ADMINISTRATION\"]": 0.02294275448637864,
+          "[\"Request Payment\", \"Payment Handled\"]": 0.02225871777267044
+        }
+      }
+    },
+    {
+      "index": 6060,
+      "timestamp": "2018-11-29T16:31:20+00:00",
+      "available_at": "2019-08-08T12:57:18+00:00",
+      "score": 0.11018849832176011,
+      "p_value": 0.001473017211697555,
+      "details": {
+        "changed_relations": {
+          "[\"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment FINAL_APPROVED by DIRECTOR\"]": 0.029159184049362255,
+          "[\"Request For Payment FINAL_APPROVED by DIRECTOR\", \"Request Payment\"]": 0.01759220886862825,
+          "[\"Request Payment\", \"Payment Handled\"]": 0.016861214716581474,
+          "[\"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment SUBMITTED by EMPLOYEE\"]": -0.01534857484919648,
+          "[\"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment APPROVED by BUDGET OWNER\"]": -0.013085370907583924
+        }
+      }
+    },
+    {
+      "index": 6480,
+      "timestamp": "2018-12-20T16:31:30+00:00",
+      "available_at": "2019-08-08T12:57:18+00:00",
+      "score": 0.1107915260779589,
+      "p_value": 0.00023881666022024928,
+      "details": {
+        "changed_relations": {
+          "[\"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment FINAL_APPROVED by DIRECTOR\"]": -0.03981327215530135,
+          "[\"Request For Payment APPROVED by BUDGET OWNER\", \"Request For Payment FINAL_APPROVED by DIRECTOR\"]": 0.02892737947590583,
+          "[\"Request For Payment APPROVED by ADMINISTRATION\", \"Request For Payment APPROVED by BUDGET OWNER\"]": 0.02855051712115486,
+          "[\"Request For Payment REJECTED by EMPLOYEE\", \"Request For Payment SUBMITTED by EMPLOYEE\"]": 0.014035993548627486,
+          "[\"Request For Payment SUBMITTED by EMPLOYEE\", \"Request For Payment APPROVED by ADMINISTRATION\"]": -0.011922264154960699
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 300, "timestamp": "2017-05-15T15:30:52+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09892054477573724, "p_value": 0.020825956280238353},
+    {"index": 360, "timestamp": "2017-06-12T15:31:02+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.10695894163275238, "p_value": 0.00682756673176577},
+    {"index": 420, "timestamp": "2017-06-29T15:30:43+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.10177292235036678, "p_value": 0.01700472906720268},
+    {"index": 480, "timestamp": "2017-07-20T15:31:01+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07756731428769795, "p_value": 0.34891197592521533},
+    {"index": 540, "timestamp": "2017-08-21T15:31:15+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07600884153233058, "p_value": 0.3875860971313724},
+    {"index": 600, "timestamp": "2017-09-11T15:31:09+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.11924899178988116, "p_value": 0.0004420950524088873},
+    {"index": 660, "timestamp": "2017-09-25T15:31:00+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.15188174980514146, "p_value": 3.310340820973496e-08},
+    {"index": 720, "timestamp": "2017-10-05T15:31:29+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.12185166298650899, "p_value": 0.0005047809319058045},
+    {"index": 780, "timestamp": "2017-10-16T15:31:25+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.11087623051487364, "p_value": 0.004916571262196571},
+    {"index": 840, "timestamp": "2017-11-06T16:30:56+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.22368599040680506, "p_value": 1.3183303824760683e-18},
+    {"index": 900, "timestamp": "2017-11-23T16:30:59+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.33082495593314093, "p_value": 9.953655435158626e-53},
+    {"index": 960, "timestamp": "2017-12-04T16:31:18+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.4356047924550902, "p_value": 2.576617733479467e-101},
+    {"index": 1020, "timestamp": "2017-12-14T16:31:10+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.5274849721636877, "p_value": 4.283111020441971e-156},
+    {"index": 1080, "timestamp": "2018-01-02T08:02:32+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.6468828107804396, "p_value": 1.2997675028482597e-249},
+    {"index": 1140, "timestamp": "2018-01-15T16:31:33+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.5919541754823477, "p_value": 6.001880302377448e-219},
+    {"index": 1200, "timestamp": "2018-01-18T16:31:10+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.4795400504037477, "p_value": 6.79390019413396e-142},
+    {"index": 1260, "timestamp": "2018-01-22T16:31:18+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.38241143102369307, "p_value": 4.967771002452941e-87},
+    {"index": 1320, "timestamp": "2018-01-25T16:31:09+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.28201345369389236, "p_value": 2.7514442884305645e-43},
+    {"index": 1380, "timestamp": "2018-01-30T14:16:59+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.1463206618850964, "p_value": 3.1753494702412176e-07},
+    {"index": 1440, "timestamp": "2018-02-01T16:31:18+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.05786218596963439, "p_value": 0.836714303319613},
+    {"index": 1500, "timestamp": "2018-02-05T16:31:03+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.05931356097779752, "p_value": 0.8355422018581387},
+    {"index": 1560, "timestamp": "2018-02-08T16:31:11+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09505939612349296, "p_value": 0.013243324235925022},
+    {"index": 1620, "timestamp": "2018-02-12T16:31:22+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.11048001107067026, "p_value": 0.00021672505078810207},
+    {"index": 1680, "timestamp": "2018-02-15T16:31:19+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07526861423009294, "p_value": 0.22560185666895277},
+    {"index": 1740, "timestamp": "2018-02-22T16:30:41+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.04839105366510792, "p_value": 0.9525291893172401},
+    {"index": 1800, "timestamp": "2018-02-26T16:31:27+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.03598232112174381, "p_value": 0.9981938199108203},
+    {"index": 1860, "timestamp": "2018-03-01T16:31:26+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.06169594266060705, "p_value": 0.7045211689158346},
+    {"index": 1920, "timestamp": "2018-03-05T16:30:58+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09818696907674507, "p_value": 0.007055274328545294},
+    {"index": 1980, "timestamp": "2018-03-08T16:31:00+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.0673544005572361, "p_value": 0.5256814712500455},
+    {"index": 2040, "timestamp": "2018-03-12T15:31:41+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.08603985601355806, "p_value": 0.07030857979919261},
+    {"index": 2100, "timestamp": "2018-03-15T16:31:16+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07385653551288965, "p_value": 0.26084327353705683},
+    {"index": 2160, "timestamp": "2018-03-15T16:31:16+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.04972075576254645, "p_value": 0.9351298960058774},
+    {"index": 2220, "timestamp": "2018-03-22T16:31:12+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.04893723603343716, "p_value": 0.9399189923831502},
+    {"index": 2280, "timestamp": "2018-03-26T15:31:14+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.04839235458547168, "p_value": 0.8453969404744959},
+    {"index": 2340, "timestamp": "2018-03-29T15:31:11+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.055532073141518076, "p_value": 0.8656249845784982},
+    {"index": 2400, "timestamp": "2018-04-05T15:30:53+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.06985939726587624, "p_value": 0.4431379082471743},
+    {"index": 2460, "timestamp": "2018-04-05T15:30:53+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.10395793578826759, "p_value": 0.00198363008474545},
+    {"index": 2520, "timestamp": "2018-04-09T15:30:59+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.11002176897059782, "p_value": 0.0005643162815916152},
+    {"index": 2580, "timestamp": "2018-04-12T15:31:12+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.10359483003303785, "p_value": 0.006320363339543847},
+    {"index": 2640, "timestamp": "2018-04-17T08:15:38+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.06741393702911305, "p_value": 0.6891702093787354},
+    {"index": 2700, "timestamp": "2018-04-19T15:31:32+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07547699894377007, "p_value": 0.4130084111489887},
+    {"index": 2760, "timestamp": "2018-04-23T15:31:12+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09718765243127786, "p_value": 0.037163971831108866},
+    {"index": 2820, "timestamp": "2018-04-26T15:30:55+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.16041869348772286, "p_value": 2.8626151658670975e-11},
+    {"index": 2880, "timestamp": "2018-05-03T15:31:17+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.2663065772243245, "p_value": 8.922472300548801e-45},
+    {"index": 2940, "timestamp": "2018-05-07T15:31:15+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.34042786768140465, "p_value": 1.0747846537623408e-80},
+    {"index": 3000, "timestamp": "2018-05-14T15:31:23+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.434957906756995, "p_value": 2.5331264855942304e-140},
+    {"index": 3060, "timestamp": "2018-05-17T15:31:35+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.5201411850744962, "p_value": 3.051023817106173e-206},
+    {"index": 3120, "timestamp": "2018-05-24T15:31:08+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.49417140210926885, "p_value": 1.046336179892508e-182},
+    {"index": 3180, "timestamp": "2018-05-25T13:56:29+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.40320790354195996, "p_value": 7.643022691705974e-116},
+    {"index": 3240, "timestamp": "2018-05-31T15:31:14+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.3333691816136323, "p_value": 1.7526530305897955e-75},
+    {"index": 3300, "timestamp": "2018-06-04T15:31:15+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.23217113722032734, "p_value": 3.802497354644285e-31},
+    {"index": 3360, "timestamp": "2018-06-07T15:31:38+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.10715404543557348, "p_value": 0.0029318901463216123},
+    {"index": 3420, "timestamp": "2018-06-11T15:31:19+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07562484803443956, "p_value": 0.40995067767895305},
+    {"index": 3480, "timestamp": "2018-06-14T15:31:33+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07398734896821797, "p_value": 0.4872608137787202},
+    {"index": 3540, "timestamp": "2018-06-19T14:59:17+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07394822344712756, "p_value": 0.4070985914767291},
+    {"index": 3600, "timestamp": "2018-06-21T15:31:09+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.08173815506474384, "p_value": 0.19898964430837013},
+    {"index": 3660, "timestamp": "2018-06-28T15:31:36+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.08779585062258022, "p_value": 0.06427036828129051},
+    {"index": 3720, "timestamp": "2018-07-02T15:31:20+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07763703260268194, "p_value": 0.23174206766150035},
+    {"index": 3780, "timestamp": "2018-07-05T15:31:35+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.11639586475210444, "p_value": 7.3312880490592e-05},
+    {"index": 3840, "timestamp": "2018-07-09T15:31:27+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.1448708059121168, "p_value": 2.3091607284302627e-09},
+    {"index": 3900, "timestamp": "2018-07-12T08:09:45+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.10888687521707098, "p_value": 0.0016476107603204905},
+    {"index": 3960, "timestamp": "2018-07-12T15:31:21+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.05865674174869906, "p_value": 0.8038215270437076},
+    {"index": 4020, "timestamp": "2018-07-16T15:31:26+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07199406323462101, "p_value": 0.4886262802345944},
+    {"index": 4080, "timestamp": "2018-07-23T15:31:11+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.06341590903118968, "p_value": 0.7565855619698505},
+    {"index": 4140, "timestamp": "2018-07-26T15:31:04+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07887121666738955, "p_value": 0.2501612986614699},
+    {"index": 4200, "timestamp": "2018-08-02T15:31:28+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.06749377915924228, "p_value": 0.619738512520162},
+    {"index": 4260, "timestamp": "2018-08-09T15:31:40+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.06491249683080057, "p_value": 0.7099468424725396},
+    {"index": 4320, "timestamp": "2018-08-16T15:31:24+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.0698895342218705, "p_value": 0.5497734778532777},
+    {"index": 4380, "timestamp": "2018-08-23T15:31:15+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.05758056552871262, "p_value": 0.8906529675650198},
+    {"index": 4440, "timestamp": "2018-08-27T15:31:18+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07141460603103669, "p_value": 0.4837619329351329},
+    {"index": 4500, "timestamp": "2018-09-03T15:31:14+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.11404012717067077, "p_value": 0.00018896109712624},
+    {"index": 4560, "timestamp": "2018-09-03T15:31:14+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.12140634187347159, "p_value": 1.3319220441089454e-05},
+    {"index": 4620, "timestamp": "2018-09-10T15:31:25+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.11749492356782246, "p_value": 2.0933677284340568e-05},
+    {"index": 4680, "timestamp": "2018-09-13T15:31:15+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.10131916524353192, "p_value": 0.0021041812854041765},
+    {"index": 4740, "timestamp": "2018-09-17T15:31:15+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09072265321930222, "p_value": 0.022526731363004673},
+    {"index": 4800, "timestamp": "2018-09-20T15:31:17+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09993176074947685, "p_value": 0.003312483640846238},
+    {"index": 4860, "timestamp": "2018-09-24T15:31:08+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.11699935764614797, "p_value": 2.826419794675745e-05},
+    {"index": 4920, "timestamp": "2018-09-27T15:31:25+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.13687472781502788, "p_value": 7.349257184373471e-08},
+    {"index": 4980, "timestamp": "2018-10-01T15:31:15+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.12512202110127535, "p_value": 5.085166280470606e-06},
+    {"index": 5040, "timestamp": "2018-10-04T15:31:17+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.11172247504365408, "p_value": 0.0015746992930025711},
+    {"index": 5100, "timestamp": "2018-10-08T15:31:17+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.06917813193162267, "p_value": 0.7183403832905104},
+    {"index": 5160, "timestamp": "2018-10-11T15:31:08+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07940293998403943, "p_value": 0.429377489802993},
+    {"index": 5220, "timestamp": "2018-10-15T15:31:13+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.08006401892416833, "p_value": 0.40703631190378997},
+    {"index": 5280, "timestamp": "2018-10-18T15:31:18+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09499885923645575, "p_value": 0.052666973242289604},
+    {"index": 5340, "timestamp": "2018-10-22T15:31:25+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09362781928864479, "p_value": 0.06881459976321735},
+    {"index": 5400, "timestamp": "2018-10-25T15:31:43+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09420995372185037, "p_value": 0.06271141718784988},
+    {"index": 5460, "timestamp": "2018-10-29T16:31:16+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.1001566472924727, "p_value": 0.03297478450791291},
+    {"index": 5520, "timestamp": "2018-11-01T16:31:17+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09846253864854303, "p_value": 0.03994202917183093},
+    {"index": 5580, "timestamp": "2018-11-05T16:31:19+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.08107686118372978, "p_value": 0.3877732524470408},
+    {"index": 5640, "timestamp": "2018-11-05T16:31:19+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.0860334393359638, "p_value": 0.12503016820881044},
+    {"index": 5700, "timestamp": "2018-11-12T16:30:47+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07923577932513662, "p_value": 0.27658643288604107},
+    {"index": 5760, "timestamp": "2018-11-15T16:31:20+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.0985521755607179, "p_value": 0.016510636711289727},
+    {"index": 5820, "timestamp": "2018-11-15T16:31:20+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09426347312424777, "p_value": 0.035020702338758},
+    {"index": 5880, "timestamp": "2018-11-19T16:31:20+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.06329129778532716, "p_value": 0.8362743289896282},
+    {"index": 5940, "timestamp": "2018-11-22T16:31:34+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09080850047276977, "p_value": 0.09012341936307283},
+    {"index": 6000, "timestamp": "2018-11-26T16:31:23+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07655973751487972, "p_value": 0.4417798164053035},
+    {"index": 6060, "timestamp": "2018-11-29T16:31:20+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.11018849832176011, "p_value": 0.001473017211697555},
+    {"index": 6120, "timestamp": "2018-12-03T16:31:24+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.10511766436490359, "p_value": 0.005245712349276562},
+    {"index": 6180, "timestamp": "2018-12-06T16:31:34+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.08552246894853392, "p_value": 0.23759076211955765},
+    {"index": 6240, "timestamp": "2018-12-10T16:31:28+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.07699531353829689, "p_value": 0.36882104341396993},
+    {"index": 6300, "timestamp": "2018-12-13T16:31:08+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.08567984274455472, "p_value": 0.156619681663346},
+    {"index": 6360, "timestamp": "2018-12-13T16:31:08+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.10752087855178152, "p_value": 0.001769641287218576},
+    {"index": 6420, "timestamp": "2018-12-17T16:31:09+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.10745641054020098, "p_value": 0.0014554043160332206},
+    {"index": 6480, "timestamp": "2018-12-20T16:31:30+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.1107915260779589, "p_value": 0.00023881666022024928},
+    {"index": 6540, "timestamp": "2018-12-20T16:31:30+00:00", "available_at": "2019-08-08T12:57:18+00:00", "score": 0.09711936592026173, "p_value": 0.0065573060652273805}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "representation": "directly_follows_frequency",
+    "method": "dfg_frequency",
+    "test": "g_test",
+    "retrospective": true,
+    "window_size": 300,
+    "step": 60,
+    "alpha": 0.03,
+    "min_effect": 0.1,
+    "persistence": 2,
+    "min_separation": 300,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 300,
+    "step": 60,
+    "min_separation": 300,
+    "permutations": 99,
+    "random_state": 73,
+    "alpha": 0.03,
+    "persistence": 2,
+    "test": "g_test",
+    "min_effect": 0.1
+  },
+  "runtime_seconds": 2.491431,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 813192.0,
+        "tp": 1,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 797926.0,
+            "distance_to_truth_interval_seconds": 797926.0,
+            "availability_minus_onset_seconds": 39495869.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 2032980.0,
+        "tp": 1,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 797926.0,
+            "distance_to_truth_interval_seconds": 797926.0,
+            "availability_minus_onset_seconds": 39495869.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 4065960.0,
+        "tp": 1,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 797926.0,
+            "distance_to_truth_interval_seconds": 797926.0,
+            "availability_minus_onset_seconds": 39495869.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 105,
+    "published_count": 105,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

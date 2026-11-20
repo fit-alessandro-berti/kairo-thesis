@@ -1,0 +1,90 @@
+{
+  "id": "rheon_multi_07",
+  "family": "rheon",
+  "scenario": "multi",
+  "source": {
+    "thesis_files": "https://drive.google.com/drive/folders/1sie4iFTUNmHuyvMVoW8tktyvtoUzbmEp",
+    "event_log": "https://drive.google.com/file/d/1nBwodkc5nzDX6M4qdh2nLTyKxoJ8l7rO/view",
+    "sha256": "f204a0c0169dfb8143b398392aa3aa0336779a7b4a75c99fe952d5ebe0a54eb1",
+    "ground_truth": "https://drive.google.com/file/d/1iz22QHflLChXNpQfIe7iw9BkOWaT8JcD/view",
+    "ground_truth_sha256": "050367455a0ea3883046bd5481b5270235b353be964dd4287affbed948316525",
+    "generator_scenario": "multi_resource_3",
+    "truth_time_basis": "generator metadata expressed in UTC"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 1103,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "workload",
+      "perspective": "resource",
+      "mode": "sudden",
+      "start": "2025-01-19T18:00:00+00:00",
+      "end": "2025-01-19T18:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.25
+      ]
+    },
+    {
+      "id": "d02",
+      "kind": "pool_size",
+      "perspective": "resource",
+      "mode": "sudden",
+      "start": "2025-02-02T12:00:00+00:00",
+      "end": "2025-02-02T12:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.5
+      ]
+    },
+    {
+      "id": "d03",
+      "kind": "reassignment",
+      "perspective": "resource",
+      "mode": "gradual",
+      "start": "2025-02-13T12:00:00+00:00",
+      "end": "2025-02-21T18:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.7,
+        0.85
+      ]
+    }
+  ],
+  "events": 15660,
+  "cases": 3132,
+  "activities": 5,
+  "resources": 7,
+  "first_timestamp": "2025-01-06T00:00:00+00:00",
+  "last_timestamp": "2025-03-02T03:38:27+00:00",
+  "observation_span_seconds": 4765107.0,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2025-01-19T18:00:00+00:00",
+      "end": "2025-01-19T18:00:00+00:00",
+      "annotations": [
+        "d01"
+      ]
+    },
+    {
+      "id": "d02",
+      "start": "2025-02-02T12:00:00+00:00",
+      "end": "2025-02-02T12:00:00+00:00",
+      "annotations": [
+        "d02"
+      ]
+    },
+    {
+      "id": "d03",
+      "start": "2025-02-13T12:00:00+00:00",
+      "end": "2025-02-21T18:00:00+00:00",
+      "annotations": [
+        "d03"
+      ]
+    }
+  ]
+}

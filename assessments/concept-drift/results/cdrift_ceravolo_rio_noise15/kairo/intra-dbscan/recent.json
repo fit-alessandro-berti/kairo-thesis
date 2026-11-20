@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ceravolo_rio_noise15",
+  "library": "kairo",
+  "method": "intra-dbscan",
+  "profile": "recent",
+  "status": "ok",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "intra",
+    "features": {
+      "groups": [
+        "act_freqs",
+        "df_counts",
+        "act_set",
+        "case_progress",
+        "current_act",
+        "past_acts"
+      ],
+      "sliding_window_size": 3,
+      "omitted_feature_groups": []
+    },
+    "reduction": {
+      "scaling": "minmax",
+      "feature_columns": 109,
+      "feature_rows": 10554,
+      "pca_components": 5,
+      "pca_seed": 0,
+      "pca_retained_variance": 0.6245219475405162
+    },
+    "clustering": {
+      "method": "dbscan",
+      "eps": 0.02845224886254073,
+      "min_samples": 5,
+      "distance": "euclidean",
+      "eps_k_distance_quantile": 0.8,
+      "eps_k_distance_sample_rows": 743
+    },
+    "signal": {
+      "window": "16h",
+      "divergence": "tv",
+      "reference": "recent",
+      "lookback": 3,
+      "threshold_quantile": 0.95,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "changes": [
+    {
+      "index": 11,
+      "timestamp": "2019-01-17T08:00:00+00:00",
+      "available_at": "2019-01-24T20:53:44.218000+00:00",
+      "score": 0.30931016843163844,
+      "details": {
+        "window_end": "2019-01-18T00:00:00+00:00",
+        "rows": 253,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2019-01-10T00:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": null, "details": {"window_end": "2019-01-10T16:00:00+00:00", "rows": 147, "coverage": 0.5, "eligible": false}},
+    {"index": 1, "timestamp": "2019-01-10T16:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": null, "details": {"window_end": "2019-01-11T08:00:00+00:00", "rows": 537, "coverage": 1.0, "eligible": false}},
+    {"index": 2, "timestamp": "2019-01-11T08:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": null, "details": {"window_end": "2019-01-12T00:00:00+00:00", "rows": 479, "coverage": 1.0, "eligible": false}},
+    {"index": 3, "timestamp": "2019-01-12T00:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.18400663862467156, "details": {"window_end": "2019-01-12T16:00:00+00:00", "rows": 486, "coverage": 1.0, "eligible": true}},
+    {"index": 4, "timestamp": "2019-01-12T16:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.17676621871530354, "details": {"window_end": "2019-01-13T08:00:00+00:00", "rows": 520, "coverage": 1.0, "eligible": true}},
+    {"index": 5, "timestamp": "2019-01-13T08:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.20817760580908015, "details": {"window_end": "2019-01-14T00:00:00+00:00", "rows": 490, "coverage": 1.0, "eligible": true}},
+    {"index": 6, "timestamp": "2019-01-14T00:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.20074089148163218, "details": {"window_end": "2019-01-14T16:00:00+00:00", "rows": 504, "coverage": 1.0, "eligible": true}},
+    {"index": 7, "timestamp": "2019-01-14T16:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.30193102882178496, "details": {"window_end": "2019-01-15T08:00:00+00:00", "rows": 442, "coverage": 1.0, "eligible": true}},
+    {"index": 8, "timestamp": "2019-01-15T08:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.16986906335645827, "details": {"window_end": "2019-01-16T00:00:00+00:00", "rows": 481, "coverage": 1.0, "eligible": true}},
+    {"index": 9, "timestamp": "2019-01-16T00:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.17582709726433188, "details": {"window_end": "2019-01-16T16:00:00+00:00", "rows": 485, "coverage": 1.0, "eligible": true}},
+    {"index": 10, "timestamp": "2019-01-16T16:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.16581574610683164, "details": {"window_end": "2019-01-17T08:00:00+00:00", "rows": 518, "coverage": 1.0, "eligible": true}},
+    {"index": 11, "timestamp": "2019-01-17T08:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.30931016843163844, "details": {"window_end": "2019-01-18T00:00:00+00:00", "rows": 253, "coverage": 1.0, "eligible": true}},
+    {"index": 12, "timestamp": "2019-01-18T00:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.19584921819606457, "details": {"window_end": "2019-01-18T16:00:00+00:00", "rows": 559, "coverage": 1.0, "eligible": true}},
+    {"index": 13, "timestamp": "2019-01-18T16:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.20845260381745884, "details": {"window_end": "2019-01-19T08:00:00+00:00", "rows": 505, "coverage": 1.0, "eligible": true}},
+    {"index": 14, "timestamp": "2019-01-19T08:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.2182949694207191, "details": {"window_end": "2019-01-20T00:00:00+00:00", "rows": 506, "coverage": 1.0, "eligible": true}},
+    {"index": 15, "timestamp": "2019-01-20T00:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.20653110799949378, "details": {"window_end": "2019-01-20T16:00:00+00:00", "rows": 508, "coverage": 1.0, "eligible": true}},
+    {"index": 16, "timestamp": "2019-01-20T16:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.19238636935365208, "details": {"window_end": "2019-01-21T08:00:00+00:00", "rows": 544, "coverage": 1.0, "eligible": true}},
+    {"index": 17, "timestamp": "2019-01-21T08:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.23630249481027807, "details": {"window_end": "2019-01-22T00:00:00+00:00", "rows": 556, "coverage": 1.0, "eligible": true}},
+    {"index": 18, "timestamp": "2019-01-22T00:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.16705442856501768, "details": {"window_end": "2019-01-22T16:00:00+00:00", "rows": 539, "coverage": 1.0, "eligible": true}},
+    {"index": 19, "timestamp": "2019-01-22T16:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.22180022809104516, "details": {"window_end": "2019-01-23T08:00:00+00:00", "rows": 492, "coverage": 1.0, "eligible": true}},
+    {"index": 20, "timestamp": "2019-01-23T08:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.21333921695516533, "details": {"window_end": "2019-01-24T00:00:00+00:00", "rows": 487, "coverage": 1.0, "eligible": true}},
+    {"index": 21, "timestamp": "2019-01-24T00:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.24310660532195535, "details": {"window_end": "2019-01-24T16:00:00+00:00", "rows": 484, "coverage": 1.0, "eligible": true}},
+    {"index": 22, "timestamp": "2019-01-24T16:00:00+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.9220171846448387, "details": {"window_end": "2019-01-25T08:00:00+00:00", "rows": 32, "coverage": 0.30597600694444443, "eligible": false}}
+  ],
+  "metadata": {
+    "threshold": 0.3026689427827703,
+    "median_rows": 492.0,
+    "eligible_windows": 19,
+    "occupied_states": 174,
+    "distinct_feature_rows": 743,
+    "noise_rows": 240
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 12560.24218,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 31400.60545,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -21600.0,
+            "distance_to_truth_interval_seconds": 21600.0,
+            "availability_minus_onset_seconds": 629624.218
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 62801.2109,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -21600.0,
+            "distance_to_truth_interval_seconds": 21600.0,
+            "availability_minus_onset_seconds": 629624.218
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 23,
+    "published_count": 23,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

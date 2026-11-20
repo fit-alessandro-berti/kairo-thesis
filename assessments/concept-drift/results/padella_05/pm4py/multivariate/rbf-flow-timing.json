@@ -1,0 +1,798 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_05",
+  "library": "pm4py",
+  "method": "multivariate",
+  "profile": "rbf-flow-timing",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 291,
+      "timestamp": "2017-03-09T16:31:16+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.061222486747691374,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": -0.15532213278658819,
+          "[\"duration\"]": -0.06414127336170777,
+          "[\"activity\", \"Declaration APPROVED by PRE_APPROVER\"]": 0.05069865319865309,
+          "[\"activity\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.023269600769600995,
+          "[\"activity\", \"Declaration SUBMITTED by EMPLOYEE\"]": -0.01651515151515176
+        },
+        "bandwidth": 0.7022158925325029
+      }
+    },
+    {
+      "index": 526,
+      "timestamp": "2017-04-20T15:31:19+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.05831481786482229,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"duration\"]": 0.18175839078829326,
+          "[\"mean_gap\"]": 0.09001802403975456,
+          "[\"activity\", \"Declaration APPROVED by PRE_APPROVER\"]": 0.019013468013467948,
+          "[\"activity\", \"Request Payment\"]": -0.011510748510748597,
+          "[\"activity\", \"Payment Handled\"]": -0.011510748510748597
+        },
+        "bandwidth": 0.6968615846495682
+      }
+    },
+    {
+      "index": 855,
+      "timestamp": "2017-06-12T15:31:00+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.05125051678099135,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"duration\"]": 0.12854209730967386,
+          "[\"mean_gap\"]": 0.04582951635145121,
+          "[\"activity\", \"Declaration APPROVED by PRE_APPROVER\"]": 0.023822751322751252,
+          "[\"activity\", \"Request Payment\"]": -0.01001322751322764,
+          "[\"activity\", \"Payment Handled\"]": -0.01001322751322764
+        },
+        "bandwidth": 0.7937718559724734
+      }
+    },
+    {
+      "index": 1278,
+      "timestamp": "2017-09-07T15:31:07+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.08586331676575343,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": -0.26721603561794394,
+          "[\"duration\"]": -0.17584103012470106,
+          "[\"activity\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.015831908831908846,
+          "[\"activity\", \"Request Payment\"]": 0.012089540089540163,
+          "[\"activity\", \"Payment Handled\"]": 0.012089540089540163
+        },
+        "bandwidth": 0.5566601437382217
+      }
+    },
+    {
+      "index": 2218,
+      "timestamp": "2018-01-08T16:31:05+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.22082115749556364,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": -0.5001515353214698,
+          "[\"duration\"]": -0.3460131861145438,
+          "[\"activity\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.16545933695933676,
+          "[\"activity\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.05346296296296299,
+          "[\"activity\", \"Declaration SUBMITTED by EMPLOYEE\"]": -0.0426221926221928
+        },
+        "bandwidth": 0.47720968452061097
+      }
+    },
+    {
+      "index": 2594,
+      "timestamp": "2018-02-01T16:31:17+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.044111033324420346,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": 0.3109407727629949,
+          "[\"duration\"]": 0.20408183472903985,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.03760269360269351,
+          "[\"activity\", \"Declaration SAVED by EMPLOYEE\"]": 0.02,
+          "[\"activity\", \"Declaration REJECTED by EMPLOYEE\"]": 0.01493097643097643
+        },
+        "bandwidth": 0.8114883990288188
+      }
+    },
+    {
+      "index": 2782,
+      "timestamp": "2018-02-08T16:31:10+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.071522575881668,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": -0.1361138970433285,
+          "[\"duration\"]": -0.07556106540380358,
+          "[\"activity\", \"Declaration SAVED by EMPLOYEE\"]": -0.02,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.00987878787878791,
+          "[\"activity\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.008679653679653482
+        },
+        "bandwidth": 0.617520253242096
+      }
+    },
+    {
+      "index": 3017,
+      "timestamp": "2018-02-19T16:31:31+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.08862635527295626,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": 0.31408695496878936,
+          "[\"duration\"]": 0.261233182424393,
+          "[\"activity\", \"Declaration SAVED by EMPLOYEE\"]": 0.02,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.013259259259259241,
+          "[\"activity\", \"Declaration SUBMITTED by EMPLOYEE\"]": -0.008925925925925948
+        },
+        "bandwidth": 1.0104865367609581
+      }
+    },
+    {
+      "index": 3440,
+      "timestamp": "2018-03-12T16:31:14+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.06087529069093023,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"duration\"]": 0.22671987840443328,
+          "[\"mean_gap\"]": 0.17000112228072306,
+          "[\"activity\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.009301994301994302,
+          "[\"activity\", \"Declaration REJECTED by EMPLOYEE\"]": 0.0070201106083458975,
+          "[\"activity\", \"Declaration SAVED by EMPLOYEE\"]": -0.006666666666666667
+        },
+        "bandwidth": 0.8730093124811159
+      }
+    },
+    {
+      "index": 3769,
+      "timestamp": "2018-03-26T15:31:13+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.044918125889851224,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"duration\"]": -0.350020119065164,
+          "[\"mean_gap\"]": -0.29809129190279277,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.01485625485625481,
+          "[\"activity\", \"Declaration SAVED by EMPLOYEE\"]": 0.006666666666666667,
+          "[\"activity\", \"Declaration REJECTED by ADMINISTRATION\"]": -0.0060528360528360504
+        },
+        "bandwidth": 0.6935492326713535
+      }
+    },
+    {
+      "index": 3957,
+      "timestamp": "2018-04-05T15:30:51+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.1580268890645503,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"duration\"]": -0.08028037780616795,
+          "[\"activity\", \"Declaration REJECTED by EMPLOYEE\"]": -0.016931364931364927,
+          "[\"mean_gap\"]": -0.01480338135290926,
+          "[\"activity\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.013571354571354693,
+          "[\"activity\", \"Request Payment\"]": 0.013571354571354693
+        },
+        "bandwidth": 0.6241526807004928
+      }
+    },
+    {
+      "index": 4991,
+      "timestamp": "2018-05-17T15:31:32+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.07437338954713035,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"duration\"]": -0.380232720560025,
+          "[\"mean_gap\"]": -0.3014140118822569,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.026698005698005664,
+          "[\"activity\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.01182893032893012,
+          "[\"activity\", \"Request Payment\"]": 0.01182893032893012
+        },
+        "bandwidth": 0.5823166940223101
+      }
+    },
+    {
+      "index": 5179,
+      "timestamp": "2018-05-28T15:30:58+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.08271859930630954,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": -0.39313916626880063,
+          "[\"duration\"]": -0.24024804077260536,
+          "[\"activity\", \"Declaration SAVED by EMPLOYEE\"]": 0.013333333333333332,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.01311111111111115,
+          "[\"activity\", \"Declaration REJECTED by EMPLOYEE\"]": 0.0067794612794612845
+        },
+        "bandwidth": 0.7559007221666403
+      }
+    },
+    {
+      "index": 5743,
+      "timestamp": "2018-06-14T15:31:30+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.15485974854465057,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": 0.34628502234132674,
+          "[\"duration\"]": 0.3281515601851107,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.019851851851851815,
+          "[\"activity\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.01359259259259249,
+          "[\"activity\", \"Request Payment\"]": -0.01359259259259249
+        },
+        "bandwidth": 0.34768065747175847
+      }
+    },
+    {
+      "index": 6260,
+      "timestamp": "2018-07-05T15:31:33+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.10744353025604791,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"duration\"]": -0.4284517068949243,
+          "[\"mean_gap\"]": -0.2466540302337769,
+          "[\"activity\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.11422558922558919,
+          "[\"activity\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.0617190957190957,
+          "[\"activity\", \"Request Payment\"]": 0.0617190957190957
+        },
+        "bandwidth": 0.7103814117359519
+      }
+    },
+    {
+      "index": 6871,
+      "timestamp": "2018-07-26T15:31:02+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.11331682337639859,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": 0.3591202290624972,
+          "[\"duration\"]": 0.33287494696127085,
+          "[\"activity\", \"Declaration REJECTED by EMPLOYEE\"]": -0.015254329004329013,
+          "[\"activity\", \"Declaration REJECTED by ADMINISTRATION\"]": -0.01481120731120731,
+          "[\"activity\", \"Declaration SAVED by EMPLOYEE\"]": -0.013333333333333334
+        },
+        "bandwidth": 0.8982149835726946
+      }
+    },
+    {
+      "index": 7247,
+      "timestamp": "2018-08-30T15:31:12+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.11237067807959489,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": -0.6690423611201042,
+          "[\"duration\"]": -0.6096125035070951,
+          "[\"activity\", \"Declaration SAVED by EMPLOYEE\"]": 0.019999999999999997,
+          "[\"activity\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.01415079365079365,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.01241077441077438
+        },
+        "bandwidth": 0.8853452427711457
+      }
+    },
+    {
+      "index": 7905,
+      "timestamp": "2018-10-04T15:31:15+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.02941085708531932,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"duration\"]": -0.09586123546026183,
+          "[\"mean_gap\"]": -0.03516207972982637,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.013499999999999956,
+          "[\"activity\", \"Declaration REJECTED by ADMINISTRATION\"]": -0.013181818181818182,
+          "[\"activity\", \"Declaration REJECTED by EMPLOYEE\"]": -0.009595959595959599
+        },
+        "bandwidth": 0.7915604921283225
+      }
+    },
+    {
+      "index": 8422,
+      "timestamp": "2018-10-25T15:31:41+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.09433754928111115,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"duration\"]": 0.3197651288598682,
+          "[\"mean_gap\"]": 0.26994890307679165,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.03198484848484847,
+          "[\"activity\", \"Declaration SAVED by EMPLOYEE\"]": -0.013333333333333332,
+          "[\"activity\", \"Declaration SUBMITTED by EMPLOYEE\"]": -0.005926406926406891
+        },
+        "bandwidth": 0.7797135008944969
+      }
+    },
+    {
+      "index": 9127,
+      "timestamp": "2018-11-19T16:31:18+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.04808175544271487,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": -0.3349525728802207,
+          "[\"duration\"]": -0.29237754328181265,
+          "[\"activity\", \"Declaration SAVED by EMPLOYEE\"]": -0.019999999999999997,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.009499999999999967,
+          "[\"activity\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.007603174603174556
+        },
+        "bandwidth": 1.0477054792131022
+      }
+    },
+    {
+      "index": 9503,
+      "timestamp": "2018-12-03T16:31:22+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.12516910278827975,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": -0.3417877584573237,
+          "[\"duration\"]": -0.3373066938232385,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.017833573833573778,
+          "[\"activity\", \"Declaration REJECTED by SUPERVISOR\"]": -0.006216931216931215,
+          "[\"activity\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.005692881192881222
+        },
+        "bandwidth": 0.5465769693739169
+      }
+    },
+    {
+      "index": 9832,
+      "timestamp": "2018-12-13T16:31:07+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.045607197827062906,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"duration\"]": -0.2589738418198484,
+          "[\"mean_gap\"]": -0.2532661158118409,
+          "[\"activity\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.00986507936507941,
+          "[\"activity\", \"Request Payment\"]": 0.00986507936507941,
+          "[\"activity\", \"Payment Handled\"]": 0.00986507936507941
+        },
+        "bandwidth": 0.8016640854321967
+      }
+    },
+    {
+      "index": 10208,
+      "timestamp": "2019-01-03T10:59:15+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 0.7777154208192514,
+      "p_value": 0.01,
+      "details": {
+        "changed_means": {
+          "[\"mean_gap\"]": 0.917685916407208,
+          "[\"duration\"]": 0.45010957689521086,
+          "[\"activity\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.04012457912457899,
+          "[\"activity\", \"Declaration SUBMITTED by EMPLOYEE\"]": -0.010010582010582136,
+          "[\"activity\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.009116402116402245
+        },
+        "bandwidth": 0.7506148597064183
+      }
+    }
+  ],
+  "scores": [
+    {"index": 150, "timestamp": "2017-02-13T16:32:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.013432832338711176, "p_value": 0.06},
+    {"index": 197, "timestamp": "2017-02-20T16:31:51+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.04078373836953997, "p_value": 0.01},
+    {"index": 244, "timestamp": "2017-03-02T16:31:04+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.039949103736177216, "p_value": 0.01},
+    {"index": 291, "timestamp": "2017-03-09T16:31:16+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.061222486747691374, "p_value": 0.01},
+    {"index": 338, "timestamp": "2017-03-16T16:31:06+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0054176581122753475, "p_value": 0.44},
+    {"index": 385, "timestamp": "2017-03-23T16:30:42+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.008213570498343037, "p_value": 0.29},
+    {"index": 432, "timestamp": "2017-03-31T13:04:04+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.038818447587811056, "p_value": 0.02},
+    {"index": 479, "timestamp": "2017-04-10T15:30:43+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03771230497165212, "p_value": 0.01},
+    {"index": 526, "timestamp": "2017-04-20T15:31:19+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.05831481786482229, "p_value": 0.01},
+    {"index": 573, "timestamp": "2017-04-24T15:31:05+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.006155386683194486, "p_value": 0.41},
+    {"index": 620, "timestamp": "2017-05-04T15:31:05+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.008112136629398359, "p_value": 0.23},
+    {"index": 667, "timestamp": "2017-05-11T15:31:21+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02137120718871577, "p_value": 0.02},
+    {"index": 714, "timestamp": "2017-05-18T15:30:51+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.026685195734753808, "p_value": 0.01},
+    {"index": 761, "timestamp": "2017-05-29T15:30:47+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02618971543603199, "p_value": 0.01},
+    {"index": 808, "timestamp": "2017-06-01T15:30:51+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.009966856235637422, "p_value": 0.1},
+    {"index": 855, "timestamp": "2017-06-12T15:31:00+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.05125051678099135, "p_value": 0.01},
+    {"index": 902, "timestamp": "2017-06-19T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.031445027314530805, "p_value": 0.01},
+    {"index": 949, "timestamp": "2017-06-26T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.007277948821856173, "p_value": 0.25},
+    {"index": 996, "timestamp": "2017-06-29T15:30:39+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.006211891275869963, "p_value": 0.37},
+    {"index": 1043, "timestamp": "2017-07-10T15:31:08+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.010802331987263658, "p_value": 0.15},
+    {"index": 1090, "timestamp": "2017-07-17T15:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.05012023171247604, "p_value": 0.01},
+    {"index": 1137, "timestamp": "2017-07-27T15:31:12+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.059925545596334895, "p_value": 0.01},
+    {"index": 1184, "timestamp": "2017-08-03T15:30:55+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01325843995143594, "p_value": 0.08},
+    {"index": 1231, "timestamp": "2017-08-29T10:38:50+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01990043901158911, "p_value": 0.01},
+    {"index": 1278, "timestamp": "2017-09-07T15:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.08586331676575343, "p_value": 0.01},
+    {"index": 1325, "timestamp": "2017-09-11T15:31:08+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.05573467796209419, "p_value": 0.01},
+    {"index": 1372, "timestamp": "2017-09-18T15:30:54+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.037812826803660604, "p_value": 0.02},
+    {"index": 1419, "timestamp": "2017-09-25T15:30:59+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.014094250235741512, "p_value": 0.01},
+    {"index": 1466, "timestamp": "2017-10-02T15:30:50+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.017972504067788275, "p_value": 0.02},
+    {"index": 1513, "timestamp": "2017-10-05T15:31:27+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03687065964239755, "p_value": 0.01},
+    {"index": 1560, "timestamp": "2017-10-12T15:31:33+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02718106587568725, "p_value": 0.01},
+    {"index": 1607, "timestamp": "2017-10-19T15:31:01+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01214206309512611, "p_value": 0.06},
+    {"index": 1654, "timestamp": "2017-10-26T15:31:20+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.016281697063038614, "p_value": 0.05},
+    {"index": 1701, "timestamp": "2017-11-06T16:30:54+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01004830762449993, "p_value": 0.15},
+    {"index": 1748, "timestamp": "2017-11-09T16:30:58+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01370255454733571, "p_value": 0.06},
+    {"index": 1795, "timestamp": "2017-11-16T16:31:04+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.013023045439923608, "p_value": 0.09},
+    {"index": 1842, "timestamp": "2017-11-23T16:30:57+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.011396756307505918, "p_value": 0.07},
+    {"index": 1889, "timestamp": "2017-11-27T16:31:34+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.012347587449392794, "p_value": 0.08},
+    {"index": 1936, "timestamp": "2017-12-04T16:31:16+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.014520535817030833, "p_value": 0.04},
+    {"index": 1983, "timestamp": "2017-12-08T12:58:34+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.014706366996767306, "p_value": 0.07},
+    {"index": 2030, "timestamp": "2017-12-14T16:31:08+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.07366675394488131, "p_value": 0.01},
+    {"index": 2077, "timestamp": "2017-12-18T16:31:20+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.17131190836157895, "p_value": 0.01},
+    {"index": 2124, "timestamp": "2017-12-21T16:31:38+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.09835585263570201, "p_value": 0.01},
+    {"index": 2171, "timestamp": "2018-01-04T16:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0756361267965393, "p_value": 0.01},
+    {"index": 2218, "timestamp": "2018-01-08T16:31:05+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.22082115749556364, "p_value": 0.01},
+    {"index": 2265, "timestamp": "2018-01-15T16:31:31+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.13535286898550614, "p_value": 0.01},
+    {"index": 2312, "timestamp": "2018-01-18T16:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.10381547790501489, "p_value": 0.01},
+    {"index": 2359, "timestamp": "2018-01-22T16:31:16+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02471343124776415, "p_value": 0.01},
+    {"index": 2406, "timestamp": "2018-01-25T16:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03108454917235637, "p_value": 0.01},
+    {"index": 2453, "timestamp": "2018-01-25T16:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.017325117432727577, "p_value": 0.06},
+    {"index": 2500, "timestamp": "2018-01-29T16:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.031889545711596634, "p_value": 0.01},
+    {"index": 2547, "timestamp": "2018-02-01T16:31:17+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.04100752374645844, "p_value": 0.01},
+    {"index": 2594, "timestamp": "2018-02-01T16:31:17+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.044111033324420346, "p_value": 0.01},
+    {"index": 2641, "timestamp": "2018-02-05T16:31:02+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.029958014998774596, "p_value": 0.01},
+    {"index": 2688, "timestamp": "2018-02-07T12:18:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.004808536586969225, "p_value": 0.49},
+    {"index": 2735, "timestamp": "2018-02-08T16:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02454973224658441, "p_value": 0.03},
+    {"index": 2782, "timestamp": "2018-02-08T16:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.071522575881668, "p_value": 0.01},
+    {"index": 2829, "timestamp": "2018-02-12T16:31:20+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02620609170375121, "p_value": 0.02},
+    {"index": 2876, "timestamp": "2018-02-12T16:31:20+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.012083356274397383, "p_value": 0.07},
+    {"index": 2923, "timestamp": "2018-02-13T21:47:52+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.060062235592563074, "p_value": 0.01},
+    {"index": 2970, "timestamp": "2018-02-15T16:31:17+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01299212696638996, "p_value": 0.06},
+    {"index": 3017, "timestamp": "2018-02-19T16:31:31+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.08862635527295626, "p_value": 0.01},
+    {"index": 3064, "timestamp": "2018-02-20T09:06:31+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.08338412598217881, "p_value": 0.01},
+    {"index": 3111, "timestamp": "2018-02-22T16:30:39+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.009831322421461897, "p_value": 0.15},
+    {"index": 3158, "timestamp": "2018-02-26T16:31:27+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.05679538718589705, "p_value": 0.01},
+    {"index": 3205, "timestamp": "2018-03-01T16:31:25+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03256337380758656, "p_value": 0.01},
+    {"index": 3252, "timestamp": "2018-03-01T16:31:25+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.020911202749342994, "p_value": 0.03},
+    {"index": 3299, "timestamp": "2018-03-05T16:30:57+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.014672402738022505, "p_value": 0.05},
+    {"index": 3346, "timestamp": "2018-03-08T16:30:58+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03744181837342375, "p_value": 0.01},
+    {"index": 3393, "timestamp": "2018-03-08T16:30:58+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.006563578533111958, "p_value": 0.36},
+    {"index": 3440, "timestamp": "2018-03-12T16:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.06087529069093023, "p_value": 0.01},
+    {"index": 3487, "timestamp": "2018-03-12T16:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.05030570083701935, "p_value": 0.01},
+    {"index": 3534, "timestamp": "2018-03-15T16:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.010966345766285412, "p_value": 0.12},
+    {"index": 3581, "timestamp": "2018-03-15T16:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.06525681072477862, "p_value": 0.01},
+    {"index": 3628, "timestamp": "2018-03-19T16:30:53+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01612830402581822, "p_value": 0.05},
+    {"index": 3675, "timestamp": "2018-03-22T16:31:09+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.00650320003839977, "p_value": 0.35},
+    {"index": 3722, "timestamp": "2018-03-22T16:31:09+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.029044570892756694, "p_value": 0.01},
+    {"index": 3769, "timestamp": "2018-03-26T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.044918125889851224, "p_value": 0.01},
+    {"index": 3816, "timestamp": "2018-03-26T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.024136685421012105, "p_value": 0.01},
+    {"index": 3863, "timestamp": "2018-03-29T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.017284955907898247, "p_value": 0.04},
+    {"index": 3910, "timestamp": "2018-03-29T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0501032124855354, "p_value": 0.01},
+    {"index": 3957, "timestamp": "2018-04-05T15:30:51+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.1580268890645503, "p_value": 0.01},
+    {"index": 4004, "timestamp": "2018-04-05T15:30:51+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.008876027225070748, "p_value": 0.08},
+    {"index": 4051, "timestamp": "2018-04-09T14:27:25+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.015917092861628124, "p_value": 0.04},
+    {"index": 4098, "timestamp": "2018-04-09T15:30:57+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.15183247582439474, "p_value": 0.01},
+    {"index": 4145, "timestamp": "2018-04-12T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.028160151896425623, "p_value": 0.01},
+    {"index": 4192, "timestamp": "2018-04-12T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01773268093711189, "p_value": 0.03},
+    {"index": 4239, "timestamp": "2018-04-16T15:31:09+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.09630002603301335, "p_value": 0.01},
+    {"index": 4286, "timestamp": "2018-04-16T15:31:09+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.029465493043331792, "p_value": 0.02},
+    {"index": 4333, "timestamp": "2018-04-19T15:31:30+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03785715280400015, "p_value": 0.01},
+    {"index": 4380, "timestamp": "2018-04-19T15:31:30+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.05767704584368771, "p_value": 0.01},
+    {"index": 4427, "timestamp": "2018-04-19T15:31:30+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.04817591904364171, "p_value": 0.01},
+    {"index": 4474, "timestamp": "2018-04-23T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.029520532716493353, "p_value": 0.02},
+    {"index": 4521, "timestamp": "2018-04-26T15:30:51+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.028818970046809778, "p_value": 0.01},
+    {"index": 4568, "timestamp": "2018-04-26T15:30:51+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.026872838096037466, "p_value": 0.01},
+    {"index": 4615, "timestamp": "2018-04-26T15:30:51+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.020542839558983506, "p_value": 0.02},
+    {"index": 4662, "timestamp": "2018-04-30T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.027899978029920947, "p_value": 0.01},
+    {"index": 4709, "timestamp": "2018-05-03T15:31:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02859522428014527, "p_value": 0.01},
+    {"index": 4756, "timestamp": "2018-05-03T15:31:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.05959381457333013, "p_value": 0.01},
+    {"index": 4803, "timestamp": "2018-05-07T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0099138647619057, "p_value": 0.12},
+    {"index": 4850, "timestamp": "2018-05-07T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0907711053931668, "p_value": 0.01},
+    {"index": 4897, "timestamp": "2018-05-14T15:31:21+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.015313682014142405, "p_value": 0.09},
+    {"index": 4944, "timestamp": "2018-05-17T15:31:32+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01744726454726786, "p_value": 0.01},
+    {"index": 4991, "timestamp": "2018-05-17T15:31:32+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.07437338954713035, "p_value": 0.01},
+    {"index": 5038, "timestamp": "2018-05-17T15:31:32+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0065099889028923386, "p_value": 0.38},
+    {"index": 5085, "timestamp": "2018-05-24T15:31:06+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.041510791410697356, "p_value": 0.01},
+    {"index": 5132, "timestamp": "2018-05-24T15:31:06+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.013161165222681515, "p_value": 0.06},
+    {"index": 5179, "timestamp": "2018-05-28T15:30:58+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.08271859930630954, "p_value": 0.01},
+    {"index": 5226, "timestamp": "2018-05-31T15:31:11+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02274101766641401, "p_value": 0.01},
+    {"index": 5273, "timestamp": "2018-05-31T15:31:11+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.030284423419733253, "p_value": 0.01},
+    {"index": 5320, "timestamp": "2018-06-04T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.041238978006277405, "p_value": 0.01},
+    {"index": 5367, "timestamp": "2018-06-04T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01709125379182619, "p_value": 0.02},
+    {"index": 5414, "timestamp": "2018-06-07T15:31:35+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02847627111681339, "p_value": 0.02},
+    {"index": 5461, "timestamp": "2018-06-07T15:31:35+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.06314460572121927, "p_value": 0.01},
+    {"index": 5508, "timestamp": "2018-06-07T15:31:35+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03957653789661242, "p_value": 0.01},
+    {"index": 5555, "timestamp": "2018-06-11T15:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.04187869759987661, "p_value": 0.01},
+    {"index": 5602, "timestamp": "2018-06-11T15:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0030205878480624726, "p_value": 0.84},
+    {"index": 5649, "timestamp": "2018-06-14T15:31:30+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03289038835454683, "p_value": 0.01},
+    {"index": 5696, "timestamp": "2018-06-14T15:31:30+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.029566222033052147, "p_value": 0.02},
+    {"index": 5743, "timestamp": "2018-06-14T15:31:30+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.15485974854465057, "p_value": 0.01},
+    {"index": 5790, "timestamp": "2018-06-18T15:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.005403349111571032, "p_value": 0.52},
+    {"index": 5837, "timestamp": "2018-06-21T15:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.017583145586251625, "p_value": 0.05},
+    {"index": 5884, "timestamp": "2018-06-21T15:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.12863133367739432, "p_value": 0.01},
+    {"index": 5931, "timestamp": "2018-06-21T15:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03694700534964657, "p_value": 0.01},
+    {"index": 5978, "timestamp": "2018-06-25T15:31:27+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.021647115847788667, "p_value": 0.02},
+    {"index": 6025, "timestamp": "2018-06-25T15:31:27+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.05482700222345427, "p_value": 0.01},
+    {"index": 6072, "timestamp": "2018-06-28T15:31:33+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.015233054073665153, "p_value": 0.05},
+    {"index": 6119, "timestamp": "2018-06-28T15:31:33+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.07298611548526002, "p_value": 0.01},
+    {"index": 6166, "timestamp": "2018-07-02T15:31:19+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.09013219626702174, "p_value": 0.01},
+    {"index": 6213, "timestamp": "2018-07-05T13:16:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.07367905932698626, "p_value": 0.01},
+    {"index": 6260, "timestamp": "2018-07-05T15:31:33+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.10744353025604791, "p_value": 0.01},
+    {"index": 6307, "timestamp": "2018-07-05T15:31:33+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03268195199547641, "p_value": 0.01},
+    {"index": 6354, "timestamp": "2018-07-09T15:31:25+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.029551122505543592, "p_value": 0.01},
+    {"index": 6401, "timestamp": "2018-07-09T15:31:25+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.029966832955781175, "p_value": 0.02},
+    {"index": 6448, "timestamp": "2018-07-12T15:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.012183017631665072, "p_value": 0.07},
+    {"index": 6495, "timestamp": "2018-07-12T15:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03422693843669644, "p_value": 0.01},
+    {"index": 6542, "timestamp": "2018-07-12T15:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.04027447238621962, "p_value": 0.01},
+    {"index": 6589, "timestamp": "2018-07-16T15:31:24+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03210831777034806, "p_value": 0.01},
+    {"index": 6636, "timestamp": "2018-07-16T15:31:24+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.031955362453987, "p_value": 0.01},
+    {"index": 6683, "timestamp": "2018-07-19T15:32:02+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.033150428424096656, "p_value": 0.01},
+    {"index": 6730, "timestamp": "2018-07-19T15:32:02+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.026842684108196346, "p_value": 0.01},
+    {"index": 6777, "timestamp": "2018-07-19T15:32:02+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.051216626104723995, "p_value": 0.01},
+    {"index": 6824, "timestamp": "2018-07-23T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.029716696434187506, "p_value": 0.01},
+    {"index": 6871, "timestamp": "2018-07-26T15:31:02+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.11331682337639859, "p_value": 0.01},
+    {"index": 6918, "timestamp": "2018-07-26T15:31:02+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.09351416532348211, "p_value": 0.01},
+    {"index": 6965, "timestamp": "2018-08-02T15:31:27+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.032011885336427515, "p_value": 0.01},
+    {"index": 7012, "timestamp": "2018-08-09T15:31:39+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.015118455137955067, "p_value": 0.06},
+    {"index": 7059, "timestamp": "2018-08-13T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02657278207890723, "p_value": 0.02},
+    {"index": 7106, "timestamp": "2018-08-20T15:31:16+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.015288266148128837, "p_value": 0.05},
+    {"index": 7153, "timestamp": "2018-08-23T15:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.004726580707842043, "p_value": 0.52},
+    {"index": 7200, "timestamp": "2018-08-27T08:21:40+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.019332226317430035, "p_value": 0.02},
+    {"index": 7247, "timestamp": "2018-08-30T15:31:12+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.11237067807959489, "p_value": 0.01},
+    {"index": 7294, "timestamp": "2018-09-03T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.06146576270300108, "p_value": 0.01},
+    {"index": 7341, "timestamp": "2018-09-06T15:31:08+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03686888830094959, "p_value": 0.01},
+    {"index": 7388, "timestamp": "2018-09-10T15:31:23+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.013998563137739284, "p_value": 0.03},
+    {"index": 7435, "timestamp": "2018-09-13T15:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.00966716519928923, "p_value": 0.19},
+    {"index": 7482, "timestamp": "2018-09-13T15:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0164647228791186, "p_value": 0.04},
+    {"index": 7529, "timestamp": "2018-09-17T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.003659039500321093, "p_value": 0.76},
+    {"index": 7576, "timestamp": "2018-09-20T15:31:16+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.010578822982813207, "p_value": 0.11},
+    {"index": 7623, "timestamp": "2018-09-20T15:31:16+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.004181048860709247, "p_value": 0.65},
+    {"index": 7670, "timestamp": "2018-09-24T15:31:06+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0036637831142403154, "p_value": 0.72},
+    {"index": 7717, "timestamp": "2018-09-24T15:31:06+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.005855872263976103, "p_value": 0.39},
+    {"index": 7764, "timestamp": "2018-09-27T15:31:23+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.028248313367082112, "p_value": 0.01},
+    {"index": 7811, "timestamp": "2018-10-01T14:08:59+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.025723359650285937, "p_value": 0.02},
+    {"index": 7858, "timestamp": "2018-10-01T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.020257002264841173, "p_value": 0.01},
+    {"index": 7905, "timestamp": "2018-10-04T15:31:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02941085708531932, "p_value": 0.01},
+    {"index": 7952, "timestamp": "2018-10-04T15:31:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.011106187650665067, "p_value": 0.09},
+    {"index": 7999, "timestamp": "2018-10-08T15:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.023096004862400932, "p_value": 0.01},
+    {"index": 8046, "timestamp": "2018-10-08T15:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.011647853115539286, "p_value": 0.1},
+    {"index": 8093, "timestamp": "2018-10-11T15:31:06+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.010613233455620374, "p_value": 0.13},
+    {"index": 8140, "timestamp": "2018-10-11T15:31:06+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.024558851367104007, "p_value": 0.01},
+    {"index": 8187, "timestamp": "2018-10-15T15:31:11+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.010033513193296928, "p_value": 0.12},
+    {"index": 8234, "timestamp": "2018-10-18T15:31:16+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.007409911676051983, "p_value": 0.34},
+    {"index": 8281, "timestamp": "2018-10-18T15:31:16+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03787359025357051, "p_value": 0.01},
+    {"index": 8328, "timestamp": "2018-10-18T15:31:16+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.025606431425547527, "p_value": 0.01},
+    {"index": 8375, "timestamp": "2018-10-22T15:31:24+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.004532377397111986, "p_value": 0.66},
+    {"index": 8422, "timestamp": "2018-10-25T15:31:41+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.09433754928111115, "p_value": 0.01},
+    {"index": 8469, "timestamp": "2018-10-25T15:31:41+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02575596525823398, "p_value": 0.01},
+    {"index": 8516, "timestamp": "2018-10-25T15:31:41+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.011810696497278173, "p_value": 0.05},
+    {"index": 8563, "timestamp": "2018-10-29T16:31:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.028908753852612712, "p_value": 0.01},
+    {"index": 8610, "timestamp": "2018-10-29T16:31:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02709137956432306, "p_value": 0.01},
+    {"index": 8657, "timestamp": "2018-11-01T16:31:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01157824558641285, "p_value": 0.1},
+    {"index": 8704, "timestamp": "2018-11-05T16:31:17+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.017603838749323364, "p_value": 0.04},
+    {"index": 8751, "timestamp": "2018-11-05T16:31:17+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.00641965142081391, "p_value": 0.39},
+    {"index": 8798, "timestamp": "2018-11-08T16:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.007424407650688414, "p_value": 0.18},
+    {"index": 8845, "timestamp": "2018-11-12T16:30:45+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.006776297292337308, "p_value": 0.43},
+    {"index": 8892, "timestamp": "2018-11-12T16:30:45+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.014294422310557886, "p_value": 0.04},
+    {"index": 8939, "timestamp": "2018-11-14T08:02:03+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.019506470745905835, "p_value": 0.05},
+    {"index": 8986, "timestamp": "2018-11-15T16:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.029110672443278585, "p_value": 0.01},
+    {"index": 9033, "timestamp": "2018-11-15T16:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02253056164951195, "p_value": 0.01},
+    {"index": 9080, "timestamp": "2018-11-19T16:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0409314519333317, "p_value": 0.01},
+    {"index": 9127, "timestamp": "2018-11-19T16:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.04808175544271487, "p_value": 0.01},
+    {"index": 9174, "timestamp": "2018-11-20T22:19:54+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.02019722901988641, "p_value": 0.04},
+    {"index": 9221, "timestamp": "2018-11-22T16:31:32+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.05910785734062096, "p_value": 0.01},
+    {"index": 9268, "timestamp": "2018-11-22T16:31:32+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.01048400848596276, "p_value": 0.15},
+    {"index": 9315, "timestamp": "2018-11-26T16:31:22+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.005706026559492372, "p_value": 0.43},
+    {"index": 9362, "timestamp": "2018-11-29T16:31:19+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.07884955095486323, "p_value": 0.01},
+    {"index": 9409, "timestamp": "2018-11-29T16:31:19+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.011743311455765237, "p_value": 0.11},
+    {"index": 9456, "timestamp": "2018-12-03T16:31:22+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.054003564677620464, "p_value": 0.01},
+    {"index": 9503, "timestamp": "2018-12-03T16:31:22+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.12516910278827975, "p_value": 0.01},
+    {"index": 9550, "timestamp": "2018-12-04T09:36:34+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.00572453752481672, "p_value": 0.41},
+    {"index": 9597, "timestamp": "2018-12-06T16:31:33+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.07829419638303392, "p_value": 0.01},
+    {"index": 9644, "timestamp": "2018-12-06T16:31:33+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.11639116987483877, "p_value": 0.01},
+    {"index": 9691, "timestamp": "2018-12-10T16:31:26+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.014822081322175551, "p_value": 0.05},
+    {"index": 9738, "timestamp": "2018-12-10T16:31:26+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.009417502601985817, "p_value": 0.15},
+    {"index": 9785, "timestamp": "2018-12-13T16:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03781056854945053, "p_value": 0.01},
+    {"index": 9832, "timestamp": "2018-12-13T16:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.045607197827062906, "p_value": 0.01},
+    {"index": 9879, "timestamp": "2018-12-13T16:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.016715592933544743, "p_value": 0.04},
+    {"index": 9926, "timestamp": "2018-12-17T16:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.07493541791791891, "p_value": 0.01},
+    {"index": 9973, "timestamp": "2018-12-17T16:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.03981583511322406, "p_value": 0.01},
+    {"index": 10020, "timestamp": "2018-12-20T16:31:28+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.07762097572157134, "p_value": 0.01},
+    {"index": 10067, "timestamp": "2018-12-20T16:31:28+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.10532866870905022, "p_value": 0.01},
+    {"index": 10114, "timestamp": "2018-12-20T16:31:28+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0919297271089139, "p_value": 0.01},
+    {"index": 10161, "timestamp": "2018-12-20T16:31:28+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.247941018118096, "p_value": 0.01},
+    {"index": 10208, "timestamp": "2019-01-03T10:59:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.7777154208192514, "p_value": 0.01},
+    {"index": 10255, "timestamp": "2019-01-03T10:59:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.359876809404861, "p_value": 0.01},
+    {"index": 10302, "timestamp": "2019-01-03T10:59:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.1865400752582318, "p_value": 0.01},
+    {"index": 10349, "timestamp": "2019-01-07T16:31:12+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.12033350500012674, "p_value": 0.01}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "mmd",
+    "representation": [
+      "activity",
+      "duration",
+      "mean_gap"
+    ],
+    "retrospective": true,
+    "standardize": true,
+    "bandwidth": null,
+    "window_size": 150,
+    "step": 47,
+    "alpha": 0.03,
+    "min_effect": 0.0,
+    "persistence": 2,
+    "min_separation": 150,
+    "permutations": 99,
+    "permutation_block_size": 1,
+    "random_state": 73,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 150,
+    "step": 47,
+    "min_separation": 150,
+    "permutations": 99,
+    "random_state": 73,
+    "alpha": 0.03,
+    "persistence": 2,
+    "features": [
+      "activity",
+      "duration",
+      "mean_gap"
+    ],
+    "method": "mmd"
+  },
+  "runtime_seconds": 28.22464,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 768336.68,
+        "tp": 0,
+        "fp": 23,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 1920841.7,
+        "tp": 1,
+        "fp": 22,
+        "fn": 0,
+        "precision": 0.043478260869565216,
+        "recall": 1.0,
+        "f1": 0.08333333333333333,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 14,
+            "estimate_minus_onset_seconds": 875129.0,
+            "distance_to_truth_interval_seconds": 875129.0,
+            "availability_minus_onset_seconds": 30855894.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 3841683.4,
+        "tp": 1,
+        "fp": 22,
+        "fn": 0,
+        "precision": 0.043478260869565216,
+        "recall": 1.0,
+        "f1": 0.08333333333333333,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 14,
+            "estimate_minus_onset_seconds": 875129.0,
+            "distance_to_truth_interval_seconds": 875129.0,
+            "availability_minus_onset_seconds": 30855894.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 218,
+    "published_count": 218,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

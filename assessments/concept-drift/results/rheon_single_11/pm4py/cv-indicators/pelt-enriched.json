@@ -1,0 +1,608 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_single_11",
+  "library": "pm4py",
+  "method": "cv-indicators",
+  "profile": "pelt-enriched",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "calendar_bin",
+  "changes": [
+    {
+      "index": 18,
+      "timestamp": "2020-05-04T00:00:00+00:00",
+      "available_at": "2020-10-01T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"a\"]": 17.088185373187954
+        }
+      }
+    },
+    {
+      "index": 38,
+      "timestamp": "2020-06-09T16:00:00+00:00",
+      "available_at": "2020-10-01T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 17.653538661260107
+        }
+      }
+    },
+    {
+      "index": 40,
+      "timestamp": "2020-06-13T08:00:00+00:00",
+      "available_at": "2020-10-01T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"h\", \"res_04\"]": 98.00945723498832
+        }
+      }
+    },
+    {
+      "index": 41,
+      "timestamp": "2020-06-15T04:00:00+00:00",
+      "available_at": "2020-10-01T08:00:00+00:00",
+      "score": 7.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"b\", \"res_01\"]": 98.42883287402334,
+          "[\"resource_assignment\", \"b\", \"res_06\"]": 98.13738666588436,
+          "[\"resource_assignment\", \"a\", \"res_07\"]": 97.75451701470688,
+          "[\"resource_assignment\", \"a\", \"res_01\"]": 98.64862870082369,
+          "[\"resource_assignment\", \"c\", \"res_07\"]": 98.01587244882487,
+          "[\"resource_assignment\", \"c\", \"res_03\"]": 98.00371579223024,
+          "[\"resource_assignment\", \"h\", \"res_03\"]": 97.65011560658351
+        }
+      }
+    },
+    {
+      "index": 66,
+      "timestamp": "2020-07-31T00:00:00+00:00",
+      "available_at": "2020-10-01T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 29.326710808840183
+        }
+      }
+    },
+    {
+      "index": 85,
+      "timestamp": "2020-09-03T20:00:00+00:00",
+      "available_at": "2020-10-01T08:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"a\"]": 24.743798885677776,
+          "[\"service_time\", \"c\"]": 21.04577804830092
+        }
+      }
+    },
+    {
+      "index": 91,
+      "timestamp": "2020-09-14T20:00:00+00:00",
+      "available_at": "2020-10-01T08:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"c\"]": 27.347332278131272
+        }
+      }
+    },
+    {
+      "index": 92,
+      "timestamp": "2020-09-16T16:00:00+00:00",
+      "available_at": "2020-10-01T08:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"b\"]": 21.557155937457793,
+          "[\"activity_frequency\", \"a\"]": 22.851130203955393,
+          "[\"activity_frequency\", \"c\"]": 18.095334459376446
+        }
+      }
+    },
+    {
+      "index": 97,
+      "timestamp": "2020-09-25T20:00:00+00:00",
+      "available_at": "2020-10-01T08:00:00+00:00",
+      "score": 4.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 43.7370200653355,
+          "completions": 39.14221677164404,
+          "events": 39.476087265309175,
+          "active_resources": 95.62642531674946
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2020-04-01T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 1, "timestamp": "2020-04-02T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 2, "timestamp": "2020-04-04T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 3, "timestamp": "2020-04-06T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 4, "timestamp": "2020-04-08T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 5, "timestamp": "2020-04-10T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 6, "timestamp": "2020-04-12T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 7, "timestamp": "2020-04-13T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 8, "timestamp": "2020-04-15T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 9, "timestamp": "2020-04-17T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 10, "timestamp": "2020-04-19T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 11, "timestamp": "2020-04-21T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 12, "timestamp": "2020-04-23T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 13, "timestamp": "2020-04-24T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 14, "timestamp": "2020-04-26T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 15, "timestamp": "2020-04-28T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 16, "timestamp": "2020-04-30T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 17, "timestamp": "2020-05-02T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 18, "timestamp": "2020-05-04T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 1.0},
+    {"index": 19, "timestamp": "2020-05-05T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 20, "timestamp": "2020-05-07T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 21, "timestamp": "2020-05-09T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 22, "timestamp": "2020-05-11T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 23, "timestamp": "2020-05-13T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 24, "timestamp": "2020-05-15T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 25, "timestamp": "2020-05-16T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 26, "timestamp": "2020-05-18T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 27, "timestamp": "2020-05-20T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 28, "timestamp": "2020-05-22T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 29, "timestamp": "2020-05-24T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 30, "timestamp": "2020-05-26T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 31, "timestamp": "2020-05-27T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 32, "timestamp": "2020-05-29T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 33, "timestamp": "2020-05-31T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 34, "timestamp": "2020-06-02T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 35, "timestamp": "2020-06-04T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 36, "timestamp": "2020-06-06T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 37, "timestamp": "2020-06-07T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 38, "timestamp": "2020-06-09T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 1.0},
+    {"index": 39, "timestamp": "2020-06-11T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 40, "timestamp": "2020-06-13T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 1.0},
+    {"index": 41, "timestamp": "2020-06-15T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 7.0},
+    {"index": 42, "timestamp": "2020-06-17T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 43, "timestamp": "2020-06-18T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 44, "timestamp": "2020-06-20T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 45, "timestamp": "2020-06-22T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 46, "timestamp": "2020-06-24T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 47, "timestamp": "2020-06-26T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 48, "timestamp": "2020-06-28T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 49, "timestamp": "2020-06-29T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 50, "timestamp": "2020-07-01T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 51, "timestamp": "2020-07-03T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 52, "timestamp": "2020-07-05T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 53, "timestamp": "2020-07-07T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 54, "timestamp": "2020-07-09T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 55, "timestamp": "2020-07-10T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 56, "timestamp": "2020-07-12T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 57, "timestamp": "2020-07-14T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 58, "timestamp": "2020-07-16T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 59, "timestamp": "2020-07-18T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 60, "timestamp": "2020-07-20T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 61, "timestamp": "2020-07-21T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 62, "timestamp": "2020-07-23T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 63, "timestamp": "2020-07-25T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 64, "timestamp": "2020-07-27T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 65, "timestamp": "2020-07-29T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 66, "timestamp": "2020-07-31T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 1.0},
+    {"index": 67, "timestamp": "2020-08-01T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 68, "timestamp": "2020-08-03T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 69, "timestamp": "2020-08-05T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 70, "timestamp": "2020-08-07T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 71, "timestamp": "2020-08-09T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 72, "timestamp": "2020-08-11T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 73, "timestamp": "2020-08-12T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 74, "timestamp": "2020-08-14T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 75, "timestamp": "2020-08-16T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 76, "timestamp": "2020-08-18T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 77, "timestamp": "2020-08-20T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 78, "timestamp": "2020-08-22T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 79, "timestamp": "2020-08-23T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 80, "timestamp": "2020-08-25T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 81, "timestamp": "2020-08-27T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 82, "timestamp": "2020-08-29T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 83, "timestamp": "2020-08-31T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 84, "timestamp": "2020-09-02T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 85, "timestamp": "2020-09-03T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 2.0},
+    {"index": 86, "timestamp": "2020-09-05T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 87, "timestamp": "2020-09-07T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 88, "timestamp": "2020-09-09T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 89, "timestamp": "2020-09-11T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2020-09-13T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 91, "timestamp": "2020-09-14T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 1.0},
+    {"index": 92, "timestamp": "2020-09-16T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 3.0},
+    {"index": 93, "timestamp": "2020-09-18T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 94, "timestamp": "2020-09-20T08:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 95, "timestamp": "2020-09-22T04:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 96, "timestamp": "2020-09-24T00:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 97, "timestamp": "2020-09-25T20:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 4.0},
+    {"index": 98, "timestamp": "2020-09-27T16:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0},
+    {"index": 99, "timestamp": "2020-09-29T12:00:00+00:00", "available_at": "2020-10-01T08:00:00+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "cv_indicators",
+    "mode": "retrospective",
+    "bin_size": "44h",
+    "statistic": "mean",
+    "candidate_windows": [
+      1,
+      3,
+      5,
+      9,
+      17
+    ],
+    "selected_windows": {
+      "arrivals": 5,
+      "completions": 5,
+      "work_in_progress": 5,
+      "events": 5,
+      "case_duration": 5,
+      "[\"activity_frequency\", \"b\"]": 5,
+      "[\"activity_frequency\", \"a\"]": 5,
+      "[\"activity_frequency\", \"c\"]": 5,
+      "[\"activity_frequency\", \"h\"]": 5,
+      "[\"service_time\", \"b\"]": 5,
+      "[\"service_time\", \"a\"]": 5,
+      "[\"service_time\", \"c\"]": 5,
+      "[\"service_time\", \"h\"]": 5,
+      "active_resources": 5,
+      "[\"resource_assignment\", \"b\", \"res_01\"]": 3,
+      "[\"resource_assignment\", \"b\", \"res_06\"]": 5,
+      "[\"resource_assignment\", \"a\", \"res_07\"]": 5,
+      "[\"resource_assignment\", \"a\", \"res_01\"]": 3,
+      "[\"resource_assignment\", \"c\", \"res_07\"]": 5,
+      "[\"resource_assignment\", \"c\", \"res_03\"]": 5,
+      "[\"resource_assignment\", \"h\", \"res_03\"]": 5,
+      "[\"resource_assignment\", \"h\", \"res_04\"]": 3
+    },
+    "cv_curves": {
+      "arrivals": {
+        "1": 0.11845184328485059,
+        "3": 0.07575508371632389,
+        "5": 0.05659018534451472,
+        "9": 0.03634401955806148,
+        "17": 0.02109855519796898
+      },
+      "completions": {
+        "1": 0.11734793171390887,
+        "3": 0.0735150536107833,
+        "5": 0.055488428381226404,
+        "9": 0.035417649889649946,
+        "17": 0.020364093388436533
+      },
+      "work_in_progress": {
+        "1": 0.4387890585059723,
+        "3": 0.24268744141365406,
+        "5": 0.17856741213819818,
+        "9": 0.13027504031184575,
+        "17": 0.09255367383620848
+      },
+      "events": {
+        "1": 0.11931937395240369,
+        "3": 0.07610718118827323,
+        "5": 0.057977614422445214,
+        "9": 0.03746106137638364,
+        "17": 0.022559415259156595
+      },
+      "case_duration": {
+        "1": 0.05309269917395086,
+        "3": 0.031163957393052614,
+        "5": 0.02463787370907051,
+        "9": 0.01758643586260733,
+        "17": 0.00973807533044757
+      },
+      "[\"activity_frequency\", \"b\"]": {
+        "1": 0.09592205550637893,
+        "3": 0.052472769852946986,
+        "5": 0.04088990193439392,
+        "9": 0.028953489480966522,
+        "17": 0.01864776217400386
+      },
+      "[\"activity_frequency\", \"a\"]": {
+        "1": 0.09001963168275293,
+        "3": 0.05228262138926546,
+        "5": 0.04037164756579399,
+        "9": 0.028804011603337763,
+        "17": 0.018993554707721603
+      },
+      "[\"activity_frequency\", \"c\"]": {
+        "1": 0.09844041665070821,
+        "3": 0.05227226616915384,
+        "5": 0.04138751486999187,
+        "9": 0.02838986701058101,
+        "17": 0.018042858265484605
+      },
+      "[\"activity_frequency\", \"h\"]": {
+        "1": 0.1832190200767762,
+        "3": 0.10977889953836369,
+        "5": 0.08455134270896937,
+        "9": 0.0577395264640478,
+        "17": 0.036140119019810256
+      },
+      "[\"service_time\", \"b\"]": {
+        "1": 0.05760585031194317,
+        "3": 0.03095139069999529,
+        "5": 0.02265353582563715,
+        "9": 0.016218433416347343,
+        "17": 0.011463195633664451
+      },
+      "[\"service_time\", \"a\"]": {
+        "1": 0.08626192022481002,
+        "3": 0.04589162210573146,
+        "5": 0.03382322632821994,
+        "9": 0.024339826082364478,
+        "17": 0.018475653388017974
+      },
+      "[\"service_time\", \"c\"]": {
+        "1": 0.05244265069086088,
+        "3": 0.031966197669671306,
+        "5": 0.024828332514577438,
+        "9": 0.016843146728269188,
+        "17": 0.009459575509206218
+      },
+      "[\"service_time\", \"h\"]": {
+        "1": 0.09495957454725028,
+        "3": 0.04292380959978946,
+        "5": 0.030837400016363252,
+        "9": 0.021886015925960293,
+        "17": 0.013638720645680596
+      },
+      "active_resources": {
+        "1": 0.014234441160323607,
+        "3": 0.008511833645462272,
+        "5": 0.00651435039781133,
+        "9": 0.004755939288900101,
+        "17": 0.003359123901029099
+      },
+      "[\"resource_assignment\", \"b\", \"res_01\"]": {
+        "1": 0.7738161985996003,
+        "3": 0.7647270148683634,
+        "5": 0.7590688781612431,
+        "9": 0.7476010787178784,
+        "17": 0.7249515377925103
+      },
+      "[\"resource_assignment\", \"b\", \"res_06\"]": {
+        "1": 1.1287775754280007,
+        "3": 1.1191812073022336,
+        "5": 1.1112491573002636,
+        "9": 1.096355094516077,
+        "17": 1.0653428055212433
+      },
+      "[\"resource_assignment\", \"a\", \"res_07\"]": {
+        "1": 0.7744967441115523,
+        "3": 0.7661765951197338,
+        "5": 0.759565462961372,
+        "9": 0.7486362147632046,
+        "17": 0.7262444017523279
+      },
+      "[\"resource_assignment\", \"a\", \"res_01\"]": {
+        "1": 1.134005198201698,
+        "3": 1.1222358403573027,
+        "5": 1.1140719608327092,
+        "9": 1.0966106373227598,
+        "17": 1.0607250698280668
+      },
+      "[\"resource_assignment\", \"c\", \"res_07\"]": {
+        "1": 0.7939585795684001,
+        "3": 0.7838835646414083,
+        "5": 0.7773159389492142,
+        "9": 0.7661913334997827,
+        "17": 0.7427396420922506
+      },
+      "[\"resource_assignment\", \"c\", \"res_03\"]": {
+        "1": 1.1163321266300676,
+        "3": 1.105529923200412,
+        "5": 1.09667954045288,
+        "9": 1.080307474588937,
+        "17": 1.0490495801248654
+      },
+      "[\"resource_assignment\", \"h\", \"res_03\"]": {
+        "1": 0.7872840537105581,
+        "3": 0.7747679029503538,
+        "5": 0.7683024848241572,
+        "9": 0.7573962043933449,
+        "17": 0.7355922166682927
+      },
+      "[\"resource_assignment\", \"h\", \"res_04\"]": {
+        "1": 1.1442281784357085,
+        "3": 1.1275745271035198,
+        "5": 1.120407512453267,
+        "9": 1.10471364612291,
+        "17": 1.0717272555856423
+      }
+    },
+    "min_size": 3,
+    "penalty_scale": 3.0,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "bin_size": "44h",
+    "features": [
+      "arrivals",
+      "completions",
+      "work_in_progress",
+      "events",
+      "case_duration",
+      [
+        "activity_frequency",
+        "b"
+      ],
+      [
+        "activity_frequency",
+        "a"
+      ],
+      [
+        "activity_frequency",
+        "c"
+      ],
+      [
+        "activity_frequency",
+        "h"
+      ],
+      [
+        "service_time",
+        "b"
+      ],
+      [
+        "service_time",
+        "a"
+      ],
+      [
+        "service_time",
+        "c"
+      ],
+      [
+        "service_time",
+        "h"
+      ],
+      "active_resources",
+      [
+        "resource_assignment",
+        "b",
+        "res_01"
+      ],
+      [
+        "resource_assignment",
+        "b",
+        "res_06"
+      ],
+      [
+        "resource_assignment",
+        "a",
+        "res_07"
+      ],
+      [
+        "resource_assignment",
+        "a",
+        "res_01"
+      ],
+      [
+        "resource_assignment",
+        "c",
+        "res_07"
+      ],
+      [
+        "resource_assignment",
+        "c",
+        "res_03"
+      ],
+      [
+        "resource_assignment",
+        "h",
+        "res_03"
+      ],
+      [
+        "resource_assignment",
+        "h",
+        "res_04"
+      ]
+    ],
+    "penalty_scale": 3,
+    "start_timestamp_key": "start:timestamp"
+  },
+  "runtime_seconds": 7.35739,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 157386.62,
+        "tp": 1,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 47232.0,
+            "distance_to_truth_interval_seconds": 47232.0,
+            "availability_minus_onset_seconds": 9392832.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 393466.55,
+        "tp": 1,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 47232.0,
+            "distance_to_truth_interval_seconds": 47232.0,
+            "availability_minus_onset_seconds": 9392832.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 786933.1,
+        "tp": 1,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 47232.0,
+            "distance_to_truth_interval_seconds": 47232.0,
+            "availability_minus_onset_seconds": 9392832.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 100,
+    "published_count": 100,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

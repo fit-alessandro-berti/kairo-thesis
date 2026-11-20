@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_10",
+  "library": "pm4py",
+  "method": "bose",
+  "profile": "relation-count",
+  "status": "ok",
+  "detector_source_revision": "765435bc7f5190adf30be7314d7158b92ff433c4",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "timestamp": "2017-03-27T12:32:59+00:00",
+      "p_value": 0.0125,
+      "available_at": "2019-12-15T06:27:14+00:00"
+    },
+    {
+      "timestamp": "2017-12-08T14:46:39+00:00",
+      "p_value": 0.015,
+      "available_at": "2019-12-15T06:27:14+00:00"
+    },
+    {
+      "timestamp": "2017-12-13T14:44:14+00:00",
+      "p_value": 0.0075,
+      "available_at": "2019-12-15T06:27:14+00:00"
+    },
+    {
+      "timestamp": "2017-12-17T09:19:53+00:00",
+      "p_value": 0.0025,
+      "available_at": "2019-12-15T06:27:14+00:00"
+    },
+    {
+      "timestamp": "2018-01-08T07:49:29+00:00",
+      "p_value": 0.005,
+      "available_at": "2019-12-15T06:27:14+00:00"
+    }
+  ],
+  "scores": [],
+  "metadata": {
+    "retrospective": true,
+    "trace_order": "start",
+    "input_format": "EventLog",
+    "score_output": "legacy API returns p-values only for alarms"
+  },
+  "configuration": {
+    "sub_log_size": 50,
+    "window_size": 6,
+    "num_permutations": 399,
+    "thresh_p_value": 0.025,
+    "max_no_change_points": 100,
+    "random_state": 73
+  },
+  "runtime_seconds": 22.919574,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 924394.44,
+        "tp": 0,
+        "fp": 5,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 2310986.1,
+        "tp": 0,
+        "fp": 5,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 4621972.2,
+        "tp": 0,
+        "fp": 5,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 0,
+    "published_count": 0,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

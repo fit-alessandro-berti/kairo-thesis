@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_06",
+  "library": "kairo",
+  "method": "intra-kmeans",
+  "profile": "recent",
+  "status": "ok",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "intra",
+    "features": {
+      "groups": [
+        "df_counts",
+        "case_progress",
+        "current_act"
+      ],
+      "sliding_window_size": 3,
+      "omitted_feature_groups": [
+        "act_freqs",
+        "act_set",
+        "past_acts"
+      ]
+    },
+    "reduction": {
+      "scaling": "minmax",
+      "feature_columns": 70,
+      "feature_rows": 212721,
+      "pca_components": 5,
+      "pca_seed": 0,
+      "pca_retained_variance": 0.7103979176245744
+    },
+    "clustering": {
+      "method": "kmeans",
+      "k": 5,
+      "random_seed": 0
+    },
+    "signal": {
+      "window": "28D",
+      "divergence": "tv",
+      "reference": "recent",
+      "lookback": 3,
+      "threshold_quantile": 0.95,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "changes": [
+    {
+      "index": 17,
+      "timestamp": "2018-09-06T00:00:00+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.3617617608330883,
+      "details": {
+        "window_end": "2018-10-04T00:00:00+00:00",
+        "rows": 33267,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2017-05-18T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": null, "details": {"window_end": "2017-06-15T00:00:00+00:00", "rows": 11, "coverage": 0.5940124834656084, "eligible": false}},
+    {"index": 1, "timestamp": "2017-06-15T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": null, "details": {"window_end": "2017-07-13T00:00:00+00:00", "rows": 4, "coverage": 1.0, "eligible": false}},
+    {"index": 2, "timestamp": "2017-07-13T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": null, "details": {"window_end": "2017-08-10T00:00:00+00:00", "rows": 11, "coverage": 1.0, "eligible": false}},
+    {"index": 3, "timestamp": "2017-08-10T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.38636363636363635, "details": {"window_end": "2017-09-07T00:00:00+00:00", "rows": 6, "coverage": 1.0, "eligible": false}},
+    {"index": 4, "timestamp": "2017-09-07T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16919191919191917, "details": {"window_end": "2017-10-05T00:00:00+00:00", "rows": 22, "coverage": 1.0, "eligible": false}},
+    {"index": 5, "timestamp": "2017-10-05T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.06060606060606055, "details": {"window_end": "2017-11-02T00:00:00+00:00", "rows": 36, "coverage": 1.0, "eligible": true}},
+    {"index": 6, "timestamp": "2017-11-02T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.0483164983164983, "details": {"window_end": "2017-11-30T00:00:00+00:00", "rows": 45, "coverage": 1.0, "eligible": true}},
+    {"index": 7, "timestamp": "2017-11-30T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14577829577829582, "details": {"window_end": "2017-12-28T00:00:00+00:00", "rows": 26, "coverage": 1.0, "eligible": false}},
+    {"index": 8, "timestamp": "2017-12-28T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.18219373219373225, "details": {"window_end": "2018-01-25T00:00:00+00:00", "rows": 65, "coverage": 1.0, "eligible": true}},
+    {"index": 9, "timestamp": "2018-01-25T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.026300794721847303, "details": {"window_end": "2018-02-22T00:00:00+00:00", "rows": 76, "coverage": 1.0, "eligible": true}},
+    {"index": 10, "timestamp": "2018-02-22T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.09942163100057837, "details": {"window_end": "2018-03-22T00:00:00+00:00", "rows": 84, "coverage": 1.0, "eligible": true}},
+    {"index": 11, "timestamp": "2018-03-22T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12933616091510824, "details": {"window_end": "2018-04-19T00:00:00+00:00", "rows": 126, "coverage": 1.0, "eligible": true}},
+    {"index": 12, "timestamp": "2018-04-19T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.0358709273182958, "details": {"window_end": "2018-05-17T00:00:00+00:00", "rows": 144, "coverage": 1.0, "eligible": true}},
+    {"index": 13, "timestamp": "2018-05-17T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.029301817345295595, "details": {"window_end": "2018-06-14T00:00:00+00:00", "rows": 184, "coverage": 1.0, "eligible": true}},
+    {"index": 14, "timestamp": "2018-06-14T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.058100414078674965, "details": {"window_end": "2018-07-12T00:00:00+00:00", "rows": 368, "coverage": 1.0, "eligible": true}},
+    {"index": 15, "timestamp": "2018-07-12T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.06798049238794496, "details": {"window_end": "2018-08-09T00:00:00+00:00", "rows": 1462, "coverage": 1.0, "eligible": true}},
+    {"index": 16, "timestamp": "2018-08-09T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.07104298282770173, "details": {"window_end": "2018-09-06T00:00:00+00:00", "rows": 4702, "coverage": 1.0, "eligible": true}},
+    {"index": 17, "timestamp": "2018-09-06T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3617617608330883, "details": {"window_end": "2018-10-04T00:00:00+00:00", "rows": 33267, "coverage": 1.0, "eligible": true}},
+    {"index": 18, "timestamp": "2018-10-04T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24479335584296347, "details": {"window_end": "2018-11-01T00:00:00+00:00", "rows": 33612, "coverage": 1.0, "eligible": true}},
+    {"index": 19, "timestamp": "2018-11-01T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.05401365102793727, "details": {"window_end": "2018-11-29T00:00:00+00:00", "rows": 29283, "coverage": 1.0, "eligible": true}},
+    {"index": 20, "timestamp": "2018-11-29T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.02970083561527468, "details": {"window_end": "2018-12-27T00:00:00+00:00", "rows": 33611, "coverage": 1.0, "eligible": true}},
+    {"index": 21, "timestamp": "2018-12-27T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.0352205461729892, "details": {"window_end": "2019-01-24T00:00:00+00:00", "rows": 33399, "coverage": 1.0, "eligible": true}},
+    {"index": 22, "timestamp": "2019-01-24T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.053302327248417866, "details": {"window_end": "2019-02-21T00:00:00+00:00", "rows": 38495, "coverage": 1.0, "eligible": true}},
+    {"index": 23, "timestamp": "2019-02-21T00:00:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1068556266495332, "details": {"window_end": "2019-03-21T00:00:00+00:00", "rows": 3682, "coverage": 0.4890620866402116, "eligible": false}}
+  ],
+  "metadata": {
+    "threshold": 0.2681870368409883,
+    "median_rows": 135.0,
+    "eligible_windows": 17,
+    "occupied_states": 5,
+    "distinct_feature_rows": 1144
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 558426.73,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 1396066.825,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 2792133.65,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 24,
+    "published_count": 24,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

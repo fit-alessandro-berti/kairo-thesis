@@ -1,0 +1,633 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_06",
+  "library": "pm4py",
+  "method": "dfg-frequency",
+  "profile": "permutation",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 3678,
+      "timestamp": "2018-09-25T03:18:23+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.4633807890283933,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": -0.08276437980218461,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.07563060473430884,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": -0.07078103646757838,
+          "[\"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\"]": -0.07078103646757838,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": 0.04015056461731493
+        }
+      }
+    },
+    {
+      "index": 5148,
+      "timestamp": "2018-10-02T09:54:47+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.44959248479458513,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Request deleted\"]": 0.23866154377833343,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.07423831885623677,
+          "[\"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\"]": -0.06254047633568277,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": 0.05239053601558938,
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": 0.05239053601558938
+        }
+      }
+    },
+    {
+      "index": 6177,
+      "timestamp": "2018-10-12T03:57:22+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.5133331683055453,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.09824952203883323,
+          "[\"Request created\", \"Pending Request for Network Information\"]": 0.07170294494238157,
+          "[\"Pending Request for Network Information\", \"Pending Request for Reservation Closure\"]": 0.07170294494238157,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": 0.07170294494238157,
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": 0.07170294494238157
+        }
+      }
+    },
+    {
+      "index": 9117,
+      "timestamp": "2018-10-24T03:28:59+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.43688251681649226,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.0959174694114453,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": -0.06842822505473108,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": -0.06307748476423175,
+          "[\"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\"]": -0.06307748476423175,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": 0.03907203907203907
+        }
+      }
+    },
+    {
+      "index": 10734,
+      "timestamp": "2018-11-06T09:25:35+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.523196973239106,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Request deleted\"]": 0.2133121255746993,
+          "[\"Service closure Request with BO responsibility\", \"Pending Request for Reservation Closure\"]": -0.06548862985495131,
+          "[\"Request created\", \"Pending Request for Network Information\"]": 0.06378968714685986,
+          "[\"Request created\", \"Service closure Request with network responsibility\"]": -0.06223780553878543,
+          "[\"Service closure Request with network responsibility\", \"Authorization Requested\"]": -0.06223780553878543
+        }
+      }
+    },
+    {
+      "index": 17202,
+      "timestamp": "2018-12-11T10:06:09+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.5468832698214153,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": 0.14219752631255542,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": 0.14088519035455016,
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": 0.1328838911858426,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.12065590463399432,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": -0.06013044356077564
+        }
+      }
+    },
+    {
+      "index": 20730,
+      "timestamp": "2018-12-31T10:27:10+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.6537794386838005,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": -0.18211967425941225,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": -0.16376726071049214,
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.16376726071049214,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.11790393013100436,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.07288445650891066
+        }
+      }
+    },
+    {
+      "index": 22494,
+      "timestamp": "2019-01-11T18:12:22.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.17762447475376086,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Request deleted\"]": -0.03636363636363636,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.009796164100799858,
+          "[\"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\"]": 0.009796164100799858,
+          "[\"Pending Request for Reservation Closure\", \"Pending Liquidation Request\"]": 0.00971875806312894,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": 0.00772626931567329
+        }
+      }
+    },
+    {
+      "index": 23229,
+      "timestamp": "2019-01-14T15:42:51+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.16967700366427843,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Request deleted\"]": -0.03218927463263275,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.02937035302382765,
+          "[\"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\"]": 0.029275218078566832,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.025327849657514202,
+          "[\"Request created\", \"Service closure Request with network responsibility\"]": -0.018080030443182474
+        }
+      }
+    },
+    {
+      "index": 23817,
+      "timestamp": "2019-01-16T18:27:03.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.34514878100888513,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Pending Request for Network Information\"]": -0.059726962457337884,
+          "[\"Pending Request for Network Information\", \"Request deleted\"]": -0.059726962457337884,
+          "[\"Request created\", \"Request deleted\"]": -0.04008167931342986,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.031143344709897616,
+          "[\"Pending Request for Reservation Closure\", \"Pending Liquidation Request\"]": 0.028567049935385558
+        }
+      }
+    },
+    {
+      "index": 26610,
+      "timestamp": "2019-01-30T01:15:05.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.19539433184476537,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Evaluating Request (NO registered letter)\", \"Service closure Request with network responsibility\"]": 0.02512159655016797,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.02279308529308527,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.02143609286466429,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.019167126309983448,
+          "[\"Network Adjustment Requested\", \"Service closure Request with BO responsibility\"]": -0.01838050945193802
+        }
+      }
+    },
+    {
+      "index": 27492,
+      "timestamp": "2019-02-01T16:16:08.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.5257820633233035,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": -0.1287335337453391,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": -0.12430167597765363,
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.12430167597765363,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.10531306849703898,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.059155947204768605
+        }
+      }
+    },
+    {
+      "index": 29256,
+      "timestamp": "2019-02-11T12:37:53+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.18231828809310113,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.037878432626381034,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.02631141425983162,
+          "[\"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\"]": -0.024499626984972826,
+          "[\"Pending Request for acquittance of heirs\", \"Request completed with account closure\"]": -0.024499626984972826,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.02005186685139792
+        }
+      }
+    },
+    {
+      "index": 30432,
+      "timestamp": "2019-02-16T23:34:18.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.3886281627402266,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.08263903188506802,
+          "[\"Pending Liquidation Request\", \"Back-Office Adjustment Requested\"]": -0.06419912459939071,
+          "[\"Back-Office Adjustment Requested\", \"Request completed with account closure\"]": -0.06296759750579466,
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": -0.0603448275862069,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.03812718124171722
+        }
+      }
+    },
+    {
+      "index": 31461,
+      "timestamp": "2019-02-21T12:31:00+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.2591647872932881,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Request created\", \"Request deleted\"]": -0.04586935004948862,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": 0.04083140877598152,
+          "[\"Request created\", \"Service closure Request with BO responsibility\"]": -0.03741669416034312,
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": 0.03522269877928075,
+          "[\"Request created\", \"Evaluating Request (NO registered letter)\"]": 0.034724513361926765
+        }
+      }
+    },
+    {
+      "index": 31755,
+      "timestamp": "2019-02-22T17:38:24.500000+00:00",
+      "available_at": "2019-03-06T16:38:59+00:00",
+      "score": 0.21302527118862968,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Pending Liquidation Request\", \"Request completed with account closure\"]": -0.04428393819193653,
+          "[\"Pending Liquidation Request\", \"Pending Request for acquittance of heirs\"]": 0.02436504647445385,
+          "[\"Pending Request for acquittance of heirs\", \"Request completed with account closure\"]": 0.023049257000769638,
+          "[\"Request created\", \"Request deleted\"]": -0.020521283523770053,
+          "[\"Service closure Request with network responsibility\", \"Service closure Request with BO responsibility\"]": -0.019520750695636732
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 150, "timestamp": "2018-09-10T15:42:03+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17075408696661326, "p_value": 0.01},
+    {"index": 297, "timestamp": "2018-09-12T03:06:28+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24343337347786548, "p_value": 0.01},
+    {"index": 444, "timestamp": "2018-09-13T03:10:53+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.28641058172216155, "p_value": 0.01},
+    {"index": 591, "timestamp": "2018-09-13T03:26:26+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17170385877744374, "p_value": 0.01},
+    {"index": 738, "timestamp": "2018-09-13T03:41:17+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3189556190999081, "p_value": 0.01},
+    {"index": 885, "timestamp": "2018-09-13T09:37:26+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24429478894925372, "p_value": 0.01},
+    {"index": 1032, "timestamp": "2018-09-14T03:16:43+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2982638774209717, "p_value": 0.01},
+    {"index": 1179, "timestamp": "2018-09-14T03:30:39+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.11907990006143923, "p_value": 0.01},
+    {"index": 1326, "timestamp": "2018-09-14T03:48:15+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.26745317334406377, "p_value": 0.01},
+    {"index": 1473, "timestamp": "2018-09-14T09:24:11+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.22326821451047854, "p_value": 0.01},
+    {"index": 1620, "timestamp": "2018-09-15T03:15:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3246165331151843, "p_value": 0.01},
+    {"index": 1767, "timestamp": "2018-09-15T03:26:02+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2110229262523461, "p_value": 0.01},
+    {"index": 1914, "timestamp": "2018-09-17T08:34:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.38735580870417574, "p_value": 0.01},
+    {"index": 2061, "timestamp": "2018-09-18T03:10:26+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.40907481521385824, "p_value": 0.01},
+    {"index": 2208, "timestamp": "2018-09-18T03:21:13+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3792425966477111, "p_value": 0.01},
+    {"index": 2355, "timestamp": "2018-09-19T03:09:12+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.41767379980449654, "p_value": 0.01},
+    {"index": 2502, "timestamp": "2018-09-19T03:22:07+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.29469045048215914, "p_value": 0.01},
+    {"index": 2649, "timestamp": "2018-09-19T16:18:19+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.27808418072961577, "p_value": 0.01},
+    {"index": 2796, "timestamp": "2018-09-20T03:16:37+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.33255527604303137, "p_value": 0.01},
+    {"index": 2943, "timestamp": "2018-09-20T09:57:22+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.26710802177772175, "p_value": 0.01},
+    {"index": 3090, "timestamp": "2018-09-21T03:15:06+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2046900518108574, "p_value": 0.01},
+    {"index": 3237, "timestamp": "2018-09-22T03:08:53+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3182183560435086, "p_value": 0.01},
+    {"index": 3384, "timestamp": "2018-09-22T03:22:57+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.36997559063662316, "p_value": 0.01},
+    {"index": 3531, "timestamp": "2018-09-25T03:05:19+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.4128814890133811, "p_value": 0.01},
+    {"index": 3678, "timestamp": "2018-09-25T03:18:23+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.4633807890283933, "p_value": 0.01},
+    {"index": 3825, "timestamp": "2018-09-26T03:05:37+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.4289395570212036, "p_value": 0.01},
+    {"index": 3972, "timestamp": "2018-09-26T03:19:09+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21134339410298336, "p_value": 0.01},
+    {"index": 4119, "timestamp": "2018-09-26T09:24:48+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3205441520617761, "p_value": 0.01},
+    {"index": 4266, "timestamp": "2018-09-27T03:14:15+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1665784890730282, "p_value": 0.04},
+    {"index": 4413, "timestamp": "2018-09-28T03:04:59+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2880108178379618, "p_value": 0.01},
+    {"index": 4560, "timestamp": "2018-09-28T03:20:50+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3029916852890774, "p_value": 0.01},
+    {"index": 4707, "timestamp": "2018-09-29T03:17:05+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.33016358955272, "p_value": 0.01},
+    {"index": 4854, "timestamp": "2018-09-29T03:27:58+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3047945324934681, "p_value": 0.01},
+    {"index": 5001, "timestamp": "2018-10-02T03:13:34+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16337179165911808, "p_value": 0.01},
+    {"index": 5148, "timestamp": "2018-10-02T09:54:47+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.44959248479458513, "p_value": 0.01},
+    {"index": 5295, "timestamp": "2018-10-08T08:43:56+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3461806441481657, "p_value": 0.01},
+    {"index": 5442, "timestamp": "2018-10-10T03:11:10+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.23737309549721852, "p_value": 0.01},
+    {"index": 5589, "timestamp": "2018-10-11T03:11:03+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15580770255140178, "p_value": 0.02},
+    {"index": 5736, "timestamp": "2018-10-12T03:19:38+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24091303139728937, "p_value": 0.01},
+    {"index": 5883, "timestamp": "2018-10-12T03:35:59+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08794927937162439, "p_value": 0.3},
+    {"index": 6030, "timestamp": "2018-10-12T03:47:01+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08493218591391152, "p_value": 0.18},
+    {"index": 6177, "timestamp": "2018-10-12T03:57:22+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.5133331683055453, "p_value": 0.01},
+    {"index": 6324, "timestamp": "2018-10-12T11:27:24+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.46091178813059136, "p_value": 0.01},
+    {"index": 6471, "timestamp": "2018-10-13T03:17:47+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2556494081058611, "p_value": 0.01},
+    {"index": 6618, "timestamp": "2018-10-13T03:28:46+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.40276804834498586, "p_value": 0.01},
+    {"index": 6765, "timestamp": "2018-10-15T10:19:28+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2692243799430093, "p_value": 0.01},
+    {"index": 6912, "timestamp": "2018-10-16T03:07:52+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.4189285012057696, "p_value": 0.01},
+    {"index": 7059, "timestamp": "2018-10-16T03:18:35+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2900892944608691, "p_value": 0.01},
+    {"index": 7206, "timestamp": "2018-10-16T09:49:04+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.18456794897276224, "p_value": 0.01},
+    {"index": 7353, "timestamp": "2018-10-17T03:10:27+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.31066008643473586, "p_value": 0.01},
+    {"index": 7500, "timestamp": "2018-10-17T03:20:55+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.27810574780510305, "p_value": 0.01},
+    {"index": 7647, "timestamp": "2018-10-18T03:09:29+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2625103655118314, "p_value": 0.01},
+    {"index": 7794, "timestamp": "2018-10-18T03:20:49+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3239372976672404, "p_value": 0.01},
+    {"index": 7941, "timestamp": "2018-10-19T03:29:35+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21296587790280397, "p_value": 0.01},
+    {"index": 8088, "timestamp": "2018-10-20T03:05:29+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3268741016738931, "p_value": 0.01},
+    {"index": 8235, "timestamp": "2018-10-20T03:18:56+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3119801267755962, "p_value": 0.01},
+    {"index": 8382, "timestamp": "2018-10-22T09:34:15+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2619674084189774, "p_value": 0.01},
+    {"index": 8529, "timestamp": "2018-10-23T03:11:26+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.36040379128611416, "p_value": 0.01},
+    {"index": 8676, "timestamp": "2018-10-23T03:21:58+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.393318521000461, "p_value": 0.01},
+    {"index": 8823, "timestamp": "2018-10-24T03:06:50+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3955447419712771, "p_value": 0.01},
+    {"index": 8970, "timestamp": "2018-10-24T03:19:13+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10110355435845077, "p_value": 0.14},
+    {"index": 9117, "timestamp": "2018-10-24T03:28:59+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.43688251681649226, "p_value": 0.01},
+    {"index": 9264, "timestamp": "2018-10-25T03:03:56+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.41203809987360035, "p_value": 0.01},
+    {"index": 9411, "timestamp": "2018-10-25T03:17:34+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.11489945663294115, "p_value": 0.05},
+    {"index": 9558, "timestamp": "2018-10-25T03:27:35+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3120416463187769, "p_value": 0.01},
+    {"index": 9705, "timestamp": "2018-10-26T03:20:30+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2430674828086754, "p_value": 0.01},
+    {"index": 9852, "timestamp": "2018-10-27T03:11:45+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3056652721007331, "p_value": 0.01},
+    {"index": 9999, "timestamp": "2018-10-29T10:03:35+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24305732094914395, "p_value": 0.01},
+    {"index": 10146, "timestamp": "2018-10-30T03:10:27+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17968498840826896, "p_value": 0.02},
+    {"index": 10293, "timestamp": "2018-10-31T03:04:25+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.31384989413130604, "p_value": 0.01},
+    {"index": 10440, "timestamp": "2018-10-31T03:17:10+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.28130910843096485, "p_value": 0.01},
+    {"index": 10587, "timestamp": "2018-11-01T03:08:33+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2638322898315104, "p_value": 0.01},
+    {"index": 10734, "timestamp": "2018-11-06T09:25:35+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.523196973239106, "p_value": 0.01},
+    {"index": 10881, "timestamp": "2018-11-08T16:39:39+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.37239512963690513, "p_value": 0.01},
+    {"index": 11028, "timestamp": "2018-11-13T03:08:17+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3280928333282466, "p_value": 0.01},
+    {"index": 11175, "timestamp": "2018-11-14T03:04:08+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.4784694203751661, "p_value": 0.01},
+    {"index": 11322, "timestamp": "2018-11-14T03:21:45+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2833263346241997, "p_value": 0.01},
+    {"index": 11469, "timestamp": "2018-11-14T11:20:55+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.4090129364226734, "p_value": 0.01},
+    {"index": 11616, "timestamp": "2018-11-15T03:12:36+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.4964074536722538, "p_value": 0.01},
+    {"index": 11763, "timestamp": "2018-11-15T03:23:40+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.26998323030900895, "p_value": 0.01},
+    {"index": 11910, "timestamp": "2018-11-15T10:26:59+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2959231718392054, "p_value": 0.01},
+    {"index": 12057, "timestamp": "2018-11-17T03:11:06+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.40751187477403494, "p_value": 0.01},
+    {"index": 12204, "timestamp": "2018-11-17T03:23:29+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2733642591049527, "p_value": 0.01},
+    {"index": 12351, "timestamp": "2018-11-19T09:13:21+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21326967197549487, "p_value": 0.01},
+    {"index": 12498, "timestamp": "2018-11-20T03:17:37+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2839626610652617, "p_value": 0.01},
+    {"index": 12645, "timestamp": "2018-11-20T03:29:23+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3678836037865377, "p_value": 0.01},
+    {"index": 12792, "timestamp": "2018-11-20T10:54:15+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2699025827222906, "p_value": 0.01},
+    {"index": 12939, "timestamp": "2018-11-21T03:20:41+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.23335045422936207, "p_value": 0.01},
+    {"index": 13086, "timestamp": "2018-11-22T04:18:38+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.352981937503824, "p_value": 0.01},
+    {"index": 13233, "timestamp": "2018-11-22T04:47:18+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3659114879069419, "p_value": 0.01},
+    {"index": 13380, "timestamp": "2018-11-23T03:05:51+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.38297454009185516, "p_value": 0.01},
+    {"index": 13527, "timestamp": "2018-11-23T03:17:36+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1948759912537653, "p_value": 0.01},
+    {"index": 13674, "timestamp": "2018-11-23T09:05:37+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21796619119964336, "p_value": 0.01},
+    {"index": 13821, "timestamp": "2018-11-24T03:08:20+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3729649699346521, "p_value": 0.01},
+    {"index": 13968, "timestamp": "2018-11-24T03:19:56+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24709945299636785, "p_value": 0.01},
+    {"index": 14115, "timestamp": "2018-11-27T03:11:14+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.34887988508265627, "p_value": 0.01},
+    {"index": 14262, "timestamp": "2018-11-27T12:41:13+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3469267586445888, "p_value": 0.01},
+    {"index": 14409, "timestamp": "2018-11-28T03:13:18+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21597147009019088, "p_value": 0.01},
+    {"index": 14556, "timestamp": "2018-11-28T12:47:08+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2879812529577022, "p_value": 0.01},
+    {"index": 14703, "timestamp": "2018-11-29T03:13:08+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.19068678664154817, "p_value": 0.01},
+    {"index": 14850, "timestamp": "2018-11-29T03:23:22+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.26832528585031795, "p_value": 0.01},
+    {"index": 14997, "timestamp": "2018-11-29T12:56:07+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3861684518740745, "p_value": 0.01},
+    {"index": 15144, "timestamp": "2018-11-30T01:46:00.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.23569785174137586, "p_value": 0.01},
+    {"index": 15291, "timestamp": "2018-11-30T13:17:01+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3557151457509023, "p_value": 0.01},
+    {"index": 15438, "timestamp": "2018-12-01T03:08:25+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21235664723853737, "p_value": 0.01},
+    {"index": 15585, "timestamp": "2018-12-03T07:37:58+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.34898497654049504, "p_value": 0.01},
+    {"index": 15732, "timestamp": "2018-12-03T18:14:36+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.35050447157939324, "p_value": 0.01},
+    {"index": 15879, "timestamp": "2018-12-04T03:20:29+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.35503068156379514, "p_value": 0.01},
+    {"index": 16026, "timestamp": "2018-12-04T13:45:07+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.26532401764294544, "p_value": 0.01},
+    {"index": 16173, "timestamp": "2018-12-06T10:35:56+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3258195573887397, "p_value": 0.01},
+    {"index": 16320, "timestamp": "2018-12-07T18:26:52.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.22224670531143484, "p_value": 0.01},
+    {"index": 16467, "timestamp": "2018-12-09T03:56:29+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12403368814757473, "p_value": 0.05},
+    {"index": 16614, "timestamp": "2018-12-09T16:01:01.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10223674744217641, "p_value": 0.29},
+    {"index": 16761, "timestamp": "2018-12-10T04:05:29.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21962568134198548, "p_value": 0.01},
+    {"index": 16908, "timestamp": "2018-12-10T14:06:39+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17890314885043254, "p_value": 0.01},
+    {"index": 17055, "timestamp": "2018-12-11T01:49:05+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1626176728464818, "p_value": 0.01},
+    {"index": 17202, "timestamp": "2018-12-11T10:06:09+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.5468832698214153, "p_value": 0.01},
+    {"index": 17349, "timestamp": "2018-12-11T15:05:45.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.5077701713345197, "p_value": 0.01},
+    {"index": 17496, "timestamp": "2018-12-12T08:44:52.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3999819755840161, "p_value": 0.01},
+    {"index": 17643, "timestamp": "2018-12-12T15:58:18+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.47238645249784295, "p_value": 0.01},
+    {"index": 17790, "timestamp": "2018-12-13T03:32:29+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.4029524305165378, "p_value": 0.01},
+    {"index": 17937, "timestamp": "2018-12-14T00:22:29+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3678046960512308, "p_value": 0.01},
+    {"index": 18084, "timestamp": "2018-12-14T16:50:50+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14071098160553058, "p_value": 0.03},
+    {"index": 18231, "timestamp": "2018-12-16T00:03:59+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16671438827349755, "p_value": 0.01},
+    {"index": 18378, "timestamp": "2018-12-16T23:28:42.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14785156795016488, "p_value": 0.01},
+    {"index": 18525, "timestamp": "2018-12-17T10:15:25+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.24818296762647626, "p_value": 0.01},
+    {"index": 18672, "timestamp": "2018-12-17T17:16:06.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14456237607658984, "p_value": 0.01},
+    {"index": 18819, "timestamp": "2018-12-18T09:02:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.27134275757778664, "p_value": 0.01},
+    {"index": 18966, "timestamp": "2018-12-19T10:16:07+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2643883778960887, "p_value": 0.01},
+    {"index": 19113, "timestamp": "2018-12-19T16:31:24+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16667296950135027, "p_value": 0.01},
+    {"index": 19260, "timestamp": "2018-12-20T08:17:06+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15254600956423198, "p_value": 0.01},
+    {"index": 19407, "timestamp": "2018-12-21T03:23:15+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.20722560556322017, "p_value": 0.01},
+    {"index": 19554, "timestamp": "2018-12-21T15:37:38+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21048753792331595, "p_value": 0.01},
+    {"index": 19701, "timestamp": "2018-12-24T02:12:09.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12140338576166411, "p_value": 0.1},
+    {"index": 19848, "timestamp": "2018-12-25T01:54:53.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10995705561540044, "p_value": 0.16},
+    {"index": 19995, "timestamp": "2018-12-26T01:50:12.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1027704822516666, "p_value": 0.21},
+    {"index": 20142, "timestamp": "2018-12-27T14:55:25+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1357917192494982, "p_value": 0.03},
+    {"index": 20289, "timestamp": "2018-12-28T14:15:15.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10223778558592823, "p_value": 0.24},
+    {"index": 20436, "timestamp": "2018-12-30T01:22:51+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.38707689701443837, "p_value": 0.01},
+    {"index": 20583, "timestamp": "2018-12-31T08:38:48+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.29244808940478534, "p_value": 0.01},
+    {"index": 20730, "timestamp": "2018-12-31T10:27:10+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.6537794386838005, "p_value": 0.01},
+    {"index": 20877, "timestamp": "2019-01-01T01:50:12.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21471306878493468, "p_value": 0.01},
+    {"index": 21024, "timestamp": "2019-01-02T10:15:32+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.4267915864887455, "p_value": 0.01},
+    {"index": 21171, "timestamp": "2019-01-04T10:09:57+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.4751634310600582, "p_value": 0.01},
+    {"index": 21318, "timestamp": "2019-01-07T06:30:36+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.18600350316670713, "p_value": 0.01},
+    {"index": 21465, "timestamp": "2019-01-08T03:05:50.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.20734242061382785, "p_value": 0.01},
+    {"index": 21612, "timestamp": "2019-01-08T16:19:57+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.0984861612425603, "p_value": 0.35},
+    {"index": 21759, "timestamp": "2019-01-09T15:53:49+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15453725952039496, "p_value": 0.02},
+    {"index": 21906, "timestamp": "2019-01-10T12:44:03+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12508630841891988, "p_value": 0.07},
+    {"index": 22053, "timestamp": "2019-01-10T18:12:03.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15434394533438867, "p_value": 0.01},
+    {"index": 22200, "timestamp": "2019-01-11T03:05:11+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16819307013701945, "p_value": 0.01},
+    {"index": 22347, "timestamp": "2019-01-11T11:21:18+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1727783719095951, "p_value": 0.01},
+    {"index": 22494, "timestamp": "2019-01-11T18:12:22.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17762447475376086, "p_value": 0.01},
+    {"index": 22641, "timestamp": "2019-01-12T15:45:28+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14514986646362077, "p_value": 0.01},
+    {"index": 22788, "timestamp": "2019-01-13T06:11:19.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13237415399062571, "p_value": 0.08},
+    {"index": 22935, "timestamp": "2019-01-13T19:09:03+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.10481395762965932, "p_value": 0.19},
+    {"index": 23082, "timestamp": "2019-01-14T06:06:54.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1574107457040399, "p_value": 0.01},
+    {"index": 23229, "timestamp": "2019-01-14T15:42:51+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16967700366427843, "p_value": 0.01},
+    {"index": 23376, "timestamp": "2019-01-15T02:04:53+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.133225014818855, "p_value": 0.04},
+    {"index": 23523, "timestamp": "2019-01-15T09:47:19+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1979908678724831, "p_value": 0.01},
+    {"index": 23670, "timestamp": "2019-01-16T08:39:53+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.23171471079796982, "p_value": 0.01},
+    {"index": 23817, "timestamp": "2019-01-16T18:27:03.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.34514878100888513, "p_value": 0.01},
+    {"index": 23964, "timestamp": "2019-01-17T15:28:42+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16090441770365788, "p_value": 0.02},
+    {"index": 24111, "timestamp": "2019-01-19T09:16:44.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2649524393993164, "p_value": 0.01},
+    {"index": 24258, "timestamp": "2019-01-20T16:21:30.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15755953108036436, "p_value": 0.01},
+    {"index": 24405, "timestamp": "2019-01-21T04:51:09+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16443010166371014, "p_value": 0.01},
+    {"index": 24552, "timestamp": "2019-01-21T13:30:25.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15174503268616876, "p_value": 0.02},
+    {"index": 24699, "timestamp": "2019-01-21T17:46:06+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1811816906503722, "p_value": 0.01},
+    {"index": 24846, "timestamp": "2019-01-22T03:09:21+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21519780816462666, "p_value": 0.01},
+    {"index": 24993, "timestamp": "2019-01-23T00:57:37+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12734689721969694, "p_value": 0.1},
+    {"index": 25140, "timestamp": "2019-01-23T14:49:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12285580718479402, "p_value": 0.07},
+    {"index": 25287, "timestamp": "2019-01-24T10:28:01+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.18861749442672743, "p_value": 0.01},
+    {"index": 25434, "timestamp": "2019-01-25T01:29:38.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1193320152322052, "p_value": 0.07},
+    {"index": 25581, "timestamp": "2019-01-25T12:25:36.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.0637223056374385, "p_value": 0.83},
+    {"index": 25728, "timestamp": "2019-01-26T01:54:31.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.15349706552910908, "p_value": 0.01},
+    {"index": 25875, "timestamp": "2019-01-27T13:01:56.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.0739273776594555, "p_value": 0.58},
+    {"index": 26022, "timestamp": "2019-01-28T01:20:03+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.09527344015746646, "p_value": 0.3},
+    {"index": 26169, "timestamp": "2019-01-28T11:58:39+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17524826183430567, "p_value": 0.01},
+    {"index": 26316, "timestamp": "2019-01-28T15:55:04+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.18185284260942192, "p_value": 0.01},
+    {"index": 26463, "timestamp": "2019-01-29T02:59:43+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13191153024958824, "p_value": 0.02},
+    {"index": 26610, "timestamp": "2019-01-30T01:15:05.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.19539433184476537, "p_value": 0.01},
+    {"index": 26757, "timestamp": "2019-01-30T15:48:33.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16320994277198905, "p_value": 0.01},
+    {"index": 26904, "timestamp": "2019-01-31T03:23:05.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1862950931017151, "p_value": 0.01},
+    {"index": 27051, "timestamp": "2019-01-31T15:00:35+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.08978216737401155, "p_value": 0.41},
+    {"index": 27198, "timestamp": "2019-02-01T01:31:09+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17125492878777226, "p_value": 0.01},
+    {"index": 27345, "timestamp": "2019-02-01T11:12:24.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.37765975688484676, "p_value": 0.01},
+    {"index": 27492, "timestamp": "2019-02-01T16:16:08.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.5257820633233035, "p_value": 0.01},
+    {"index": 27639, "timestamp": "2019-02-02T03:03:41+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.42923927432342107, "p_value": 0.01},
+    {"index": 27786, "timestamp": "2019-02-05T03:26:47.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.30081800796399566, "p_value": 0.01},
+    {"index": 27933, "timestamp": "2019-02-06T11:22:03+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2458832016890514, "p_value": 0.01},
+    {"index": 28080, "timestamp": "2019-02-07T17:33:43+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2512652203520183, "p_value": 0.01},
+    {"index": 28227, "timestamp": "2019-02-08T09:59:40+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17432259315234497, "p_value": 0.01},
+    {"index": 28374, "timestamp": "2019-02-08T15:04:21+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14059814472219587, "p_value": 0.02},
+    {"index": 28521, "timestamp": "2019-02-09T13:50:06.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1812568228096044, "p_value": 0.01},
+    {"index": 28668, "timestamp": "2019-02-10T02:18:10+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12423099209821088, "p_value": 0.02},
+    {"index": 28815, "timestamp": "2019-02-10T12:09:49.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12491318167599406, "p_value": 0.05},
+    {"index": 28962, "timestamp": "2019-02-10T16:58:37+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1515478647973975, "p_value": 0.01},
+    {"index": 29109, "timestamp": "2019-02-11T03:20:15+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16921505228325467, "p_value": 0.01},
+    {"index": 29256, "timestamp": "2019-02-11T12:37:53+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.18231828809310113, "p_value": 0.01},
+    {"index": 29403, "timestamp": "2019-02-11T16:49:46+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.14619125363914806, "p_value": 0.04},
+    {"index": 29550, "timestamp": "2019-02-12T03:41:14+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.25036815900096787, "p_value": 0.01},
+    {"index": 29697, "timestamp": "2019-02-13T01:50:29.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.19138938078679524, "p_value": 0.01},
+    {"index": 29844, "timestamp": "2019-02-13T15:29:50+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.1802160010347185, "p_value": 0.01},
+    {"index": 29991, "timestamp": "2019-02-14T03:17:27+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.16620756245763083, "p_value": 0.01},
+    {"index": 30138, "timestamp": "2019-02-14T15:50:23.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17196009434904846, "p_value": 0.01},
+    {"index": 30285, "timestamp": "2019-02-15T06:27:22.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3647995466525641, "p_value": 0.01},
+    {"index": 30432, "timestamp": "2019-02-16T23:34:18.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.3886281627402266, "p_value": 0.01},
+    {"index": 30579, "timestamp": "2019-02-17T17:57:43.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13317796774258528, "p_value": 0.01},
+    {"index": 30726, "timestamp": "2019-02-18T04:24:46.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.23480987006809984, "p_value": 0.01},
+    {"index": 30873, "timestamp": "2019-02-18T13:34:04.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2130170323145025, "p_value": 0.01},
+    {"index": 31020, "timestamp": "2019-02-19T01:05:13.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21434635214332892, "p_value": 0.01},
+    {"index": 31167, "timestamp": "2019-02-19T23:54:49+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12749514058389927, "p_value": 0.11},
+    {"index": 31314, "timestamp": "2019-02-20T11:42:13+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.18541441179734003, "p_value": 0.01},
+    {"index": 31461, "timestamp": "2019-02-21T12:31:00+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.2591647872932881, "p_value": 0.01},
+    {"index": 31608, "timestamp": "2019-02-22T03:46:32+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.12078526348740158, "p_value": 0.16},
+    {"index": 31755, "timestamp": "2019-02-22T17:38:24.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.21302527118862968, "p_value": 0.01},
+    {"index": 31902, "timestamp": "2019-02-25T11:01:18+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.17079230110254734, "p_value": 0.01},
+    {"index": 32049, "timestamp": "2019-02-26T14:20:08.500000+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.13057518480506725, "p_value": 0.15},
+    {"index": 32196, "timestamp": "2019-02-28T12:25:41+00:00", "available_at": "2019-03-06T16:38:59+00:00", "score": 0.23305025732151685, "p_value": 0.01}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "representation": "directly_follows_frequency",
+    "method": "dfg_frequency",
+    "test": "permutation",
+    "retrospective": true,
+    "window_size": 150,
+    "step": 147,
+    "alpha": 0.03,
+    "min_effect": 0.1,
+    "persistence": 2,
+    "min_separation": 150,
+    "permutations": 99,
+    "permutation_block_size": 1,
+    "random_state": 73,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 150,
+    "step": 147,
+    "min_separation": 150,
+    "permutations": 99,
+    "random_state": 73,
+    "alpha": 0.03,
+    "persistence": 2,
+    "min_effect": 0.1
+  },
+  "runtime_seconds": 13.826579,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 558426.73,
+        "tp": 0,
+        "fp": 16,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 1396066.825,
+        "tp": 1,
+        "fp": 15,
+        "fn": 0,
+        "precision": 0.0625,
+        "recall": 1.0,
+        "f1": 0.11764705882352941,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": 1287645.0,
+            "distance_to_truth_interval_seconds": 1287645.0,
+            "availability_minus_onset_seconds": 8655215.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 2792133.65,
+        "tp": 1,
+        "fp": 15,
+        "fn": 0,
+        "precision": 0.0625,
+        "recall": 1.0,
+        "f1": 0.11764705882352941,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": 1287645.0,
+            "distance_to_truth_interval_seconds": 1287645.0,
+            "availability_minus_onset_seconds": 8655215.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 219,
+    "published_count": 219,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ceravolo_rp",
+  "library": "pm4py",
+  "method": "graph-metrics",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 405,
+      "timestamp": "2019-01-16T03:49:20.341000+00:00",
+      "available_at": "2019-01-24T19:47:54.864000+00:00",
+      "score": 28.809523809523796,
+      "details": {
+        "metric_changes": {
+          "activity_count": 0.3333333333333339,
+          "edge_density": -0.0003968253968253954,
+          "branching_fraction": 0.015277777777777779,
+          "merging_fraction": 0.01944444444444443,
+          "cyclic_activity_fraction": -0.004166666666666652
+        }
+      }
+    },
+    {
+      "index": 540,
+      "timestamp": "2019-01-18T07:54:10.437000+00:00",
+      "available_at": "2019-01-24T19:47:54.864000+00:00",
+      "score": 29.548229548229543,
+      "details": {
+        "metric_changes": {
+          "activity_count": -0.3333333333333339,
+          "edge_density": 0.00039682539682538154,
+          "branching_fraction": -0.015277777777777779,
+          "merging_fraction": -0.01944444444444443,
+          "cyclic_activity_fraction": 0.004166666666666652
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2019-01-10T10:58:54.986000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 45, "timestamp": "2019-01-11T05:20:10.046000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2019-01-11T17:59:10.701000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 135, "timestamp": "2019-01-12T09:59:56.065000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 180, "timestamp": "2019-01-13T00:54:25.512000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 225, "timestamp": "2019-01-13T16:17:09.368000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 270, "timestamp": "2019-01-14T07:27:53.166000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 315, "timestamp": "2019-01-14T22:01:09.357000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 360, "timestamp": "2019-01-15T14:32:07.794000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 405, "timestamp": "2019-01-16T03:49:20.341000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 450, "timestamp": "2019-01-16T18:11:56.315000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 495, "timestamp": "2019-01-17T09:49:00.228000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 10.734900802433865},
+    {"index": 540, "timestamp": "2019-01-18T07:54:10.437000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 10.734900802433865},
+    {"index": 585, "timestamp": "2019-01-18T22:52:49.752000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 630, "timestamp": "2019-01-19T14:18:16.600000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 675, "timestamp": "2019-01-20T03:49:28.265000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 720, "timestamp": "2019-01-20T18:51:33.404000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 765, "timestamp": "2019-01-21T10:18:23.155000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 810, "timestamp": "2019-01-22T01:38:56.178000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 855, "timestamp": "2019-01-22T15:27:32.530000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 900, "timestamp": "2019-01-23T06:31:39.205000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0},
+    {"index": 945, "timestamp": "2019-01-23T22:37:55.396000+00:00", "available_at": "2019-01-24T19:47:54.864000+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "window_size": 45,
+    "min_edge_count": 1,
+    "min_size": 3,
+    "penalty": 12.0,
+    "standardize": true,
+    "metrics": [
+      "activity_count",
+      "edge_density",
+      "branching_fraction",
+      "merging_fraction",
+      "weak_component_count",
+      "cyclic_activity_fraction",
+      "self_loop_fraction"
+    ],
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 45,
+    "penalty": 12,
+    "min_size": 3
+  },
+  "runtime_seconds": 1.340089,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 12520.74864,
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 31301.8716,
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 62603.7432,
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 22,
+    "published_count": 22,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

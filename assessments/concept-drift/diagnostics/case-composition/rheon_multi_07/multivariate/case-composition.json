@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_multi_07",
+  "input": {
+    "thesis_files": "https://drive.google.com/drive/folders/1sie4iFTUNmHuyvMVoW8tktyvtoUzbmEp",
+    "event_log": "https://drive.google.com/file/d/1nBwodkc5nzDX6M4qdh2nLTyKxoJ8l7rO/view",
+    "sha256": "f204a0c0169dfb8143b398392aa3aa0336779a7b4a75c99fe952d5ebe0a54eb1",
+    "ground_truth": "https://drive.google.com/file/d/1iz22QHflLChXNpQfIe7iw9BkOWaT8JcD/view",
+    "ground_truth_sha256": "050367455a0ea3883046bd5481b5270235b353be964dd4287affbed948316525",
+    "generator_scenario": "multi_resource_3",
+    "truth_time_basis": "generator metadata expressed in UTC"
+  },
+  "first_timestamp": "2025-01-06T00:00:00+00:00",
+  "last_timestamp": "2025-03-02T03:38:27+00:00",
+  "truth_annotations": [
+    {
+      "id": "d01",
+      "kind": "workload",
+      "perspective": "resource",
+      "mode": "sudden",
+      "start": "2025-01-19T18:00:00+00:00",
+      "end": "2025-01-19T18:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.25
+      ]
+    },
+    {
+      "id": "d02",
+      "kind": "pool_size",
+      "perspective": "resource",
+      "mode": "sudden",
+      "start": "2025-02-02T12:00:00+00:00",
+      "end": "2025-02-02T12:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.5
+      ]
+    },
+    {
+      "id": "d03",
+      "kind": "reassignment",
+      "perspective": "resource",
+      "mode": "gradual",
+      "start": "2025-02-13T12:00:00+00:00",
+      "end": "2025-02-21T18:00:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.7,
+        0.85
+      ]
+    }
+  ],
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2025-01-19T18:00:00+00:00",
+      "end": "2025-01-19T18:00:00+00:00",
+      "annotations": [
+        "d01"
+      ]
+    },
+    {
+      "id": "d02",
+      "start": "2025-02-02T12:00:00+00:00",
+      "end": "2025-02-02T12:00:00+00:00",
+      "annotations": [
+        "d02"
+      ]
+    },
+    {
+      "id": "d03",
+      "start": "2025-02-13T12:00:00+00:00",
+      "end": "2025-02-21T18:00:00+00:00",
+      "annotations": [
+        "d03"
+      ]
+    }
+  ],
+  "library": "pm4py",
+  "method": "multivariate",
+  "profile": "case-composition",
+  "detector_source_revision": "765435bc7f5190adf30be7314d7158b92ff433c4",
+  "status": "ok",
+  "configuration": {
+    "window_size": 142,
+    "step": 28,
+    "min_separation": 142,
+    "permutations": 99,
+    "random_state": 73,
+    "alpha": 0.03,
+    "persistence": 2,
+    "features": [
+      [
+        "case_category",
+        "region"
+      ],
+      [
+        "case_numeric",
+        "amount"
+      ]
+    ],
+    "method": "mmd"
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 47651.07,
+        "tp": 0,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 119127.675,
+        "tp": 0,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 238255.35,
+        "tp": 0,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      }
+    }
+  },
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 842,
+      "timestamp": "2025-01-15T13:01:55+00:00",
+      "available_at": "2025-03-02T03:38:27+00:00",
+      "score": 0.020000726479770137,
+      "p_value": 0.03,
+      "details": {
+        "changed_means": {
+          "[\"case_numeric\", \"amount\"]": -0.2852015058004432,
+          "[\"case_category\", \"region\", \"region_2\"]": 0.014084507042253516,
+          "[\"case_category\", \"region\", \"region_1\"]": -0.014084507042253502
+        },
+        "bandwidth": 1.2539615030180467
+      }
+    }
+  ],
+  "scores": [
+    {"index": 142, "timestamp": "2025-01-07T18:44:52+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0027285107177059675, "p_value": 0.7},
+    {"index": 170, "timestamp": "2025-01-08T02:42:18+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0011292125829229782, "p_value": 0.96},
+    {"index": 198, "timestamp": "2025-01-08T10:55:53+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0025460898360649686, "p_value": 0.78},
+    {"index": 226, "timestamp": "2025-01-08T18:03:51+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0037246713392495856, "p_value": 0.54},
+    {"index": 254, "timestamp": "2025-01-09T02:35:21+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0048740298572245155, "p_value": 0.42},
+    {"index": 282, "timestamp": "2025-01-09T11:47:46+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.005911090501522054, "p_value": 0.4},
+    {"index": 310, "timestamp": "2025-01-09T17:19:52+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.005645759214786272, "p_value": 0.43},
+    {"index": 338, "timestamp": "2025-01-09T22:34:01+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.003146357699754798, "p_value": 0.69},
+    {"index": 366, "timestamp": "2025-01-10T06:57:08+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0017607162933277465, "p_value": 0.82},
+    {"index": 394, "timestamp": "2025-01-10T16:13:39+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.004682959660577302, "p_value": 0.51},
+    {"index": 422, "timestamp": "2025-01-11T00:17:26+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.011445280294355653, "p_value": 0.11},
+    {"index": 450, "timestamp": "2025-01-11T09:37:46+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.018964089590390865, "p_value": 0.02},
+    {"index": 478, "timestamp": "2025-01-11T15:18:03+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.017690107931996435, "p_value": 0.04},
+    {"index": 506, "timestamp": "2025-01-11T21:17:52+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.004982498623190779, "p_value": 0.45},
+    {"index": 534, "timestamp": "2025-01-12T04:24:01+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.002741743542021391, "p_value": 0.68},
+    {"index": 562, "timestamp": "2025-01-12T11:58:30+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.002971589909624095, "p_value": 0.71},
+    {"index": 590, "timestamp": "2025-01-12T19:06:35+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.009813848189098806, "p_value": 0.18},
+    {"index": 618, "timestamp": "2025-01-13T01:43:19+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.017663763116817055, "p_value": 0.01},
+    {"index": 646, "timestamp": "2025-01-13T10:19:45+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.01708097757319016, "p_value": 0.06},
+    {"index": 674, "timestamp": "2025-01-13T16:11:40+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.015198669450513513, "p_value": 0.06},
+    {"index": 702, "timestamp": "2025-01-13T22:49:39+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.011522051066117811, "p_value": 0.14},
+    {"index": 730, "timestamp": "2025-01-14T05:13:09+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.003751796783547867, "p_value": 0.68},
+    {"index": 758, "timestamp": "2025-01-14T14:25:10+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0026203161426645583, "p_value": 0.83},
+    {"index": 786, "timestamp": "2025-01-14T20:50:50+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.007895797673111993, "p_value": 0.21},
+    {"index": 814, "timestamp": "2025-01-15T05:28:13+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0064166185242806595, "p_value": 0.31},
+    {"index": 842, "timestamp": "2025-01-15T13:01:55+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.020000726479770137, "p_value": 0.03},
+    {"index": 870, "timestamp": "2025-01-15T21:53:54+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.01708946651514376, "p_value": 0.03},
+    {"index": 898, "timestamp": "2025-01-16T05:33:06+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.012796581582714461, "p_value": 0.08},
+    {"index": 926, "timestamp": "2025-01-16T13:10:19+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.005712107841129743, "p_value": 0.33},
+    {"index": 954, "timestamp": "2025-01-16T20:33:48+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.009207432196392196, "p_value": 0.18},
+    {"index": 982, "timestamp": "2025-01-17T06:04:26+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0028316742871263845, "p_value": 0.69},
+    {"index": 1010, "timestamp": "2025-01-17T13:11:27+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.006724343973417479, "p_value": 0.27},
+    {"index": 1038, "timestamp": "2025-01-17T18:29:59+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.01081042843745883, "p_value": 0.14},
+    {"index": 1066, "timestamp": "2025-01-17T23:42:21+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.006489279194874298, "p_value": 0.33},
+    {"index": 1094, "timestamp": "2025-01-18T06:30:23+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.006872648088976918, "p_value": 0.29},
+    {"index": 1122, "timestamp": "2025-01-18T13:36:42+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.005484148370989761, "p_value": 0.32},
+    {"index": 1150, "timestamp": "2025-01-18T19:22:00+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.005782073366544793, "p_value": 0.34},
+    {"index": 1178, "timestamp": "2025-01-19T03:43:39+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.003776357150853782, "p_value": 0.6},
+    {"index": 1206, "timestamp": "2025-01-19T12:27:05+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0007221674493786967, "p_value": 0.95},
+    {"index": 1234, "timestamp": "2025-01-19T20:49:36+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0019665428417439124, "p_value": 0.87},
+    {"index": 1262, "timestamp": "2025-01-20T08:05:40+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.013855463475155982, "p_value": 0.08},
+    {"index": 1290, "timestamp": "2025-01-21T02:21:03+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.007079569084724069, "p_value": 0.31},
+    {"index": 1318, "timestamp": "2025-01-21T12:41:43+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.006710113056517253, "p_value": 0.29},
+    {"index": 1346, "timestamp": "2025-01-22T02:08:14+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.007651813657889139, "p_value": 0.28},
+    {"index": 1374, "timestamp": "2025-01-22T16:58:21+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.008089323349210975, "p_value": 0.24},
+    {"index": 1402, "timestamp": "2025-01-23T06:40:34+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.00505270050288309, "p_value": 0.52},
+    {"index": 1430, "timestamp": "2025-01-23T18:47:14+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0029235818544941505, "p_value": 0.68},
+    {"index": 1458, "timestamp": "2025-01-24T11:33:14+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.003650511604974316, "p_value": 0.65},
+    {"index": 1486, "timestamp": "2025-01-25T01:50:19+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0030490834828100777, "p_value": 0.65},
+    {"index": 1514, "timestamp": "2025-01-25T19:23:39+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.012055115742352074, "p_value": 0.09},
+    {"index": 1542, "timestamp": "2025-01-26T08:36:20+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.01045876910788679, "p_value": 0.16},
+    {"index": 1570, "timestamp": "2025-01-26T20:49:38+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.016936199495858784, "p_value": 0.04},
+    {"index": 1598, "timestamp": "2025-01-27T08:54:41+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.016465331974621966, "p_value": 0.04},
+    {"index": 1626, "timestamp": "2025-01-27T18:59:32+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.004014898279680601, "p_value": 0.65},
+    {"index": 1654, "timestamp": "2025-01-28T11:08:24+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.003604608821486055, "p_value": 0.59},
+    {"index": 1682, "timestamp": "2025-01-29T05:27:58+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0018763731255944105, "p_value": 0.83},
+    {"index": 1710, "timestamp": "2025-01-30T01:29:23+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.002851075438135231, "p_value": 0.69},
+    {"index": 1738, "timestamp": "2025-01-30T15:39:09+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.005474675764085335, "p_value": 0.35},
+    {"index": 1766, "timestamp": "2025-01-31T08:02:29+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.01305522243882784, "p_value": 0.07},
+    {"index": 1794, "timestamp": "2025-01-31T22:22:01+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.011286603317806065, "p_value": 0.12},
+    {"index": 1822, "timestamp": "2025-02-01T13:06:45+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.002331408457171058, "p_value": 0.79},
+    {"index": 1850, "timestamp": "2025-02-02T07:19:49+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0060184715650102305, "p_value": 0.3},
+    {"index": 1878, "timestamp": "2025-02-02T21:46:21+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.008645263097045053, "p_value": 0.2},
+    {"index": 1906, "timestamp": "2025-02-03T16:10:01+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.014322539592483752, "p_value": 0.04},
+    {"index": 1934, "timestamp": "2025-02-04T02:05:22+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.01260212839135999, "p_value": 0.09},
+    {"index": 1962, "timestamp": "2025-02-04T17:19:47+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0029656829140933816, "p_value": 0.64},
+    {"index": 1990, "timestamp": "2025-02-05T14:21:13+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.002069604086275989, "p_value": 0.77},
+    {"index": 2018, "timestamp": "2025-02-06T04:53:52+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.005412849442118395, "p_value": 0.41},
+    {"index": 2046, "timestamp": "2025-02-06T22:58:55+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.007229695409794568, "p_value": 0.34},
+    {"index": 2074, "timestamp": "2025-02-07T13:21:44+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.010435495318749322, "p_value": 0.17},
+    {"index": 2102, "timestamp": "2025-02-08T02:10:10+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.008103842232065173, "p_value": 0.19},
+    {"index": 2130, "timestamp": "2025-02-08T13:39:38+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.005004461954537964, "p_value": 0.4},
+    {"index": 2158, "timestamp": "2025-02-08T23:54:28+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0008573081566165541, "p_value": 0.98},
+    {"index": 2186, "timestamp": "2025-02-09T10:55:53+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.005229092566156224, "p_value": 0.48},
+    {"index": 2214, "timestamp": "2025-02-10T05:24:02+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.00856113377243628, "p_value": 0.25},
+    {"index": 2242, "timestamp": "2025-02-10T22:22:05+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0035040466485605215, "p_value": 0.65},
+    {"index": 2270, "timestamp": "2025-02-11T17:45:58+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0020802764720457834, "p_value": 0.86},
+    {"index": 2298, "timestamp": "2025-02-12T09:19:54+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.003066124866475173, "p_value": 0.79},
+    {"index": 2326, "timestamp": "2025-02-13T00:55:21+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.004161403533590402, "p_value": 0.56},
+    {"index": 2354, "timestamp": "2025-02-13T13:19:46+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.008958464329955396, "p_value": 0.2},
+    {"index": 2382, "timestamp": "2025-02-14T03:32:29+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.005937133335397027, "p_value": 0.32},
+    {"index": 2410, "timestamp": "2025-02-14T20:03:42+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.006160412032153673, "p_value": 0.43},
+    {"index": 2438, "timestamp": "2025-02-15T09:32:23+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.001794157324638057, "p_value": 0.88},
+    {"index": 2466, "timestamp": "2025-02-16T02:09:48+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0010806768102071818, "p_value": 0.95},
+    {"index": 2494, "timestamp": "2025-02-16T16:35:53+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0032668450700064078, "p_value": 0.66},
+    {"index": 2522, "timestamp": "2025-02-17T09:37:18+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0011573968211073815, "p_value": 0.97},
+    {"index": 2550, "timestamp": "2025-02-17T20:06:02+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.005448205861122046, "p_value": 0.34},
+    {"index": 2578, "timestamp": "2025-02-18T13:01:30+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0022589385584321775, "p_value": 0.8},
+    {"index": 2606, "timestamp": "2025-02-18T23:12:46+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.008149594207291777, "p_value": 0.18},
+    {"index": 2634, "timestamp": "2025-02-19T13:43:09+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0016815771119165213, "p_value": 0.92},
+    {"index": 2662, "timestamp": "2025-02-20T05:30:02+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0008737253003143763, "p_value": 0.97},
+    {"index": 2690, "timestamp": "2025-02-20T20:50:11+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.001577977588489654, "p_value": 0.88},
+    {"index": 2718, "timestamp": "2025-02-21T08:59:21+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.004014557460501278, "p_value": 0.58},
+    {"index": 2746, "timestamp": "2025-02-22T00:10:09+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.011040983284038575, "p_value": 0.18},
+    {"index": 2774, "timestamp": "2025-02-22T15:08:59+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.006049172508643563, "p_value": 0.32},
+    {"index": 2802, "timestamp": "2025-02-23T03:07:00+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.007423500851559517, "p_value": 0.31},
+    {"index": 2830, "timestamp": "2025-02-23T18:33:08+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.001207289166991199, "p_value": 0.97},
+    {"index": 2858, "timestamp": "2025-02-24T05:33:53+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0019619798442434, "p_value": 0.79},
+    {"index": 2886, "timestamp": "2025-02-24T16:26:11+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.0022889379702462076, "p_value": 0.81},
+    {"index": 2914, "timestamp": "2025-02-25T11:48:50+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.002148572010983729, "p_value": 0.79},
+    {"index": 2942, "timestamp": "2025-02-26T03:26:04+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.01341108681695613, "p_value": 0.04},
+    {"index": 2970, "timestamp": "2025-02-26T19:58:29+00:00", "available_at": "2025-03-02T03:38:27+00:00", "score": 0.007915438122147345, "p_value": 0.25}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "mmd",
+    "representation": [
+      [
+        "case_category",
+        "region"
+      ],
+      [
+        "case_numeric",
+        "amount"
+      ]
+    ],
+    "retrospective": true,
+    "standardize": true,
+    "bandwidth": null,
+    "window_size": 142,
+    "step": 28,
+    "alpha": 0.03,
+    "min_effect": 0.0,
+    "persistence": 2,
+    "min_separation": 142,
+    "permutations": 99,
+    "permutation_block_size": 1,
+    "random_state": 73,
+    "input_format": "EventLog"
+  },
+  "score_series": {
+    "observation_count": 102,
+    "published_count": 102,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

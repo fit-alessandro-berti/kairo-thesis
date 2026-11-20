@@ -1,0 +1,109 @@
+{
+  "id": "rheon_mixed_13",
+  "family": "rheon",
+  "scenario": "mixed",
+  "source": {
+    "thesis_files": "https://drive.google.com/drive/folders/1sie4iFTUNmHuyvMVoW8tktyvtoUzbmEp",
+    "event_log": "https://drive.google.com/file/d/125l8R0FSQ2aYTgql8l6L42Ak7i2-1Hwl/view",
+    "sha256": "f41fe28c12de51e7f2166385b0914ce5f0720862baff9055a0e9e38ef1699d45",
+    "ground_truth": "https://drive.google.com/file/d/1EkNK7nClBWTUQYNX4sr1XoG7xaMuGfB6/view",
+    "ground_truth_sha256": "130918b7f78bf73c7a8f042a9fc9247d347f51e0c745f948881acb6236e50daa",
+    "generator_scenario": "mixed_08",
+    "truth_time_basis": "generator metadata expressed in UTC"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 2247,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "2022-03-19T04:48:00+00:00",
+      "end": "2022-03-19T04:48:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.2
+      ]
+    },
+    {
+      "id": "d02",
+      "kind": "workload",
+      "perspective": "resource",
+      "mode": "sudden",
+      "start": "2022-04-06T09:36:00+00:00",
+      "end": "2022-04-06T09:36:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.4
+      ]
+    },
+    {
+      "id": "d03",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "2022-04-24T14:24:00+00:00",
+      "end": "2022-04-24T14:24:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.6
+      ]
+    },
+    {
+      "id": "d04",
+      "kind": "arrival_rate",
+      "perspective": "inter",
+      "mode": "gradual",
+      "start": "2022-05-08T06:00:00+00:00",
+      "end": "2022-05-21T21:36:00+00:00",
+      "native_generation_horizon_fractions": [
+        0.75,
+        0.9
+      ]
+    }
+  ],
+  "events": 37196,
+  "cases": 5422,
+  "activities": 9,
+  "resources": 5,
+  "first_timestamp": "2022-03-01T00:00:00+00:00",
+  "last_timestamp": "2022-05-31T07:42:42+00:00",
+  "observation_span_seconds": 7890162.0,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2022-03-19T04:48:00+00:00",
+      "end": "2022-03-19T04:48:00+00:00",
+      "annotations": [
+        "d01"
+      ]
+    },
+    {
+      "id": "d02",
+      "start": "2022-04-06T09:36:00+00:00",
+      "end": "2022-04-06T09:36:00+00:00",
+      "annotations": [
+        "d02"
+      ]
+    },
+    {
+      "id": "d03",
+      "start": "2022-04-24T14:24:00+00:00",
+      "end": "2022-04-24T14:24:00+00:00",
+      "annotations": [
+        "d03"
+      ]
+    },
+    {
+      "id": "d04",
+      "start": "2022-05-08T06:00:00+00:00",
+      "end": "2022-05-21T21:36:00+00:00",
+      "annotations": [
+        "d04"
+      ]
+    }
+  ]
+}

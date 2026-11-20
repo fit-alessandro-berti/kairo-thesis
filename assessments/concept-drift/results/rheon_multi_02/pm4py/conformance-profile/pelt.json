@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_multi_02",
+  "library": "pm4py",
+  "method": "conformance-profile",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 1272,
+      "timestamp": "2024-05-06T20:12:57+00:00",
+      "available_at": "2024-06-30T03:33:20+00:00",
+      "score": 0.21160042197402418,
+      "details": {
+        "metric_deltas": {
+          "fitness": -0.20670512398877872,
+          "precision": 0.0
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 120, "timestamp": "2024-04-04T14:57:39+00:00", "available_at": "2024-04-08T14:37:06+00:00", "score": 0.0},
+    {"index": 264, "timestamp": "2024-04-08T15:01:17+00:00", "available_at": "2024-04-13T05:48:34+00:00", "score": 0.0},
+    {"index": 408, "timestamp": "2024-04-13T05:55:26+00:00", "available_at": "2024-04-16T21:11:15+00:00", "score": 0.0},
+    {"index": 552, "timestamp": "2024-04-16T21:22:06+00:00", "available_at": "2024-04-20T20:25:15+00:00", "score": 0.044823232323232265},
+    {"index": 696, "timestamp": "2024-04-20T20:26:29+00:00", "available_at": "2024-04-24T15:03:12+00:00", "score": 0.046085858585858674},
+    {"index": 840, "timestamp": "2024-04-24T15:51:36+00:00", "available_at": "2024-04-28T20:24:22+00:00", "score": 0.0},
+    {"index": 984, "timestamp": "2024-04-28T20:47:09+00:00", "available_at": "2024-05-02T16:06:49+00:00", "score": 0.0},
+    {"index": 1128, "timestamp": "2024-05-02T16:30:58+00:00", "available_at": "2024-05-06T18:54:42+00:00", "score": 0.0},
+    {"index": 1272, "timestamp": "2024-05-06T20:12:57+00:00", "available_at": "2024-05-10T21:16:53+00:00", "score": 0.13015572390572372},
+    {"index": 1416, "timestamp": "2024-05-10T21:50:25+00:00", "available_at": "2024-05-14T22:50:45+00:00", "score": 0.01736111111111127},
+    {"index": 1560, "timestamp": "2024-05-14T22:53:36+00:00", "available_at": "2024-05-19T04:38:34+00:00", "score": 0.02199074074074092},
+    {"index": 1704, "timestamp": "2024-05-19T05:49:06+00:00", "available_at": "2024-05-22T15:56:31+00:00", "score": 0.01504629629629628},
+    {"index": 1848, "timestamp": "2024-05-22T16:05:19+00:00", "available_at": "2024-05-27T07:12:27+00:00", "score": 0.07760052447552457},
+    {"index": 1992, "timestamp": "2024-05-27T07:38:49+00:00", "available_at": "2024-05-31T11:19:25+00:00", "score": 0.1063998714492137},
+    {"index": 2136, "timestamp": "2024-05-31T13:26:51+00:00", "available_at": "2024-06-04T17:38:04+00:00", "score": 0.007269631252151965},
+    {"index": 2280, "timestamp": "2024-06-04T18:54:39+00:00", "available_at": "2024-06-09T08:36:00+00:00", "score": 0.00680226063612388},
+    {"index": 2424, "timestamp": "2024-06-09T08:38:21+00:00", "available_at": "2024-06-13T12:52:04+00:00", "score": 0.09072766664518583},
+    {"index": 2568, "timestamp": "2024-06-13T13:38:59+00:00", "available_at": "2024-06-17T11:17:15+00:00", "score": 0.18142969728786285},
+    {"index": 2712, "timestamp": "2024-06-17T13:11:43+00:00", "available_at": "2024-06-22T00:34:21+00:00", "score": 0.0},
+    {"index": 2856, "timestamp": "2024-06-22T00:36:26+00:00", "available_at": "2024-06-25T21:08:07+00:00", "score": 0.0},
+    {"index": 3000, "timestamp": "2024-06-25T22:36:35+00:00", "available_at": "2024-06-29T14:20:24+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "variant": "conformance_profile",
+    "method": "pelt",
+    "retrospective": true,
+    "window_size": 144,
+    "step": 144,
+    "penalty": 0.1,
+    "min_size": 3,
+    "reference_model": [
+      {
+        "places": 7,
+        "transitions": 6,
+        "silent_transitions": 0,
+        "arcs": 12
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      }
+    ],
+    "reference_size": 120,
+    "input_format": "EventLog",
+    "precision_alignment_variant": "VERSION_DIJKSTRA_LESS_MEMORY"
+  },
+  "configuration": {
+    "window_size": 144,
+    "step": 144,
+    "reference_size": 120,
+    "penalty": 0.1,
+    "min_size": 3
+  },
+  "runtime_seconds": 1.120827,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 77888.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -13623.0,
+            "distance_to_truth_interval_seconds": 13623.0,
+            "availability_minus_onset_seconds": 4678400.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 194720.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -13623.0,
+            "distance_to_truth_interval_seconds": 13623.0,
+            "availability_minus_onset_seconds": 4678400.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 389440.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -13623.0,
+            "distance_to_truth_interval_seconds": 13623.0,
+            "availability_minus_onset_seconds": 4678400.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 21,
+    "published_count": 21,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_12",
+  "library": "kairo",
+  "method": "intra-som",
+  "profile": "previous",
+  "status": "ok",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "intra",
+    "features": {
+      "groups": [
+        "act_freqs",
+        "df_counts",
+        "act_set",
+        "case_progress",
+        "current_act",
+        "past_acts"
+      ],
+      "sliding_window_size": 3,
+      "omitted_feature_groups": []
+    },
+    "reduction": {
+      "scaling": "minmax",
+      "feature_columns": 54,
+      "feature_rows": 51059,
+      "pca_components": 5,
+      "pca_seed": 0,
+      "pca_retained_variance": 0.756659913002516
+    },
+    "clustering": {
+      "method": "som",
+      "size": [
+        5,
+        5
+      ],
+      "learning_rate": 0.5,
+      "distance": "euclidean",
+      "random_seed": 0
+    },
+    "signal": {
+      "window": "3D",
+      "divergence": "js",
+      "reference": "previous",
+      "lookback": null,
+      "threshold_quantile": 0.9,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "changes": [
+    {
+      "index": 3,
+      "timestamp": "2011-10-08T00:00:00+00:00",
+      "available_at": "2012-03-14T17:04:54.681000+00:00",
+      "score": 0.046230755471400736,
+      "details": {
+        "window_end": "2011-10-11T00:00:00+00:00",
+        "rows": 436,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    },
+    {
+      "index": 17,
+      "timestamp": "2011-11-19T00:00:00+00:00",
+      "available_at": "2012-03-14T17:04:54.681000+00:00",
+      "score": 0.04636579744489191,
+      "details": {
+        "window_end": "2011-11-22T00:00:00+00:00",
+        "rows": 876,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    },
+    {
+      "index": 41,
+      "timestamp": "2012-01-30T00:00:00+00:00",
+      "available_at": "2012-03-14T17:04:54.681000+00:00",
+      "score": 0.1597125390594892,
+      "details": {
+        "window_end": "2012-02-02T00:00:00+00:00",
+        "rows": 514,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    },
+    {
+      "index": 52,
+      "timestamp": "2012-03-03T00:00:00+00:00",
+      "available_at": "2012-03-14T17:04:54.681000+00:00",
+      "score": 0.09831557235922463,
+      "details": {
+        "window_end": "2012-03-06T00:00:00+00:00",
+        "rows": 525,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2011-09-29T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": null, "details": {"window_end": "2011-10-02T00:00:00+00:00", "rows": 63, "coverage": 0.17814136188271604, "eligible": false}},
+    {"index": 1, "timestamp": "2011-10-02T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.03578560098380054, "details": {"window_end": "2011-10-05T00:00:00+00:00", "rows": 500, "coverage": 1.0, "eligible": true}},
+    {"index": 2, "timestamp": "2011-10-05T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.02339599032799529, "details": {"window_end": "2011-10-08T00:00:00+00:00", "rows": 662, "coverage": 1.0, "eligible": true}},
+    {"index": 3, "timestamp": "2011-10-08T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.046230755471400736, "details": {"window_end": "2011-10-11T00:00:00+00:00", "rows": 436, "coverage": 1.0, "eligible": true}},
+    {"index": 4, "timestamp": "2011-10-11T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.046123544741148714, "details": {"window_end": "2011-10-14T00:00:00+00:00", "rows": 872, "coverage": 1.0, "eligible": true}},
+    {"index": 5, "timestamp": "2011-10-14T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.005853987773390701, "details": {"window_end": "2011-10-17T00:00:00+00:00", "rows": 432, "coverage": 1.0, "eligible": true}},
+    {"index": 6, "timestamp": "2011-10-17T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.011160930963279515, "details": {"window_end": "2011-10-20T00:00:00+00:00", "rows": 1177, "coverage": 1.0, "eligible": true}},
+    {"index": 7, "timestamp": "2011-10-20T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.01179238555353777, "details": {"window_end": "2011-10-23T00:00:00+00:00", "rows": 840, "coverage": 1.0, "eligible": true}},
+    {"index": 8, "timestamp": "2011-10-23T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.014522150242651126, "details": {"window_end": "2011-10-26T00:00:00+00:00", "rows": 969, "coverage": 1.0, "eligible": true}},
+    {"index": 9, "timestamp": "2011-10-26T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.01817631145204556, "details": {"window_end": "2011-10-29T00:00:00+00:00", "rows": 1134, "coverage": 1.0, "eligible": true}},
+    {"index": 10, "timestamp": "2011-10-29T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.010613227781417094, "details": {"window_end": "2011-11-01T00:00:00+00:00", "rows": 725, "coverage": 1.0, "eligible": true}},
+    {"index": 11, "timestamp": "2011-11-01T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.014715645728711375, "details": {"window_end": "2011-11-04T00:00:00+00:00", "rows": 1456, "coverage": 1.0, "eligible": true}},
+    {"index": 12, "timestamp": "2011-11-04T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.012863269429579972, "details": {"window_end": "2011-11-07T00:00:00+00:00", "rows": 648, "coverage": 1.0, "eligible": true}},
+    {"index": 13, "timestamp": "2011-11-07T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.011021775177240147, "details": {"window_end": "2011-11-10T00:00:00+00:00", "rows": 1518, "coverage": 1.0, "eligible": true}},
+    {"index": 14, "timestamp": "2011-11-10T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.020697829462400064, "details": {"window_end": "2011-11-13T00:00:00+00:00", "rows": 1285, "coverage": 1.0, "eligible": true}},
+    {"index": 15, "timestamp": "2011-11-13T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.015713574204469966, "details": {"window_end": "2011-11-16T00:00:00+00:00", "rows": 1112, "coverage": 1.0, "eligible": true}},
+    {"index": 16, "timestamp": "2011-11-16T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.016982745338371633, "details": {"window_end": "2011-11-19T00:00:00+00:00", "rows": 1442, "coverage": 1.0, "eligible": true}},
+    {"index": 17, "timestamp": "2011-11-19T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.04636579744489191, "details": {"window_end": "2011-11-22T00:00:00+00:00", "rows": 876, "coverage": 1.0, "eligible": true}},
+    {"index": 18, "timestamp": "2011-11-22T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.03128904900362434, "details": {"window_end": "2011-11-25T00:00:00+00:00", "rows": 1449, "coverage": 1.0, "eligible": true}},
+    {"index": 19, "timestamp": "2011-11-25T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.02584763636984807, "details": {"window_end": "2011-11-28T00:00:00+00:00", "rows": 577, "coverage": 1.0, "eligible": true}},
+    {"index": 20, "timestamp": "2011-11-28T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.024653127683813884, "details": {"window_end": "2011-12-01T00:00:00+00:00", "rows": 1405, "coverage": 1.0, "eligible": true}},
+    {"index": 21, "timestamp": "2011-12-01T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.026181241788537965, "details": {"window_end": "2011-12-04T00:00:00+00:00", "rows": 1047, "coverage": 1.0, "eligible": true}},
+    {"index": 22, "timestamp": "2011-12-04T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.015910208614634276, "details": {"window_end": "2011-12-07T00:00:00+00:00", "rows": 1095, "coverage": 1.0, "eligible": true}},
+    {"index": 23, "timestamp": "2011-12-07T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.010157709069740044, "details": {"window_end": "2011-12-10T00:00:00+00:00", "rows": 1240, "coverage": 1.0, "eligible": true}},
+    {"index": 24, "timestamp": "2011-12-10T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.02937253451172845, "details": {"window_end": "2011-12-13T00:00:00+00:00", "rows": 735, "coverage": 1.0, "eligible": true}},
+    {"index": 25, "timestamp": "2011-12-13T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.020914177289477847, "details": {"window_end": "2011-12-16T00:00:00+00:00", "rows": 1212, "coverage": 1.0, "eligible": true}},
+    {"index": 26, "timestamp": "2011-12-16T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.028381442369896523, "details": {"window_end": "2011-12-19T00:00:00+00:00", "rows": 639, "coverage": 1.0, "eligible": true}},
+    {"index": 27, "timestamp": "2011-12-19T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.034588287385470554, "details": {"window_end": "2011-12-22T00:00:00+00:00", "rows": 1437, "coverage": 1.0, "eligible": true}},
+    {"index": 28, "timestamp": "2011-12-22T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.010170162798587453, "details": {"window_end": "2011-12-25T00:00:00+00:00", "rows": 992, "coverage": 1.0, "eligible": true}},
+    {"index": 29, "timestamp": "2011-12-25T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.013656395010174922, "details": {"window_end": "2011-12-28T00:00:00+00:00", "rows": 497, "coverage": 1.0, "eligible": true}},
+    {"index": 30, "timestamp": "2011-12-28T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.022083741530783074, "details": {"window_end": "2011-12-31T00:00:00+00:00", "rows": 1060, "coverage": 1.0, "eligible": true}},
+    {"index": 31, "timestamp": "2011-12-31T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.02392715224673063, "details": {"window_end": "2012-01-03T00:00:00+00:00", "rows": 559, "coverage": 1.0, "eligible": true}},
+    {"index": 32, "timestamp": "2012-01-03T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.014664093325935115, "details": {"window_end": "2012-01-06T00:00:00+00:00", "rows": 1136, "coverage": 1.0, "eligible": true}},
+    {"index": 33, "timestamp": "2012-01-06T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.02362083421982923, "details": {"window_end": "2012-01-09T00:00:00+00:00", "rows": 490, "coverage": 1.0, "eligible": true}},
+    {"index": 34, "timestamp": "2012-01-09T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.01127845763656753, "details": {"window_end": "2012-01-12T00:00:00+00:00", "rows": 1081, "coverage": 1.0, "eligible": true}},
+    {"index": 35, "timestamp": "2012-01-12T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.014894214395834653, "details": {"window_end": "2012-01-15T00:00:00+00:00", "rows": 866, "coverage": 1.0, "eligible": true}},
+    {"index": 36, "timestamp": "2012-01-15T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.017859927843903563, "details": {"window_end": "2012-01-18T00:00:00+00:00", "rows": 944, "coverage": 1.0, "eligible": true}},
+    {"index": 37, "timestamp": "2012-01-18T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.0175567388699085, "details": {"window_end": "2012-01-21T00:00:00+00:00", "rows": 1018, "coverage": 1.0, "eligible": true}},
+    {"index": 38, "timestamp": "2012-01-21T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.029184229848008933, "details": {"window_end": "2012-01-24T00:00:00+00:00", "rows": 447, "coverage": 1.0, "eligible": true}},
+    {"index": 39, "timestamp": "2012-01-24T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.04262717074757187, "details": {"window_end": "2012-01-27T00:00:00+00:00", "rows": 614, "coverage": 1.0, "eligible": true}},
+    {"index": 40, "timestamp": "2012-01-27T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.021308121273645078, "details": {"window_end": "2012-01-30T00:00:00+00:00", "rows": 236, "coverage": 1.0, "eligible": true}},
+    {"index": 41, "timestamp": "2012-01-30T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.1597125390594892, "details": {"window_end": "2012-02-02T00:00:00+00:00", "rows": 514, "coverage": 1.0, "eligible": true}},
+    {"index": 42, "timestamp": "2012-02-02T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.05010051728862007, "details": {"window_end": "2012-02-05T00:00:00+00:00", "rows": 507, "coverage": 1.0, "eligible": true}},
+    {"index": 43, "timestamp": "2012-02-05T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.026158128323707425, "details": {"window_end": "2012-02-08T00:00:00+00:00", "rows": 461, "coverage": 1.0, "eligible": true}},
+    {"index": 44, "timestamp": "2012-02-08T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.02750327768938448, "details": {"window_end": "2012-02-11T00:00:00+00:00", "rows": 871, "coverage": 1.0, "eligible": true}},
+    {"index": 45, "timestamp": "2012-02-11T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.02268749530876065, "details": {"window_end": "2012-02-14T00:00:00+00:00", "rows": 780, "coverage": 1.0, "eligible": true}},
+    {"index": 46, "timestamp": "2012-02-14T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.023449646408996022, "details": {"window_end": "2012-02-17T00:00:00+00:00", "rows": 1584, "coverage": 1.0, "eligible": true}},
+    {"index": 47, "timestamp": "2012-02-17T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.01768416893132184, "details": {"window_end": "2012-02-20T00:00:00+00:00", "rows": 653, "coverage": 1.0, "eligible": true}},
+    {"index": 48, "timestamp": "2012-02-20T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.011969429815731084, "details": {"window_end": "2012-02-23T00:00:00+00:00", "rows": 1711, "coverage": 1.0, "eligible": true}},
+    {"index": 49, "timestamp": "2012-02-23T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.014332595023895134, "details": {"window_end": "2012-02-26T00:00:00+00:00", "rows": 1641, "coverage": 1.0, "eligible": true}},
+    {"index": 50, "timestamp": "2012-02-26T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.027791333286553123, "details": {"window_end": "2012-02-29T00:00:00+00:00", "rows": 1275, "coverage": 1.0, "eligible": true}},
+    {"index": 51, "timestamp": "2012-02-29T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.038336326575376424, "details": {"window_end": "2012-03-03T00:00:00+00:00", "rows": 1548, "coverage": 1.0, "eligible": true}},
+    {"index": 52, "timestamp": "2012-03-03T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.09831557235922463, "details": {"window_end": "2012-03-06T00:00:00+00:00", "rows": 525, "coverage": 1.0, "eligible": true}},
+    {"index": 53, "timestamp": "2012-03-06T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.051215497844456996, "details": {"window_end": "2012-03-09T00:00:00+00:00", "rows": 934, "coverage": 1.0, "eligible": true}},
+    {"index": 54, "timestamp": "2012-03-09T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.02213253619514265, "details": {"window_end": "2012-03-12T00:00:00+00:00", "rows": 449, "coverage": 1.0, "eligible": true}},
+    {"index": 55, "timestamp": "2012-03-12T00:00:00+00:00", "available_at": "2012-03-14T17:04:54.681000+00:00", "score": 0.018656108732020435, "details": {"window_end": "2012-03-15T00:00:00+00:00", "rows": 683, "coverage": 0.9039146643518519, "eligible": false}}
+  ],
+  "metadata": {
+    "threshold": 0.04619859225232513,
+    "median_rows": 874.0,
+    "eligible_windows": 54,
+    "occupied_states": 22,
+    "distinct_feature_rows": 16337
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 142773.77981,
+        "tp": 0,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 356934.449525,
+        "tp": 0,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 713868.89905,
+        "tp": 0,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 56,
+    "published_count": 56,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

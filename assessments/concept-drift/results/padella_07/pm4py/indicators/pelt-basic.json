@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_07",
+  "library": "pm4py",
+  "method": "indicators",
+  "profile": "pelt-basic",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "calendar_bin",
+  "changes": [
+    {
+      "index": 39,
+      "timestamp": "2018-01-11T06:00:00+00:00",
+      "available_at": "2019-08-08T16:00:00+00:00",
+      "score": 4.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 56.41399185361391,
+          "completions": 58.2631596701292,
+          "work_in_progress": 65.1853456186978,
+          "events": 63.37447763140689
+        }
+      }
+    },
+    {
+      "index": 76,
+      "timestamp": "2018-12-25T16:00:00+00:00",
+      "available_at": "2019-08-08T16:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 66.93115744368825,
+          "events": 64.47752435042163
+        }
+      }
+    },
+    {
+      "index": 77,
+      "timestamp": "2019-01-04T02:00:00+00:00",
+      "available_at": "2019-08-08T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 65.18756310116115
+        }
+      }
+    },
+    {
+      "index": 78,
+      "timestamp": "2019-01-13T12:00:00+00:00",
+      "available_at": "2019-08-08T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "completions": 61.89504206346709
+        }
+      }
+    },
+    {
+      "index": 82,
+      "timestamp": "2019-02-20T04:00:00+00:00",
+      "available_at": "2019-08-08T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "case_duration": 74.76421400633554
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2017-01-09T00:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 1, "timestamp": "2017-01-18T10:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 2, "timestamp": "2017-01-27T20:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 3, "timestamp": "2017-02-06T06:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 4, "timestamp": "2017-02-15T16:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 5, "timestamp": "2017-02-25T02:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 6, "timestamp": "2017-03-06T12:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 7, "timestamp": "2017-03-15T22:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 8, "timestamp": "2017-03-25T08:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 9, "timestamp": "2017-04-03T18:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 10, "timestamp": "2017-04-13T04:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 11, "timestamp": "2017-04-22T14:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 12, "timestamp": "2017-05-02T00:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 13, "timestamp": "2017-05-11T10:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 14, "timestamp": "2017-05-20T20:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 15, "timestamp": "2017-05-30T06:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 16, "timestamp": "2017-06-08T16:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 17, "timestamp": "2017-06-18T02:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 18, "timestamp": "2017-06-27T12:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 19, "timestamp": "2017-07-06T22:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 20, "timestamp": "2017-07-16T08:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 21, "timestamp": "2017-07-25T18:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 22, "timestamp": "2017-08-04T04:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 23, "timestamp": "2017-08-13T14:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 24, "timestamp": "2017-08-23T00:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 25, "timestamp": "2017-09-01T10:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 26, "timestamp": "2017-09-10T20:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 27, "timestamp": "2017-09-20T06:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 28, "timestamp": "2017-09-29T16:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 29, "timestamp": "2017-10-09T02:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 30, "timestamp": "2017-10-18T12:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 31, "timestamp": "2017-10-27T22:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 32, "timestamp": "2017-11-06T08:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 33, "timestamp": "2017-11-15T18:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 34, "timestamp": "2017-11-25T04:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 35, "timestamp": "2017-12-04T14:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 36, "timestamp": "2017-12-14T00:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 37, "timestamp": "2017-12-23T10:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 38, "timestamp": "2018-01-01T20:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 39, "timestamp": "2018-01-11T06:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 4.0},
+    {"index": 40, "timestamp": "2018-01-20T16:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 41, "timestamp": "2018-01-30T02:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 42, "timestamp": "2018-02-08T12:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 43, "timestamp": "2018-02-17T22:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 44, "timestamp": "2018-02-27T08:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 45, "timestamp": "2018-03-08T18:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 46, "timestamp": "2018-03-18T04:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 47, "timestamp": "2018-03-27T14:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 48, "timestamp": "2018-04-06T00:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 49, "timestamp": "2018-04-15T10:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 50, "timestamp": "2018-04-24T20:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 51, "timestamp": "2018-05-04T06:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 52, "timestamp": "2018-05-13T16:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 53, "timestamp": "2018-05-23T02:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 54, "timestamp": "2018-06-01T12:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 55, "timestamp": "2018-06-10T22:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 56, "timestamp": "2018-06-20T08:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 57, "timestamp": "2018-06-29T18:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 58, "timestamp": "2018-07-09T04:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 59, "timestamp": "2018-07-18T14:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 60, "timestamp": "2018-07-28T00:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 61, "timestamp": "2018-08-06T10:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 62, "timestamp": "2018-08-15T20:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 63, "timestamp": "2018-08-25T06:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 64, "timestamp": "2018-09-03T16:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 65, "timestamp": "2018-09-13T02:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 66, "timestamp": "2018-09-22T12:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 67, "timestamp": "2018-10-01T22:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 68, "timestamp": "2018-10-11T08:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 69, "timestamp": "2018-10-20T18:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 70, "timestamp": "2018-10-30T04:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 71, "timestamp": "2018-11-08T14:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 72, "timestamp": "2018-11-18T00:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 73, "timestamp": "2018-11-27T10:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 74, "timestamp": "2018-12-06T20:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 75, "timestamp": "2018-12-16T06:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 76, "timestamp": "2018-12-25T16:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 2.0},
+    {"index": 77, "timestamp": "2019-01-04T02:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 1.0},
+    {"index": 78, "timestamp": "2019-01-13T12:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 1.0},
+    {"index": 79, "timestamp": "2019-01-22T22:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 80, "timestamp": "2019-02-01T08:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 81, "timestamp": "2019-02-10T18:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 82, "timestamp": "2019-02-20T04:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 1.0},
+    {"index": 83, "timestamp": "2019-03-01T14:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 84, "timestamp": "2019-03-11T00:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 85, "timestamp": "2019-03-20T10:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 86, "timestamp": "2019-03-29T20:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 87, "timestamp": "2019-04-08T06:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 88, "timestamp": "2019-04-17T16:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 89, "timestamp": "2019-04-27T02:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2019-05-06T12:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 91, "timestamp": "2019-05-15T22:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 92, "timestamp": "2019-05-25T08:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 93, "timestamp": "2019-06-03T18:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 94, "timestamp": "2019-06-13T04:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 95, "timestamp": "2019-06-22T14:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 96, "timestamp": "2019-07-02T00:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 97, "timestamp": "2019-07-11T10:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 98, "timestamp": "2019-07-20T20:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0},
+    {"index": 99, "timestamp": "2019-07-30T06:00:00+00:00", "available_at": "2019-08-08T16:00:00+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "variant": "indicators",
+    "method": "pelt",
+    "bin_size": "226h",
+    "observed_through": "2019-08-08T12:57:18+00:00",
+    "features": [
+      "arrivals",
+      "completions",
+      "work_in_progress",
+      "events",
+      "case_duration"
+    ],
+    "retrospective": true,
+    "aggregation": "any_feature",
+    "case_boundaries": "first_and_last_case_event",
+    "penalty": 14,
+    "min_size": 3,
+    "standardize": true,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "bin_size": "226h",
+    "features": [
+      "arrivals",
+      "completions",
+      "work_in_progress",
+      "events",
+      "case_duration"
+    ],
+    "penalty": 14
+  },
+  "runtime_seconds": 3.702291,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 813192.0,
+        "tp": 0,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 2032980.0,
+        "tp": 0,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 4065960.0,
+        "tp": 0,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 100,
+    "published_count": 100,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

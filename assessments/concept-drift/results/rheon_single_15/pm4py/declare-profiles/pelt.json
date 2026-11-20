@@ -1,0 +1,1103 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_single_15",
+  "library": "pm4py",
+  "method": "declare-profiles",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 1650,
+      "timestamp": "2015-10-19T18:28:11+00:00",
+      "available_at": "2019-07-08T09:59:45+00:00",
+      "score": 3.0321038971907264,
+      "details": {
+        "constraint_deltas": {
+          "[\"existence\", \"c\"]": -0.011564625850340016,
+          "[\"existence\", \"d\"]": -0.011564625850340016,
+          "[\"existence\", \"g\"]": -0.02801484230055662,
+          "[\"existence\", \"f\"]": 0.028014842300556675,
+          "[\"precedence\", \"a\", \"c\"]": -0.011564625850340016,
+          "[\"precedence\", \"a\", \"d\"]": -0.011564625850340016,
+          "[\"response\", \"a\", \"g\"]": -0.02801484230055662,
+          "[\"precedence\", \"a\", \"g\"]": -0.02801484230055662,
+          "[\"response\", \"a\", \"f\"]": 0.028014842300556675,
+          "[\"precedence\", \"a\", \"f\"]": 0.028014842300556675,
+          "[\"precedence\", \"b\", \"c\"]": -0.011564625850340016,
+          "[\"precedence\", \"b\", \"d\"]": -0.011564625850340016,
+          "[\"response\", \"b\", \"g\"]": -0.02801484230055662,
+          "[\"precedence\", \"b\", \"g\"]": -0.02801484230055662,
+          "[\"response\", \"b\", \"f\"]": 0.028014842300556675,
+          "[\"precedence\", \"b\", \"f\"]": 0.028014842300556675,
+          "[\"response\", \"c\", \"a\"]": -0.011564625850340016,
+          "[\"response\", \"c\", \"b\"]": -0.011564625850340016,
+          "[\"response\", \"c\", \"d\"]": -0.011564625850340016,
+          "[\"precedence\", \"c\", \"d\"]": -0.011564625850340016,
+          "[\"response\", \"c\", \"e\"]": -0.011564625850340016,
+          "[\"precedence\", \"c\", \"e\"]": -0.011564625850340016,
+          "[\"response\", \"c\", \"g\"]": -0.0181447124304267,
+          "[\"precedence\", \"c\", \"g\"]": -0.0181447124304267,
+          "[\"response\", \"c\", \"f\"]": 0.006580086580086519,
+          "[\"precedence\", \"c\", \"f\"]": 0.006580086580086519,
+          "[\"response\", \"d\", \"a\"]": -0.011564625850340016,
+          "[\"response\", \"d\", \"b\"]": -0.011564625850340016,
+          "[\"response\", \"d\", \"e\"]": -0.011564625850340016,
+          "[\"precedence\", \"d\", \"e\"]": -0.011564625850340016,
+          "[\"response\", \"d\", \"g\"]": -0.0181447124304267,
+          "[\"precedence\", \"d\", \"g\"]": -0.0181447124304267,
+          "[\"response\", \"d\", \"f\"]": 0.006580086580086519,
+          "[\"precedence\", \"d\", \"f\"]": 0.006580086580086519,
+          "[\"response\", \"e\", \"g\"]": -0.02801484230055662,
+          "[\"precedence\", \"e\", \"g\"]": -0.02801484230055662,
+          "[\"response\", \"e\", \"f\"]": 0.028014842300556675,
+          "[\"precedence\", \"e\", \"f\"]": 0.028014842300556675
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2015-01-10T15:29:23+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.0},
+    {"index": 150, "timestamp": "2015-02-13T04:19:25+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.9222195448421643},
+    {"index": 300, "timestamp": "2015-03-13T01:01:43+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.1372750685464933},
+    {"index": 450, "timestamp": "2015-04-08T20:33:03+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.06798692684790368},
+    {"index": 600, "timestamp": "2015-05-04T18:08:32+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.07774602526460395},
+    {"index": 750, "timestamp": "2015-06-02T07:00:12+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.1835453319724827},
+    {"index": 900, "timestamp": "2015-06-26T16:20:15+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.2351358945139787},
+    {"index": 1050, "timestamp": "2015-07-21T21:47:24+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.3016988933062604},
+    {"index": 1200, "timestamp": "2015-08-15T06:57:38+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.22171052197754512},
+    {"index": 1350, "timestamp": "2015-09-05T23:59:33+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.1015436414115187},
+    {"index": 1500, "timestamp": "2015-09-25T12:11:11+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.09888264649460889},
+    {"index": 1650, "timestamp": "2015-10-19T18:28:11+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.4523518787649968},
+    {"index": 1800, "timestamp": "2015-11-10T15:57:36+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.18571184369578825},
+    {"index": 1950, "timestamp": "2015-12-06T02:47:21+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.20612833111653728},
+    {"index": 2100, "timestamp": "2016-01-02T08:54:15+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.11737877907772698},
+    {"index": 2250, "timestamp": "2016-01-25T03:14:42+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.4184627953726724},
+    {"index": 2400, "timestamp": "2016-02-18T16:11:49+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.524764497444118},
+    {"index": 2550, "timestamp": "2016-03-14T01:51:31+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.2784081735709478},
+    {"index": 2700, "timestamp": "2016-04-10T13:34:37+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.4007770230717101},
+    {"index": 2850, "timestamp": "2016-05-02T21:41:19+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.3005180711889239},
+    {"index": 3000, "timestamp": "2016-05-30T07:06:31+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.20504741998972933},
+    {"index": 3150, "timestamp": "2016-06-23T04:19:43+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.16970562748477155},
+    {"index": 3300, "timestamp": "2016-07-19T07:42:13+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.5917957605645907},
+    {"index": 3450, "timestamp": "2016-08-11T07:48:37+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.7075466219424854},
+    {"index": 3600, "timestamp": "2016-09-07T02:07:52+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.24801433650317709},
+    {"index": 3750, "timestamp": "2016-10-02T22:09:32+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.5389702115042064},
+    {"index": 3900, "timestamp": "2016-10-29T05:45:00+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.3845921360494923},
+    {"index": 4050, "timestamp": "2016-11-23T16:57:11+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.047140452079103314},
+    {"index": 4200, "timestamp": "2016-12-22T00:59:20+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.3395421754199159},
+    {"index": 4350, "timestamp": "2017-01-15T08:03:22+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.3197221015541812},
+    {"index": 4500, "timestamp": "2017-02-11T23:29:15+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.07774602526460402},
+    {"index": 4650, "timestamp": "2017-03-08T06:42:58+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.11737877907772674},
+    {"index": 4800, "timestamp": "2017-03-31T17:45:26+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.4815715015562185},
+    {"index": 4950, "timestamp": "2017-04-26T08:24:59+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.05811865258054213},
+    {"index": 5100, "timestamp": "2017-05-20T07:42:33+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.35789508083918803},
+    {"index": 5250, "timestamp": "2017-06-14T01:25:33+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.24129281427805152},
+    {"index": 5400, "timestamp": "2017-07-07T12:39:01+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.35301872786329924},
+    {"index": 5550, "timestamp": "2017-07-30T06:00:26+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.12892719737209163},
+    {"index": 5700, "timestamp": "2017-08-22T17:41:01+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.4664761515876242},
+    {"index": 5850, "timestamp": "2017-09-14T17:16:16+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.11469767022723505},
+    {"index": 6000, "timestamp": "2017-10-08T15:08:06+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.4612061481714128},
+    {"index": 6150, "timestamp": "2017-10-31T20:23:04+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.17713773674115227},
+    {"index": 6300, "timestamp": "2017-11-27T05:20:42+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.3740469370428141},
+    {"index": 6450, "timestamp": "2017-12-22T22:10:18+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.23907228102721484},
+    {"index": 6600, "timestamp": "2018-01-15T23:04:30+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.39777157040470124},
+    {"index": 6750, "timestamp": "2018-02-10T22:04:54+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.08743251365736006},
+    {"index": 6900, "timestamp": "2018-03-05T19:59:55+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.0760116950066093},
+    {"index": 7050, "timestamp": "2018-03-29T02:29:59+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.04714045207910326},
+    {"index": 7200, "timestamp": "2018-04-17T19:15:46+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.13824294235551804},
+    {"index": 7350, "timestamp": "2018-05-14T03:43:39+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.13695092389449415},
+    {"index": 7500, "timestamp": "2018-06-07T10:19:27+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.3124099870362663},
+    {"index": 7650, "timestamp": "2018-06-30T09:48:06+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.43532873912838693},
+    {"index": 7800, "timestamp": "2018-07-22T22:12:54+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.10154364141151889},
+    {"index": 7950, "timestamp": "2018-08-15T13:37:07+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.27856776554368246},
+    {"index": 8100, "timestamp": "2018-09-10T21:38:56+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.22958900476963415},
+    {"index": 8250, "timestamp": "2018-10-07T23:58:53+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.2168460795638747},
+    {"index": 8400, "timestamp": "2018-10-29T15:41:34+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.3375730373645911},
+    {"index": 8550, "timestamp": "2018-11-25T13:58:10+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.5308274463305169},
+    {"index": 8700, "timestamp": "2018-12-23T17:02:35+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 0.5309948733797302},
+    {"index": 8850, "timestamp": "2019-01-14T04:47:59+00:00", "available_at": "2019-07-08T09:59:45+00:00", "score": 1.500636901822393}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "declare_profiles",
+    "detector": "pelt",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "constraints": [
+      [
+        "existence",
+        "a"
+      ],
+      [
+        "existence",
+        "b"
+      ],
+      [
+        "existence",
+        "c"
+      ],
+      [
+        "existence",
+        "d"
+      ],
+      [
+        "existence",
+        "e"
+      ],
+      [
+        "existence",
+        "g"
+      ],
+      [
+        "existence",
+        "f"
+      ],
+      [
+        "response",
+        "a",
+        "b"
+      ],
+      [
+        "precedence",
+        "a",
+        "b"
+      ],
+      [
+        "response",
+        "a",
+        "c"
+      ],
+      [
+        "precedence",
+        "a",
+        "c"
+      ],
+      [
+        "response",
+        "a",
+        "d"
+      ],
+      [
+        "precedence",
+        "a",
+        "d"
+      ],
+      [
+        "response",
+        "a",
+        "e"
+      ],
+      [
+        "precedence",
+        "a",
+        "e"
+      ],
+      [
+        "response",
+        "a",
+        "g"
+      ],
+      [
+        "precedence",
+        "a",
+        "g"
+      ],
+      [
+        "response",
+        "a",
+        "f"
+      ],
+      [
+        "precedence",
+        "a",
+        "f"
+      ],
+      [
+        "response",
+        "b",
+        "a"
+      ],
+      [
+        "precedence",
+        "b",
+        "a"
+      ],
+      [
+        "response",
+        "b",
+        "c"
+      ],
+      [
+        "precedence",
+        "b",
+        "c"
+      ],
+      [
+        "response",
+        "b",
+        "d"
+      ],
+      [
+        "precedence",
+        "b",
+        "d"
+      ],
+      [
+        "response",
+        "b",
+        "e"
+      ],
+      [
+        "precedence",
+        "b",
+        "e"
+      ],
+      [
+        "response",
+        "b",
+        "g"
+      ],
+      [
+        "precedence",
+        "b",
+        "g"
+      ],
+      [
+        "response",
+        "b",
+        "f"
+      ],
+      [
+        "precedence",
+        "b",
+        "f"
+      ],
+      [
+        "response",
+        "c",
+        "a"
+      ],
+      [
+        "precedence",
+        "c",
+        "a"
+      ],
+      [
+        "response",
+        "c",
+        "b"
+      ],
+      [
+        "precedence",
+        "c",
+        "b"
+      ],
+      [
+        "response",
+        "c",
+        "d"
+      ],
+      [
+        "precedence",
+        "c",
+        "d"
+      ],
+      [
+        "response",
+        "c",
+        "e"
+      ],
+      [
+        "precedence",
+        "c",
+        "e"
+      ],
+      [
+        "response",
+        "c",
+        "g"
+      ],
+      [
+        "precedence",
+        "c",
+        "g"
+      ],
+      [
+        "response",
+        "c",
+        "f"
+      ],
+      [
+        "precedence",
+        "c",
+        "f"
+      ],
+      [
+        "response",
+        "d",
+        "a"
+      ],
+      [
+        "precedence",
+        "d",
+        "a"
+      ],
+      [
+        "response",
+        "d",
+        "b"
+      ],
+      [
+        "precedence",
+        "d",
+        "b"
+      ],
+      [
+        "response",
+        "d",
+        "c"
+      ],
+      [
+        "precedence",
+        "d",
+        "c"
+      ],
+      [
+        "response",
+        "d",
+        "e"
+      ],
+      [
+        "precedence",
+        "d",
+        "e"
+      ],
+      [
+        "response",
+        "d",
+        "g"
+      ],
+      [
+        "precedence",
+        "d",
+        "g"
+      ],
+      [
+        "response",
+        "d",
+        "f"
+      ],
+      [
+        "precedence",
+        "d",
+        "f"
+      ],
+      [
+        "response",
+        "e",
+        "a"
+      ],
+      [
+        "precedence",
+        "e",
+        "a"
+      ],
+      [
+        "response",
+        "e",
+        "b"
+      ],
+      [
+        "precedence",
+        "e",
+        "b"
+      ],
+      [
+        "response",
+        "e",
+        "c"
+      ],
+      [
+        "precedence",
+        "e",
+        "c"
+      ],
+      [
+        "response",
+        "e",
+        "d"
+      ],
+      [
+        "precedence",
+        "e",
+        "d"
+      ],
+      [
+        "response",
+        "e",
+        "g"
+      ],
+      [
+        "precedence",
+        "e",
+        "g"
+      ],
+      [
+        "response",
+        "e",
+        "f"
+      ],
+      [
+        "precedence",
+        "e",
+        "f"
+      ],
+      [
+        "response",
+        "g",
+        "a"
+      ],
+      [
+        "precedence",
+        "g",
+        "a"
+      ],
+      [
+        "response",
+        "g",
+        "b"
+      ],
+      [
+        "precedence",
+        "g",
+        "b"
+      ],
+      [
+        "response",
+        "g",
+        "c"
+      ],
+      [
+        "precedence",
+        "g",
+        "c"
+      ],
+      [
+        "response",
+        "g",
+        "d"
+      ],
+      [
+        "precedence",
+        "g",
+        "d"
+      ],
+      [
+        "response",
+        "g",
+        "e"
+      ],
+      [
+        "precedence",
+        "g",
+        "e"
+      ],
+      [
+        "response",
+        "g",
+        "f"
+      ],
+      [
+        "precedence",
+        "g",
+        "f"
+      ],
+      [
+        "response",
+        "f",
+        "a"
+      ],
+      [
+        "precedence",
+        "f",
+        "a"
+      ],
+      [
+        "response",
+        "f",
+        "b"
+      ],
+      [
+        "precedence",
+        "f",
+        "b"
+      ],
+      [
+        "response",
+        "f",
+        "c"
+      ],
+      [
+        "precedence",
+        "f",
+        "c"
+      ],
+      [
+        "response",
+        "f",
+        "d"
+      ],
+      [
+        "precedence",
+        "f",
+        "d"
+      ],
+      [
+        "response",
+        "f",
+        "e"
+      ],
+      [
+        "precedence",
+        "f",
+        "e"
+      ],
+      [
+        "response",
+        "f",
+        "g"
+      ],
+      [
+        "precedence",
+        "f",
+        "g"
+      ]
+    ],
+    "statistic": "confidence",
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "min_size": 2,
+    "gamma": null,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "constraints": [
+      [
+        "existence",
+        "a"
+      ],
+      [
+        "existence",
+        "b"
+      ],
+      [
+        "existence",
+        "c"
+      ],
+      [
+        "existence",
+        "d"
+      ],
+      [
+        "existence",
+        "e"
+      ],
+      [
+        "existence",
+        "g"
+      ],
+      [
+        "existence",
+        "f"
+      ],
+      [
+        "response",
+        "a",
+        "b"
+      ],
+      [
+        "precedence",
+        "a",
+        "b"
+      ],
+      [
+        "response",
+        "a",
+        "c"
+      ],
+      [
+        "precedence",
+        "a",
+        "c"
+      ],
+      [
+        "response",
+        "a",
+        "d"
+      ],
+      [
+        "precedence",
+        "a",
+        "d"
+      ],
+      [
+        "response",
+        "a",
+        "e"
+      ],
+      [
+        "precedence",
+        "a",
+        "e"
+      ],
+      [
+        "response",
+        "a",
+        "g"
+      ],
+      [
+        "precedence",
+        "a",
+        "g"
+      ],
+      [
+        "response",
+        "a",
+        "f"
+      ],
+      [
+        "precedence",
+        "a",
+        "f"
+      ],
+      [
+        "response",
+        "b",
+        "a"
+      ],
+      [
+        "precedence",
+        "b",
+        "a"
+      ],
+      [
+        "response",
+        "b",
+        "c"
+      ],
+      [
+        "precedence",
+        "b",
+        "c"
+      ],
+      [
+        "response",
+        "b",
+        "d"
+      ],
+      [
+        "precedence",
+        "b",
+        "d"
+      ],
+      [
+        "response",
+        "b",
+        "e"
+      ],
+      [
+        "precedence",
+        "b",
+        "e"
+      ],
+      [
+        "response",
+        "b",
+        "g"
+      ],
+      [
+        "precedence",
+        "b",
+        "g"
+      ],
+      [
+        "response",
+        "b",
+        "f"
+      ],
+      [
+        "precedence",
+        "b",
+        "f"
+      ],
+      [
+        "response",
+        "c",
+        "a"
+      ],
+      [
+        "precedence",
+        "c",
+        "a"
+      ],
+      [
+        "response",
+        "c",
+        "b"
+      ],
+      [
+        "precedence",
+        "c",
+        "b"
+      ],
+      [
+        "response",
+        "c",
+        "d"
+      ],
+      [
+        "precedence",
+        "c",
+        "d"
+      ],
+      [
+        "response",
+        "c",
+        "e"
+      ],
+      [
+        "precedence",
+        "c",
+        "e"
+      ],
+      [
+        "response",
+        "c",
+        "g"
+      ],
+      [
+        "precedence",
+        "c",
+        "g"
+      ],
+      [
+        "response",
+        "c",
+        "f"
+      ],
+      [
+        "precedence",
+        "c",
+        "f"
+      ],
+      [
+        "response",
+        "d",
+        "a"
+      ],
+      [
+        "precedence",
+        "d",
+        "a"
+      ],
+      [
+        "response",
+        "d",
+        "b"
+      ],
+      [
+        "precedence",
+        "d",
+        "b"
+      ],
+      [
+        "response",
+        "d",
+        "c"
+      ],
+      [
+        "precedence",
+        "d",
+        "c"
+      ],
+      [
+        "response",
+        "d",
+        "e"
+      ],
+      [
+        "precedence",
+        "d",
+        "e"
+      ],
+      [
+        "response",
+        "d",
+        "g"
+      ],
+      [
+        "precedence",
+        "d",
+        "g"
+      ],
+      [
+        "response",
+        "d",
+        "f"
+      ],
+      [
+        "precedence",
+        "d",
+        "f"
+      ],
+      [
+        "response",
+        "e",
+        "a"
+      ],
+      [
+        "precedence",
+        "e",
+        "a"
+      ],
+      [
+        "response",
+        "e",
+        "b"
+      ],
+      [
+        "precedence",
+        "e",
+        "b"
+      ],
+      [
+        "response",
+        "e",
+        "c"
+      ],
+      [
+        "precedence",
+        "e",
+        "c"
+      ],
+      [
+        "response",
+        "e",
+        "d"
+      ],
+      [
+        "precedence",
+        "e",
+        "d"
+      ],
+      [
+        "response",
+        "e",
+        "g"
+      ],
+      [
+        "precedence",
+        "e",
+        "g"
+      ],
+      [
+        "response",
+        "e",
+        "f"
+      ],
+      [
+        "precedence",
+        "e",
+        "f"
+      ],
+      [
+        "response",
+        "g",
+        "a"
+      ],
+      [
+        "precedence",
+        "g",
+        "a"
+      ],
+      [
+        "response",
+        "g",
+        "b"
+      ],
+      [
+        "precedence",
+        "g",
+        "b"
+      ],
+      [
+        "response",
+        "g",
+        "c"
+      ],
+      [
+        "precedence",
+        "g",
+        "c"
+      ],
+      [
+        "response",
+        "g",
+        "d"
+      ],
+      [
+        "precedence",
+        "g",
+        "d"
+      ],
+      [
+        "response",
+        "g",
+        "e"
+      ],
+      [
+        "precedence",
+        "g",
+        "e"
+      ],
+      [
+        "response",
+        "g",
+        "f"
+      ],
+      [
+        "precedence",
+        "g",
+        "f"
+      ],
+      [
+        "response",
+        "f",
+        "a"
+      ],
+      [
+        "precedence",
+        "f",
+        "a"
+      ],
+      [
+        "response",
+        "f",
+        "b"
+      ],
+      [
+        "precedence",
+        "f",
+        "b"
+      ],
+      [
+        "response",
+        "f",
+        "c"
+      ],
+      [
+        "precedence",
+        "f",
+        "c"
+      ],
+      [
+        "response",
+        "f",
+        "d"
+      ],
+      [
+        "precedence",
+        "f",
+        "d"
+      ],
+      [
+        "response",
+        "f",
+        "e"
+      ],
+      [
+        "precedence",
+        "f",
+        "e"
+      ],
+      [
+        "response",
+        "f",
+        "g"
+      ],
+      [
+        "precedence",
+        "f",
+        "g"
+      ]
+    ]
+  },
+  "runtime_seconds": 3.908706,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 1425095.85,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 3562739.625,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 7125479.25,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 60,
+    "published_count": 60,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

@@ -1,0 +1,590 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_single_11",
+  "library": "pm4py",
+  "method": "supervised-similarity",
+  "profile": "independent-prototype",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 186,
+      "timestamp": "2020-04-05T01:36:52+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "score": 0.9874822190611663,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          1,
+          1
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "index": 558,
+      "timestamp": "2020-04-12T12:24:44+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          3,
+          3
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 744,
+      "timestamp": "2020-04-16T14:50:59+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "sudden",
+        "window_range": [
+          4,
+          4
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 930,
+      "timestamp": "2020-04-19T21:36:34+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          5,
+          9
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 1860,
+      "timestamp": "2020-05-09T21:33:05+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "sudden",
+        "window_range": [
+          10,
+          10
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 2232,
+      "timestamp": "2020-05-17T15:31:09+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "score": 0.9874822190611663,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          12,
+          13
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "index": 2790,
+      "timestamp": "2020-05-28T17:23:32+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          15,
+          15
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 3161,
+      "timestamp": "2020-06-05T01:10:09+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          17,
+          22
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 4456,
+      "timestamp": "2020-07-01T21:56:59+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          24,
+          24
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 4826,
+      "timestamp": "2020-07-09T01:32:08+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          26,
+          47
+        ],
+        "confidence": 1.0
+      }
+    }
+  ],
+  "scores": [
+    {"index": 186, "timestamp": "2020-04-05T01:36:52+00:00", "available_at": "2020-09-30T03:51:02+00:00", "score": 0.9874822190611663},
+    {"index": 558, "timestamp": "2020-04-12T12:24:44+00:00", "available_at": "2020-09-30T03:51:02+00:00", "score": 1.0},
+    {"index": 744, "timestamp": "2020-04-16T14:50:59+00:00", "available_at": "2020-09-30T03:51:02+00:00", "score": 1.0},
+    {"index": 930, "timestamp": "2020-04-19T21:36:34+00:00", "available_at": "2020-09-30T03:51:02+00:00", "score": 1.0},
+    {"index": 1860, "timestamp": "2020-05-09T21:33:05+00:00", "available_at": "2020-09-30T03:51:02+00:00", "score": 1.0},
+    {"index": 2232, "timestamp": "2020-05-17T15:31:09+00:00", "available_at": "2020-09-30T03:51:02+00:00", "score": 0.9874822190611663},
+    {"index": 2790, "timestamp": "2020-05-28T17:23:32+00:00", "available_at": "2020-09-30T03:51:02+00:00", "score": 1.0},
+    {"index": 3161, "timestamp": "2020-06-05T01:10:09+00:00", "available_at": "2020-09-30T03:51:02+00:00", "score": 1.0},
+    {"index": 4456, "timestamp": "2020-07-01T21:56:59+00:00", "available_at": "2020-09-30T03:51:02+00:00", "score": 1.0},
+    {"index": 4826, "timestamp": "2020-07-09T01:32:08+00:00", "available_at": "2020-09-30T03:51:02+00:00", "score": 1.0}
+  ],
+  "intervals": [
+    {
+      "start_index": 186,
+      "end_index": 371,
+      "start_timestamp": "2020-04-05T01:36:52+00:00",
+      "end_timestamp": "2020-04-08T21:05:58+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          1,
+          1
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "start_index": 558,
+      "end_index": 743,
+      "start_timestamp": "2020-04-12T12:24:44+00:00",
+      "end_timestamp": "2020-04-16T14:31:47+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          3,
+          3
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "start_index": 930,
+      "end_index": 1859,
+      "start_timestamp": "2020-04-19T21:36:34+00:00",
+      "end_timestamp": "2020-05-09T21:32:19+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          5,
+          9
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "start_index": 2232,
+      "end_index": 2603,
+      "start_timestamp": "2020-05-17T15:31:09+00:00",
+      "end_timestamp": "2020-05-25T03:23:13+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          12,
+          13
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "start_index": 2790,
+      "end_index": 2975,
+      "start_timestamp": "2020-05-28T17:23:32+00:00",
+      "end_timestamp": "2020-06-01T14:14:26+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          15,
+          15
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "start_index": 3161,
+      "end_index": 4270,
+      "start_timestamp": "2020-06-05T01:10:09+00:00",
+      "end_timestamp": "2020-06-28T03:08:22+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          17,
+          22
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "start_index": 4456,
+      "end_index": 4640,
+      "start_timestamp": "2020-07-01T21:56:59+00:00",
+      "end_timestamp": "2020-07-05T06:53:12+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          24,
+          24
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "start_index": 4826,
+      "end_index": 8895,
+      "start_timestamp": "2020-07-09T01:32:08+00:00",
+      "end_timestamp": "2020-09-30T00:26:27+00:00",
+      "available_at": "2020-09-30T03:51:02+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          26,
+          47
+        ],
+        "confidence": 1.0
+      }
+    }
+  ],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "supervised_similarity",
+    "representation": "directly_follows_cosine_similarity_image",
+    "predictor": "_PatchPredictor",
+    "retrospective": true,
+    "trace_order": "start",
+    "num_windows": 48,
+    "min_confidence": 0.8,
+    "windows": [
+      [
+        0,
+        186
+      ],
+      [
+        186,
+        372
+      ],
+      [
+        372,
+        558
+      ],
+      [
+        558,
+        744
+      ],
+      [
+        744,
+        930
+      ],
+      [
+        930,
+        1116
+      ],
+      [
+        1116,
+        1302
+      ],
+      [
+        1302,
+        1488
+      ],
+      [
+        1488,
+        1674
+      ],
+      [
+        1674,
+        1860
+      ],
+      [
+        1860,
+        2046
+      ],
+      [
+        2046,
+        2232
+      ],
+      [
+        2232,
+        2418
+      ],
+      [
+        2418,
+        2604
+      ],
+      [
+        2604,
+        2790
+      ],
+      [
+        2790,
+        2976
+      ],
+      [
+        2976,
+        3161
+      ],
+      [
+        3161,
+        3346
+      ],
+      [
+        3346,
+        3531
+      ],
+      [
+        3531,
+        3716
+      ],
+      [
+        3716,
+        3901
+      ],
+      [
+        3901,
+        4086
+      ],
+      [
+        4086,
+        4271
+      ],
+      [
+        4271,
+        4456
+      ],
+      [
+        4456,
+        4641
+      ],
+      [
+        4641,
+        4826
+      ],
+      [
+        4826,
+        5011
+      ],
+      [
+        5011,
+        5196
+      ],
+      [
+        5196,
+        5381
+      ],
+      [
+        5381,
+        5566
+      ],
+      [
+        5566,
+        5751
+      ],
+      [
+        5751,
+        5936
+      ],
+      [
+        5936,
+        6121
+      ],
+      [
+        6121,
+        6306
+      ],
+      [
+        6306,
+        6491
+      ],
+      [
+        6491,
+        6676
+      ],
+      [
+        6676,
+        6861
+      ],
+      [
+        6861,
+        7046
+      ],
+      [
+        7046,
+        7231
+      ],
+      [
+        7231,
+        7416
+      ],
+      [
+        7416,
+        7601
+      ],
+      [
+        7601,
+        7786
+      ],
+      [
+        7786,
+        7971
+      ],
+      [
+        7971,
+        8156
+      ],
+      [
+        8156,
+        8341
+      ],
+      [
+        8341,
+        8526
+      ],
+      [
+        8526,
+        8711
+      ],
+      [
+        8711,
+        8896
+      ]
+    ],
+    "input_format": "EventLog",
+    "training": {
+      "source": "independently generated by train_prototype",
+      "seed": 73,
+      "logs": 24,
+      "cases_per_log": 480,
+      "radius": 2
+    }
+  },
+  "configuration": {
+    "num_windows": 48,
+    "min_confidence": 0.8
+  },
+  "runtime_seconds": 32.77236,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 157386.62,
+        "tp": 0,
+        "fp": 10,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 393466.55,
+        "tp": 0,
+        "fp": 10,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 786933.1,
+        "tp": 0,
+        "fp": 10,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 10,
+    "published_count": 10,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "datasets": [
+    "cdrift_bose",
+    "cdrift_ceravolo_rio",
+    "cdrift_ceravolo_rio_noise15",
+    "cdrift_ceravolo_rp",
+    "cdrift_ostovar_loop",
+    "cdrift_ostovar_parallel_to_sequence",
+    "rheon_single_03",
+    "rheon_single_11",
+    "rheon_single_15",
+    "rheon_multi_02",
+    "rheon_multi_03",
+    "rheon_multi_07",
+    "rheon_mixed_06",
+    "rheon_mixed_07",
+    "rheon_mixed_13",
+    "padella_04",
+    "padella_05",
+    "padella_06",
+    "padella_07",
+    "padella_08",
+    "padella_10",
+    "padella_12",
+    "padella_15"
+  ],
+  "pm4py_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "kairo_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "full_scores": false,
+  "default_alignment_variant": "Variants.VERSION_DIJKSTRA_LESS_MEMORY",
+  "runtime_versions": {
+    "python": "3.12.14",
+    "kairo": "0.1.0",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "minisom": "2.3.6",
+    "river": "0.27.0",
+    "hdbscan": "0.8.44"
+  },
+  "counts": {
+    "ok": 992,
+    "unsupported": 38,
+    "error": 0
+  },
+  "pm4py_method_revisions": {
+    "bose": "765435bc7f5190adf30be7314d7158b92ff433c4"
+  }
+}

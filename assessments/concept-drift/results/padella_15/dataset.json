@@ -1,0 +1,58 @@
+{
+  "id": "padella_15",
+  "family": "padella",
+  "scenario": "purchase_order_handling_bpi19",
+  "source": {
+    "dataset": "https://zenodo.org/records/21005862",
+    "archive_sha256": "e6fc4f90aa76c3b6231c8305df1ffd061600e3f7fd3535be7b7366347cd8131f",
+    "archive_path": "cf/gradual/purchase_order_handling_bpi19/purchase_order_handling_bpi19_cf_gradual.xes",
+    "sha256": "a1ea9fe923104252c92fa472fe6801a18f43a58408ef4099bf6ede72b4ab2067",
+    "ground_truth_archive_path": "cf/gradual/purchase_order_handling_bpi19/README.md",
+    "thesis_files": "https://drive.google.com/drive/folders/1YxYAQwGGuwzJywue0lzPpJPittNoMl-y",
+    "truth_time_basis": "start of the trace with the published case label"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 2969,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "gradual",
+      "start": "2018-12-15T23:00:00+00:00",
+      "end": "2018-12-18T10:23:00+00:00",
+      "native_case_ids": [
+        "case_003200",
+        "case_004800"
+      ],
+      "native_zero_based_case_labels": [
+        3200,
+        4800
+      ],
+      "target_activity": "Remove Payment Block",
+      "technique": "insert"
+    }
+  ],
+  "events": 39493,
+  "cases": 8000,
+  "activities": 33,
+  "resources": 292,
+  "first_timestamp": "2018-12-11T09:50:00+00:00",
+  "last_timestamp": "2019-02-08T17:39:00+00:00",
+  "observation_span_seconds": 5125740.0,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2018-12-15T23:00:00+00:00",
+      "end": "2018-12-18T10:23:00+00:00",
+      "annotations": [
+        "d01"
+      ]
+    }
+  ]
+}

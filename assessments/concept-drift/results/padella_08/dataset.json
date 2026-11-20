@@ -1,0 +1,56 @@
+{
+  "id": "padella_08",
+  "family": "padella",
+  "scenario": "request_for_payment_bpi20",
+  "source": {
+    "dataset": "https://zenodo.org/records/21005862",
+    "archive_sha256": "e6fc4f90aa76c3b6231c8305df1ffd061600e3f7fd3535be7b7366347cd8131f",
+    "archive_path": "cf/sudden/request_for_payment_bpi20/request_for_payment_bpi20_cf_sudden.xes",
+    "sha256": "e32e486bc41dc94e4983bc9ebbd95cccf3aa67dc0aeab1e4493df52c4c0c1f39",
+    "ground_truth_archive_path": "cf/sudden/request_for_payment_bpi20/README.md",
+    "thesis_files": "https://drive.google.com/drive/folders/1OtvgRH958gg8eo1dO6X5BF0ibS4EQdXl",
+    "truth_time_basis": "start of the trace with the published case label"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 2439,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "2018-05-08T09:52:49+00:00",
+      "end": "2018-05-08T09:52:49+00:00",
+      "native_case_ids": [
+        "case_003098"
+      ],
+      "native_zero_based_case_labels": [
+        3098
+      ],
+      "target_activity": "Request For Payment FINAL_APPROVED by SUPERVISOR",
+      "technique": "substitute"
+    }
+  ],
+  "events": 36796,
+  "cases": 6886,
+  "activities": 19,
+  "resources": 2,
+  "first_timestamp": "2017-01-09T08:17:18+00:00",
+  "last_timestamp": "2019-08-08T12:57:18+00:00",
+  "observation_span_seconds": 81319200.0,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2018-05-08T09:52:49+00:00",
+      "end": "2018-05-08T09:52:49+00:00",
+      "annotations": [
+        "d01"
+      ]
+    }
+  ]
+}

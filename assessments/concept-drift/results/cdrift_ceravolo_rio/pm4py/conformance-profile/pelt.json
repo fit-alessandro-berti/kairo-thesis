@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ceravolo_rio",
+  "library": "pm4py",
+  "method": "conformance-profile",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [],
+  "scores": [
+    {"index": 45, "timestamp": "2019-01-11T05:02:39.568000+00:00", "available_at": "2019-01-11T18:18:18.463000+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2019-01-11T18:23:23.328000+00:00", "available_at": "2019-01-12T09:11:39.734000+00:00", "score": 0.005875056848720361},
+    {"index": 135, "timestamp": "2019-01-12T09:15:31.079000+00:00", "available_at": "2019-01-13T01:38:39.284000+00:00", "score": 0.0098356531947007},
+    {"index": 180, "timestamp": "2019-01-13T01:47:06.044000+00:00", "available_at": "2019-01-13T15:11:28.664000+00:00", "score": 0.0015101248787204868},
+    {"index": 225, "timestamp": "2019-01-13T15:48:27.269000+00:00", "available_at": "2019-01-14T06:44:10.561000+00:00", "score": 0.002127937656736245},
+    {"index": 270, "timestamp": "2019-01-14T06:54:59.065000+00:00", "available_at": "2019-01-14T20:59:51.153000+00:00", "score": 0.012692866502063471},
+    {"index": 315, "timestamp": "2019-01-14T21:03:43.649000+00:00", "available_at": "2019-01-15T13:26:04.784000+00:00", "score": 0.004099809146815514},
+    {"index": 360, "timestamp": "2019-01-15T13:53:38.624000+00:00", "available_at": "2019-01-16T03:07:56.516000+00:00", "score": 0.0018490861247422163},
+    {"index": 405, "timestamp": "2019-01-16T03:28:06.382000+00:00", "available_at": "2019-01-16T18:34:04.038000+00:00", "score": 0.005230257240510849},
+    {"index": 450, "timestamp": "2019-01-16T18:38:11.089000+00:00", "available_at": "2019-01-17T09:02:48.045000+00:00", "score": 0.0003400459282811852},
+    {"index": 495, "timestamp": "2019-01-17T11:00:25.388000+00:00", "available_at": "2019-01-18T09:24:40.715000+00:00", "score": 0.03301862138388437},
+    {"index": 540, "timestamp": "2019-01-18T09:45:08.679000+00:00", "available_at": "2019-01-18T23:06:05.503000+00:00", "score": 0.00819081014993613},
+    {"index": 585, "timestamp": "2019-01-18T23:30:32.950000+00:00", "available_at": "2019-01-19T15:37:05.932000+00:00", "score": 0.007298056981839013},
+    {"index": 630, "timestamp": "2019-01-19T15:38:04.983000+00:00", "available_at": "2019-01-20T04:51:55.799000+00:00", "score": 0.009578468682656148},
+    {"index": 675, "timestamp": "2019-01-20T04:56:46.800000+00:00", "available_at": "2019-01-20T21:08:54.096000+00:00", "score": 0.011370697077437247},
+    {"index": 720, "timestamp": "2019-01-20T21:19:49.268000+00:00", "available_at": "2019-01-21T11:14:46.174000+00:00", "score": 0.010778039121696864},
+    {"index": 765, "timestamp": "2019-01-21T11:26:09.636000+00:00", "available_at": "2019-01-22T02:05:43.288000+00:00", "score": 0.003766458591548516},
+    {"index": 810, "timestamp": "2019-01-22T02:06:25.618000+00:00", "available_at": "2019-01-22T17:13:24.529000+00:00", "score": 0.012199644605407298},
+    {"index": 855, "timestamp": "2019-01-22T17:31:35.699000+00:00", "available_at": "2019-01-23T07:30:01.862000+00:00", "score": 0.02482197816928372},
+    {"index": 900, "timestamp": "2019-01-23T08:14:18.945000+00:00", "available_at": "2019-01-23T23:24:17.722000+00:00", "score": 0.016664500843154097},
+    {"index": 945, "timestamp": "2019-01-24T00:09:35.420000+00:00", "available_at": "2019-01-24T14:37:24.650000+00:00", "score": 0.012088525266383904}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "variant": "conformance_profile",
+    "method": "pelt",
+    "retrospective": true,
+    "window_size": 45,
+    "step": 45,
+    "penalty": 0.1,
+    "min_size": 3,
+    "reference_model": [
+      {
+        "places": 13,
+        "transitions": 16,
+        "silent_transitions": 1,
+        "arcs": 32
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      },
+      {
+        "marked_places": 1,
+        "tokens": 1
+      }
+    ],
+    "reference_size": 45,
+    "input_format": "EventLog",
+    "precision_alignment_variant": "VERSION_DIJKSTRA_LESS_MEMORY"
+  },
+  "configuration": {
+    "window_size": 45,
+    "step": 45,
+    "reference_size": 45,
+    "penalty": 0.1,
+    "min_size": 3
+  },
+  "runtime_seconds": 0.764569,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 12560.24218,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 31400.60545,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 62801.2109,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 21,
+    "published_count": 21,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

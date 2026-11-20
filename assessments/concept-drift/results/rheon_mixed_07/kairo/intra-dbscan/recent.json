@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_mixed_07",
+  "library": "kairo",
+  "method": "intra-dbscan",
+  "profile": "recent",
+  "status": "ok",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "intra",
+    "features": {
+      "groups": [
+        "act_freqs",
+        "df_counts",
+        "act_set",
+        "case_progress",
+        "current_act",
+        "past_acts"
+      ],
+      "sliding_window_size": 3,
+      "omitted_feature_groups": []
+    },
+    "reduction": {
+      "scaling": "minmax",
+      "feature_columns": 42,
+      "feature_rows": 14300,
+      "pca_components": 5,
+      "pca_seed": 0,
+      "pca_retained_variance": 0.9999999999999993
+    },
+    "clustering": {
+      "method": "dbscan",
+      "eps": 1e-08,
+      "min_samples": 5,
+      "distance": "euclidean",
+      "eps_k_distance_quantile": 0.8,
+      "eps_k_distance_sample_rows": 6
+    },
+    "signal": {
+      "window": "2D",
+      "divergence": "tv",
+      "reference": "recent",
+      "lookback": 3,
+      "threshold_quantile": 0.95,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "changes": [
+    {
+      "index": 23,
+      "timestamp": "2024-11-15T00:00:00+00:00",
+      "available_at": "2024-11-30T03:58:54+00:00",
+      "score": 0.02867687769418379,
+      "details": {
+        "window_end": "2024-11-17T00:00:00+00:00",
+        "rows": 300,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2024-09-30T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": null, "details": {"window_end": "2024-10-02T00:00:00+00:00", "rows": 210, "coverage": 0.49713541666666666, "eligible": false}},
+    {"index": 1, "timestamp": "2024-10-02T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": null, "details": {"window_end": "2024-10-04T00:00:00+00:00", "rows": 343, "coverage": 1.0, "eligible": false}},
+    {"index": 2, "timestamp": "2024-10-04T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": null, "details": {"window_end": "2024-10-06T00:00:00+00:00", "rows": 345, "coverage": 1.0, "eligible": false}},
+    {"index": 3, "timestamp": "2024-10-06T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.024603507735026425, "details": {"window_end": "2024-10-08T00:00:00+00:00", "rows": 334, "coverage": 1.0, "eligible": true}},
+    {"index": 4, "timestamp": "2024-10-08T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.006656986445413175, "details": {"window_end": "2024-10-10T00:00:00+00:00", "rows": 420, "coverage": 1.0, "eligible": true}},
+    {"index": 5, "timestamp": "2024-10-10T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.02377917107070885, "details": {"window_end": "2024-10-12T00:00:00+00:00", "rows": 359, "coverage": 1.0, "eligible": true}},
+    {"index": 6, "timestamp": "2024-10-12T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.018704289259390758, "details": {"window_end": "2024-10-14T00:00:00+00:00", "rows": 325, "coverage": 1.0, "eligible": true}},
+    {"index": 7, "timestamp": "2024-10-14T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.02195719185894681, "details": {"window_end": "2024-10-16T00:00:00+00:00", "rows": 463, "coverage": 1.0, "eligible": true}},
+    {"index": 8, "timestamp": "2024-10-16T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.01500220426510504, "details": {"window_end": "2024-10-18T00:00:00+00:00", "rows": 418, "coverage": 1.0, "eligible": true}},
+    {"index": 9, "timestamp": "2024-10-18T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.01626448444049789, "details": {"window_end": "2024-10-20T00:00:00+00:00", "rows": 574, "coverage": 1.0, "eligible": true}},
+    {"index": 10, "timestamp": "2024-10-20T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.014221740076174952, "details": {"window_end": "2024-10-22T00:00:00+00:00", "rows": 463, "coverage": 1.0, "eligible": true}},
+    {"index": 11, "timestamp": "2024-10-22T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.011297551173969043, "details": {"window_end": "2024-10-24T00:00:00+00:00", "rows": 590, "coverage": 1.0, "eligible": true}},
+    {"index": 12, "timestamp": "2024-10-24T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.01455768741681119, "details": {"window_end": "2024-10-26T00:00:00+00:00", "rows": 649, "coverage": 1.0, "eligible": true}},
+    {"index": 13, "timestamp": "2024-10-26T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.008567867523050755, "details": {"window_end": "2024-10-28T00:00:00+00:00", "rows": 762, "coverage": 1.0, "eligible": true}},
+    {"index": 14, "timestamp": "2024-10-28T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.007114942681471427, "details": {"window_end": "2024-10-30T00:00:00+00:00", "rows": 756, "coverage": 1.0, "eligible": true}},
+    {"index": 15, "timestamp": "2024-10-30T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.0029282753479321424, "details": {"window_end": "2024-11-01T00:00:00+00:00", "rows": 587, "coverage": 1.0, "eligible": true}},
+    {"index": 16, "timestamp": "2024-11-01T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.01717423813017864, "details": {"window_end": "2024-11-03T00:00:00+00:00", "rows": 578, "coverage": 1.0, "eligible": true}},
+    {"index": 17, "timestamp": "2024-11-03T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.008329546213492633, "details": {"window_end": "2024-11-05T00:00:00+00:00", "rows": 589, "coverage": 1.0, "eligible": true}},
+    {"index": 18, "timestamp": "2024-11-05T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.01211082293895107, "details": {"window_end": "2024-11-07T00:00:00+00:00", "rows": 613, "coverage": 1.0, "eligible": true}},
+    {"index": 19, "timestamp": "2024-11-07T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.019859945698977546, "details": {"window_end": "2024-11-09T00:00:00+00:00", "rows": 611, "coverage": 1.0, "eligible": true}},
+    {"index": 20, "timestamp": "2024-11-09T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.01609059782724403, "details": {"window_end": "2024-11-11T00:00:00+00:00", "rows": 729, "coverage": 1.0, "eligible": true}},
+    {"index": 21, "timestamp": "2024-11-11T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.003970361685622342, "details": {"window_end": "2024-11-13T00:00:00+00:00", "rows": 562, "coverage": 1.0, "eligible": true}},
+    {"index": 22, "timestamp": "2024-11-13T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.011583007599324333, "details": {"window_end": "2024-11-15T00:00:00+00:00", "rows": 403, "coverage": 1.0, "eligible": true}},
+    {"index": 23, "timestamp": "2024-11-15T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.02867687769418379, "details": {"window_end": "2024-11-17T00:00:00+00:00", "rows": 300, "coverage": 1.0, "eligible": true}},
+    {"index": 24, "timestamp": "2024-11-17T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.02785103539810234, "details": {"window_end": "2024-11-19T00:00:00+00:00", "rows": 336, "coverage": 1.0, "eligible": true}},
+    {"index": 25, "timestamp": "2024-11-19T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.009784586714444148, "details": {"window_end": "2024-11-21T00:00:00+00:00", "rows": 344, "coverage": 1.0, "eligible": true}},
+    {"index": 26, "timestamp": "2024-11-21T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.012720485241988898, "details": {"window_end": "2024-11-23T00:00:00+00:00", "rows": 365, "coverage": 1.0, "eligible": true}},
+    {"index": 27, "timestamp": "2024-11-23T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.01055964808920435, "details": {"window_end": "2024-11-25T00:00:00+00:00", "rows": 379, "coverage": 1.0, "eligible": true}},
+    {"index": 28, "timestamp": "2024-11-25T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.011619182502085268, "details": {"window_end": "2024-11-27T00:00:00+00:00", "rows": 357, "coverage": 1.0, "eligible": true}},
+    {"index": 29, "timestamp": "2024-11-27T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.015423350337954486, "details": {"window_end": "2024-11-29T00:00:00+00:00", "rows": 365, "coverage": 1.0, "eligible": true}},
+    {"index": 30, "timestamp": "2024-11-29T00:00:00+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.039114821575848266, "details": {"window_end": "2024-12-01T00:00:00+00:00", "rows": 171, "coverage": 0.5829513888888889, "eligible": false}}
+  ],
+  "metadata": {
+    "threshold": 0.02687677709917956,
+    "median_rows": 418.0,
+    "eligible_windows": 27,
+    "occupied_states": 6,
+    "distinct_feature_rows": 6,
+    "noise_rows": 1447
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 51983.34,
+        "tp": 0,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 129958.35,
+        "tp": 0,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 259916.7,
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 259200.0,
+            "distance_to_truth_interval_seconds": 259200.0,
+            "availability_minus_onset_seconds": 1569534.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 31,
+    "published_count": 31,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

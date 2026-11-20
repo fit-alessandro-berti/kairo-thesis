@@ -1,0 +1,765 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_mixed_07",
+  "library": "pm4py",
+  "method": "declare-profiles",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [],
+  "scores": [
+    {"index": 0, "timestamp": "2024-10-01T02:41:34+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.0},
+    {"index": 130, "timestamp": "2024-10-04T18:05:06+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.16317848796612625},
+    {"index": 260, "timestamp": "2024-10-08T09:08:20+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.358992673525478},
+    {"index": 390, "timestamp": "2024-10-11T16:34:11+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.19581418555935176},
+    {"index": 520, "timestamp": "2024-10-15T09:25:07+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.06527139518645042},
+    {"index": 650, "timestamp": "2024-10-18T06:26:11+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.1958141855593515},
+    {"index": 780, "timestamp": "2024-10-20T11:27:16+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.16317848796612636},
+    {"index": 910, "timestamp": "2024-10-23T06:37:24+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.1305427903729011},
+    {"index": 1040, "timestamp": "2024-10-25T07:47:18+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.09790709277967583},
+    {"index": 1170, "timestamp": "2024-10-26T21:57:08+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.06527139518645042},
+    {"index": 1300, "timestamp": "2024-10-28T19:16:12+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.16317848796612625},
+    {"index": 1430, "timestamp": "2024-10-30T15:55:21+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.26108558074580207},
+    {"index": 1560, "timestamp": "2024-11-01T17:21:25+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.0979070927796757},
+    {"index": 1690, "timestamp": "2024-11-03T20:48:27+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.0979070927796757},
+    {"index": 1820, "timestamp": "2024-11-06T03:01:59+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.06527139518645067},
+    {"index": 1950, "timestamp": "2024-11-08T04:18:49+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.032635697593225155},
+    {"index": 2080, "timestamp": "2024-11-10T07:30:23+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.22844988315257692},
+    {"index": 2210, "timestamp": "2024-11-12T01:30:12+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.1305427903729011},
+    {"index": 2340, "timestamp": "2024-11-15T07:56:59+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.03263569759322539},
+    {"index": 2470, "timestamp": "2024-11-19T07:59:36+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.03263569759322527},
+    {"index": 2600, "timestamp": "2024-11-22T23:25:14+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.0},
+    {"index": 2730, "timestamp": "2024-11-26T09:18:11+00:00", "available_at": "2024-11-30T03:58:54+00:00", "score": 0.16317848796612636}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "declare_profiles",
+    "detector": "pelt",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "constraints": [
+      [
+        "existence",
+        "a"
+      ],
+      [
+        "existence",
+        "b"
+      ],
+      [
+        "existence",
+        "c"
+      ],
+      [
+        "existence",
+        "d"
+      ],
+      [
+        "existence",
+        "f"
+      ],
+      [
+        "existence",
+        "e"
+      ],
+      [
+        "response",
+        "a",
+        "b"
+      ],
+      [
+        "precedence",
+        "a",
+        "b"
+      ],
+      [
+        "response",
+        "a",
+        "c"
+      ],
+      [
+        "precedence",
+        "a",
+        "c"
+      ],
+      [
+        "response",
+        "a",
+        "d"
+      ],
+      [
+        "precedence",
+        "a",
+        "d"
+      ],
+      [
+        "response",
+        "a",
+        "f"
+      ],
+      [
+        "precedence",
+        "a",
+        "f"
+      ],
+      [
+        "response",
+        "a",
+        "e"
+      ],
+      [
+        "precedence",
+        "a",
+        "e"
+      ],
+      [
+        "response",
+        "b",
+        "a"
+      ],
+      [
+        "precedence",
+        "b",
+        "a"
+      ],
+      [
+        "response",
+        "b",
+        "c"
+      ],
+      [
+        "precedence",
+        "b",
+        "c"
+      ],
+      [
+        "response",
+        "b",
+        "d"
+      ],
+      [
+        "precedence",
+        "b",
+        "d"
+      ],
+      [
+        "response",
+        "b",
+        "f"
+      ],
+      [
+        "precedence",
+        "b",
+        "f"
+      ],
+      [
+        "response",
+        "b",
+        "e"
+      ],
+      [
+        "precedence",
+        "b",
+        "e"
+      ],
+      [
+        "response",
+        "c",
+        "a"
+      ],
+      [
+        "precedence",
+        "c",
+        "a"
+      ],
+      [
+        "response",
+        "c",
+        "b"
+      ],
+      [
+        "precedence",
+        "c",
+        "b"
+      ],
+      [
+        "response",
+        "c",
+        "d"
+      ],
+      [
+        "precedence",
+        "c",
+        "d"
+      ],
+      [
+        "response",
+        "c",
+        "f"
+      ],
+      [
+        "precedence",
+        "c",
+        "f"
+      ],
+      [
+        "response",
+        "c",
+        "e"
+      ],
+      [
+        "precedence",
+        "c",
+        "e"
+      ],
+      [
+        "response",
+        "d",
+        "a"
+      ],
+      [
+        "precedence",
+        "d",
+        "a"
+      ],
+      [
+        "response",
+        "d",
+        "b"
+      ],
+      [
+        "precedence",
+        "d",
+        "b"
+      ],
+      [
+        "response",
+        "d",
+        "c"
+      ],
+      [
+        "precedence",
+        "d",
+        "c"
+      ],
+      [
+        "response",
+        "d",
+        "f"
+      ],
+      [
+        "precedence",
+        "d",
+        "f"
+      ],
+      [
+        "response",
+        "d",
+        "e"
+      ],
+      [
+        "precedence",
+        "d",
+        "e"
+      ],
+      [
+        "response",
+        "f",
+        "a"
+      ],
+      [
+        "precedence",
+        "f",
+        "a"
+      ],
+      [
+        "response",
+        "f",
+        "b"
+      ],
+      [
+        "precedence",
+        "f",
+        "b"
+      ],
+      [
+        "response",
+        "f",
+        "c"
+      ],
+      [
+        "precedence",
+        "f",
+        "c"
+      ],
+      [
+        "response",
+        "f",
+        "d"
+      ],
+      [
+        "precedence",
+        "f",
+        "d"
+      ],
+      [
+        "response",
+        "f",
+        "e"
+      ],
+      [
+        "precedence",
+        "f",
+        "e"
+      ],
+      [
+        "response",
+        "e",
+        "a"
+      ],
+      [
+        "precedence",
+        "e",
+        "a"
+      ],
+      [
+        "response",
+        "e",
+        "b"
+      ],
+      [
+        "precedence",
+        "e",
+        "b"
+      ],
+      [
+        "response",
+        "e",
+        "c"
+      ],
+      [
+        "precedence",
+        "e",
+        "c"
+      ],
+      [
+        "response",
+        "e",
+        "d"
+      ],
+      [
+        "precedence",
+        "e",
+        "d"
+      ],
+      [
+        "response",
+        "e",
+        "f"
+      ],
+      [
+        "precedence",
+        "e",
+        "f"
+      ]
+    ],
+    "statistic": "confidence",
+    "window_size": 130,
+    "step": 130,
+    "penalty": 3,
+    "min_size": 2,
+    "gamma": null,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 130,
+    "step": 130,
+    "penalty": 3,
+    "constraints": [
+      [
+        "existence",
+        "a"
+      ],
+      [
+        "existence",
+        "b"
+      ],
+      [
+        "existence",
+        "c"
+      ],
+      [
+        "existence",
+        "d"
+      ],
+      [
+        "existence",
+        "f"
+      ],
+      [
+        "existence",
+        "e"
+      ],
+      [
+        "response",
+        "a",
+        "b"
+      ],
+      [
+        "precedence",
+        "a",
+        "b"
+      ],
+      [
+        "response",
+        "a",
+        "c"
+      ],
+      [
+        "precedence",
+        "a",
+        "c"
+      ],
+      [
+        "response",
+        "a",
+        "d"
+      ],
+      [
+        "precedence",
+        "a",
+        "d"
+      ],
+      [
+        "response",
+        "a",
+        "f"
+      ],
+      [
+        "precedence",
+        "a",
+        "f"
+      ],
+      [
+        "response",
+        "a",
+        "e"
+      ],
+      [
+        "precedence",
+        "a",
+        "e"
+      ],
+      [
+        "response",
+        "b",
+        "a"
+      ],
+      [
+        "precedence",
+        "b",
+        "a"
+      ],
+      [
+        "response",
+        "b",
+        "c"
+      ],
+      [
+        "precedence",
+        "b",
+        "c"
+      ],
+      [
+        "response",
+        "b",
+        "d"
+      ],
+      [
+        "precedence",
+        "b",
+        "d"
+      ],
+      [
+        "response",
+        "b",
+        "f"
+      ],
+      [
+        "precedence",
+        "b",
+        "f"
+      ],
+      [
+        "response",
+        "b",
+        "e"
+      ],
+      [
+        "precedence",
+        "b",
+        "e"
+      ],
+      [
+        "response",
+        "c",
+        "a"
+      ],
+      [
+        "precedence",
+        "c",
+        "a"
+      ],
+      [
+        "response",
+        "c",
+        "b"
+      ],
+      [
+        "precedence",
+        "c",
+        "b"
+      ],
+      [
+        "response",
+        "c",
+        "d"
+      ],
+      [
+        "precedence",
+        "c",
+        "d"
+      ],
+      [
+        "response",
+        "c",
+        "f"
+      ],
+      [
+        "precedence",
+        "c",
+        "f"
+      ],
+      [
+        "response",
+        "c",
+        "e"
+      ],
+      [
+        "precedence",
+        "c",
+        "e"
+      ],
+      [
+        "response",
+        "d",
+        "a"
+      ],
+      [
+        "precedence",
+        "d",
+        "a"
+      ],
+      [
+        "response",
+        "d",
+        "b"
+      ],
+      [
+        "precedence",
+        "d",
+        "b"
+      ],
+      [
+        "response",
+        "d",
+        "c"
+      ],
+      [
+        "precedence",
+        "d",
+        "c"
+      ],
+      [
+        "response",
+        "d",
+        "f"
+      ],
+      [
+        "precedence",
+        "d",
+        "f"
+      ],
+      [
+        "response",
+        "d",
+        "e"
+      ],
+      [
+        "precedence",
+        "d",
+        "e"
+      ],
+      [
+        "response",
+        "f",
+        "a"
+      ],
+      [
+        "precedence",
+        "f",
+        "a"
+      ],
+      [
+        "response",
+        "f",
+        "b"
+      ],
+      [
+        "precedence",
+        "f",
+        "b"
+      ],
+      [
+        "response",
+        "f",
+        "c"
+      ],
+      [
+        "precedence",
+        "f",
+        "c"
+      ],
+      [
+        "response",
+        "f",
+        "d"
+      ],
+      [
+        "precedence",
+        "f",
+        "d"
+      ],
+      [
+        "response",
+        "f",
+        "e"
+      ],
+      [
+        "precedence",
+        "f",
+        "e"
+      ],
+      [
+        "response",
+        "e",
+        "a"
+      ],
+      [
+        "precedence",
+        "e",
+        "a"
+      ],
+      [
+        "response",
+        "e",
+        "b"
+      ],
+      [
+        "precedence",
+        "e",
+        "b"
+      ],
+      [
+        "response",
+        "e",
+        "c"
+      ],
+      [
+        "precedence",
+        "e",
+        "c"
+      ],
+      [
+        "response",
+        "e",
+        "d"
+      ],
+      [
+        "precedence",
+        "e",
+        "d"
+      ],
+      [
+        "response",
+        "e",
+        "f"
+      ],
+      [
+        "precedence",
+        "e",
+        "f"
+      ]
+    ]
+  },
+  "runtime_seconds": 0.691641,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 51983.34,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 129958.35,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 259916.7,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 22,
+    "published_count": 22,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

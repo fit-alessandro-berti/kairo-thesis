@@ -1,0 +1,458 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ostovar_parallel_to_sequence",
+  "library": "pm4py",
+  "method": "supervised-similarity",
+  "profile": "independent-prototype",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 63,
+      "timestamp": "1970-01-01T11:21:46.350000+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 0.9874822190611663,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          1,
+          14
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "index": 945,
+      "timestamp": "1970-01-07T14:28:55.245000+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "sudden",
+        "window_range": [
+          15,
+          15
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 1008,
+      "timestamp": "1970-01-08T00:56:53.071000+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 0.9874822190611663,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          16,
+          30
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "index": 1945,
+      "timestamp": "1970-01-14T13:11:56.085000+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "sudden",
+        "window_range": [
+          31,
+          31
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 2007,
+      "timestamp": "1970-01-14T23:28:09.839000+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 0.9874822190611663,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          32,
+          47
+        ],
+        "confidence": 0.9874822190611663
+      }
+    }
+  ],
+  "scores": [
+    {"index": 63, "timestamp": "1970-01-01T11:21:46.350000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.9874822190611663},
+    {"index": 945, "timestamp": "1970-01-07T14:28:55.245000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 1.0},
+    {"index": 1008, "timestamp": "1970-01-08T00:56:53.071000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.9874822190611663},
+    {"index": 1945, "timestamp": "1970-01-14T13:11:56.085000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 1.0},
+    {"index": 2007, "timestamp": "1970-01-14T23:28:09.839000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.9874822190611663}
+  ],
+  "intervals": [
+    {
+      "start_index": 63,
+      "end_index": 944,
+      "start_timestamp": "1970-01-01T11:21:46.350000+00:00",
+      "end_timestamp": "1970-01-07T14:23:57.628000+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          1,
+          14
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "start_index": 1008,
+      "end_index": 1944,
+      "start_timestamp": "1970-01-08T00:56:53.071000+00:00",
+      "end_timestamp": "1970-01-14T13:05:57.905000+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          16,
+          30
+        ],
+        "confidence": 0.9874822190611663
+      }
+    },
+    {
+      "start_index": 2007,
+      "end_index": 2998,
+      "start_timestamp": "1970-01-14T23:28:09.839000+00:00",
+      "end_timestamp": "1970-01-21T20:59:55.363000+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          32,
+          47
+        ],
+        "confidence": 0.9874822190611663
+      }
+    }
+  ],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "supervised_similarity",
+    "representation": "directly_follows_cosine_similarity_image",
+    "predictor": "_PatchPredictor",
+    "retrospective": true,
+    "trace_order": "start",
+    "num_windows": 48,
+    "min_confidence": 0.8,
+    "windows": [
+      [
+        0,
+        63
+      ],
+      [
+        63,
+        126
+      ],
+      [
+        126,
+        189
+      ],
+      [
+        189,
+        252
+      ],
+      [
+        252,
+        315
+      ],
+      [
+        315,
+        378
+      ],
+      [
+        378,
+        441
+      ],
+      [
+        441,
+        504
+      ],
+      [
+        504,
+        567
+      ],
+      [
+        567,
+        630
+      ],
+      [
+        630,
+        693
+      ],
+      [
+        693,
+        756
+      ],
+      [
+        756,
+        819
+      ],
+      [
+        819,
+        882
+      ],
+      [
+        882,
+        945
+      ],
+      [
+        945,
+        1008
+      ],
+      [
+        1008,
+        1071
+      ],
+      [
+        1071,
+        1134
+      ],
+      [
+        1134,
+        1197
+      ],
+      [
+        1197,
+        1260
+      ],
+      [
+        1260,
+        1323
+      ],
+      [
+        1323,
+        1386
+      ],
+      [
+        1386,
+        1449
+      ],
+      [
+        1449,
+        1511
+      ],
+      [
+        1511,
+        1573
+      ],
+      [
+        1573,
+        1635
+      ],
+      [
+        1635,
+        1697
+      ],
+      [
+        1697,
+        1759
+      ],
+      [
+        1759,
+        1821
+      ],
+      [
+        1821,
+        1883
+      ],
+      [
+        1883,
+        1945
+      ],
+      [
+        1945,
+        2007
+      ],
+      [
+        2007,
+        2069
+      ],
+      [
+        2069,
+        2131
+      ],
+      [
+        2131,
+        2193
+      ],
+      [
+        2193,
+        2255
+      ],
+      [
+        2255,
+        2317
+      ],
+      [
+        2317,
+        2379
+      ],
+      [
+        2379,
+        2441
+      ],
+      [
+        2441,
+        2503
+      ],
+      [
+        2503,
+        2565
+      ],
+      [
+        2565,
+        2627
+      ],
+      [
+        2627,
+        2689
+      ],
+      [
+        2689,
+        2751
+      ],
+      [
+        2751,
+        2813
+      ],
+      [
+        2813,
+        2875
+      ],
+      [
+        2875,
+        2937
+      ],
+      [
+        2937,
+        2999
+      ]
+    ],
+    "input_format": "EventLog",
+    "training": {
+      "source": "independently generated by train_prototype",
+      "seed": 73,
+      "logs": 24,
+      "cases_per_log": 480,
+      "radius": 2
+    }
+  },
+  "configuration": {
+    "num_windows": 48,
+    "min_confidence": 0.8
+  },
+  "runtime_seconds": 5.289373,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 19114.20139,
+        "tp": 2,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714285714285714,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 4282.154,
+            "distance_to_truth_interval_seconds": 4282.154,
+            "availability_minus_onset_seconds": 1311073.105
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 4,
+            "estimate_minus_onset_seconds": 3773.27,
+            "distance_to_truth_interval_seconds": 3773.27,
+            "availability_minus_onset_seconds": 711087.453
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          3
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 47785.503475,
+        "tp": 2,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714285714285714,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 4282.154,
+            "distance_to_truth_interval_seconds": 4282.154,
+            "availability_minus_onset_seconds": 1311073.105
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 4,
+            "estimate_minus_onset_seconds": 3773.27,
+            "distance_to_truth_interval_seconds": 3773.27,
+            "availability_minus_onset_seconds": 711087.453
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          3
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 95571.00695,
+        "tp": 2,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714285714285714,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 4282.154,
+            "distance_to_truth_interval_seconds": 4282.154,
+            "availability_minus_onset_seconds": 1311073.105
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 4,
+            "estimate_minus_onset_seconds": 3773.27,
+            "distance_to_truth_interval_seconds": 3773.27,
+            "availability_minus_onset_seconds": 711087.453
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          3
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 5,
+    "published_count": 5,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ceravolo_rio",
+  "library": "pm4py",
+  "method": "graph-metrics",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 495,
+      "timestamp": "2019-01-17T11:00:25.388000+00:00",
+      "available_at": "2019-01-24T20:53:44.218000+00:00",
+      "score": 64.36469221835075,
+      "details": {
+        "metric_changes": {
+          "edge_density": 0.00519480519480521,
+          "branching_fraction": 0.006060606060606044,
+          "merging_fraction": 0.06666666666666667,
+          "cyclic_activity_fraction": 0.19999999999999998
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2019-01-10T10:27:10.048000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 45, "timestamp": "2019-01-11T05:02:39.568000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2019-01-11T18:23:23.328000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 135, "timestamp": "2019-01-12T09:15:31.079000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 180, "timestamp": "2019-01-13T01:47:06.044000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 225, "timestamp": "2019-01-13T15:48:27.269000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 270, "timestamp": "2019-01-14T06:54:59.065000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 315, "timestamp": "2019-01-14T21:03:43.649000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 360, "timestamp": "2019-01-15T13:53:38.624000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 405, "timestamp": "2019-01-16T03:28:06.382000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 450, "timestamp": "2019-01-16T18:38:11.089000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 495, "timestamp": "2019-01-17T11:00:25.388000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 6.546181871625591},
+    {"index": 540, "timestamp": "2019-01-18T09:45:08.679000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 5.098905623740663},
+    {"index": 585, "timestamp": "2019-01-18T23:30:32.950000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 630, "timestamp": "2019-01-19T15:38:04.983000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 675, "timestamp": "2019-01-20T04:56:46.800000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 720, "timestamp": "2019-01-20T21:19:49.268000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 765, "timestamp": "2019-01-21T11:26:09.636000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 810, "timestamp": "2019-01-22T02:06:25.618000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 855, "timestamp": "2019-01-22T17:31:35.699000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 900, "timestamp": "2019-01-23T08:14:18.945000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0},
+    {"index": 945, "timestamp": "2019-01-24T00:09:35.420000+00:00", "available_at": "2019-01-24T20:53:44.218000+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "window_size": 45,
+    "min_edge_count": 1,
+    "min_size": 3,
+    "penalty": 12.0,
+    "standardize": true,
+    "metrics": [
+      "activity_count",
+      "edge_density",
+      "branching_fraction",
+      "merging_fraction",
+      "weak_component_count",
+      "cyclic_activity_fraction",
+      "self_loop_fraction"
+    ],
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 45,
+    "penalty": 12,
+    "min_size": 3
+  },
+  "runtime_seconds": 0.713407,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 12560.24218,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -10774.612,
+            "distance_to_truth_interval_seconds": 10774.612,
+            "availability_minus_onset_seconds": 629624.218
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 31400.60545,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -10774.612,
+            "distance_to_truth_interval_seconds": 10774.612,
+            "availability_minus_onset_seconds": 629624.218
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 62801.2109,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -10774.612,
+            "distance_to_truth_interval_seconds": 10774.612,
+            "availability_minus_onset_seconds": 629624.218
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 22,
+    "published_count": 22,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

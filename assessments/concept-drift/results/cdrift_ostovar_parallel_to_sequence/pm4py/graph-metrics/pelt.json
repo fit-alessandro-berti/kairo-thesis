@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ostovar_parallel_to_sequence",
+  "library": "pm4py",
+  "method": "graph-metrics",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 1088,
+      "timestamp": "1970-01-09T16:33:51.130000+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 17.923089586355495,
+      "details": {
+        "metric_changes": {
+          "edge_density": -0.004730017006802714,
+          "branching_fraction": -0.06377551020408156,
+          "merging_fraction": -0.06887755102040827
+        }
+      }
+    },
+    {
+      "index": 1632,
+      "timestamp": "1970-01-13T10:19:57.088000+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 34.21880570375063,
+      "details": {
+        "metric_changes": {
+          "edge_density": 0.01639030612244899,
+          "branching_fraction": 0.083673469387755,
+          "merging_fraction": 0.0775510204081632,
+          "cyclic_activity_fraction": 0.0010204081632653184,
+          "self_loop_fraction": 4.050663193036682e-05
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "1970-01-01T22:36:07.886000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0},
+    {"index": 136, "timestamp": "1970-01-03T00:44:22.309000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 2.8359735048927415},
+    {"index": 272, "timestamp": "1970-01-03T23:50:28.861000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 4.368361611313007},
+    {"index": 408, "timestamp": "1970-01-04T21:55:50.746000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 3.0342844359817347},
+    {"index": 544, "timestamp": "1970-01-05T21:37:43.226000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 1.816513674098611},
+    {"index": 680, "timestamp": "1970-01-06T19:30:19.043000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 3.054855323996262},
+    {"index": 816, "timestamp": "1970-01-07T18:45:23.593000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 2.4746073918829476},
+    {"index": 952, "timestamp": "1970-01-08T18:01:02.453000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 1.9448832732350534},
+    {"index": 1088, "timestamp": "1970-01-09T16:33:51.130000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 3.476156287180357},
+    {"index": 1224, "timestamp": "1970-01-10T14:44:45.172000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.8241950459415183},
+    {"index": 1360, "timestamp": "1970-01-11T13:34:30.727000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 1.4594755379568736},
+    {"index": 1496, "timestamp": "1970-01-12T11:44:04.688000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 1.6531186927580823},
+    {"index": 1632, "timestamp": "1970-01-13T10:19:57.088000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 2.749692163235193},
+    {"index": 1768, "timestamp": "1970-01-14T09:37:31.871000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 3.1086127812831537},
+    {"index": 1904, "timestamp": "1970-01-15T07:29:40.438000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 1.571207203004833},
+    {"index": 2040, "timestamp": "1970-01-16T06:08:26.531000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 2.2887622393090723},
+    {"index": 2176, "timestamp": "1970-01-17T05:16:54.305000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.937227444155362},
+    {"index": 2312, "timestamp": "1970-01-18T04:22:56.774000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 1.642020836391526},
+    {"index": 2448, "timestamp": "1970-01-19T03:00:14.386000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 3.549971552238126},
+    {"index": 2584, "timestamp": "1970-01-20T01:29:21.400000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 3.6985423012151233},
+    {"index": 2720, "timestamp": "1970-01-21T00:25:07.743000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 3.7933232945985913},
+    {"index": 2856, "timestamp": "1970-01-21T22:11:07.195000+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 4.182468987350732}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "window_size": 136,
+    "min_edge_count": 1,
+    "min_size": 3,
+    "penalty": 12.0,
+    "standardize": true,
+    "metrics": [
+      "activity_count",
+      "edge_density",
+      "branching_fraction",
+      "merging_fraction",
+      "weak_component_count",
+      "cyclic_activity_fraction",
+      "self_loop_fraction"
+    ],
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 136,
+    "penalty": 12,
+    "min_size": 3
+  },
+  "runtime_seconds": 2.609434,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 19114.20139,
+        "tp": 0,
+        "fp": 2,
+        "fn": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 47785.503475,
+        "tp": 0,
+        "fp": 2,
+        "fn": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 95571.00695,
+        "tp": 0,
+        "fp": 2,
+        "fn": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 22,
+    "published_count": 22,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

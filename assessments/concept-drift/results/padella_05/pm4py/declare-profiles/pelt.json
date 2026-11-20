@@ -1,0 +1,2338 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_05",
+  "library": "pm4py",
+  "method": "declare-profiles",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 2250,
+      "timestamp": "2018-01-11T16:30:56+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 17.028086166529494,
+      "details": {
+        "constraint_deltas": {
+          "[\"existence\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.003555555555555645,
+          "[\"existence\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.006765432098765345,
+          "[\"existence\", \"Payment Handled\"]": 0.004790123456790085,
+          "[\"existence\", \"Request Payment\"]": 0.0034567901234567877,
+          "[\"existence\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.9387654320987656,
+          "[\"existence\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.3470123456790124,
+          "[\"existence\", \"Declaration REJECTED by EMPLOYEE\"]": 0.0502716049382716,
+          "[\"existence\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.08232098765432098,
+          "[\"existence\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.29461728395061726,
+          "[\"existence\", \"Declaration REJECTED by SUPERVISOR\"]": -0.0015802469135802535,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.006765432098765345,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.006765432098765345,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Payment Handled\"]": 0.005234567901234666,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Payment Handled\"]": 0.005234567901234666,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Request Payment\"]": 0.0039012345679012572,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Request Payment\"]": 0.0039012345679012572,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.9382716049382718,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.9387654320987656,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.34553086419753093,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.3470123456790124,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by EMPLOYEE\"]": 0.011209876543209873,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by EMPLOYEE\"]": 0.0502716049382716,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.019802469135802466,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.08232098765432098,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.2948641975308642,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.29461728395061726,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by SUPERVISOR\"]": -0.007753086419753087,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by SUPERVISOR\"]": -0.0015802469135802535,
+          "[\"response\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Payment Handled\"]": 0.005679012345679024,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Payment Handled\"]": 0.005679012345679024,
+          "[\"response\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Request Payment\"]": 0.004345679012345727,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Request Payment\"]": 0.004345679012345727,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Declaration APPROVED by ADMINISTRATION\"]": 4.9382716049382706e-05,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.0002469135802469136,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Declaration REJECTED by EMPLOYEE\"]": -0.0013333333333333333,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Declaration REJECTED by ADMINISTRATION\"]": -0.00044444444444444447,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.00044444444444444447,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Declaration REJECTED by SUPERVISOR\"]": -0.00044444444444444447,
+          "[\"response\", \"Payment Handled\", \"Declaration REJECTED by EMPLOYEE\"]": -0.00044444444444444447,
+          "[\"precedence\", \"Payment Handled\", \"Declaration REJECTED by EMPLOYEE\"]": -0.00044444444444444447,
+          "[\"response\", \"Request Payment\", \"Payment Handled\"]": 0.004790123456790085,
+          "[\"precedence\", \"Request Payment\", \"Payment Handled\"]": 0.004790123456790085,
+          "[\"response\", \"Request Payment\", \"Declaration REJECTED by EMPLOYEE\"]": -0.00044444444444444447,
+          "[\"precedence\", \"Request Payment\", \"Declaration REJECTED by EMPLOYEE\"]": -0.00044444444444444447,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.0004938271604938272,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.9308641975308641,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.9308148148148147,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Payment Handled\"]": 0.9308641975308641,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Payment Handled\"]": 0.9308641975308641,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Request Payment\"]": 0.9308641975308641,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Request Payment\"]": 0.9308641975308641,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.34034567901234575,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.34182716049382716,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by EMPLOYEE\"]": 0.007901234567901231,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by EMPLOYEE\"]": 0.030370370370370364,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.0004938271604938272,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.0004938271604938272,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by SUPERVISOR\"]": 0.005185185185185185,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by SUPERVISOR\"]": 0.026172839506172836,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.0014814814814814814,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.34651851851851856,
+          "[\"precedence\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.3462716049382717,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Payment Handled\"]": 0.34651851851851856,
+          "[\"precedence\", \"Declaration APPROVED by BUDGET OWNER\", \"Payment Handled\"]": 0.34651851851851856,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Request Payment\"]": 0.34651851851851856,
+          "[\"precedence\", \"Declaration APPROVED by BUDGET OWNER\", \"Request Payment\"]": 0.34651851851851856,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.0014814814814814814,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration REJECTED by EMPLOYEE\"]": 0.0017283950617283952,
+          "[\"precedence\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration REJECTED by EMPLOYEE\"]": 0.002962962962962963,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration REJECTED by SUPERVISOR\"]": 0.0017283950617283952,
+          "[\"precedence\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration REJECTED by SUPERVISOR\"]": 0.0032098765432098768,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.03906172839506175,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.03906172839506175,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.04039506172839509,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Payment Handled\"]": 0.03950617283950619,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Payment Handled\"]": 0.03950617283950619,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Request Payment\"]": 0.03950617283950619,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Request Payment\"]": 0.03950617283950619,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.08474074074074074,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.062271604938271594,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.03580246913580247,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.034567901234567905,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.0004938271604938272,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.03353086419753087,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.02997530864197531,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration REJECTED by SUPERVISOR\"]": 0.0019753086419753087,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.06251851851851851,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.061037037037037035,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.06148148148148148,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Payment Handled\"]": 0.061037037037037035,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Payment Handled\"]": 0.061037037037037035,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Request Payment\"]": 0.061037037037037035,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Request Payment\"]": 0.061037037037037035,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.06177777777777778,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.06177777777777778,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.025432098765432093,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.025432098765432093,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration REJECTED by EMPLOYEE\"]": 0.08232098765432098,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration REJECTED by EMPLOYEE\"]": 0.08182716049382716,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration REJECTED by SUPERVISOR\"]": 0.0022222222222222222,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration REJECTED by SUPERVISOR\"]": 0.0022222222222222222,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.0002469135802469136,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.2932839506172839,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.2928395061728395,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Payment Handled\"]": -0.2919506172839506,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Payment Handled\"]": -0.2919506172839506,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Request Payment\"]": -0.2919506172839506,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Request Payment\"]": -0.2919506172839506,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.0002469135802469136,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.0002469135802469136,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.0002469135802469136,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.0002469135802469136,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration REJECTED by EMPLOYEE\"]": -0.0013333333333333333,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration REJECTED by EMPLOYEE\"]": -0.004888888888888889,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration REJECTED by SUPERVISOR\"]": -0.0013333333333333333,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration REJECTED by SUPERVISOR\"]": -0.004888888888888889,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.006172839506172837,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.005432098765432098,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.005876543209876543,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Payment Handled\"]": 0.004987654320987651,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Payment Handled\"]": 0.004987654320987651,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Request Payment\"]": 0.004987654320987651,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Request Payment\"]": 0.004987654320987651,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.021234567901234565,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration APPROVED by ADMINISTRATION\"]": 0.0002469135802469136,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.009382716049382714,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.007901234567901231,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration REJECTED by EMPLOYEE\"]": -0.0015802469135802535,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration REJECTED by EMPLOYEE\"]": -0.003555555555555562,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.0004938271604938272,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.0004938271604938272,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.0044444444444444444,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.0008888888888888889
+        }
+      }
+    },
+    {
+      "index": 6300,
+      "timestamp": "2018-07-05T15:31:33+00:00",
+      "available_at": "2019-06-17T15:30:58+00:00",
+      "score": 23.330815075150813,
+      "details": {
+        "constraint_deltas": {
+          "[\"existence\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.00309523809523804,
+          "[\"existence\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.0035361552028218,
+          "[\"existence\", \"Payment Handled\"]": -0.0035361552028218,
+          "[\"existence\", \"Request Payment\"]": -0.005202821869488394,
+          "[\"existence\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.9310670194003529,
+          "[\"existence\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.015520282186948842,
+          "[\"existence\", \"Declaration REJECTED by EMPLOYEE\"]": 0.03093474426807763,
+          "[\"existence\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.03750440917107588,
+          "[\"existence\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.0004938271604938272,
+          "[\"existence\", \"Declaration REJECTED by SUPERVISOR\"]": 8.818342151675762e-06,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.0035361552028218,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.0035361552028218,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Payment Handled\"]": -0.0035361552028218,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Payment Handled\"]": -0.0035361552028218,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Request Payment\"]": -0.005202821869488394,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Request Payment\"]": -0.005202821869488394,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.9308112874779543,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.9310670194003529,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.015943562610229334,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.015520282186948842,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by EMPLOYEE\"]": 0.004488536155202828,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by EMPLOYEE\"]": 0.03093474426807763,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.007848324514991182,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.03750440917107588,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.0002469135802469136,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.0004938271604938272,
+          "[\"response\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by SUPERVISOR\"]": 0.0007848324514991168,
+          "[\"precedence\", \"Declaration SUBMITTED by EMPLOYEE\", \"Declaration REJECTED by SUPERVISOR\"]": 8.818342151675762e-06,
+          "[\"response\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Payment Handled\"]": -0.0035361552028218,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Payment Handled\"]": -0.0035361552028218,
+          "[\"response\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Request Payment\"]": -0.005202821869488394,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Request Payment\"]": -0.005202821869488394,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.0004938271604938272,
+          "[\"precedence\", \"Declaration FINAL_APPROVED by SUPERVISOR\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.0002469135802469136,
+          "[\"response\", \"Request Payment\", \"Payment Handled\"]": -0.005202821869488394,
+          "[\"precedence\", \"Request Payment\", \"Payment Handled\"]": -0.005202821869488394,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration SUBMITTED by EMPLOYEE\"]": -0.0002557319223985891,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.9236419753086419,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.923148148148148,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Payment Handled\"]": -0.9236419753086419,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Payment Handled\"]": -0.9236419753086419,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Request Payment\"]": -0.9241181657848323,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Request Payment\"]": -0.9241181657848323,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.3333774250440918,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.33438271604938274,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by EMPLOYEE\"]": -0.007425044091710755,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by EMPLOYEE\"]": -0.028465608465608458,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by ADMINISTRATION\"]": -0.0002557319223985891,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.0002204585537918871,
+          "[\"response\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by SUPERVISOR\"]": -0.004947089947089947,
+          "[\"precedence\", \"Declaration APPROVED by ADMINISTRATION\", \"Declaration REJECTED by SUPERVISOR\"]": -0.02426807760141093,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.00042328042328042314,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.01669312169312165,
+          "[\"precedence\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.016446208112874783,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Payment Handled\"]": -0.01669312169312165,
+          "[\"precedence\", \"Declaration APPROVED by BUDGET OWNER\", \"Payment Handled\"]": -0.01669312169312165,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Request Payment\"]": -0.017169312169312168,
+          "[\"precedence\", \"Declaration APPROVED by BUDGET OWNER\", \"Request Payment\"]": -0.017169312169312168,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.0010052910052910052,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration REJECTED by EMPLOYEE\"]": 0.0008906525573192238,
+          "[\"precedence\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration REJECTED by EMPLOYEE\"]": 0.0006084656084656089,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.0011904761904761904,
+          "[\"precedence\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.0014285714285714286,
+          "[\"response\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration REJECTED by SUPERVISOR\"]": 0.001128747795414462,
+          "[\"precedence\", \"Declaration APPROVED by BUDGET OWNER\", \"Declaration REJECTED by SUPERVISOR\"]": 0.0010758377425044091,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.02644620811287475,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.026208112874779504,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.026208112874779504,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Payment Handled\"]": 0.026208112874779504,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Payment Handled\"]": 0.026208112874779504,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Request Payment\"]": 0.026208112874779504,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Request Payment\"]": 0.026208112874779504,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.07685185185185185,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.055811287477954136,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.003959435626102292,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.004241622574955903,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.00023809523809523812,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.0018871252204585537,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.0002469135802469136,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration APPROVED by PRE_APPROVER\"]": -0.0002469135802469136,
+          "[\"response\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration REJECTED by SUPERVISOR\"]": 0.00023809523809523812,
+          "[\"precedence\", \"Declaration REJECTED by EMPLOYEE\", \"Declaration REJECTED by SUPERVISOR\"]": 0.00040564373897707205,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration SUBMITTED by EMPLOYEE\"]": 0.029656084656084658,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.030423280423280442,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": 0.030423280423280442,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Payment Handled\"]": 0.030423280423280442,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Payment Handled\"]": 0.030423280423280442,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Request Payment\"]": 0.030423280423280442,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Request Payment\"]": 0.030423280423280442,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.054841269841269843,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.05531746031746032,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.005758377425044092,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration APPROVED by BUDGET OWNER\"]": 0.005520282186948857,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration REJECTED by EMPLOYEE\"]": 0.03607583774250446,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration REJECTED by EMPLOYEE\"]": 0.034426807760141134,
+          "[\"response\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration REJECTED by SUPERVISOR\"]": -7.936507936507926e-05,
+          "[\"precedence\", \"Declaration REJECTED by ADMINISTRATION\", \"Declaration REJECTED by SUPERVISOR\"]": 0.0001587301587301585,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration SUBMITTED by EMPLOYEE\"]": -0.0002469135802469136,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.0004938271604938272,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.0004938271604938272,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Payment Handled\"]": -0.0004938271604938272,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Payment Handled\"]": -0.0004938271604938272,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Request Payment\"]": -0.0004938271604938272,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Request Payment\"]": -0.0004938271604938272,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.0002469135802469136,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.0002469135802469136,
+          "[\"response\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.0002469135802469136,
+          "[\"precedence\", \"Declaration APPROVED by PRE_APPROVER\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.0002469135802469136,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration SUBMITTED by EMPLOYEE\"]": -0.0007760141093474462,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.0009876543209876576,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration FINAL_APPROVED by SUPERVISOR\"]": -0.0009876543209876576,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Payment Handled\"]": -0.0009876543209876576,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Payment Handled\"]": -0.0009876543209876576,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Request Payment\"]": -0.0012257495590828928,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Request Payment\"]": -0.0012257495590828928,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.0195679012345679,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration APPROVED by ADMINISTRATION\"]": -0.0002469135802469136,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.0022398589065255716,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration APPROVED by BUDGET OWNER\"]": -0.002186948853615518,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration REJECTED by EMPLOYEE\"]": -0.0011816578483245174,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration REJECTED by EMPLOYEE\"]": -0.00134920634920635,
+          "[\"response\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.001649029982363316,
+          "[\"precedence\", \"Declaration REJECTED by SUPERVISOR\", \"Declaration REJECTED by ADMINISTRATION\"]": 0.0014109347442680777
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2017-01-10T12:41:35+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.0},
+    {"index": 150, "timestamp": "2017-02-13T16:32:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.3538989183996533},
+    {"index": 300, "timestamp": "2017-03-13T16:30:59+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.6460134157533676},
+    {"index": 450, "timestamp": "2017-04-06T15:30:54+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.5638754787677467},
+    {"index": 600, "timestamp": "2017-05-01T15:31:05+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.3930507459462313},
+    {"index": 750, "timestamp": "2017-05-29T15:30:47+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.29393876913398126},
+    {"index": 900, "timestamp": "2017-06-15T15:31:06+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.18903262505010426},
+    {"index": 1050, "timestamp": "2017-07-10T15:31:08+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.31825915366080015},
+    {"index": 1200, "timestamp": "2017-08-10T15:31:26+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.5058326468968435},
+    {"index": 1350, "timestamp": "2017-09-14T15:30:52+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.2628053779256936},
+    {"index": 1500, "timestamp": "2017-10-05T15:31:27+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.8539060578046953},
+    {"index": 1650, "timestamp": "2017-10-26T15:31:20+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.32413988749715245},
+    {"index": 1800, "timestamp": "2017-11-17T12:40:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.30702877172451876},
+    {"index": 1950, "timestamp": "2017-12-07T16:31:17+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.2669165495889012},
+    {"index": 2100, "timestamp": "2017-12-20T07:31:00+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.5176871642217914},
+    {"index": 2250, "timestamp": "2018-01-11T16:30:56+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 2.3419744756176244},
+    {"index": 2400, "timestamp": "2018-01-25T16:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.9913626985114983},
+    {"index": 2550, "timestamp": "2018-02-01T16:31:17+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.6166936931014548},
+    {"index": 2700, "timestamp": "2018-02-08T16:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.49261208538429785},
+    {"index": 2850, "timestamp": "2018-02-12T16:31:20+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.3055777769697557},
+    {"index": 3000, "timestamp": "2018-02-19T16:31:31+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.4217951056035516},
+    {"index": 3150, "timestamp": "2018-02-26T16:31:27+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.37392809766347096},
+    {"index": 3300, "timestamp": "2018-03-05T16:30:57+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.1723046397776011},
+    {"index": 3450, "timestamp": "2018-03-12T16:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.20099751242241784},
+    {"index": 3600, "timestamp": "2018-03-15T16:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.3169297153067923},
+    {"index": 3750, "timestamp": "2018-03-26T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.649341546833748},
+    {"index": 3900, "timestamp": "2018-03-29T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.468330367724893},
+    {"index": 4050, "timestamp": "2018-04-06T09:15:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.5217066012403693},
+    {"index": 4200, "timestamp": "2018-04-12T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.18098495947330967},
+    {"index": 4350, "timestamp": "2018-04-19T15:31:30+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.5544166103011144},
+    {"index": 4500, "timestamp": "2018-04-26T15:30:51+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.4028785314596833},
+    {"index": 4650, "timestamp": "2018-04-30T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.3554027449403156},
+    {"index": 4800, "timestamp": "2018-05-07T15:31:13+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.24431309602411605},
+    {"index": 4950, "timestamp": "2018-05-17T15:31:32+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.2643230346879868},
+    {"index": 5100, "timestamp": "2018-05-24T15:31:06+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.2753583523741785},
+    {"index": 5250, "timestamp": "2018-05-31T15:31:11+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.19652537297311568},
+    {"index": 5400, "timestamp": "2018-06-07T15:31:35+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.3311931292899793},
+    {"index": 5550, "timestamp": "2018-06-11T09:32:01+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.15930404193798045},
+    {"index": 5700, "timestamp": "2018-06-14T15:31:30+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.24738633753705963},
+    {"index": 5850, "timestamp": "2018-06-21T15:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.386724133660618},
+    {"index": 6000, "timestamp": "2018-06-25T15:31:27+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.6524143196194},
+    {"index": 6150, "timestamp": "2018-07-02T11:06:27+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 1.2052109082369498},
+    {"index": 6300, "timestamp": "2018-07-05T15:31:33+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 1.305833067432434},
+    {"index": 6450, "timestamp": "2018-07-12T15:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.3234535858855521},
+    {"index": 6600, "timestamp": "2018-07-16T15:31:24+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 1.1211303819508833},
+    {"index": 6750, "timestamp": "2018-07-19T15:32:02+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.7978582441623182},
+    {"index": 6900, "timestamp": "2018-07-26T15:31:02+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.24855135843076331},
+    {"index": 7050, "timestamp": "2018-08-13T15:31:10+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.3256446597818617},
+    {"index": 7200, "timestamp": "2018-08-27T08:21:40+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.25551690528982407},
+    {"index": 7350, "timestamp": "2018-09-06T15:31:08+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.16384274303259339},
+    {"index": 7500, "timestamp": "2018-09-13T15:31:14+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.2571640202931455},
+    {"index": 7650, "timestamp": "2018-09-20T15:31:16+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.18439088914585777},
+    {"index": 7800, "timestamp": "2018-09-27T15:31:23+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.2676647986651298},
+    {"index": 7950, "timestamp": "2018-10-04T15:31:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.23352373184182665},
+    {"index": 8100, "timestamp": "2018-10-11T15:31:06+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.42567593307585544},
+    {"index": 8250, "timestamp": "2018-10-18T15:31:16+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.153911951741536},
+    {"index": 8400, "timestamp": "2018-10-22T15:31:24+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.3698047532895644},
+    {"index": 8550, "timestamp": "2018-10-29T16:31:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.20869967789998045},
+    {"index": 8700, "timestamp": "2018-11-05T16:31:17+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.15477582354991865},
+    {"index": 8850, "timestamp": "2018-11-12T16:30:45+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.15818414023606228},
+    {"index": 9000, "timestamp": "2018-11-15T16:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.4783304297240559},
+    {"index": 9150, "timestamp": "2018-11-19T16:31:18+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.28782710859897204},
+    {"index": 9300, "timestamp": "2018-11-26T16:31:22+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.20011108026404842},
+    {"index": 9450, "timestamp": "2018-12-03T16:31:22+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.285112063737908},
+    {"index": 9600, "timestamp": "2018-12-06T16:31:33+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.30947985035827097},
+    {"index": 9750, "timestamp": "2018-12-13T16:31:07+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.43003875794320373},
+    {"index": 9900, "timestamp": "2018-12-14T13:21:55+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.4396463225012679},
+    {"index": 10050, "timestamp": "2018-12-20T16:31:28+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.31312049508846335},
+    {"index": 10200, "timestamp": "2019-01-03T10:59:15+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.6767241354906413},
+    {"index": 10350, "timestamp": "2019-01-07T16:31:12+00:00", "available_at": "2019-06-17T15:30:58+00:00", "score": 0.36080157673959495}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "declare_profiles",
+    "detector": "pelt",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "constraints": [
+      [
+        "existence",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "existence",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "existence",
+        "Payment Handled"
+      ],
+      [
+        "existence",
+        "Request Payment"
+      ],
+      [
+        "existence",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "existence",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "existence",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "existence",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "existence",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "existence",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by PRE_APPROVER"
+      ]
+    ],
+    "statistic": "confidence",
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "min_size": 2,
+    "gamma": null,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "constraints": [
+      [
+        "existence",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "existence",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "existence",
+        "Payment Handled"
+      ],
+      [
+        "existence",
+        "Request Payment"
+      ],
+      [
+        "existence",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "existence",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "existence",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "existence",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "existence",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "existence",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration SUBMITTED by EMPLOYEE",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration FINAL_APPROVED by SUPERVISOR",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Payment Handled",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Payment Handled",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Request Payment",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Request Payment",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by ADMINISTRATION",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by BUDGET OWNER",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by EMPLOYEE",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by ADMINISTRATION",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration APPROVED by PRE_APPROVER",
+        "Declaration REJECTED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration SUBMITTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration FINAL_APPROVED by SUPERVISOR"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Payment Handled"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Request Payment"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by BUDGET OWNER"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration REJECTED by EMPLOYEE"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration REJECTED by ADMINISTRATION"
+      ],
+      [
+        "response",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by PRE_APPROVER"
+      ],
+      [
+        "precedence",
+        "Declaration REJECTED by SUPERVISOR",
+        "Declaration APPROVED by PRE_APPROVER"
+      ]
+    ]
+  },
+  "runtime_seconds": 4.933942,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 768336.68,
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0,
+          1
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 1920841.7,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 875129.0,
+            "distance_to_truth_interval_seconds": 875129.0,
+            "availability_minus_onset_seconds": 30855894.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 3841683.4,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 875129.0,
+            "distance_to_truth_interval_seconds": 875129.0,
+            "availability_minus_onset_seconds": 30855894.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 70,
+    "published_count": 70,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

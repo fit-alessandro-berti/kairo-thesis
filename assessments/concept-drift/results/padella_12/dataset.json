@@ -1,0 +1,30 @@
+{
+  "id": "padella_12",
+  "family": "padella",
+  "scenario": "loan_application_process_bpi12w",
+  "source": {
+    "dataset": "https://zenodo.org/records/21005862",
+    "archive_sha256": "e6fc4f90aa76c3b6231c8305df1ffd061600e3f7fd3535be7b7366347cd8131f",
+    "archive_path": "baselines/loan_application_process_bpi12w_baseline.xes",
+    "sha256": "ebc7aa2141dcfc2c5ce11fcc5bafa3ee94cb2e6008332bdba81e3f4ef4675e19",
+    "ground_truth_archive_path": null,
+    "thesis_files": "https://drive.google.com/drive/folders/1CKp5H9ATp-wRl49YNO3inIq952PB2NEv",
+    "truth_time_basis": null
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 3655,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [],
+  "events": 51059,
+  "cases": 8049,
+  "activities": 6,
+  "resources": 58,
+  "first_timestamp": "2011-10-01T11:08:36.700000+00:00",
+  "last_timestamp": "2012-03-14T17:04:54.681000+00:00",
+  "observation_span_seconds": 14277377.981,
+  "truth_episodes": []
+}

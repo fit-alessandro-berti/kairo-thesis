@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ostovar_parallel_to_sequence",
+  "library": "kairo",
+  "method": "intra-kmeans",
+  "profile": "recent",
+  "status": "ok",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "intra",
+    "features": {
+      "groups": [
+        "act_freqs",
+        "case_progress",
+        "current_act"
+      ],
+      "sliding_window_size": 3,
+      "omitted_feature_groups": [
+        "act_set",
+        "df_counts",
+        "past_acts"
+      ]
+    },
+    "reduction": {
+      "scaling": "minmax",
+      "feature_columns": 99,
+      "feature_rows": 112011,
+      "pca_components": 5,
+      "pca_seed": 0,
+      "pca_retained_variance": 0.30733777063958845
+    },
+    "clustering": {
+      "method": "kmeans",
+      "k": 5,
+      "random_seed": 0
+    },
+    "signal": {
+      "window": "1D",
+      "divergence": "tv",
+      "reference": "recent",
+      "lookback": 3,
+      "threshold_quantile": 0.95,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "changes": [
+    {
+      "index": 21,
+      "timestamp": "1970-01-22T00:00:00+00:00",
+      "available_at": "1970-01-23T03:56:44.022000+00:00",
+      "score": 0.282671838879871,
+      "details": {
+        "window_end": "1970-01-23T00:00:00+00:00",
+        "rows": 2155,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "1970-01-01T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": null, "details": {"window_end": "1970-01-02T00:00:00+00:00", "rows": 2367, "coverage": 0.9585198726851852, "eligible": false}},
+    {"index": 1, "timestamp": "1970-01-02T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": null, "details": {"window_end": "1970-01-03T00:00:00+00:00", "rows": 5234, "coverage": 1.0, "eligible": false}},
+    {"index": 2, "timestamp": "1970-01-03T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": null, "details": {"window_end": "1970-01-04T00:00:00+00:00", "rows": 5332, "coverage": 1.0, "eligible": false}},
+    {"index": 3, "timestamp": "1970-01-04T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0934254987611017, "details": {"window_end": "1970-01-05T00:00:00+00:00", "rows": 5371, "coverage": 1.0, "eligible": true}},
+    {"index": 4, "timestamp": "1970-01-05T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.010880112901768851, "details": {"window_end": "1970-01-06T00:00:00+00:00", "rows": 5453, "coverage": 1.0, "eligible": true}},
+    {"index": 5, "timestamp": "1970-01-06T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.024447223455339992, "details": {"window_end": "1970-01-07T00:00:00+00:00", "rows": 5313, "coverage": 1.0, "eligible": true}},
+    {"index": 6, "timestamp": "1970-01-07T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.009894501669376658, "details": {"window_end": "1970-01-08T00:00:00+00:00", "rows": 5455, "coverage": 1.0, "eligible": true}},
+    {"index": 7, "timestamp": "1970-01-08T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.005123864028839395, "details": {"window_end": "1970-01-09T00:00:00+00:00", "rows": 5418, "coverage": 1.0, "eligible": true}},
+    {"index": 8, "timestamp": "1970-01-09T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.017533275839074346, "details": {"window_end": "1970-01-10T00:00:00+00:00", "rows": 5485, "coverage": 1.0, "eligible": true}},
+    {"index": 9, "timestamp": "1970-01-10T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.012748955902096112, "details": {"window_end": "1970-01-11T00:00:00+00:00", "rows": 5434, "coverage": 1.0, "eligible": true}},
+    {"index": 10, "timestamp": "1970-01-11T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0041286869751425495, "details": {"window_end": "1970-01-12T00:00:00+00:00", "rows": 5355, "coverage": 1.0, "eligible": true}},
+    {"index": 11, "timestamp": "1970-01-12T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.015319674591506974, "details": {"window_end": "1970-01-13T00:00:00+00:00", "rows": 5352, "coverage": 1.0, "eligible": true}},
+    {"index": 12, "timestamp": "1970-01-13T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.026349127865510885, "details": {"window_end": "1970-01-14T00:00:00+00:00", "rows": 5394, "coverage": 1.0, "eligible": true}},
+    {"index": 13, "timestamp": "1970-01-14T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.010706013477000752, "details": {"window_end": "1970-01-15T00:00:00+00:00", "rows": 5356, "coverage": 1.0, "eligible": true}},
+    {"index": 14, "timestamp": "1970-01-15T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.012865684005997344, "details": {"window_end": "1970-01-16T00:00:00+00:00", "rows": 5394, "coverage": 1.0, "eligible": true}},
+    {"index": 15, "timestamp": "1970-01-16T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.0055431793798411955, "details": {"window_end": "1970-01-17T00:00:00+00:00", "rows": 5337, "coverage": 1.0, "eligible": true}},
+    {"index": 16, "timestamp": "1970-01-17T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.024596809188020638, "details": {"window_end": "1970-01-18T00:00:00+00:00", "rows": 5362, "coverage": 1.0, "eligible": true}},
+    {"index": 17, "timestamp": "1970-01-18T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.00787510348796731, "details": {"window_end": "1970-01-19T00:00:00+00:00", "rows": 5346, "coverage": 1.0, "eligible": true}},
+    {"index": 18, "timestamp": "1970-01-19T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.019783315730249877, "details": {"window_end": "1970-01-20T00:00:00+00:00", "rows": 5402, "coverage": 1.0, "eligible": true}},
+    {"index": 19, "timestamp": "1970-01-20T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.02028085658780695, "details": {"window_end": "1970-01-21T00:00:00+00:00", "rows": 5387, "coverage": 1.0, "eligible": true}},
+    {"index": 20, "timestamp": "1970-01-21T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.019076299814581976, "details": {"window_end": "1970-01-22T00:00:00+00:00", "rows": 5299, "coverage": 1.0, "eligible": true}},
+    {"index": 21, "timestamp": "1970-01-22T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.282671838879871, "details": {"window_end": "1970-01-23T00:00:00+00:00", "rows": 2155, "coverage": 1.0, "eligible": true}},
+    {"index": 22, "timestamp": "1970-01-23T00:00:00+00:00", "available_at": "1970-01-23T03:56:44.022000+00:00", "score": 0.780204475132954, "details": {"window_end": "1970-01-24T00:00:00+00:00", "rows": 10, "coverage": 0.16439840277777779, "eligible": false}}
+  ],
+  "metadata": {
+    "threshold": 0.11235013277297823,
+    "median_rows": 5356.0,
+    "eligible_windows": 19,
+    "occupied_states": 5,
+    "distinct_feature_rows": 49970
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 19114.20139,
+        "tp": 0,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 47785.503475,
+        "tp": 0,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 95571.00695,
+        "tp": 0,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 23,
+    "published_count": 23,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

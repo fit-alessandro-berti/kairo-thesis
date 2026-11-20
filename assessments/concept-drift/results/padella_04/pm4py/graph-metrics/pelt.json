@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_04",
+  "library": "pm4py",
+  "method": "graph-metrics",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 450,
+      "timestamp": "2011-10-17T17:16:36.069000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 15.303303262315865,
+      "details": {
+        "metric_changes": {
+          "activity_count": -0.16666666666666696,
+          "edge_density": -0.01944444444444446,
+          "branching_fraction": -0.1388888888888889,
+          "merging_fraction": 0.005555555555555591,
+          "weak_component_count": 0.3333333333333335,
+          "cyclic_activity_fraction": 0.05555555555555547,
+          "self_loop_fraction": -0.009448163047040548
+        }
+      }
+    },
+    {
+      "index": 1350,
+      "timestamp": "2011-11-04T12:57:00.397000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 42.692043260073035,
+      "details": {
+        "metric_changes": {
+          "activity_count": -0.08333333333333304,
+          "edge_density": 0.10416666666666669,
+          "branching_fraction": 0.34722222222222215,
+          "merging_fraction": 0.16944444444444437,
+          "weak_component_count": -0.6666666666666667,
+          "self_loop_fraction": 0.03380639688728937
+        }
+      }
+    },
+    {
+      "index": 1950,
+      "timestamp": "2011-11-14T19:03:01.700000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 48.17934973766069,
+      "details": {
+        "metric_changes": {
+          "activity_count": 0.08333333333333304,
+          "edge_density": -0.10138888888888892,
+          "branching_fraction": -0.33333333333333326,
+          "merging_fraction": -0.16944444444444437,
+          "weak_component_count": 0.5833333333333333,
+          "self_loop_fraction": 0.018342564052112542
+        }
+      }
+    },
+    {
+      "index": 3750,
+      "timestamp": "2011-12-15T10:24:59.781200+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 18.22655279051537,
+      "details": {
+        "metric_changes": {
+          "activity_count": -0.020833333333333037,
+          "edge_density": 0.042013888888888906,
+          "branching_fraction": 0.125,
+          "merging_fraction": 0.031944444444444414,
+          "weak_component_count": -0.45833333333333326,
+          "self_loop_fraction": 0.007640754604072875
+        }
+      }
+    },
+    {
+      "index": 6150,
+      "timestamp": "2012-02-07T18:35:49.639000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 25.219602364005482,
+      "details": {
+        "metric_changes": {
+          "activity_count": -0.6124999999999998,
+          "edge_density": -0.0031250000000000167,
+          "branching_fraction": -0.16666666666666666,
+          "merging_fraction": -0.010833333333333361,
+          "weak_component_count": 0.07499999999999996,
+          "self_loop_fraction": -0.06854053221611833
+        }
+      }
+    },
+    {
+      "index": 6900,
+      "timestamp": "2012-02-22T20:19:37.883300+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 20.915011795096575,
+      "details": {
+        "metric_changes": {
+          "activity_count": 0.5142857142857142,
+          "edge_density": 0.014285714285714318,
+          "branching_fraction": 0.16666666666666669,
+          "merging_fraction": 0.006666666666666682,
+          "weak_component_count": -0.19999999999999996,
+          "self_loop_fraction": 0.07681024284984339
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2011-10-01T14:02:12.557000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.0},
+    {"index": 150, "timestamp": "2011-10-07T12:50:24.063000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 8.704487506877081},
+    {"index": 300, "timestamp": "2011-10-12T19:11:59.624000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.5814299714238564},
+    {"index": 450, "timestamp": "2011-10-17T17:16:36.069000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 4.4878110381428975},
+    {"index": 600, "timestamp": "2011-10-20T09:29:25.128000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.8299562586815563},
+    {"index": 750, "timestamp": "2011-10-24T16:41:25.595000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.8293506099677996},
+    {"index": 900, "timestamp": "2011-10-27T12:53:40.043000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 1.6510841019960056},
+    {"index": 1050, "timestamp": "2011-10-31T12:05:58.723000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.7648651837935936},
+    {"index": 1200, "timestamp": "2011-11-02T10:48:11.892000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.771382614279334},
+    {"index": 1350, "timestamp": "2011-11-04T12:57:00.397000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 5.885440795507418},
+    {"index": 1500, "timestamp": "2011-11-08T10:24:22.295000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.1963869820873954},
+    {"index": 1650, "timestamp": "2011-11-10T12:10:52.839000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 6.6667455152002955},
+    {"index": 1800, "timestamp": "2011-11-11T15:59:43.264000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.750543858760688},
+    {"index": 1950, "timestamp": "2011-11-14T19:03:01.700000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 4.326678151421002},
+    {"index": 2100, "timestamp": "2011-11-16T15:08:05.086000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.724503084432354},
+    {"index": 2250, "timestamp": "2011-11-18T10:38:05.715000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.6808506064115805},
+    {"index": 2400, "timestamp": "2011-11-21T11:04:32.486000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.832385448303739},
+    {"index": 2550, "timestamp": "2011-11-22T16:37:45.698000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 1.458488022963492},
+    {"index": 2700, "timestamp": "2011-11-24T18:18:00.614000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.1550463946896397},
+    {"index": 2850, "timestamp": "2011-11-28T13:07:21.986000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.5623857134093577},
+    {"index": 3000, "timestamp": "2011-11-30T14:33:30.108000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.0774421637936187},
+    {"index": 3150, "timestamp": "2011-12-02T16:40:05.206000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.6153382934094034},
+    {"index": 3300, "timestamp": "2011-12-06T14:49:30.591000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.713261975857076},
+    {"index": 3450, "timestamp": "2011-12-08T16:27:36.566100+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.10154789025804234},
+    {"index": 3600, "timestamp": "2011-12-12T15:26:29.040000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.34312504927507087},
+    {"index": 3750, "timestamp": "2011-12-15T10:24:59.781200+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.9419914607405726},
+    {"index": 3900, "timestamp": "2011-12-19T14:21:48.152000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.7426604955405863},
+    {"index": 4050, "timestamp": "2011-12-21T16:16:10.563000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.803946310326452},
+    {"index": 4200, "timestamp": "2011-12-24T15:53:15.925000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.2975757711269069},
+    {"index": 4350, "timestamp": "2011-12-29T13:01:11.056000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.6460040977424795},
+    {"index": 4500, "timestamp": "2012-01-03T10:32:14.586000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.6024730800531963},
+    {"index": 4650, "timestamp": "2012-01-05T14:05:21.082600+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 1.38771919617899},
+    {"index": 4800, "timestamp": "2012-01-09T16:09:52.043000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.484816195929869},
+    {"index": 4950, "timestamp": "2012-01-12T13:30:39.957000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.8355333823196758},
+    {"index": 5100, "timestamp": "2012-01-14T16:55:52.841700+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.5425339879897524},
+    {"index": 5250, "timestamp": "2012-01-17T11:42:19.067700+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.7513855172570691},
+    {"index": 5400, "timestamp": "2012-01-18T21:28:12.617500+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.610496579416845},
+    {"index": 5550, "timestamp": "2012-01-23T10:15:00.688800+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 4.353365483508909},
+    {"index": 5700, "timestamp": "2012-01-24T17:29:03.305000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.3686766432437634},
+    {"index": 5850, "timestamp": "2012-01-27T16:45:50.949300+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.342369501326655},
+    {"index": 6000, "timestamp": "2012-02-01T10:37:27.771000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.912267174202494},
+    {"index": 6150, "timestamp": "2012-02-07T18:35:49.639000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.8646688024629756},
+    {"index": 6300, "timestamp": "2012-02-13T10:15:16.420000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 4.061662453830976},
+    {"index": 6450, "timestamp": "2012-02-14T21:39:27.416000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.7363139652063944},
+    {"index": 6600, "timestamp": "2012-02-16T21:13:33.995900+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 1.229570043053282},
+    {"index": 6750, "timestamp": "2012-02-20T17:55:23.210900+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.39327159521406085},
+    {"index": 6900, "timestamp": "2012-02-22T20:19:37.883300+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.011696531190288},
+    {"index": 7050, "timestamp": "2012-02-24T21:37:42.474000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.6812560306603472},
+    {"index": 7200, "timestamp": "2012-02-28T15:54:59.968000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.1791976264810048},
+    {"index": 7350, "timestamp": "2012-03-01T16:22:03.591000+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.450977308265386},
+    {"index": 7500, "timestamp": "2012-03-06T12:27:54.923100+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 3.34864822722338},
+    {"index": 7650, "timestamp": "2012-03-09T11:05:39.969600+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 2.7240086342229146},
+    {"index": 7800, "timestamp": "2012-03-12T12:09:23.533100+00:00", "available_at": "2012-03-14T16:57:07.354200+00:00", "score": 0.19886417168669768}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "window_size": 150,
+    "min_edge_count": 1,
+    "min_size": 3,
+    "penalty": 12.0,
+    "standardize": true,
+    "metrics": [
+      "activity_count",
+      "edge_density",
+      "branching_fraction",
+      "merging_fraction",
+      "weak_component_count",
+      "cyclic_activity_fraction",
+      "self_loop_fraction"
+    ],
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 150,
+    "penalty": 12,
+    "min_size": 3
+  },
+  "runtime_seconds": 1.82011,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 142769.106542,
+        "tp": 1,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1": 0.2857142857142857,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 1698263.1032,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 9497790.6762
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 356922.766355,
+        "tp": 1,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1": 0.2857142857142857,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 1698263.1032,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 9497790.6762
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 713845.53271,
+        "tp": 1,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "f1": 0.2857142857142857,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 1698263.1032,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 9497790.6762
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 53,
+    "published_count": 53,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

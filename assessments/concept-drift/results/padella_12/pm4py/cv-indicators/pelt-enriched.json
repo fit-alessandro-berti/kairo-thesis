@@ -1,0 +1,856 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_12",
+  "library": "pm4py",
+  "method": "cv-indicators",
+  "profile": "pelt-enriched",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "calendar_bin",
+  "changes": [
+    {
+      "index": 5,
+      "timestamp": "2011-10-09T08:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"W_Nabellen offertes\"]": 16.419663356199877
+        }
+      }
+    },
+    {
+      "index": 6,
+      "timestamp": "2011-10-11T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"W_Completeren aanvraag\"]": 30.681802410764227
+        }
+      }
+    },
+    {
+      "index": 7,
+      "timestamp": "2011-10-12T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 16.940435188536007
+        }
+      }
+    },
+    {
+      "index": 8,
+      "timestamp": "2011-10-14T08:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"W_Valideren aanvraag\"]": 16.434583371227088
+        }
+      }
+    },
+    {
+      "index": 10,
+      "timestamp": "2011-10-17T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "events": 15.109113999394339,
+          "[\"activity_frequency\", \"W_Nabellen incomplete dossiers\"]": 17.412223428782745,
+          "[\"resource_assignment\", \"W_Completeren aanvraag\", \"11203.0\"]": 25.815831198681703
+        }
+      }
+    },
+    {
+      "index": 16,
+      "timestamp": "2011-10-27T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "completions": 42.34682066114979,
+          "[\"resource_assignment\", \"W_Valideren aanvraag\", \"10138.0\"]": 23.299921646780284
+        }
+      }
+    },
+    {
+      "index": 24,
+      "timestamp": "2011-11-10T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"W_Completeren aanvraag\", \"11203.0\"]": 31.307769917031578
+        }
+      }
+    },
+    {
+      "index": 32,
+      "timestamp": "2011-11-23T08:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"W_Completeren aanvraag\"]": 56.83263055455101,
+          "[\"service_time\", \"W_Nabellen incomplete dossiers\"]": 81.94275419686706,
+          "[\"resource_assignment\", \"W_Nabellen offertes\", \"SYS\"]": 30.020094317245977
+        }
+      }
+    },
+    {
+      "index": 33,
+      "timestamp": "2011-11-25T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"W_Nabellen incomplete dossiers\", \"SYS\"]": 77.05906814384142
+        }
+      }
+    },
+    {
+      "index": 35,
+      "timestamp": "2011-11-28T08:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "completions": 20.021766553243168,
+          "[\"resource_assignment\", \"W_Nabellen incomplete dossiers\", \"11049.0\"]": 51.531206233890416
+        }
+      }
+    },
+    {
+      "index": 37,
+      "timestamp": "2011-12-01T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"W_Completeren aanvraag\"]": 57.476007762515096,
+          "[\"service_time\", \"W_Nabellen incomplete dossiers\"]": 87.32777535961775
+        }
+      }
+    },
+    {
+      "index": 45,
+      "timestamp": "2011-12-15T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"W_Completeren aanvraag\", \"SYS\"]": 75.92421727484853
+        }
+      }
+    },
+    {
+      "index": 49,
+      "timestamp": "2011-12-21T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"W_Nabellen offertes\"]": 51.194176985348015
+        }
+      }
+    },
+    {
+      "index": 54,
+      "timestamp": "2011-12-30T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"W_Nabellen offertes\"]": 52.98916925497378,
+          "[\"service_time\", \"W_Nabellen offertes\"]": 57.60414654009416
+        }
+      }
+    },
+    {
+      "index": 58,
+      "timestamp": "2012-01-05T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "active_resources": 35.91906944181599
+        }
+      }
+    },
+    {
+      "index": 62,
+      "timestamp": "2012-01-12T08:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"W_Valideren aanvraag\", \"10138.0\"]": 26.271035880195456
+        }
+      }
+    },
+    {
+      "index": 63,
+      "timestamp": "2012-01-14T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"W_Valideren aanvraag\"]": 21.06086575948423
+        }
+      }
+    },
+    {
+      "index": 66,
+      "timestamp": "2012-01-19T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 37.31398523756428
+        }
+      }
+    },
+    {
+      "index": 67,
+      "timestamp": "2012-01-20T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "events": 25.634596927309666
+        }
+      }
+    },
+    {
+      "index": 73,
+      "timestamp": "2012-01-30T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"W_Completeren aanvraag\"]": 32.27297204655665,
+          "[\"activity_frequency\", \"W_Valideren aanvraag\"]": 36.40681430155733
+        }
+      }
+    },
+    {
+      "index": 77,
+      "timestamp": "2012-02-06T08:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"W_Nabellen offertes\"]": 17.084126088714655
+        }
+      }
+    },
+    {
+      "index": 79,
+      "timestamp": "2012-02-09T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 50.311748883365425,
+          "[\"resource_assignment\", \"W_Nabellen offertes\", \"SYS\"]": 18.88256281852665
+        }
+      }
+    },
+    {
+      "index": 81,
+      "timestamp": "2012-02-13T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "events": 42.38894883610997
+        }
+      }
+    },
+    {
+      "index": 91,
+      "timestamp": "2012-02-29T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"W_Completeren aanvraag\"]": 40.99886473130329,
+          "[\"activity_frequency\", \"W_Valideren aanvraag\"]": 35.3940205418439
+        }
+      }
+    },
+    {
+      "index": 92,
+      "timestamp": "2012-03-02T08:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 46.401097193117465,
+          "events": 20.98961957507176,
+          "case_duration": 54.431745558618616
+        }
+      }
+    },
+    {
+      "index": 94,
+      "timestamp": "2012-03-05T16:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"W_Nabellen incomplete dossiers\"]": 34.06273013012883
+        }
+      }
+    },
+    {
+      "index": 95,
+      "timestamp": "2012-03-07T08:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"W_Nabellen offertes\"]": 35.71804797537068,
+          "[\"service_time\", \"W_Valideren aanvraag\"]": 74.72244177611023,
+          "[\"resource_assignment\", \"W_Valideren aanvraag\", \"10609.0\"]": 30.68722645340744
+        }
+      }
+    },
+    {
+      "index": 96,
+      "timestamp": "2012-03-09T00:00:00+00:00",
+      "available_at": "2012-03-15T16:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 16.76394906978033
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2011-10-01T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 1, "timestamp": "2011-10-02T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 2, "timestamp": "2011-10-04T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 3, "timestamp": "2011-10-06T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 4, "timestamp": "2011-10-07T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 5, "timestamp": "2011-10-09T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 6, "timestamp": "2011-10-11T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 7, "timestamp": "2011-10-12T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 8, "timestamp": "2011-10-14T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 9, "timestamp": "2011-10-16T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 10, "timestamp": "2011-10-17T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 3.0},
+    {"index": 11, "timestamp": "2011-10-19T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 12, "timestamp": "2011-10-21T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 13, "timestamp": "2011-10-22T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 14, "timestamp": "2011-10-24T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 15, "timestamp": "2011-10-26T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 16, "timestamp": "2011-10-27T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 2.0},
+    {"index": 17, "timestamp": "2011-10-29T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 18, "timestamp": "2011-10-31T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 19, "timestamp": "2011-11-01T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 20, "timestamp": "2011-11-03T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 21, "timestamp": "2011-11-05T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 22, "timestamp": "2011-11-06T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 23, "timestamp": "2011-11-08T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 24, "timestamp": "2011-11-10T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 25, "timestamp": "2011-11-11T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 26, "timestamp": "2011-11-13T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 27, "timestamp": "2011-11-15T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 28, "timestamp": "2011-11-16T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 29, "timestamp": "2011-11-18T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 30, "timestamp": "2011-11-20T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 31, "timestamp": "2011-11-21T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 32, "timestamp": "2011-11-23T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 3.0},
+    {"index": 33, "timestamp": "2011-11-25T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 34, "timestamp": "2011-11-26T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 35, "timestamp": "2011-11-28T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 2.0},
+    {"index": 36, "timestamp": "2011-11-30T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 37, "timestamp": "2011-12-01T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 2.0},
+    {"index": 38, "timestamp": "2011-12-03T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 39, "timestamp": "2011-12-05T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 40, "timestamp": "2011-12-06T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 41, "timestamp": "2011-12-08T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 42, "timestamp": "2011-12-10T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 43, "timestamp": "2011-12-11T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 44, "timestamp": "2011-12-13T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 45, "timestamp": "2011-12-15T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 46, "timestamp": "2011-12-16T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 47, "timestamp": "2011-12-18T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 48, "timestamp": "2011-12-20T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 49, "timestamp": "2011-12-21T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 50, "timestamp": "2011-12-23T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 51, "timestamp": "2011-12-25T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 52, "timestamp": "2011-12-26T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 53, "timestamp": "2011-12-28T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 54, "timestamp": "2011-12-30T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 2.0},
+    {"index": 55, "timestamp": "2011-12-31T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 56, "timestamp": "2012-01-02T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 57, "timestamp": "2012-01-04T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 58, "timestamp": "2012-01-05T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 59, "timestamp": "2012-01-07T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 60, "timestamp": "2012-01-09T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 61, "timestamp": "2012-01-10T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 62, "timestamp": "2012-01-12T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 63, "timestamp": "2012-01-14T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 64, "timestamp": "2012-01-15T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 65, "timestamp": "2012-01-17T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 66, "timestamp": "2012-01-19T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 67, "timestamp": "2012-01-20T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 68, "timestamp": "2012-01-22T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 69, "timestamp": "2012-01-24T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 70, "timestamp": "2012-01-25T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 71, "timestamp": "2012-01-27T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 72, "timestamp": "2012-01-29T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 73, "timestamp": "2012-01-30T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 2.0},
+    {"index": 74, "timestamp": "2012-02-01T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 75, "timestamp": "2012-02-03T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 76, "timestamp": "2012-02-04T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 77, "timestamp": "2012-02-06T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 78, "timestamp": "2012-02-08T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 79, "timestamp": "2012-02-09T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 2.0},
+    {"index": 80, "timestamp": "2012-02-11T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 81, "timestamp": "2012-02-13T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 82, "timestamp": "2012-02-14T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 83, "timestamp": "2012-02-16T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 84, "timestamp": "2012-02-18T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 85, "timestamp": "2012-02-19T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 86, "timestamp": "2012-02-21T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 87, "timestamp": "2012-02-23T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 88, "timestamp": "2012-02-24T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 89, "timestamp": "2012-02-26T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2012-02-28T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 91, "timestamp": "2012-02-29T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 2.0},
+    {"index": 92, "timestamp": "2012-03-02T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 3.0},
+    {"index": 93, "timestamp": "2012-03-04T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 94, "timestamp": "2012-03-05T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 95, "timestamp": "2012-03-07T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 3.0},
+    {"index": 96, "timestamp": "2012-03-09T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 1.0},
+    {"index": 97, "timestamp": "2012-03-10T16:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 98, "timestamp": "2012-03-12T08:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0},
+    {"index": 99, "timestamp": "2012-03-14T00:00:00+00:00", "available_at": "2012-03-15T16:00:00+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "cv_indicators",
+    "mode": "retrospective",
+    "bin_size": "40h",
+    "statistic": "mean",
+    "candidate_windows": [
+      1,
+      3,
+      5,
+      9,
+      17
+    ],
+    "selected_windows": {
+      "arrivals": 3,
+      "completions": 5,
+      "work_in_progress": 5,
+      "events": 3,
+      "case_duration": 3,
+      "[\"activity_frequency\", \"W_Completeren aanvraag\"]": 3,
+      "[\"activity_frequency\", \"W_Nabellen offertes\"]": 3,
+      "[\"activity_frequency\", \"W_Nabellen incomplete dossiers\"]": 3,
+      "[\"activity_frequency\", \"W_Valideren aanvraag\"]": 5,
+      "[\"service_time\", \"W_Completeren aanvraag\"]": 5,
+      "[\"service_time\", \"W_Nabellen offertes\"]": 5,
+      "[\"service_time\", \"W_Nabellen incomplete dossiers\"]": 5,
+      "[\"service_time\", \"W_Valideren aanvraag\"]": 5,
+      "active_resources": 5,
+      "[\"resource_assignment\", \"W_Completeren aanvraag\", \"SYS\"]": 5,
+      "[\"resource_assignment\", \"W_Completeren aanvraag\", \"11203.0\"]": 5,
+      "[\"resource_assignment\", \"W_Nabellen offertes\", \"SYS\"]": 5,
+      "[\"resource_assignment\", \"W_Nabellen offertes\", \"11049.0\"]": 5,
+      "[\"resource_assignment\", \"W_Nabellen incomplete dossiers\", \"SYS\"]": 5,
+      "[\"resource_assignment\", \"W_Nabellen incomplete dossiers\", \"11049.0\"]": 5,
+      "[\"resource_assignment\", \"W_Valideren aanvraag\", \"10138.0\"]": 5,
+      "[\"resource_assignment\", \"W_Valideren aanvraag\", \"10609.0\"]": 5
+    },
+    "cv_curves": {
+      "arrivals": {
+        "1": 0.6124203075184329,
+        "3": 0.41567252835735774,
+        "5": 0.37415542843849114,
+        "9": 0.32981886719815046,
+        "17": 0.2281993557020217
+      },
+      "completions": {
+        "1": 0.5535333435121786,
+        "3": 0.3169391069115673,
+        "5": 0.2657641029292796,
+        "9": 0.23187060046863286,
+        "17": 0.1775774245270446
+      },
+      "work_in_progress": {
+        "1": 0.39357420809587507,
+        "3": 0.38241890899593006,
+        "5": 0.36522815827254757,
+        "9": 0.32351337574917055,
+        "17": 0.2438848945535418
+      },
+      "events": {
+        "1": 0.5395134002260424,
+        "3": 0.3356691551892447,
+        "5": 0.29749473752937705,
+        "9": 0.2622506719401625,
+        "17": 0.1939388555208871
+      },
+      "case_duration": {
+        "1": 0.6327548295841507,
+        "3": 0.5723169503200616,
+        "5": 0.552019665839335,
+        "9": 0.5080157900959796,
+        "17": 0.4060728969159697
+      },
+      "[\"activity_frequency\", \"W_Completeren aanvraag\"]": {
+        "1": 0.4371755342624888,
+        "3": 0.3886880175610676,
+        "5": 0.36934804128705223,
+        "9": 0.32802657505665694,
+        "17": 0.2505719673806775
+      },
+      "[\"activity_frequency\", \"W_Nabellen offertes\"]": {
+        "1": 0.36814111838976943,
+        "3": 0.2667664296809288,
+        "5": 0.24587141174454216,
+        "9": 0.21455372894397898,
+        "17": 0.1777139770737314
+      },
+      "[\"activity_frequency\", \"W_Nabellen incomplete dossiers\"]": {
+        "1": 0.5778542785832197,
+        "3": 0.5049455551488135,
+        "5": 0.48497564151590083,
+        "9": 0.4296334023279235,
+        "17": 0.3297424597944217
+      },
+      "[\"activity_frequency\", \"W_Valideren aanvraag\"]": {
+        "1": 0.7059789539096426,
+        "3": 0.5253367151750613,
+        "5": 0.4690397265291763,
+        "9": 0.4063477680966992,
+        "17": 0.2941365262759762
+      },
+      "[\"service_time\", \"W_Completeren aanvraag\"]": {
+        "1": 1.0344874002779825,
+        "3": 0.575421783136911,
+        "5": 0.41499664912821543,
+        "9": 0.3088886736750223,
+        "17": 0.2223297992937615
+      },
+      "[\"service_time\", \"W_Nabellen offertes\"]": {
+        "1": 3.091201276506667,
+        "3": 1.707567996198543,
+        "5": 1.337191710399066,
+        "9": 0.9480412345507725,
+        "17": 0.6190401522453369
+      },
+      "[\"service_time\", \"W_Nabellen incomplete dossiers\"]": {
+        "1": 6.229682477301534,
+        "3": 3.5228116647991086,
+        "5": 2.6585163802458407,
+        "9": 1.9253084014100037,
+        "17": 1.2587921927297203
+      },
+      "[\"service_time\", \"W_Valideren aanvraag\"]": {
+        "1": 4.828655348800516,
+        "3": 2.726044206746737,
+        "5": 2.253213420332382,
+        "9": 1.686206804158668,
+        "17": 1.3029813521707536
+      },
+      "active_resources": {
+        "1": 0.3501090347407653,
+        "3": 0.18321161216958542,
+        "5": 0.14078244450423832,
+        "9": 0.11475434795077771,
+        "17": 0.09812097319869885
+      },
+      "[\"resource_assignment\", \"W_Completeren aanvraag\", \"SYS\"]": {
+        "1": 1.0497119045963652,
+        "3": 0.8676822504875045,
+        "5": 0.793382656365055,
+        "9": 0.7439055477969702,
+        "17": 0.7079935032687307
+      },
+      "[\"resource_assignment\", \"W_Completeren aanvraag\", \"11203.0\"]": {
+        "1": 1.8589689407563497,
+        "3": 1.1576803180717519,
+        "5": 0.8618208901868101,
+        "9": 0.6230539300190004,
+        "17": 0.431741145819138
+      },
+      "[\"resource_assignment\", \"W_Nabellen offertes\", \"SYS\"]": {
+        "1": 1.0226420079576795,
+        "3": 0.802200070513336,
+        "5": 0.7374799653548617,
+        "9": 0.6641169235982682,
+        "17": 0.6295379625837851
+      },
+      "[\"resource_assignment\", \"W_Nabellen offertes\", \"11049.0\"]": {
+        "1": 1.3693592824089391,
+        "3": 0.7838200705906291,
+        "5": 0.6227012481455341,
+        "9": 0.44934653394003804,
+        "17": 0.2931888212858374
+      },
+      "[\"resource_assignment\", \"W_Nabellen incomplete dossiers\", \"SYS\"]": {
+        "1": 1.4412525505053253,
+        "3": 1.2031800657846266,
+        "5": 1.1451798865522123,
+        "9": 1.0848577664200436,
+        "17": 1.0299154278192821
+      },
+      "[\"resource_assignment\", \"W_Nabellen incomplete dossiers\", \"11049.0\"]": {
+        "1": 1.3497761695686328,
+        "3": 0.7223029309286559,
+        "5": 0.5828409660349908,
+        "9": 0.4860080920919641,
+        "17": 0.4095435885158909
+      },
+      "[\"resource_assignment\", \"W_Valideren aanvraag\", \"10138.0\"]": {
+        "1": 0.8380194296394883,
+        "3": 0.5828722705081792,
+        "5": 0.4906384576002963,
+        "9": 0.36804918629294653,
+        "17": 0.2859720886182786
+      },
+      "[\"resource_assignment\", \"W_Valideren aanvraag\", \"10609.0\"]": {
+        "1": 0.9162238682044448,
+        "3": 0.5639719884082173,
+        "5": 0.47014938777793275,
+        "9": 0.3214327962513119,
+        "17": 0.23597386571212592
+      }
+    },
+    "min_size": 3,
+    "penalty_scale": 3.0,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "bin_size": "40h",
+    "features": [
+      "arrivals",
+      "completions",
+      "work_in_progress",
+      "events",
+      "case_duration",
+      [
+        "activity_frequency",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "activity_frequency",
+        "W_Nabellen offertes"
+      ],
+      [
+        "activity_frequency",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "activity_frequency",
+        "W_Valideren aanvraag"
+      ],
+      [
+        "service_time",
+        "W_Completeren aanvraag"
+      ],
+      [
+        "service_time",
+        "W_Nabellen offertes"
+      ],
+      [
+        "service_time",
+        "W_Nabellen incomplete dossiers"
+      ],
+      [
+        "service_time",
+        "W_Valideren aanvraag"
+      ],
+      "active_resources",
+      [
+        "resource_assignment",
+        "W_Completeren aanvraag",
+        "SYS"
+      ],
+      [
+        "resource_assignment",
+        "W_Completeren aanvraag",
+        "11203.0"
+      ],
+      [
+        "resource_assignment",
+        "W_Nabellen offertes",
+        "SYS"
+      ],
+      [
+        "resource_assignment",
+        "W_Nabellen offertes",
+        "11049.0"
+      ],
+      [
+        "resource_assignment",
+        "W_Nabellen incomplete dossiers",
+        "SYS"
+      ],
+      [
+        "resource_assignment",
+        "W_Nabellen incomplete dossiers",
+        "11049.0"
+      ],
+      [
+        "resource_assignment",
+        "W_Valideren aanvraag",
+        "10138.0"
+      ],
+      [
+        "resource_assignment",
+        "W_Valideren aanvraag",
+        "10609.0"
+      ]
+    ],
+    "penalty_scale": 3,
+    "start_timestamp_key": "start:timestamp"
+  },
+  "runtime_seconds": 2.406907,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 142773.77981,
+        "tp": 0,
+        "fp": 28,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 356934.449525,
+        "tp": 0,
+        "fp": 28,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 713868.89905,
+        "tp": 0,
+        "fp": 28,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "matches": [],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 100,
+    "published_count": 100,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

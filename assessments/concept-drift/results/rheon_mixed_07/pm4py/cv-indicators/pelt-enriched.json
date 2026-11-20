@@ -1,0 +1,746 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_mixed_07",
+  "library": "pm4py",
+  "method": "cv-indicators",
+  "profile": "pelt-enriched",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "calendar_bin",
+  "changes": [
+    {
+      "index": 4,
+      "timestamp": "2024-10-03T12:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"b\", \"res_02\"]": 20.03021713599361
+        }
+      }
+    },
+    {
+      "index": 12,
+      "timestamp": "2024-10-08T12:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"c\", \"res_02\"]": 34.19576477241812
+        }
+      }
+    },
+    {
+      "index": 16,
+      "timestamp": "2024-10-11T00:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"a\", \"res_01\"]": 32.565529997769225
+        }
+      }
+    },
+    {
+      "index": 21,
+      "timestamp": "2024-10-14T03:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"a\", \"res_01\"]": 46.71622849997739
+        }
+      }
+    },
+    {
+      "index": 23,
+      "timestamp": "2024-10-15T09:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 39.12922734702384
+        }
+      }
+    },
+    {
+      "index": 25,
+      "timestamp": "2024-10-16T15:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"b\"]": 28.22183167393031,
+          "[\"resource_assignment\", \"d\", \"res_02\"]": 16.767051121505425
+        }
+      }
+    },
+    {
+      "index": 28,
+      "timestamp": "2024-10-18T12:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"a\"]": 18.918216834550496
+        }
+      }
+    },
+    {
+      "index": 29,
+      "timestamp": "2024-10-19T03:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"c\", \"res_02\"]": 27.37327578572107
+        }
+      }
+    },
+    {
+      "index": 34,
+      "timestamp": "2024-10-22T06:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 48.0368543624007,
+          "completions": 47.27242759972771,
+          "events": 49.310027318121634
+        }
+      }
+    },
+    {
+      "index": 42,
+      "timestamp": "2024-10-27T06:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"a\"]": 28.35444799545222,
+          "[\"resource_assignment\", \"c\", \"res_02\"]": 29.17417631798979
+        }
+      }
+    },
+    {
+      "index": 68,
+      "timestamp": "2024-11-12T12:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 69.99670085534079,
+          "events": 69.53903357547252
+        }
+      }
+    },
+    {
+      "index": 69,
+      "timestamp": "2024-11-13T03:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "completions": 65.84788811805257
+        }
+      }
+    },
+    {
+      "index": 70,
+      "timestamp": "2024-11-13T18:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 48.0403189366865
+        }
+      }
+    },
+    {
+      "index": 73,
+      "timestamp": "2024-11-15T15:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"c\", \"res_03\"]": 26.807957800362367
+        }
+      }
+    },
+    {
+      "index": 74,
+      "timestamp": "2024-11-16T06:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"c\"]": 35.40744171917076
+        }
+      }
+    },
+    {
+      "index": 83,
+      "timestamp": "2024-11-21T21:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"a\"]": 36.16665851826008
+        }
+      }
+    },
+    {
+      "index": 88,
+      "timestamp": "2024-11-25T00:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"a\"]": 26.73821759414549
+        }
+      }
+    },
+    {
+      "index": 94,
+      "timestamp": "2024-11-28T18:00:00+00:00",
+      "available_at": "2024-11-30T15:00:00+00:00",
+      "score": 5.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"a\"]": 81.31736339399654,
+          "[\"activity_frequency\", \"b\"]": 82.22358884311409,
+          "[\"activity_frequency\", \"c\"]": 28.59404067438401,
+          "[\"activity_frequency\", \"d\"]": 73.74156297692707,
+          "[\"service_time\", \"c\"]": 21.520603910408838
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2024-10-01T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 1, "timestamp": "2024-10-01T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 2, "timestamp": "2024-10-02T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 3, "timestamp": "2024-10-02T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 4, "timestamp": "2024-10-03T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 5, "timestamp": "2024-10-04T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 6, "timestamp": "2024-10-04T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 7, "timestamp": "2024-10-05T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 8, "timestamp": "2024-10-06T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 9, "timestamp": "2024-10-06T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 10, "timestamp": "2024-10-07T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 11, "timestamp": "2024-10-07T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 12, "timestamp": "2024-10-08T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 13, "timestamp": "2024-10-09T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 14, "timestamp": "2024-10-09T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 15, "timestamp": "2024-10-10T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 16, "timestamp": "2024-10-11T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 17, "timestamp": "2024-10-11T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 18, "timestamp": "2024-10-12T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 19, "timestamp": "2024-10-12T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 20, "timestamp": "2024-10-13T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 21, "timestamp": "2024-10-14T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 22, "timestamp": "2024-10-14T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 23, "timestamp": "2024-10-15T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 24, "timestamp": "2024-10-16T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 25, "timestamp": "2024-10-16T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 2.0},
+    {"index": 26, "timestamp": "2024-10-17T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 27, "timestamp": "2024-10-17T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 28, "timestamp": "2024-10-18T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 29, "timestamp": "2024-10-19T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 30, "timestamp": "2024-10-19T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 31, "timestamp": "2024-10-20T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 32, "timestamp": "2024-10-21T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 33, "timestamp": "2024-10-21T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 34, "timestamp": "2024-10-22T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 3.0},
+    {"index": 35, "timestamp": "2024-10-22T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 36, "timestamp": "2024-10-23T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 37, "timestamp": "2024-10-24T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 38, "timestamp": "2024-10-24T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 39, "timestamp": "2024-10-25T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 40, "timestamp": "2024-10-26T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 41, "timestamp": "2024-10-26T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 42, "timestamp": "2024-10-27T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 2.0},
+    {"index": 43, "timestamp": "2024-10-27T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 44, "timestamp": "2024-10-28T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 45, "timestamp": "2024-10-29T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 46, "timestamp": "2024-10-29T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 47, "timestamp": "2024-10-30T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 48, "timestamp": "2024-10-31T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 49, "timestamp": "2024-10-31T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 50, "timestamp": "2024-11-01T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 51, "timestamp": "2024-11-01T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 52, "timestamp": "2024-11-02T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 53, "timestamp": "2024-11-03T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 54, "timestamp": "2024-11-03T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 55, "timestamp": "2024-11-04T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 56, "timestamp": "2024-11-05T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 57, "timestamp": "2024-11-05T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 58, "timestamp": "2024-11-06T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 59, "timestamp": "2024-11-06T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 60, "timestamp": "2024-11-07T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 61, "timestamp": "2024-11-08T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 62, "timestamp": "2024-11-08T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 63, "timestamp": "2024-11-09T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 64, "timestamp": "2024-11-10T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 65, "timestamp": "2024-11-10T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 66, "timestamp": "2024-11-11T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 67, "timestamp": "2024-11-11T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 68, "timestamp": "2024-11-12T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 2.0},
+    {"index": 69, "timestamp": "2024-11-13T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 70, "timestamp": "2024-11-13T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 71, "timestamp": "2024-11-14T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 72, "timestamp": "2024-11-15T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 73, "timestamp": "2024-11-15T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 74, "timestamp": "2024-11-16T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 75, "timestamp": "2024-11-16T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 76, "timestamp": "2024-11-17T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 77, "timestamp": "2024-11-18T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 78, "timestamp": "2024-11-18T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 79, "timestamp": "2024-11-19T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 80, "timestamp": "2024-11-20T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 81, "timestamp": "2024-11-20T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 82, "timestamp": "2024-11-21T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 83, "timestamp": "2024-11-21T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 84, "timestamp": "2024-11-22T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 85, "timestamp": "2024-11-23T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 86, "timestamp": "2024-11-23T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 87, "timestamp": "2024-11-24T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 88, "timestamp": "2024-11-25T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 1.0},
+    {"index": 89, "timestamp": "2024-11-25T15:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2024-11-26T06:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 91, "timestamp": "2024-11-26T21:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 92, "timestamp": "2024-11-27T12:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 93, "timestamp": "2024-11-28T03:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 94, "timestamp": "2024-11-28T18:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 5.0},
+    {"index": 95, "timestamp": "2024-11-29T09:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0},
+    {"index": 96, "timestamp": "2024-11-30T00:00:00+00:00", "available_at": "2024-11-30T15:00:00+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "cv_indicators",
+    "mode": "retrospective",
+    "bin_size": "15h",
+    "statistic": "mean",
+    "candidate_windows": [
+      1,
+      3,
+      5,
+      9,
+      17
+    ],
+    "selected_windows": {
+      "arrivals": 5,
+      "completions": 3,
+      "work_in_progress": 5,
+      "events": 5,
+      "case_duration": 5,
+      "[\"activity_frequency\", \"a\"]": 5,
+      "[\"activity_frequency\", \"b\"]": 5,
+      "[\"activity_frequency\", \"c\"]": 5,
+      "[\"activity_frequency\", \"d\"]": 5,
+      "[\"service_time\", \"a\"]": 5,
+      "[\"service_time\", \"b\"]": 5,
+      "[\"service_time\", \"c\"]": 5,
+      "[\"service_time\", \"d\"]": 5,
+      "active_resources": 1,
+      "[\"resource_assignment\", \"a\", \"res_02\"]": 5,
+      "[\"resource_assignment\", \"a\", \"res_01\"]": 5,
+      "[\"resource_assignment\", \"b\", \"res_01\"]": 5,
+      "[\"resource_assignment\", \"b\", \"res_02\"]": 5,
+      "[\"resource_assignment\", \"c\", \"res_03\"]": 5,
+      "[\"resource_assignment\", \"c\", \"res_02\"]": 5,
+      "[\"resource_assignment\", \"d\", \"res_02\"]": 5,
+      "[\"resource_assignment\", \"d\", \"res_04\"]": 5
+    },
+    "cv_curves": {
+      "arrivals": {
+        "1": 0.35108795370217305,
+        "3": 0.3096007690904247,
+        "5": 0.29584403618701566,
+        "9": 0.282320084843661,
+        "17": 0.2570605488630268
+      },
+      "completions": {
+        "1": 0.3464980276607232,
+        "3": 0.30383114707635245,
+        "5": 0.29294987575212655,
+        "9": 0.2810326907817321,
+        "17": 0.2572803942427877
+      },
+      "work_in_progress": {
+        "1": 0.5028963157996883,
+        "3": 0.40081474416938373,
+        "5": 0.36902752553029056,
+        "9": 0.341484424425042,
+        "17": 0.3127065622460139
+      },
+      "events": {
+        "1": 0.3445692344904402,
+        "3": 0.305970055178114,
+        "5": 0.2939049095219483,
+        "9": 0.28162167083490613,
+        "17": 0.25710870314417544
+      },
+      "case_duration": {
+        "1": 0.026180836616149172,
+        "3": 0.014192080290479518,
+        "5": 0.010587753859586756,
+        "9": 0.007775235676260954,
+        "17": 0.0037543672733118113
+      },
+      "[\"activity_frequency\", \"a\"]": {
+        "1": 0.13102530861981465,
+        "3": 0.06971228565313445,
+        "5": 0.05235581884691298,
+        "9": 0.03645358412336132,
+        "17": 0.02534529697592683
+      },
+      "[\"activity_frequency\", \"b\"]": {
+        "1": 0.08118478559614636,
+        "3": 0.04111518908401811,
+        "5": 0.03168466892300627,
+        "9": 0.022031662424042812,
+        "17": 0.015054722686105458
+      },
+      "[\"activity_frequency\", \"c\"]": {
+        "1": 0.04799850073143829,
+        "3": 0.017896023955524584,
+        "5": 0.012270741459303855,
+        "9": 0.007222618615501558,
+        "17": 0.00461417475853625
+      },
+      "[\"activity_frequency\", \"d\"]": {
+        "1": 0.08060152290994942,
+        "3": 0.0404156802768905,
+        "5": 0.029160813956998953,
+        "9": 0.020116999387330175,
+        "17": 0.013711452934141418
+      },
+      "[\"service_time\", \"a\"]": {
+        "1": 0.08896964136694425,
+        "3": 0.058689786293361225,
+        "5": 0.04396044671325857,
+        "9": 0.02953039535333963,
+        "17": 0.021223875317490502
+      },
+      "[\"service_time\", \"b\"]": {
+        "1": 0.10295205554835349,
+        "3": 0.0618836136214698,
+        "5": 0.04301892012215155,
+        "9": 0.026773302775149742,
+        "17": 0.017083645154394114
+      },
+      "[\"service_time\", \"c\"]": {
+        "1": 0.08679092934030594,
+        "3": 0.052222490747519196,
+        "5": 0.037602509372519195,
+        "9": 0.027902699019770393,
+        "17": 0.02219256657884698
+      },
+      "[\"service_time\", \"d\"]": {
+        "1": 0.11669722264271028,
+        "3": 0.06260226777369857,
+        "5": 0.04287017867643579,
+        "9": 0.02851683775068514,
+        "17": 0.016005401982281547
+      },
+      "active_resources": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "9": 0.0,
+        "17": 0.0
+      },
+      "[\"resource_assignment\", \"a\", \"res_02\"]": {
+        "1": 0.08356123411142935,
+        "3": 0.04405524313338023,
+        "5": 0.032431680316450814,
+        "9": 0.018466479309498716,
+        "17": 0.011606132413125327
+      },
+      "[\"resource_assignment\", \"a\", \"res_01\"]": {
+        "1": 0.923510229202188,
+        "3": 0.525513197407486,
+        "5": 0.41467086726824937,
+        "9": 0.3249662348035919,
+        "17": 0.2478653240427862
+      },
+      "[\"resource_assignment\", \"b\", \"res_01\"]": {
+        "1": 0.09578265412139668,
+        "3": 0.05682381419644126,
+        "5": 0.043371781562543385,
+        "9": 0.02862522203142859,
+        "17": 0.0127425114609572
+      },
+      "[\"resource_assignment\", \"b\", \"res_02\"]": {
+        "1": 0.8706713565370423,
+        "3": 0.48264272657288054,
+        "5": 0.3580145634038358,
+        "9": 0.23937268074606766,
+        "17": 0.1502728182766158
+      },
+      "[\"resource_assignment\", \"c\", \"res_03\"]": {
+        "1": 0.07651848071747534,
+        "3": 0.04287303751200745,
+        "5": 0.031625655202134215,
+        "9": 0.023969916688216172,
+        "17": 0.0203667826141722
+      },
+      "[\"resource_assignment\", \"c\", \"res_02\"]": {
+        "1": 0.8499156251489178,
+        "3": 0.5035914257693236,
+        "5": 0.4119855140024539,
+        "9": 0.31851047924551923,
+        "17": 0.25213380638917826
+      },
+      "[\"resource_assignment\", \"d\", \"res_02\"]": {
+        "1": 0.0858338940521283,
+        "3": 0.05000537156832853,
+        "5": 0.03691548532802594,
+        "9": 0.022865003334676035,
+        "17": 0.017995804014667292
+      },
+      "[\"resource_assignment\", \"d\", \"res_04\"]": {
+        "1": 0.7785174842505214,
+        "3": 0.44160086516200553,
+        "5": 0.32452900526388845,
+        "9": 0.16510250173485336,
+        "17": 0.11493660653866082
+      }
+    },
+    "min_size": 3,
+    "penalty_scale": 3.0,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "bin_size": "15h",
+    "features": [
+      "arrivals",
+      "completions",
+      "work_in_progress",
+      "events",
+      "case_duration",
+      [
+        "activity_frequency",
+        "a"
+      ],
+      [
+        "activity_frequency",
+        "b"
+      ],
+      [
+        "activity_frequency",
+        "c"
+      ],
+      [
+        "activity_frequency",
+        "d"
+      ],
+      [
+        "service_time",
+        "a"
+      ],
+      [
+        "service_time",
+        "b"
+      ],
+      [
+        "service_time",
+        "c"
+      ],
+      [
+        "service_time",
+        "d"
+      ],
+      "active_resources",
+      [
+        "resource_assignment",
+        "a",
+        "res_02"
+      ],
+      [
+        "resource_assignment",
+        "a",
+        "res_01"
+      ],
+      [
+        "resource_assignment",
+        "b",
+        "res_01"
+      ],
+      [
+        "resource_assignment",
+        "b",
+        "res_02"
+      ],
+      [
+        "resource_assignment",
+        "c",
+        "res_03"
+      ],
+      [
+        "resource_assignment",
+        "c",
+        "res_02"
+      ],
+      [
+        "resource_assignment",
+        "d",
+        "res_02"
+      ],
+      [
+        "resource_assignment",
+        "d",
+        "res_04"
+      ]
+    ],
+    "penalty_scale": 3,
+    "start_timestamp_key": "start:timestamp"
+  },
+  "runtime_seconds": 2.249266,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 51983.34,
+        "tp": 2,
+        "fp": 16,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 97200.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4201200.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 10,
+            "estimate_minus_onset_seconds": 43200.0,
+            "distance_to_truth_interval_seconds": 43200.0,
+            "availability_minus_onset_seconds": 1609200.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 129958.35,
+        "tp": 2,
+        "fp": 16,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 97200.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4201200.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 10,
+            "estimate_minus_onset_seconds": 43200.0,
+            "distance_to_truth_interval_seconds": 43200.0,
+            "availability_minus_onset_seconds": 1609200.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 259916.7,
+        "tp": 2,
+        "fp": 16,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 3,
+            "estimate_minus_onset_seconds": 97200.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4201200.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 10,
+            "estimate_minus_onset_seconds": 43200.0,
+            "distance_to_truth_interval_seconds": 43200.0,
+            "availability_minus_onset_seconds": 1609200.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 97,
+    "published_count": 97,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

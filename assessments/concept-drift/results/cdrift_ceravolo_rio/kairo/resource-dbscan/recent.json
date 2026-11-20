@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_ceravolo_rio",
+  "library": "kairo",
+  "method": "resource-dbscan",
+  "profile": "recent",
+  "status": "unsupported",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "resource",
+    "features": {},
+    "reduction": {},
+    "clustering": {
+      "method": "dbscan"
+    },
+    "signal": {
+      "window": "16h",
+      "divergence": "tv",
+      "reference": "recent",
+      "lookback": 3,
+      "threshold_quantile": 0.95,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "reason": "The event log has no observed resources",
+  "changes": [],
+  "scores": []
+}

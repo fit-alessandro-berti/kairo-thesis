@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_04",
+  "library": "pm4py",
+  "method": "trace-variant-frequency",
+  "profile": "permutation-wide",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 2100,
+      "timestamp": "2011-11-16T15:08:05.086000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 0.6282028138585067,
+      "p_value": 0.02,
+      "details": {
+        "changed_variants": {
+          "[\"W_Afhandelen leads\"]": 0.16333333333333333,
+          "[\"W_Afhandelen leads\", \"W_Afhandelen leads\"]": 0.039999999999999994,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": -0.023333333333333334,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\"]": 0.020000000000000004,
+          "[\"W_Completeren aanvraag\", \"W_Nabellen offertes\", \"W_Valideren aanvraag\"]": -0.016666666666666666
+        }
+      }
+    },
+    {
+      "index": 2400,
+      "timestamp": "2011-11-21T11:04:32.486000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 0.6289755419375892,
+      "p_value": 0.03,
+      "details": {
+        "changed_variants": {
+          "[\"W_Afhandelen leads\"]": -0.19,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\"]": -0.030000000000000002,
+          "[\"W_Beoordelen fraude\", \"W_Beoordelen fraude\"]": 0.02,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": 0.016666666666666666,
+          "[\"W_Completeren aanvraag\", \"W_Completeren aanvraag\", \"W_Nabellen offertes\", \"W_Valideren aanvraag\"]": 0.016666666666666666
+        }
+      }
+    },
+    {
+      "index": 3240,
+      "timestamp": "2011-12-05T16:08:21.695000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 0.7062965043591722,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"W_Afhandelen leads\"]": -0.12333333333333335,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\"]": -0.030000000000000002,
+          "[\"W_Afhandelen leads\", \"W_Afhandelen leads\"]": -0.026666666666666665,
+          "[\"W_Completeren aanvraag\", \"W_Nabellen offertes\", \"W_Valideren aanvraag\"]": 0.026666666666666665,
+          "[\"W_Afhandelen leads\", \"W_Afhandelen leads\", \"W_Afhandelen leads\"]": -0.016666666666666666
+        }
+      }
+    },
+    {
+      "index": 3900,
+      "timestamp": "2011-12-19T14:21:48.152000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 0.7356474360776555,
+      "p_value": 0.02,
+      "details": {
+        "changed_variants": {
+          "[\"W_Afhandelen leads\"]": -0.07,
+          "[\"W_Completeren aanvraag\"]": -0.026666666666666665,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": -0.02,
+          "[\"W_Completeren aanvraag\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": -0.016666666666666666,
+          "[\"W_Completeren aanvraag\", \"W_Completeren aanvraag\", \"W_Nabellen offertes\", \"W_Nabellen offertes\", \"W_Nabellen offertes\", \"W_Nabellen offertes\", \"W_Valideren aanvraag\"]": 0.016666666666666666
+        }
+      }
+    },
+    {
+      "index": 4260,
+      "timestamp": "2011-12-27T16:14:49.401100+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 0.7211140469813977,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"W_Afhandelen leads\"]": 0.14666666666666664,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\"]": 0.02666666666666667,
+          "[\"W_Afhandelen leads\", \"W_Afhandelen leads\"]": 0.016666666666666666,
+          "[\"W_Completeren aanvraag\", \"W_Nabellen offertes\", \"W_Nabellen offertes\", \"W_Nabellen offertes\"]": -0.016666666666666666,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": 0.013333333333333334
+        }
+      }
+    },
+    {
+      "index": 5880,
+      "timestamp": "2012-01-28T15:22:28.351000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 0.6601839200123346,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"W_Afhandelen leads\"]": 0.2866666666666667,
+          "[\"W_Completeren aanvraag\"]": 0.05666666666666667,
+          "[\"W_Afhandelen leads\", \"W_Afhandelen leads\"]": 0.03666666666666667,
+          "[\"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": 0.02666666666666667,
+          "[\"W_Completeren aanvraag\", \"W_Nabellen offertes\", \"W_Nabellen offertes\", \"W_Nabellen offertes\", \"W_Nabellen offertes\"]": -0.016666666666666666
+        }
+      }
+    },
+    {
+      "index": 6420,
+      "timestamp": "2012-02-14T14:22:39.671000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 0.5655572302168487,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"W_Afhandelen leads\"]": -0.12999999999999998,
+          "[\"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": -0.03666666666666667,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": 0.03,
+          "[\"W_Afhandelen leads\", \"W_Afhandelen leads\"]": -0.02666666666666667,
+          "[\"W_Completeren aanvraag\", \"W_Nabellen offertes\", \"W_Nabellen offertes\"]": 0.023333333333333334
+        }
+      }
+    },
+    {
+      "index": 6720,
+      "timestamp": "2012-02-20T15:47:39.882000+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 0.6493127407880812,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"W_Afhandelen leads\"]": -0.06666666666666668,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": -0.03,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\"]": 0.026666666666666665,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": 0.02,
+          "[\"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": 0.02
+        }
+      }
+    },
+    {
+      "index": 7380,
+      "timestamp": "2012-03-02T09:27:22.661700+00:00",
+      "available_at": "2012-03-14T16:57:07.354200+00:00",
+      "score": 0.8713138394078213,
+      "p_value": 0.01,
+      "details": {
+        "changed_variants": {
+          "[\"W_Afhandelen leads\"]": -0.22333333333333333,
+          "[\"W_Completeren aanvraag\"]": -0.03666666666666667,
+          "[\"W_Afhandelen leads\", \"W_Completeren aanvraag\"]": -0.03333333333333333,
+          "[\"W_Completeren aanvraag\", \"W_Completeren aanvraag\"]": -0.02666666666666667,
+          "[\"W_Completeren aanvraag\", \"W_Completeren aanvraag\", \"W_Nabellen offertes\", \"W_Nabellen offertes\"]": 0.026666666666666665
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 300, "timestamp": "2011-10-12T19:11:59.624000+00:00", "available_at": "2011-10-19T21:53:15.235000+00:00", "score": 0.5041048738364647, "p_value": 0.02},
+    {"index": 360, "timestamp": "2011-10-14T10:24:31.594000+00:00", "available_at": "2011-10-21T13:02:48.687000+00:00", "score": 0.5164193051210795, "p_value": 0.08},
+    {"index": 420, "timestamp": "2011-10-17T10:22:54.035000+00:00", "available_at": "2011-10-24T10:54:26.458000+00:00", "score": 0.5036020660831235, "p_value": 0.79},
+    {"index": 480, "timestamp": "2011-10-18T10:12:38.860000+00:00", "available_at": "2011-10-25T10:12:24.651000+00:00", "score": 0.5289866884412451, "p_value": 0.87},
+    {"index": 540, "timestamp": "2011-10-18T20:59:43.984000+00:00", "available_at": "2011-10-26T09:55:09.351000+00:00", "score": 0.5509250636356269, "p_value": 0.5},
+    {"index": 600, "timestamp": "2011-10-20T09:29:25.128000+00:00", "available_at": "2011-10-27T12:48:05.975000+00:00", "score": 0.567500041467481, "p_value": 0.74},
+    {"index": 660, "timestamp": "2011-10-21T13:07:49.117000+00:00", "available_at": "2011-10-28T12:01:37.058000+00:00", "score": 0.5991023860729773, "p_value": 0.27},
+    {"index": 720, "timestamp": "2011-10-24T11:06:40.775000+00:00", "available_at": "2011-10-29T15:32:03.638000+00:00", "score": 0.6140522799352395, "p_value": 0.27},
+    {"index": 780, "timestamp": "2011-10-25T10:20:55.293000+00:00", "available_at": "2011-10-31T14:49:49.752000+00:00", "score": 0.6199213629889191, "p_value": 0.41},
+    {"index": 840, "timestamp": "2011-10-26T10:18:59.724000+00:00", "available_at": "2011-11-01T11:39:54.270000+00:00", "score": 0.6228486731058644, "p_value": 0.15},
+    {"index": 900, "timestamp": "2011-10-27T12:53:40.043000+00:00", "available_at": "2011-11-02T10:21:39.705000+00:00", "score": 0.6372793655608779, "p_value": 0.14},
+    {"index": 960, "timestamp": "2011-10-28T12:10:02.719000+00:00", "available_at": "2011-11-02T21:50:00.364000+00:00", "score": 0.6151328513044194, "p_value": 0.98},
+    {"index": 1020, "timestamp": "2011-10-29T15:55:33.960000+00:00", "available_at": "2011-11-03T18:37:27.183000+00:00", "score": 0.637300655084599, "p_value": 0.83},
+    {"index": 1080, "timestamp": "2011-10-31T15:00:15.586000+00:00", "available_at": "2011-11-04T17:05:01.532000+00:00", "score": 0.6560130595131011, "p_value": 0.8},
+    {"index": 1140, "timestamp": "2011-11-01T12:04:22.244000+00:00", "available_at": "2011-11-07T12:32:12.007000+00:00", "score": 0.6544875619976942, "p_value": 0.78},
+    {"index": 1200, "timestamp": "2011-11-02T10:48:11.892000+00:00", "available_at": "2011-11-08T10:21:33.595000+00:00", "score": 0.6565449787448695, "p_value": 0.7},
+    {"index": 1260, "timestamp": "2011-11-02T21:51:17.667000+00:00", "available_at": "2011-11-08T20:53:30.090000+00:00", "score": 0.6394055581641648, "p_value": 0.99},
+    {"index": 1320, "timestamp": "2011-11-03T18:42:05.714000+00:00", "available_at": "2011-11-09T17:54:57.658000+00:00", "score": 0.6495071847143318, "p_value": 0.92},
+    {"index": 1380, "timestamp": "2011-11-04T17:08:19.189000+00:00", "available_at": "2011-11-10T16:09:16.809000+00:00", "score": 0.6542334177298806, "p_value": 0.93},
+    {"index": 1440, "timestamp": "2011-11-07T12:34:25.355000+00:00", "available_at": "2011-11-10T21:37:13.697000+00:00", "score": 0.6507082729743093, "p_value": 0.69},
+    {"index": 1500, "timestamp": "2011-11-08T10:24:22.295000+00:00", "available_at": "2011-11-11T15:58:51.967000+00:00", "score": 0.6524645855602403, "p_value": 0.54},
+    {"index": 1560, "timestamp": "2011-11-08T21:08:16.389000+00:00", "available_at": "2011-11-12T14:50:36.624000+00:00", "score": 0.6455051396892622, "p_value": 0.29},
+    {"index": 1620, "timestamp": "2011-11-09T18:17:58.657000+00:00", "available_at": "2011-11-14T15:53:39.014000+00:00", "score": 0.6502115310945322, "p_value": 0.09},
+    {"index": 1680, "timestamp": "2011-11-10T16:11:35.729000+00:00", "available_at": "2011-11-14T21:47:47.224000+00:00", "score": 0.6436693707777501, "p_value": 0.06},
+    {"index": 1740, "timestamp": "2011-11-10T21:39:45.957000+00:00", "available_at": "2011-11-15T13:58:57.741000+00:00", "score": 0.6437830598192149, "p_value": 0.18},
+    {"index": 1800, "timestamp": "2011-11-11T15:59:43.264000+00:00", "available_at": "2011-11-16T15:02:36.954000+00:00", "score": 0.6432551683103558, "p_value": 0.24},
+    {"index": 1860, "timestamp": "2011-11-12T15:08:11.201000+00:00", "available_at": "2011-11-17T12:50:15.603000+00:00", "score": 0.6401261407133763, "p_value": 0.1},
+    {"index": 1920, "timestamp": "2011-11-14T15:54:21.219000+00:00", "available_at": "2011-11-17T19:50:31.833000+00:00", "score": 0.6264818531623971, "p_value": 0.08},
+    {"index": 1980, "timestamp": "2011-11-14T21:49:35.953000+00:00", "available_at": "2011-11-18T12:21:22.547000+00:00", "score": 0.6099357870130285, "p_value": 0.05},
+    {"index": 2040, "timestamp": "2011-11-15T14:40:05.335000+00:00", "available_at": "2011-11-18T21:07:47.530000+00:00", "score": 0.631792764459095, "p_value": 0.03},
+    {"index": 2100, "timestamp": "2011-11-16T15:08:05.086000+00:00", "available_at": "2011-11-21T10:59:30.148000+00:00", "score": 0.6282028138585067, "p_value": 0.02},
+    {"index": 2160, "timestamp": "2011-11-17T12:53:06.443000+00:00", "available_at": "2011-11-21T17:48:02.593000+00:00", "score": 0.6173867296485711, "p_value": 0.17},
+    {"index": 2220, "timestamp": "2011-11-17T19:51:38.694000+00:00", "available_at": "2011-11-22T12:59:56.403000+00:00", "score": 0.6000578362941011, "p_value": 0.64},
+    {"index": 2280, "timestamp": "2011-11-18T12:34:00.547000+00:00", "available_at": "2011-11-23T10:55:09.079000+00:00", "score": 0.620378129001031, "p_value": 0.03},
+    {"index": 2340, "timestamp": "2011-11-18T21:16:23.302000+00:00", "available_at": "2011-11-24T10:59:01.453000+00:00", "score": 0.6160689371824117, "p_value": 0.03},
+    {"index": 2400, "timestamp": "2011-11-21T11:04:32.486000+00:00", "available_at": "2011-11-24T18:14:25.642000+00:00", "score": 0.6289755419375892, "p_value": 0.03},
+    {"index": 2460, "timestamp": "2011-11-21T17:54:25.809000+00:00", "available_at": "2011-11-25T16:01:08.666000+00:00", "score": 0.6276886680198636, "p_value": 0.13},
+    {"index": 2520, "timestamp": "2011-11-22T13:02:56.404000+00:00", "available_at": "2011-11-28T10:10:46.331000+00:00", "score": 0.6357228839076361, "p_value": 0.24},
+    {"index": 2580, "timestamp": "2011-11-23T10:59:34.214000+00:00", "available_at": "2011-11-28T16:31:24.122000+00:00", "score": 0.6552133684409138, "p_value": 0.23},
+    {"index": 2640, "timestamp": "2011-11-24T10:59:55.687000+00:00", "available_at": "2011-11-29T13:49:07.400000+00:00", "score": 0.65906526479894, "p_value": 0.05},
+    {"index": 2700, "timestamp": "2011-11-24T18:18:00.614000+00:00", "available_at": "2011-11-30T14:06:41.687000+00:00", "score": 0.6774178840028724, "p_value": 0.08},
+    {"index": 2760, "timestamp": "2011-11-25T16:08:02.271000+00:00", "available_at": "2011-12-01T12:56:01.612000+00:00", "score": 0.6611392635803982, "p_value": 0.33},
+    {"index": 2820, "timestamp": "2011-11-28T10:11:16.654000+00:00", "available_at": "2011-12-02T10:41:10.238000+00:00", "score": 0.6643702560294812, "p_value": 0.3},
+    {"index": 2880, "timestamp": "2011-11-28T16:31:46.501000+00:00", "available_at": "2011-12-05T10:21:30.949000+00:00", "score": 0.6694485459025331, "p_value": 0.55},
+    {"index": 2940, "timestamp": "2011-11-29T14:26:06.494000+00:00", "available_at": "2011-12-05T16:03:33.550000+00:00", "score": 0.682292220112822, "p_value": 0.04},
+    {"index": 3000, "timestamp": "2011-11-30T14:33:30.108000+00:00", "available_at": "2011-12-06T14:46:55.728000+00:00", "score": 0.6469335103943303, "p_value": 0.36},
+    {"index": 3060, "timestamp": "2011-12-01T13:18:59.550000+00:00", "available_at": "2011-12-07T11:50:15.083000+00:00", "score": 0.6493837677355734, "p_value": 0.33},
+    {"index": 3120, "timestamp": "2011-12-02T10:47:01.538000+00:00", "available_at": "2011-12-08T11:11:44.206000+00:00", "score": 0.671309646903116, "p_value": 0.09},
+    {"index": 3180, "timestamp": "2011-12-05T10:23:16.490000+00:00", "available_at": "2011-12-09T10:03:33.747000+00:00", "score": 0.6774231214766021, "p_value": 0.06},
+    {"index": 3240, "timestamp": "2011-12-05T16:08:21.695000+00:00", "available_at": "2011-12-09T21:27:26.033000+00:00", "score": 0.7062965043591722, "p_value": 0.01},
+    {"index": 3300, "timestamp": "2011-12-06T14:49:30.591000+00:00", "available_at": "2011-12-12T15:24:21.723000+00:00", "score": 0.6859098825416395, "p_value": 0.01},
+    {"index": 3360, "timestamp": "2011-12-07T12:14:21.703000+00:00", "available_at": "2011-12-13T13:13:08.899000+00:00", "score": 0.6609417290377083, "p_value": 0.47},
+    {"index": 3420, "timestamp": "2011-12-08T11:16:17.850000+00:00", "available_at": "2011-12-14T15:01:19.413000+00:00", "score": 0.6591665183702166, "p_value": 0.25},
+    {"index": 3480, "timestamp": "2011-12-09T10:15:48.520400+00:00", "available_at": "2011-12-15T16:27:16.420900+00:00", "score": 0.6554108678860158, "p_value": 0.37},
+    {"index": 3540, "timestamp": "2011-12-09T21:53:03.655000+00:00", "available_at": "2011-12-16T16:50:04.039000+00:00", "score": 0.6840626815725824, "p_value": 0.06},
+    {"index": 3600, "timestamp": "2011-12-12T15:26:29.040000+00:00", "available_at": "2011-12-19T14:00:05.014000+00:00", "score": 0.6992623035788015, "p_value": 0.04},
+    {"index": 3660, "timestamp": "2011-12-13T13:49:00.449000+00:00", "available_at": "2011-12-20T11:42:18.881900+00:00", "score": 0.6933393341164507, "p_value": 0.21},
+    {"index": 3720, "timestamp": "2011-12-14T15:25:11.805000+00:00", "available_at": "2011-12-21T11:25:34.348900+00:00", "score": 0.6977575685851177, "p_value": 0.14},
+    {"index": 3780, "timestamp": "2011-12-15T17:09:57.976300+00:00", "available_at": "2011-12-22T10:13:50.800000+00:00", "score": 0.6958952522417265, "p_value": 0.12},
+    {"index": 3840, "timestamp": "2011-12-16T17:17:41.579000+00:00", "available_at": "2011-12-23T09:59:36.241000+00:00", "score": 0.7183575398588521, "p_value": 0.02},
+    {"index": 3900, "timestamp": "2011-12-19T14:21:48.152000+00:00", "available_at": "2011-12-24T14:29:19.654000+00:00", "score": 0.7356474360776555, "p_value": 0.02},
+    {"index": 3960, "timestamp": "2011-12-20T11:55:38.516000+00:00", "available_at": "2011-12-27T16:13:28.988000+00:00", "score": 0.7191336035374104, "p_value": 0.09},
+    {"index": 4020, "timestamp": "2011-12-21T11:27:11.009000+00:00", "available_at": "2011-12-28T21:35:47.058000+00:00", "score": 0.7213871765801582, "p_value": 0.37},
+    {"index": 4080, "timestamp": "2011-12-22T10:14:31.941000+00:00", "available_at": "2011-12-29T17:54:09.666000+00:00", "score": 0.7197902961131544, "p_value": 0.39},
+    {"index": 4140, "timestamp": "2011-12-23T10:03:20.066800+00:00", "available_at": "2011-12-31T14:54:06.394000+00:00", "score": 0.7195464679957787, "p_value": 0.09},
+    {"index": 4200, "timestamp": "2011-12-24T15:53:15.925000+00:00", "available_at": "2012-01-03T10:31:27.406000+00:00", "score": 0.7137765216757077, "p_value": 0.11},
+    {"index": 4260, "timestamp": "2011-12-27T16:14:49.401100+00:00", "available_at": "2012-01-04T10:55:18.430400+00:00", "score": 0.7211140469813977, "p_value": 0.01},
+    {"index": 4320, "timestamp": "2011-12-28T21:49:31.298000+00:00", "available_at": "2012-01-04T21:53:47.172000+00:00", "score": 0.7000858150111954, "p_value": 0.01},
+    {"index": 4380, "timestamp": "2011-12-29T18:08:00.982000+00:00", "available_at": "2012-01-06T10:17:34.051000+00:00", "score": 0.7044062205371906, "p_value": 0.01},
+    {"index": 4440, "timestamp": "2011-12-31T15:15:45.810000+00:00", "available_at": "2012-01-07T12:17:18.081600+00:00", "score": 0.6625317859622402, "p_value": 0.04},
+    {"index": 4500, "timestamp": "2012-01-03T10:32:14.586000+00:00", "available_at": "2012-01-09T15:46:25.550600+00:00", "score": 0.6342516789296854, "p_value": 0.28},
+    {"index": 4560, "timestamp": "2012-01-04T11:11:43.861200+00:00", "available_at": "2012-01-10T14:38:49.120700+00:00", "score": 0.6283695560359092, "p_value": 0.33},
+    {"index": 4620, "timestamp": "2012-01-05T03:23:16.091600+00:00", "available_at": "2012-01-11T17:26:33.193000+00:00", "score": 0.6202083132573346, "p_value": 0.51},
+    {"index": 4680, "timestamp": "2012-01-06T10:20:56.587000+00:00", "available_at": "2012-01-12T17:13:07.880300+00:00", "score": 0.6200133184297855, "p_value": 0.1},
+    {"index": 4740, "timestamp": "2012-01-07T12:49:05.775000+00:00", "available_at": "2012-01-13T16:01:59.968900+00:00", "score": 0.6185135548794676, "p_value": 0.12},
+    {"index": 4800, "timestamp": "2012-01-09T16:09:52.043000+00:00", "available_at": "2012-01-14T16:53:41.703400+00:00", "score": 0.6294803074118904, "p_value": 0.03},
+    {"index": 4860, "timestamp": "2012-01-10T15:04:57.313100+00:00", "available_at": "2012-01-16T14:22:55.460700+00:00", "score": 0.6084550133240926, "p_value": 0.31},
+    {"index": 4920, "timestamp": "2012-01-11T17:29:24.028000+00:00", "available_at": "2012-01-17T09:59:09.884800+00:00", "score": 0.608868733396566, "p_value": 0.65},
+    {"index": 4980, "timestamp": "2012-01-12T17:15:55.447500+00:00", "available_at": "2012-01-17T15:00:15.827600+00:00", "score": 0.6190810297897432, "p_value": 0.54},
+    {"index": 5040, "timestamp": "2012-01-13T16:05:44.679000+00:00", "available_at": "2012-01-18T13:35:14.994900+00:00", "score": 0.6242295507150067, "p_value": 0.13},
+    {"index": 5100, "timestamp": "2012-01-14T16:55:52.841700+00:00", "available_at": "2012-01-18T20:38:32.389500+00:00", "score": 0.6286445016118016, "p_value": 0.21},
+    {"index": 5160, "timestamp": "2012-01-16T14:24:41.096700+00:00", "available_at": "2012-01-19T19:45:07.661900+00:00", "score": 0.6299841725429514, "p_value": 0.21},
+    {"index": 5220, "timestamp": "2012-01-17T09:59:54.526400+00:00", "available_at": "2012-01-20T21:26:13.358900+00:00", "score": 0.6530608632159711, "p_value": 0.02},
+    {"index": 5280, "timestamp": "2012-01-17T15:17:26.168400+00:00", "available_at": "2012-01-23T12:24:31.029900+00:00", "score": 0.6244477416718262, "p_value": 0.51},
+    {"index": 5340, "timestamp": "2012-01-18T13:37:56.674400+00:00", "available_at": "2012-01-24T10:07:27.667500+00:00", "score": 0.6189603102167842, "p_value": 0.88},
+    {"index": 5400, "timestamp": "2012-01-18T21:28:12.617500+00:00", "available_at": "2012-01-24T17:23:03.987000+00:00", "score": 0.6454575341138605, "p_value": 0.41},
+    {"index": 5460, "timestamp": "2012-01-19T19:45:31.706600+00:00", "available_at": "2012-01-25T21:27:15.817700+00:00", "score": 0.6605109825023003, "p_value": 0.22},
+    {"index": 5520, "timestamp": "2012-01-21T11:12:27.747300+00:00", "available_at": "2012-01-26T20:38:13.951200+00:00", "score": 0.6854233769293985, "p_value": 0.03},
+    {"index": 5580, "timestamp": "2012-01-23T12:29:25.909300+00:00", "available_at": "2012-01-28T15:21:08.945500+00:00", "score": 0.6868858397480612, "p_value": 0.04},
+    {"index": 5640, "timestamp": "2012-01-24T10:11:31.715000+00:00", "available_at": "2012-01-30T15:20:05.275700+00:00", "score": 0.6793567038709671, "p_value": 0.19},
+    {"index": 5700, "timestamp": "2012-01-24T17:29:03.305000+00:00", "available_at": "2012-02-01T10:34:58.232300+00:00", "score": 0.6718458247975035, "p_value": 0.02},
+    {"index": 5760, "timestamp": "2012-01-26T00:37:19.970700+00:00", "available_at": "2012-02-03T10:39:02.728000+00:00", "score": 0.6438459933340179, "p_value": 0.06},
+    {"index": 5820, "timestamp": "2012-01-26T20:58:04.225600+00:00", "available_at": "2012-02-06T17:52:34.461000+00:00", "score": 0.6192107569027164, "p_value": 0.01},
+    {"index": 5880, "timestamp": "2012-01-28T15:22:28.351000+00:00", "available_at": "2012-02-08T17:40:46.558000+00:00", "score": 0.6601839200123346, "p_value": 0.01},
+    {"index": 5940, "timestamp": "2012-01-30T15:23:11.763100+00:00", "available_at": "2012-02-10T12:54:53.910200+00:00", "score": 0.6361068147355601, "p_value": 0.01},
+    {"index": 6000, "timestamp": "2012-02-01T10:37:27.771000+00:00", "available_at": "2012-02-13T10:10:55.538000+00:00", "score": 0.559803699927412, "p_value": 0.01},
+    {"index": 6060, "timestamp": "2012-02-03T10:52:28.089000+00:00", "available_at": "2012-02-13T17:49:14.566000+00:00", "score": 0.5308632999469912, "p_value": 0.08},
+    {"index": 6120, "timestamp": "2012-02-06T18:07:29.139000+00:00", "available_at": "2012-02-14T14:21:36.499000+00:00", "score": 0.5130471682328072, "p_value": 0.01},
+    {"index": 6180, "timestamp": "2012-02-08T18:07:47.920700+00:00", "available_at": "2012-02-15T12:20:21.300000+00:00", "score": 0.49485889302204195, "p_value": 0.01},
+    {"index": 6240, "timestamp": "2012-02-10T13:16:30.889800+00:00", "available_at": "2012-02-16T12:05:02.881000+00:00", "score": 0.5002912442148867, "p_value": 0.01},
+    {"index": 6300, "timestamp": "2012-02-13T10:15:16.420000+00:00", "available_at": "2012-02-16T20:34:54.203000+00:00", "score": 0.5175297802161244, "p_value": 0.01},
+    {"index": 6360, "timestamp": "2012-02-13T17:50:38.420000+00:00", "available_at": "2012-02-17T21:02:27.893300+00:00", "score": 0.5303865463561189, "p_value": 0.02},
+    {"index": 6420, "timestamp": "2012-02-14T14:22:39.671000+00:00", "available_at": "2012-02-20T15:46:08.630000+00:00", "score": 0.5655572302168487, "p_value": 0.01},
+    {"index": 6480, "timestamp": "2012-02-15T12:28:24.746000+00:00", "available_at": "2012-02-21T10:54:35.317500+00:00", "score": 0.5820366305801347, "p_value": 0.02},
+    {"index": 6540, "timestamp": "2012-02-16T12:06:07.532000+00:00", "available_at": "2012-02-22T10:28:44.561600+00:00", "score": 0.5764744775022949, "p_value": 0.44},
+    {"index": 6600, "timestamp": "2012-02-16T21:13:33.995900+00:00", "available_at": "2012-02-22T20:16:25.176900+00:00", "score": 0.5969821347478605, "p_value": 0.17},
+    {"index": 6660, "timestamp": "2012-02-17T21:05:46.306000+00:00", "available_at": "2012-02-23T16:01:50.251000+00:00", "score": 0.625667747095441, "p_value": 0.02},
+    {"index": 6720, "timestamp": "2012-02-20T15:47:39.882000+00:00", "available_at": "2012-02-24T14:34:58.818700+00:00", "score": 0.6493127407880812, "p_value": 0.01},
+    {"index": 6780, "timestamp": "2012-02-21T11:03:39.481500+00:00", "available_at": "2012-02-25T17:13:18.949000+00:00", "score": 0.6339692424545246, "p_value": 0.15},
+    {"index": 6840, "timestamp": "2012-02-22T10:35:33.348500+00:00", "available_at": "2012-02-27T20:06:25.654500+00:00", "score": 0.630479456365878, "p_value": 0.34},
+    {"index": 6900, "timestamp": "2012-02-22T20:19:37.883300+00:00", "available_at": "2012-02-28T15:54:03.103000+00:00", "score": 0.6520892474323272, "p_value": 0.05},
+    {"index": 6960, "timestamp": "2012-02-23T16:11:53.235400+00:00", "available_at": "2012-02-29T13:43:42.903700+00:00", "score": 0.6550005270565353, "p_value": 0.03},
+    {"index": 7020, "timestamp": "2012-02-24T14:55:50.675100+00:00", "available_at": "2012-03-01T10:45:36.356000+00:00", "score": 0.6514178325052631, "p_value": 0.1},
+    {"index": 7080, "timestamp": "2012-02-25T17:28:33.477400+00:00", "available_at": "2012-03-02T08:41:27.653200+00:00", "score": 0.6603469687589648, "p_value": 0.26},
+    {"index": 7140, "timestamp": "2012-02-27T20:19:20.943000+00:00", "available_at": "2012-03-03T16:34:11.920300+00:00", "score": 0.6698848094271667, "p_value": 0.42},
+    {"index": 7200, "timestamp": "2012-02-28T15:54:59.968000+00:00", "available_at": "2012-03-06T12:24:53.827400+00:00", "score": 0.7157031795622127, "p_value": 0.03},
+    {"index": 7260, "timestamp": "2012-02-29T14:36:16.952200+00:00", "available_at": "2012-03-07T20:27:13.901600+00:00", "score": 0.7594811787193038, "p_value": 0.01},
+    {"index": 7320, "timestamp": "2012-03-01T10:53:39.167000+00:00", "available_at": "2012-03-08T19:07:32.721800+00:00", "score": 0.8390564569571307, "p_value": 0.01},
+    {"index": 7380, "timestamp": "2012-03-02T09:27:22.661700+00:00", "available_at": "2012-03-09T14:22:49.512000+00:00", "score": 0.8713138394078213, "p_value": 0.01},
+    {"index": 7440, "timestamp": "2012-03-03T16:50:10.420800+00:00", "available_at": "2012-03-09T20:16:33.244600+00:00", "score": 0.8355975331270533, "p_value": 0.01},
+    {"index": 7500, "timestamp": "2012-03-06T12:27:54.923100+00:00", "available_at": "2012-03-12T11:50:25.790300+00:00", "score": 0.8130496437637386, "p_value": 0.01},
+    {"index": 7560, "timestamp": "2012-03-07T20:32:48.963500+00:00", "available_at": "2012-03-13T11:42:43.853600+00:00", "score": 0.833682371032656, "p_value": 0.01},
+    {"index": 7620, "timestamp": "2012-03-08T19:13:25.970300+00:00", "available_at": "2012-03-13T18:19:09.940200+00:00", "score": 0.8136073507305753, "p_value": 0.02},
+    {"index": 7680, "timestamp": "2012-03-09T14:39:23.406900+00:00", "available_at": "2012-03-14T12:32:23.287500+00:00", "score": 0.7857157484701172, "p_value": 0.11},
+    {"index": 7740, "timestamp": "2012-03-09T20:44:36.480700+00:00", "available_at": "2012-03-14T16:22:25.064800+00:00", "score": 0.775242093622567, "p_value": 0.53}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "trace_variant_frequency",
+    "representation": "exact_activity_sequences",
+    "window_size": 300,
+    "step": 60,
+    "alpha": 0.03,
+    "min_effect": 0.12,
+    "persistence": 2,
+    "min_separation": 300,
+    "retrospective": true,
+    "permutations": 99,
+    "permutation_block_size": 1,
+    "random_state": 73,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 300,
+    "step": 60,
+    "min_separation": 300,
+    "permutations": 99,
+    "random_state": 73,
+    "alpha": 0.03,
+    "persistence": 2,
+    "min_effect": 0.12
+  },
+  "runtime_seconds": 2.49989,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 142769.106542,
+        "tp": 1,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 854865.017,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 9497790.6762
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 356922.766355,
+        "tp": 1,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 854865.017,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 9497790.6762
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 713845.53271,
+        "tp": 1,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1": 0.2,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 854865.017,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 9497790.6762
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 125,
+    "published_count": 125,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

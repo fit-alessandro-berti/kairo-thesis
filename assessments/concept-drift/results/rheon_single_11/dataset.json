@@ -1,0 +1,51 @@
+{
+  "id": "rheon_single_11",
+  "family": "rheon",
+  "scenario": "single",
+  "source": {
+    "thesis_files": "https://drive.google.com/drive/folders/1sie4iFTUNmHuyvMVoW8tktyvtoUzbmEp",
+    "event_log": "https://drive.google.com/file/d/1-G6ghKxyphGtzu0iv1esCofPvCbCdOeM/view",
+    "sha256": "73c588a89e5da0d0bcc45c3da713ead25303181674c3e8cf50f78a43bd1e96b1",
+    "ground_truth": "https://drive.google.com/file/d/1IoujnXTQinvFW0qLKwCZYK4Wif3h0XNW/view",
+    "ground_truth_sha256": "ad8c94043e3b1c35a405e6274dfd0448443c89e43010cfa5e906f0ee592fc734",
+    "generator_scenario": "reassignment_sudden",
+    "truth_time_basis": "generator metadata expressed in UTC"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 3368,
+    "case_start_coordinate": "start:timestamp"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "reassignment",
+      "perspective": "resource",
+      "mode": "sudden",
+      "start": "2020-06-14T14:52:48+00:00",
+      "end": "2020-06-14T14:52:48+00:00",
+      "native_generation_horizon_fractions": [
+        0.41
+      ]
+    }
+  ],
+  "events": 24543,
+  "cases": 8896,
+  "activities": 9,
+  "resources": 7,
+  "first_timestamp": "2020-04-01T00:00:00+00:00",
+  "last_timestamp": "2020-09-30T03:51:02+00:00",
+  "observation_span_seconds": 15738662.0,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "2020-06-14T14:52:48+00:00",
+      "end": "2020-06-14T14:52:48+00:00",
+      "annotations": [
+        "d01"
+      ]
+    }
+  ]
+}

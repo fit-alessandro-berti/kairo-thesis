@@ -1,0 +1,742 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_15",
+  "library": "pm4py",
+  "method": "cv-indicators",
+  "profile": "pelt-enriched",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "calendar_bin",
+  "changes": [
+    {
+      "index": 9,
+      "timestamp": "2018-12-16T15:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"Record Service Entry Sheet\"]": 16.743941710794868
+        }
+      }
+    },
+    {
+      "index": 11,
+      "timestamp": "2018-12-17T21:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"Remove Payment Block\"]": 37.59367810262577,
+          "[\"resource_assignment\", \"Record Goods Receipt\", \"user_029\"]": 18.34397328371576
+        }
+      }
+    },
+    {
+      "index": 17,
+      "timestamp": "2018-12-21T15:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "arrivals": 83.77681923522374,
+          "[\"service_time\", \"Record Service Entry Sheet\"]": 28.382278859689354
+        }
+      }
+    },
+    {
+      "index": 18,
+      "timestamp": "2018-12-22T06:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"Create Purchase Order Item\"]": 64.03144559142899
+        }
+      }
+    },
+    {
+      "index": 20,
+      "timestamp": "2018-12-23T12:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "events": 82.56942275522715,
+          "active_resources": 21.603088745922403
+        }
+      }
+    },
+    {
+      "index": 27,
+      "timestamp": "2018-12-27T21:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"Record Goods Receipt\", \"batch_06\"]": 21.227840755172092
+        }
+      }
+    },
+    {
+      "index": 28,
+      "timestamp": "2018-12-28T12:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"Create Purchase Order Item\", \"user_045\"]": 35.22157960272981
+        }
+      }
+    },
+    {
+      "index": 33,
+      "timestamp": "2018-12-31T15:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"Create Purchase Order Item\"]": 44.00921885837098
+        }
+      }
+    },
+    {
+      "index": 34,
+      "timestamp": "2019-01-01T06:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"Record Goods Receipt\", \"batch_06\"]": 48.49259623986936,
+          "[\"resource_assignment\", \"Remove Payment Block\", \"NONE\"]": 26.83439442187551,
+          "[\"resource_assignment\", \"Remove Payment Block\", \"batch_02\"]": 24.039853162453348
+        }
+      }
+    },
+    {
+      "index": 35,
+      "timestamp": "2019-01-01T21:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"Record Goods Receipt\"]": 56.583714467489855,
+          "[\"activity_frequency\", \"Record Service Entry Sheet\"]": 63.37251726591002
+        }
+      }
+    },
+    {
+      "index": 36,
+      "timestamp": "2019-01-02T12:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"Create Purchase Order Item\", \"user_040\"]": 32.86180939629609
+        }
+      }
+    },
+    {
+      "index": 37,
+      "timestamp": "2019-01-03T03:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"Record Goods Receipt\"]": 64.55057904159574
+        }
+      }
+    },
+    {
+      "index": 38,
+      "timestamp": "2019-01-03T18:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"activity_frequency\", \"Remove Payment Block\"]": 44.528111839439006
+        }
+      }
+    },
+    {
+      "index": 43,
+      "timestamp": "2019-01-06T21:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "case_duration": 69.03605532934094
+        }
+      }
+    },
+    {
+      "index": 44,
+      "timestamp": "2019-01-07T12:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 2.0,
+      "details": {
+        "changed_features": {
+          "completions": 18.92629471523422,
+          "[\"resource_assignment\", \"Record Goods Receipt\", \"user_029\"]": 47.560274499568195
+        }
+      }
+    },
+    {
+      "index": 50,
+      "timestamp": "2019-01-11T06:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"service_time\", \"Create Purchase Order Item\"]": 20.50235100847752
+        }
+      }
+    },
+    {
+      "index": 54,
+      "timestamp": "2019-01-13T18:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "work_in_progress": 75.96528888823964
+        }
+      }
+    },
+    {
+      "index": 62,
+      "timestamp": "2019-01-18T18:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 3.0,
+      "details": {
+        "changed_features": {
+          "completions": 58.87555591807701,
+          "[\"service_time\", \"Remove Payment Block\"]": 41.46352655228572,
+          "[\"resource_assignment\", \"Remove Payment Block\", \"batch_02\"]": 22.02482037769002
+        }
+      }
+    },
+    {
+      "index": 64,
+      "timestamp": "2019-01-20T00:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "active_resources": 27.62568805456117
+        }
+      }
+    },
+    {
+      "index": 74,
+      "timestamp": "2019-01-26T06:00:00+00:00",
+      "available_at": "2019-02-09T00:00:00+00:00",
+      "score": 1.0,
+      "details": {
+        "changed_features": {
+          "[\"resource_assignment\", \"Record Goods Receipt\", \"batch_06\"]": 18.88004850558974
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2018-12-11T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 1, "timestamp": "2018-12-11T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 2, "timestamp": "2018-12-12T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 3, "timestamp": "2018-12-12T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 4, "timestamp": "2018-12-13T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 5, "timestamp": "2018-12-14T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 6, "timestamp": "2018-12-14T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 7, "timestamp": "2018-12-15T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 8, "timestamp": "2018-12-16T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 9, "timestamp": "2018-12-16T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 10, "timestamp": "2018-12-17T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 11, "timestamp": "2018-12-17T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 2.0},
+    {"index": 12, "timestamp": "2018-12-18T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 13, "timestamp": "2018-12-19T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 14, "timestamp": "2018-12-19T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 15, "timestamp": "2018-12-20T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 16, "timestamp": "2018-12-21T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 17, "timestamp": "2018-12-21T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 2.0},
+    {"index": 18, "timestamp": "2018-12-22T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 19, "timestamp": "2018-12-22T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 20, "timestamp": "2018-12-23T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 2.0},
+    {"index": 21, "timestamp": "2018-12-24T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 22, "timestamp": "2018-12-24T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 23, "timestamp": "2018-12-25T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 24, "timestamp": "2018-12-26T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 25, "timestamp": "2018-12-26T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 26, "timestamp": "2018-12-27T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 27, "timestamp": "2018-12-27T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 28, "timestamp": "2018-12-28T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 29, "timestamp": "2018-12-29T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 30, "timestamp": "2018-12-29T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 31, "timestamp": "2018-12-30T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 32, "timestamp": "2018-12-31T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 33, "timestamp": "2018-12-31T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 34, "timestamp": "2019-01-01T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 3.0},
+    {"index": 35, "timestamp": "2019-01-01T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 2.0},
+    {"index": 36, "timestamp": "2019-01-02T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 37, "timestamp": "2019-01-03T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 38, "timestamp": "2019-01-03T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 39, "timestamp": "2019-01-04T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 40, "timestamp": "2019-01-05T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 41, "timestamp": "2019-01-05T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 42, "timestamp": "2019-01-06T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 43, "timestamp": "2019-01-06T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 44, "timestamp": "2019-01-07T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 2.0},
+    {"index": 45, "timestamp": "2019-01-08T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 46, "timestamp": "2019-01-08T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 47, "timestamp": "2019-01-09T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 48, "timestamp": "2019-01-10T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 49, "timestamp": "2019-01-10T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 50, "timestamp": "2019-01-11T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 51, "timestamp": "2019-01-11T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 52, "timestamp": "2019-01-12T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 53, "timestamp": "2019-01-13T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 54, "timestamp": "2019-01-13T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 55, "timestamp": "2019-01-14T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 56, "timestamp": "2019-01-15T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 57, "timestamp": "2019-01-15T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 58, "timestamp": "2019-01-16T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 59, "timestamp": "2019-01-16T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 60, "timestamp": "2019-01-17T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 61, "timestamp": "2019-01-18T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 62, "timestamp": "2019-01-18T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 3.0},
+    {"index": 63, "timestamp": "2019-01-19T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 64, "timestamp": "2019-01-20T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 65, "timestamp": "2019-01-20T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 66, "timestamp": "2019-01-21T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 67, "timestamp": "2019-01-21T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 68, "timestamp": "2019-01-22T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 69, "timestamp": "2019-01-23T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 70, "timestamp": "2019-01-23T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 71, "timestamp": "2019-01-24T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 72, "timestamp": "2019-01-25T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 73, "timestamp": "2019-01-25T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 74, "timestamp": "2019-01-26T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 1.0},
+    {"index": 75, "timestamp": "2019-01-26T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 76, "timestamp": "2019-01-27T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 77, "timestamp": "2019-01-28T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 78, "timestamp": "2019-01-28T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 79, "timestamp": "2019-01-29T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 80, "timestamp": "2019-01-30T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 81, "timestamp": "2019-01-30T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 82, "timestamp": "2019-01-31T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 83, "timestamp": "2019-01-31T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 84, "timestamp": "2019-02-01T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 85, "timestamp": "2019-02-02T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 86, "timestamp": "2019-02-02T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 87, "timestamp": "2019-02-03T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 88, "timestamp": "2019-02-04T00:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 89, "timestamp": "2019-02-04T15:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 90, "timestamp": "2019-02-05T06:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 91, "timestamp": "2019-02-05T21:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 92, "timestamp": "2019-02-06T12:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 93, "timestamp": "2019-02-07T03:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 94, "timestamp": "2019-02-07T18:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0},
+    {"index": 95, "timestamp": "2019-02-08T09:00:00+00:00", "available_at": "2019-02-09T00:00:00+00:00", "score": 0.0}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "cv_indicators",
+    "mode": "retrospective",
+    "bin_size": "15h",
+    "statistic": "mean",
+    "candidate_windows": [
+      1,
+      3,
+      5,
+      9,
+      17
+    ],
+    "selected_windows": {
+      "arrivals": 5,
+      "completions": 5,
+      "work_in_progress": 5,
+      "events": 9,
+      "case_duration": 5,
+      "[\"activity_frequency\", \"Create Purchase Order Item\"]": 3,
+      "[\"activity_frequency\", \"Record Goods Receipt\"]": 3,
+      "[\"activity_frequency\", \"Record Service Entry Sheet\"]": 5,
+      "[\"activity_frequency\", \"Remove Payment Block\"]": 3,
+      "[\"service_time\", \"Create Purchase Order Item\"]": 5,
+      "[\"service_time\", \"Record Goods Receipt\"]": 5,
+      "[\"service_time\", \"Record Service Entry Sheet\"]": 5,
+      "[\"service_time\", \"Remove Payment Block\"]": 5,
+      "active_resources": 9,
+      "[\"resource_assignment\", \"Create Purchase Order Item\", \"user_045\"]": 5,
+      "[\"resource_assignment\", \"Create Purchase Order Item\", \"user_040\"]": 5,
+      "[\"resource_assignment\", \"Record Goods Receipt\", \"user_029\"]": 5,
+      "[\"resource_assignment\", \"Record Goods Receipt\", \"batch_06\"]": 5,
+      "[\"resource_assignment\", \"Record Service Entry Sheet\", \"NONE\"]": 1,
+      "[\"resource_assignment\", \"Remove Payment Block\", \"NONE\"]": 5,
+      "[\"resource_assignment\", \"Remove Payment Block\", \"batch_02\"]": 5
+    },
+    "cv_curves": {
+      "arrivals": {
+        "1": 2.2297923670153685,
+        "3": 2.0130620917378237,
+        "5": 1.9184986152611256,
+        "9": 1.793691780934367,
+        "17": 1.6794355748855714
+      },
+      "completions": {
+        "1": 1.4334838680640951,
+        "3": 1.1515905522042935,
+        "5": 1.0316058721550578,
+        "9": 0.897949385105625,
+        "17": 0.7650077304763514
+      },
+      "work_in_progress": {
+        "1": 0.895538145729676,
+        "3": 0.8920107066375371,
+        "5": 0.8866313822879571,
+        "9": 0.8728503634482077,
+        "17": 0.8424838348244609
+      },
+      "events": {
+        "1": 1.4292908518710727,
+        "3": 1.323432548305111,
+        "5": 1.2534582427906484,
+        "9": 1.1593183420766486,
+        "17": 1.0763380980557749
+      },
+      "case_duration": {
+        "1": 0.7459398313398747,
+        "3": 0.7469091132139153,
+        "5": 0.7351869049228813,
+        "9": 0.7355214476526206,
+        "17": 0.7092120831001404
+      },
+      "[\"activity_frequency\", \"Create Purchase Order Item\"]": {
+        "1": 1.5949595481819665,
+        "3": 1.1168152956854782,
+        "5": 1.1066894548184536,
+        "9": 1.0746584794452134,
+        "17": 1.0303835961372838
+      },
+      "[\"activity_frequency\", \"Record Goods Receipt\"]": {
+        "1": 0.7251594844787246,
+        "3": 0.4992604159803867,
+        "5": 0.46074746451034615,
+        "9": 0.4420985620160008,
+        "17": 0.41696342862823366
+      },
+      "[\"activity_frequency\", \"Record Service Entry Sheet\"]": {
+        "1": 2.016548109442184,
+        "3": 1.4475431541388266,
+        "5": 1.3228516553578276,
+        "9": 1.181761528418372,
+        "17": 1.0816927951121786
+      },
+      "[\"activity_frequency\", \"Remove Payment Block\"]": {
+        "1": 1.2407124880127152,
+        "3": 0.9261361897460206,
+        "5": 0.8673433759765221,
+        "9": 0.8047853928609169,
+        "17": 0.7009022140309346
+      },
+      "[\"service_time\", \"Create Purchase Order Item\"]": {
+        "1": 2.4520144886929085,
+        "3": 1.3993949871837468,
+        "5": 1.106086960798898,
+        "9": 0.87945458025491,
+        "17": 0.7195582707597207
+      },
+      "[\"service_time\", \"Record Goods Receipt\"]": {
+        "1": 0.895428622648435,
+        "3": 0.8576584105672728,
+        "5": 0.8367213217016051,
+        "9": 0.8101039287882118,
+        "17": 0.7744252603361071
+      },
+      "[\"service_time\", \"Record Service Entry Sheet\"]": {
+        "1": 3.700416821791252,
+        "3": 2.0045760336724325,
+        "5": 1.613239459720812,
+        "9": 1.2866415066078891,
+        "17": 0.6589281228813126
+      },
+      "[\"service_time\", \"Remove Payment Block\"]": {
+        "1": 1.1368980909584585,
+        "3": 0.8490572069289958,
+        "5": 0.7046302618070961,
+        "9": 0.6382877960360264,
+        "17": 0.5051138088429707
+      },
+      "active_resources": {
+        "1": 0.9983061415421552,
+        "3": 0.9478055063664588,
+        "5": 0.8995616712233021,
+        "9": 0.8165259106227409,
+        "17": 0.7361682605350817
+      },
+      "[\"resource_assignment\", \"Create Purchase Order Item\", \"user_045\"]": {
+        "1": 1.8967969607280994,
+        "3": 1.3102713131352817,
+        "5": 1.0515142729143685,
+        "9": 0.8776843762371979,
+        "17": 0.7313245875744754
+      },
+      "[\"resource_assignment\", \"Create Purchase Order Item\", \"user_040\"]": {
+        "1": 1.9022572662349477,
+        "3": 1.309167411079557,
+        "5": 1.0634145474694134,
+        "9": 0.874229968297824,
+        "17": 0.7211584600740197
+      },
+      "[\"resource_assignment\", \"Record Goods Receipt\", \"user_029\"]": {
+        "1": 1.241382231625949,
+        "3": 0.7886833881550047,
+        "5": 0.6505999862186002,
+        "9": 0.5359071861533549,
+        "17": 0.47103158629157565
+      },
+      "[\"resource_assignment\", \"Record Goods Receipt\", \"batch_06\"]": {
+        "1": 1.6401397390300028,
+        "3": 1.158726203786564,
+        "5": 0.9889135289335852,
+        "9": 0.8310635234722129,
+        "17": 0.6693635417475559
+      },
+      "[\"resource_assignment\", \"Record Service Entry Sheet\", \"NONE\"]": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "9": 0.0,
+        "17": 0.0
+      },
+      "[\"resource_assignment\", \"Remove Payment Block\", \"NONE\"]": {
+        "1": 0.8020960492210532,
+        "3": 0.38910127577462605,
+        "5": 0.2803363878788868,
+        "9": 0.21253171464765389,
+        "17": 0.16686865564092793
+      },
+      "[\"resource_assignment\", \"Remove Payment Block\", \"batch_02\"]": {
+        "1": 1.6948646796754445,
+        "3": 1.0012644657931717,
+        "5": 0.8299086155540182,
+        "9": 0.6034209947885911,
+        "17": 0.39873244195185586
+      }
+    },
+    "min_size": 3,
+    "penalty_scale": 3.0,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "bin_size": "15h",
+    "features": [
+      "arrivals",
+      "completions",
+      "work_in_progress",
+      "events",
+      "case_duration",
+      [
+        "activity_frequency",
+        "Create Purchase Order Item"
+      ],
+      [
+        "activity_frequency",
+        "Record Goods Receipt"
+      ],
+      [
+        "activity_frequency",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "activity_frequency",
+        "Remove Payment Block"
+      ],
+      [
+        "service_time",
+        "Create Purchase Order Item"
+      ],
+      [
+        "service_time",
+        "Record Goods Receipt"
+      ],
+      [
+        "service_time",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "service_time",
+        "Remove Payment Block"
+      ],
+      "active_resources",
+      [
+        "resource_assignment",
+        "Create Purchase Order Item",
+        "user_045"
+      ],
+      [
+        "resource_assignment",
+        "Create Purchase Order Item",
+        "user_040"
+      ],
+      [
+        "resource_assignment",
+        "Record Goods Receipt",
+        "user_029"
+      ],
+      [
+        "resource_assignment",
+        "Record Goods Receipt",
+        "batch_06"
+      ],
+      [
+        "resource_assignment",
+        "Record Service Entry Sheet",
+        "NONE"
+      ],
+      [
+        "resource_assignment",
+        "Remove Payment Block",
+        "NONE"
+      ],
+      [
+        "resource_assignment",
+        "Remove Payment Block",
+        "batch_02"
+      ]
+    ],
+    "penalty_scale": 3,
+    "start_timestamp_key": "start:timestamp"
+  },
+  "runtime_seconds": 1.870801,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 51257.4,
+        "tp": 1,
+        "fp": 19,
+        "fn": 0,
+        "precision": 0.05,
+        "recall": 1.0,
+        "f1": 0.09523809523809523,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 57600.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4755600.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 128143.5,
+        "tp": 1,
+        "fp": 19,
+        "fn": 0,
+        "precision": 0.05,
+        "recall": 1.0,
+        "f1": 0.09523809523809523,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 57600.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4755600.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 256287.0,
+        "tp": 1,
+        "fp": 19,
+        "fn": 0,
+        "precision": 0.05,
+        "recall": 1.0,
+        "f1": 0.09523809523809523,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 57600.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4755600.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 96,
+    "published_count": 96,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

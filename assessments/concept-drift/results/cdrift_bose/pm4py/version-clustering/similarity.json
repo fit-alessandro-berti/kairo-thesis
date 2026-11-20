@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_bose",
+  "library": "pm4py",
+  "method": "version-clustering",
+  "profile": "similarity",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 2444,
+      "timestamp": "1976-01-10T03:34:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 7.652201620211312,
+      "details": {
+        "before_version": 0,
+        "after_version": 2
+      }
+    },
+    {
+      "index": 3572,
+      "timestamp": "1976-12-20T09:18:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 5.89688698458254,
+      "details": {
+        "before_version": 2,
+        "after_version": 0
+      }
+    },
+    {
+      "index": 4791,
+      "timestamp": "1978-10-01T07:46:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 4.434212438309977,
+      "details": {
+        "before_version": 0,
+        "after_version": 0
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "1970-01-01T00:06:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.0},
+    {"index": 94, "timestamp": "1970-01-20T10:13:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1560668170817727},
+    {"index": 188, "timestamp": "1970-02-10T13:55:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5563894455643282},
+    {"index": 282, "timestamp": "1970-03-02T18:55:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.0},
+    {"index": 376, "timestamp": "1970-03-25T18:22:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.37097150395211953},
+    {"index": 470, "timestamp": "1970-04-24T09:03:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.37097150395211953},
+    {"index": 564, "timestamp": "1970-05-18T13:59:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.49828820905249643},
+    {"index": 658, "timestamp": "1970-06-08T11:02:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.49828820905249643},
+    {"index": 752, "timestamp": "1970-07-01T22:06:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.44907996188340976},
+    {"index": 846, "timestamp": "1970-07-21T17:13:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11390589555073194},
+    {"index": 940, "timestamp": "1970-08-11T06:14:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.10291808899421853},
+    {"index": 1034, "timestamp": "1970-09-03T00:49:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.04245390463911162},
+    {"index": 1128, "timestamp": "1970-09-25T08:44:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.08844479692025875},
+    {"index": 1222, "timestamp": "1974-01-04T23:03:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.059696702456465855},
+    {"index": 1316, "timestamp": "1974-01-27T09:50:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.4806477872209868},
+    {"index": 1410, "timestamp": "1974-02-18T06:33:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.3814154183999889},
+    {"index": 1504, "timestamp": "1974-03-16T09:32:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.13042617038816398},
+    {"index": 1598, "timestamp": "1974-04-10T22:37:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5118415887881529},
+    {"index": 1692, "timestamp": "1974-05-08T08:44:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.44553145758672835},
+    {"index": 1786, "timestamp": "1974-05-31T07:17:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.3297125193699871},
+    {"index": 1880, "timestamp": "1974-06-24T00:17:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.28212960189366326},
+    {"index": 1974, "timestamp": "1974-07-21T21:23:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.10688328191405604},
+    {"index": 2068, "timestamp": "1974-08-12T06:46:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6166567796718979},
+    {"index": 2162, "timestamp": "1974-09-05T00:32:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.0},
+    {"index": 2256, "timestamp": "1974-10-01T11:58:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.2696037125856204},
+    {"index": 2350, "timestamp": "1974-10-24T20:19:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.4354949068294539},
+    {"index": 2444, "timestamp": "1976-01-10T03:34:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.757767874602341},
+    {"index": 2538, "timestamp": "1976-02-07T18:53:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.41464623235555287},
+    {"index": 2632, "timestamp": "1976-03-07T03:59:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.08471836768197362},
+    {"index": 2726, "timestamp": "1976-04-02T18:46:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.4688480961126707},
+    {"index": 2820, "timestamp": "1976-05-02T09:04:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6700900482380177},
+    {"index": 2914, "timestamp": "1976-06-02T03:01:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.19052189163144753},
+    {"index": 3008, "timestamp": "1976-06-24T00:22:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11005210739455303},
+    {"index": 3102, "timestamp": "1976-07-22T11:15:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.3718591520080198},
+    {"index": 3196, "timestamp": "1976-08-26T12:27:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.4543728677886176},
+    {"index": 3290, "timestamp": "1976-09-25T01:01:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1523418426741979},
+    {"index": 3384, "timestamp": "1976-10-25T16:20:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.23542754215326392},
+    {"index": 3478, "timestamp": "1976-11-20T13:48:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.39280230996855175},
+    {"index": 3572, "timestamp": "1976-12-20T09:18:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.8008673001621305},
+    {"index": 3666, "timestamp": "1978-01-09T04:57:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1552474200108331},
+    {"index": 3760, "timestamp": "1978-01-30T15:02:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.4948385774093127},
+    {"index": 3854, "timestamp": "1978-02-22T16:44:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.18990622447174912},
+    {"index": 3948, "timestamp": "1978-03-18T17:05:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.013567968780275174},
+    {"index": 4042, "timestamp": "1978-04-07T03:18:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.16606970919464134},
+    {"index": 4136, "timestamp": "1978-05-02T06:03:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.04511388608058185},
+    {"index": 4230, "timestamp": "1978-05-20T08:03:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11425866328871487},
+    {"index": 4324, "timestamp": "1978-06-19T03:31:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.2320946734791362},
+    {"index": 4418, "timestamp": "1978-07-09T14:05:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.19932496077252773},
+    {"index": 4512, "timestamp": "1978-07-28T17:39:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.2668758570242195},
+    {"index": 4605, "timestamp": "1978-08-17T19:17:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.15329512259644543},
+    {"index": 4698, "timestamp": "1978-09-09T04:49:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.08805223180777474},
+    {"index": 4791, "timestamp": "1978-10-01T07:46:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.4535813422313872},
+    {"index": 4884, "timestamp": "1980-01-29T11:42:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1378647410050863},
+    {"index": 4977, "timestamp": "1980-02-19T15:42:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.2615029934985288},
+    {"index": 5070, "timestamp": "1980-03-18T12:16:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.041480415672645744},
+    {"index": 5163, "timestamp": "1980-04-09T04:43:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.012210650675072059},
+    {"index": 5256, "timestamp": "1980-05-09T08:21:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.04765891882740133},
+    {"index": 5349, "timestamp": "1980-06-06T17:30:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.06572318000996338},
+    {"index": 5442, "timestamp": "1980-07-02T11:33:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.06285673118173804},
+    {"index": 5535, "timestamp": "1980-07-30T02:47:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.14611330162125408},
+    {"index": 5628, "timestamp": "1980-08-31T12:15:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.0568377219993041},
+    {"index": 5721, "timestamp": "1980-10-03T22:42:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.05402784734698894},
+    {"index": 5814, "timestamp": "1980-10-30T18:58:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.031324848598714115},
+    {"index": 5907, "timestamp": "1980-11-30T08:26:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09883494882439874}
+  ],
+  "intervals": [],
+  "versions": [
+    {"index": 0, "label": 0, "timestamp": "1970-01-01T00:06:00+00:00", "confidence": 0.34742274697816994, "details": {"probabilities": [0.34742274697816994, 0.26143332204383285], "window_stop": 94}},
+    {"index": 94, "label": 0, "timestamp": "1970-01-20T10:13:00+00:00", "confidence": 0.503092201327504, "details": {"probabilities": [0.503092201327504, 0.25030352525251165], "window_stop": 188}},
+    {"index": 188, "label": 1, "timestamp": "1970-02-10T13:55:00+00:00", "confidence": 1.0, "details": {"probabilities": [1.0, 2.596440672065143e-308], "window_stop": 282}},
+    {"index": 282, "label": 1, "timestamp": "1970-03-02T18:55:00+00:00", "confidence": 1.0, "details": {"probabilities": [1.0, 2.8829941533445756e-308], "window_stop": 376}},
+    {"index": 376, "label": 0, "timestamp": "1970-03-25T18:22:00+00:00", "confidence": 0.7376835339284842, "details": {"probabilities": [0.7376835339284842, 0.2623164660715159], "window_stop": 470}},
+    {"index": 470, "label": 1, "timestamp": "1970-04-24T09:03:00+00:00", "confidence": 1.0, "details": {"probabilities": [1.0, 2.6091747570536766e-308], "window_stop": 564}},
+    {"index": 564, "label": 0, "timestamp": "1970-05-18T13:59:00+00:00", "confidence": 0.5965964564781893, "details": {"probabilities": [0.5965964564781893, 0.2925008040241786], "window_stop": 658}},
+    {"index": 658, "label": 1, "timestamp": "1970-06-08T11:02:00+00:00", "confidence": 1.0, "details": {"probabilities": [1.0, 2.741800509217351e-308], "window_stop": 752}},
+    {"index": 752, "label": 0, "timestamp": "1970-07-01T22:06:00+00:00", "confidence": 0.6381959315965299, "details": {"probabilities": [0.6381959315965299, 0.26602749529306535], "window_stop": 846}},
+    {"index": 846, "label": 1, "timestamp": "1970-07-21T17:13:00+00:00", "confidence": 0.7508452290411088, "details": {"probabilities": [0.7508452290411088, 0.24915477095889124], "window_stop": 940}},
+    {"index": 940, "label": 0, "timestamp": "1970-08-11T06:14:00+00:00", "confidence": 0.6535630798372278, "details": {"probabilities": [0.6535630798372278, 0.28274519352985217], "window_stop": 1034}},
+    {"index": 1034, "label": 0, "timestamp": "1970-09-03T00:49:00+00:00", "confidence": 0.6291403030929484, "details": {"probabilities": [0.6291403030929484, 0.24801966984473162], "window_stop": 1128}},
+    {"index": 1128, "label": 0, "timestamp": "1970-09-25T08:44:00+00:00", "confidence": 0.7023426334151741, "details": {"probabilities": [0.7023426334151741, 0.29765736658482594], "window_stop": 1222}},
+    {"index": 1222, "label": 0, "timestamp": "1974-01-04T23:03:00+00:00", "confidence": 0.6601306902937315, "details": {"probabilities": [0.6601306902937315, 0.3398693097062686], "window_stop": 1316}},
+    {"index": 1316, "label": 1, "timestamp": "1974-01-27T09:50:00+00:00", "confidence": 1.0, "details": {"probabilities": [1.0, 3.66147251490111e-308], "window_stop": 1410}},
+    {"index": 1410, "label": 0, "timestamp": "1974-02-18T06:33:00+00:00", "confidence": 0.7302985712002635, "details": {"probabilities": [0.7302985712002635, 0.26970142879973635], "window_stop": 1504}},
+    {"index": 1504, "label": 0, "timestamp": "1974-03-16T09:32:00+00:00", "confidence": 0.6380733416746007, "details": {"probabilities": [0.6380733416746007, 0.3619266583253992], "window_stop": 1598}},
+    {"index": 1598, "label": 1, "timestamp": "1974-04-10T22:37:00+00:00", "confidence": 1.0, "details": {"probabilities": [1.0, 3.1416401657576807e-308], "window_stop": 1692}},
+    {"index": 1692, "label": 0, "timestamp": "1974-05-08T08:44:00+00:00", "confidence": 0.6849616851084976, "details": {"probabilities": [0.6849616851084976, 0.3150383148915023], "window_stop": 1786}},
+    {"index": 1786, "label": 0, "timestamp": "1974-05-31T07:17:00+00:00", "confidence": 0.3571866938719504, "details": {"probabilities": [0.3571866938719504, 0.2793465714599261], "window_stop": 1880}},
+    {"index": 1880, "label": 0, "timestamp": "1974-06-24T00:17:00+00:00", "confidence": 0.621209424611992, "details": {"probabilities": [0.621209424611992, 0.3787905753880081], "window_stop": 1974}},
+    {"index": 1974, "label": 0, "timestamp": "1974-07-21T21:23:00+00:00", "confidence": 0.5143328821435346, "details": {"probabilities": [0.5143328821435346, 0.37999083482145957], "window_stop": 2068}},
+    {"index": 2068, "label": 1, "timestamp": "1974-08-12T06:46:00+00:00", "confidence": 1.0, "details": {"probabilities": [1.0, 2.9436899154787656e-308], "window_stop": 2162}},
+    {"index": 2162, "label": 1, "timestamp": "1974-09-05T00:32:00+00:00", "confidence": 1.0, "details": {"probabilities": [1.0, 3.545834730737569e-308], "window_stop": 2256}},
+    {"index": 2256, "label": 1, "timestamp": "1974-10-01T11:58:00+00:00", "confidence": 0.8093613865976389, "details": {"probabilities": [0.8093613865976389, 0.19063861340236116], "window_stop": 2350}},
+    {"index": 2350, "label": 0, "timestamp": "1974-10-24T20:19:00+00:00", "confidence": 0.4090490214170349, "details": {"probabilities": [0.4090490214170349, 0.36211987814549723], "window_stop": 2444}},
+    {"index": 2444, "label": 2, "timestamp": "1976-01-10T03:34:00+00:00", "confidence": 1.0, "details": {"probabilities": [3.6891103782811603e-308, 1.0], "window_stop": 2538}},
+    {"index": 2538, "label": 0, "timestamp": "1976-02-07T18:53:00+00:00", "confidence": 0.6530909592285323, "details": {"probabilities": [0.22712466937273748, 0.6530909592285323], "window_stop": 2632}},
+    {"index": 2632, "label": 0, "timestamp": "1976-03-07T03:59:00+00:00", "confidence": 0.6498409681494951, "details": {"probabilities": [0.3117806755429098, 0.6498409681494951], "window_stop": 2726}},
+    {"index": 2726, "label": 2, "timestamp": "1976-04-02T18:46:00+00:00", "confidence": 1.0, "details": {"probabilities": [2.860017927164163e-308, 1.0], "window_stop": 2820}},
+    {"index": 2820, "label": 0, "timestamp": "1976-05-02T09:04:00+00:00", "confidence": 0.4655787557950553, "details": {"probabilities": [0.40424572538255443, 0.4655787557950553], "window_stop": 2914}},
+    {"index": 2914, "label": 0, "timestamp": "1976-06-02T03:01:00+00:00", "confidence": 0.630650913820509, "details": {"probabilities": [0.3091154261312397, 0.630650913820509], "window_stop": 3008}},
+    {"index": 3008, "label": 0, "timestamp": "1976-06-24T00:22:00+00:00", "confidence": 0.719286299191022, "details": {"probabilities": [0.24388326533456772, 0.719286299191022], "window_stop": 3102}},
+    {"index": 3102, "label": 2, "timestamp": "1976-07-22T11:15:00+00:00", "confidence": 1.0, "details": {"probabilities": [2.964432325148065e-308, 1.0], "window_stop": 3196}},
+    {"index": 3196, "label": 0, "timestamp": "1976-08-26T12:27:00+00:00", "confidence": 0.6028889772018614, "details": {"probabilities": [0.22081109246292127, 0.6028889772018614], "window_stop": 3290}},
+    {"index": 3290, "label": 0, "timestamp": "1976-09-25T01:01:00+00:00", "confidence": 0.4824531488311878, "details": {"probabilities": [0.31410229394537464, 0.4824531488311878], "window_stop": 3384}},
+    {"index": 3384, "label": 0, "timestamp": "1976-10-25T16:20:00+00:00", "confidence": 0.7134564392031127, "details": {"probabilities": [0.26867534773862445, 0.7134564392031127], "window_stop": 3478}},
+    {"index": 3478, "label": 2, "timestamp": "1976-11-20T13:48:00+00:00", "confidence": 1.0, "details": {"probabilities": [3.287272909746598e-308, 1.0], "window_stop": 3572}},
+    {"index": 3572, "label": 0, "timestamp": "1976-12-20T09:18:00+00:00", "confidence": 0.331695716820411, "details": {"probabilities": [0.331695716820411, 0.27105117881158924], "window_stop": 3666}},
+    {"index": 3666, "label": 0, "timestamp": "1978-01-09T04:57:00+00:00", "confidence": 0.2129126402950983, "details": {"probabilities": [0.2129126402950983, 0.17108947538871966], "window_stop": 3760}},
+    {"index": 3760, "label": 0, "timestamp": "1978-01-30T15:02:00+00:00", "confidence": 0.6892509053752383, "details": {"probabilities": [0.6892509053752383, 0.305130793320597], "window_stop": 3854}},
+    {"index": 3854, "label": 0, "timestamp": "1978-02-22T16:44:00+00:00", "confidence": 0.5012399747064351, "details": {"probabilities": [0.5012399747064351, 0.33189390304583005], "window_stop": 3948}},
+    {"index": 3948, "label": 0, "timestamp": "1978-03-18T17:05:00+00:00", "confidence": 0.513143668976105, "details": {"probabilities": [0.513143668976105, 0.33840480463906203], "window_stop": 4042}},
+    {"index": 4042, "label": 0, "timestamp": "1978-04-07T03:18:00+00:00", "confidence": 0.6783645432157622, "details": {"probabilities": [0.6783645432157622, 0.3216354567842377], "window_stop": 4136}},
+    {"index": 4136, "label": 0, "timestamp": "1978-05-02T06:03:00+00:00", "confidence": 0.6464642084425054, "details": {"probabilities": [0.6464642084425054, 0.35353579155749454], "window_stop": 4230}},
+    {"index": 4230, "label": 0, "timestamp": "1978-05-20T08:03:00+00:00", "confidence": 0.7272572840632662, "details": {"probabilities": [0.7272572840632662, 0.2727427159367339], "window_stop": 4324}},
+    {"index": 4324, "label": 0, "timestamp": "1978-06-19T03:31:00+00:00", "confidence": 0.5032227521905817, "details": {"probabilities": [0.5032227521905817, 0.33337658424458605], "window_stop": 4418}},
+    {"index": 4418, "label": 0, "timestamp": "1978-07-09T14:05:00+00:00", "confidence": 0.6997720098718846, "details": {"probabilities": [0.6997720098718846, 0.3002279901281156], "window_stop": 4512}},
+    {"index": 4512, "label": 0, "timestamp": "1978-07-28T17:39:00+00:00", "confidence": 0.43308474807789704, "details": {"probabilities": [0.43308474807789704, 0.3102593140306126], "window_stop": 4605}},
+    {"index": 4605, "label": 0, "timestamp": "1978-08-17T19:17:00+00:00", "confidence": 0.5802352780230555, "details": {"probabilities": [0.5802352780230555, 0.353225767790706], "window_stop": 4698}},
+    {"index": 4698, "label": 0, "timestamp": "1978-09-09T04:49:00+00:00", "confidence": 0.6661330712313182, "details": {"probabilities": [0.6661330712313182, 0.33386692876868174], "window_stop": 4791}},
+    {"index": 4791, "label": 0, "timestamp": "1978-10-01T07:46:00+00:00", "confidence": 0.3073362443248387, "details": {"probabilities": [0.21332830446823733, 0.3073362443248387], "window_stop": 4884}},
+    {"index": 4884, "label": 0, "timestamp": "1980-01-29T11:42:00+00:00", "confidence": 0.1809358303128988, "details": {"probabilities": [0.15828630096173588, 0.1809358303128988], "window_stop": 4977}},
+    {"index": 4977, "label": 0, "timestamp": "1980-02-19T15:42:00+00:00", "confidence": 0.3979869316077667, "details": {"probabilities": [0.3041377152002566, 0.3979869316077667], "window_stop": 5070}},
+    {"index": 5070, "label": 0, "timestamp": "1980-03-18T12:16:00+00:00", "confidence": 0.38558175621508367, "details": {"probabilities": [0.26455569266663354, 0.38558175621508367], "window_stop": 5163}},
+    {"index": 5163, "label": 0, "timestamp": "1980-04-09T04:43:00+00:00", "confidence": 0.38985222961912797, "details": {"probabilities": [0.2759952314166876, 0.38985222961912797], "window_stop": 5256}},
+    {"index": 5256, "label": 0, "timestamp": "1980-05-09T08:21:00+00:00", "confidence": 0.3426936579610243, "details": {"probabilities": [0.26910744055427527, 0.3426936579610243], "window_stop": 5349}},
+    {"index": 5349, "label": 0, "timestamp": "1980-06-06T17:30:00+00:00", "confidence": 0.2879984711636006, "details": {"probabilities": [0.2326660776294754, 0.2879984711636006], "window_stop": 5442}},
+    {"index": 5442, "label": 0, "timestamp": "1980-07-02T11:33:00+00:00", "confidence": 0.23644984435837874, "details": {"probabilities": [0.19669792881209475, 0.23644984435837874], "window_stop": 5535}},
+    {"index": 5535, "label": 0, "timestamp": "1980-07-30T02:47:00+00:00", "confidence": 0.35634477813296983, "details": {"probabilities": [0.2802102139314111, 0.35634477813296983], "window_stop": 5628}},
+    {"index": 5628, "label": 0, "timestamp": "1980-08-31T12:15:00+00:00", "confidence": 0.4123765067011865, "details": {"probabilities": [0.28974814010683686, 0.4123765067011865], "window_stop": 5721}},
+    {"index": 5721, "label": 0, "timestamp": "1980-10-03T22:42:00+00:00", "confidence": 0.45311201255522926, "details": {"probabilities": [0.25425691792775734, 0.45311201255522926], "window_stop": 5814}},
+    {"index": 5814, "label": 0, "timestamp": "1980-10-30T18:58:00+00:00", "confidence": 0.4309619996914366, "details": {"probabilities": [0.27640693079155004, 0.4309619996914366], "window_stop": 5907}},
+    {"index": 5907, "label": 0, "timestamp": "1980-11-30T08:26:00+00:00", "confidence": 0.3440986108962108, "details": {"probabilities": [0.22925718215880594, 0.3440986108962108], "window_stop": 6000}}
+  ],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "version_clustering",
+    "mode": "retrospective",
+    "trace_order": "start",
+    "num_windows": 64,
+    "actual_windows": 64,
+    "min_cluster_size": 4,
+    "membership_threshold": 0.75,
+    "penalty": 3,
+    "min_size": 2,
+    "gamma": null,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "num_windows": 64,
+    "min_cluster_size": 4,
+    "penalty": 3
+  },
+  "runtime_seconds": 3.517044,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 3482045.4,
+        "tp": 1,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.3333333333333333,
+        "recall": 0.25,
+        "f1": 0.2857142857142857,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 784260.0,
+            "distance_to_truth_interval_seconds": 784260.0,
+            "availability_minus_onset_seconds": 158896320.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": [
+          1,
+          2
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 8705113.5,
+        "tp": 1,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.3333333333333333,
+        "recall": 0.25,
+        "f1": 0.2857142857142857,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 784260.0,
+            "distance_to_truth_interval_seconds": 784260.0,
+            "availability_minus_onset_seconds": 158896320.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": [
+          1,
+          2
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 17410227.0,
+        "tp": 1,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.3333333333333333,
+        "recall": 0.25,
+        "f1": 0.2857142857142857,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 784260.0,
+            "distance_to_truth_interval_seconds": 784260.0,
+            "availability_minus_onset_seconds": 158896320.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": [
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 64,
+    "published_count": 64,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

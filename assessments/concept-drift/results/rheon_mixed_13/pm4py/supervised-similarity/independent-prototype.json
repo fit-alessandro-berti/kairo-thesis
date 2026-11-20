@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "dataset": "rheon_mixed_13",
+  "library": "pm4py",
+  "method": "supervised-similarity",
+  "profile": "independent-prototype",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 904,
+      "timestamp": "2022-03-18T20:36:44+00:00",
+      "available_at": "2022-05-31T07:42:42+00:00",
+      "score": 1.0,
+      "details": {
+        "type": "sudden",
+        "window_range": [
+          8,
+          8
+        ],
+        "confidence": 1.0
+      }
+    },
+    {
+      "index": 1582,
+      "timestamp": "2022-04-01T09:40:38+00:00",
+      "available_at": "2022-05-31T07:42:42+00:00",
+      "score": 0.8628808864265927,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          14,
+          14
+        ],
+        "confidence": 0.8628808864265927
+      }
+    },
+    {
+      "index": 3051,
+      "timestamp": "2022-04-22T12:05:04+00:00",
+      "available_at": "2022-05-31T07:42:42+00:00",
+      "score": 0.9874822190611663,
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          27,
+          29
+        ],
+        "confidence": 0.9874822190611663
+      }
+    }
+  ],
+  "scores": [
+    {"index": 904, "timestamp": "2022-03-18T20:36:44+00:00", "available_at": "2022-05-31T07:42:42+00:00", "score": 1.0},
+    {"index": 1582, "timestamp": "2022-04-01T09:40:38+00:00", "available_at": "2022-05-31T07:42:42+00:00", "score": 0.8628808864265927},
+    {"index": 3051, "timestamp": "2022-04-22T12:05:04+00:00", "available_at": "2022-05-31T07:42:42+00:00", "score": 0.9874822190611663}
+  ],
+  "intervals": [
+    {
+      "start_index": 1582,
+      "end_index": 1694,
+      "start_timestamp": "2022-04-01T09:40:38+00:00",
+      "end_timestamp": "2022-04-03T12:25:23+00:00",
+      "available_at": "2022-05-31T07:42:42+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          14,
+          14
+        ],
+        "confidence": 0.8628808864265927
+      }
+    },
+    {
+      "start_index": 3051,
+      "end_index": 3389,
+      "start_timestamp": "2022-04-22T12:05:04+00:00",
+      "end_timestamp": "2022-04-26T15:49:34+00:00",
+      "available_at": "2022-05-31T07:42:42+00:00",
+      "details": {
+        "type": "gradual",
+        "window_range": [
+          27,
+          29
+        ],
+        "confidence": 0.9874822190611663
+      }
+    }
+  ],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "supervised_similarity",
+    "representation": "directly_follows_cosine_similarity_image",
+    "predictor": "_PatchPredictor",
+    "retrospective": true,
+    "trace_order": "start",
+    "num_windows": 48,
+    "min_confidence": 0.8,
+    "windows": [
+      [
+        0,
+        113
+      ],
+      [
+        113,
+        226
+      ],
+      [
+        226,
+        339
+      ],
+      [
+        339,
+        452
+      ],
+      [
+        452,
+        565
+      ],
+      [
+        565,
+        678
+      ],
+      [
+        678,
+        791
+      ],
+      [
+        791,
+        904
+      ],
+      [
+        904,
+        1017
+      ],
+      [
+        1017,
+        1130
+      ],
+      [
+        1130,
+        1243
+      ],
+      [
+        1243,
+        1356
+      ],
+      [
+        1356,
+        1469
+      ],
+      [
+        1469,
+        1582
+      ],
+      [
+        1582,
+        1695
+      ],
+      [
+        1695,
+        1808
+      ],
+      [
+        1808,
+        1921
+      ],
+      [
+        1921,
+        2034
+      ],
+      [
+        2034,
+        2147
+      ],
+      [
+        2147,
+        2260
+      ],
+      [
+        2260,
+        2373
+      ],
+      [
+        2373,
+        2486
+      ],
+      [
+        2486,
+        2599
+      ],
+      [
+        2599,
+        2712
+      ],
+      [
+        2712,
+        2825
+      ],
+      [
+        2825,
+        2938
+      ],
+      [
+        2938,
+        3051
+      ],
+      [
+        3051,
+        3164
+      ],
+      [
+        3164,
+        3277
+      ],
+      [
+        3277,
+        3390
+      ],
+      [
+        3390,
+        3503
+      ],
+      [
+        3503,
+        3616
+      ],
+      [
+        3616,
+        3729
+      ],
+      [
+        3729,
+        3842
+      ],
+      [
+        3842,
+        3955
+      ],
+      [
+        3955,
+        4068
+      ],
+      [
+        4068,
+        4181
+      ],
+      [
+        4181,
+        4294
+      ],
+      [
+        4294,
+        4407
+      ],
+      [
+        4407,
+        4520
+      ],
+      [
+        4520,
+        4633
+      ],
+      [
+        4633,
+        4746
+      ],
+      [
+        4746,
+        4859
+      ],
+      [
+        4859,
+        4972
+      ],
+      [
+        4972,
+        5085
+      ],
+      [
+        5085,
+        5198
+      ],
+      [
+        5198,
+        5310
+      ],
+      [
+        5310,
+        5422
+      ]
+    ],
+    "input_format": "EventLog",
+    "training": {
+      "source": "independently generated by train_prototype",
+      "seed": 73,
+      "logs": 24,
+      "cases_per_log": 480,
+      "radius": 2
+    }
+  },
+  "configuration": {
+    "num_windows": 48,
+    "min_confidence": 0.8
+  },
+  "runtime_seconds": 21.751588,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 78901.62,
+        "tp": 1,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.3333333333333333,
+        "recall": 0.25,
+        "f1": 0.2857142857142857,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -29476.0,
+            "distance_to_truth_interval_seconds": 29476.0,
+            "availability_minus_onset_seconds": 6317682.0
+          }
+        ],
+        "unmatched_truth": [
+          "d02",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": [
+          1,
+          2
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 197254.05,
+        "tp": 2,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -29476.0,
+            "distance_to_truth_interval_seconds": 29476.0,
+            "availability_minus_onset_seconds": 6317682.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": -181136.0,
+            "distance_to_truth_interval_seconds": 181136.0,
+            "availability_minus_onset_seconds": 3172722.0
+          }
+        ],
+        "unmatched_truth": [
+          "d02",
+          "d04"
+        ],
+        "unmatched_changes": [
+          1
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 394508.1,
+        "tp": 2,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "f1": 0.5714285714285714,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": -29476.0,
+            "distance_to_truth_interval_seconds": 29476.0,
+            "availability_minus_onset_seconds": 6317682.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": -181136.0,
+            "distance_to_truth_interval_seconds": 181136.0,
+            "availability_minus_onset_seconds": 3172722.0
+          }
+        ],
+        "unmatched_truth": [
+          "d02",
+          "d04"
+        ],
+        "unmatched_changes": [
+          1
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 3,
+    "published_count": 3,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

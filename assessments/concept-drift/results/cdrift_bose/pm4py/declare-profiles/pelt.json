@@ -1,0 +1,2432 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_bose",
+  "library": "pm4py",
+  "method": "declare-profiles",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 2400,
+      "timestamp": "1976-01-01T22:42:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 5.967055291675882,
+      "details": {
+        "constraint_deltas": {
+          "[\"existence\", \"Receive Questionnaire Response\"]": 0.08916666666666673,
+          "[\"existence\", \"Send Notification by e-mail\"]": 0.3,
+          "[\"existence\", \"Low Insurance Check\"]": 0.015416666666666634,
+          "[\"existence\", \"Low Medical History\"]": 0.015416666666666634,
+          "[\"existence\", \"Send Notification by Phone\"]": 0.32791666666666675,
+          "[\"response\", \"Register\", \"Receive Questionnaire Response\"]": 0.08916666666666673,
+          "[\"precedence\", \"Register\", \"Receive Questionnaire Response\"]": 0.08916666666666673,
+          "[\"response\", \"Register\", \"Send Notification by e-mail\"]": 0.3,
+          "[\"precedence\", \"Register\", \"Send Notification by e-mail\"]": 0.3,
+          "[\"response\", \"Register\", \"Low Insurance Check\"]": 0.015416666666666634,
+          "[\"precedence\", \"Register\", \"Low Insurance Check\"]": 0.015416666666666634,
+          "[\"response\", \"Register\", \"Low Medical History\"]": 0.015416666666666634,
+          "[\"precedence\", \"Register\", \"Low Medical History\"]": 0.015416666666666634,
+          "[\"response\", \"Register\", \"Send Notification by Phone\"]": 0.32791666666666675,
+          "[\"precedence\", \"Register\", \"Send Notification by Phone\"]": 0.32791666666666675,
+          "[\"response\", \"Create Questionnaire\", \"Prepare Notification Content\"]": 0.04500000000000004,
+          "[\"precedence\", \"Create Questionnaire\", \"Prepare Notification Content\"]": 0.04500000000000004,
+          "[\"response\", \"Create Questionnaire\", \"Receive Questionnaire Response\"]": 0.08916666666666673,
+          "[\"precedence\", \"Create Questionnaire\", \"Receive Questionnaire Response\"]": 0.08916666666666673,
+          "[\"response\", \"Create Questionnaire\", \"Send Notification by e-mail\"]": 0.32499999999999984,
+          "[\"precedence\", \"Create Questionnaire\", \"Send Notification by e-mail\"]": 0.32499999999999984,
+          "[\"response\", \"Create Questionnaire\", \"Low Insurance Check\"]": 0.05374999999999999,
+          "[\"precedence\", \"Create Questionnaire\", \"Low Insurance Check\"]": 0.05374999999999999,
+          "[\"response\", \"Create Questionnaire\", \"Low Medical History\"]": 0.04958333333333337,
+          "[\"precedence\", \"Create Questionnaire\", \"Low Medical History\"]": 0.04958333333333337,
+          "[\"response\", \"Create Questionnaire\", \"Send Notification by Phone\"]": 0.35583333333333333,
+          "[\"precedence\", \"Create Questionnaire\", \"Send Notification by Phone\"]": 0.35583333333333333,
+          "[\"response\", \"Prepare Notification Content\", \"Create Questionnaire\"]": -0.04500000000000001,
+          "[\"precedence\", \"Prepare Notification Content\", \"Create Questionnaire\"]": -0.04500000000000001,
+          "[\"response\", \"Prepare Notification Content\", \"Send Questionnaire\"]": 0.027083333333333348,
+          "[\"precedence\", \"Prepare Notification Content\", \"Send Questionnaire\"]": 0.027083333333333348,
+          "[\"response\", \"Prepare Notification Content\", \"Receive Questionnaire Response\"]": 0.10999999999999999,
+          "[\"precedence\", \"Prepare Notification Content\", \"Receive Questionnaire Response\"]": 0.10999999999999999,
+          "[\"response\", \"Prepare Notification Content\", \"Send Notification by e-mail\"]": 0.3,
+          "[\"precedence\", \"Prepare Notification Content\", \"Send Notification by e-mail\"]": 0.3,
+          "[\"response\", \"Prepare Notification Content\", \"Send Notification by Phone\"]": 0.32791666666666675,
+          "[\"precedence\", \"Prepare Notification Content\", \"Send Notification by Phone\"]": 0.32791666666666675,
+          "[\"response\", \"Send Questionnaire\", \"Prepare Notification Content\"]": -0.027083333333333338,
+          "[\"precedence\", \"Send Questionnaire\", \"Prepare Notification Content\"]": -0.027083333333333338,
+          "[\"response\", \"Send Questionnaire\", \"Receive Questionnaire Response\"]": 0.08916666666666673,
+          "[\"precedence\", \"Send Questionnaire\", \"Receive Questionnaire Response\"]": 0.08916666666666673,
+          "[\"response\", \"Send Questionnaire\", \"Send Notification by e-mail\"]": 0.07958333333333334,
+          "[\"precedence\", \"Send Questionnaire\", \"Send Notification by e-mail\"]": 0.07958333333333334,
+          "[\"response\", \"Send Questionnaire\", \"Low Insurance Check\"]": 0.00041666666666666675,
+          "[\"precedence\", \"Send Questionnaire\", \"Low Insurance Check\"]": 0.00041666666666666675,
+          "[\"response\", \"Send Questionnaire\", \"Low Medical History\"]": 0.0008333333333333333,
+          "[\"precedence\", \"Send Questionnaire\", \"Low Medical History\"]": 0.0008333333333333333,
+          "[\"response\", \"Send Questionnaire\", \"Send Notification by Phone\"]": 0.0854166666666667,
+          "[\"precedence\", \"Send Questionnaire\", \"Send Notification by Phone\"]": 0.0854166666666667,
+          "[\"response\", \"Receive Questionnaire Response\", \"Prepare Notification Content\"]": -0.020833333333333332,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Prepare Notification Content\"]": -0.020833333333333332,
+          "[\"response\", \"Receive Questionnaire Response\", \"Archive\"]": 0.08916666666666673,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Archive\"]": 0.08916666666666673,
+          "[\"response\", \"Receive Questionnaire Response\", \"Send Notification by e-mail\"]": 0.06708333333333334,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Send Notification by e-mail\"]": 0.06708333333333334,
+          "[\"response\", \"Receive Questionnaire Response\", \"Send Notification by Phone\"]": 0.06833333333333333,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Send Notification by Phone\"]": 0.06833333333333333,
+          "[\"response\", \"Send Notification by e-mail\", \"Create Questionnaire\"]": -0.024999999999999998,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Create Questionnaire\"]": -0.024999999999999998,
+          "[\"response\", \"Send Notification by e-mail\", \"Send Questionnaire\"]": 0.2204166666666667,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Send Questionnaire\"]": 0.2204166666666667,
+          "[\"response\", \"Send Notification by e-mail\", \"Archive\"]": 0.3,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Archive\"]": 0.3,
+          "[\"response\", \"Send Notification by e-mail\", \"Receive Questionnaire Response\"]": 0.19041666666666662,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Receive Questionnaire Response\"]": 0.19041666666666662,
+          "[\"response\", \"Send Notification by e-mail\", \"Send Notification by Phone\"]": 0.1991666666666666,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Send Notification by Phone\"]": 0.1991666666666666,
+          "[\"response\", \"Low Insurance Check\", \"Create Questionnaire\"]": -0.038333333333333275,
+          "[\"precedence\", \"Low Insurance Check\", \"Create Questionnaire\"]": -0.038333333333333275,
+          "[\"response\", \"Low Insurance Check\", \"Prepare Notification Content\"]": 0.015416666666666634,
+          "[\"precedence\", \"Low Insurance Check\", \"Prepare Notification Content\"]": 0.015416666666666634,
+          "[\"response\", \"Low Insurance Check\", \"Send Questionnaire\"]": 0.014999999999999902,
+          "[\"precedence\", \"Low Insurance Check\", \"Send Questionnaire\"]": 0.014999999999999902,
+          "[\"response\", \"Low Insurance Check\", \"Archive\"]": 0.015416666666666634,
+          "[\"precedence\", \"Low Insurance Check\", \"Archive\"]": 0.015416666666666634,
+          "[\"response\", \"Low Insurance Check\", \"Receive Questionnaire Response\"]": 0.07208333333333333,
+          "[\"precedence\", \"Low Insurance Check\", \"Receive Questionnaire Response\"]": 0.07208333333333333,
+          "[\"response\", \"Low Insurance Check\", \"Send Notification by e-mail\"]": 0.1958333333333333,
+          "[\"precedence\", \"Low Insurance Check\", \"Send Notification by e-mail\"]": 0.1958333333333333,
+          "[\"response\", \"Low Insurance Check\", \"Low Medical History\"]": 0.007083333333333386,
+          "[\"precedence\", \"Low Insurance Check\", \"Low Medical History\"]": 0.007083333333333386,
+          "[\"response\", \"Low Insurance Check\", \"Send Notification by Phone\"]": 0.21125,
+          "[\"precedence\", \"Low Insurance Check\", \"Send Notification by Phone\"]": 0.21125,
+          "[\"response\", \"Low Medical History\", \"Create Questionnaire\"]": -0.03416666666666662,
+          "[\"precedence\", \"Low Medical History\", \"Create Questionnaire\"]": -0.03416666666666662,
+          "[\"response\", \"Low Medical History\", \"Prepare Notification Content\"]": 0.015416666666666634,
+          "[\"precedence\", \"Low Medical History\", \"Prepare Notification Content\"]": 0.015416666666666634,
+          "[\"response\", \"Low Medical History\", \"Send Questionnaire\"]": 0.014583333333333282,
+          "[\"precedence\", \"Low Medical History\", \"Send Questionnaire\"]": 0.014583333333333282,
+          "[\"response\", \"Low Medical History\", \"Archive\"]": 0.015416666666666634,
+          "[\"precedence\", \"Low Medical History\", \"Archive\"]": 0.015416666666666634,
+          "[\"response\", \"Low Medical History\", \"Receive Questionnaire Response\"]": 0.07208333333333333,
+          "[\"precedence\", \"Low Medical History\", \"Receive Questionnaire Response\"]": 0.07208333333333333,
+          "[\"response\", \"Low Medical History\", \"Send Notification by e-mail\"]": 0.1958333333333333,
+          "[\"precedence\", \"Low Medical History\", \"Send Notification by e-mail\"]": 0.1958333333333333,
+          "[\"response\", \"Low Medical History\", \"Low Insurance Check\"]": 0.00833333333333336,
+          "[\"precedence\", \"Low Medical History\", \"Low Insurance Check\"]": 0.00833333333333336,
+          "[\"response\", \"Low Medical History\", \"Send Notification by Phone\"]": 0.21125,
+          "[\"precedence\", \"Low Medical History\", \"Send Notification by Phone\"]": 0.21125,
+          "[\"response\", \"Send Notification by Phone\", \"Create Questionnaire\"]": -0.027916666666666656,
+          "[\"precedence\", \"Send Notification by Phone\", \"Create Questionnaire\"]": -0.027916666666666656,
+          "[\"response\", \"Send Notification by Phone\", \"Send Questionnaire\"]": 0.24250000000000005,
+          "[\"precedence\", \"Send Notification by Phone\", \"Send Questionnaire\"]": 0.24250000000000005,
+          "[\"response\", \"Send Notification by Phone\", \"Archive\"]": 0.32791666666666675,
+          "[\"precedence\", \"Send Notification by Phone\", \"Archive\"]": 0.32791666666666675,
+          "[\"response\", \"Send Notification by Phone\", \"Receive Questionnaire Response\"]": 0.18625000000000008,
+          "[\"precedence\", \"Send Notification by Phone\", \"Receive Questionnaire Response\"]": 0.18625000000000008,
+          "[\"response\", \"Send Notification by Phone\", \"Send Notification by e-mail\"]": 0.21416666666666667,
+          "[\"precedence\", \"Send Notification by Phone\", \"Send Notification by e-mail\"]": 0.21416666666666667
+        }
+      }
+    },
+    {
+      "index": 3600,
+      "timestamp": "1978-01-01T23:15:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 6.329039916252242,
+      "details": {
+        "constraint_deltas": {
+          "[\"existence\", \"Receive Questionnaire Response\"]": -0.04083333333333339,
+          "[\"existence\", \"Send Notification by e-mail\"]": -0.4675000000000001,
+          "[\"existence\", \"Low Insurance Check\"]": 0.004166666666666652,
+          "[\"existence\", \"Low Medical History\"]": 0.004166666666666652,
+          "[\"existence\", \"Send Notification by Phone\"]": -0.51,
+          "[\"response\", \"Register\", \"Receive Questionnaire Response\"]": -0.04083333333333339,
+          "[\"precedence\", \"Register\", \"Receive Questionnaire Response\"]": -0.04083333333333339,
+          "[\"response\", \"Register\", \"Send Notification by e-mail\"]": -0.4675000000000001,
+          "[\"precedence\", \"Register\", \"Send Notification by e-mail\"]": -0.4675000000000001,
+          "[\"response\", \"Register\", \"Low Insurance Check\"]": 0.004166666666666652,
+          "[\"precedence\", \"Register\", \"Low Insurance Check\"]": 0.004166666666666652,
+          "[\"response\", \"Register\", \"Low Medical History\"]": 0.004166666666666652,
+          "[\"precedence\", \"Register\", \"Low Medical History\"]": 0.004166666666666652,
+          "[\"response\", \"Register\", \"Send Notification by Phone\"]": -0.51,
+          "[\"precedence\", \"Register\", \"Send Notification by Phone\"]": -0.51,
+          "[\"response\", \"Create Questionnaire\", \"Prepare Notification Content\"]": -0.08583333333333332,
+          "[\"precedence\", \"Create Questionnaire\", \"Prepare Notification Content\"]": -0.08583333333333332,
+          "[\"response\", \"Create Questionnaire\", \"Receive Questionnaire Response\"]": -0.04083333333333339,
+          "[\"precedence\", \"Create Questionnaire\", \"Receive Questionnaire Response\"]": -0.04083333333333339,
+          "[\"response\", \"Create Questionnaire\", \"Send Notification by e-mail\"]": -0.48833333333333323,
+          "[\"precedence\", \"Create Questionnaire\", \"Send Notification by e-mail\"]": -0.48833333333333323,
+          "[\"response\", \"Create Questionnaire\", \"Low Insurance Check\"]": -0.0966666666666667,
+          "[\"precedence\", \"Create Questionnaire\", \"Low Insurance Check\"]": -0.0966666666666667,
+          "[\"response\", \"Create Questionnaire\", \"Low Medical History\"]": -0.08499999999999999,
+          "[\"precedence\", \"Create Questionnaire\", \"Low Medical History\"]": -0.08499999999999999,
+          "[\"response\", \"Create Questionnaire\", \"Send Notification by Phone\"]": -0.5416666666666666,
+          "[\"precedence\", \"Create Questionnaire\", \"Send Notification by Phone\"]": -0.5416666666666666,
+          "[\"response\", \"Prepare Notification Content\", \"Create Questionnaire\"]": 0.08583333333333334,
+          "[\"precedence\", \"Prepare Notification Content\", \"Create Questionnaire\"]": 0.08583333333333334,
+          "[\"response\", \"Prepare Notification Content\", \"Send Questionnaire\"]": -0.10250000000000004,
+          "[\"precedence\", \"Prepare Notification Content\", \"Send Questionnaire\"]": -0.10250000000000004,
+          "[\"response\", \"Prepare Notification Content\", \"Receive Questionnaire Response\"]": -0.10083333333333333,
+          "[\"precedence\", \"Prepare Notification Content\", \"Receive Questionnaire Response\"]": -0.10083333333333333,
+          "[\"response\", \"Prepare Notification Content\", \"Send Notification by e-mail\"]": -0.4675000000000001,
+          "[\"precedence\", \"Prepare Notification Content\", \"Send Notification by e-mail\"]": -0.4675000000000001,
+          "[\"response\", \"Prepare Notification Content\", \"Send Notification by Phone\"]": -0.51,
+          "[\"precedence\", \"Prepare Notification Content\", \"Send Notification by Phone\"]": -0.51,
+          "[\"response\", \"Send Questionnaire\", \"Prepare Notification Content\"]": 0.1025,
+          "[\"precedence\", \"Send Questionnaire\", \"Prepare Notification Content\"]": 0.1025,
+          "[\"response\", \"Send Questionnaire\", \"Receive Questionnaire Response\"]": -0.04083333333333339,
+          "[\"precedence\", \"Send Questionnaire\", \"Receive Questionnaire Response\"]": -0.04083333333333339,
+          "[\"response\", \"Send Questionnaire\", \"Send Notification by e-mail\"]": -0.07666666666666666,
+          "[\"precedence\", \"Send Questionnaire\", \"Send Notification by e-mail\"]": -0.07666666666666666,
+          "[\"response\", \"Send Questionnaire\", \"Low Medical History\"]": 0.0008333333333333335,
+          "[\"precedence\", \"Send Questionnaire\", \"Low Medical History\"]": 0.0008333333333333335,
+          "[\"response\", \"Send Questionnaire\", \"Send Notification by Phone\"]": -0.08500000000000003,
+          "[\"precedence\", \"Send Questionnaire\", \"Send Notification by Phone\"]": -0.08500000000000003,
+          "[\"response\", \"Receive Questionnaire Response\", \"Prepare Notification Content\"]": 0.060000000000000005,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Prepare Notification Content\"]": 0.060000000000000005,
+          "[\"response\", \"Receive Questionnaire Response\", \"Archive\"]": -0.04083333333333339,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Archive\"]": -0.04083333333333339,
+          "[\"response\", \"Receive Questionnaire Response\", \"Send Notification by e-mail\"]": -0.06333333333333335,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Send Notification by e-mail\"]": -0.06333333333333335,
+          "[\"response\", \"Receive Questionnaire Response\", \"Send Notification by Phone\"]": -0.0625,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Send Notification by Phone\"]": -0.0625,
+          "[\"response\", \"Send Notification by e-mail\", \"Create Questionnaire\"]": 0.020833333333333325,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Create Questionnaire\"]": 0.020833333333333325,
+          "[\"response\", \"Send Notification by e-mail\", \"Send Questionnaire\"]": -0.39083333333333337,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Send Questionnaire\"]": -0.39083333333333337,
+          "[\"response\", \"Send Notification by e-mail\", \"Archive\"]": -0.4675000000000001,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Archive\"]": -0.4675000000000001,
+          "[\"response\", \"Send Notification by e-mail\", \"Receive Questionnaire Response\"]": -0.2791666666666667,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Receive Questionnaire Response\"]": -0.2791666666666667,
+          "[\"response\", \"Send Notification by e-mail\", \"Send Notification by Phone\"]": -0.32999999999999996,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Send Notification by Phone\"]": -0.32999999999999996,
+          "[\"response\", \"Low Insurance Check\", \"Create Questionnaire\"]": 0.10083333333333327,
+          "[\"precedence\", \"Low Insurance Check\", \"Create Questionnaire\"]": 0.10083333333333327,
+          "[\"response\", \"Low Insurance Check\", \"Prepare Notification Content\"]": 0.004166666666666652,
+          "[\"precedence\", \"Low Insurance Check\", \"Prepare Notification Content\"]": 0.004166666666666652,
+          "[\"response\", \"Low Insurance Check\", \"Send Questionnaire\"]": 0.004166666666666763,
+          "[\"precedence\", \"Low Insurance Check\", \"Send Questionnaire\"]": 0.004166666666666763,
+          "[\"response\", \"Low Insurance Check\", \"Archive\"]": 0.004166666666666652,
+          "[\"precedence\", \"Low Insurance Check\", \"Archive\"]": 0.004166666666666652,
+          "[\"response\", \"Low Insurance Check\", \"Receive Questionnaire Response\"]": -0.028333333333333377,
+          "[\"precedence\", \"Low Insurance Check\", \"Receive Questionnaire Response\"]": -0.028333333333333377,
+          "[\"response\", \"Low Insurance Check\", \"Send Notification by e-mail\"]": -0.29250000000000004,
+          "[\"precedence\", \"Low Insurance Check\", \"Send Notification by e-mail\"]": -0.29250000000000004,
+          "[\"response\", \"Low Insurance Check\", \"Low Medical History\"]": 0.030833333333333324,
+          "[\"precedence\", \"Low Insurance Check\", \"Low Medical History\"]": 0.030833333333333324,
+          "[\"response\", \"Low Insurance Check\", \"Send Notification by Phone\"]": -0.32166666666666666,
+          "[\"precedence\", \"Low Insurance Check\", \"Send Notification by Phone\"]": -0.32166666666666666,
+          "[\"response\", \"Low Medical History\", \"Create Questionnaire\"]": 0.08916666666666673,
+          "[\"precedence\", \"Low Medical History\", \"Create Questionnaire\"]": 0.08916666666666673,
+          "[\"response\", \"Low Medical History\", \"Prepare Notification Content\"]": 0.004166666666666652,
+          "[\"precedence\", \"Low Medical History\", \"Prepare Notification Content\"]": 0.004166666666666652,
+          "[\"response\", \"Low Medical History\", \"Send Questionnaire\"]": 0.0033333333333332993,
+          "[\"precedence\", \"Low Medical History\", \"Send Questionnaire\"]": 0.0033333333333332993,
+          "[\"response\", \"Low Medical History\", \"Archive\"]": 0.004166666666666652,
+          "[\"precedence\", \"Low Medical History\", \"Archive\"]": 0.004166666666666652,
+          "[\"response\", \"Low Medical History\", \"Receive Questionnaire Response\"]": -0.028333333333333377,
+          "[\"precedence\", \"Low Medical History\", \"Receive Questionnaire Response\"]": -0.028333333333333377,
+          "[\"response\", \"Low Medical History\", \"Send Notification by e-mail\"]": -0.29250000000000004,
+          "[\"precedence\", \"Low Medical History\", \"Send Notification by e-mail\"]": -0.29250000000000004,
+          "[\"response\", \"Low Medical History\", \"Low Insurance Check\"]": -0.026666666666666727,
+          "[\"precedence\", \"Low Medical History\", \"Low Insurance Check\"]": -0.026666666666666727,
+          "[\"response\", \"Low Medical History\", \"Send Notification by Phone\"]": -0.32166666666666666,
+          "[\"precedence\", \"Low Medical History\", \"Send Notification by Phone\"]": -0.32166666666666666,
+          "[\"response\", \"Send Notification by Phone\", \"Create Questionnaire\"]": 0.03166666666666666,
+          "[\"precedence\", \"Send Notification by Phone\", \"Create Questionnaire\"]": 0.03166666666666666,
+          "[\"response\", \"Send Notification by Phone\", \"Send Questionnaire\"]": -0.425,
+          "[\"precedence\", \"Send Notification by Phone\", \"Send Questionnaire\"]": -0.425,
+          "[\"response\", \"Send Notification by Phone\", \"Archive\"]": -0.51,
+          "[\"precedence\", \"Send Notification by Phone\", \"Archive\"]": -0.51,
+          "[\"response\", \"Send Notification by Phone\", \"Receive Questionnaire Response\"]": -0.30000000000000004,
+          "[\"precedence\", \"Send Notification by Phone\", \"Receive Questionnaire Response\"]": -0.30000000000000004,
+          "[\"response\", \"Send Notification by Phone\", \"Send Notification by e-mail\"]": -0.3416666666666667,
+          "[\"precedence\", \"Send Notification by Phone\", \"Send Notification by e-mail\"]": -0.3416666666666667
+        }
+      }
+    },
+    {
+      "index": 4800,
+      "timestamp": "1980-01-02T00:16:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 6.329015670082498,
+      "details": {
+        "constraint_deltas": {
+          "[\"existence\", \"Receive Questionnaire Response\"]": 0.14249999999999996,
+          "[\"existence\", \"Send Notification by e-mail\"]": 0.6699999999999999,
+          "[\"existence\", \"Low Insurance Check\"]": -0.018333333333333313,
+          "[\"existence\", \"Low Medical History\"]": -0.018333333333333313,
+          "[\"existence\", \"Send Notification by Phone\"]": 0.5033333333333334,
+          "[\"response\", \"Register\", \"Receive Questionnaire Response\"]": 0.14249999999999996,
+          "[\"precedence\", \"Register\", \"Receive Questionnaire Response\"]": 0.14249999999999996,
+          "[\"response\", \"Register\", \"Send Notification by e-mail\"]": 0.6699999999999999,
+          "[\"precedence\", \"Register\", \"Send Notification by e-mail\"]": 0.6699999999999999,
+          "[\"response\", \"Register\", \"Low Insurance Check\"]": -0.018333333333333313,
+          "[\"precedence\", \"Register\", \"Low Insurance Check\"]": -0.018333333333333313,
+          "[\"response\", \"Register\", \"Low Medical History\"]": -0.018333333333333313,
+          "[\"precedence\", \"Register\", \"Low Medical History\"]": -0.018333333333333313,
+          "[\"response\", \"Register\", \"Send Notification by Phone\"]": 0.5033333333333334,
+          "[\"precedence\", \"Register\", \"Send Notification by Phone\"]": 0.5033333333333334,
+          "[\"response\", \"Create Questionnaire\", \"Prepare Notification Content\"]": 0.11083333333333323,
+          "[\"precedence\", \"Create Questionnaire\", \"Prepare Notification Content\"]": 0.11083333333333323,
+          "[\"response\", \"Create Questionnaire\", \"Receive Questionnaire Response\"]": 0.14249999999999996,
+          "[\"precedence\", \"Create Questionnaire\", \"Receive Questionnaire Response\"]": 0.14249999999999996,
+          "[\"response\", \"Create Questionnaire\", \"Send Notification by e-mail\"]": 0.6916666666666667,
+          "[\"precedence\", \"Create Questionnaire\", \"Send Notification by e-mail\"]": 0.6916666666666667,
+          "[\"response\", \"Create Questionnaire\", \"Low Insurance Check\"]": 0.07833333333333334,
+          "[\"precedence\", \"Create Questionnaire\", \"Low Insurance Check\"]": 0.07833333333333334,
+          "[\"response\", \"Create Questionnaire\", \"Low Medical History\"]": 0.07166666666666663,
+          "[\"precedence\", \"Create Questionnaire\", \"Low Medical History\"]": 0.07166666666666663,
+          "[\"response\", \"Create Questionnaire\", \"Send Notification by Phone\"]": 0.5275,
+          "[\"precedence\", \"Create Questionnaire\", \"Send Notification by Phone\"]": 0.5275,
+          "[\"response\", \"Prepare Notification Content\", \"Create Questionnaire\"]": -0.11083333333333334,
+          "[\"precedence\", \"Prepare Notification Content\", \"Create Questionnaire\"]": -0.11083333333333334,
+          "[\"response\", \"Prepare Notification Content\", \"Send Questionnaire\"]": 0.08499999999999996,
+          "[\"precedence\", \"Prepare Notification Content\", \"Send Questionnaire\"]": 0.08499999999999996,
+          "[\"response\", \"Prepare Notification Content\", \"Receive Questionnaire Response\"]": 0.1908333333333333,
+          "[\"precedence\", \"Prepare Notification Content\", \"Receive Questionnaire Response\"]": 0.1908333333333333,
+          "[\"response\", \"Prepare Notification Content\", \"Send Notification by e-mail\"]": 0.6699999999999999,
+          "[\"precedence\", \"Prepare Notification Content\", \"Send Notification by e-mail\"]": 0.6699999999999999,
+          "[\"response\", \"Prepare Notification Content\", \"Send Notification by Phone\"]": 0.5033333333333334,
+          "[\"precedence\", \"Prepare Notification Content\", \"Send Notification by Phone\"]": 0.5033333333333334,
+          "[\"response\", \"Send Questionnaire\", \"Prepare Notification Content\"]": -0.08499999999999999,
+          "[\"precedence\", \"Send Questionnaire\", \"Prepare Notification Content\"]": -0.08499999999999999,
+          "[\"response\", \"Send Questionnaire\", \"Receive Questionnaire Response\"]": 0.14249999999999996,
+          "[\"precedence\", \"Send Questionnaire\", \"Receive Questionnaire Response\"]": 0.14249999999999996,
+          "[\"response\", \"Send Questionnaire\", \"Send Notification by e-mail\"]": 0.4258333333333334,
+          "[\"precedence\", \"Send Questionnaire\", \"Send Notification by e-mail\"]": 0.4258333333333334,
+          "[\"response\", \"Send Questionnaire\", \"Low Medical History\"]": -0.0008333333333333335,
+          "[\"precedence\", \"Send Questionnaire\", \"Low Medical History\"]": -0.0008333333333333335,
+          "[\"response\", \"Send Questionnaire\", \"Send Notification by Phone\"]": 0.09083333333333334,
+          "[\"precedence\", \"Send Questionnaire\", \"Send Notification by Phone\"]": 0.09083333333333334,
+          "[\"response\", \"Receive Questionnaire Response\", \"Prepare Notification Content\"]": -0.04833333333333334,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Prepare Notification Content\"]": -0.04833333333333334,
+          "[\"response\", \"Receive Questionnaire Response\", \"Archive\"]": 0.14249999999999996,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Archive\"]": 0.14249999999999996,
+          "[\"response\", \"Receive Questionnaire Response\", \"Send Notification by e-mail\"]": 0.4149999999999999,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Send Notification by e-mail\"]": 0.4149999999999999,
+          "[\"response\", \"Receive Questionnaire Response\", \"Send Notification by Phone\"]": 0.06500000000000002,
+          "[\"precedence\", \"Receive Questionnaire Response\", \"Send Notification by Phone\"]": 0.06500000000000002,
+          "[\"response\", \"Send Notification by e-mail\", \"Create Questionnaire\"]": -0.02166666666666666,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Create Questionnaire\"]": -0.02166666666666666,
+          "[\"response\", \"Send Notification by e-mail\", \"Send Questionnaire\"]": 0.24416666666666664,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Send Questionnaire\"]": 0.24416666666666664,
+          "[\"response\", \"Send Notification by e-mail\", \"Archive\"]": 0.6699999999999999,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Archive\"]": 0.6699999999999999,
+          "[\"response\", \"Send Notification by e-mail\", \"Receive Questionnaire Response\"]": 0.14499999999999996,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Receive Questionnaire Response\"]": 0.14499999999999996,
+          "[\"response\", \"Send Notification by e-mail\", \"Send Notification by Phone\"]": 0.14166666666666666,
+          "[\"precedence\", \"Send Notification by e-mail\", \"Send Notification by Phone\"]": 0.14166666666666666,
+          "[\"response\", \"Low Insurance Check\", \"Create Questionnaire\"]": -0.09666666666666662,
+          "[\"precedence\", \"Low Insurance Check\", \"Create Questionnaire\"]": -0.09666666666666662,
+          "[\"response\", \"Low Insurance Check\", \"Prepare Notification Content\"]": -0.018333333333333313,
+          "[\"precedence\", \"Low Insurance Check\", \"Prepare Notification Content\"]": -0.018333333333333313,
+          "[\"response\", \"Low Insurance Check\", \"Send Questionnaire\"]": -0.018333333333333424,
+          "[\"precedence\", \"Low Insurance Check\", \"Send Questionnaire\"]": -0.018333333333333424,
+          "[\"response\", \"Low Insurance Check\", \"Archive\"]": -0.018333333333333313,
+          "[\"precedence\", \"Low Insurance Check\", \"Archive\"]": -0.018333333333333313,
+          "[\"response\", \"Low Insurance Check\", \"Receive Questionnaire Response\"]": 0.07666666666666677,
+          "[\"precedence\", \"Low Insurance Check\", \"Receive Questionnaire Response\"]": 0.07666666666666677,
+          "[\"response\", \"Low Insurance Check\", \"Send Notification by e-mail\"]": 0.4083333333333333,
+          "[\"precedence\", \"Low Insurance Check\", \"Send Notification by e-mail\"]": 0.4083333333333333,
+          "[\"response\", \"Low Insurance Check\", \"Low Medical History\"]": -0.015000000000000013,
+          "[\"precedence\", \"Low Insurance Check\", \"Low Medical History\"]": -0.015000000000000013,
+          "[\"response\", \"Low Insurance Check\", \"Send Notification by Phone\"]": 0.31999999999999995,
+          "[\"precedence\", \"Low Insurance Check\", \"Send Notification by Phone\"]": 0.31999999999999995,
+          "[\"response\", \"Low Medical History\", \"Create Questionnaire\"]": -0.09000000000000002,
+          "[\"precedence\", \"Low Medical History\", \"Create Questionnaire\"]": -0.09000000000000002,
+          "[\"response\", \"Low Medical History\", \"Prepare Notification Content\"]": -0.018333333333333313,
+          "[\"precedence\", \"Low Medical History\", \"Prepare Notification Content\"]": -0.018333333333333313,
+          "[\"response\", \"Low Medical History\", \"Send Questionnaire\"]": -0.01749999999999996,
+          "[\"precedence\", \"Low Medical History\", \"Send Questionnaire\"]": -0.01749999999999996,
+          "[\"response\", \"Low Medical History\", \"Archive\"]": -0.018333333333333313,
+          "[\"precedence\", \"Low Medical History\", \"Archive\"]": -0.018333333333333313,
+          "[\"response\", \"Low Medical History\", \"Receive Questionnaire Response\"]": 0.07666666666666677,
+          "[\"precedence\", \"Low Medical History\", \"Receive Questionnaire Response\"]": 0.07666666666666677,
+          "[\"response\", \"Low Medical History\", \"Send Notification by e-mail\"]": 0.4083333333333333,
+          "[\"precedence\", \"Low Medical History\", \"Send Notification by e-mail\"]": 0.4083333333333333,
+          "[\"response\", \"Low Medical History\", \"Low Insurance Check\"]": -0.0033333333333332438,
+          "[\"precedence\", \"Low Medical History\", \"Low Insurance Check\"]": -0.0033333333333332438,
+          "[\"response\", \"Low Medical History\", \"Send Notification by Phone\"]": 0.31999999999999995,
+          "[\"precedence\", \"Low Medical History\", \"Send Notification by Phone\"]": 0.31999999999999995,
+          "[\"response\", \"Send Notification by Phone\", \"Create Questionnaire\"]": -0.02416666666666666,
+          "[\"precedence\", \"Send Notification by Phone\", \"Create Questionnaire\"]": -0.02416666666666666,
+          "[\"response\", \"Send Notification by Phone\", \"Send Questionnaire\"]": 0.4124999999999999,
+          "[\"precedence\", \"Send Notification by Phone\", \"Send Questionnaire\"]": 0.4124999999999999,
+          "[\"response\", \"Send Notification by Phone\", \"Archive\"]": 0.5033333333333334,
+          "[\"precedence\", \"Send Notification by Phone\", \"Archive\"]": 0.5033333333333334,
+          "[\"response\", \"Send Notification by Phone\", \"Receive Questionnaire Response\"]": 0.37833333333333335,
+          "[\"precedence\", \"Send Notification by Phone\", \"Receive Questionnaire Response\"]": 0.37833333333333335,
+          "[\"response\", \"Send Notification by Phone\", \"Send Notification by e-mail\"]": 0.6908333333333334,
+          "[\"precedence\", \"Send Notification by Phone\", \"Send Notification by e-mail\"]": 0.6908333333333334
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "1970-01-02T04:34:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.0},
+    {"index": 150, "timestamp": "1970-02-11T15:20:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6983790756697492},
+    {"index": 300, "timestamp": "1970-03-25T19:02:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5449158956511853},
+    {"index": 450, "timestamp": "1970-05-03T18:20:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.4165466493816882},
+    {"index": 600, "timestamp": "1970-06-12T00:51:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5051292463870565},
+    {"index": 750, "timestamp": "1970-07-19T17:35:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6837153403768754},
+    {"index": 900, "timestamp": "1970-08-27T07:31:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6985063429283309},
+    {"index": 1050, "timestamp": "1970-10-07T13:22:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6612110101926616},
+    {"index": 1200, "timestamp": "1974-01-02T18:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.748242384970717},
+    {"index": 1350, "timestamp": "1974-02-14T09:13:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6938779911963391},
+    {"index": 1500, "timestamp": "1974-03-24T21:32:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6002221810851933},
+    {"index": 1650, "timestamp": "1974-05-07T04:19:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5256953067657686},
+    {"index": 1800, "timestamp": "1974-06-13T16:15:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.8900936280339654},
+    {"index": 1950, "timestamp": "1974-07-25T14:43:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6287200401521243},
+    {"index": 2100, "timestamp": "1974-09-01T01:54:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6599326564969422},
+    {"index": 2250, "timestamp": "1974-10-11T16:05:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.9059556035234593},
+    {"index": 2400, "timestamp": "1976-01-01T22:42:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 1.5982351377552537},
+    {"index": 2550, "timestamp": "1976-02-22T08:10:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.48428641663103994},
+    {"index": 2700, "timestamp": "1976-04-07T10:17:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5064911976859354},
+    {"index": 2850, "timestamp": "1976-05-27T02:14:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.48364357858976165},
+    {"index": 3000, "timestamp": "1976-07-21T06:20:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6809796864322263},
+    {"index": 3150, "timestamp": "1976-09-14T00:27:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5516842897487254},
+    {"index": 3300, "timestamp": "1976-11-02T09:14:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.9209656767642203},
+    {"index": 3450, "timestamp": "1976-12-21T20:12:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 1.080329167944248},
+    {"index": 3600, "timestamp": "1978-01-01T23:15:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 2.954597171264544},
+    {"index": 3750, "timestamp": "1978-02-08T00:50:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.887593500552039},
+    {"index": 3900, "timestamp": "1978-03-19T02:02:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6695935749061185},
+    {"index": 4050, "timestamp": "1978-04-23T21:40:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5456901847914968},
+    {"index": 4200, "timestamp": "1978-05-28T23:03:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.4482558793070464},
+    {"index": 4350, "timestamp": "1978-06-29T07:55:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.33888706739036883},
+    {"index": 4500, "timestamp": "1978-07-31T16:59:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.4523518787649968},
+    {"index": 4650, "timestamp": "1978-09-06T14:46:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5716253629393605},
+    {"index": 4800, "timestamp": "1980-01-02T00:16:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 3.2354082689309345},
+    {"index": 4950, "timestamp": "1980-02-23T19:26:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 1.0425183185174467},
+    {"index": 5100, "timestamp": "1980-04-12T08:47:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.8947997913872502},
+    {"index": 5250, "timestamp": "1980-06-07T10:04:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6385748020222672},
+    {"index": 5400, "timestamp": "1980-07-28T13:44:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5158380452127286},
+    {"index": 5550, "timestamp": "1980-09-18T03:13:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6071426704014654},
+    {"index": 5700, "timestamp": "1980-11-04T09:13:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.913406323117544},
+    {"index": 5850, "timestamp": "1980-12-23T12:02:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.55385517561503}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "declare_profiles",
+    "detector": "pelt",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "constraints": [
+      [
+        "existence",
+        "Register"
+      ],
+      [
+        "existence",
+        "Create Questionnaire"
+      ],
+      [
+        "existence",
+        "Prepare Notification Content"
+      ],
+      [
+        "existence",
+        "Send Questionnaire"
+      ],
+      [
+        "existence",
+        "Archive"
+      ],
+      [
+        "existence",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "existence",
+        "Send Notification by e-mail"
+      ],
+      [
+        "existence",
+        "Low Insurance Check"
+      ],
+      [
+        "existence",
+        "Low Medical History"
+      ],
+      [
+        "existence",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Register",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Register",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Register",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Register",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Archive"
+      ],
+      [
+        "response",
+        "Register",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Register",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Register",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Register",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Register",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Register"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Archive"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Register"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Archive"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Register"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Archive"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Archive",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Register"
+      ],
+      [
+        "response",
+        "Archive",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Archive",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Archive",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Archive",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Archive",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Archive",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Archive",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Archive",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Register"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Archive"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Register"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Archive"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Register"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Archive"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Register"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Archive"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Register"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Archive"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Low Medical History"
+      ]
+    ],
+    "statistic": "confidence",
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "min_size": 2,
+    "gamma": null,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "constraints": [
+      [
+        "existence",
+        "Register"
+      ],
+      [
+        "existence",
+        "Create Questionnaire"
+      ],
+      [
+        "existence",
+        "Prepare Notification Content"
+      ],
+      [
+        "existence",
+        "Send Questionnaire"
+      ],
+      [
+        "existence",
+        "Archive"
+      ],
+      [
+        "existence",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "existence",
+        "Send Notification by e-mail"
+      ],
+      [
+        "existence",
+        "Low Insurance Check"
+      ],
+      [
+        "existence",
+        "Low Medical History"
+      ],
+      [
+        "existence",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Register",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Register",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Register",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Register",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Archive"
+      ],
+      [
+        "response",
+        "Register",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Register",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Register",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Register",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Register",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Register",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Register"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Archive"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Create Questionnaire",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Create Questionnaire",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Register"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Archive"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Prepare Notification Content",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Prepare Notification Content",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Register"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Archive"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Send Questionnaire",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Send Questionnaire",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Archive",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Register"
+      ],
+      [
+        "response",
+        "Archive",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Archive",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Archive",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Archive",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Archive",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Archive",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Archive",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Archive",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Archive",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Register"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Archive"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Receive Questionnaire Response",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Receive Questionnaire Response",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Register"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Archive"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Send Notification by e-mail",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Send Notification by e-mail",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Register"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Archive"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Low Medical History"
+      ],
+      [
+        "response",
+        "Low Insurance Check",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Low Insurance Check",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Register"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Archive"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Low Medical History",
+        "Send Notification by Phone"
+      ],
+      [
+        "precedence",
+        "Low Medical History",
+        "Send Notification by Phone"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Register"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Register"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Create Questionnaire"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Create Questionnaire"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Prepare Notification Content"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Prepare Notification Content"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Send Questionnaire"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Send Questionnaire"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Archive"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Archive"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Receive Questionnaire Response"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Send Notification by e-mail"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Send Notification by e-mail"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Low Insurance Check"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Low Insurance Check"
+      ],
+      [
+        "response",
+        "Send Notification by Phone",
+        "Low Medical History"
+      ],
+      [
+        "precedence",
+        "Send Notification by Phone",
+        "Low Medical History"
+      ]
+    ]
+  },
+  "runtime_seconds": 2.60233,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 3482045.4,
+        "tp": 3,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 75540.0,
+            "distance_to_truth_interval_seconds": 75540.0,
+            "availability_minus_onset_seconds": 158896320.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 82440.0,
+            "distance_to_truth_interval_seconds": 82440.0,
+            "availability_minus_onset_seconds": 95742840.0
+          },
+          {
+            "truth_id": "d04",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 84840.0,
+            "distance_to_truth_interval_seconds": 84840.0,
+            "availability_minus_onset_seconds": 32669580.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      },
+      "0.025": {
+        "tolerance_seconds": 8705113.5,
+        "tp": 3,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 75540.0,
+            "distance_to_truth_interval_seconds": 75540.0,
+            "availability_minus_onset_seconds": 158896320.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 82440.0,
+            "distance_to_truth_interval_seconds": 82440.0,
+            "availability_minus_onset_seconds": 95742840.0
+          },
+          {
+            "truth_id": "d04",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 84840.0,
+            "distance_to_truth_interval_seconds": 84840.0,
+            "availability_minus_onset_seconds": 32669580.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      },
+      "0.05": {
+        "tolerance_seconds": 17410227.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "matches": [
+          {
+            "truth_id": "d02",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 75540.0,
+            "distance_to_truth_interval_seconds": 75540.0,
+            "availability_minus_onset_seconds": 158896320.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 82440.0,
+            "distance_to_truth_interval_seconds": 82440.0,
+            "availability_minus_onset_seconds": 95742840.0
+          },
+          {
+            "truth_id": "d04",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 84840.0,
+            "distance_to_truth_interval_seconds": 84840.0,
+            "availability_minus_onset_seconds": 32669580.0
+          }
+        ],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 40,
+    "published_count": 40,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

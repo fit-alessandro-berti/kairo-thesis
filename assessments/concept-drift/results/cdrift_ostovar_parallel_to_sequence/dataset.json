@@ -1,0 +1,74 @@
+{
+  "id": "cdrift_ostovar_parallel_to_sequence",
+  "family": "cdrift",
+  "scenario": "ostovar",
+  "source": {
+    "repository": "https://github.com/cpitsch/cdrift-evaluation",
+    "revision": "1ca37fa79eaf50c2f25ef7857ccf27065d15d57e",
+    "event_log": "https://raw.githubusercontent.com/cpitsch/cdrift-evaluation/1ca37fa79eaf50c2f25ef7857ccf27065d15d57e/EvaluationLogs/Ostovar/Atomic_ParallelToSequence_output_ParallelToSequence_2.xes.gz",
+    "sha256": "59daf1018f6ff835db58870a9756c758f34776afb2b5076a0db1bbccf737fc01",
+    "ground_truth": "https://github.com/cpitsch/cdrift-evaluation/blob/1ca37fa79eaf50c2f25ef7857ccf27065d15d57e/testAll_reproducibility.py#L463-L482",
+    "archive_path": "EvaluationLogs/Ostovar/Atomic_ParallelToSequence_output_ParallelToSequence_2.xes.gz",
+    "truth_time_basis": "start of the first post-change trace in original XES trace order"
+  },
+  "preprocessing": {
+    "duplicate_source_case_ids": 0,
+    "case_identity": "original XES trace identifier",
+    "adjacent_source_order_start_inversions": 0,
+    "adjacent_source_order_completion_inversions": 1435,
+    "case_start_coordinate": "first observed event completion"
+  },
+  "truth": [
+    {
+      "id": "d01",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "1970-01-07T23:45:30.917000+00:00",
+      "end": "1970-01-07T23:45:30.917000+00:00",
+      "native_last_pre_change_trace_index": 999,
+      "native_first_post_change_trace_index": 1000,
+      "native_first_post_change_case_id": "1001",
+      "native_last_pre_change_case_start": "1970-01-07T23:28:48.485000+00:00",
+      "native_first_post_change_case_completion": "1970-01-09T08:26:16.250000+00:00"
+    },
+    {
+      "id": "d02",
+      "kind": "control_flow",
+      "perspective": "intra",
+      "mode": "sudden",
+      "start": "1970-01-14T22:25:16.569000+00:00",
+      "end": "1970-01-14T22:25:16.569000+00:00",
+      "native_last_pre_change_trace_index": 1999,
+      "native_first_post_change_trace_index": 2000,
+      "native_first_post_change_case_id": "2001",
+      "native_last_pre_change_case_start": "1970-01-14T22:11:46.465000+00:00",
+      "native_first_post_change_case_completion": "1970-01-15T23:39:43.296000+00:00"
+    }
+  ],
+  "events": 112011,
+  "cases": 2999,
+  "activities": 49,
+  "resources": 0,
+  "first_timestamp": "1970-01-01T00:59:43.883000+00:00",
+  "last_timestamp": "1970-01-23T03:56:44.022000+00:00",
+  "observation_span_seconds": 1911420.139,
+  "truth_episodes": [
+    {
+      "id": "d01",
+      "start": "1970-01-07T23:45:30.917000+00:00",
+      "end": "1970-01-07T23:45:30.917000+00:00",
+      "annotations": [
+        "d01"
+      ]
+    },
+    {
+      "id": "d02",
+      "start": "1970-01-14T22:25:16.569000+00:00",
+      "end": "1970-01-14T22:25:16.569000+00:00",
+      "annotations": [
+        "d02"
+      ]
+    }
+  ]
+}

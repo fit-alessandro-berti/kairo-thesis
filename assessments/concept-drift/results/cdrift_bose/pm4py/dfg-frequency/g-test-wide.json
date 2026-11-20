@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_bose",
+  "library": "pm4py",
+  "method": "dfg-frequency",
+  "profile": "g-test-wide",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 300,
+      "timestamp": "1970-03-25T19:02:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 0.1909132478224972,
+      "p_value": 1.1906874732784085e-23,
+      "details": {
+        "changed_relations": {
+          "[\"Create Questionnaire\", \"Send Questionnaire\"]": -0.02190652021427686,
+          "[\"Register\", \"Create Questionnaire\"]": 0.017400985001948265,
+          "[\"Send Notification by Phone\", \"Send Questionnaire\"]": 0.013725494907158044,
+          "[\"Create Questionnaire\", \"Low Medical History\"]": 0.01192082163866707,
+          "[\"Send Notification by Post\", \"Send Questionnaire\"]": 0.009231972947850185
+        }
+      }
+    },
+    {
+      "index": 660,
+      "timestamp": "1970-06-27T11:18:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 0.13490572971502995,
+      "p_value": 8.257427533833498e-06,
+      "details": {
+        "changed_relations": {
+          "[\"Register\", \"Create Questionnaire\"]": -0.017956029202642505,
+          "[\"Send Questionnaire\", \"Skip Questionnaire\"]": 0.011715832789902958,
+          "[\"Skip Questionnaire\", \"Archive\"]": 0.011715832789902958,
+          "[\"Create Questionnaire\", \"Low Medical History\"]": -0.011238158901107695,
+          "[\"Receive Questionnaire Response\", \"Archive\"]": -0.010427663264426179
+        }
+      }
+    },
+    {
+      "index": 1200,
+      "timestamp": "1974-01-02T18:00:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 0.29086934786769364,
+      "p_value": 5.392075573773405e-83,
+      "details": {
+        "changed_relations": {
+          "[\"High Insurance Check\", \"Contact Hospital\"]": -0.016098839385997755,
+          "[\"Create Questionnaire\", \"High Insurance Check\"]": 0.015344519592113654,
+          "[\"Contact Hospital\", \"High Medical History\"]": -0.014601272931486334,
+          "[\"Prepare Notification Content\", \"Send Questionnaire\"]": 0.014373076604235143,
+          "[\"Send Notification by Phone\", \"Send Questionnaire\"]": -0.014009758123864065
+        }
+      }
+    },
+    {
+      "index": 1860,
+      "timestamp": "1974-07-03T21:28:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 0.13087322118525122,
+      "p_value": 0.0005761384611956322,
+      "details": {
+        "changed_relations": {
+          "[\"Register\", \"High Insurance Check\"]": -0.013946289161445247,
+          "[\"Register\", \"Create Questionnaire\"]": 0.013719532963664356,
+          "[\"Create Questionnaire\", \"Low Medical History\"]": 0.013400852810015105,
+          "[\"Low Insurance Check\", \"Prepare Notification Content\"]": 0.011799152263811417,
+          "[\"Create Questionnaire\", \"Send Questionnaire\"]": -0.00996145614436477
+        }
+      }
+    },
+    {
+      "index": 2400,
+      "timestamp": "1976-01-01T22:42:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 0.1642395294958918,
+      "p_value": 1.5931106794195247e-14,
+      "details": {
+        "changed_relations": {
+          "[\"Send Questionnaire\", \"Skip Questionnaire\"]": -0.01675627240143369,
+          "[\"Skip Questionnaire\", \"Archive\"]": -0.01675627240143369,
+          "[\"Send Notification by Post\", \"Send Notification by Phone\"]": 0.012980030721966207,
+          "[\"Receive Questionnaire Response\", \"Archive\"]": -0.011610343061955963,
+          "[\"Send Notification by e-mail\", \"Send Notification by Post\"]": 0.011149513568868407
+        }
+      }
+    },
+    {
+      "index": 3600,
+      "timestamp": "1978-01-01T23:15:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 0.3578786277185349,
+      "p_value": 8.449547665331474e-145,
+      "details": {
+        "changed_relations": {
+          "[\"Create Questionnaire\", \"Send Questionnaire\"]": 0.043824292047740646,
+          "[\"Send Notification by Phone\", \"Send Notification by Post\"]": -0.028198801550934086,
+          "[\"Send Notification by e-mail\", \"Send Notification by Post\"]": -0.024673951357067323,
+          "[\"Send Notification by e-mail\", \"Send Notification by Phone\"]": -0.02396898131829397,
+          "[\"Send Notification by Phone\", \"Send Notification by e-mail\"]": -0.022559041240747268
+        }
+      }
+    },
+    {
+      "index": 4140,
+      "timestamp": "1978-05-11T21:43:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 0.1842177636582987,
+      "p_value": 3.815448757610882e-19,
+      "details": {
+        "changed_relations": {
+          "[\"Register\", \"Create Questionnaire\"]": -0.014067522734069866,
+          "[\"Send Notification by Post\", \"Send Questionnaire\"]": -0.01356182865492431,
+          "[\"Prepare Notification Content\", \"Send Questionnaire\"]": 0.013097205257698627,
+          "[\"Register\", \"Low Insurance Check\"]": 0.012055421176224525,
+          "[\"Create Questionnaire\", \"High Insurance Check\"]": -0.011682347404776175
+        }
+      }
+    },
+    {
+      "index": 4800,
+      "timestamp": "1980-01-02T00:16:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 0.33733615195258176,
+      "p_value": 2.562580498876782e-119,
+      "details": {
+        "changed_relations": {
+          "[\"Send Notification by e-mail\", \"Archive\"]": 0.039794569208254825,
+          "[\"Receive Questionnaire Response\", \"Archive\"]": -0.035831883293890684,
+          "[\"Send Questionnaire\", \"Skip Questionnaire\"]": -0.03256353182324334,
+          "[\"Receive Questionnaire Response\", \"Send Notification by e-mail\"]": 0.032483149201966065,
+          "[\"Skip Questionnaire\", \"Archive\"]": -0.03221436981207016
+        }
+      }
+    },
+    {
+      "index": 5700,
+      "timestamp": "1980-11-04T09:13:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 0.15870473205398125,
+      "p_value": 8.84286932447497e-16,
+      "details": {
+        "changed_relations": {
+          "[\"Send Notification by e-mail\", \"Archive\"]": -0.026173061426888987,
+          "[\"Receive Questionnaire Response\", \"Send Notification by e-mail\"]": -0.024787997390737115,
+          "[\"Send Notification by e-mail\", \"Send Questionnaire\"]": 0.015921226235488924,
+          "[\"Send Notification by Post\", \"Send Notification by e-mail\"]": 0.013779431688376087,
+          "[\"Receive Questionnaire Response\", \"Archive\"]": 0.013425971020652728
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 300, "timestamp": "1970-03-25T19:02:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1909132478224972, "p_value": 1.1906874732784085e-23},
+    {"index": 360, "timestamp": "1970-04-08T03:38:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.13358974001775814, "p_value": 4.294547544802217e-05},
+    {"index": 420, "timestamp": "1970-04-23T02:53:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.12045225752587654, "p_value": 0.0055636147303627275},
+    {"index": 480, "timestamp": "1970-05-12T02:24:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09782219697333286, "p_value": 0.49306319424013},
+    {"index": 540, "timestamp": "1970-05-26T11:42:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1022815976286096, "p_value": 0.314612456233083},
+    {"index": 600, "timestamp": "1970-06-12T00:51:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.12464232355660358, "p_value": 0.0007914122724343321},
+    {"index": 660, "timestamp": "1970-06-27T11:18:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.13490572971502995, "p_value": 8.257427533833498e-06},
+    {"index": 720, "timestamp": "1970-07-10T20:08:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.12475286031453653, "p_value": 0.0007069104675558047},
+    {"index": 780, "timestamp": "1970-07-27T09:55:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1058048076198109, "p_value": 0.1619872558154731},
+    {"index": 840, "timestamp": "1970-08-08T12:45:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.10140422624608628, "p_value": 0.35243350013991126},
+    {"index": 900, "timestamp": "1970-08-27T07:31:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09728809130751477, "p_value": 0.41236948366731013},
+    {"index": 960, "timestamp": "1970-09-14T16:30:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1283923106888569, "p_value": 0.00046386370749281066},
+    {"index": 1020, "timestamp": "1970-09-29T23:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.17103618436029516, "p_value": 5.435981377337391e-15},
+    {"index": 1080, "timestamp": "1970-10-16T16:53:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.2002504933003177, "p_value": 4.17405168802857e-27},
+    {"index": 1140, "timestamp": "1970-10-26T08:38:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.23697276535155273, "p_value": 5.074611327973835e-47},
+    {"index": 1200, "timestamp": "1974-01-02T18:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.29086934786769364, "p_value": 5.392075573773405e-83},
+    {"index": 1260, "timestamp": "1974-01-18T12:21:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.21148839508315057, "p_value": 8.722228808712177e-31},
+    {"index": 1320, "timestamp": "1974-02-06T09:07:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1773771209036055, "p_value": 6.324950689631961e-16},
+    {"index": 1380, "timestamp": "1974-02-20T23:08:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.15174986462651646, "p_value": 5.99964914938435e-08},
+    {"index": 1440, "timestamp": "1974-03-09T21:01:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.13551664040824823, "p_value": 0.00015463209116480428},
+    {"index": 1500, "timestamp": "1974-03-24T21:32:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.116691426054662, "p_value": 0.03005481972040955},
+    {"index": 1560, "timestamp": "1974-04-08T01:21:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.13759201674584712, "p_value": 1.0832355967838917e-05},
+    {"index": 1620, "timestamp": "1974-04-28T12:47:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.08789238133360809, "p_value": 0.9063635196036709},
+    {"index": 1680, "timestamp": "1974-05-14T00:48:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09413749232234493, "p_value": 0.7746440214567201},
+    {"index": 1740, "timestamp": "1974-05-28T06:14:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1114541404095624, "p_value": 0.14342053035891483},
+    {"index": 1800, "timestamp": "1974-06-13T16:15:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1281231877258706, "p_value": 0.001579012237975953},
+    {"index": 1860, "timestamp": "1974-07-03T21:28:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.13087322118525122, "p_value": 0.0005761384611956322},
+    {"index": 1920, "timestamp": "1974-07-18T11:02:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11061743156145284, "p_value": 0.16506076201958758},
+    {"index": 1980, "timestamp": "1974-08-05T06:38:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.10109899582721374, "p_value": 0.5559512354113165},
+    {"index": 2040, "timestamp": "1974-08-14T04:02:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11962847612011425, "p_value": 0.023949733736518996},
+    {"index": 2100, "timestamp": "1974-09-01T01:54:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.14710231591757497, "p_value": 2.0713391704536893e-07},
+    {"index": 2160, "timestamp": "1974-09-19T12:02:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.12110092184826705, "p_value": 0.010538560062250483},
+    {"index": 2220, "timestamp": "1974-10-06T23:38:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.12312037282072108, "p_value": 0.004969250565931752},
+    {"index": 2280, "timestamp": "1974-10-19T09:52:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.12693161942871964, "p_value": 0.0005884597440854063},
+    {"index": 2340, "timestamp": "1974-11-06T00:26:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.13957340339953248, "p_value": 4.83587419947689e-07},
+    {"index": 2400, "timestamp": "1976-01-01T22:42:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1642395294958918, "p_value": 1.5931106794195247e-14},
+    {"index": 2460, "timestamp": "1976-01-23T14:30:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1474995251293003, "p_value": 1.2566623469784666e-09},
+    {"index": 2520, "timestamp": "1976-02-11T01:44:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.13784013409238455, "p_value": 4.396075823614441e-07},
+    {"index": 2580, "timestamp": "1976-03-04T16:05:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11700627762218764, "p_value": 0.004160767473337051},
+    {"index": 2640, "timestamp": "1976-03-23T06:50:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11129863393318826, "p_value": 0.020007537957042448},
+    {"index": 2700, "timestamp": "1976-04-07T10:17:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11620332361094078, "p_value": 0.0035101345648350622},
+    {"index": 2760, "timestamp": "1976-04-26T22:33:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09797701284248121, "p_value": 0.268512660653871},
+    {"index": 2820, "timestamp": "1976-05-14T21:01:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09362210908370236, "p_value": 0.4634902323932737},
+    {"index": 2880, "timestamp": "1976-06-08T19:11:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.08464164083503883, "p_value": 0.8063009932679114},
+    {"index": 2940, "timestamp": "1976-06-28T03:24:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09454053886469425, "p_value": 0.35479191707284885},
+    {"index": 3000, "timestamp": "1976-07-21T06:20:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.10826412655597059, "p_value": 0.020951741277119827},
+    {"index": 3060, "timestamp": "1976-08-13T07:41:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09970181759799089, "p_value": 0.15507493712153336},
+    {"index": 3120, "timestamp": "1976-09-03T02:50:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09559607310225782, "p_value": 0.2761412217041712},
+    {"index": 3180, "timestamp": "1976-09-23T21:01:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09928793560965991, "p_value": 0.16253487079530415},
+    {"index": 3240, "timestamp": "1976-10-10T08:53:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11809755060002095, "p_value": 0.0006364909787800115},
+    {"index": 3300, "timestamp": "1976-11-02T09:14:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11307885079319718, "p_value": 0.0033148731588105084},
+    {"index": 3360, "timestamp": "1976-11-20T18:38:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.14658191653873423, "p_value": 3.9582504058570064e-10},
+    {"index": 3420, "timestamp": "1976-12-11T13:29:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.20363014790886705, "p_value": 1.9665383818754284e-33},
+    {"index": 3480, "timestamp": "1976-12-31T05:47:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.23494776126386357, "p_value": 1.502953942851883e-49},
+    {"index": 3540, "timestamp": "1977-01-08T03:41:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.2758462504795235, "p_value": 1.5596473770428265e-76},
+    {"index": 3600, "timestamp": "1978-01-01T23:15:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.3578786277185349, "p_value": 8.449547665331474e-145},
+    {"index": 3660, "timestamp": "1978-01-18T14:01:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.28631932026011925, "p_value": 1.811996265530063e-77},
+    {"index": 3720, "timestamp": "1978-01-31T20:03:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.26846407950806167, "p_value": 1.258666877451869e-63},
+    {"index": 3780, "timestamp": "1978-02-17T03:27:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.2555304970093254, "p_value": 2.405823272150408e-54},
+    {"index": 3840, "timestamp": "1978-03-04T16:59:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.23016769876669346, "p_value": 9.260120960460942e-39},
+    {"index": 3900, "timestamp": "1978-03-19T02:02:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.16264898257039298, "p_value": 7.293221731918874e-12},
+    {"index": 3960, "timestamp": "1978-04-01T04:09:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.10293970734715985, "p_value": 0.28117642886513383},
+    {"index": 4020, "timestamp": "1978-04-16T09:47:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11993802457081872, "p_value": 0.008808744599907142},
+    {"index": 4080, "timestamp": "1978-05-02T05:53:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.14974096693271358, "p_value": 9.628210522290687e-09},
+    {"index": 4140, "timestamp": "1978-05-11T21:43:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1842177636582987, "p_value": 3.815448757610882e-19},
+    {"index": 4200, "timestamp": "1978-05-28T23:03:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.16667037039469615, "p_value": 7.246364683894457e-13},
+    {"index": 4260, "timestamp": "1978-06-08T15:18:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1652009782765175, "p_value": 5.322473955356574e-12},
+    {"index": 4320, "timestamp": "1978-06-23T04:23:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.15951264133652676, "p_value": 2.1110306517177373e-10},
+    {"index": 4380, "timestamp": "1978-07-03T16:31:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.12932121855811174, "p_value": 0.0008145259692730842},
+    {"index": 4440, "timestamp": "1978-07-20T06:22:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09376175251066242, "p_value": 0.786483192413867},
+    {"index": 4500, "timestamp": "1978-07-31T16:59:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09785954015035159, "p_value": 0.7191645706209335},
+    {"index": 4560, "timestamp": "1978-08-17T01:58:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.16658877034088954, "p_value": 4.553125089548947e-11},
+    {"index": 4620, "timestamp": "1978-08-29T09:45:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.22831797618835153, "p_value": 1.0250908707557796e-35},
+    {"index": 4680, "timestamp": "1978-09-15T01:14:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.2598398721972269, "p_value": 6.356734060679479e-55},
+    {"index": 4740, "timestamp": "1978-09-27T07:24:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.30914436078784036, "p_value": 1.2122257078412141e-92},
+    {"index": 4800, "timestamp": "1980-01-02T00:16:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.33733615195258176, "p_value": 2.562580498876782e-119},
+    {"index": 4860, "timestamp": "1980-01-25T20:24:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.24033630889636182, "p_value": 3.900005774478735e-48},
+    {"index": 4920, "timestamp": "1980-02-13T07:56:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.20884396344706507, "p_value": 9.514201978815124e-32},
+    {"index": 4980, "timestamp": "1980-03-06T16:17:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.21513591766315954, "p_value": 1.7319580536663477e-36},
+    {"index": 5040, "timestamp": "1980-03-28T20:17:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.22697468238844554, "p_value": 1.2307595918756176e-44},
+    {"index": 5100, "timestamp": "1980-04-12T08:47:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.21601105660949177, "p_value": 5.1753806839681834e-39},
+    {"index": 5160, "timestamp": "1980-05-11T08:31:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.18247344934401086, "p_value": 7.13113333055327e-23},
+    {"index": 5220, "timestamp": "1980-05-30T09:09:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.12682913978990473, "p_value": 2.2864045659474408e-05},
+    {"index": 5280, "timestamp": "1980-06-13T07:52:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09097071828019676, "p_value": 0.5601705005964371},
+    {"index": 5340, "timestamp": "1980-07-05T03:50:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09244310050857492, "p_value": 0.41812154881876945},
+    {"index": 5400, "timestamp": "1980-07-28T13:44:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.0949082751489115, "p_value": 0.27121049191977575},
+    {"index": 5460, "timestamp": "1980-08-19T08:48:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09841692051419852, "p_value": 0.13083780653152635},
+    {"index": 5520, "timestamp": "1980-09-07T09:12:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1008793999126496, "p_value": 0.07742603698121081},
+    {"index": 5580, "timestamp": "1980-09-30T08:18:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.11249045143324365, "p_value": 0.0025613339931699047},
+    {"index": 5640, "timestamp": "1980-10-15T06:49:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.1433551859030593, "p_value": 1.4467249810541627e-10},
+    {"index": 5700, "timestamp": "1980-11-04T09:13:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.15870473205398125, "p_value": 8.84286932447497e-16}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "representation": "directly_follows_frequency",
+    "method": "dfg_frequency",
+    "test": "g_test",
+    "retrospective": true,
+    "window_size": 300,
+    "step": 60,
+    "alpha": 0.03,
+    "min_effect": 0.1,
+    "persistence": 2,
+    "min_separation": 300,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 300,
+    "step": 60,
+    "min_separation": 300,
+    "permutations": 99,
+    "random_state": 73,
+    "alpha": 0.03,
+    "persistence": 2,
+    "test": "g_test",
+    "min_effect": 0.1
+  },
+  "runtime_seconds": 8.351438,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 3482045.4,
+        "tp": 4,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.4444444444444444,
+        "recall": 1.0,
+        "f1": 0.6153846153846154,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 148740.0,
+            "distance_to_truth_interval_seconds": 148740.0,
+            "availability_minus_onset_seconds": 221972040.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 4,
+            "estimate_minus_onset_seconds": 75540.0,
+            "distance_to_truth_interval_seconds": 75540.0,
+            "availability_minus_onset_seconds": 158896320.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": 82440.0,
+            "distance_to_truth_interval_seconds": 82440.0,
+            "availability_minus_onset_seconds": 95742840.0
+          },
+          {
+            "truth_id": "d04",
+            "change_offset": 7,
+            "estimate_minus_onset_seconds": 84840.0,
+            "distance_to_truth_interval_seconds": 84840.0,
+            "availability_minus_onset_seconds": 32669580.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          3,
+          6,
+          8
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 8705113.5,
+        "tp": 4,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.4444444444444444,
+        "recall": 1.0,
+        "f1": 0.6153846153846154,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 148740.0,
+            "distance_to_truth_interval_seconds": 148740.0,
+            "availability_minus_onset_seconds": 221972040.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 4,
+            "estimate_minus_onset_seconds": 75540.0,
+            "distance_to_truth_interval_seconds": 75540.0,
+            "availability_minus_onset_seconds": 158896320.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": 82440.0,
+            "distance_to_truth_interval_seconds": 82440.0,
+            "availability_minus_onset_seconds": 95742840.0
+          },
+          {
+            "truth_id": "d04",
+            "change_offset": 7,
+            "estimate_minus_onset_seconds": 84840.0,
+            "distance_to_truth_interval_seconds": 84840.0,
+            "availability_minus_onset_seconds": 32669580.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          3,
+          6,
+          8
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 17410227.0,
+        "tp": 4,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.4444444444444444,
+        "recall": 1.0,
+        "f1": 0.6153846153846154,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 2,
+            "estimate_minus_onset_seconds": 148740.0,
+            "distance_to_truth_interval_seconds": 148740.0,
+            "availability_minus_onset_seconds": 221972040.0
+          },
+          {
+            "truth_id": "d02",
+            "change_offset": 4,
+            "estimate_minus_onset_seconds": 75540.0,
+            "distance_to_truth_interval_seconds": 75540.0,
+            "availability_minus_onset_seconds": 158896320.0
+          },
+          {
+            "truth_id": "d03",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": 82440.0,
+            "distance_to_truth_interval_seconds": 82440.0,
+            "availability_minus_onset_seconds": 95742840.0
+          },
+          {
+            "truth_id": "d04",
+            "change_offset": 7,
+            "estimate_minus_onset_seconds": 84840.0,
+            "distance_to_truth_interval_seconds": 84840.0,
+            "availability_minus_onset_seconds": 32669580.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          3,
+          6,
+          8
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 91,
+    "published_count": 91,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_05",
+  "library": "pm4py",
+  "method": "bose",
+  "profile": "relation-count",
+  "status": "ok",
+  "detector_source_revision": "765435bc7f5190adf30be7314d7158b92ff433c4",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "timestamp": "2017-03-27T12:32:59+00:00",
+      "p_value": 0.0125,
+      "available_at": "2019-06-17T15:30:58+00:00"
+    },
+    {
+      "timestamp": "2017-12-08T14:46:39+00:00",
+      "p_value": 0.015,
+      "available_at": "2019-06-17T15:30:58+00:00"
+    },
+    {
+      "timestamp": "2017-12-13T14:44:14+00:00",
+      "p_value": 0.0075,
+      "available_at": "2019-06-17T15:30:58+00:00"
+    },
+    {
+      "timestamp": "2017-12-17T09:19:53+00:00",
+      "p_value": 0.0025,
+      "available_at": "2019-06-17T15:30:58+00:00"
+    },
+    {
+      "timestamp": "2018-01-08T07:49:29+00:00",
+      "p_value": 0.005,
+      "available_at": "2019-06-17T15:30:58+00:00"
+    },
+    {
+      "timestamp": "2018-06-25T12:26:04+00:00",
+      "p_value": 0.005,
+      "available_at": "2019-06-17T15:30:58+00:00"
+    },
+    {
+      "timestamp": "2018-06-27T07:40:16+00:00",
+      "p_value": 0.02,
+      "available_at": "2019-06-17T15:30:58+00:00"
+    }
+  ],
+  "scores": [],
+  "metadata": {
+    "retrospective": true,
+    "trace_order": "start",
+    "input_format": "EventLog",
+    "score_output": "legacy API returns p-values only for alarms"
+  },
+  "configuration": {
+    "sub_log_size": 50,
+    "window_size": 6,
+    "num_permutations": 399,
+    "thresh_p_value": 0.025,
+    "max_no_change_points": 100,
+    "random_state": 73
+  },
+  "runtime_seconds": 27.092953,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 768336.68,
+        "tp": 1,
+        "fp": 6,
+        "fn": 0,
+        "precision": 0.14285714285714285,
+        "recall": 1.0,
+        "f1": 0.25,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": 0.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 30855894.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 1920841.7,
+        "tp": 1,
+        "fp": 6,
+        "fn": 0,
+        "precision": 0.14285714285714285,
+        "recall": 1.0,
+        "f1": 0.25,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": 0.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 30855894.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 3841683.4,
+        "tp": 1,
+        "fp": 6,
+        "fn": 0,
+        "precision": 0.14285714285714285,
+        "recall": 1.0,
+        "f1": 0.25,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 5,
+            "estimate_minus_onset_seconds": 0.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 30855894.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 0,
+    "published_count": 0,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

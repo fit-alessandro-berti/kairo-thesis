@@ -1,0 +1,614 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_15",
+  "library": "pm4py",
+  "method": "dfg-frequency",
+  "profile": "permutation",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 366,
+      "timestamp": "2018-12-14T08:29:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.8948339348561255,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": -0.5458908218356329,
+          "[\"Create Purchase Requisition Item\", \"Create Purchase Order Item\"]": 0.4972874990219347,
+          "[\"Record Goods Receipt\", \"Record Goods Receipt\"]": -0.20335932813437313,
+          "[\"Create Purchase Order Item\", \"Record Goods Receipt\"]": 0.08405275466645802,
+          "[\"Record Goods Receipt\", \"Record Service Entry Sheet\"]": -0.0611877624475105
+        }
+      }
+    },
+    {
+      "index": 654,
+      "timestamp": "2018-12-17T08:56:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.9888084869678715,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": -0.5317073170731708,
+          "[\"Create Purchase Order Item\", \"Release Purchase Order\"]": 0.4975609756097561,
+          "[\"Release Purchase Order\", \"Change Approval for Purchase Order\"]": 0.4975609756097561,
+          "[\"Record Goods Receipt\", \"Record Goods Receipt\"]": -0.12926829268292683,
+          "[\"Create Purchase Requisition Item\", \"Create Purchase Order Item\"]": -0.05853658536585366
+        }
+      }
+    },
+    {
+      "index": 1086,
+      "timestamp": "2018-12-17T09:38:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.9353856860190006,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Create Purchase Order Item\", \"Release Purchase Order\"]": -0.4794060361310151,
+          "[\"Release Purchase Order\", \"Change Approval for Purchase Order\"]": -0.4794060361310151,
+          "[\"Create Purchase Requisition Item\", \"Create Purchase Order Item\"]": 0.4386648321212229,
+          "[\"Create Purchase Order Item\", \"Record Goods Receipt\"]": 0.11518324607329843,
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": 0.07329842931937172
+        }
+      }
+    },
+    {
+      "index": 1446,
+      "timestamp": "2018-12-18T18:47:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.65852665015773,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Create Purchase Order Item\", \"Cancel Goods Receipt\"]": -0.2875,
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": 0.16391509433962265,
+          "[\"Create Purchase Requisition Item\", \"Create Purchase Order Item\"]": -0.10296598056032018,
+          "[\"Record Goods Receipt\", \"Record Goods Receipt\"]": 0.09898513436249287,
+          "[\"Remove Payment Block\", \"Create Purchase Order Item\"]": 0.0832975986277873
+        }
+      }
+    },
+    {
+      "index": 1806,
+      "timestamp": "2018-12-20T01:44:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.6671672713822097,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Remove Payment Block\", \"Create Purchase Order Item\"]": 0.5958593691184221,
+          "[\"Create Purchase Requisition Item\", \"Create Purchase Order Item\"]": -0.14995106527139954,
+          "[\"Create Purchase Order Item\", \"Remove Payment Block\"]": -0.09948053903485657,
+          "[\"Record Goods Receipt\", \"Remove Payment Block\"]": -0.06963788300835655,
+          "[\"Vendor creates invoice\", \"Record Goods Receipt\"]": -0.06685236768802229
+        }
+      }
+    },
+    {
+      "index": 2202,
+      "timestamp": "2018-12-20T14:09:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.695193862346108,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Remove Payment Block\", \"Create Purchase Order Item\"]": -0.546738501811098,
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": 0.3398624174352418,
+          "[\"Create Purchase Order Item\", \"Remove Payment Block\"]": 0.06107509207682708,
+          "[\"Create Purchase Order Item\", \"Record Goods Receipt\"]": -0.05873131829665479,
+          "[\"Record Goods Receipt\", \"Record Goods Receipt\"]": 0.04801692387301008
+        }
+      }
+    },
+    {
+      "index": 2742,
+      "timestamp": "2018-12-23T22:49:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.7323077591864067,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": -0.4940960327916849,
+          "[\"Record Goods Receipt\", \"Record Invoice Receipt\"]": 0.14074074074074075,
+          "[\"Vendor creates invoice\", \"Record Goods Receipt\"]": 0.12838823012736056,
+          "[\"Create Purchase Order Item\", \"Vendor creates invoice\"]": 0.12296296296296297,
+          "[\"Create Purchase Requisition Item\", \"Create Purchase Order Item\"]": 0.09033230859317815
+        }
+      }
+    },
+    {
+      "index": 2922,
+      "timestamp": "2018-12-24T17:15:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.6609428073250697,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": 0.3708147608750018,
+          "[\"Create Purchase Requisition Item\", \"Create Purchase Order Item\"]": -0.12585874634067407,
+          "[\"Record Goods Receipt\", \"Record Invoice Receipt\"]": -0.1085569383762155,
+          "[\"Vendor creates invoice\", \"Record Goods Receipt\"]": -0.10582991305882872,
+          "[\"Create Purchase Order Item\", \"Vendor creates invoice\"]": -0.10139275048913603
+        }
+      }
+    },
+    {
+      "index": 3174,
+      "timestamp": "2018-12-28T14:51:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.5056092041680063,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": 0.23021584000168985,
+          "[\"Remove Payment Block\", \"Create Purchase Order Item\"]": -0.11707146201589141,
+          "[\"Change Approval for Purchase Order\", \"Change Price\"]": -0.06761238219628027,
+          "[\"Create Purchase Order Item\", \"Change Approval for Purchase Order\"]": -0.06485057366054926,
+          "[\"Vendor creates invoice\", \"Record Goods Receipt\"]": 0.057644172038316795
+        }
+      }
+    },
+    {
+      "index": 4002,
+      "timestamp": "2019-01-07T10:24:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.6657342905657668,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Create Purchase Order Item\", \"Receive Order Confirmation\"]": 0.14967059639389738,
+          "[\"Receive Order Confirmation\", \"Record Goods Receipt\"]": 0.13398058252427184,
+          "[\"Record Goods Receipt\", \"Vendor creates invoice\"]": 0.0965499306518724,
+          "[\"Vendor creates invoice\", \"Record Invoice Receipt\"]": 0.0965499306518724,
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": -0.0944868238557559
+        }
+      }
+    },
+    {
+      "index": 4794,
+      "timestamp": "2019-01-09T07:21:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.6613481100060028,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": 0.19300106044538706,
+          "[\"Record Goods Receipt\", \"Record Goods Receipt\"]": 0.18175347444904713,
+          "[\"Remove Payment Block\", \"Create Purchase Order Item\"]": -0.09331377440876104,
+          "[\"Create Purchase Order Item\", \"Remove Payment Block\"]": -0.08074559969360896,
+          "[\"Record Goods Receipt\", \"Record Service Entry Sheet\"]": 0.05726405090137858
+        }
+      }
+    },
+    {
+      "index": 5118,
+      "timestamp": "2019-01-10T09:42:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.6683384390780271,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": -0.16687422166874222,
+          "[\"Record Goods Receipt\", \"Record Goods Receipt\"]": -0.1582762650909001,
+          "[\"Create Purchase Order Item\", \"Receive Order Confirmation\"]": 0.09379384271009032,
+          "[\"Remove Payment Block\", \"Create Purchase Order Item\"]": -0.07190485948939218,
+          "[\"Vendor creates invoice\", \"Record Goods Receipt\"]": 0.07081491423436975
+        }
+      }
+    },
+    {
+      "index": 5730,
+      "timestamp": "2019-01-11T16:10:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.49555374439030486,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": 0.1274112245521554,
+          "[\"Record Goods Receipt\", \"Record Goods Receipt\"]": 0.10721262934611829,
+          "[\"Remove Payment Block\", \"Create Purchase Order Item\"]": 0.07169259338843953,
+          "[\"Create Purchase Requisition Item\", \"Create Purchase Order Item\"]": -0.06551039598788005,
+          "[\"Vendor creates invoice\", \"Record Invoice Receipt\"]": -0.05285029659170883
+        }
+      }
+    },
+    {
+      "index": 6090,
+      "timestamp": "2019-01-14T12:40:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.6988237743276179,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Create Purchase Order Item\", \"Vendor creates invoice\"]": 0.19443942949990972,
+          "[\"Vendor creates invoice\", \"Record Goods Receipt\"]": 0.18017692724318468,
+          "[\"Record Goods Receipt\", \"Record Invoice Receipt\"]": 0.17668652584702416,
+          "[\"Create Purchase Requisition Item\", \"Create Purchase Order Item\"]": 0.1441595955948727,
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": -0.1221264367816092
+        }
+      }
+    },
+    {
+      "index": 6702,
+      "timestamp": "2019-01-16T08:42:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 0.6616484494556197,
+      "p_value": 0.01,
+      "details": {
+        "changed_relations": {
+          "[\"Record Goods Receipt\", \"Vendor creates invoice\"]": 0.10935267202576837,
+          "[\"Vendor creates invoice\", \"Record Invoice Receipt\"]": 0.1001643106168863,
+          "[\"Create Purchase Order Item\", \"Remove Payment Block\"]": -0.08885573714025051,
+          "[\"Record Service Entry Sheet\", \"Record Service Entry Sheet\"]": 0.08814589665653495,
+          "[\"Remove Payment Block\", \"Create Purchase Order Item\"]": -0.08579295000395648
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 150, "timestamp": "2018-12-12T13:01:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.20366014004120883, "p_value": 0.55},
+    {"index": 186, "timestamp": "2018-12-12T14:18:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.2006841068162042, "p_value": 0.5},
+    {"index": 222, "timestamp": "2018-12-12T22:04:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.2671360542250182, "p_value": 0.05},
+    {"index": 258, "timestamp": "2018-12-13T10:35:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.2082549181330234, "p_value": 0.38},
+    {"index": 294, "timestamp": "2018-12-13T17:24:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.19470445708289946, "p_value": 0.5},
+    {"index": 330, "timestamp": "2018-12-13T17:24:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.22503356814889094, "p_value": 0.38},
+    {"index": 366, "timestamp": "2018-12-14T08:29:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.8948339348561255, "p_value": 0.01},
+    {"index": 402, "timestamp": "2018-12-14T11:03:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.8200768510383254, "p_value": 0.01},
+    {"index": 438, "timestamp": "2018-12-14T13:16:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.39394551690886154, "p_value": 0.02},
+    {"index": 474, "timestamp": "2018-12-14T13:45:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.2422283745463039, "p_value": 0.36},
+    {"index": 510, "timestamp": "2018-12-14T14:55:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.8741834684082097, "p_value": 0.01},
+    {"index": 546, "timestamp": "2018-12-14T15:50:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.9177802242340513, "p_value": 0.01},
+    {"index": 582, "timestamp": "2018-12-14T22:04:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6603385024780268, "p_value": 0.01},
+    {"index": 618, "timestamp": "2018-12-17T06:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.9413061424923979, "p_value": 0.01},
+    {"index": 654, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.9888084869678715, "p_value": 0.01},
+    {"index": 690, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.8828418048794417, "p_value": 0.01},
+    {"index": 726, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.8117970421981984, "p_value": 0.01},
+    {"index": 762, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3789568632568625, "p_value": 0.01},
+    {"index": 798, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.09202746108466077, "p_value": 0.08},
+    {"index": 834, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 870, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 906, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.0, "p_value": 1.0},
+    {"index": 942, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.1404012237491096, "p_value": 0.01},
+    {"index": 978, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.31856728249961985, "p_value": 0.01},
+    {"index": 1014, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5131563046238389, "p_value": 0.01},
+    {"index": 1050, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.7153723641200317, "p_value": 0.01},
+    {"index": 1086, "timestamp": "2018-12-17T09:38:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.9353856860190006, "p_value": 0.01},
+    {"index": 1122, "timestamp": "2018-12-17T12:05:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.84863098215737, "p_value": 0.01},
+    {"index": 1158, "timestamp": "2018-12-17T13:57:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.7285755788366379, "p_value": 0.01},
+    {"index": 1194, "timestamp": "2018-12-17T16:20:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6085065766159642, "p_value": 0.01},
+    {"index": 1230, "timestamp": "2018-12-17T16:46:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5957146900990291, "p_value": 0.01},
+    {"index": 1266, "timestamp": "2018-12-18T02:54:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.511724003742742, "p_value": 0.03},
+    {"index": 1302, "timestamp": "2018-12-18T10:23:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.498731378803872, "p_value": 0.01},
+    {"index": 1338, "timestamp": "2018-12-18T11:18:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.34214145196361634, "p_value": 0.56},
+    {"index": 1374, "timestamp": "2018-12-18T11:18:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4773056572286916, "p_value": 0.11},
+    {"index": 1410, "timestamp": "2018-12-18T14:57:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5743908287468682, "p_value": 0.01},
+    {"index": 1446, "timestamp": "2018-12-18T18:47:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.65852665015773, "p_value": 0.01},
+    {"index": 1482, "timestamp": "2018-12-18T21:37:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4918821264264446, "p_value": 0.07},
+    {"index": 1518, "timestamp": "2018-12-19T01:20:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.33741254536809523, "p_value": 0.51},
+    {"index": 1554, "timestamp": "2018-12-19T03:34:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4711494323857047, "p_value": 0.16},
+    {"index": 1590, "timestamp": "2018-12-19T06:31:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.49336778477472626, "p_value": 0.09},
+    {"index": 1626, "timestamp": "2018-12-19T12:20:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5766796686455654, "p_value": 0.01},
+    {"index": 1662, "timestamp": "2018-12-19T16:36:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5442538560948105, "p_value": 0.01},
+    {"index": 1698, "timestamp": "2018-12-19T20:52:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6304550705248788, "p_value": 0.01},
+    {"index": 1734, "timestamp": "2018-12-19T22:02:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6172026350351766, "p_value": 0.01},
+    {"index": 1770, "timestamp": "2018-12-20T00:58:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5694413238514845, "p_value": 0.01},
+    {"index": 1806, "timestamp": "2018-12-20T01:44:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6671672713822097, "p_value": 0.01},
+    {"index": 1842, "timestamp": "2018-12-20T02:29:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5673606740574404, "p_value": 0.01},
+    {"index": 1878, "timestamp": "2018-12-20T03:18:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5641601972012381, "p_value": 0.01},
+    {"index": 1914, "timestamp": "2018-12-20T03:51:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5569598874270365, "p_value": 0.01},
+    {"index": 1950, "timestamp": "2018-12-20T04:21:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4539736436988079, "p_value": 0.07},
+    {"index": 1986, "timestamp": "2018-12-20T06:05:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5326193369097696, "p_value": 0.01},
+    {"index": 2022, "timestamp": "2018-12-20T08:22:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.44293646616361365, "p_value": 0.09},
+    {"index": 2058, "timestamp": "2018-12-20T09:47:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.443938498759661, "p_value": 0.13},
+    {"index": 2094, "timestamp": "2018-12-20T10:40:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3195402054976124, "p_value": 0.22},
+    {"index": 2130, "timestamp": "2018-12-20T11:18:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.326674555827361, "p_value": 0.29},
+    {"index": 2166, "timestamp": "2018-12-20T12:41:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4030080117252228, "p_value": 0.25},
+    {"index": 2202, "timestamp": "2018-12-20T14:09:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.695193862346108, "p_value": 0.01},
+    {"index": 2238, "timestamp": "2018-12-20T17:38:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6040015647364124, "p_value": 0.02},
+    {"index": 2274, "timestamp": "2018-12-20T21:20:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4956274883478998, "p_value": 0.09},
+    {"index": 2310, "timestamp": "2018-12-20T23:54:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.48752165485459004, "p_value": 0.06},
+    {"index": 2346, "timestamp": "2018-12-21T01:14:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5026845481100566, "p_value": 0.06},
+    {"index": 2382, "timestamp": "2018-12-21T01:37:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.42452582847745685, "p_value": 0.05},
+    {"index": 2418, "timestamp": "2018-12-21T04:44:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.40968547786559606, "p_value": 0.11},
+    {"index": 2454, "timestamp": "2018-12-21T06:41:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4479223301479614, "p_value": 0.04},
+    {"index": 2490, "timestamp": "2018-12-21T10:23:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.38015037235495486, "p_value": 0.04},
+    {"index": 2526, "timestamp": "2018-12-21T15:42:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.44681291682311114, "p_value": 0.12},
+    {"index": 2562, "timestamp": "2018-12-21T20:01:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3391616154724158, "p_value": 0.5},
+    {"index": 2598, "timestamp": "2018-12-22T00:30:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4111287897599567, "p_value": 0.32},
+    {"index": 2634, "timestamp": "2018-12-22T02:50:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5168379986033685, "p_value": 0.05},
+    {"index": 2670, "timestamp": "2018-12-22T09:48:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.47932045966123166, "p_value": 0.16},
+    {"index": 2706, "timestamp": "2018-12-22T22:59:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4970701454055574, "p_value": 0.1},
+    {"index": 2742, "timestamp": "2018-12-23T22:49:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.7323077591864067, "p_value": 0.01},
+    {"index": 2778, "timestamp": "2018-12-24T05:59:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6753782859597647, "p_value": 0.01},
+    {"index": 2814, "timestamp": "2018-12-24T08:24:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.523478564541259, "p_value": 0.04},
+    {"index": 2850, "timestamp": "2018-12-24T09:44:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4582325373517493, "p_value": 0.13},
+    {"index": 2886, "timestamp": "2018-12-24T15:34:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5912011266394384, "p_value": 0.01},
+    {"index": 2922, "timestamp": "2018-12-24T17:15:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6609428073250697, "p_value": 0.01},
+    {"index": 2958, "timestamp": "2018-12-25T06:44:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6224972691086685, "p_value": 0.01},
+    {"index": 2994, "timestamp": "2018-12-26T00:06:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.49211932137428527, "p_value": 0.02},
+    {"index": 3030, "timestamp": "2018-12-26T15:14:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5152886083091847, "p_value": 0.04},
+    {"index": 3066, "timestamp": "2018-12-27T09:27:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.47878834779135565, "p_value": 0.05},
+    {"index": 3102, "timestamp": "2018-12-27T21:26:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.42105616627105524, "p_value": 0.1},
+    {"index": 3138, "timestamp": "2018-12-28T04:59:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4233174989867829, "p_value": 0.02},
+    {"index": 3174, "timestamp": "2018-12-28T14:51:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5056092041680063, "p_value": 0.01},
+    {"index": 3210, "timestamp": "2018-12-29T01:09:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3977709235010019, "p_value": 0.09},
+    {"index": 3246, "timestamp": "2018-12-29T01:09:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.35625689312118614, "p_value": 0.21},
+    {"index": 3282, "timestamp": "2018-12-30T23:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4265770821038682, "p_value": 0.04},
+    {"index": 3318, "timestamp": "2018-12-31T12:27:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4401624658863388, "p_value": 0.05},
+    {"index": 3354, "timestamp": "2018-12-31T13:49:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3737688076446551, "p_value": 0.08},
+    {"index": 3390, "timestamp": "2019-01-02T08:23:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5758160134971061, "p_value": 0.01},
+    {"index": 3426, "timestamp": "2019-01-02T16:46:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5440443016596136, "p_value": 0.01},
+    {"index": 3462, "timestamp": "2019-01-03T00:43:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5145628961608854, "p_value": 0.01},
+    {"index": 3498, "timestamp": "2019-01-03T01:21:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4264224703928684, "p_value": 0.01},
+    {"index": 3534, "timestamp": "2019-01-03T08:20:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.394112323392604, "p_value": 0.01},
+    {"index": 3570, "timestamp": "2019-01-03T14:55:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.34070261331338203, "p_value": 0.01},
+    {"index": 3606, "timestamp": "2019-01-03T22:44:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.34185313848556104, "p_value": 0.01},
+    {"index": 3642, "timestamp": "2019-01-04T01:07:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5135684046834439, "p_value": 0.01},
+    {"index": 3678, "timestamp": "2019-01-04T06:32:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.447878937256406, "p_value": 0.01},
+    {"index": 3714, "timestamp": "2019-01-04T10:52:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3815460983299011, "p_value": 0.01},
+    {"index": 3750, "timestamp": "2019-01-04T13:42:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.346403945931513, "p_value": 0.01},
+    {"index": 3786, "timestamp": "2019-01-04T14:28:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.343831626446593, "p_value": 0.01},
+    {"index": 3822, "timestamp": "2019-01-04T21:21:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5491114275883422, "p_value": 0.01},
+    {"index": 3858, "timestamp": "2019-01-05T01:19:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.556508295622983, "p_value": 0.01},
+    {"index": 3894, "timestamp": "2019-01-05T12:12:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6190389839966371, "p_value": 0.01},
+    {"index": 3930, "timestamp": "2019-01-07T06:19:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5815739791801997, "p_value": 0.01},
+    {"index": 3966, "timestamp": "2019-01-07T08:52:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6299576302608623, "p_value": 0.01},
+    {"index": 4002, "timestamp": "2019-01-07T10:24:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6657342905657668, "p_value": 0.01},
+    {"index": 4038, "timestamp": "2019-01-07T12:04:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5982524494584205, "p_value": 0.01},
+    {"index": 4074, "timestamp": "2019-01-07T13:41:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4813887109272257, "p_value": 0.01},
+    {"index": 4110, "timestamp": "2019-01-07T14:42:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.44321104658710425, "p_value": 0.01},
+    {"index": 4146, "timestamp": "2019-01-07T16:03:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4820308459078907, "p_value": 0.01},
+    {"index": 4182, "timestamp": "2019-01-07T17:31:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.43771144325228356, "p_value": 0.01},
+    {"index": 4218, "timestamp": "2019-01-07T20:44:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.30734288130973875, "p_value": 0.01},
+    {"index": 4254, "timestamp": "2019-01-08T00:16:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.28808824469534716, "p_value": 0.01},
+    {"index": 4290, "timestamp": "2019-01-08T02:19:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3696281684387428, "p_value": 0.01},
+    {"index": 4326, "timestamp": "2019-01-08T07:54:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4259095197425097, "p_value": 0.01},
+    {"index": 4362, "timestamp": "2019-01-08T09:36:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4271382214653365, "p_value": 0.01},
+    {"index": 4398, "timestamp": "2019-01-08T10:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3464856512187593, "p_value": 0.01},
+    {"index": 4434, "timestamp": "2019-01-08T12:11:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4099403316960129, "p_value": 0.01},
+    {"index": 4470, "timestamp": "2019-01-08T12:44:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4078411441179289, "p_value": 0.01},
+    {"index": 4506, "timestamp": "2019-01-08T12:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.41674636528948955, "p_value": 0.01},
+    {"index": 4542, "timestamp": "2019-01-08T15:19:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5013280998121366, "p_value": 0.01},
+    {"index": 4578, "timestamp": "2019-01-08T16:09:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5120642692468449, "p_value": 0.01},
+    {"index": 4614, "timestamp": "2019-01-08T16:45:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.46161771447259964, "p_value": 0.01},
+    {"index": 4650, "timestamp": "2019-01-08T21:20:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4080510743601123, "p_value": 0.01},
+    {"index": 4686, "timestamp": "2019-01-08T23:52:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3301819495200432, "p_value": 0.42},
+    {"index": 4722, "timestamp": "2019-01-09T00:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5392584029150873, "p_value": 0.01},
+    {"index": 4758, "timestamp": "2019-01-09T02:19:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6294759190455806, "p_value": 0.01},
+    {"index": 4794, "timestamp": "2019-01-09T07:21:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6613481100060028, "p_value": 0.01},
+    {"index": 4830, "timestamp": "2019-01-09T09:41:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3572272479564416, "p_value": 0.3},
+    {"index": 4866, "timestamp": "2019-01-09T11:38:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.2795107736803296, "p_value": 0.61},
+    {"index": 4902, "timestamp": "2019-01-09T11:38:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.29067078134263735, "p_value": 0.55},
+    {"index": 4938, "timestamp": "2019-01-09T13:15:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.39054115013028656, "p_value": 0.11},
+    {"index": 4974, "timestamp": "2019-01-09T18:59:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4128804490616668, "p_value": 0.15},
+    {"index": 5010, "timestamp": "2019-01-09T22:09:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3688027983531762, "p_value": 0.31},
+    {"index": 5046, "timestamp": "2019-01-10T01:12:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3226981303683336, "p_value": 0.3},
+    {"index": 5082, "timestamp": "2019-01-10T05:35:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6430168659527764, "p_value": 0.01},
+    {"index": 5118, "timestamp": "2019-01-10T09:42:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6683384390780271, "p_value": 0.01},
+    {"index": 5154, "timestamp": "2019-01-10T10:00:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5610780462887868, "p_value": 0.01},
+    {"index": 5190, "timestamp": "2019-01-10T11:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5833296172359204, "p_value": 0.01},
+    {"index": 5226, "timestamp": "2019-01-10T13:12:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5816099542002652, "p_value": 0.01},
+    {"index": 5262, "timestamp": "2019-01-10T14:41:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.663038489109391, "p_value": 0.01},
+    {"index": 5298, "timestamp": "2019-01-10T14:41:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.42131102005214177, "p_value": 0.01},
+    {"index": 5334, "timestamp": "2019-01-10T14:43:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.37410458798047785, "p_value": 0.01},
+    {"index": 5370, "timestamp": "2019-01-10T14:45:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4208209307220446, "p_value": 0.01},
+    {"index": 5406, "timestamp": "2019-01-10T14:45:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6390053689863543, "p_value": 0.01},
+    {"index": 5442, "timestamp": "2019-01-10T19:37:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5385228312527841, "p_value": 0.01},
+    {"index": 5478, "timestamp": "2019-01-10T22:48:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4137344793649854, "p_value": 0.01},
+    {"index": 5514, "timestamp": "2019-01-11T01:37:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.37806152402497756, "p_value": 0.01},
+    {"index": 5550, "timestamp": "2019-01-11T06:16:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4392388440046391, "p_value": 0.01},
+    {"index": 5586, "timestamp": "2019-01-11T09:25:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.41279657627698385, "p_value": 0.01},
+    {"index": 5622, "timestamp": "2019-01-11T10:52:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.46088455949339185, "p_value": 0.05},
+    {"index": 5658, "timestamp": "2019-01-11T11:51:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4075862066455702, "p_value": 0.12},
+    {"index": 5694, "timestamp": "2019-01-11T13:42:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4389515315014565, "p_value": 0.04},
+    {"index": 5730, "timestamp": "2019-01-11T16:10:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.49555374439030486, "p_value": 0.01},
+    {"index": 5766, "timestamp": "2019-01-11T19:59:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.46387834197486827, "p_value": 0.03},
+    {"index": 5802, "timestamp": "2019-01-11T22:16:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4125274937215685, "p_value": 0.12},
+    {"index": 5838, "timestamp": "2019-01-12T00:21:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.1874772189386441, "p_value": 0.61},
+    {"index": 5874, "timestamp": "2019-01-12T05:17:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.21665963587301568, "p_value": 0.53},
+    {"index": 5910, "timestamp": "2019-01-12T09:54:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4940106921158164, "p_value": 0.01},
+    {"index": 5946, "timestamp": "2019-01-13T01:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5285591584326584, "p_value": 0.01},
+    {"index": 5982, "timestamp": "2019-01-14T06:28:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5869583377724351, "p_value": 0.01},
+    {"index": 6018, "timestamp": "2019-01-14T09:09:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5617413144029602, "p_value": 0.01},
+    {"index": 6054, "timestamp": "2019-01-14T10:34:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6304916121345499, "p_value": 0.01},
+    {"index": 6090, "timestamp": "2019-01-14T12:40:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6988237743276179, "p_value": 0.01},
+    {"index": 6126, "timestamp": "2019-01-14T14:22:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5796715074488656, "p_value": 0.01},
+    {"index": 6162, "timestamp": "2019-01-14T14:22:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.36981542339872486, "p_value": 0.01},
+    {"index": 6198, "timestamp": "2019-01-14T14:22:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.40835161335548, "p_value": 0.01},
+    {"index": 6234, "timestamp": "2019-01-14T14:32:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.598739167283311, "p_value": 0.01},
+    {"index": 6270, "timestamp": "2019-01-14T17:49:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6292693496495028, "p_value": 0.01},
+    {"index": 6306, "timestamp": "2019-01-14T20:59:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.501489187188224, "p_value": 0.01},
+    {"index": 6342, "timestamp": "2019-01-15T01:25:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.35121877778285016, "p_value": 0.01},
+    {"index": 6378, "timestamp": "2019-01-15T06:42:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4029649977148485, "p_value": 0.01},
+    {"index": 6414, "timestamp": "2019-01-15T10:22:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.460694503746135, "p_value": 0.01},
+    {"index": 6450, "timestamp": "2019-01-15T12:35:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.46909980715469385, "p_value": 0.01},
+    {"index": 6486, "timestamp": "2019-01-15T14:49:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.43150594034714196, "p_value": 0.01},
+    {"index": 6522, "timestamp": "2019-01-15T15:30:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4308241411332569, "p_value": 0.01},
+    {"index": 6558, "timestamp": "2019-01-15T19:00:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3121113791579441, "p_value": 0.07},
+    {"index": 6594, "timestamp": "2019-01-15T22:10:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3015340976446279, "p_value": 0.17},
+    {"index": 6630, "timestamp": "2019-01-16T01:30:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4334160830446246, "p_value": 0.01},
+    {"index": 6666, "timestamp": "2019-01-16T04:49:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5483918230039697, "p_value": 0.01},
+    {"index": 6702, "timestamp": "2019-01-16T08:42:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6616484494556197, "p_value": 0.01},
+    {"index": 6738, "timestamp": "2019-01-16T09:30:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5418890689700964, "p_value": 0.01},
+    {"index": 6774, "timestamp": "2019-01-16T09:42:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.545460295873519, "p_value": 0.01},
+    {"index": 6810, "timestamp": "2019-01-16T10:44:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5176360151792945, "p_value": 0.01},
+    {"index": 6846, "timestamp": "2019-01-16T10:59:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5883944666121548, "p_value": 0.01},
+    {"index": 6882, "timestamp": "2019-01-16T12:24:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4682684226471778, "p_value": 0.01},
+    {"index": 6918, "timestamp": "2019-01-16T14:09:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4496358844628778, "p_value": 0.01},
+    {"index": 6954, "timestamp": "2019-01-16T14:21:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.49511515310205595, "p_value": 0.01},
+    {"index": 6990, "timestamp": "2019-01-16T15:22:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.575335249251947, "p_value": 0.01},
+    {"index": 7026, "timestamp": "2019-01-16T16:03:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4167018383804018, "p_value": 0.01},
+    {"index": 7062, "timestamp": "2019-01-16T16:10:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4513138019283464, "p_value": 0.01},
+    {"index": 7098, "timestamp": "2019-01-16T16:46:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.48524685173263943, "p_value": 0.01},
+    {"index": 7134, "timestamp": "2019-01-16T17:13:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6159632931949254, "p_value": 0.01},
+    {"index": 7170, "timestamp": "2019-01-16T21:03:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.48482238229759783, "p_value": 0.01},
+    {"index": 7206, "timestamp": "2019-01-16T22:46:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.40672542686016183, "p_value": 0.01},
+    {"index": 7242, "timestamp": "2019-01-17T00:31:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3661847285213647, "p_value": 0.01},
+    {"index": 7278, "timestamp": "2019-01-17T01:24:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3851086375015865, "p_value": 0.01},
+    {"index": 7314, "timestamp": "2019-01-17T02:20:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3417591938368202, "p_value": 0.02},
+    {"index": 7350, "timestamp": "2019-01-17T05:33:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.23141727468358936, "p_value": 0.01},
+    {"index": 7386, "timestamp": "2019-01-17T06:58:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.23307684365910616, "p_value": 0.01},
+    {"index": 7422, "timestamp": "2019-01-17T08:38:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3327034228744464, "p_value": 0.01},
+    {"index": 7458, "timestamp": "2019-01-17T10:10:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3415957765871428, "p_value": 0.01},
+    {"index": 7494, "timestamp": "2019-01-17T11:50:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3247027799330375, "p_value": 0.01},
+    {"index": 7530, "timestamp": "2019-01-17T13:23:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3051847719639805, "p_value": 0.01},
+    {"index": 7566, "timestamp": "2019-01-17T13:41:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.3429794975413548, "p_value": 0.01},
+    {"index": 7602, "timestamp": "2019-01-17T15:31:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.40568877495437755, "p_value": 0.01},
+    {"index": 7638, "timestamp": "2019-01-17T20:31:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.40302909424703304, "p_value": 0.01},
+    {"index": 7674, "timestamp": "2019-01-17T22:24:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.35887268109577736, "p_value": 0.01},
+    {"index": 7710, "timestamp": "2019-01-18T00:48:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.31878530348214235, "p_value": 0.01},
+    {"index": 7746, "timestamp": "2019-01-18T04:22:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.2501298629058432, "p_value": 0.24},
+    {"index": 7782, "timestamp": "2019-01-18T06:38:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.22312436171219321, "p_value": 0.53},
+    {"index": 7818, "timestamp": "2019-01-18T10:15:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.23676330704011567, "p_value": 0.38}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "representation": "directly_follows_frequency",
+    "method": "dfg_frequency",
+    "test": "permutation",
+    "retrospective": true,
+    "window_size": 150,
+    "step": 36,
+    "alpha": 0.03,
+    "min_effect": 0.1,
+    "persistence": 2,
+    "min_separation": 150,
+    "permutations": 99,
+    "permutation_block_size": 1,
+    "random_state": 73,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 150,
+    "step": 36,
+    "min_separation": 150,
+    "permutations": 99,
+    "random_state": 73,
+    "alpha": 0.03,
+    "persistence": 2,
+    "min_effect": 0.1
+  },
+  "runtime_seconds": 7.304882,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 51257.4,
+        "tp": 1,
+        "fp": 14,
+        "fn": 0,
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1": 0.125,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 122160.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4732740.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 128143.5,
+        "tp": 1,
+        "fp": 14,
+        "fn": 0,
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1": 0.125,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 122160.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4732740.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 256287.0,
+        "tp": 1,
+        "fp": 14,
+        "fn": 0,
+        "precision": 0.06666666666666667,
+        "recall": 1.0,
+        "f1": 0.125,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 1,
+            "estimate_minus_onset_seconds": 122160.0,
+            "distance_to_truth_interval_seconds": 0.0,
+            "availability_minus_onset_seconds": 4732740.0
+          }
+        ],
+        "unmatched_truth": [],
+        "unmatched_changes": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 214,
+    "published_count": 214,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

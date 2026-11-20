@@ -1,0 +1,2147 @@
+{
+  "schema_version": 1,
+  "dataset": "padella_15",
+  "library": "pm4py",
+  "method": "declare-profiles",
+  "profile": "pelt",
+  "status": "ok",
+  "detector_source_revision": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+  "observation_unit": "trace",
+  "changes": [
+    {
+      "index": 2700,
+      "timestamp": "2018-12-22T20:22:00+00:00",
+      "available_at": "2019-02-08T17:39:00+00:00",
+      "score": 9.057190126416089,
+      "details": {
+        "constraint_deltas": {
+          "[\"existence\", \"Record Goods Receipt\"]": 0.6891111111111109,
+          "[\"existence\", \"Record Service Entry Sheet\"]": -0.028973544973544978,
+          "[\"existence\", \"Remove Payment Block\"]": 0.12410582010582005,
+          "[\"existence\", \"Create Purchase Requisition Item\"]": 0.17589417989417994,
+          "[\"existence\", \"Record Invoice Receipt\"]": 0.5317989417989418,
+          "[\"existence\", \"Vendor creates invoice\"]": 0.5317989417989418,
+          "[\"existence\", \"Change Approval for Purchase Order\"]": -0.1231851851851852,
+          "[\"existence\", \"Receive Order Confirmation\"]": 0.11136507936507933,
+          "[\"existence\", \"Release Purchase Order\"]": -0.15888888888888889,
+          "[\"response\", \"Create Purchase Order Item\", \"Record Goods Receipt\"]": 0.6891111111111109,
+          "[\"precedence\", \"Create Purchase Order Item\", \"Record Goods Receipt\"]": 0.6891111111111109,
+          "[\"response\", \"Create Purchase Order Item\", \"Record Service Entry Sheet\"]": -0.028973544973544978,
+          "[\"precedence\", \"Create Purchase Order Item\", \"Record Service Entry Sheet\"]": -0.028973544973544978,
+          "[\"response\", \"Create Purchase Order Item\", \"Remove Payment Block\"]": 0.14005291005291007,
+          "[\"precedence\", \"Create Purchase Order Item\", \"Remove Payment Block\"]": 0.14005291005291007,
+          "[\"response\", \"Create Purchase Order Item\", \"Record Invoice Receipt\"]": 0.5317989417989418,
+          "[\"precedence\", \"Create Purchase Order Item\", \"Record Invoice Receipt\"]": 0.5317989417989418,
+          "[\"response\", \"Create Purchase Order Item\", \"Vendor creates invoice\"]": 0.5195555555555554,
+          "[\"precedence\", \"Create Purchase Order Item\", \"Vendor creates invoice\"]": 0.5195555555555554,
+          "[\"response\", \"Create Purchase Order Item\", \"Change Approval for Purchase Order\"]": -0.12413756613756616,
+          "[\"precedence\", \"Create Purchase Order Item\", \"Change Approval for Purchase Order\"]": -0.13880423280423285,
+          "[\"response\", \"Create Purchase Order Item\", \"Receive Order Confirmation\"]": 0.11136507936507933,
+          "[\"precedence\", \"Create Purchase Order Item\", \"Receive Order Confirmation\"]": 0.11136507936507933,
+          "[\"response\", \"Create Purchase Order Item\", \"Release Purchase Order\"]": -0.15888888888888889,
+          "[\"precedence\", \"Create Purchase Order Item\", \"Release Purchase Order\"]": -0.15888888888888889,
+          "[\"response\", \"Record Goods Receipt\", \"Record Service Entry Sheet\"]": -0.019671957671957667,
+          "[\"precedence\", \"Record Goods Receipt\", \"Record Service Entry Sheet\"]": -0.020243386243386237,
+          "[\"response\", \"Record Goods Receipt\", \"Remove Payment Block\"]": 0.02968253968253967,
+          "[\"precedence\", \"Record Goods Receipt\", \"Remove Payment Block\"]": 0.030063492063492056,
+          "[\"response\", \"Record Goods Receipt\", \"Record Invoice Receipt\"]": 0.5022433862433862,
+          "[\"precedence\", \"Record Goods Receipt\", \"Record Invoice Receipt\"]": 0.5039576719576719,
+          "[\"response\", \"Record Goods Receipt\", \"Vendor creates invoice\"]": 0.19888888888888887,
+          "[\"precedence\", \"Record Goods Receipt\", \"Vendor creates invoice\"]": 0.1986984126984127,
+          "[\"response\", \"Record Service Entry Sheet\", \"Record Goods Receipt\"]": -0.0093015873015873,
+          "[\"precedence\", \"Record Service Entry Sheet\", \"Record Goods Receipt\"]": -0.008730158730158729,
+          "[\"response\", \"Record Service Entry Sheet\", \"Remove Payment Block\"]": 0.00019047619047619048,
+          "[\"precedence\", \"Record Service Entry Sheet\", \"Remove Payment Block\"]": 0.00019047619047619048,
+          "[\"response\", \"Record Service Entry Sheet\", \"Record Invoice Receipt\"]": 0.00801058201058201,
+          "[\"precedence\", \"Record Service Entry Sheet\", \"Record Invoice Receipt\"]": 0.0082010582010582,
+          "[\"response\", \"Record Service Entry Sheet\", \"Vendor creates invoice\"]": 0.005333333333333332,
+          "[\"precedence\", \"Record Service Entry Sheet\", \"Vendor creates invoice\"]": 0.005333333333333332,
+          "[\"response\", \"Remove Payment Block\", \"Create Purchase Order Item\"]": -0.015947089947089876,
+          "[\"precedence\", \"Remove Payment Block\", \"Create Purchase Order Item\"]": -0.015947089947089876,
+          "[\"response\", \"Remove Payment Block\", \"Record Goods Receipt\"]": 0.33817989417989425,
+          "[\"precedence\", \"Remove Payment Block\", \"Record Goods Receipt\"]": 0.33779894179894177,
+          "[\"response\", \"Remove Payment Block\", \"Record Service Entry Sheet\"]": -0.0033439153439153435,
+          "[\"precedence\", \"Remove Payment Block\", \"Record Service Entry Sheet\"]": -0.0033439153439153435,
+          "[\"response\", \"Remove Payment Block\", \"Record Invoice Receipt\"]": 0.2211428571428571,
+          "[\"precedence\", \"Remove Payment Block\", \"Record Invoice Receipt\"]": 0.22076190476190477,
+          "[\"response\", \"Remove Payment Block\", \"Vendor creates invoice\"]": 0.21104761904761904,
+          "[\"precedence\", \"Remove Payment Block\", \"Vendor creates invoice\"]": 0.21085714285714288,
+          "[\"response\", \"Remove Payment Block\", \"Change Approval for Purchase Order\"]": 0.04257142857142858,
+          "[\"precedence\", \"Remove Payment Block\", \"Change Approval for Purchase Order\"]": 0.03761904761904761,
+          "[\"response\", \"Remove Payment Block\", \"Receive Order Confirmation\"]": 0.04389417989417989,
+          "[\"precedence\", \"Remove Payment Block\", \"Receive Order Confirmation\"]": 0.04389417989417989,
+          "[\"response\", \"Create Purchase Requisition Item\", \"Create Purchase Order Item\"]": 0.17589417989417994,
+          "[\"precedence\", \"Create Purchase Requisition Item\", \"Create Purchase Order Item\"]": 0.17589417989417994,
+          "[\"response\", \"Create Purchase Requisition Item\", \"Record Goods Receipt\"]": 0.41483597883597906,
+          "[\"precedence\", \"Create Purchase Requisition Item\", \"Record Goods Receipt\"]": 0.41483597883597906,
+          "[\"response\", \"Create Purchase Requisition Item\", \"Remove Payment Block\"]": 0.1156613756613756,
+          "[\"precedence\", \"Create Purchase Requisition Item\", \"Remove Payment Block\"]": 0.1156613756613756,
+          "[\"response\", \"Create Purchase Requisition Item\", \"Record Invoice Receipt\"]": 0.2843597883597883,
+          "[\"precedence\", \"Create Purchase Requisition Item\", \"Record Invoice Receipt\"]": 0.2843597883597883,
+          "[\"response\", \"Create Purchase Requisition Item\", \"Vendor creates invoice\"]": 0.2843597883597883,
+          "[\"precedence\", \"Create Purchase Requisition Item\", \"Vendor creates invoice\"]": 0.2843597883597883,
+          "[\"response\", \"Create Purchase Requisition Item\", \"Receive Order Confirmation\"]": 0.05433862433862434,
+          "[\"precedence\", \"Create Purchase Requisition Item\", \"Receive Order Confirmation\"]": 0.05433862433862434,
+          "[\"response\", \"Record Invoice Receipt\", \"Record Goods Receipt\"]": 0.011989417989418001,
+          "[\"precedence\", \"Record Invoice Receipt\", \"Record Goods Receipt\"]": 0.010275132275132277,
+          "[\"response\", \"Record Invoice Receipt\", \"Record Service Entry Sheet\"]": 0.00019047619047619048,
+          "[\"response\", \"Record Invoice Receipt\", \"Remove Payment Block\"]": 0.03101587301587301,
+          "[\"precedence\", \"Record Invoice Receipt\", \"Remove Payment Block\"]": 0.031396825396825395,
+          "[\"response\", \"Record Invoice Receipt\", \"Vendor creates invoice\"]": -0.024232804232804238,
+          "[\"precedence\", \"Record Invoice Receipt\", \"Vendor creates invoice\"]": -0.024232804232804238,
+          "[\"response\", \"Record Invoice Receipt\", \"Change Approval for Purchase Order\"]": 0.0007619047619047619,
+          "[\"response\", \"Vendor creates invoice\", \"Create Purchase Order Item\"]": 0.01224338624338624,
+          "[\"precedence\", \"Vendor creates invoice\", \"Create Purchase Order Item\"]": 0.01224338624338624,
+          "[\"response\", \"Vendor creates invoice\", \"Record Goods Receipt\"]": 0.31534391534391526,
+          "[\"precedence\", \"Vendor creates invoice\", \"Record Goods Receipt\"]": 0.3155343915343915,
+          "[\"response\", \"Vendor creates invoice\", \"Record Service Entry Sheet\"]": 0.002867724867724868,
+          "[\"precedence\", \"Vendor creates invoice\", \"Record Service Entry Sheet\"]": 0.002867724867724868,
+          "[\"response\", \"Vendor creates invoice\", \"Remove Payment Block\"]": 0.04111111111111114,
+          "[\"precedence\", \"Vendor creates invoice\", \"Remove Payment Block\"]": 0.04130158730158734,
+          "[\"response\", \"Vendor creates invoice\", \"Record Invoice Receipt\"]": 0.556031746031746,
+          "[\"precedence\", \"Vendor creates invoice\", \"Record Invoice Receipt\"]": 0.556031746031746,
+          "[\"response\", \"Vendor creates invoice\", \"Change Approval for Purchase Order\"]": 0.010899470899470895,
+          "[\"precedence\", \"Vendor creates invoice\", \"Change Approval for Purchase Order\"]": 0.008994708994708993,
+          "[\"response\", \"Change Approval for Purchase Order\", \"Create Purchase Order Item\"]": 0.0009523809523809524,
+          "[\"precedence\", \"Change Approval for Purchase Order\", \"Create Purchase Order Item\"]": 0.015619047619047621,
+          "[\"response\", \"Change Approval for Purchase Order\", \"Remove Payment Block\"]": 0.0005714285714285715,
+          "[\"precedence\", \"Change Approval for Purchase Order\", \"Remove Payment Block\"]": 0.005523809523809523,
+          "[\"response\", \"Change Approval for Purchase Order\", \"Record Invoice Receipt\"]": 0.011851851851851851,
+          "[\"precedence\", \"Change Approval for Purchase Order\", \"Record Invoice Receipt\"]": 0.012613756613756612,
+          "[\"response\", \"Change Approval for Purchase Order\", \"Vendor creates invoice\"]": 0.0017142857142857144,
+          "[\"precedence\", \"Change Approval for Purchase Order\", \"Vendor creates invoice\"]": 0.0036190476190476194,
+          "[\"response\", \"Receive Order Confirmation\", \"Record Goods Receipt\"]": 0.13553439153439148,
+          "[\"precedence\", \"Receive Order Confirmation\", \"Record Goods Receipt\"]": 0.13553439153439148,
+          "[\"response\", \"Receive Order Confirmation\", \"Remove Payment Block\"]": 0.0017142857142857144,
+          "[\"precedence\", \"Receive Order Confirmation\", \"Remove Payment Block\"]": 0.0017142857142857144,
+          "[\"response\", \"Receive Order Confirmation\", \"Record Invoice Receipt\"]": 0.09797883597883597,
+          "[\"precedence\", \"Receive Order Confirmation\", \"Record Invoice Receipt\"]": 0.09797883597883597,
+          "[\"response\", \"Receive Order Confirmation\", \"Vendor creates invoice\"]": 0.09797883597883597,
+          "[\"precedence\", \"Receive Order Confirmation\", \"Vendor creates invoice\"]": 0.09797883597883597,
+          "[\"response\", \"Release Purchase Order\", \"Change Approval for Purchase Order\"]": -0.15888888888888889,
+          "[\"precedence\", \"Release Purchase Order\", \"Change Approval for Purchase Order\"]": -0.15888888888888889
+        }
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "2018-12-11T09:50:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.0},
+    {"index": 150, "timestamp": "2018-12-12T13:01:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.7191970831729259},
+    {"index": 300, "timestamp": "2018-12-13T17:24:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.4039251855920296},
+    {"index": 450, "timestamp": "2018-12-14T13:22:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.5272991982209383},
+    {"index": 600, "timestamp": "2018-12-16T21:12:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 2.1757757237362494},
+    {"index": 750, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.8029113691228109},
+    {"index": 900, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.0},
+    {"index": 1050, "timestamp": "2018-12-17T08:56:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 2.4110302085761317},
+    {"index": 1200, "timestamp": "2018-12-17T16:28:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.7250134098376695},
+    {"index": 1350, "timestamp": "2018-12-18T11:18:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.34749900079792395},
+    {"index": 1500, "timestamp": "2018-12-18T23:06:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.8082903768654761},
+    {"index": 1650, "timestamp": "2018-12-19T16:03:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6138403701289122},
+    {"index": 1800, "timestamp": "2018-12-20T01:25:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.8239395701490648},
+    {"index": 1950, "timestamp": "2018-12-20T04:21:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.6150338744058466},
+    {"index": 2100, "timestamp": "2018-12-20T10:53:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.267581763205193},
+    {"index": 2250, "timestamp": "2018-12-20T19:44:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.8142644668172154},
+    {"index": 2400, "timestamp": "2018-12-21T03:25:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.4063980786233872},
+    {"index": 2550, "timestamp": "2018-12-21T17:37:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.9767974883942594},
+    {"index": 2700, "timestamp": "2018-12-22T20:22:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 2.7101783459150184},
+    {"index": 2850, "timestamp": "2018-12-24T09:44:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.6407721759383092},
+    {"index": 3000, "timestamp": "2018-12-26T04:17:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.2230017715986077},
+    {"index": 3150, "timestamp": "2018-12-28T07:05:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 2.0908902941623273},
+    {"index": 3300, "timestamp": "2018-12-31T12:17:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.5559920022645075},
+    {"index": 3450, "timestamp": "2019-01-02T21:36:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.4512523327572409},
+    {"index": 3600, "timestamp": "2019-01-03T19:52:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.1535259954687724},
+    {"index": 3750, "timestamp": "2019-01-04T13:42:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.886441074058382},
+    {"index": 3900, "timestamp": "2019-01-06T00:13:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.1777002070891294},
+    {"index": 4050, "timestamp": "2019-01-07T13:07:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.6334829863413536},
+    {"index": 4200, "timestamp": "2019-01-07T18:17:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.195361405136074},
+    {"index": 4350, "timestamp": "2019-01-08T08:54:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.8272748379303354},
+    {"index": 4500, "timestamp": "2019-01-08T12:47:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.3547611515605906},
+    {"index": 4650, "timestamp": "2019-01-08T21:20:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.8924622618849992},
+    {"index": 4800, "timestamp": "2019-01-09T07:46:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.7808487364799466},
+    {"index": 4950, "timestamp": "2019-01-09T15:22:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.8981862688132352},
+    {"index": 5100, "timestamp": "2019-01-10T08:05:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 2.19296856135949},
+    {"index": 5250, "timestamp": "2019-01-10T13:27:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 2.954852882218598},
+    {"index": 5400, "timestamp": "2019-01-10T14:45:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 2.724938327538605},
+    {"index": 5550, "timestamp": "2019-01-11T06:16:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.650750670991164},
+    {"index": 5700, "timestamp": "2019-01-11T13:45:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.5819116424264803},
+    {"index": 5850, "timestamp": "2019-01-12T02:19:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.8037965469500904},
+    {"index": 6000, "timestamp": "2019-01-14T08:36:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.9424612108239268},
+    {"index": 6150, "timestamp": "2019-01-14T14:22:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.2122889277909144},
+    {"index": 6300, "timestamp": "2019-01-14T20:13:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.9802020098969702},
+    {"index": 6450, "timestamp": "2019-01-15T12:35:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.5420044674960505},
+    {"index": 6600, "timestamp": "2019-01-15T23:02:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.8122123422411709},
+    {"index": 6750, "timestamp": "2019-01-16T09:39:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.3045390842064573},
+    {"index": 6900, "timestamp": "2019-01-16T13:09:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.8024130274781602},
+    {"index": 7050, "timestamp": "2019-01-16T16:06:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.045668313674189},
+    {"index": 7200, "timestamp": "2019-01-16T22:31:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.4750367227067036},
+    {"index": 7350, "timestamp": "2019-01-17T05:33:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.786807896926986},
+    {"index": 7500, "timestamp": "2019-01-17T12:01:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.290512387473372},
+    {"index": 7650, "timestamp": "2019-01-17T21:29:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 1.714163223137037},
+    {"index": 7800, "timestamp": "2019-01-18T08:04:00+00:00", "available_at": "2019-02-08T17:39:00+00:00", "score": 0.69525375063913}
+  ],
+  "intervals": [],
+  "versions": [],
+  "metadata": {
+    "pm4py_version": "2.7.23.12",
+    "method": "declare_profiles",
+    "detector": "pelt",
+    "mode": "retrospective",
+    "trace_order": "completion",
+    "constraints": [
+      [
+        "existence",
+        "Create Purchase Order Item"
+      ],
+      [
+        "existence",
+        "Record Goods Receipt"
+      ],
+      [
+        "existence",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "existence",
+        "Remove Payment Block"
+      ],
+      [
+        "existence",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "existence",
+        "Record Invoice Receipt"
+      ],
+      [
+        "existence",
+        "Vendor creates invoice"
+      ],
+      [
+        "existence",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "existence",
+        "Receive Order Confirmation"
+      ],
+      [
+        "existence",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Receive Order Confirmation"
+      ]
+    ],
+    "statistic": "confidence",
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "min_size": 2,
+    "gamma": null,
+    "input_format": "EventLog"
+  },
+  "configuration": {
+    "window_size": 150,
+    "step": 150,
+    "penalty": 3,
+    "constraints": [
+      [
+        "existence",
+        "Create Purchase Order Item"
+      ],
+      [
+        "existence",
+        "Record Goods Receipt"
+      ],
+      [
+        "existence",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "existence",
+        "Remove Payment Block"
+      ],
+      [
+        "existence",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "existence",
+        "Record Invoice Receipt"
+      ],
+      [
+        "existence",
+        "Vendor creates invoice"
+      ],
+      [
+        "existence",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "existence",
+        "Receive Order Confirmation"
+      ],
+      [
+        "existence",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Create Purchase Order Item",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Create Purchase Order Item",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Record Goods Receipt",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Goods Receipt",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Record Service Entry Sheet",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Service Entry Sheet",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Remove Payment Block",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Remove Payment Block",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Create Purchase Requisition Item",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Create Purchase Requisition Item",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Record Invoice Receipt",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Record Invoice Receipt",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Vendor creates invoice",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Vendor creates invoice",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Receive Order Confirmation"
+      ],
+      [
+        "response",
+        "Change Approval for Purchase Order",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Change Approval for Purchase Order",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Receive Order Confirmation",
+        "Release Purchase Order"
+      ],
+      [
+        "precedence",
+        "Receive Order Confirmation",
+        "Release Purchase Order"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Create Purchase Order Item"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Create Purchase Order Item"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Record Goods Receipt"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Record Goods Receipt"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Record Service Entry Sheet"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Remove Payment Block"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Remove Payment Block"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Create Purchase Requisition Item"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Record Invoice Receipt"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Record Invoice Receipt"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Vendor creates invoice"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Vendor creates invoice"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Change Approval for Purchase Order"
+      ],
+      [
+        "response",
+        "Release Purchase Order",
+        "Receive Order Confirmation"
+      ],
+      [
+        "precedence",
+        "Release Purchase Order",
+        "Receive Order Confirmation"
+      ]
+    ]
+  },
+  "runtime_seconds": 1.52379,
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 51257.4,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 128143.5,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 256287.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 53,
+    "published_count": 53,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}

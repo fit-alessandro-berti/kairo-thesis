@@ -1,0 +1,187 @@
+{
+  "method": "pm4py/bose",
+  "log": {
+    "kind": "generated diagnostics",
+    "cases": 60,
+    "cases_per_regime": 30,
+    "spacing": "one case per day from 2024-01-01 UTC, one minute between events",
+    "case_id_permutation": "numpy.random.default_rng(7).permutation(60)",
+    "note": "Only case identifiers differ between the ordered and permuted input versions."
+  },
+  "revisions": {
+    "original": "98b9a53ad89a722ed24bb15fe95fee9eb1154ba1",
+    "chronology_fixed": "79b6ce1b025e48be760faed10041d0e33acd0b8c",
+    "both_fixes": "765435bc7f5190adf30be7314d7158b92ff433c4"
+  },
+  "experiments": {
+    "append_activity": {
+      "before": [
+        "A",
+        "B"
+      ],
+      "after": [
+        "A",
+        "B",
+        "C"
+      ],
+      "runs": {
+        "original": {
+          "ordered_ids": {
+            "alarm_timestamps": [
+              "2024-01-31T00:00:00+00:00"
+            ],
+            "alarm_p_values": [
+              0.11557788944723618
+            ],
+            "traces_per_returned_segment": [
+              30,
+              30
+            ]
+          },
+          "permuted_ids": {
+            "alarm_timestamps": [],
+            "alarm_p_values": [],
+            "traces_per_returned_segment": [
+              60
+            ]
+          }
+        },
+        "chronology_fixed": {
+          "ordered_ids": {
+            "alarm_timestamps": [
+              "2024-01-31T00:00:00+00:00"
+            ],
+            "alarm_p_values": [
+              0.09
+            ],
+            "traces_per_returned_segment": [
+              30,
+              30
+            ]
+          },
+          "permuted_ids": {
+            "alarm_timestamps": [
+              "2024-01-31T00:00:00+00:00"
+            ],
+            "alarm_p_values": [
+              0.09
+            ],
+            "traces_per_returned_segment": [
+              30,
+              30
+            ]
+          }
+        },
+        "both_fixes": {
+          "ordered_ids": {
+            "alarm_timestamps": [
+              "2024-01-31T00:00:00+00:00"
+            ],
+            "alarm_p_values": [
+              0.09
+            ],
+            "traces_per_returned_segment": [
+              30,
+              30
+            ]
+          },
+          "permuted_ids": {
+            "alarm_timestamps": [
+              "2024-01-31T00:00:00+00:00"
+            ],
+            "alarm_p_values": [
+              0.09
+            ],
+            "traces_per_returned_segment": [
+              30,
+              30
+            ]
+          }
+        }
+      }
+    },
+    "substitute_activity": {
+      "before": [
+        "A",
+        "B"
+      ],
+      "after": [
+        "A",
+        "C"
+      ],
+      "runs": {
+        "original": {
+          "ordered_ids": {
+            "alarm_timestamps": [
+              "2024-01-31T00:00:00+00:00"
+            ],
+            "alarm_p_values": [
+              0.11557788944723618
+            ],
+            "traces_per_returned_segment": [
+              30,
+              30
+            ]
+          },
+          "permuted_ids": {
+            "alarm_timestamps": [],
+            "alarm_p_values": [],
+            "traces_per_returned_segment": [
+              60
+            ]
+          }
+        },
+        "chronology_fixed": {
+          "ordered_ids": {
+            "alarm_timestamps": [
+              "2024-01-31T00:00:00+00:00"
+            ],
+            "alarm_p_values": [
+              0.09
+            ],
+            "traces_per_returned_segment": [
+              30,
+              30
+            ]
+          },
+          "permuted_ids": {
+            "alarm_timestamps": [
+              "2024-01-31T00:00:00+00:00"
+            ],
+            "alarm_p_values": [
+              0.09
+            ],
+            "traces_per_returned_segment": [
+              30,
+              30
+            ]
+          }
+        },
+        "both_fixes": {
+          "ordered_ids": {
+            "alarm_timestamps": [],
+            "alarm_p_values": [],
+            "traces_per_returned_segment": [
+              60
+            ]
+          },
+          "permuted_ids": {
+            "alarm_timestamps": [],
+            "alarm_p_values": [],
+            "traces_per_returned_segment": [
+              60
+            ]
+          }
+        }
+      }
+    }
+  },
+  "configuration": {
+    "sub_log_size": 5,
+    "window_size": 3,
+    "num_permutations": 199,
+    "thresh_p_value": 0.2,
+    "random_state": 7
+  },
+  "truth": "2024-01-31T00:00:00+00:00"
+}

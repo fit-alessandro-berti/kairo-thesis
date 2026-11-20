@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "dataset": "cdrift_bose",
+  "library": "kairo",
+  "method": "resource-dbscan",
+  "profile": "recent",
+  "status": "ok",
+  "detector_source_revision": "6b1bd4624b3a31f563b1eaab053309cf811fc845",
+  "configuration": {
+    "perspective": "resource",
+    "features": {
+      "groups": [
+        "res_events",
+        "res_cases",
+        "res_waits",
+        "act_res_shares",
+        "handover_shares"
+      ],
+      "feature_window": "7D",
+      "resources": "all observed",
+      "resource_count": 9,
+      "missing_resource_rows": 0,
+      "event_duration_source": null,
+      "valid_duration_rows": 0,
+      "omitted_feature_groups": [
+        "res_durations"
+      ]
+    },
+    "reduction": {
+      "scaling": "zscore",
+      "feature_columns": 135,
+      "feature_rows": 576,
+      "pca_components": 5,
+      "pca_seed": 0,
+      "pca_retained_variance": 0.6656910960821443
+    },
+    "clustering": {
+      "method": "dbscan",
+      "eps": 2.8010993605686565,
+      "min_samples": 5,
+      "distance": "euclidean",
+      "eps_k_distance_quantile": 0.8,
+      "eps_k_distance_sample_rows": 244
+    },
+    "signal": {
+      "window": "224D",
+      "divergence": "tv",
+      "reference": "recent",
+      "lookback": 3,
+      "threshold_quantile": 0.95,
+      "min_rows_as_fraction_of_median": 0.25
+    },
+    "fit_scope": "full event log"
+  },
+  "observation_unit": "signal_window",
+  "changes": [
+    {
+      "index": 7,
+      "timestamp": "1974-04-18T00:00:00+00:00",
+      "available_at": "1981-01-13T03:35:00+00:00",
+      "score": 0.7708333333333334,
+      "details": {
+        "window_end": "1974-11-28T00:00:00+00:00",
+        "rows": 32,
+        "coverage": 1.0,
+        "eligible": true
+      }
+    }
+  ],
+  "scores": [
+    {"index": 0, "timestamp": "1970-01-01T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": null, "details": {"window_end": "1970-08-13T00:00:00+00:00", "rows": 32, "coverage": 0.9999813988095239, "eligible": false}},
+    {"index": 1, "timestamp": "1970-08-13T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": null, "details": {"window_end": "1971-03-25T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": false}},
+    {"index": 2, "timestamp": "1971-03-25T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": null, "details": {"window_end": "1971-11-04T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": false}},
+    {"index": 3, "timestamp": "1971-11-04T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.45833333333333337, "details": {"window_end": "1972-06-15T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 4, "timestamp": "1972-06-15T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.125, "details": {"window_end": "1973-01-25T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 5, "timestamp": "1973-01-25T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.0, "details": {"window_end": "1973-09-06T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 6, "timestamp": "1973-09-06T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5, "details": {"window_end": "1974-04-18T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 7, "timestamp": "1974-04-18T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.7708333333333334, "details": {"window_end": "1974-11-28T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 8, "timestamp": "1974-11-28T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.47916666666666663, "details": {"window_end": "1975-07-10T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 9, "timestamp": "1975-07-10T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.26041666666666663, "details": {"window_end": "1976-02-19T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 10, "timestamp": "1976-02-19T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6458333333333333, "details": {"window_end": "1976-09-30T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 11, "timestamp": "1976-09-30T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.09375, "details": {"window_end": "1977-05-12T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 12, "timestamp": "1977-05-12T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.5729166666666667, "details": {"window_end": "1977-12-22T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 13, "timestamp": "1977-12-22T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.48958333333333337, "details": {"window_end": "1978-08-03T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 14, "timestamp": "1978-08-03T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.17708333333333337, "details": {"window_end": "1979-03-15T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 15, "timestamp": "1979-03-15T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.42708333333333337, "details": {"window_end": "1979-10-25T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 16, "timestamp": "1979-10-25T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.32291666666666663, "details": {"window_end": "1980-06-05T00:00:00+00:00", "rows": 32, "coverage": 1.0, "eligible": true}},
+    {"index": 17, "timestamp": "1980-06-05T00:00:00+00:00", "available_at": "1981-01-13T03:35:00+00:00", "score": 0.6875, "details": {"window_end": "1981-01-15T00:00:00+00:00", "rows": 32, "coverage": 0.9917379712301587, "eligible": false}}
+  ],
+  "metadata": {
+    "threshold": 0.6895833333333332,
+    "median_rows": 32.0,
+    "eligible_windows": 14,
+    "occupied_states": 4,
+    "distinct_feature_rows": 244,
+    "noise_rows": 30
+  },
+  "evaluation": {
+    "primary_tolerance_fraction": 0.025,
+    "by_tolerance_fraction": {
+      "0.01": {
+        "tolerance_seconds": 3482045.4,
+        "tp": 0,
+        "fp": 1,
+        "fn": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.025": {
+        "tolerance_seconds": 8705113.5,
+        "tp": 0,
+        "fp": 1,
+        "fn": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "matches": [],
+        "unmatched_truth": [
+          "d01",
+          "d02",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": [
+          0
+        ]
+      },
+      "0.05": {
+        "tolerance_seconds": 17410227.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 3,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "matches": [
+          {
+            "truth_id": "d01",
+            "change_offset": 0,
+            "estimate_minus_onset_seconds": 9242340.0,
+            "distance_to_truth_interval_seconds": 9242340.0,
+            "availability_minus_onset_seconds": 221972040.0
+          }
+        ],
+        "unmatched_truth": [
+          "d02",
+          "d03",
+          "d04"
+        ],
+        "unmatched_changes": []
+      }
+    }
+  },
+  "score_series": {
+    "observation_count": 18,
+    "published_count": 18,
+    "stride": 1,
+    "keeps_alarm_indices_and_last_observation": true
+  }
+}
