@@ -13,35 +13,112 @@ Kairo constructs a feature matrix for each perspective, scales and optionally re
 
 The unit of observation determines what a feature vector can describe. The intra-case perspective uses an event and its case history to represent how work progresses. The resource and inter-case perspectives each use calendar intervals, called \emph{feature windows}, to summarize behavior across cases. A per-event representation of workload would repeat the same shared conditions for every event and give busy intervals more influence. A window summary of individual behavior would average away the position and order of many events. The separate matrices retain the appropriate unit for each question. They also give resource assignment and process-wide timing their own distance scales and cluster assignments. For example, an activity can move to another team while the observed activity sequences remain the same. The resource features can register that shift while the intra-case features remain stable.
 
+\begin{Definition}[Perspective and feature representation]\label{def:feature-representation}
+Let $p$ denote the intra-case, resource, or inter-case perspective. Its observation set is $O_{\mathrm{intra}}=E$ for the intra-case perspective. For $p\in\{\mathrm{res},\mathrm{inter}\}$, $O_p$ contains the windows in $\mathcal{W}_{\delta_p}$ from the window of the first event to that of the last, for the chosen feature width $\delta_p$. Each observation $o\in O_p$ has a time anchor $t_p(o)$. For an event this is $t_{\mathrm{intra}}(e)=t(e)$, and for a feature window it is $t_p(W)=b(W)$. The feature map $x_p\colon O_p\to\mathbb{R}^{d_p}$ supplies a row of $d_p$ selected numerical features for each observation.
+\end{Definition}
+
+Feature groups determine which columns are present. Activity and resource pairs contribute columns when observed in the log. The indicator $\mathbf{1}[\cdot]$ takes the value one when its condition holds and zero otherwise. A ratio with a zero denominator, a mean of an empty sample, and a sample standard deviation with too few values are entered as zero. Elapsed gaps and event durations are expressed in minutes for the feature calculations. Both window-based perspectives retain empty feature windows so that quiet periods remain visible.
+
 \subsubsection{Intra-Case Perspective}
 
-For each event, the feature vector summarizes its case prefix. Activity indicators record the current activity and the activities at selected positions immediately before it. The set and relative frequencies of activities in the prefix describe which work has occurred and how often it has repeated. Counts of directly-follows relations capture ordering information over the prefix. An optional progress feature divides the current event position by the observed length of the complete trace. It helps distinguish similar prefixes at different stages of a case and uses information available after the trace is known.
+The current and recent activities locate the event within its case. The prefix summaries preserve a longer history, including the order and repetition of activities. The optional progress coordinate helps distinguish similar prefixes at different stages of a case. It uses the length of the trace in the complete input log.
+
+\begin{Definition}[Intra-case features]\label{def:intra-features}
+For $e=e_{c,j}$ and activity $a^\star\in A$, let $N_{a^\star}(e)=|\{v\in\pi(e):a(v)=a^\star\}|$. The current-activity indicator is $\mathbf{1}[a(e)=a^\star]$. The past-activity indicator at positive lag $\ell$ is $\mathbf{1}[a(e_{c,j-\ell})=a^\star]$ when $j>\ell$ and zero otherwise. The chosen lag limit gives the number of these past-activity blocks. Prefix presence and frequency use $\mathbf{1}[N_{a^\star}(e)>0]$ and $N_{a^\star}(e)/j$. For an observed directly-follows pair $(a^\star,a')$, its count is
+\[
+  \bigl|\{v\in\pi(e):v^-\text{ exists},\,
+            (a(v^-),a(v))=(a^\star,a')\}\bigr|.
+\]
+The progress coordinate is $j/m_c$. The requested groups of these coordinates form $x_{\mathrm{intra}}(e)$.
+\end{Definition}
 
 \subsubsection{Resource Perspective}
 
-Each feature vector describes how resources work across cases during its feature window. Event counts and distinct case counts per resource summarize workload. For each activity, the vector records the fraction of events with a known resource that each resource performed. Reassignment can change these shares even when the total workload stays stable. A handover occurs when consecutive events in a case have different resources. For each resource, the vector records the shares of its outgoing handovers by receiving resource. A handover counts in the window of the receiving event, and its gap is the elapsed time from the preceding event to the receiving event. The vector can include mean gaps per receiving resource and, when available, mean activity durations per resource.
+Event counts and distinct case counts per resource summarize workload. Activity shares can reveal a reassignment even when the total workload stays stable. A handover counts in the window of the receiving event, so transfers across window boundaries remain visible.
+
+\begin{Definition}[Resource features]\label{def:resource-features}
+For a feature window $W$, write $E_{W,\rho}=\{e\in E_W:r(e)=\rho\}$ and let $H_W$ consist of events in $E_W$ whose predecessor and current event have different known resources. For resources $\rho,\sigma\in R$ let
+\[
+  H_{W,\rho,\sigma}=\{e\in H_W:r(e^-)=\rho,\ r(e)=\sigma\}.
+\]
+Resource $\rho$ has $|E_{W,\rho}|$ events and $|\{c(e):e\in E_{W,\rho}\}|$ distinct cases. Its mean event duration uses the available $\operatorname{dur}(e)$ for $e\in E_{W,\rho}$, and its mean incoming handover gap uses $g(e)$ for $e\in H_W\cap E_{W,\rho}$. The activity share for $(a^\star,\rho)$ and the handover share for $(\rho,\sigma)$ are, respectively,
+\[
+  \frac{|\{e\in E_{W,\rho}:a(e)=a^\star\}|}
+       {|\{e\in E_W:a(e)=a^\star,\ r(e)\ne\bot\}|}
+  \qquad\text{and}\qquad
+  \frac{|H_{W,\rho,\sigma}|}{\sum_{\nu\in R}|H_{W,\rho,\nu}|}.
+\]
+The requested coordinate groups give $x_{\mathrm{res}}(W)$ for the selected resources. A handover share column uses two selected endpoints. Each share retains its full denominator even when some resource columns are omitted.
+\end{Definition}
 
 \subsubsection{Inter-Case Perspective}
 
-Each feature vector describes process-wide conditions during its feature window. The vector can include arrivals and completions, using the first and last observed events of each case, as well as the number of cases that record activity and the number of events per such case. The mean and spread of gaps between consecutive events within cases summarize the pace of work. The later event determines the window for each gap. A stall feature counts cases whose last event before the window ends is older than a selected limit and whose next event occurs after that boundary. It can therefore register stalled cases during an interval with no events. The approach can also use means and standard deviations for numerical case attributes and category shares for categorical attributes. These summaries are calculated over the events in the window, so a case that records more events contributes more to them.
+Arrivals and completions help distinguish a change in incoming demand from a change in how quickly cases finish. Gaps are recorded where the next event happens. A separate stall feature can register waiting cases during a window with no events.
 
-Both window-based perspectives keep every feature window from the window of the first event to that of the last. Kairo zero-fills absent counts and undefined summaries in the selected features. Keeping windows with no events makes quiet periods visible and preserves the timing of the observations. Feature selection determines which changes can affect the subsequent state assignments. It can be adapted to the available attributes and the process questions of interest.
+\begin{Definition}[Inter-case features]\label{def:inter-features}
+For $W$, let $C_W=\{c(e):e\in E_W\}$. The active case count is $|C_W|$, and the activity intensity is $|E_W|/|C_W|$ events per active case. Arrival and completion counts are $|\{c\in C:s_c\in W\}|$ and $|\{c\in C:f_c\in W\}|$. The mean and sample standard deviation of within-case gaps use the sample $(g(e):e\in E_W,\ e^-\text{ exists})$. Given a positive stall limit $\eta_{\rm stall}$, the stalled case count is
+\[
+  \bigl|\{c\in C:\exists\,e\in\tau_c,\ e^+\text{ exists and }
+                            t(e)+\eta_{\rm stall}<d(W)<t(e^+)\}\bigr|.
+\]
+For a numerical case attribute $\alpha$, the mean and sample standard deviation use the values $v_\alpha(e)$ observed in $E_W$. For a categorical attribute $\alpha$ and an observed category $z$, its share is $|\{e\in E_W:v_\alpha(e)=z\}|/|E_W|$. These groups provide the selected coordinates of $x_{\mathrm{inter}}(W)$.
+\end{Definition}
+
+Attribute summaries weight cases by their events in the window. Missing numerical values do not enter the sample, and events with missing categories still enter the denominator of the categorical shares. Taken together, feature selection and the choice of observation unit determine which changes can appear in the subsequent state assignments.
 
 \subsection{Scaling and Reducing the Vectors}\label{sec:approach-reduction}
 
-Feature columns can measure counts, proportions, or durations. Columns with a large numerical range could dominate the distances used in clustering. We scale the values within each perspective using either a common range or standardization by the mean and standard deviation. Binary activity indicators can retain their original scale. Case identifiers and timestamps link observations back to the log and stay outside the input to scaling, dimensionality reduction, and clustering.
+Feature columns can measure counts, proportions, or durations. A column with a large numerical range could dominate the distances used in clustering. Scaling puts the selected columns on a comparable footing within each perspective. Binary activity indicators can retain their original scale. Case identifiers and timestamps link observations back to the log and stay outside the feature vectors.
 
-Principal component analysis (PCA)~\cite{hotelling1933components} is optional. Feature groups can describe related aspects of behavior, such as the presence and frequency of the same activity. PCA projects the vectors onto directions ordered by the variance they capture. Retaining the leading components gives the clustering stage fewer coordinates to work with. A change in a low-variance direction can be lost when that direction is discarded. This motivates checking the variance retained or retaining the original feature dimensions when needed.
+\begin{Definition}[Representation used for clustering]\label{def:cluster-representation}
+For perspective $p$, let $x_{pi}(o)$ be column $i$ of $x_p(o)$. The scaled vector $\widetilde{x}_p(o)$ uses the following transformation column by column:
+\[
+  \widetilde{x}_{pi}(o)=\frac{x_{pi}(o)-\mu_{pi}}{\sigma_{pi}}.
+\]
+For standard score scaling, $\mu_{pi}$ is the column mean and $\sigma_{pi}$ its sample standard deviation. For min-max scaling, these are the minimum and the range, respectively. A constant column selected for scaling maps to zero. Columns excluded from scaling keep their original values.
+
+With principal component analysis (PCA), let $\overline{x}_p$ be the mean scaled vector. Let $U_\ell$ contain the leading $\ell$ orthonormal eigenvectors of the scaled data's covariance matrix, ordered by decreasing eigenvalue. The clustering input is $z_p(o)=U_\ell^\top(\widetilde{x}_p(o)-\overline{x}_p)$. When this reduction is skipped, $z_p(o)=\widetilde{x}_p(o)$.
+\end{Definition}
+
+Related features, such as activity presence and frequency, can contribute similar information. PCA~\cite{hotelling1933components} can summarize that information in fewer coordinates. To choose the cut, an analyst can see the share of variance retained, the sum of the retained eigenvalues divided by the sum of all eigenvalues. The analyst can also inspect reconstruction error, the mean squared norm of $(\widetilde{x}_p(o)-\overline{x}_p)-U_\ell z_p(o)$ over the fitted observations. A change expressed mainly in a discarded direction can be lost even when the projection retains most of the overall variance.
 
 \subsection{Learning States}\label{sec:approach-states}
 
-Clustering assigns a state to each feature vector by grouping similar observations. This gives each perspective a set of recurring patterns whose prevalence can be compared over time. $k$-means uses a selected number of centroids and assigns observations to their nearest centroid~\cite{lloyd1982quantization}. A self-organizing map (SOM) places prototypes on a grid and trains neighboring prototypes together, making the state space easier to browse~\cite{kohonen1982maps}. Density-based spatial clustering of applications with noise (DBSCAN) finds dense groups and labels observations outside them as noise~\cite{ester1996density}. Kairo keeps the noise label as a state, so changes in the share of sparse observations can contribute to the signal.
+Clustering groups similar observations. The groups give each perspective a set of recurring patterns whose prevalence can be compared over time.
 
-The same fitted representation and clustering apply throughout each perspective of the log. This makes a state label comparable across periods. The state labels of successive events form a trajectory within a case. In the resource and inter-case perspectives, the sequence of feature-window labels forms a trajectory for the log. Analysts can use these trajectories and the original features to interpret what an increase or decrease in a state's prevalence represents. The full-log fit makes the analysis presented here retrospective.
+\begin{Definition}[State model and trajectory]\label{def:state-model}
+A fitted state model for perspective $p$ assigns a label $s_p(o)$ to each $o\in O_p$ based on $z_p(o)$. Its observed label set is $S_p=\{s_p(o):o\in O_p\}$. The observations assigned label $s$ form the state $\{o\in O_p:s_p(o)=s\}$. Applying $s_p$ along a case trace gives an intra-case trajectory. Applying it along the ordered feature windows gives a resource or inter-case trajectory. A visit is a maximal contiguous sequence with the same label in the trajectory. It ends when the next visit begins. The final visit ends at the last event's timestamp for a case or at the end of the last feature window for a window-based trajectory.
+\end{Definition}
+
+Kairo uses the following ways to obtain the assignment $s_p$. In the expressions below, $z=z_p(o)$ is an observation in the clustering representation. Euclidean distance is $\|z-v\|$ for a comparison vector $v$. Cosine distance compares directions using $1-\langle z,v\rangle/(\|z\|\|v\|)$ for nonzero vectors.
+
+\paragraph{$k$-means.}
+The model fits $k$ centers $\mu_s$ with the objective of minimizing $\sum_{o\in O_p}\|z_p(o)-\mu_{s_p(o)}\|^2$, the within-state sum of squared Euclidean distances. The updates alternate between assigning observations to the nearest center and moving each occupied center to the mean of its assigned vectors~\cite{lloyd1982quantization}. The chosen $k$ controls how finely the model can split the observations.
+
+\paragraph{Self-organizing map.}
+A self-organizing map (SOM) has a prototype $\mu_g$ at each grid cell $g\in G$. Given $z$, the winning cell $g^\ast$ minimizes the selected distance $d(z,\mu_g)$. Training moves the winner and its neighbors toward the vector. A prototype takes a step $\beta H(g,g^\ast)(z-\mu_g)$, where $\beta$ is the current learning rate and $H$ weights cells by their proximity to the winner on the grid~\cite{kohonen1982maps}. After training, the winning cell is the observation's label. The grid lets an analyst browse nearby states together.
+
+\paragraph{Density-based clustering.}
+Density-based spatial clustering of applications with noise (DBSCAN) forms neighborhoods using a radius $\varepsilon$. To count the neighborhood of $z$, Kairo sums the multiplicities of the distinct vectors within $\varepsilon$, including $z$ itself. A core vector has a neighborhood count of at least $m$. Core vectors linked by chains of core neighbors form clusters. Each non-core vector within $\varepsilon$ of a core joins a cluster of such a core. Vectors outside all core neighborhoods receive a noise label~\cite{ester1996density}. Kairo assigns these labels back to the original observations. The noise label contributes to state shares when the fit finds a cluster. To help set $\varepsilon$, the dashboard can plot the distances from observations to their $m$th nearest neighbor in increasing order, counting the query observation among its neighbors.
+
+The same fitted representation and clustering apply throughout each perspective of the log. This makes a state label comparable across periods. State frequencies are counts of assigned observations, and the analyst can use the original features to interpret what a state represents. For comparison in the clustering space, a state is represented by a centroid for $k$-means, a cell prototype for a SOM, or the mean of its distinct core vectors for DBSCAN. Noise has no representative. Representative distances support visualization and do not enter the subsequent drift score. The full-log fit makes the analysis presented here retrospective.
+
+\paragraph{Inspecting the fitted states.}
+The SOM quantization error averages $d(z_p(o),\mu_{s_p(o)})$ across observations. The SOM occupancy entropy measures how evenly the observations are spread across the grid. For cell shares $f_g$, it divides the entropy $-\sum_{g:f_g>0} f_g\log f_g$ by $\log |G|$ for a grid with multiple cells. Two further comparisons examine the compactness and separation of the states, excluding DBSCAN noise.
+
+\begin{Definition}[Cluster separation and compactness]\label{def:cluster-diagnostics}
+For an observation $o$, let $a_o$ be its mean distance to the other members of its state and $b_o$ be the least mean distance to the members of any other state. The silhouette averages $(b_o-a_o)/\max(a_o,b_o)$ across evaluated observations, with zero for a singleton state or a zero denominator. For the Calinski-Harabasz score, let $n$ be the number of retained observations, $k$ the number of their occupied states, and $n_s$ the count of state $s$. Write $\bar z_s$ for the mean vector in state $s$ and $\bar z$ for the overall mean. For a nondegenerate clustering the score is the ratio
+\[
+ \frac{\sum_s n_s\|\bar z_s-\bar z\|^2/(k-1)}
+      {\sum_o\|z_p(o)-\bar z_{s_p(o)}\|^2/(n-k)}.
+\]
+\end{Definition}
+
+The silhouette examines separation from the point of view of individual observations~\cite{rousseeuw1987silhouettes}. The Calinski-Harabasz score measures separation of the state means relative to variation within states~\cite{calinski1974dendrite}. These diagnostics characterize how the model organizes the feature vectors. Drift localization is assessed separately in \autoref{sec:assessment}.
 
 \subsection{Measuring Changes in State Frequencies}\label{sec:approach-signal}
 
-The detector builds a time series from \emph{signal windows}, which can span several observations. An intra-case state is assigned to the signal window containing the event timestamp. A resource or inter-case state is assigned by the start time of its feature window, and the signal window is at least as long as the feature window. This allows the feature window to preserve the detail needed to describe an observation and the signal window to collect enough observations for comparison. Short signal windows can locate changes more precisely but may give unstable estimates when few observations are available. Longer windows can stabilize the frequencies while mixing behavior from before and after a change. \autoref{fig:approach-signal-windows} illustrates what the detector compares.
+The detector builds a time series from \emph{signal windows}. Feature windows preserve the detail needed to describe an observation, while signal windows collect observations to compare. Short signal windows improve time resolution. A window with few observations can give unstable estimates. Longer windows can stabilize frequencies while mixing behavior from before and after a change. \autoref{fig:approach-signal-windows} illustrates the relation between these windows.
 
 \begin{figure}[htbp]
   \centering
@@ -50,12 +127,39 @@ The detector builds a time series from \emph{signal windows}, which can span sev
   \label{fig:approach-signal-windows}
 \end{figure}
 
-Let $K$ be the set of observed states for a perspective and let $n_w(s)$ count observations with state $s$ in signal window $w$. For each window with observations, the state distribution is
+\begin{Definition}[Signal windows and state distributions]\label{def:state-distributions}
+Fix a perspective $p$ and a signal window width $\Delta$. For a window-based perspective require $\Delta\geq\delta_p$. Group observations by the window in $\mathcal W_\Delta$ containing their anchor time $t_p(o)$, using the event timestamp for an intra-case observation or the feature-window start for a resource or inter-case observation. Order the signal windows that receive observations by start time, and denote them by $V_j$. Let $N_j$ count all observations assigned to $V_j$. The share of any observed model label $s\in S_p$ is
 \[
-  p_w(s) = \frac{n_w(s)}{\sum_{u\in K} n_w(u)}, \qquad s\in K.
+  P_j(s)=\frac{|\{o\in O_p:t_p(o)\in V_j,\ s_p(o)=s\}|}{N_j},
+  \qquad
+  N_j=|\{o\in O_p:t_p(o)\in V_j\}|.
 \]
-A reference distribution $q_w$ is the distribution of the previous observed signal window, an average of recent observed windows, or an average over the complete log. The previous-window reference captures local changes and is sensitive to fluctuations between successive windows. A recent average smooths the reference and can retain a contrast until recent windows reflect the new behavior. A whole-log average provides a fixed retrospective baseline. The local references produce scores once the required history is available.
+Each observation contributes to a single distribution. A signal window with no observations contributes no distribution. A feature window with no events can still contribute a state.
+\end{Definition}
 
-The drift score of window $w$ is $D(p_w,q_w)$, where $D$ measures the difference between the distributions. Available choices include Jensen-Shannon divergence~\cite{lin1991divergence}, total variation, Hellinger distance, and Kullback-Leibler divergence with smoothing. These comparisons use state frequencies. Distances between cluster representatives can help interpret the signal, while the signal itself depends on changes in the shares of the labels.
+The reference determines what counts as recent or typical behavior. The previous-window reference is sensitive to local fluctuations. Averaging recent windows smooths the reference, and a whole-log average gives a fixed retrospective point of comparison.
 
-The resulting scores are indexed by signal-window start. A high score marks an interval to inspect. It can reflect a change in process behavior or ordinary variation, particularly when a window contains few observations or only part of the monitored period. Different perspectives can respond to the same change, so their signals help guide investigation of possible causes. \autoref{sec:assessment} explains how the benchmark turns the scores into alarms for comparison with annotated changes.
+\begin{Definition}[Reference distribution]\label{def:drift-reference}
+For the signal window $V_j$, use the reference index set $I_j=\{j-1\}$ for the previous window or $I_j=\{j-h,\ldots,j-1\}$ for a recent average of $h$ windows. The whole-log reference uses all populated signal-window indices, including $j$. In each case the reference is the unweighted mean $Q_j=|I_j|^{-1}\sum_{i\in I_j}P_i$. A local reference is defined once all its required preceding windows are available.
+\end{Definition}
+
+\begin{Definition}[Divergence and drift score]\label{def:drift-score}
+The score assigned to $b(V_j)$ is $\lambda_j=D(P_j,Q_j)$ for a chosen comparison $D$. For distributions $P,Q$ over $S_p$, write $M=(P+Q)/2$ and define the smoothed Kullback-Leibler term with a fixed small $\epsilon>0$:
+\[
+  K_\epsilon(P,Q)=
+  \sum_{s\in S_p}(P(s)+\epsilon)\log\frac{P(s)+\epsilon}{Q(s)+\epsilon}.
+\]
+The available comparisons are
+\[
+\begin{aligned}
+D_{\mathrm{KL}}(P,Q)&=K_\epsilon(P,Q),\\
+D_{\mathrm{JS}}(P,Q)&=\bigl(K_\epsilon(P,M)+K_\epsilon(Q,M)\bigr)/2,\\
+D_{\mathrm{TV}}(P,Q)&=\tfrac12\sum_{s\in S_p}|P(s)-Q(s)|,\\
+D_{\mathrm{H}}(P,Q)&=\|\sqrt P-\sqrt Q\|/\sqrt{2}.
+\end{aligned}
+\]
+\end{Definition}
+
+These comparisons are smoothed Kullback-Leibler divergence, Jensen-Shannon divergence, total variation, and Hellinger distance. The smoothing keeps the logarithmic terms finite when a state is absent in a window. Jensen-Shannon averages differences to a common midpoint~\cite{lin1991divergence}. Total variation sums absolute changes in state shares. Hellinger uses the Euclidean distance between the vectors of square-root shares, with normalization.
+
+A high score indicates an interval to inspect. It can reflect a change in process behavior or ordinary variation, particularly when a window has low support or covers only part of the monitored period. Different perspectives can respond to the same change. \autoref{sec:assessment} defines the benchmark's alarm rule for turning these scores into estimated change times.

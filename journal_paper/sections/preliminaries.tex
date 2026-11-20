@@ -1,7 +1,25 @@
 \section{Preliminaries}\label{sec:preliminaries}
 
-A case is an instance of a process, such as a request handled by a service team. In a traditional event log, each event records an activity, a timestamp, and the case to which it belongs. An event can also record who performed the activity and when it started. Case attributes, such as the category of a request, describe the case as a whole. A \emph{trace} is the sequence of observed events for a case in timestamp order, with ties resolved using their order in the input. The \emph{prefix} at an event contains that event and its predecessors in the same trace. A \emph{directly-follows relation} is an ordered pair of activities at consecutive positions in a trace.
+A case is an instance of a process, such as a request handled by a service team. An event log $L$ records a finite, nonempty set $E$ of event identities. For event $e$, let $c(e)$ be its case, $a(e)$ its activity, and $t(e)$ its timestamp. We write $C$ and $A$ for the observed sets of cases and activities. Distinct events can have the same values in all of these fields. When present, $r(e)$ gives a resource in the observed resource set $R$, and $\operatorname{dur}(e)$ gives an event duration. A duration can be recorded directly or derived from the start and completion timestamps. For an attribute $\alpha$, let $v_\alpha(e)$ be the value carried by event $e$. A case attribute, such as a request category, typically carries the same case value on each of its events. We write $\bot$ for a missing optional value.
 
-A \emph{calendar window} is a fixed-length interval on a time grid. It includes its start and excludes its end. The grid lets us group events from different cases by time, even when a case spans several windows. An event at a boundary belongs to the window that begins there.
+\begin{Definition}[Ordered log and case history]\label{def:ordered-log}
+Let $i(e)$ be the position of $e$ in the input. Order the events by the pair $(t(e),i(e))$, comparing timestamps first. The \emph{trace} $\tau_c=(e_{c,j})_{j=1}^{m_c}$ lists the $m_c$ events of case $c$ in this order. At event $e=e_{c,j}$, the \emph{prefix} $\pi(e)$ consists of the trace through position $j$. The predecessor $e^-$ and successor $e^+$ are the adjacent events in the trace, when they exist. An event with a predecessor contributes a directly-follows pair $(a(e^-),a(e))$ and a gap $g(e)=t(e)-t(e^-)$. The first and last timestamps of case $c$ are written $s_c$ and $f_c$.
+\end{Definition}
 
-In a sudden drift, the change takes place at a boundary. In a gradual drift, the change unfolds over a period. A previous pattern can also recur. We use \emph{state} to mean a cluster of similar observations. In this sense, a state describes a local pattern of behavior that can occur repeatedly within the same process regime. Drift evidence comes from changes in how often these states occur over time.
+A trace variant is the activity sequence $(a(e_{c,j}))_{j=1}^{m_c}$. A directly-follows graph uses activities as vertices and the observed directly-follows pairs as directed edges, which can be weighted by their counts. A gap measures elapsed time between recorded events, so its interpretation depends on what those timestamps record.
+
+\begin{Definition}[Calendar grid]\label{def:calendar-grid}
+Given a width $\delta>0$ and a fixed origin $b_\star$, window $j$ is
+\[
+  W_j(\delta)=[b_\star+j\delta,\ b_\star+(j+1)\delta),\qquad j\in\mathbb{Z}.
+\]
+The grid $\mathcal{W}_\delta$ lists these windows in order of $j$. We write $b(W)$ and $d(W)$ for the start and end of $W$, and $E_W=\{e\in E:t(e)\in W\}$ for its events. A timestamp at a boundary belongs to the window that begins there. The grids share the origin of the timestamp scale used for calendar binning, which is the epoch for the UTC timestamps in the assessment.
+\end{Definition}
+
+The grid lets us group events from different cases by time, even when a case spans several windows. To describe when the underlying process changes, let $\mathcal{P}(t)$ be the distribution of a chosen aspect of its behavior at time $t$, such as activity order or resource assignment.
+
+\begin{Definition}[Concept drift and temporal episode]\label{def:drift}
+A concept drift is a transition between different process distributions $\mathcal{P}^{-}$ and $\mathcal{P}^{+}$. For a sudden drift at $b$, the distribution changes from $\mathcal{P}^{-}$ to $\mathcal{P}^{+}$ at $b$ and the temporal episode is the point interval $[b,b]$. A gradual drift has an episode $[b,d]$ with $b<d$. Over this interval $\mathcal{P}(t)$ transitions from $\mathcal{P}^{-}$ to $\mathcal{P}^{+}$. A drift is recurring when $\mathcal{P}^{+}$ equals a distribution seen in an earlier regime.
+\end{Definition}
+
+An annotation records an episode when its timing is known. Kairo estimates changes from observations in the log. Its state labels describe local patterns that can repeat within a regime, and changes in their frequencies provide observable evidence of drift.
