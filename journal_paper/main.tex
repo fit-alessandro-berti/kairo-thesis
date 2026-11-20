@@ -22,14 +22,6 @@
 \input{figures/style}
 
 \newcommand{\softwarepm}{PM4Py}
-\newlength{\PlaceholderSide}
-\newcommand{\FigurePlaceholder}[2][0.35]{%
-  \begingroup
-  \setlength{\PlaceholderSide}{#1\linewidth}%
-  \fbox{\parbox[c][\PlaceholderSide][c]{\PlaceholderSide}{%
-    \centering\small\hspace{0pt}#2\par}}%
-  \endgroup
-}
 
 \Title{Detecting Concept Drift with Process States in Case-Centric Event Logs}
 \Author{Bora Deren and Alessandro Berti *}

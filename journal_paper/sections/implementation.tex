@@ -88,10 +88,12 @@ The dashboard opens with log upload and column mapping, then offers the same seq
   \end{adjustwidth}
 \end{table}
 
-\begin{figure}[H]
-  \centering
-  \FigurePlaceholder{Screenshot of the Kairo drift view showing the divergence signal, adjustable threshold, state distributions, and observation counts.}
-  \caption{Dashboard view for investigating a candidate drift. The analyst can compare a high score with the state shares and observation count behind it.}
+\begin{figure}[!p]
+  \begin{adjustwidth}{-\extralength}{0cm}
+    \centering
+    \includegraphics[width=\linewidth]{figures/dashboard-drift.png}
+  \end{adjustwidth}
+  \caption{The resource drift view for the synthetic Rheon Single 11 log, cropped to show the threshold slider and three plots. The highest score occurs in the window containing the resource reassignment. The companion plots show the state shares and observation count for each window.}
   \label{fig:implementation-dashboard}
 \end{figure}
 
