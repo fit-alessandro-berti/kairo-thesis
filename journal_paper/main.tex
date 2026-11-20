@@ -7,14 +7,17 @@
 \pubyear{2026}
 \copyrightyear{2026}
 
-% Keep the MDPI layout and remove review line numbers and the sample DOI.
+% Keep the MDPI layout while identifying this version as a manuscript draft.
 \let\linenumbers\nolinenumbers
 \setlength{\headheight}{21pt}
 \addtolength{\topmargin}{-9pt}
+\newcommand{\DraftStatus}{Manuscript draft for \textit{Applied Sciences}}
+\fancyhead[L]{\footnotesize\vspace{2pt}\DraftStatus\\\rule{\fulllength}{0.4pt}}
 \fancyfoot[R]{}
 \makeatletter
-\apptocmd{\ps@plain}{\fancyfoot[R]{}}{}{}
+\apptocmd{\ps@plain}{\fancyfoot[L]{\footnotesize\DraftStatus}\fancyfoot[R]{}}{}{}
 \makeatother
+\renewcommand{\cright}{\DraftStatus.}
 
 \newcommand{\softwarepm}{PM4Py}
 \newlength{\PlaceholderSide}
