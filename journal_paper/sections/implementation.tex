@@ -1,16 +1,92 @@
 \section{Implementation}\label{sec:implementation}
 
-\subsection{Analysis Library}
+Kairo provides a Python library and a browser-based dashboard that uses the library for its computations. The library is designed for scripted experiments and for extending the analysis. The dashboard presents the same stages in a guided workflow and gives analysts plots and summaries for deciding which settings to try next. The comparative assessment uses the library and its own alarm rule, described in \autoref{sec:assessment}.
 
-Kairo is a Python library that implements the analysis in \autoref{sec:approach}. Feature extraction, scaling, dimensionality reduction, clustering, and drift scoring are available as separate stages. This lets an analyst inspect intermediate results, choose features that the log supports, and reuse the same state and drift analysis with different features. The library links observations back to their events or calendar windows, so the states and scores can be examined in the context of the original log. The benchmark uses the same analysis library as the graphical interface.
+\subsection{Analysis Library}
+\label{sec:implementation-library}
+
+The library exposes separate operations for preparing a log, building and transforming feature matrices, learning states, and comparing their distributions. Intermediate tables retain timestamps and, where applicable, case identifiers. This lets an analyst link a state back to the observation it describes. The metadata is kept separate from the numerical inputs to scaling, projection, and clustering. Analysts can provide their own numerical features or compatible state assignments and reuse the remaining stages. This makes it possible, for example, to compare the effect of adding a workload measure while keeping the choice of clustering method and drift settings fixed.
+
+\autoref{tab:implementation-inputs} describes the choices before clustering. They determine which changes can be seen and how much information the state model has to summarize. In the resource perspective, selecting a subset of resources limits the output columns while preserving the full set of observed resources in the denominators of the retained shares. In the inter-case perspective, selecting the type of each case attribute determines whether the feature describes numerical values or the mix of categories. Kairo keeps these matrices in memory, so selecting feature groups or resources also helps control matrix width when a log contains many activities or resources.
+
+\begin{table}[H]
+  \caption{Input and representation choices. The dashboard exposes the built-in options, while the library also accepts user-supplied feature matrices.}
+  \label{tab:implementation-inputs}
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.14}
+  \renewcommand{\tabularxcolumn}[1]{p{#1}}
+  \begin{adjustwidth}{-\extralength}{0cm}
+  \begin{tabularx}{\fulllength}{@{}>{\raggedright\arraybackslash}p{0.16\fulllength}>{\raggedright\arraybackslash}p{0.39\fulllength}>{\raggedright\arraybackslash}X@{}}
+    \toprule
+    \textbf{Stage} & \textbf{Available choices} & \textbf{Effect on the analysis} \\
+    \midrule
+    Log mapping & Load an eXtensible Event Stream (XES) or comma-separated values (CSV) log. Map the case identifier, activity, and timestamp. Optional fields include event identifiers, resources, start times, durations, and case attributes. & Mapping lets the same pipeline handle logs with different schemas. The dashboard can derive durations from start and completion times when no duration is supplied. \\
+    Intra-case features & Choose current and past activity indicators, prefix activity presence and frequencies, directly-follows counts, and case progress. Set the number of past positions for lagged activity indicators. & Individual event vectors preserve steps within cases. Longer activity histories add detail, with more columns and potentially more distinct patterns. \\
+    Resource features & Set a feature-window width and choose resources and feature groups. Available groups cover workload, activity assignments, handovers, and mean gaps or durations. & The selection determines whose work contributes columns and which changes the states can reflect. Duration features require a mapped or derived duration. \\
+    Inter-case features & Set a feature-window width and choose activity across cases, arrivals, completions, event gaps, stalled cases, and summaries of mapped case attributes. Set the inactivity limit for counting stalled cases. & The window controls the time scale at which load and timing are summarized. The inactivity limit sets which gaps count as stalls. Attribute summaries expose changes in case composition. \\
+    Scaling & Use standard score scaling, min-max scaling, or unchanged feature values. The library allows callers to change which feature groups are exempt from scaling. & Scaling controls how much the range or spread of a feature affects the distances used to learn states. Binary activity indicators retain their original values by default. \\
+    Projection & Choose how many principal components to fit and retain for principal component analysis (PCA). PCA can also be skipped after the selected scaling step. & Explained variance and reconstruction error help choose a compact representation. Keeping more components preserves more variation and leaves a larger space to cluster. \\
+    \bottomrule
+  \end{tabularx}
+  \end{adjustwidth}
+\end{table}
+
+\autoref{tab:implementation-models} describes the choices from learning states to reading a drift signal. Changing the clustering method or its settings can change which observations share a state. Changing the signal window or reference changes the comparison while reusing the state assignments. For density-based clustering, the library combines identical vectors with weights that preserve their counts, then assigns the resulting labels back to the original observations. This reduces the number of points used to build neighborhoods when prefixes or windows repeat.
+
+\begin{table}[H]
+  \caption{State and drift settings, with their practical effects. DBSCAN is density-based spatial clustering of applications with noise.}
+  \label{tab:implementation-models}
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.14}
+  \renewcommand{\tabularxcolumn}[1]{p{#1}}
+  \begin{adjustwidth}{-\extralength}{0cm}
+  \begin{tabularx}{\fulllength}{@{}>{\raggedright\arraybackslash}p{0.16\fulllength}>{\raggedright\arraybackslash}p{0.39\fulllength}>{\raggedright\arraybackslash}X@{}}
+    \toprule
+    \textbf{Stage} & \textbf{Available choices} & \textbf{Effect on the analysis} \\
+    \midrule
+    Self-organizing map (SOM) & Set the grid height and width, learning rate, and Euclidean or cosine distance. & Grid dimensions control the number and layout of available states. The learning rate controls how far prototypes move during training. Euclidean distance responds to differences in magnitude, while cosine distance compares vector direction. \\
+    $k$-means & Choose the number of clusters. The method uses Euclidean distances. & Cluster count controls how finely observations are grouped around centroids. More clusters can resolve finer patterns but leave fewer observations in each state on average. \\
+    DBSCAN & Set the neighborhood radius and minimum neighborhood count, with Euclidean or cosine distance. A sorted distance plot shows the radius each row needs to meet that count. & The radius and minimum count define what the model considers dense. The noise label lets the analyst track sparse observations among the state shares. \\
+    Signal windows & Set a calendar width. For resource and inter-case states, the dashboard offers widths at least as long as the feature windows. The library accepts compatible fixed durations, and the dashboard offers presets. & Shorter windows help localize a change. Longer windows usually include more observations and can smooth short-lived shifts. \\
+    Reference distribution & Compare with the previous observed signal window, the mean of a chosen number of recent windows, or the mean over the full log. & The previous window emphasizes local jumps. The recent mean smooths the comparison across neighboring windows, and the whole-log mean provides a fixed retrospective reference. \\
+    Distribution difference & Choose smoothed Kullback-Leibler divergence, Jensen-Shannon divergence, total variation, or Hellinger distance. & The measure changes how strongly a shift in a state's share contributes to the score. Kullback-Leibler divergence can emphasize states that are rare in the reference. \\
+    Visual threshold & Adjust the horizontal threshold on the drift chart. The dashboard initializes it from an upper quantile of the scores and counts the windows that reach it. & A threshold helps prioritize which windows to inspect. The accompanying plots show the state shares and the amount of data behind a high score. \\
+    \bottomrule
+  \end{tabularx}
+  \end{adjustwidth}
+\end{table}
 
 \subsection{Graphical Interface}
+\label{sec:implementation-dashboard}
 
-The browser-based dashboard guides analysts from log upload to drift inspection. It accepts eXtensible Event Stream (XES) and comma-separated values (CSV) files and lets the analyst map the case, activity, and timestamp fields. It also supports optional resource and case attributes. When start and completion timestamps are available, the analyst can derive duration for the resource features.
+The dashboard opens with log upload and column mapping, then offers the same sequence of pages for each perspective. The analyst can inspect examples in the feature table and open a glossary to see how each feature group is computed. Preset feature and signal window lengths provide starting points. Controls appear where they apply, such as a history length for lagged activities or a lookback length for the recent-window reference. Case attribute features appear when the required attribute types are mapped. The dashboard remembers selections as the analyst moves between pages. Rerunning a stage clears its downstream results for that perspective, so a new analysis follows the changed settings.
 
-The analyst opens a perspective and chooses its feature groups, scaling, and clustering settings. The dashboard displays feature tables and plots of explained variance and reconstruction error to help choose whether and how far to reduce the vectors. After clustering, the interface shows state frequencies and trajectories. The analyst can follow individual cases in the intra-case view or follow the log through successive feature windows in the resource and inter-case views. Comparing state frequencies across selected periods helps reveal which patterns became more or less common.
+\autoref{tab:implementation-views} shows how each view supports a decision. The analyst can refine the feature window or projection while looking at the intermediate output, then inspect the resulting states with the diagnostic measures in \cref{def:cluster-diagnostics}. In the drift view, the threshold slider helps locate candidate windows. The analyst can then compare the state distributions and observation counts around the peak, as illustrated in \autoref{fig:implementation-dashboard}. In the resource perspective, for example, an analyst can investigate a suspected reassignment by comparing state frequencies across date ranges and checking the assignment or handover features for the relevant windows.
 
-The drift view places the divergence signal alongside state distributions and observation counts for the same periods. The analyst can adjust the threshold and inspect the support behind a peak, as illustrated in \autoref{fig:implementation-dashboard}. An optional Copilot lets the analyst ask questions about selected summaries and plots. Its interpretations are intended for review against the displayed evidence. The detector and the benchmark run independently of the Copilot.
+\begin{table}[H]
+  \caption{Dashboard views and the decisions they support. Frequencies count assignments, while distributions show the relative shares within signal windows.}
+  \label{tab:implementation-views}
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.14}
+  \renewcommand{\tabularxcolumn}[1]{p{#1}}
+  \begin{adjustwidth}{-\extralength}{0cm}
+  \begin{tabularx}{\fulllength}{@{}>{\raggedright\arraybackslash}p{0.16\fulllength}>{\raggedright\arraybackslash}p{0.39\fulllength}>{\raggedright\arraybackslash}X@{}}
+    \toprule
+    \textbf{View} & \textbf{What is shown} & \textbf{Analyst task} \\
+    \midrule
+    Log and features & Mapped event preview, activity counts, log span, trace length and case duration summaries, then example feature rows and matrix dimensions. & Verify that the mapping, time coverage, and observations suit the question before fitting states. \\
+    Projection & Explained variance and reconstruction error curves, the selected cut, and a preview of the transformed observations. & Choose a cut with enough detail for the analysis or retain the original feature dimensions. \\
+    State quality & Silhouette and Calinski-Harabasz scores, with quantization error and occupancy entropy for a SOM. Silhouette and Calinski-Harabasz exclude DBSCAN noise. & Compare separation and within-state spread. On a SOM, also check how closely prototypes fit the data and how evenly the grid is used. \\
+    State profiles & State colors and distances, with a view of neighboring prototype distances for a SOM. Frequency plots compare selected date ranges side by side. & See which states are similar and which became more or less common around a candidate change. \\
+    Trajectories & Select a case or a date range for intra-case trajectories. For resource and inter-case states, select a period of the log trajectory. Visit tables summarize state changes and durations. & Inspect the order and persistence of states within cases or over calendar time. \\
+    Drift evidence & A score curve, state shares, and observation counts over time. Means and selectable quantiles summarize scores and counts. & Connect a peak to the state shares that moved and check whether the window contains enough observations to support interpretation. \\
+    \bottomrule
+  \end{tabularx}
+  \end{adjustwidth}
+\end{table}
 
 \begin{figure}[H]
   \centering
@@ -18,3 +94,5 @@ The drift view places the divergence signal alongside state distributions and ob
   \caption{Dashboard view for investigating a candidate drift. The analyst can compare a high score with the state shares and observation count behind it.}
   \label{fig:implementation-dashboard}
 \end{figure}
+
+\input{sections/parameter-assistance}
