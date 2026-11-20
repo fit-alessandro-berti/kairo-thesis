@@ -1,0 +1,61 @@
+\section{Approach}\label{sec:approach}
+
+Kairo constructs a feature matrix for each perspective, scales and optionally reduces it, assigns states by clustering, and compares state distributions over time. \autoref{fig:approach-overview} shows how the stages connect.
+
+\begin{figure}[htbp]
+  \centering
+  \FigurePlaceholder{TikZ diagram of the event log feeding the intra-case, resource, and inter-case pipelines, from feature vectors to state labels and drift signals.}
+  \caption{From an event log to perspective-specific drift signals. Each perspective uses its own observation units, feature vectors, and states.}
+  \label{fig:approach-overview}
+\end{figure}
+
+\subsection{Representing Process Behavior}\label{sec:approach-features}
+
+The unit of observation determines what a feature vector can describe. The intra-case perspective uses an event and its case history to represent how work progresses. The resource and inter-case perspectives each use calendar intervals, called \emph{feature windows}, to summarize behavior across cases. A per-event representation of workload would repeat the same shared conditions for every event and give busy intervals more influence. A window summary of individual behavior would average away the position and order of many events. The separate matrices retain the appropriate unit for each question. They also give resource assignment and process-wide timing their own distance scales and cluster assignments. For example, an activity can move to another team while the observed activity sequences remain the same. The resource features can register that shift while the intra-case features remain stable.
+
+\subsubsection{Intra-Case Perspective}
+
+For each event, the feature vector summarizes its case prefix. Activity indicators record the current activity and the activities at selected positions immediately before it. The set and relative frequencies of activities in the prefix describe which work has occurred and how often it has repeated. Counts of directly-follows relations capture ordering information over the prefix. An optional progress feature divides the current event position by the observed length of the complete trace. It helps distinguish similar prefixes at different stages of a case and uses information available after the trace is known.
+
+\subsubsection{Resource Perspective}
+
+Each feature vector describes how resources work across cases during its feature window. Event counts and distinct case counts per resource summarize workload. For each activity, the vector records the fraction of events with a known resource that each resource performed. Reassignment can change these shares even when the total workload stays stable. A handover occurs when consecutive events in a case have different resources. For each resource, the vector records the shares of its outgoing handovers by receiving resource. A handover counts in the window of the receiving event, and its gap is the elapsed time from the preceding event to the receiving event. The vector can include mean gaps per receiving resource and, when available, mean activity durations per resource.
+
+\subsubsection{Inter-Case Perspective}
+
+Each feature vector describes process-wide conditions during its feature window. The vector can include arrivals and completions, using the first and last observed events of each case, as well as the number of cases that record activity and the number of events per such case. The mean and spread of gaps between consecutive events within cases summarize the pace of work. The later event determines the window for each gap. A stall feature counts cases whose last event before the window ends is older than a selected limit and whose next event occurs after that boundary. It can therefore register stalled cases during an interval with no events. The approach can also use means and standard deviations for numerical case attributes and category shares for categorical attributes. These summaries are calculated over the events in the window, so a case that records more events contributes more to them.
+
+Both window-based perspectives keep every feature window from the window of the first event to that of the last. Kairo zero-fills absent counts and undefined summaries in the selected features. Keeping windows with no events makes quiet periods visible and preserves the timing of the observations. Feature selection determines which changes can affect the subsequent state assignments. It can be adapted to the available attributes and the process questions of interest.
+
+\subsection{Scaling and Reducing the Vectors}\label{sec:approach-reduction}
+
+Feature columns can measure counts, proportions, or durations. Columns with a large numerical range could dominate the distances used in clustering. We scale the values within each perspective using either a common range or standardization by the mean and standard deviation. Binary activity indicators can retain their original scale. Case identifiers and timestamps link observations back to the log and stay outside the input to scaling, dimensionality reduction, and clustering.
+
+Principal component analysis (PCA)~\cite{hotelling1933components} is optional. Feature groups can describe related aspects of behavior, such as the presence and frequency of the same activity. PCA projects the vectors onto directions ordered by the variance they capture. Retaining the leading components gives the clustering stage fewer coordinates to work with. A change in a low-variance direction can be lost when that direction is discarded. This motivates checking the variance retained or retaining the original feature dimensions when needed.
+
+\subsection{Learning States}\label{sec:approach-states}
+
+Clustering assigns a state to each feature vector by grouping similar observations. This gives each perspective a set of recurring patterns whose prevalence can be compared over time. $k$-means uses a selected number of centroids and assigns observations to their nearest centroid~\cite{lloyd1982quantization}. A self-organizing map (SOM) places prototypes on a grid and trains neighboring prototypes together, making the state space easier to browse~\cite{kohonen1982maps}. Density-based spatial clustering of applications with noise (DBSCAN) finds dense groups and labels observations outside them as noise~\cite{ester1996density}. Kairo keeps the noise label as a state, so changes in the share of sparse observations can contribute to the signal.
+
+The same fitted representation and clustering apply throughout each perspective of the log. This makes a state label comparable across periods. The state labels of successive events form a trajectory within a case. In the resource and inter-case perspectives, the sequence of feature-window labels forms a trajectory for the log. Analysts can use these trajectories and the original features to interpret what an increase or decrease in a state's prevalence represents. The full-log fit makes the analysis presented here retrospective.
+
+\subsection{Measuring Changes in State Frequencies}\label{sec:approach-signal}
+
+The detector builds a time series from \emph{signal windows}, which can span several observations. An intra-case state is assigned to the signal window containing the event timestamp. A resource or inter-case state is assigned by the start time of its feature window, and the signal window is at least as long as the feature window. This allows the feature window to preserve the detail needed to describe an observation and the signal window to collect enough observations for comparison. Short signal windows can locate changes more precisely but may give unstable estimates when few observations are available. Longer windows can stabilize the frequencies while mixing behavior from before and after a change. \autoref{fig:approach-signal-windows} illustrates what the detector compares.
+
+\begin{figure}[htbp]
+  \centering
+  \FigurePlaceholder{TikZ timeline with events, state labels on feature windows, and signal windows. Show the window assignment and compare state shares across neighboring signal windows.}
+  \caption{Feature windows summarize process behavior, and signal windows group the resulting states. Comparing state shares across signal windows shows when a pattern has become more or less frequent.}
+  \label{fig:approach-signal-windows}
+\end{figure}
+
+Let $K$ be the set of observed states for a perspective and let $n_w(s)$ count observations with state $s$ in signal window $w$. For each window with observations, the state distribution is
+\[
+  p_w(s) = \frac{n_w(s)}{\sum_{u\in K} n_w(u)}, \qquad s\in K.
+\]
+A reference distribution $q_w$ is the distribution of the previous observed signal window, an average of recent observed windows, or an average over the complete log. The previous-window reference captures local changes and is sensitive to fluctuations between successive windows. A recent average smooths the reference and can retain a contrast until recent windows reflect the new behavior. A whole-log average provides a fixed retrospective baseline. The local references produce scores once the required history is available.
+
+The drift score of window $w$ is $D(p_w,q_w)$, where $D$ measures the difference between the distributions. Available choices include Jensen-Shannon divergence~\cite{lin1991divergence}, total variation, Hellinger distance, and Kullback-Leibler divergence with smoothing. These comparisons use state frequencies. Distances between cluster representatives can help interpret the signal, while the signal itself depends on changes in the shares of the labels.
+
+The resulting scores are indexed by signal-window start. A high score marks an interval to inspect. It can reflect a change in process behavior or ordinary variation, particularly when a window contains few observations or only part of the monitored period. Different perspectives can respond to the same change, so their signals help guide investigation of possible causes. \autoref{sec:assessment} explains how the benchmark turns the scores into alarms for comparison with annotated changes.

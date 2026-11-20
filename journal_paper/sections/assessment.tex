@@ -1,0 +1,157 @@
+\section{Assessment}
+\label{sec:assessment}
+
+We assess how well Kairo localizes annotated changes in complete event logs. We compare the number of episodes found and the number of unmatched alarms with implementations in \softwarepm{}. Alongside the results pooled across logs, we examine scenarios that show what the detectors can pick up from different kinds of process data.
+
+\subsection{Event Logs}
+\label{sec:assessment-logs}
+
+We selected 23 event logs with 156,383 cases, 1,086,668 events, and 37 annotated drift episodes. \autoref{tab:assessment-logs} lists all inputs. The selection covers several kinds of change and uses each selected log in full. The Padella collection injects changes into logs from real processes~\cite{padella2026dataset}. Our sample uses eight files from five base processes, including two controls with no injected drift. The nine synthetic Rheon logs from the thesis include sudden and gradual changes to activity order, assignments, workload, waiting time, and case composition~\cite{kairo-thesis}. The six historical logs from the archive of Adams et~al. contain synthetic control-flow changes~\cite{adams2023experimental}. They include a Ceravolo scenario with 15\% trace noise~\cite{tavares2019synthetic}.
+
+\begin{table}[!htbp]
+\caption{Event logs used in the comparison. Simultaneous annotations with identical time bounds count as one episode.}
+\label{tab:assessment-logs}
+\centering
+\small
+\begin{adjustwidth}{-\extralength}{0cm}
+\begin{tabularx}{\fulllength}{@{}lrrr>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Log} & \textbf{Cases} & \textbf{Events} & \textbf{Episodes} & \textbf{Annotated changes} \\
+\midrule
+Bose & 6,000 & 58,838 & 4 & Sudden control-flow changes \\
+Ceravolo RIO & 1,000 & 11,395 & 1 & Sudden control-flow change \\
+Ceravolo RIO (15\% noise) & 1,000 & 10,554 & 1 & Sudden control-flow change \\
+Ceravolo RP & 1,000 & 11,009 & 1 & Sudden control-flow change \\
+Ostovar Loop & 2,999 & 100,471 & 2 & Sudden changes involving a loop \\
+Ostovar Parallel to Sequence & 2,999 & 112,011 & 2 & Sudden changes involving parallel and sequential execution \\
+\midrule
+Padella 04 & 8,049 & 51,059 & 1 & Gradual speedup in loan applications \\
+Padella 05 & 10,500 & 52,308 & 1 & Sudden control-flow change in domestic declarations \\
+Padella 06 & 32,429 & 212,721 & 1 & Sudden speedup in bank account closures \\
+Padella 07 & 6,886 & 36,796 & 0 & Request for payment control \\
+Padella 08 & 6,886 & 36,796 & 1 & Sudden control-flow change in requests for payment \\
+Padella 10 & 10,500 & 56,437 & 1 & Sudden slowdown in domestic declarations \\
+Padella 12 & 8,049 & 51,059 & 0 & Loan application control \\
+Padella 15 & 8,000 & 39,493 & 1 & Gradual control-flow change in purchase orders \\
+\midrule
+Rheon Single 03 & 3,254 & 12,992 & 1 & Sudden control-flow change \\
+Rheon Single 11 & 8,896 & 24,543 & 1 & Sudden resource reassignment \\
+Rheon Single 15 & 9,042 & 72,684 & 1 & Gradual change in waiting time \\
+Rheon Multi 02 & 3,161 & 20,514 & 4 & Sudden control-flow changes \\
+Rheon Multi 03 & 9,523 & 23,852 & 3 & Sudden changes in the regional case mix \\
+Rheon Multi 07 & 3,132 & 15,660 & 3 & Changes in workload, resource pool size, and assignments \\
+Rheon Mixed 06 & 4,796 & 23,980 & 1 & Coincident workload and waiting-time changes \\
+Rheon Mixed 07 & 2,860 & 14,300 & 2 & Changes in workload and case arrival rates \\
+Rheon Mixed 13 & 5,422 & 37,196 & 4 & Changes in control flow, workload, and case arrival rates \\
+\midrule
+\textbf{Total} & \textbf{156,383} & \textbf{1,086,668} & \textbf{37} & \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+We expressed all annotations in calendar time. For Rheon we used generator timestamps. For Padella we used the start times of the cases identified in the published annotations. For Bose and Ostovar we used the start of the first post-change trace in the original archive order. The Ceravolo archive stores numeric case identifiers in lexicographic order, so we used the start of case 500, the first case in the changed half by numeric generator identifier. We preserved physical trace boundaries when the Bose archive reused a case identifier.
+
+\subsection{Detectors and Configurations}
+\label{sec:assessment-config}
+
+The comparison covers nine Kairo combinations of perspective and clustering method and 18 \softwarepm{} implementations (\autoref{tab:assessment-methods}). We call a specific configuration of an implementation a \emph{profile}. Core profile settings used observable input properties, such as log length, event and case volume, and available fields. The annotated change times were used for scoring after detection. The core runs used Kairo 0.1.0 at revision \texttt{6b1bd462} and \softwarepm{} at revision \texttt{79b6ce1b}, with revision \texttt{765435bc} for the corrected Bose detector. The benchmark archive records the complete settings for every run. Coverage depended on data and computational requirements. The \softwarepm{} resource-assignment profile ran only when the log recorded resources. Kairo recorded 30 unsupported runs due to missing resources and eight because the number of distinct intra-case feature rows exceeded the DBSCAN limit of 10,000. In total, 616 \softwarepm{} runs and 376 Kairo runs completed.
+
+\begin{table}[!htbp]
+\caption{Implementations and profiles included in the core comparison. DFG denotes a directly-follows graph. PELT denotes pruned exact linear time, ADWIN denotes adaptive windowing, and MMD denotes maximum mean discrepancy.}
+\label{tab:assessment-methods}
+\centering
+\small
+\begin{adjustwidth}{-\extralength}{0cm}
+\begin{tabularx}{\fulllength}{@{}l>{\raggedright\arraybackslash}p{0.19\fulllength}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Library} & \textbf{Implementation} & \textbf{Signal and tested profiles} \\
+\midrule
+Kairo & State distributions & Intra-case, resource, and inter-case states with K-means, a self-organizing map (SOM), or DBSCAN. Each combination uses previous-window and recent-window profiles. \\
+\midrule
+\softwarepm{} & Bose relation count & Permutation test on counts of outgoing eventually-follows relations. \\
+& DFG frequency & Adjacent-window comparison of relation frequencies using permutations or a wider likelihood-ratio test. \\
+& Event relations & Fixed or adaptive windows of event-level control-flow relations. \\
+& Local completeness & New or disappearing directly-follows relations relative to a locally complete window. \\
+& Relation invariance & Boundaries of stable periods for activity relations. \\
+& Graph metrics & PELT on measures of successive DFGs. \\
+& Run distribution & Fixed or adaptive windows of partially ordered execution runs. \\
+& Trace variant frequency & Permutation tests on exact activity sequences with regular and wide windows. \\
+& Earth Mover distance & Window comparisons with activity sequences alone or with timing features. \\
+& Calendar indicators & PELT on basic or enriched indicator sets, and ADWIN on basic indicators. \\
+& CV-based indicators & PELT on enriched indicators with smoothing selected using the coefficient of variation. \\
+& Conformance & Alignment fitness monitored with fixed-model Page-Hinkley or ADWIN with relearning. \\
+& Conformance profile & PELT on windowed alignment fitness and precision. \\
+& Declare profiles & PELT on temporal constraint profiles. \\
+& Version clustering & Clustering and segmentation of window similarity profiles based on DFGs. \\
+& Cluster frequency & Comparison of trace cluster frequencies after training K-means on an initial set of traces. \\
+& Multivariate features & Permutation MMD on flow and timing features or on activity-resource assignments. \\
+& Supervised similarity & A patch classifier on window similarity images trained on independent generated logs. \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+\paragraph{Kairo profiles.}
+The state models were fitted to each complete log. The benchmark applied min-max scaling to intra-case vectors and standard score scaling to resource and inter-case vectors, followed by principal component analysis with up to five components when applicable. It used observed fields and feature size limits to choose the vectors. The base signal window targeted one fiftieth of the log's completion-time span, rounded to an available duration. Resource and inter-case feature windows were chosen from lengths that divide the base signal window, taking event or case density into account. The previous-window profile used Jensen-Shannon divergence and the 90th percentile of eligible scores as its threshold. The recent-window profile used total variation relative to the mean of the preceding three windows, twice the base signal window width, and the 95th percentile. Both profiles excluded partially covered windows and windows with fewer than 25\% of the median number of state observations. Each uninterrupted sequence of eligible scores at or above the positive threshold produced one alarm at the start of its first window. These settings define an alarm rule for the comparison. They use the full score series and therefore produce retrospective estimates.
+
+\paragraph{\softwarepm{} profiles.}
+We used the recorded \softwarepm{} source revisions and retained each implementation's own alarms. Trace window sizes generally scaled with case count, and calendar indicators used bins sized by log duration. When usable service timestamps were missing, timing profiles used gaps between completions. Version clustering used 64 trace windows with a minimum cluster size of four and a segmentation penalty of three. The supervised similarity profile used a local classifier fitted to 24 independent synthetic control-flow logs. For the conformance profile, precision was calculated with the memory-efficient exact Dijkstra solver. On Ostovar Parallel to Sequence, exact alignment took too long with the model first mined from the initial traces. The conformance profiles used a sequential reference based on the medoid of the first 30 completed traces. Detection began after that training prefix, and the adaptive profile could relearn from one completed case following an alarm.
+
+Before scoring the Bose detector, we corrected two implementation issues. The detector had used case identifiers to order traces and counted incoming eventually-follows relations. We ordered cases by their first event and used outgoing counts, as specified by the Relation Type Count definition~\cite{bose2011handling}. A check with permuted case identifiers confirmed that chronology was preserved. On the historical Bose log, the relation-count correction preserved three of four matches at the primary tolerance and reduced unmatched alarms from 17 to 12.
+
+\subsection{Scoring Protocol}
+\label{sec:assessment-scoring}
+
+We used a common calendar-time margin equal to 2.5\% of the log's observation span, from the earliest recorded start or completion to the last completion. We repeated scoring with margins of 1\% and 5\%. For a point annotation, an alarm is eligible if its estimated timestamp is within the margin on either side. For a gradual transition, this margin extends both ends of the annotated interval, and an alarm inside the interval has zero distance. We first maximize the number of matches and then minimize the total distance to the truth among matchings of that size. Each alarm and each episode can participate in at most one match. Coincident annotations with identical bounds form one episode. Matching uses only timestamps, regardless of the type of change.
+
+Each match contributes a true positive ($TP$), each unmatched alarm a false positive ($FP$), and each unmatched episode a false negative ($FN$). Unmatched alarms include repeat alarms and changes that may have occurred outside the annotated injections. We sum $TP$, $FP$, and $FN$ across logs before computing micro precision $TP/(TP+FP)$, micro recall $TP/(TP+FN)$, and micro F1 $2TP/(2TP+FP+FN)$. The no-injection controls therefore contribute unmatched alarms to the pooled counts. We score the estimated change times. Measuring reporting delay would require the confirmation times, which the benchmark records where available.
+
+\subsection{Results Across Logs}
+\label{sec:assessment-results}
+
+\autoref{tab:assessment-main-results} shows the three highest micro F1 profiles from each library among the profiles that completed on all 23 logs. At the primary margin, Kairo's previous-window intra-case K-means profile matched 21 of 37 episodes, while \softwarepm{} version clustering matched 15. Kairo raised 72 unmatched alarms and version clustering raised 10. Nine of Kairo's unmatched alarms and two of version clustering's came from the control logs. Version clustering therefore led in precision and micro F1, and the Kairo profile led in recall. Both profiles matched five episodes in the historical logs. On Padella, Kairo matched four with 27 unmatched alarms and version clustering matched three with seven unmatched alarms. On Rheon, Kairo matched 12 with 30 unmatched alarms and version clustering matched seven without an unmatched alarm.
+
+\begin{table}[htbp]
+\caption{Highest micro F1 profiles with full log coverage at the primary tolerance of 2.5\%. Rows are ranked within each library.}
+\label{tab:assessment-main-results}
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}Xrrrrrr@{}}
+\toprule
+\textbf{Library} & \textbf{Profile} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} \\
+\midrule
+Kairo & Intra-case K-means, previous & 21 & 72 & 16 & 0.226 & 0.568 & \textbf{0.323} \\
+& Inter-case SOM, previous & 22 & 80 & 15 & 0.216 & 0.595 & 0.317 \\
+& Intra-case SOM, previous & 20 & 73 & 17 & 0.215 & 0.541 & 0.308 \\
+\softwarepm{} & Version clustering & 15 & 10 & 22 & 0.600 & 0.405 & \textbf{0.484} \\
+& Declare profiles, PELT & 10 & 9 & 27 & 0.526 & 0.270 & 0.357 \\
+& Trace variant frequency, wide & 20 & 66 & 17 & 0.233 & 0.541 & 0.325 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The two leading profiles in \autoref{tab:assessment-main-results} kept the same F1 ordering at both alternative margins. At 1\%, Kairo scored 0.231 and version clustering scored 0.419. At 5\%, their scores were 0.400 and 0.516. Changing the margin leaves the alarms fixed and changes which alarms can match the annotations. For example, the wide DFG likelihood-ratio profile placed two boundaries in Ostovar Loop about 26 hours after their annotated case starts. Both were outside the primary margin and both matched at the wider margin.
+
+The coverage restriction matters for interpreting the pooled comparison. Kairo's recent-window resource K-means profile reached micro F1 of 0.370 on its 18 supported logs. On the same 18 logs, version clustering reached 0.440. We report such profiles separately because the omitted logs alter the set of episodes and opportunities for unmatched alarms.
+
+\subsection{Results by Change Scenario}
+\label{sec:assessment-scenarios}
+
+The following comparisons use the primary margin and profiles selected to illustrate the annotated changes. They show which scenarios a representation can capture under the tested settings.
+
+\paragraph{Control flow.}
+On the three Padella control-flow logs, Kairo's recent-window intra-case SOM and \softwarepm{} version clustering each matched all three injections and each raised two unmatched alarms. On Rheon Multi 02, Kairo's previous-window intra-case SOM matched all four sudden control-flow changes and raised one unmatched alarm. The wide trace variant frequency profile matched all four with no unmatched alarms. Both DFG frequency profiles matched all three Ceravolo injections with no unmatched alarms, including the log with trace noise.
+
+\paragraph{Assignments and timing.}
+All three recent-window Kairo resource profiles matched the sudden reassignment in Rheon Single 11 with no unmatched alarms. The \softwarepm{} resource MMD and enriched indicator PELT profiles also matched it and each raised one unmatched alarm. Kairo's recent-window inter-case SOM matched the gradual waiting-time change in Rheon Single 15 with no unmatched alarms. The trained trace cluster frequency profile matched it and raised one unmatched alarm. \autoref{fig:assessment-rheon-signals} pairs the Kairo resource and inter-case SOM signals for these two changes. On the three Padella timing logs, previous-window resource SOM and fixed-model Page-Hinkley conformance each matched two injections and raised nine unmatched alarms. Both missed the speedup in bank account closures.
+
+\begin{figure}[htbp]
+\centering
+\FigurePlaceholder{TikZ timelines of resource reassignment and gradual waiting-time change. Mark the annotations, score thresholds, and estimated alarms.}
+\caption{Planned comparison of two retrospective Kairo SOM signals. The resource signal uses Rheon Single 11, with a point annotation for reassignment. The inter-case signal uses Rheon Single 15, with an interval annotation for the gradual change in waiting time. Each panel places the total variation scores and alarm threshold against calendar time. The estimated alarm time is the start of its signal window.}
+\label{fig:assessment-rheon-signals}
+\end{figure}
+
+\paragraph{Case composition.}
+On Rheon Multi 03, the dominant region changed three times and returned to region 4 at the last change. Kairo's inter-case SOM with a previous-window reference matched all three shifts and raised two unmatched alarms. The recent-window version matched two with no unmatched alarms. The core \softwarepm{} PELT indicators and flow-and-timing MMD profiles matched none. We then ran a diagnostic with the case attributes supplied explicitly. PELT used region shares and average case amounts, and MMD used region as a categorical feature and amount as a numeric feature. Each detected all three shifts with zero unmatched alarms, including at the 1\% margin. This diagnostic evaluates an attribute choice made after looking at the scenario. It is reported separately from the core ranking.

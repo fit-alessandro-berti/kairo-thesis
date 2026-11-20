@@ -1,0 +1,20 @@
+\section{Implementation}\label{sec:implementation}
+
+\subsection{Analysis Library}
+
+Kairo is a Python library that implements the analysis in \autoref{sec:approach}. Feature extraction, scaling, dimensionality reduction, clustering, and drift scoring are available as separate stages. This lets an analyst inspect intermediate results, choose features that the log supports, and reuse the same state and drift analysis with different features. The library links observations back to their events or calendar windows, so the states and scores can be examined in the context of the original log. The benchmark uses the same analysis library as the graphical interface.
+
+\subsection{Graphical Interface}
+
+The browser-based dashboard guides analysts from log upload to drift inspection. It accepts eXtensible Event Stream (XES) and comma-separated values (CSV) files and lets the analyst map the case, activity, and timestamp fields. It also supports optional resource and case attributes. When start and completion timestamps are available, the analyst can derive duration for the resource features.
+
+The analyst opens a perspective and chooses its feature groups, scaling, and clustering settings. The dashboard displays feature tables and plots of explained variance and reconstruction error to help choose whether and how far to reduce the vectors. After clustering, the interface shows state frequencies and trajectories. The analyst can follow individual cases in the intra-case view or follow the log through successive feature windows in the resource and inter-case views. Comparing state frequencies across selected periods helps reveal which patterns became more or less common.
+
+The drift view places the divergence signal alongside state distributions and observation counts for the same periods. The analyst can adjust the threshold and inspect the support behind a peak, as illustrated in \autoref{fig:implementation-dashboard}. An optional Copilot lets the analyst ask questions about selected summaries and plots. Its interpretations are intended for review against the displayed evidence. The detector and the benchmark run independently of the Copilot.
+
+\begin{figure}[htbp]
+  \centering
+  \FigurePlaceholder{Screenshot of the Kairo drift view showing the divergence signal, adjustable threshold, state distributions, and observation counts.}
+  \caption{Dashboard view for investigating a candidate drift. The analyst can compare a high score with the state shares and observation count behind it.}
+  \label{fig:implementation-dashboard}
+\end{figure}

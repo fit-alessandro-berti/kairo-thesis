@@ -1,0 +1,60 @@
+\documentclass[applsci,article,submit,moreauthors]{Definitions/mdpi}
+
+\firstpage{1}
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2026}
+\copyrightyear{2026}
+
+% Keep the MDPI layout and remove review line numbers and the sample DOI.
+\let\linenumbers\nolinenumbers
+\setlength{\headheight}{21pt}
+\addtolength{\topmargin}{-9pt}
+\fancyfoot[R]{}
+\makeatletter
+\apptocmd{\ps@plain}{\fancyfoot[R]{}}{}{}
+\makeatother
+
+\newcommand{\softwarepm}{PM4Py}
+\newlength{\PlaceholderSide}
+\newcommand{\FigurePlaceholder}[1]{%
+  \begingroup
+  \setlength{\PlaceholderSide}{0.35\linewidth}%
+  \fbox{\parbox[c][\PlaceholderSide][c]{\PlaceholderSide}{%
+    \centering\small\hspace{0pt}#1\par}}%
+  \endgroup
+}
+
+\Title{Detecting Concept Drift with Process States in Case-Centric Event Logs}
+\Author{Bora Deren and Alessandro Berti *}
+\AuthorNames{Bora Deren and Alessandro Berti}
+\address{Chair of Process and Data Science, RWTH Aachen University, Aachen, Germany}
+\corres{Correspondence: a.berti@pads.rwth-aachen.de}
+
+\abstract{A process can change who does the work or how long cases wait while keeping the same sequence of activities. We present Kairo, an approach that learns recurring process states from case-centric event logs. It describes progress within cases, patterns of resource use, and conditions across cases with separate sets of features. It groups similar observations into states and compares how common those states are over time. A graphical interface lets analysts inspect the states and the features behind a drift signal. In a retrospective benchmark, Kairo located selected changes in resource assignment and waiting time without extra alarms. Its strongest overall configuration matched more annotated changes than the strongest comparison configuration and issued more unmatched alarms. The results support using process states to investigate change and motivate further work on the reliability of automatic alerts.}
+
+\keyword{process mining; concept drift; event logs; process monitoring; clustering; visual analytics}
+
+\begin{document}
+\renewcommand{\sectionautorefname}{Section}
+
+\input{sections/introduction}
+\input{sections/related-work}
+\input{sections/preliminaries}
+\input{sections/approach}
+\input{sections/implementation}
+\input{sections/assessment}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\authorcontributions{B.D. developed and implemented the state-based method and created the Rheon generator. A.B. advised the thesis and conducted the comparative benchmark.}
+\funding{Funding details are pending author confirmation.}
+\dataavailability{The \href{https://github.com/fit-alessandro-berti/kairo-thesis/tree/a2a6d60d757e0bb04804152162f853c4a42ca087}{project repository} provides the Kairo library and Rheon generator. Its \href{https://github.com/fit-alessandro-berti/kairo-thesis/tree/a2a6d60d757e0bb04804152162f853c4a42ca087/assessments/concept-drift}{benchmark archive} provides reproduction instructions, run configurations, drift annotations, and results. The run records identify the source of each event log.}
+\acknowledgments{OpenAI Codex assisted in drafting and organizing the manuscript and checking its descriptions against the existing thesis, software, and benchmark outputs.}
+\conflictsofinterest{Conflict of interest declarations are pending author confirmation.}
+
+\reftitle{References}
+\bibliography{bib/core,bib/related-work,bib/method,bib/assessment}
+
+\end{document}

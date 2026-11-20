@@ -1,0 +1,7 @@
+\section{Preliminaries}\label{sec:preliminaries}
+
+A case is an instance of a process, such as a request handled by a service team. In a traditional event log, each event records an activity, a timestamp, and the case to which it belongs. An event can also record who performed the activity and when it started. Case attributes, such as the category of a request, describe the case as a whole. A \emph{trace} is the sequence of observed events for a case in timestamp order, with ties resolved using their order in the input. The \emph{prefix} at an event contains that event and its predecessors in the same trace. A \emph{directly-follows relation} is an ordered pair of activities at consecutive positions in a trace.
+
+A \emph{calendar window} is a fixed-length interval on a time grid. It includes its start and excludes its end. The grid lets us group events from different cases by time, even when a case spans several windows. An event at a boundary belongs to the window that begins there.
+
+In a sudden drift, the change takes place at a boundary. In a gradual drift, the change unfolds over a period. A previous pattern can also recur. We use \emph{state} to mean a cluster of similar observations. In this sense, a state describes a local pattern of behavior that can occur repeatedly within the same process regime. Drift evidence comes from changes in how often these states occur over time.
