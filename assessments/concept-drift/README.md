@@ -1,5 +1,7 @@
 # Kairo and PM4Py concept drift assessment
 
+The [final report](FINAL_REPORT.md) summarizes what the benchmark shows about Kairo's detection quality.
+
 Each dataset has a [results folder](results/) with a `dataset.json` recording source provenance, dimensions, and ground truth. The runs live under `<dataset>/<library>/<method>/<profile>.json`. Each records effective configuration, drift timestamps, confirmation times where available, evidence scores, and evaluation. PM4Py intervals and inferred versions are included where returned. The [manifest](results/manifest.json) records the assessed revisions and dependencies.
 
 The assessment has 1,030 result files. All 616 PM4Py configurations and 376 Kairo configurations completed. In 30 Kairo configurations the input has no resource field, and eight intra-case DBSCAN configurations exceed the 10,000 distinct feature-row limit used for this benchmark. Those files record the reason.
