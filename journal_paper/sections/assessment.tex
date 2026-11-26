@@ -1,7 +1,7 @@
 \section{Assessment}
 \label{sec:assessment}
 
-We assess how well Kairo localizes annotated changes in complete event logs. The event logs, detector configurations, and scoring protocol provide a common basis for comparison with implementations in \softwarepm{}. \Cref{sec:assessment-results} addresses \ref{rq:comparison} with results pooled across logs. \Cref{sec:assessment-scenarios} answers \ref{rq:scenarios} through selected change scenarios. \Cref{sec:assessment-sensitivity} addresses \ref{rq:margin} by repeating the scoring with different matching margins.
+We assess how well Kairo localizes annotated changes in complete event logs. The event logs, detector configurations, and scoring protocol provide a common basis for comparison with implementations in \softwarepm{}. The comparison follows the research questions in \Cref{sec:introduction}. \Cref{sec:assessment-results} addresses \ref*{rq:comparison} with results pooled across logs. \Cref{sec:assessment-scenarios} answers \ref*{rq:scenarios} through selected change scenarios. \Cref{sec:assessment-sensitivity} addresses \ref*{rq:margin} by repeating the scoring with different matching margins.
 
 \subsection{Event Logs}
 \label{sec:assessment-logs}
@@ -127,7 +127,7 @@ Each match contributes a true positive ($TP$), each unmatched alarm a false posi
 \subsection{Comparative Performance Across Logs}
 \label{sec:assessment-results}
 
-For \ref{rq:comparison}, \autoref{tab:assessment-main-results} shows the three highest micro F1 profiles from each library among the profiles that completed on all 23 logs. At the primary margin, Kairo's previous-window intra-case K-means profile matched 21 of 37 episodes, while \softwarepm{} version clustering matched 15. Kairo raised 72 unmatched alarms and version clustering raised 10. Nine of Kairo's unmatched alarms and two of version clustering's came from the control logs. Version clustering therefore led in precision and micro F1, and the Kairo profile led in recall. Both profiles matched five episodes in the historical logs. On Padella, Kairo matched four with 27 unmatched alarms and version clustering matched three with seven unmatched alarms. On Rheon, Kairo matched 12 with 30 unmatched alarms and version clustering matched seven without an unmatched alarm.
+For \ref*{rq:comparison}, \autoref{tab:assessment-main-results} shows the three highest micro F1 profiles from each library among the profiles that completed on all 23 logs. At the primary margin, Kairo's previous-window intra-case K-means profile matched 21 of 37 episodes, while \softwarepm{} version clustering matched 15. Kairo raised 72 unmatched alarms and version clustering raised 10. Nine of Kairo's unmatched alarms and two of version clustering's came from the control logs. Version clustering therefore led in precision and micro F1, and the Kairo profile led in recall. Both profiles matched five episodes in the historical logs. On Padella, Kairo matched four with 27 unmatched alarms and version clustering matched three with seven unmatched alarms. On Rheon, Kairo matched 12 with 30 unmatched alarms and version clustering matched seven without an unmatched alarm.
 
 \begin{table*}[!t]
 \caption{Highest micro F1 profiles with full log coverage at the primary tolerance of 2.5\%. Rows are ranked within each library.}
@@ -153,7 +153,7 @@ The coverage restriction matters for interpreting the pooled comparison. Kairo's
 \subsection{Detection by Change Scenario}
 \label{sec:assessment-scenarios}
 
-For \ref{rq:scenarios}, we compare profiles in selected scenarios at the primary matching margin. The examples show which annotated changes the perspective-specific state signals can capture under the tested settings.
+For \ref*{rq:scenarios}, we compare profiles in selected scenarios at the primary matching margin defined in \Cref{sec:assessment-scoring}. The examples show which annotated changes the perspective-specific state signals can capture under the tested settings.
 
 \paragraph{Control flow.}
 On the three Padella control-flow logs, Kairo's recent-window intra-case SOM and \softwarepm{} version clustering each matched all three injections and each raised two unmatched alarms. On Rheon Multi 02, Kairo's previous-window intra-case SOM matched all four sudden control-flow changes and raised one unmatched alarm. The wide trace variant frequency profile matched all four with no unmatched alarms. Both DFG frequency profiles matched all three Ceravolo injections with no unmatched alarms, including the log with trace noise.
@@ -169,6 +169,6 @@ On Rheon Multi 03, the dominant region changed three times and returned to regio
 \subsection{Sensitivity to the Matching Margin}
 \label{sec:assessment-sensitivity}
 
-For \ref{rq:margin}, we took the profiles that led each library at the primary margin in \autoref{tab:assessment-main-results} and scored them at both alternative margins. At 1\%, micro F1 was 0.231 for Kairo and 0.419 for version clustering. At 5\%, their scores were 0.400 and 0.516. Version clustering retained the higher micro F1 at both margins.
+For \ref*{rq:margin}, we took the profiles that led each library at the primary margin in \autoref{tab:assessment-main-results} and scored them at both alternative margins. At 1\%, micro F1 was 0.231 for Kairo and 0.419 for version clustering. At 5\%, their scores were 0.400 and 0.516. Version clustering retained the higher micro F1 at both margins.
 
 With the alarms fixed, the margin changes which alarms can match the annotations. For example, the wide DFG likelihood-ratio profile placed two boundaries in Ostovar Loop about 26 hours after their annotated case starts. Both boundaries matched only at the widest margin.
