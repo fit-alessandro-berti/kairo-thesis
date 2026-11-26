@@ -8,7 +8,7 @@ We assess how well Kairo localizes annotated changes in complete event logs. The
 
 We selected 23 event logs with 156,383 cases, 1,086,668 events, and 37 annotated drift episodes. \autoref{tab:assessment-logs} lists all inputs. The selection covers several kinds of change and uses each selected log in full. The Padella collection injects changes into logs from real processes~\cite{padella2026dataset}. Our sample uses eight files from five base processes, including two controls with no injected drift. The nine synthetic Rheon logs from the thesis include sudden and gradual changes to activity order, assignments, workload, waiting time, and case composition~\cite{kairo-thesis}. The six historical logs from the archive of Adams et~al. contain synthetic control-flow changes~\cite{adams2023experimental}. They include a Ceravolo scenario with 15\% trace noise~\cite{tavares2019synthetic}.
 
-\begin{table}[H]
+\begin{table*}[!t]
 \caption{Event logs used in the comparison. Simultaneous annotations with identical time bounds count as one episode.}
 \label{tab:assessment-logs}
 \centering
@@ -48,7 +48,7 @@ Rheon Mixed 13 & 5,422 & 37,196 & 4 & Changes in control flow, workload, and cas
 \bottomrule
 \end{tabularx}
 \end{adjustwidth}
-\end{table}
+\end{table*}
 
 We expressed all annotations in calendar time. For Rheon we used generator timestamps. For Padella we used the start times of the cases identified in the published annotations. For Bose and Ostovar we used the start of the first post-change trace in the original archive order. The Ceravolo archive stores numeric case identifiers in lexicographic order, so we used the start of case 500, the first case in the changed half by numeric generator identifier. We preserved physical trace boundaries when the Bose archive reused a case identifier.
 
@@ -57,7 +57,7 @@ We expressed all annotations in calendar time. For Rheon we used generator times
 
 The comparison covers nine Kairo combinations of perspective and clustering method and 18 \softwarepm{} implementations (\autoref{tab:assessment-methods}). We call a specific configuration of an implementation a \emph{profile}. Core profile settings used observable input properties, such as log length, event and case volume, and available fields. The annotated change times were used for scoring after detection. The core runs used Kairo 0.1.0 at revision \texttt{6b1bd462} and \softwarepm{} at revision \texttt{79b6ce1b}, with revision \texttt{765435bc} for the corrected Bose detector. The benchmark archive records the complete settings for every run. Coverage depended on data and computational requirements. The \softwarepm{} resource-assignment profile ran only when the log recorded resources. Kairo recorded 30 unsupported runs due to missing resources and eight because the number of distinct intra-case feature rows exceeded the DBSCAN limit of 10,000. In total, 616 \softwarepm{} runs and 376 Kairo runs completed.
 
-\begin{table}[H]
+\begin{table*}[!t]
 \caption{Implementations and profiles included in the core comparison. DFG denotes a directly-follows graph. PELT denotes pruned exact linear time, ADWIN denotes adaptive windowing, and MMD denotes maximum mean discrepancy.}
 \label{tab:assessment-methods}
 \centering
@@ -90,7 +90,7 @@ Kairo & State distributions & Intra-case, resource, and inter-case states with K
 \bottomrule
 \end{tabularx}
 \end{adjustwidth}
-\end{table}
+\end{table*}
 
 \paragraph{Kairo profiles.}
 The state models were fitted to each complete log. The benchmark applied min-max scaling to intra-case vectors and standard score scaling to resource and inter-case vectors, followed by principal component analysis with up to five components when applicable. It used observed fields and feature size limits to choose the vectors. The base signal window targeted one fiftieth of the log's completion-time span, rounded to an available duration. Resource and inter-case feature windows were chosen from lengths that divide the base signal window, taking event or case density into account. The previous-window profile used Jensen-Shannon divergence and the 90th percentile of eligible scores as its threshold. The recent-window profile used total variation relative to the mean of the preceding three populated windows, twice the base signal window width, and the 95th percentile. Both profiles required full coverage and at least 25\% of the median number of state observations. \Cref{def:assessment-alarms} specifies how these settings produce retrospective alarms from the scores.
@@ -129,7 +129,7 @@ Each match contributes a true positive ($TP$), each unmatched alarm a false posi
 
 For \ref{rq:comparison}, \autoref{tab:assessment-main-results} shows the three highest micro F1 profiles from each library among the profiles that completed on all 23 logs. At the primary margin, Kairo's previous-window intra-case K-means profile matched 21 of 37 episodes, while \softwarepm{} version clustering matched 15. Kairo raised 72 unmatched alarms and version clustering raised 10. Nine of Kairo's unmatched alarms and two of version clustering's came from the control logs. Version clustering therefore led in precision and micro F1, and the Kairo profile led in recall. Both profiles matched five episodes in the historical logs. On Padella, Kairo matched four with 27 unmatched alarms and version clustering matched three with seven unmatched alarms. On Rheon, Kairo matched 12 with 30 unmatched alarms and version clustering matched seven without an unmatched alarm.
 
-\begin{table}[htbp]
+\begin{table*}[!t]
 \caption{Highest micro F1 profiles with full log coverage at the primary tolerance of 2.5\%. Rows are ranked within each library.}
 \label{tab:assessment-main-results}
 \centering
@@ -146,7 +146,7 @@ Kairo & Intra-case K-means, previous & 21 & 72 & 16 & 0.226 & 0.568 & \textbf{0.
 & Trace variant frequency, wide & 20 & 66 & 17 & 0.233 & 0.541 & 0.325 \\
 \bottomrule
 \end{tabularx}
-\end{table}
+\end{table*}
 
 The coverage restriction matters for interpreting the pooled comparison. Kairo's recent-window resource K-means profile reached micro F1 of 0.370 on its 18 supported logs. On the same 18 logs, version clustering reached 0.440. We report such profiles separately because the omitted logs alter the set of episodes and opportunities for unmatched alarms.
 

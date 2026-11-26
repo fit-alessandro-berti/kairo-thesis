@@ -6,7 +6,7 @@ Consider a service desk observed over consecutive feature windows $W_{\mathrm a}
 Compare the Receive and Resolve prefixes of cases $\mathrm c$ and $\mathrm d$. At Receive, the current-activity indicator for Receive is on and the prefix contains no directly-follows pair. At Resolve, Receive is the immediately preceding activity and the prefix contains the Receive-to-Resolve pair once. \autoref{tab:example-intra-case} shows the same feature values at the corresponding positions of both cases. \autoref{fig:example-intra-case} illustrates the prefixes used to build the rows.
 \end{Example}
 
-\begin{table}[H]
+\begin{table*}[!t]
   \caption{Selected intra-case features for the Receive and Resolve events of cases $\mathrm c$ and $\mathrm d$. On and off denote true and false for an indicator.}
   \label{tab:example-intra-case}
   \centering
@@ -22,20 +22,20 @@ Compare the Receive and Resolve prefixes of cases $\mathrm c$ and $\mathrm d$. A
     $\mathrm d$ & Resolve & Off & On & One \\
     \bottomrule
   \end{tabularx}
-\end{table}
+\end{table*}
 
-\begin{figure}[H]
+\begin{figure*}[!t]
   \centering
   \input{figures/intra-case}
   \caption{Cases $\mathrm c$ and $\mathrm d$ have matching activity prefixes at each event. The shaded activity is the current event in each prefix.}
   \label{fig:example-intra-case}
-\end{figure}
+\end{figure*}
 
 \begin{Example}[Resource features for a handover]\label{ex:resource}
 Between $W_{\mathrm c}$ and $W_{\mathrm d}$, responsibility for resolving the focal case moves from Frontline to Specialist. Frontline still resolves the companion case, so Specialist handles half of the Resolve events in $W_{\mathrm d}$. The only handover in that window goes from Frontline to Specialist, with a gap of $G$. \autoref{tab:example-resource} shows how the assignment and handover features change. \autoref{fig:example-resource} shows who performs each focal event.
 \end{Example}
 
-\begin{table}[H]
+\begin{table*}[!t]
   \caption{Selected resource features in consecutive feature windows. The handover share and mean incoming gap are zero in $W_{\mathrm c}$, which contains no handover.}
   \label{tab:example-resource}
   \centering
@@ -51,20 +51,20 @@ Between $W_{\mathrm c}$ and $W_{\mathrm d}$, responsibility for resolving the fo
     Mean incoming handover gap for Specialist & Zero & $G$ \\
     \bottomrule
   \end{tabularx}
-\end{table}
+\end{table*}
 
-\begin{figure}[H]
+\begin{figure*}[!t]
   \centering
   \input{figures/resource}
   \caption{The focal case passes from Frontline to Specialist in $W_{\mathrm d}$. The handover is assigned to the window containing the Specialist event.}
   \label{fig:example-resource}
-\end{figure}
+\end{figure*}
 
 \begin{Example}[Inter-case features for a longer gap]\label{ex:inter-case}
 Both $W_{\mathrm c}$ and $W_{\mathrm d}$ have the same numbers of arrivals, completions, and active cases. Each Resolve event contributes its gap from Receive to the mean for its window. The gaps are both $g$ in $W_{\mathrm c}$. In $W_{\mathrm d}$, the focal case contributes $G$ and the companion still contributes $g$, so the mean rises. \autoref{tab:example-inter-case} shows this change in timing alongside the matching counts. \autoref{fig:example-inter-case} shows which gaps enter each window's mean.
 \end{Example}
 
-\begin{table}[H]
+\begin{table*}[!t]
   \caption{Selected inter-case features in consecutive feature windows. The later window has the same counts and a longer mean gap.}
   \label{tab:example-inter-case}
   \centering
@@ -80,11 +80,11 @@ Both $W_{\mathrm c}$ and $W_{\mathrm d}$ have the same numbers of arrivals, comp
     Mean within-case event gap & $g$ & $\operatorname{mean}(g,G)$ \\
     \bottomrule
   \end{tabularx}
-\end{table}
+\end{table*}
 
-\begin{figure}[H]
+\begin{figure*}[!t]
   \centering
   \input{figures/inter-case}
   \caption{The focal case's longer gap raises the window mean in $W_{\mathrm d}$. Open circles mark arrivals and filled squares mark completions.}
   \label{fig:example-inter-case}
-\end{figure}
+\end{figure*}

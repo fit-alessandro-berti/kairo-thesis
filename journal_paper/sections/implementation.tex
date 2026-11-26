@@ -9,7 +9,7 @@ The library exposes separate operations for preparing a log, building and transf
 
 \autoref{tab:implementation-inputs} describes the choices before clustering. They determine which changes can be seen and how much information the state model has to summarize. In the resource perspective, selecting a subset of resources limits the output columns while preserving the full set of observed resources in the denominators of the retained shares. In the inter-case perspective, selecting the type of each case attribute determines whether the feature describes numerical values or the mix of categories. Kairo keeps these matrices in memory, so selecting feature groups or resources also helps control matrix width when a log contains many activities or resources.
 
-\begin{table}[H]
+\begin{table*}[!t]
   \caption{Input and representation choices. The dashboard exposes the built-in options, while the library also accepts user-supplied feature matrices.}
   \label{tab:implementation-inputs}
   \centering
@@ -30,11 +30,11 @@ The library exposes separate operations for preparing a log, building and transf
     \bottomrule
   \end{tabularx}
   \end{adjustwidth}
-\end{table}
+\end{table*}
 
 \autoref{tab:implementation-models} describes the choices from learning states to reading a drift signal. Changing the clustering method or its settings can change which observations share a state. Changing the signal window or reference changes the comparison while reusing the state assignments. For density-based clustering, the library combines identical vectors with weights that preserve their counts, then assigns the resulting labels back to the original observations. This reduces the number of points used to build neighborhoods when prefixes or windows repeat.
 
-\begin{table}[H]
+\begin{table*}[!t]
   \caption{State and drift settings, with their practical effects. DBSCAN is density-based spatial clustering of applications with noise.}
   \label{tab:implementation-models}
   \centering
@@ -56,7 +56,7 @@ The library exposes separate operations for preparing a log, building and transf
     \bottomrule
   \end{tabularx}
   \end{adjustwidth}
-\end{table}
+\end{table*}
 
 \subsection{Graphical Interface}
 \label{sec:implementation-dashboard}
@@ -65,7 +65,14 @@ The dashboard opens with log upload and column mapping, then offers the same seq
 
 \autoref{tab:implementation-views} shows how each view supports a decision. The analyst can refine the feature window or projection while looking at the intermediate output, then inspect the resulting states with the diagnostic measures in \cref{def:cluster-diagnostics}. In the drift view, the threshold slider helps locate candidate windows. The analyst can then compare the state distributions and observation counts around the peak, as illustrated in \autoref{fig:implementation-dashboard}. In the resource perspective, for example, an analyst can investigate a suspected reassignment by comparing state frequencies across date ranges and checking the assignment or handover features for the relevant windows.
 
-\begin{table}[H]
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/dashboard-drift.png}
+  \caption{The resource drift view for the synthetic Rheon Single 11 log, cropped to show the threshold slider and three plots. The highest score occurs in the window containing the resource reassignment. The companion plots show the state shares and observation count for each window.}
+  \label{fig:implementation-dashboard}
+\end{figure*}
+
+\begin{table*}[!t]
   \caption{Dashboard views and the decisions they support. Frequencies count assignments, while distributions show the relative shares within signal windows.}
   \label{tab:implementation-views}
   \centering
@@ -86,15 +93,6 @@ The dashboard opens with log upload and column mapping, then offers the same seq
     \bottomrule
   \end{tabularx}
   \end{adjustwidth}
-\end{table}
-
-\begin{figure}[!p]
-  \begin{adjustwidth}{-\extralength}{0cm}
-    \centering
-    \includegraphics[width=\linewidth]{figures/dashboard-drift.png}
-  \end{adjustwidth}
-  \caption{The resource drift view for the synthetic Rheon Single 11 log, cropped to show the threshold slider and three plots. The highest score occurs in the window containing the resource reassignment. The companion plots show the state shares and observation count for each window.}
-  \label{fig:implementation-dashboard}
-\end{figure}
+\end{table*}
 
 \input{sections/parameter-assistance}

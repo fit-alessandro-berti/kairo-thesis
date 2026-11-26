@@ -20,30 +20,30 @@ For these states, total variation reduces to the absolute difference in the shar
 The recent-window reference gives $V_{\mathrm C}$ a higher score because its reference contains less $\mathsf S$. The whole-log mean gives $V_{\mathrm B}$ a zero score and the same positive score to both outer windows. \autoref{fig:approach-drift-scores} places each value at the start of the window it describes. Local scores are undefined until the required earlier signal windows are available.
 \end{Example}
 
-\begin{figure}[H]
+\begin{figure*}[!t]
   \centering
   \input{figures/signal-windows}
   \caption{Signal windows in the service-desk example. In the middle signal window, Frontline resolves both cases in the earlier feature window and Specialist resolves the focal case in the later one.}
   \label{fig:approach-signal-windows}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[H]
+\begin{figure*}[!t]
   \centering
   \input{figures/state-distributions}
   \caption{Observed state distributions in the signal windows. The first and last windows contain only $\mathsf R$ and $\mathsf S$, respectively. The middle window contains equal shares.}
   \label{fig:approach-state-distributions}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[H]
+\begin{figure*}[!t]
   \centering
   \input{figures/reference-distributions}
   \caption{Reference distributions for scoring $V_{\mathrm C}$. The recent-window reference has less $\mathsf S$ than the previous-window and whole-log references in this example.}
   \label{fig:approach-reference-distributions}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[H]
+\begin{figure*}[!t]
   \centering
   \input{figures/drift-scores}
   \caption{Illustrative total-variation scores with $\alpha=P_{\mathrm B}(\mathsf S)$. Missing points indicate that the reference needs more history. The whole-log reference gives the middle window a defined score of zero.}
   \label{fig:approach-drift-scores}
-\end{figure}
+\end{figure*}
