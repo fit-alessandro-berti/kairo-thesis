@@ -81,8 +81,9 @@ The library exposes separate operations for preparing a log, building and transf
 import kairo
 import pandas as pd
 
+csv_path = input("Enter the path to the CSV log: ")
 log = kairo.read_log(
-    "events.csv", case_id="case", activity="activity",
+    csv_path, case_id="case", activity="activity",
     timestamp="completed_at",
 )
 time = "time:timestamp"

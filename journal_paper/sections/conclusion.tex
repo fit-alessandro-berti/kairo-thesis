@@ -1,6 +1,6 @@
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
 
-Building on Deren's thesis~\cite{kairo-thesis}, \Cref{sec:approach} formalizes how Kairo learns states from case progress, resource activity, and conditions across cases, then uses changes in their frequency to locate drift. The library and dashboard in \Cref{sec:implementation} let analysts inspect the states and the measurements behind their signals. \Cref{sec:assessment-scenarios} shows how these signals located selected resource and timing changes. \Cref{sec:assessment-results} quantifies the trade-off between finding more episodes and raising more unmatched alarms.
+\Cref{sec:approach} formalizes how Kairo learns states from case progress, resource activity, and conditions across cases, then uses changes in their frequency to locate drift. The library and dashboard in \Cref{sec:implementation} let analysts inspect the states and the measurements behind their signals. \Cref{sec:assessment-scenarios} shows how these signals located selected resource and timing changes. \Cref{sec:assessment-results} quantifies the trade-off between finding more episodes and raising more unmatched alarms.
 
 Future work should test fixed profiles on independent logs using the information available at each alarm time. These tests could examine whether thresholds calibrated on stable periods and rules that suppress repeat alerts reduce review effort. A study with analysts could assess whether the dashboard helps them identify what changed.
