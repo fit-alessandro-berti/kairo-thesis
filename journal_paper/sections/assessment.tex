@@ -112,7 +112,7 @@ Before scoring the Bose detector, we corrected two implementation issues. The de
 \subsection{Scoring Protocol}
 \label{sec:assessment-scoring}
 
-We used a common calendar-time margin equal to 2.5\% of the log's observation span, from the earliest recorded start or completion to the last completion. We repeated scoring with margins of 1\% and 5\%. Coincident annotations with identical bounds form one episode. \Cref{def:assessment-matching} applies the same localization rule to every detector, regardless of the type of change.
+Detector comparisons depend on the evaluation goal and on how detections are scored~\cite{adams2023experimental}. We used a common calendar-time margin equal to 2.5\% of the log's observation span, from the earliest recorded start or completion to the last completion. We repeated scoring with margins of 1\% and 5\%. Coincident annotations with identical bounds form one episode. \Cref{def:assessment-matching} applies the same localization rule to every detector, regardless of the type of change.
 
 \begin{Definition}[Temporal matching]\label{def:assessment-matching}
 An annotated episode $i$ has bounds $[l_i,r_i]$, with $l_i=r_i$ for a point change. The distance from an alarm timestamp $t$ to this episode is
