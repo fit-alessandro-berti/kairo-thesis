@@ -1,6 +1,10 @@
 \subsubsection{Running Example}\label{sec:approach-example}
 
+The following examples apply \Cref{def:intra-features,def:resource-features,def:inter-features} to the same service-desk log.
+
+\begin{Example}[Service-desk event log]\label{ex:service-desk}
 Consider a service desk observed over consecutive feature windows $W_{\mathrm a},\ldots,W_{\mathrm f}$. In each window $W_{\mathrm x}$, a focal case $\mathrm x$ and its companion case overlap in time. Each has a Receive event followed by a Resolve event, and both events fall within that window. The Frontline team receives every case and resolves every companion case after a gap of $g$. It also resolves the focal cases $\mathrm a$, $\mathrm b$, and $\mathrm c$ after the same gap. The Specialist team resolves the focal cases $\mathrm d$, $\mathrm e$, and $\mathrm f$ after a longer gap $G>g$.
+\end{Example}
 
 \begin{Example}[Intra-case features for a case prefix]\label{ex:intra-case}
 Compare the Receive and Resolve prefixes of cases $\mathrm c$ and $\mathrm d$. At Receive, the current-activity indicator for Receive is on and the prefix contains no directly-follows pair. At Resolve, Receive is the immediately preceding activity and the prefix contains the Receive-to-Resolve pair once. \autoref{tab:example-intra-case} shows the same feature values at the corresponding positions of both cases. \autoref{fig:example-intra-case} illustrates the prefixes used to build the rows.

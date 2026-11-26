@@ -4,60 +4,97 @@ Kairo constructs a feature matrix for each perspective, scales and optionally re
 
 \subsection{Representing Process Behavior}\label{sec:approach-features}
 
-The unit of observation determines what a feature vector can describe. The intra-case perspective uses an event and its case history to represent how work progresses. The resource and inter-case perspectives each use calendar intervals, called \emph{feature windows}, to summarize behavior across cases. A per-event representation of workload would repeat the same shared conditions for every event and give busy intervals more influence. A window summary of individual behavior would average away the position and order of many events. The separate matrices retain the appropriate unit for each question. They also give resource assignment and process-wide timing their own distance scales and cluster assignments. For example, an activity can move to another team while the observed activity sequences remain the same. The resource features can register that shift while the intra-case features remain stable.
+The unit of observation depends on the perspective. Event-level observations retain position within a case. Window-level observations summarize conditions shared across cases over a calendar interval. \Cref{def:feature-representation} defines these observation sequences and the feature rows attached to them.
 
-\begin{Definition}[Perspective and feature representation]\label{def:feature-representation}
-Let $p$ denote the intra-case, resource, or inter-case perspective. Its observation set is $O_{\mathrm{intra}}=E$ for the intra-case perspective. For $p\in\{\mathrm{res},\mathrm{inter}\}$, $O_p$ contains the windows in $\mathcal{W}_{\delta_p}$ from the window of the first event to that of the last, for the chosen feature width $\delta_p$. Each observation $o\in O_p$ has a time anchor $t_p(o)$. For an event this is $t_{\mathrm{intra}}(e)=t(e)$, and for a feature window it is $t_p(W)=b(W)$. The feature map $x_p\colon O_p\to\mathbb{R}^{d_p}$ supplies a row of $d_p$ selected numerical features for each observation.
+\begin{Definition}[Observation sequences and feature maps]\label{def:feature-representation}
+Write $p$ for the selected perspective, with $p\in\{\mathrm{intra},\mathrm{res},\mathrm{inter}\}$.
+\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+  \item \textbf{Intra-case observations.} The observation sequence is $\sigma_{\mathrm{intra}}=\sigma(E)$, with one observation per event and time anchor $t_{\mathrm{intra}}(e)=t(e)$. Its feature history comes from the trace of its own case.
+  \item \textbf{Resource and inter-case observations.} Choose a width $\delta_p$ and use the covering grid segment $\sigma_p=\mathcal W_{\delta_p}[\sigma(E)]$ from \Cref{def:calendar-grid}. Each interval $W$ in this sequence gives one feature window, with anchor $t_p(W)=b(W)$. These sequences retain intervals without events.
+  \item \textbf{Feature map.} Let $O_p=\operatorname{set}(\sigma_p)$ be the set of observations. The map $x_p\colon O_p\to\mathbb R^{d_p}$ assigns each observation a vector containing its $d_p$ selected feature coordinates.
+  \item \textbf{Feature values.} For a proposition $B$, the indicator $\mathbf{1}[B]$ is one if $B$ holds and zero otherwise. Ratios with zero denominator, means of empty samples, and sample standard deviations based on fewer than two values are set to zero. Elapsed gaps and event durations are expressed in minutes.
+\end{itemize}
 \end{Definition}
 
-Feature groups determine which columns are present. Activity and resource pairs contribute columns when observed in the log. The indicator $\mathbf{1}[\cdot]$ takes the value one when its condition holds and zero otherwise. A ratio with a zero denominator, a mean of an empty sample, and a sample standard deviation with too few values are entered as zero. Elapsed gaps and event durations are expressed in minutes for the feature calculations. Both window-based perspectives retain empty feature windows so that quiet periods remain visible.
+The time anchor links each row to the sequence used for drift scoring in \Cref{sec:approach-signal}. The following definitions specify which events contribute to the feature coordinates.
 
 \subsubsection{Intra-Case Perspective}
 
-The current and recent activities locate the event within its case. The prefix summaries preserve a longer history, including the order and repetition of activities. The optional progress coordinate helps distinguish similar prefixes at different stages of a case. It uses the length of the trace in the complete input log.
+\Cref{def:intra-features} describes the current activity, earlier activities, and how far the case has progressed. Each event is evaluated in the order of its own trace.
 
 \begin{Definition}[Intra-case features]\label{def:intra-features}
-For $e=e_{c,j}$ and activity $a^\star\in A$, let $N_{a^\star}(e)=|\{v\in\pi(e):a(v)=a^\star\}|$. The current-activity indicator is $\mathbf{1}[a(e)=a^\star]$. The past-activity indicator at positive lag $\ell$ is $\mathbf{1}[a(e_{c,j-\ell})=a^\star]$ when $j>\ell$ and zero otherwise. The chosen lag limit gives the number of these past-activity blocks. Prefix presence and frequency use $\mathbf{1}[N_{a^\star}(e)>0]$ and $N_{a^\star}(e)/j$. For an observed directly-follows pair $(a^\star,a')$, its count is
-\[
-  \bigl|\{v\in\pi(e):v^-\text{ exists},\,
-            (a(v^-),a(v))=(a^\star,a')\}\bigr|.
-\]
-The progress coordinate is $j/m_c$. The requested groups of these coordinates form $x_{\mathrm{intra}}(e)$.
+For $c_0\in C$, use the event subset $E_{c_0}$ and its ordered trace $\tau_{c_0}$ from \Cref{def:ordered-log}. For $e=e_{c_0,j}$, the feature history is the position window $\pi(e)=\tau_{c_0}[1:j]$ from \Cref{def:case-history}. For $a^\star\in A$, let $N_{a^\star}(e)=|\{v\in\operatorname{set}(\pi(e)):a(v)=a^\star\}|$.
+\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+  \item \textbf{Current activity.} The coordinate for $a^\star$ is $\mathbf{1}[a(e)=a^\star]$.
+  \item \textbf{Past activities.} For a selected integer lag limit $h\geq0$, use one indicator block for each $\ell\in\{1,\ldots,h\}$. The coordinate for $a^\star$ in block $\ell$ is $\mathbf{1}[a(e_{c_0,j-\ell})=a^\star]$ if $j>\ell$, and zero otherwise.
+  \item \textbf{Prefix presence.} The indicator for $a^\star$ is $\mathbf{1}[N_{a^\star}(e)>0]$.
+  \item \textbf{Prefix frequency.} The share of $a^\star$ is $N_{a^\star}(e)/j$.
+  \item \textbf{Directly-follows counts.} For each pair $(a^\star,a')$ observed in the log, the number of its occurrences within the prefix is
+  \[
+    \bigl|\{v\in\operatorname{set}(\pi(e)):v^-\text{ exists},\
+                 (a(v^-),a(v))=(a^\star,a')\}\bigr|.
+  \]
+  \item \textbf{Case progress.} The normalized position is $j/m_{c_0}$.
+\end{itemize}
+The selected groups of these coordinates form $x_{\mathrm{intra}}(e)$.
 \end{Definition}
+
+The prefix ends at the current event. The optional progress coordinate uses the complete recorded trace length, so it provides a retrospective measure of position.
 
 \subsubsection{Resource Perspective}
 
-Event counts and distinct case counts per resource summarize workload. Activity shares can reveal a reassignment even when the total workload stays stable. A handover counts in the window of the receiving event, so transfers across window boundaries remain visible.
+\Cref{def:resource-features} groups resource activity into the feature windows from \Cref{def:feature-representation}. It assigns a handover to the interval containing the receiving event, which allows transfers across window boundaries to contribute.
 
 \begin{Definition}[Resource features]\label{def:resource-features}
-For a feature window $W$, write $E_{W,\rho}=\{e\in E_W:r(e)=\rho\}$ and let $H_W$ consist of events in $E_W$ whose predecessor and current event have different known resources. For resources $\rho,\sigma\in R$ let
+Let $E^{\mathrm{res}}=\{e\in E:r(e)\ne\bot\}$ be the events with recorded resources. For $W\in O_{\mathrm{res}}$, apply \Cref{def:calendar-grid} to $\sigma(E^{\mathrm{res}})$ and set $E_W^{\mathrm{res}}=\operatorname{set}(\sigma(E^{\mathrm{res}})_W)$. For $\rho\in R$, let $E_{W,\rho}=\{e\in E_W^{\mathrm{res}}:r(e)=\rho\}$. The receiving events of handovers are
 \[
-  H_{W,\rho,\sigma}=\{e\in H_W:r(e^-)=\rho,\ r(e)=\sigma\}.
+ H_W=\{e\in E_W^{\mathrm{res}}: e^-\text{ exists},\
+                                  r(e^-)\notin\{\bot,r(e)\}\}.
 \]
-Resource $\rho$ has $|E_{W,\rho}|$ events and $|\{c(e):e\in E_{W,\rho}\}|$ distinct cases. Its mean event duration uses the available $\operatorname{dur}(e)$ for $e\in E_{W,\rho}$, and its mean incoming handover gap uses $g(e)$ for $e\in H_W\cap E_{W,\rho}$. The activity share for $(a^\star,\rho)$ and the handover share for $(\rho,\sigma)$ are, respectively,
-\[
-  \frac{|\{e\in E_{W,\rho}:a(e)=a^\star\}|}
-       {|\{e\in E_W:a(e)=a^\star,\ r(e)\ne\bot\}|}
-  \qquad\text{and}\qquad
-  \frac{|H_{W,\rho,\sigma}|}{\sum_{\nu\in R}|H_{W,\rho,\nu}|}.
-\]
-The requested coordinate groups give $x_{\mathrm{res}}(W)$ for the selected resources. A handover share column uses two selected endpoints. Each share retains its full denominator even when some resource columns are omitted.
+The predecessor is taken from the full case trace. For $\rho,\nu\in R$, let $H_{W,\rho,\nu}=\{e\in H_W:r(e^-)=\rho,\ r(e)=\nu\}$.
+\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+  \item \textbf{Events per resource.} The count for $\rho$ is $|E_{W,\rho}|$.
+  \item \textbf{Cases per resource.} The distinct case count is $|\{c(e):e\in E_{W,\rho}\}|$.
+  \item \textbf{Mean event duration.} Average the available $\operatorname{dur}(e)$ over $e\in E_{W,\rho}$.
+  \item \textbf{Mean incoming handover gap.} Average $g(e)$ over $e\in H_W\cap E_{W,\rho}$.
+  \item \textbf{Activity-resource share.} For each observed pair $(a^\star,\rho)$, the share of that activity performed by $\rho$ is
+  \[
+     \frac{|\{e\in E_{W,\rho}:a(e)=a^\star\}|}
+          {|\{e\in E_W^{\mathrm{res}}:a(e)=a^\star\}|}.
+  \]
+  \item \textbf{Handover share.} For each observed handover pair $(\rho,\nu)$, the share of transfers from $\rho$ received by $\nu$ is
+  \[
+     \frac{|H_{W,\rho,\nu}|}{\sum_{\kappa\in R}|H_{W,\rho,\kappa}|}.
+  \]
+\end{itemize}
+The selected feature groups and resources determine $x_{\mathrm{res}}(W)$. Each retained handover-share coordinate uses two selected resources. The denominators in both shares use all recorded resources.
 \end{Definition}
+
+Activity shares can reveal a reassignment even when the total number of events stays stable. The full denominators preserve that interpretation when the analyst displays a subset of resources.
 
 \subsubsection{Inter-Case Perspective}
 
-Arrivals and completions help distinguish a change in incoming demand from a change in how quickly cases finish. Gaps are recorded where the next event happens. A separate stall feature can register waiting cases during a window with no events.
+\Cref{def:inter-features} uses the full event sequence to summarize activity and timing across cases. The distinction between case arrivals and completions helps separate changes in incoming demand from changes in how quickly work finishes.
 
 \begin{Definition}[Inter-case features]\label{def:inter-features}
-For $W$, let $C_W=\{c(e):e\in E_W\}$. The active case count is $|C_W|$, and the activity intensity is $|E_W|/|C_W|$ events per active case. Arrival and completion counts are $|\{c\in C:s_c\in W\}|$ and $|\{c\in C:f_c\in W\}|$. The mean and sample standard deviation of within-case gaps use the sample $(g(e):e\in E_W,\ e^-\text{ exists})$. Given a positive stall limit $\eta_{\rm stall}$, the stalled case count is
-\[
-  \bigl|\{c\in C:\exists\,e\in\tau_c,\ e^+\text{ exists and }
-                            t(e)+\eta_{\rm stall}<d(W)<t(e^+)\}\bigr|.
-\]
-For a numerical case attribute $\alpha$, the mean and sample standard deviation use the values $v_\alpha(e)$ observed in $E_W$. For a categorical attribute $\alpha$ and an observed category $z$, its share is $|\{e\in E_W:v_\alpha(e)=z\}|/|E_W|$. These groups provide the selected coordinates of $x_{\mathrm{inter}}(W)$.
+For $W\in O_{\mathrm{inter}}$, take the event set $E_W$ obtained by applying \Cref{def:calendar-grid} to the full sequence $\sigma(E)$. The cases observed in the window form $C_W=\{c(e):e\in E_W\}$.
+\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+  \item \textbf{Active cases.} The count is $|C_W|$.
+  \item \textbf{Arrivals and completions.} Count cases with first or last recorded timestamps in the interval, respectively. The counts are $|\{c_0\in C:s_{c_0}\in W\}|$ and $|\{c_0\in C:f_{c_0}\in W\}|$.
+  \item \textbf{Events per active case.} The ratio is $|E_W|/|C_W|$.
+  \item \textbf{Within-case gaps.} Take the mean and sample standard deviation of $(g(e):e\in E_W,\ e^-\text{ exists})$. A gap contributes to the window of its later event.
+  \item \textbf{Stalled cases.} For a threshold $\eta_{\mathrm{stall}}>0$, count cases that are between two recorded events at the interval end and have waited longer than the threshold:
+  \[
+     \bigl|\{c_0\in C:\exists\,e\in E_{c_0}\ \text{with}\ e^+\text{ defined and }
+                 t(e)+\eta_{\mathrm{stall}}<d(W)<t(e^+)\}\bigr|.
+  \]
+  \item \textbf{Numerical attributes.} For each mapped numerical case attribute $\alpha$, take the mean and sample standard deviation of the available values $(v_\alpha(e):e\in E_W,\ v_\alpha(e)\ne\bot)$.
+  \item \textbf{Categorical attributes.} For each observed value $z$ of a mapped categorical case attribute $\alpha$, its share is $|\{e\in E_W:v_\alpha(e)=z\}|/|E_W|$.
+\end{itemize}
+The selected groups form $x_{\mathrm{inter}}(W)$. Attribute summaries count each case once per event it contributes.
 \end{Definition}
 
-Attribute summaries weight cases by their events in the window. Missing numerical values do not enter the sample, and events with missing categories still enter the denominator of the categorical shares. Taken together, feature selection and the choice of observation unit determine which changes can appear in the subsequent state assignments.
+A stalled case may have no events in the current feature window. For categorical shares, the denominator includes events whose category is missing.
 
 \input{sections/perspective-examples}
 
@@ -115,17 +152,21 @@ The silhouette examines separation from the point of view of individual observat
 
 \subsection{Measuring Changes in State Frequencies}\label{sec:approach-signal}
 
-The detector builds a time series from \emph{signal windows}. Feature windows preserve the detail needed to describe an observation, while signal windows collect observations to compare. Short signal windows improve time resolution. A window with few observations can give unstable estimates. Longer windows can stabilize frequencies while mixing behavior from before and after a change. \autoref{fig:approach-signal-windows} illustrates the relation between these windows.
+The detector builds a time series from \emph{signal windows}. Each signal window collects the labels of observations whose time anchors fall inside it. \Cref{def:state-distributions} gives the grouping rule and the associated proportions. Short signal windows improve time resolution but may contain too few observations to estimate proportions reliably. \autoref{fig:approach-signal-windows} illustrates how resource feature windows contribute labels to the signal.
 
 \begin{Definition}[Signal windows and state distributions]\label{def:state-distributions}
-Fix a perspective $p$ and a signal window width $\Delta$. For a window-based perspective require $\Delta\geq\delta_p$. Group observations by the window in $\mathcal W_\Delta$ containing their anchor time $t_p(o)$, using the event timestamp for an intra-case observation or the feature-window start for a resource or inter-case observation. Order the signal windows that receive observations by start time, and denote them by $V_j$. Let $N_j$ count all observations assigned to $V_j$. The share of any observed model label $s\in S_p$ is
-\[
-  P_j(s)=\frac{|\{o\in O_p:t_p(o)\in V_j,\ s_p(o)=s\}|}{N_j},
-  \qquad
-  N_j=|\{o\in O_p:t_p(o)\in V_j\}|.
-\]
-Each observation contributes to a single distribution. A signal window with no observations contributes no distribution. A feature window with no events can still contribute a state.
+For perspective $p$, use the observation sequence $\sigma_p$ and time anchors $t_p$ from \Cref{def:feature-representation}.
+\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+  \item \textbf{Signal-window membership.} Apply \Cref{def:calendar-grid} to $\sigma_p$ with anchor map $t_p$ and width $\Delta>0$. For a window-based perspective require $\Delta\geq\delta_p$. Write $V_1,\ldots,V_m$ for the intervals with a nonempty observation subsequence, in order of start time.
+  \item \textbf{Observed state shares.} Let $O_{p,j}=\operatorname{set}((\sigma_p)_{V_j})$ and $N_j=|O_{p,j}|$. Using the labels from \Cref{def:state-model}, the distribution on $S_p$ in interval $V_j$ is
+  \[
+     P_j(s)=\frac{|\{o\in O_{p,j}:s_p(o)=s\}|}{N_j},
+     \qquad s\in S_p.
+  \]
+\end{itemize}
 \end{Definition}
+
+A feature window with an empty event subsequence can still contribute a state label because it has a feature row. A signal interval with no observation anchors has no state distribution.
 
 The reference determines what counts as recent or typical behavior. The previous-window reference is sensitive to local fluctuations. Averaging recent windows smooths the reference, and a whole-log average gives a fixed retrospective point of comparison.
 
