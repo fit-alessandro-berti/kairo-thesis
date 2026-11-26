@@ -19,9 +19,9 @@ We present Kairo, which builds on the state-based monitoring method developed in
 
 \paragraph{Research questions.}
 \begin{enumerate}[label=\textbf{RQ\Alph*.},ref=RQ\Alph*]
-  \item\label{rq:comparison} How does Kairo compare with existing detectors in locating annotated drift episodes across the benchmark?
-  \item\label{rq:scenarios} Which types of annotated change do Kairo's perspective-specific state signals capture in the selected scenarios?
-  \item\label{rq:margin} How does the time margin for matching alarms to annotations affect the comparison between the leading profiles?
+  \item\label{rq:comparison} When evaluated on the same event logs, how does Kairo compare with the detectors in \softwarepm{}? How many annotated changes do the leading configurations locate, and how many alarms do they raise without a matching annotation, including on logs with no injected change?
+  \item\label{rq:scenarios} In the selected scenarios, which changes can Kairo locate using signals that describe progress within cases, resource activity, and conditions across cases? We examine changes in the order of activities, who does the work, waiting and processing times, and the mix of cases.
+  \item\label{rq:margin} How much does the comparison depend on how close an alarm must be to an annotated change to count as a match? When we score the same alarms with narrower and wider matching margins, how do the F1 scores of the leading Kairo and \softwarepm{} configurations change, and does the same configuration still lead?
 \end{enumerate}
 
 Kairo surfaced selected changes in resource assignment and waiting time. Its leading profile matched more annotated episodes than the leading comparison profile and raised more unmatched alarms.
