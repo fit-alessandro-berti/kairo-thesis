@@ -83,7 +83,7 @@ For $W\in O_{\mathrm{inter}}$, take the event set $E_W$ obtained by applying \Cr
   \item \textbf{Arrivals and completions.} Count cases with first or last recorded timestamps in the interval, respectively. The counts are $|\{c_0\in C:s_{c_0}\in W\}|$ and $|\{c_0\in C:f_{c_0}\in W\}|$.
   \item \textbf{Events per active case.} The ratio is $|E_W|/|C_W|$.
   \item \textbf{Within-case gaps.} Take the mean and sample standard deviation of $(g(e):e\in E_W,\ e^-\text{ exists})$. A gap contributes to the window of its later event.
-  \item \textbf{Stalled cases.} For a threshold $\eta_{\mathrm{stall}}>0$, count cases that are between two recorded events at the interval end and have waited longer than the threshold:
+  \item \textbf{Stalled cases.} Given a stall threshold $\eta_{\mathrm{stall}}>0$, the number of cases stalled at the interval end is
   \[
      \bigl|\{c_0\in C:\exists\,e\in E_{c_0}\ \text{with}\ e^+\text{ defined and }
                  t(e)+\eta_{\mathrm{stall}}<d(W)<t(e^+)\}\bigr|.
@@ -100,55 +100,81 @@ A stalled case may have no events in the current feature window. For categorical
 
 \subsection{Scaling and Reducing the Vectors}\label{sec:approach-reduction}
 
-Feature columns can measure counts, proportions, or durations. A column with a large numerical range could dominate the distances used in clustering. Scaling puts the selected columns on a comparable footing within each perspective. Binary activity indicators can retain their original scale. Case identifiers and timestamps link observations back to the log and stay outside the feature vectors.
+Feature columns can measure counts, proportions, or durations. A column with a large numerical range can dominate clustering distances. \Cref{def:cluster-representation} specifies how Kairo rescales columns and optionally projects observations to fewer dimensions. Case identifiers and timestamps remain attached to each row as metadata.
 
-\begin{Definition}[Representation used for clustering]\label{def:cluster-representation}
-For perspective $p$, let $x_{pi}(o)$ be column $i$ of $x_p(o)$. The scaled vector $\widetilde{x}_p(o)$ uses the following transformation column by column:
-\[
-  \widetilde{x}_{pi}(o)=\frac{x_{pi}(o)-\mu_{pi}}{\sigma_{pi}}.
-\]
-For standard score scaling, $\mu_{pi}$ is the column mean and $\sigma_{pi}$ its sample standard deviation. For min-max scaling, these are the minimum and the range, respectively. A constant column selected for scaling maps to zero. Columns excluded from scaling keep their original values.
-
-With principal component analysis (PCA), let $\overline{x}_p$ be the mean scaled vector. Let $U_\ell$ contain the leading $\ell$ orthonormal eigenvectors of the scaled data's covariance matrix, ordered by decreasing eigenvalue. The clustering input is $z_p(o)=U_\ell^\top(\widetilde{x}_p(o)-\overline{x}_p)$. When this reduction is skipped, $z_p(o)=\widetilde{x}_p(o)$.
+\begin{Definition}[Scaling and projection]\label{def:cluster-representation}
+Fix a perspective $p$. The representation used for clustering and its projection diagnostics are defined as follows.
+\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+  \item \textbf{Column scaling.} Write $x_{pi}(o)$ for coordinate $i$ of $x_p(o)$. A scaled coordinate is
+  \[
+     \widetilde{x}_{pi}(o)=\frac{x_{pi}(o)-\mu_{pi}}{\sigma_{pi}},
+  \]
+  where $\mu_{pi}$ and $\sigma_{pi}$ are the column mean and sample standard deviation for standard score scaling, or the column minimum and range for min-max scaling. A constant column selected for scaling maps to zero. Excluded columns keep their original values.
+  \item \textbf{Principal component projection.} Let $\overline{x}_p$ be the mean of the scaled vectors and let $U_\ell$ contain the leading $\ell$ orthonormal covariance eigenvectors in decreasing order of eigenvalue. With principal component analysis (PCA), $z_p(o)=U_\ell^\top(\widetilde{x}_p(o)-\overline{x}_p)$. Without projection, $z_p(o)=\widetilde{x}_p(o)$.
+  \item \textbf{Projection diagnostics.} Let $\xi_1,\ldots,\xi_{d_p}$ be the covariance eigenvalues in the same order. For positive total variance, the retained fraction is $\sum_{i=1}^{\ell}\xi_i/\sum_{i=1}^{d_p}\xi_i$. The mean squared reconstruction error is
+  \[
+     \frac{1}{|O_p|}\sum_{o\in O_p}
+       \bigl\|\widetilde{x}_p(o)-\overline{x}_p-U_\ell z_p(o)\bigr\|^2.
+  \]
+\end{itemize}
 \end{Definition}
 
-Related features, such as activity presence and frequency, can contribute similar information. PCA~\cite{hotelling1933components} can summarize that information in fewer coordinates. To choose the cut, an analyst can see the share of variance retained, the sum of the retained eigenvalues divided by the sum of all eigenvalues. The analyst can also inspect reconstruction error, the mean squared norm of $(\widetilde{x}_p(o)-\overline{x}_p)-U_\ell z_p(o)$ over the fitted observations. A change expressed mainly in a discarded direction can be lost even when the projection retains most of the overall variance.
+The activity indicators can retain their original scale. PCA can compress related coordinates, such as activity presence and frequency~\cite{hotelling1933components}. Retained variance and reconstruction error help the analyst choose the number of components. A discarded direction can still carry evidence of change.
 
 \subsection{Learning States}\label{sec:approach-states}
 
-Clustering groups similar observations. The groups give each perspective a set of recurring patterns whose prevalence can be compared over time.
+Clustering groups similar observations into recurring patterns. \Cref{def:state-model} specifies how labels describe the groups and how their order gives a trajectory.
 
-\begin{Definition}[State model and trajectory]\label{def:state-model}
-A fitted state model for perspective $p$ assigns a label $s_p(o)$ to each $o\in O_p$ based on $z_p(o)$. Its observed label set is $S_p=\{s_p(o):o\in O_p\}$. The observations assigned label $s$ form the state $\{o\in O_p:s_p(o)=s\}$. Applying $s_p$ along a case trace gives an intra-case trajectory. Applying it along the ordered feature windows gives a resource or inter-case trajectory. A visit is a maximal contiguous sequence with the same label in the trajectory. It ends when the next visit begins. The final visit ends at the last event's timestamp for a case or at the end of the last feature window for a window-based trajectory.
+\begin{Definition}[State model and trajectories]\label{def:state-model}
+Fix a perspective $p$ and the clustering representation of \Cref{def:cluster-representation}.
+\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+  \item \textbf{Labels and states.} A fitted model assigns a label $s_p(o)$ to each $o\in O_p$ using its representation $z_p(o)$. The observed label set is $S_p=\{s_p(o):o\in O_p\}$. The state for $s\in S_p$ consists of $\{o\in O_p:s_p(o)=s\}$.
+  \item \textbf{Trajectory.} Applying the labels along a case trace $\tau_{c_0}$ gives an intra-case trajectory. Applying them along $\sigma_p$ gives the trajectory of a window-based perspective.
+  \item \textbf{State visit.} A visit is a maximal contiguous subsequence with a common label. It begins at the first observation's anchor and ends at the next visit's start. The final visit ends at the last event's timestamp for a case, or at the end of the final feature window for a window-based trajectory.
+\end{itemize}
 \end{Definition}
 
-Kairo uses the following ways to obtain the assignment $s_p$. In the expressions below, $z=z_p(o)$ is an observation in the clustering representation. Euclidean distance is $\|z-v\|$ for a comparison vector $v$. Cosine distance compares directions using $1-\langle z,v\rangle/(\|z\|\|v\|)$ for nonzero vectors.
+Kairo fits the model once per perspective for the analysis presented here. The resulting labels are comparable across periods, and each fit uses the complete log. \Cref{def:clustering-rules} gives the assignment rules.
 
-\paragraph{$k$-means.}
-The model fits $k$ centers $\mu_s$ with the objective of minimizing $\sum_{o\in O_p}\|z_p(o)-\mu_{s_p(o)}\|^2$, the within-state sum of squared Euclidean distances. The updates alternate between assigning observations to the nearest center and moving each occupied center to the mean of its assigned vectors~\cite{lloyd1982quantization}. The chosen $k$ controls how finely the model can split the observations.
+\begin{Definition}[Clustering rules]\label{def:clustering-rules}
+Let $z=z_p(o)$ be the representation of an observation $o\in O_p$.
+\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+  \item \textbf{Distances.} For vectors $z$ and $v$, the Euclidean distance is $d_{\mathrm E}(z,v)=\|z-v\|$. For nonzero vectors, the cosine distance is $d_{\mathrm C}(z,v)=1-\langle z,v\rangle/(\|z\|\|v\|)$. The function $d_{\mathrm{cl}}$ denotes the distance selected for a method that permits a choice.
+  \item \textbf{$k$-means.} The model assigns each observation to its closest center in Euclidean distance. Fitting alternates assignment with moving each occupied center to the mean of its assigned vectors~\cite{lloyd1982quantization}. For $k$ centers $\mu_1,\ldots,\mu_k$, the objective is to minimize
+  \[
+      \sum_{o\in O_p}\|z_p(o)-\mu_{s_p(o)}\|^2 .
+  \]
+  \item \textbf{Self-organizing map.} A self-organizing map (SOM) puts a prototype $\mu_g$ at each grid cell $g\in G$. Its label for $z$ is a winning cell $g^\ast$ that minimizes $d_{\mathrm{cl}}(z,\mu_g)$. In training, a prototype takes the step $\beta H(g,g^\ast)(z-\mu_g)$, where $\beta$ is the learning rate and $H$ weights cells by their proximity to the winner~\cite{kohonen1982maps}.
+  \item \textbf{Density-based clustering.} Density-based spatial clustering of applications with noise (DBSCAN) uses a radius $\varepsilon$ and a minimum count $m$. A vector is a core if the sum of multiplicities of distinct vectors within distance $\varepsilon$, including itself, is at least $m$. Connected components of neighboring core vectors form clusters. A non-core vector in a core neighborhood joins a cluster of such a core. The remaining vectors receive a noise label~\cite{ester1996density}. Kairo maps each label back to the original observations with that vector.
+\end{itemize}
+\end{Definition}
 
-\paragraph{Self-organizing map.}
-A self-organizing map (SOM) has a prototype $\mu_g$ at each grid cell $g\in G$. Given $z$, the winning cell $g^\ast$ minimizes the selected distance $d(z,\mu_g)$. Training moves the winner and its neighbors toward the vector. A prototype takes a step $\beta H(g,g^\ast)(z-\mu_g)$, where $\beta$ is the current learning rate and $H$ weights cells by their proximity to the winner on the grid~\cite{kohonen1982maps}. After training, the winning cell is the observation's label. The grid lets an analyst browse nearby states together.
-
-\paragraph{Density-based clustering.}
-Density-based spatial clustering of applications with noise (DBSCAN) forms neighborhoods using a radius $\varepsilon$. To count the neighborhood of $z$, Kairo sums the multiplicities of the distinct vectors within $\varepsilon$, including $z$ itself. A core vector has a neighborhood count of at least $m$. Core vectors linked by chains of core neighbors form clusters. Each non-core vector within $\varepsilon$ of a core joins a cluster of such a core. Vectors outside all core neighborhoods receive a noise label~\cite{ester1996density}. Kairo assigns these labels back to the original observations. The noise label contributes to state shares when the fit finds a cluster. To help set $\varepsilon$, the dashboard can plot the distances from observations to their $m$th nearest neighbor in increasing order, counting the query observation among its neighbors.
+The number of centers controls how finely $k$-means can split the observations. The SOM grid supports inspection of neighboring prototypes. For DBSCAN, the dashboard shows the ordered distances at which each observation's neighborhood reaches the chosen count, including the observation itself. A fit that finds a cluster can include noise in its state shares.
 
 \input{sections/clustering-figure}
 
-The same fitted representation and clustering apply throughout each perspective of the log. This makes a state label comparable across periods. State frequencies are counts of assigned observations, and the analyst can use the original features to interpret what a state represents. For comparison in the clustering space, a state is represented by a centroid for $k$-means, a cell prototype for a SOM, or the mean of its distinct core vectors for DBSCAN. Noise has no representative. Representative distances support visualization and do not enter the subsequent drift score. The full-log fit makes the analysis presented here retrospective.
+An analyst can interpret a state by examining the original feature values of its members. Plots of between-state distances use cluster centers for $k$-means, cell prototypes for a SOM, and means of distinct core vectors for DBSCAN. These representatives support visualization. The drift signal uses observation counts by state.
 
 \paragraph{Inspecting the fitted states.}
-The SOM quantization error averages $d(z_p(o),\mu_{s_p(o)})$ across observations. The SOM occupancy entropy measures how evenly the observations are spread across the grid. For cell shares $f_g$, it divides the entropy $-\sum_{g:f_g>0} f_g\log f_g$ by $\log |G|$ for a grid with multiple cells. Two further comparisons examine the compactness and separation of the states, excluding DBSCAN noise.
+\Cref{def:cluster-diagnostics} gives the measures used to check how the model organizes observations.
 
-\begin{Definition}[Cluster separation and compactness]\label{def:cluster-diagnostics}
-For an observation $o$, let $a_o$ be its mean distance to the other members of its state and $b_o$ be the least mean distance to the members of any other state. The silhouette averages $(b_o-a_o)/\max(a_o,b_o)$ across evaluated observations, with zero for a singleton state or a zero denominator. For the Calinski-Harabasz score, let $n$ be the number of retained observations, $k$ the number of their occupied states, and $n_s$ the count of state $s$. Write $\bar z_s$ for the mean vector in state $s$ and $\bar z$ for the overall mean. For a nondegenerate clustering the score is the ratio
-\[
- \frac{\sum_s n_s\|\bar z_s-\bar z\|^2/(k-1)}
-      {\sum_o\|z_p(o)-\bar z_{s_p(o)}\|^2/(n-k)}.
-\]
+\begin{Definition}[State diagnostics]\label{def:cluster-diagnostics}
+\leavevmode
+\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+  \item \textbf{SOM quantization error.} Average $d_{\mathrm{cl}}(z_p(o),\mu_{s_p(o)})$ over $o\in O_p$.
+  \item \textbf{SOM occupancy entropy.} Let $f_g$ denote the share of observations assigned to cell $g$ of grid $G$. The normalized entropy is $-\sum_{g:f_g>0}f_g\log f_g/\log|G|$ if $|G|>1$, and zero for a single-cell grid.
+  \item \textbf{Silhouette.} For observation $o$, let $a_o$ be its mean distance to other members of its state and $b_o$ its least mean distance to the members of another state. The score averages $(b_o-a_o)/\max(a_o,b_o)$ over the evaluated observations, with a contribution of zero for a singleton state or a zero denominator~\cite{rousseeuw1987silhouettes}.
+  \item \textbf{Calinski-Harabasz score.} Let $n$ be the number of evaluated observations, $k$ the number of their occupied states, and $n_s$ the number in state $s$. Let $\bar z_s$ be the mean vector of state $s$ and $\bar z$ the overall mean. When $2\leq k<n$ and within-state variation is positive, the score is
+  \[
+     \frac{\sum_s n_s\|\bar z_s-\bar z\|^2/(k-1)}
+          {\sum_o\|z_p(o)-\bar z_{s_p(o)}\|^2/(n-k)}.
+  \]
+  The numerator measures separation of the state means and the denominator measures variation within states~\cite{calinski1974dendrite}.
+\end{itemize}
+The silhouette and Calinski-Harabasz calculations exclude DBSCAN noise.
 \end{Definition}
 
-The silhouette examines separation from the point of view of individual observations~\cite{rousseeuw1987silhouettes}. The Calinski-Harabasz score measures separation of the state means relative to variation within states~\cite{calinski1974dendrite}. These diagnostics characterize how the model organizes the feature vectors. Drift localization is assessed separately in \autoref{sec:assessment}.
+These measures describe the fitted representation. \Cref{sec:assessment} evaluates how well the resulting drift signals locate annotated changes.
 
 \subsection{Measuring Changes in State Frequencies}\label{sec:approach-signal}
 
@@ -168,27 +194,39 @@ For perspective $p$, use the observation sequence $\sigma_p$ and time anchors $t
 
 A feature window with an empty event subsequence can still contribute a state label because it has a feature row. A signal interval with no observation anchors has no state distribution.
 
-The reference determines what counts as recent or typical behavior. The previous-window reference is sensitive to local fluctuations. Averaging recent windows smooths the reference, and a whole-log average gives a fixed retrospective point of comparison.
+The reference determines what counts as recent or typical behavior. \Cref{def:drift-reference} describes a local comparison with the previous populated window, a smoothed comparison with several recent windows, and a fixed retrospective comparison with the whole log.
 
 \begin{Definition}[Reference distribution]\label{def:drift-reference}
-For the signal window $V_j$, use the reference index set $I_j=\{j-1\}$ for the previous window or $I_j=\{j-h,\ldots,j-1\}$ for a recent average of $h$ windows. The whole-log reference uses all populated signal-window indices, including $j$. In each case the reference is the unweighted mean $Q_j=|I_j|^{-1}\sum_{i\in I_j}P_i$. A local reference is defined once all its required preceding windows are available.
+For a populated signal window $V_j$ from \Cref{def:state-distributions}, let $I_j$ be the reference index set.
+\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+  \item \textbf{Previous window.} Use $I_j=\{j-1\}$ if $j>1$.
+  \item \textbf{Recent windows.} For an integer lookback $h\geq1$, use $I_j=\{j-h,\ldots,j-1\}$ if $j>h$.
+  \item \textbf{Whole log.} Use all populated indices, $I_j=\{1,\ldots,m\}$, including the current index.
+\end{itemize}
+When the index set is available, the reference is the unweighted mean $Q_j=|I_j|^{-1}\sum_{i\in I_j}P_i$.
 \end{Definition}
 
+\Cref{def:drift-score} compares an observed distribution with its reference. Each comparison places the resulting score at the start of the window it describes.
+
 \begin{Definition}[Divergence and drift score]\label{def:drift-score}
-The score assigned to $b(V_j)$ is $\lambda_j=D(P_j,Q_j)$ for a chosen comparison $D$. For distributions $P,Q$ over $S_p$, write $M=(P+Q)/2$ and define the smoothed Kullback-Leibler term with a fixed small $\epsilon>0$:
-\[
-  K_\epsilon(P,Q)=
-  \sum_{s\in S_p}(P(s)+\epsilon)\log\frac{P(s)+\epsilon}{Q(s)+\epsilon}.
-\]
-The available comparisons are
-\[
-\begin{aligned}
-D_{\mathrm{KL}}(P,Q)&=K_\epsilon(P,Q),\\
-D_{\mathrm{JS}}(P,Q)&=\bigl(K_\epsilon(P,M)+K_\epsilon(Q,M)\bigr)/2,\\
-D_{\mathrm{TV}}(P,Q)&=\tfrac12\sum_{s\in S_p}|P(s)-Q(s)|,\\
-D_{\mathrm{H}}(P,Q)&=\|\sqrt P-\sqrt Q\|/\sqrt{2}.
-\end{aligned}
-\]
+For distributions $P,Q$ on $S_p$, let $M=(P+Q)/2$ and let $\epsilon>0$ be a fixed smoothing constant.
+\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+  \item \textbf{Smoothed Kullback-Leibler term.} Define
+  \[
+    K_\epsilon(P,Q)=
+      \sum_{s\in S_p}(P(s)+\epsilon)\log\frac{P(s)+\epsilon}{Q(s)+\epsilon}.
+  \]
+  \item \textbf{Distribution comparisons.} With square roots taken componentwise, the available functions are
+  \[
+    \begin{aligned}
+      D_{\mathrm{KL}}(P,Q)&=K_\epsilon(P,Q),\\
+      D_{\mathrm{JS}}(P,Q)&=\bigl(K_\epsilon(P,M)+K_\epsilon(Q,M)\bigr)/2,\\
+      D_{\mathrm{TV}}(P,Q)&=\tfrac12\sum_{s\in S_p}|P(s)-Q(s)|,\\
+      D_{\mathrm H}(P,Q)&=\|\sqrt P-\sqrt Q\|/\sqrt{2}.
+    \end{aligned}
+  \]
+  \item \textbf{Drift score.} For a chosen function $D$ and an available reference $Q_j$, the score at $b(V_j)$ is $\lambda_j=D(P_j,Q_j)$. The score is undefined when the reference is unavailable.
+\end{itemize}
 \end{Definition}
 
 These comparisons are smoothed Kullback-Leibler divergence, Jensen-Shannon divergence, total variation, and Hellinger distance. The smoothing keeps the logarithmic terms finite when a state is absent in a window. Jensen-Shannon averages differences to a common midpoint~\cite{lin1991divergence}. Total variation sums absolute changes in state shares. Hellinger uses the Euclidean distance between the vectors of square-root shares, with normalization.

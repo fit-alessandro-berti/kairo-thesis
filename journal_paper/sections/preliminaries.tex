@@ -42,7 +42,7 @@ The gap in \Cref{def:case-history} is the time between the timestamps recorded f
 \Cref{def:calendar-grid} forms windows by restricting an ordered sequence to successive time intervals. It applies to event timestamps and, later, to the time anchors of observations derived from the log.
 
 \begin{Definition}[Calendar windows of a timed sequence]\label{def:calendar-grid}
-Let $\sigma=(u_1,\ldots,u_m)$ be a finite sequence whose entries have nondecreasing anchor times $\theta(u_i)$. For an event sequence the anchor map is $t$.
+Let $\sigma=(u_1,\ldots,u_m)$ be a finite sequence whose entries have nondecreasing anchor times $T(u_i)$. For an event sequence the anchor map is $t$.
 \begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
   \item \textbf{Grid.} For a width $\delta>0$ and a fixed origin $b_\star$, the grid $\mathcal W_\delta$ is the ordered family of intervals
   \[
@@ -50,8 +50,8 @@ Let $\sigma=(u_1,\ldots,u_m)$ be a finite sequence whose entries have nondecreas
      \qquad j\in\mathbb Z.
   \]
   Write $b(W)$ and $d(W)$ for the start and end of an interval $W$.
-  \item \textbf{Window contents.} The window at $W$ pairs the interval with the subsequence $\sigma_W=(u_i:\theta(u_i)\in W)$ in its original order. We use $W$ alone when referring to the interval. For the full event sequence, write $E_W=\operatorname{set}(\sigma(E)_W)$ for the events of the window.
-  \item \textbf{Covering grid segment.} For a nonempty $\sigma$, $\mathcal W_\delta[\sigma]$ consists of the consecutive intervals from the one containing $\theta(u_1)$ to the one containing $\theta(u_m)$, inclusive. It includes intervals whose subsequence is empty.
+  \item \textbf{Window contents.} The window at $W$ pairs the interval with the subsequence $\sigma_W=(u_i:T(u_i)\in W)$ in its original order. We use $W$ alone when referring to the interval. For the full event sequence, write $E_W=\operatorname{set}(\sigma(E)_W)$ for the events of the window.
+  \item \textbf{Covering grid segment.} For a nonempty $\sigma$, $\mathcal W_\delta[\sigma]$ consists of the consecutive intervals from the one containing $T(u_1)$ to the one containing $T(u_m)$, inclusive. It includes intervals whose subsequence is empty.
 \end{itemize}
 \end{Definition}
 

@@ -1,21 +1,22 @@
 \begin{Example}[From state labels to a drift score]
 \label{ex:drift-score}
-Consider the resource perspective of the service-desk log in \Cref{sec:approach-example}. Suppose the fitted model assigns $W_{\mathrm a},W_{\mathrm b},W_{\mathrm c}$ to state $\mathsf R$, in which Frontline resolves both cases. It assigns $W_{\mathrm d},W_{\mathrm e},W_{\mathrm f}$ to state $\mathsf S$, in which Specialist resolves the focal case. Here $b(W_{\mathrm a})$ is a signal-window boundary. Grouping feature windows by their start times as in \autoref{fig:approach-signal-windows} gives
+Consider the resource perspective of the service-desk log in \Cref{ex:service-desk}. Suppose the fitted model assigns $W_{\mathrm a},W_{\mathrm b},W_{\mathrm c}$ to state $\mathsf R$, in which Frontline resolves both cases. It assigns $W_{\mathrm d},W_{\mathrm e},W_{\mathrm f}$ to state $\mathsf S$, in which Specialist resolves the focal case. Choose a signal width twice the feature width, with $b(W_{\mathrm a})$ on a signal-window boundary. The grouping rule in \Cref{def:state-distributions} yields
 \[
   V_{\mathrm A}=W_{\mathrm a}\cup W_{\mathrm b},\qquad
   V_{\mathrm B}=W_{\mathrm c}\cup W_{\mathrm d},\qquad
-  V_{\mathrm C}=W_{\mathrm e}\cup W_{\mathrm f}.
+  V_{\mathrm C}=W_{\mathrm e}\cup W_{\mathrm f},
 \]
+as depicted in \autoref{fig:approach-signal-windows}.
 
 The state distributions $P_{\mathrm A}$, $P_{\mathrm B}$, and $P_{\mathrm C}$ count feature-window labels within the respective signal windows and divide by the number of labels. All labels in $V_{\mathrm A}$ are $\mathsf R$, the labels in $V_{\mathrm B}$ are evenly split, and all labels in $V_{\mathrm C}$ are $\mathsf S$ (\autoref{fig:approach-state-distributions}). The middle window mixes the earlier and later patterns because it spans the change.
 
 To score $V_{\mathrm C}$, the previous-window reference is $Q_{\mathrm C}^{\mathrm{prev}}=P_{\mathrm B}$. The recent-window reference that uses both earlier signal windows is $Q_{\mathrm C}^{\mathrm{recent}}=\operatorname{mean}(P_{\mathrm A},P_{\mathrm B})$. Its share of $\mathsf S$ is smaller than in $P_{\mathrm B}$ because $V_{\mathrm A}$ contains only $\mathsf R$. The whole-log reference also includes $P_{\mathrm C}$. Its mean is $P_{\mathrm B}$ here because the exclusive $\mathsf R$ and $\mathsf S$ distributions balance each other (\autoref{fig:approach-reference-distributions}).
 
-For these states, total variation reduces to the absolute difference in the share of $\mathsf S$. This gives equal previous-window scores at $b(V_{\mathrm B})$ and $b(V_{\mathrm C})$.
+For these states, total variation reduces to the absolute difference in the share of $\mathsf S$. Write $\alpha=P_{\mathrm B}(\mathsf S)$ for the middle window's share of this state. This gives equal previous-window scores at $b(V_{\mathrm B})$ and $b(V_{\mathrm C})$.
 \[
   D_{\mathrm{TV}}(P_{\mathrm B},P_{\mathrm A})
   =D_{\mathrm{TV}}(P_{\mathrm C},P_{\mathrm B})
-  =P_{\mathrm B}(\mathsf S).
+  =\alpha.
 \]
 The recent-window reference gives $V_{\mathrm C}$ a higher score because its reference contains less $\mathsf S$. The whole-log mean gives $V_{\mathrm B}$ a zero score and the same positive score to both outer windows. \autoref{fig:approach-drift-scores} places each value at the start of the window it describes. Local scores are undefined until the required earlier signal windows are available.
 \end{Example}
@@ -44,6 +45,6 @@ The recent-window reference gives $V_{\mathrm C}$ a higher score because its ref
 \begin{figure*}[!t]
   \centering
   \input{figures/drift-scores}
-  \caption{Illustrative total-variation scores with $\alpha=P_{\mathrm B}(\mathsf S)$. Missing points indicate that the reference needs more history. The whole-log reference gives the middle window a defined score of zero.}
+  \caption{Illustrative total-variation scores. The scale uses the middle window's share $\alpha$ of state $\mathsf S$. Missing points indicate that the reference needs more history. The whole-log reference gives the middle window a score of zero.}
   \label{fig:approach-drift-scores}
 \end{figure*}
