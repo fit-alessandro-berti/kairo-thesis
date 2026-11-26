@@ -58,6 +58,68 @@ The library exposes separate operations for preparing a log, building and transf
   \end{adjustwidth}
 \end{table*}
 
+\autoref{fig:implementation-python-basic} runs the pipeline on a CSV event log with columns \texttt{case}, \texttt{activity}, and \texttt{completed\_at}. It plots a weekly intra-case drift signal using the previous-window reference defined in \Cref{sec:approach-signal}. \autoref{fig:implementation-python-review} reuses the state assignments and weekly distributions to compare that score with a recent-window reference. The event count provides context for inspecting a high score.
+
+\lstdefinestyle{kairo-python}{
+  language=Python,
+  basicstyle=\small\ttfamily\color{KairoInk},
+  keywordstyle=\color{KairoBlue}\bfseries,
+  stringstyle=\color{KairoTeal},
+  backgroundcolor=\color{KairoPaper},
+  frame=single,
+  rulecolor=\color{KairoLine},
+  xleftmargin=.5em,
+  xrightmargin=.5em,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  upquote=true
+}
+
+\begin{figure*}[!t]
+\begin{lstlisting}[style=kairo-python]
+import kairo
+import pandas as pd
+
+log = kairo.read_log(
+    "events.csv", case_id="case", activity="activity",
+    timestamp="completed_at",
+)
+time = "time:timestamp"
+log[time] = pd.to_datetime(log[time], utc=True, format="mixed")
+
+features = kairo.compute_features_intra(log)
+scaled = kairo.standardize(features, "minmax")
+model = kairo.compute_kmeans(scaled, k=3)
+meta = ["case:concept:name", time]
+states = scaled[meta].join(kairo.get_kmeans_states(scaled, model))
+
+weekly = kairo.compute_state_distributions(states, "7D")
+previous = kairo.compute_drift_signal(weekly, divergence="js")
+kairo.plot_drift_signal(previous, divergence="js").show()
+\end{lstlisting}
+\caption{Python listing for an intra-case analysis. Kairo maps the CSV fields, groups events into three states, and plots the Jensen-Shannon divergence between successive weekly state distributions.}
+\label{fig:implementation-python-basic}
+\end{figure*}
+
+\begin{figure*}[!t]
+\begin{lstlisting}[style=kairo-python]
+recent = kairo.compute_drift_signal(
+    weekly, divergence="js", reference="recent", lookback=3,
+)
+counts = kairo.compute_signal_window_rows(states, "7D")
+comparison = previous.merge(
+    recent, on="signal_window", suffixes=("_previous", "_recent"),
+).merge(counts, on="signal_window")
+
+ranked = comparison.dropna(subset=["drift_score_recent"])
+print(ranked.nlargest(3, "drift_score_recent").to_string(index=False))
+\end{lstlisting}
+\caption{Python listing for comparing reference distributions. The second score uses the mean of the three preceding populated windows. The output reports both scores and the observation count for up to three windows with the highest recent-reference scores.}
+\label{fig:implementation-python-review}
+\end{figure*}
+
+\filbreak
 \subsection{Graphical Interface}
 \label{sec:implementation-dashboard}
 

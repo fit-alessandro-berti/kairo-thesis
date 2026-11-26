@@ -58,35 +58,35 @@ We expressed all annotations in calendar time. For Rheon we used generator times
 The comparison covers nine Kairo combinations of perspective and clustering method and 18 \softwarepm{} implementations (\autoref{tab:assessment-methods}). We call a specific configuration of an implementation a \emph{profile}. Core profile settings used observable input properties, such as log length, event and case volume, and available fields. The annotated change times were used for scoring after detection. The core runs used Kairo 0.1.0 at revision \texttt{6b1bd462} and \softwarepm{} at revision \texttt{79b6ce1b}, with revision \texttt{765435bc} for the corrected Bose detector. The benchmark archive records the complete settings for every run. Coverage depended on data and computational requirements. The \softwarepm{} resource-assignment profile ran only when the log recorded resources. Kairo recorded 30 unsupported runs due to missing resources and eight because the number of distinct intra-case feature rows exceeded the DBSCAN limit of 10,000. In total, 616 \softwarepm{} runs and 376 Kairo runs completed.
 
 \begin{table*}[!t]
-\caption{Implementations and profiles included in the core comparison. DFG denotes a directly-follows graph. PELT denotes pruned exact linear time, ADWIN denotes adaptive windowing, and MMD denotes maximum mean discrepancy.}
+\caption{Implementations and profiles in the core comparison, with sources for the methods or their \softwarepm{} adaptations. DFG denotes a directly-follows graph. PELT denotes pruned exact linear time, ADWIN denotes adaptive windowing, and MMD denotes maximum mean discrepancy.}
 \label{tab:assessment-methods}
 \centering
 \small
 \begin{adjustwidth}{-\extralength}{0cm}
-\begin{tabularx}{\fulllength}{@{}l>{\raggedright\arraybackslash}p{0.19\fulllength}>{\raggedright\arraybackslash}X@{}}
+\begin{tabularx}{\fulllength}{@{}l>{\raggedright\arraybackslash}p{0.19\fulllength}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{0.12\fulllength}@{}}
 \toprule
-\textbf{Library} & \textbf{Implementation} & \textbf{Signal and tested profiles} \\
+\textbf{Library} & \textbf{Implementation} & \textbf{Signal and tested profiles} & \textbf{Reference} \\
 \midrule
-Kairo & State distributions & Intra-case, resource, and inter-case states with K-means, a self-organizing map (SOM), or DBSCAN. Each combination uses previous-window and recent-window profiles. \\
+Kairo & State distributions & Intra-case, resource, and inter-case states with K-means, a self-organizing map (SOM), or DBSCAN. Each combination uses previous-window and recent-window profiles. & \Cref{sec:approach} \\
 \midrule
-\softwarepm{} & Bose relation count & Permutation test on counts of outgoing eventually-follows relations. \\
-& DFG frequency & Adjacent-window comparison of relation frequencies using permutations or a wider likelihood-ratio test. \\
-& Event relations & Fixed or adaptive windows of event-level control-flow relations. \\
-& Local completeness & New or disappearing directly-follows relations relative to a locally complete window. \\
-& Relation invariance & Boundaries of stable periods for activity relations. \\
-& Graph metrics & PELT on measures of successive DFGs. \\
-& Run distribution & Fixed or adaptive windows of partially ordered execution runs. \\
-& Trace variant frequency & Permutation tests on exact activity sequences with regular and wide windows. \\
-& Earth Mover distance & Window comparisons with activity sequences alone or with timing features. \\
-& Calendar indicators & PELT on basic or enriched indicator sets, and ADWIN on basic indicators. \\
-& CV-based indicators & PELT on enriched indicators with smoothing selected using the coefficient of variation. \\
-& Conformance & Alignment fitness monitored with fixed-model Page-Hinkley or ADWIN with relearning. \\
-& Conformance profile & PELT on windowed alignment fitness and precision. \\
-& Declare profiles & PELT on temporal constraint profiles. \\
-& Version clustering & Clustering and segmentation of window similarity profiles based on DFGs. \\
-& Cluster frequency & Comparison of trace cluster frequencies after training K-means on an initial set of traces. \\
-& Multivariate features & Permutation MMD on flow and timing features or on activity-resource assignments. \\
-& Supervised similarity & A patch classifier on window similarity images trained on independent generated logs. \\
+\softwarepm{} & Bose relation count & Permutation test on counts of outgoing eventually-follows relations. & \cite{bose2011handling} \\
+& DFG frequency & Adjacent-window comparison of relation frequencies using permutations or a wider likelihood-ratio test. & \cite{pm4pyConceptDrift} \\
+& Event relations & Fixed or adaptive windows of event-level control-flow relations. & \cite{ostovar2016streams} \\
+& Local completeness & New or disappearing directly-follows relations relative to a locally complete window. & \cite{lin2022lcdd} \\
+& Relation invariance & Boundaries of stable periods for activity relations. & \cite{zheng2017detecting} \\
+& Graph metrics & PELT on measures of successive DFGs. & \cite{seeliger2017graph,killick2012pelt} \\
+& Run distribution & Fixed or adaptive windows of partially ordered execution runs. & \cite{maaradji2017detecting} \\
+& Trace variant frequency & Permutation tests on exact activity sequences with regular and wide windows. & \cite{pm4pyConceptDrift} \\
+& Earth Mover distance & Window comparisons with activity sequences alone or with timing features. & \cite{brockhoff2020time} \\
+& Calendar indicators & PELT on basic or enriched indicator sets, and ADWIN on basic indicators. & \cite{pm4pyConceptDrift,killick2012pelt,bifet2007adwin} \\
+& CV-based indicators & PELT on enriched indicators with smoothing selected using the coefficient of variation. & \cite{khraiwesh2027window,killick2012pelt} \\
+& Conformance & Alignment fitness monitored with fixed-model Page-Hinkley or ADWIN with relearning. & \cite{pasquadibisceglie2026fairy,page1954continuous,bifet2007adwin} \\
+& Conformance profile & PELT on windowed alignment fitness and precision. & \cite{gallego2025crier,killick2012pelt} \\
+& Declare profiles & PELT on temporal constraint profiles. & \cite{yeshchenko2019visual,killick2012pelt} \\
+& Version clustering & Clustering and segmentation of window similarity profiles based on DFGs. & \cite{abarcazuniga2026version} \\
+& Cluster frequency & Comparison of trace cluster frequencies after training K-means on an initial set of traces. & \cite{pm4pyConceptDrift} \\
+& Multivariate features & Permutation MMD on flow and timing features or on activity-resource assignments. & \cite{pm4pyConceptDrift,gretton2012kernel} \\
+& Supervised similarity & A patch classifier on window similarity images trained on independent generated logs. & \cite{kraus2025machine,pm4pyConceptDrift} \\
 \bottomrule
 \end{tabularx}
 \end{adjustwidth}
