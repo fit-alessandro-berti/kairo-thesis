@@ -24,7 +24,6 @@ Distinct events may agree on their recorded fields. A case attribute, such as re
 \end{itemize}
 \end{Definition}
 
-\Needspace{13\baselineskip}
 Interleaved cases may have events at the same time. The event order resolves timestamp ties by input order, and the history in \Cref{def:case-history} uses adjacency within a case trace.
 
 \begin{Definition}[Case history and control flow]\label{def:case-history}
@@ -62,7 +61,6 @@ The half-open intervals in \Cref{def:calendar-grid} assign a boundary timestamp 
 Consider a trace with events at 09:15 and 11:00 on a grid aligned to the hour. With a width of one hour, the events belong to the windows starting at 09:00 and 11:00, respectively. The window starting at 10:00 has an empty subsequence.
 \end{Example}
 
-\Needspace{14\baselineskip}
 \subsection{Concept Drift}
 
 Changes in process behavior can occur at a particular time or develop over an interval. \Cref{def:drift} gives a common temporal representation for both forms. The benchmark annotations record the bounds of known episodes. Kairo derives evidence from the frequency of recurring states, as described in \Cref{sec:approach-signal}.

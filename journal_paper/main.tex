@@ -1,5 +1,5 @@
 \documentclass[applsci,article,submit,moreauthors]{Definitions/mdpi}
-\usepackage{listings,needspace}
+\usepackage{listings}
 
 \firstpage{1}
 \pubvolume{1}
@@ -19,6 +19,10 @@
 \apptocmd{\ps@plain}{\fancyfoot[L]{\footnotesize\DraftStatus}\fancyfoot[R]{}}{}{}
 \makeatother
 \renewcommand{\cright}{\DraftStatus.}
+
+% Keep the MDPI heading, body, and link target together.
+\BeforeBeginEnvironment{Definition}{\par\vbox\bgroup}
+\AfterEndEnvironment{Definition}{\egroup\par}
 
 \input{figures/style}
 
