@@ -20,8 +20,11 @@
 \makeatother
 \renewcommand{\cright}{\DraftStatus.}
 
-% Keep the MDPI heading, body, and link target together.
-\BeforeBeginEnvironment{Definition}{\par\vbox\bgroup}
+% Keep each MDPI definition and its reference target together on one page.
+\BeforeBeginEnvironment{Definition}{%
+  \par\vbox\bgroup
+  \setlist[itemize,1]{leftmargin=*,itemsep=.2em,topsep=.3em}%
+}
 \AfterEndEnvironment{Definition}{\egroup\par}
 
 \input{figures/style}

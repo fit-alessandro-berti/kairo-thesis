@@ -96,15 +96,15 @@ Kairo & State distributions & Intra-case, resource, and inter-case states with K
 The state models were fitted to each complete log. The benchmark applied min-max scaling to intra-case vectors and standard score scaling to resource and inter-case vectors, followed by principal component analysis with up to five components when applicable. It used observed fields and feature size limits to choose the vectors. The base signal window targeted one fiftieth of the log's completion-time span, rounded to an available duration. Resource and inter-case feature windows were chosen from lengths that divide the base signal window, taking event or case density into account. The previous-window profile used Jensen-Shannon divergence and the 90th percentile of eligible scores as its threshold. The recent-window profile used total variation relative to the mean of the preceding three populated windows, twice the base signal window width, and the 95th percentile. Both profiles required full coverage and at least 25\% of the median number of state observations. \Cref{def:assessment-alarms} specifies how these settings produce retrospective alarms from the scores.
 
 \begin{Definition}[Retrospective alarm rule]\label{def:assessment-alarms}
-Let $t_{\min}$ and $t_{\max}$ be the first and last completion timestamps, and let $\widetilde N$ be the median of the counts $N_j$ from \Cref{def:state-distributions}.
-\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
-  \item \textbf{Eligibility.} For a chosen support fraction $\rho$, the eligible indices are
+Use the populated signal windows with intervals $V_j$ and observation counts $N_j$ from \Cref{def:state-distributions} and the scores $\lambda_j$ from \Cref{def:drift-score}. Let $t_{\min}$ and $t_{\max}$ be the first and last event completion timestamps, and let $\widetilde N$ be the median of the counts $N_j$.
+\begin{itemize}
+  \item \textbf{Eligibility.} For a chosen support fraction $\rho\in[0,1]$, the eligible indices are
   \[
     J=\{j:\lambda_j\text{ is finite},\ V_j\subseteq[t_{\min},t_{\max}),\
                    N_j\geq\rho\widetilde N\}.
   \]
-  \item \textbf{Threshold.} If $J$ is nonempty, take the empirical quantile of $(\lambda_j)_{j\in J}$ at the chosen level. The quantile includes repeated scores. The threshold $\theta$ is the larger of this quantile and $10^{-12}$. A window qualifies when $j\in J$ and $\lambda_j\geq\theta$.
-  \item \textbf{Alarm time.} A maximal run of qualifying windows with touching calendar boundaries produces one alarm at the start of its first window. An empty $J$ produces no alarms.
+  \item \textbf{Threshold.} For nonempty $J$, sort the eligible scores, retaining repeats. For quantile level $q\in[0,1]$, take the score at zero-based rank $q(|J|-1)$, linearly interpolating between adjacent scores for a fractional rank. The threshold $\theta$ is the larger of this quantile and $10^{-12}$. A window qualifies when $j\in J$ and $\lambda_j\geq\theta$.
+  \item \textbf{Estimated change time.} A run consists of consecutive qualifying windows with $d(V_j)=b(V_{j+1})$ between successive windows. Each maximal run yields one alarm whose estimated change time is the start of its first window. An empty $J$ yields an empty set of alarms.
 \end{itemize}
 \end{Definition}
 
@@ -119,23 +119,23 @@ Before scoring the Bose detector, we corrected two implementation issues. The de
 Detector comparisons depend on the evaluation goal and on how detections are scored~\cite{adams2023experimental}. We used a common calendar-time margin equal to 2.5\% of the log's observation span, from the earliest recorded start or completion to the last completion. We repeated scoring with margins of 1\% and 5\%. \Cref{def:assessment-matching} applies the same localization rule to every detector, regardless of the type of change.
 
 \begin{Definition}[Temporal matching]\label{def:assessment-matching}
-\leavevmode
-\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
-  \item \textbf{Episodes.} An annotated episode $i$ has bounds $[l_i,r_i]$, with $l_i=r_i$ for a point change. Annotations with identical bounds within a log form one episode.
-  \item \textbf{Distance and admissibility.} The distance from an alarm timestamp $t$ to the episode is
+For a single log, compare the detector's estimated change times with the annotated drift episodes from \Cref{def:drift}.
+\begin{itemize}
+  \item \textbf{Episodes.} Use $[l_i,r_i]$ for the bounds of episode $i$, with $l_i=r_i$ for a sudden drift. Annotations with identical bounds form one episode.
+  \item \textbf{Distance and admissibility.} Fix a time margin $\gamma\geq0$. The distance from an alarm's estimated change time $\hat t$ to episode $i$ is
   \[
-     \operatorname{dist}(t,[l_i,r_i])=\max\{l_i-t,\ 0,\ t-r_i\}.
+     \operatorname{dist}(\hat t,[l_i,r_i])=\max\{l_i-\hat t,\ 0,\ \hat t-r_i\}.
   \]
   An alarm and episode may be paired when this distance is at most the margin $\gamma$.
-  \item \textbf{Matching.} Over one-to-one matchings of admissible pairs, maximize the number of pairs and, among those matchings, minimize their total distance.
+  \item \textbf{Matching.} Each alarm and episode can appear at most once. Among matchings with the largest number of admissible pairs, choose one with the smallest total distance.
 \end{itemize}
 \end{Definition}
 
 \Cref{def:assessment-scores} turns the matchings into counts and combines them across logs.
 
 \begin{Definition}[Detection counts and pooled scores]\label{def:assessment-scores}
-\leavevmode
-\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+Apply \Cref{def:assessment-matching} to each evaluated log separately.
+\begin{itemize}
   \item \textbf{Counts.} Each matched pair contributes a true positive, each unmatched alarm a false positive, and each unmatched episode a false negative. Let $\mathrm{TP}$, $\mathrm{FP}$, and $\mathrm{FN}$ be the respective counts summed over the evaluated logs.
   \item \textbf{Micro-averaged scores.} The pooled precision, recall, and F1 score are
   \[

@@ -5,19 +5,19 @@
 A case is an instance of a process, such as a request handled by a service team. \Cref{def:event-log} specifies the information recorded for its events.
 
 \begin{Definition}[Case-centric event log]\label{def:event-log}
-A case-centric event log $L$ consists of a finite, nonempty set $E$ of event identities and the following fields.
-\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+A case-centric event log $L$ has a finite, nonempty set $E$ of event identities. The following maps give values for each $e\in E$.
+\begin{itemize}
   \item \textbf{Case and activity.} The maps $c$ and $a$ give the case $c(e)$ and activity $a(e)$ of each event $e\in E$. The observed case and activity sets are $C=\{c(e):e\in E\}$ and $A=\{a(e):e\in E\}$.
-  \item \textbf{Time and input position.} The timestamp $t(e)$ is a point on a common time axis. The input position $i(e)$ uniquely identifies the position of the event in the recorded log.
-  \item \textbf{Optional fields.} The resource $r(e)$ takes values in the set $R$ of recorded resources or the missing value $\bot$. The duration $\operatorname{dur}(e)$ is recorded directly or computed as the difference between completion and start times when both are available. For an attribute $\alpha$, $v_\alpha(e)$ is its value on $e$. An unavailable duration or attribute value is $\bot$.
+  \item \textbf{Time and input position.} The timestamp $t(e)$ is a point on a common time axis. The input position $i(e)$ numbers the records from $1$ to $|E|$ in input order, with one position per event.
+  \item \textbf{Optional fields.} Each optional field takes value $\bot$ when missing. The resource is $r(e)$, with observed resource set $R=\{r(e):e\in E,\ r(e)\ne\bot\}$. The event duration $\operatorname{dur}(e)$ is recorded directly or computed as completion time minus start time if those times are available. For a recorded attribute $\alpha$, $v_\alpha(e)$ is its value on the event.
 \end{itemize}
 \end{Definition}
 
-Distinct events may agree on their recorded fields. A case attribute, such as request category, can be stored on each event of a case. \Cref{def:ordered-log} preserves event identities when extracting the sequence of a single case.
+Distinct events may carry the same case, activity, timestamp, and optional values. A case attribute, such as request category, describes a case and can be stored on each of its events. \Cref{def:ordered-log} preserves event identities when extracting the sequence of a single case.
 
 \begin{Definition}[Ordered event sequences]\label{def:ordered-log}
-\leavevmode
-\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+Fix a log as in \Cref{def:event-log}.
+\begin{itemize}
   \item \textbf{Event order.} For any $U\subseteq E$, $\sigma(U)$ lists the events of $U$ in lexicographic order by $(t(e),i(e))$. The full log sequence is $\sigma(E)$.
   \item \textbf{Case trace.} For a case $c_0\in C$, let $E_{c_0}=\{e\in E:c(e)=c_0\}$. Its trace is $\tau_{c_0}=\sigma(E_{c_0})=(e_{c_0,1},\ldots,e_{c_0,m_{c_0}})$, where $m_{c_0}=|E_{c_0}|$.
   \item \textbf{Position window.} For a sequence $\sigma=(u_1,\ldots,u_m)$, let $\operatorname{set}(\sigma)$ be the set of its entries. For $1\leq i\leq j\leq m$, the position window $\sigma[i:j]=(u_i,\ldots,u_j)$ retains the entries from position $i$ through position $j$.
@@ -27,30 +27,30 @@ Distinct events may agree on their recorded fields. A case attribute, such as re
 Interleaved cases may have events at the same time. The event order resolves timestamp ties by input order, and the history in \Cref{def:case-history} uses adjacency within a case trace.
 
 \begin{Definition}[Case history and control flow]\label{def:case-history}
-For a case $c_0\in C$ and event $e=e_{c_0,j}$ in its trace, define the following quantities.
-\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+For a case $c_0\in C$ with trace $\tau_{c_0}$ from \Cref{def:ordered-log}, consider the event $e=e_{c_0,j}$.
+\begin{itemize}
   \item \textbf{Prefix and neighbors.} The prefix through $e$ is $\pi(e)=\tau_{c_0}[1:j]$. Its predecessor is $e^-=e_{c_0,j-1}$ when $j>1$, and its successor is $e^+=e_{c_0,j+1}$ when $j<m_{c_0}$.
-  \item \textbf{Case endpoints and event gap.} The first and last recorded timestamps are $s_{c_0}=t(e_{c_0,1})$ and $f_{c_0}=t(e_{c_0,m_{c_0}})$. When $e^-$ exists, the within-case gap is $g(e)=t(e)-t(e^-)$.
-  \item \textbf{Activity sequence and directly-follows relation.} The sequence $(a(e_{c_0,j}))_{j=1}^{m_{c_0}}$ is the trace variant. Each event with a predecessor contributes the pair $(a(e^-),a(e))$. A directly-follows graph has vertex set $A$ and a directed edge for each pair observed in the log. The edge can be weighted by the number of occurrences of the pair.
+  \item \textbf{Case endpoints and within-case gap.} The recorded arrival and completion of $c_0$ are at $s_{c_0}=t(e_{c_0,1})$ and $f_{c_0}=t(e_{c_0,m_{c_0}})$, respectively. When $e^-$ exists, the within-case gap is $g(e)=t(e)-t(e^-)$.
+  \item \textbf{Trace variant and directly-follows relation.} The trace variant of $c_0$ is the activity sequence $(a(e_{c_0,i}))_{i=1}^{m_{c_0}}$. Each event with a predecessor contributes one occurrence of the directly-follows pair $(a(e^-),a(e))$. The directly-follows relation contains the pairs observed across all case traces. A directly-follows graph (DFG) has vertex set $A$ and an edge from the first to the second activity of each pair, optionally weighted by its count.
 \end{itemize}
 \end{Definition}
 
-The gap in \Cref{def:case-history} is the time between the timestamps recorded for two consecutive events of a case. Its interpretation therefore depends on the timestamp convention.
+The interpretation of the within-case gap in \Cref{def:case-history} depends on whether the log records, for example, activity starts or completions.
 
 \subsection{Calendar Windows}
 
 \Cref{def:calendar-grid} forms windows by restricting an ordered sequence to successive time intervals. It applies to event timestamps and, later, to the time anchors of observations derived from the log.
 
 \begin{Definition}[Calendar windows of a timed sequence]\label{def:calendar-grid}
-Let $\sigma=(u_1,\ldots,u_m)$ be a finite sequence whose entries have nondecreasing anchor times $T(u_i)$. For an event sequence the anchor map is $t$.
-\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+Let $\sigma=(u_1,\ldots,u_m)$ be a finite sequence and $T$ a map assigning each entry a time anchor, with $T(u_1)\leq\cdots\leq T(u_m)$ for a nonempty sequence. For events, $T=t$.
+\begin{itemize}
   \item \textbf{Grid.} For a width $\delta>0$ and a fixed origin $b_\star$, the grid $\mathcal W_\delta$ is the ordered family of intervals
   \[
      W_j(\delta)=[b_\star+j\delta,\ b_\star+(j+1)\delta),
      \qquad j\in\mathbb Z.
   \]
   Write $b(W)$ and $d(W)$ for the start and end of an interval $W$.
-  \item \textbf{Window contents.} The window at $W$ pairs the interval with the subsequence $\sigma_W=(u_i:T(u_i)\in W)$ in its original order. We use $W$ alone when referring to the interval. For the full event sequence, write $E_W=\operatorname{set}(\sigma(E)_W)$ for the events of the window.
+  \item \textbf{Window contents.} Each interval $W\in\mathcal W_\delta$ indexes a window containing the subsequence $\sigma_W=(u_i:T(u_i)\in W)$ in its original order. For the full event sequence, $E_W=\operatorname{set}(\sigma(E)_W)$ is the set of events in that window.
   \item \textbf{Covering grid segment.} For a nonempty $\sigma$, $\mathcal W_\delta[\sigma]$ consists of the consecutive intervals from the one containing $T(u_1)$ to the one containing $T(u_m)$, inclusive. It includes intervals whose subsequence is empty.
 \end{itemize}
 \end{Definition}
@@ -63,13 +63,13 @@ Consider a trace with events at 09:15 and 11:00 on a grid aligned to the hour. W
 
 \subsection{Concept Drift}
 
-Changes in process behavior can occur at a particular time or develop over an interval. \Cref{def:drift} gives a common temporal representation for both forms. The benchmark annotations record the bounds of known episodes. Kairo derives evidence from the frequency of recurring states, as described in \Cref{sec:approach-signal}.
+Changes in process behavior can occur at a particular time or develop over an interval. \Cref{def:drift} represents both forms as episodes with temporal bounds, which are also used for the benchmark annotations.
 
 \begin{Definition}[Concept drift and temporal episodes]\label{def:drift}
-For a chosen aspect of process behavior, let $\mathcal P(t)$ denote its distribution at time $t$. A concept drift is a transition from a distribution $\mathcal P^-$ to a different distribution $\mathcal P^+$.
-\begin{itemize}[leftmargin=*,itemsep=.2em,topsep=.3em]
+For a chosen aspect of process behavior, let $\mathcal P(t)$ denote its distribution at time $t$. A concept drift episode is an interval over which the process changes from distribution $\mathcal P^-$ before the episode to a different distribution $\mathcal P^+$ after it.
+\begin{itemize}
   \item \textbf{Sudden drift.} The distribution changes at time $b$. Its episode is the point interval $[b,b]$.
   \item \textbf{Gradual drift.} The distribution changes over the episode $[b,d]$, where $b<d$.
-  \item \textbf{Recurring drift.} A drift is recurring if $\mathcal P^+$ matches the distribution of an earlier regime.
+  \item \textbf{Recurring drift.} A drift is recurring if the new distribution $\mathcal P^+$ occurred in a period preceding the one with distribution $\mathcal P^-$ immediately before this episode.
 \end{itemize}
 \end{Definition}
